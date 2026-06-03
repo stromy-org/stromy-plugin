@@ -1,0 +1,7 @@
+{
+  "name": "stromy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Claude Code plugin for Stromy branded deliverables",
+  "dependencies": {}
+}

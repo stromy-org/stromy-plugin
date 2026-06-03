@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "_doc": "Advisories explicitly accepted by review. Each entry needs a review_by date (≤6 months out). CI fails if any entry is past its review date.",
+  "advisories": []
+}

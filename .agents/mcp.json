@@ -1,0 +1,6 @@
+{
+  "$schema": "https://gofastmcp.com/public/schemas/mcp-config.schema.json",
+  "_notes": "Canonical MCP server config for stromy. Edit only this file. Run scripts/render-mcp.py to regenerate .mcp.json / .gemini/settings.json / .codex/config.toml / .vscode/mcp.json.",
+  "servers": {
+  }
+}
