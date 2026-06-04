@@ -1,0 +1,87 @@
+<!--
+  PPTX cover slide — anchor template (HTML page shell).
+  Consumed by the `pptx-hd` skill's render-anchors mode.
+
+  Anchor templates encode the brand-consistent visible frame only.
+  Slide body layout is the LLM's creative space — anchors are not a prescriptive deck.
+
+  Build script injects:
+    {{HERO_URL}}        — absolute file:// URL to images/heroes/<name>.hero-16x9.jpg (optional)
+    {{LOGO_WHITE_URL}}  — absolute file:// URL to logos/<logo white variant>
+    {{LOGO_URL}}        — absolute file:// URL to logos/<logo primary>
+    {{TITLE}}           — slide title
+    {{SUBTITLE}}        — one-sentence subtitle (optional)
+    {{OVERLINE}}        — short uppercase label (optional)
+    {{TOKENS_CSS}}      — full contents of tokens.css
+    {{FONT_FACES}}      — @font-face declarations (from brand/fonts/) OR @import Google Fonts URL
+    {{CONFIDENTIALITY}} — confidentiality text from boilerplate.json (may be empty)
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+
+html, body { margin: 0; padding: 0; }
+body {
+  width: 1280px; height: 720px;
+  color: white;
+  background:
+    linear-gradient(rgba(20,30,28,0.55), rgba(20,30,28,0.55)),
+    url("{{HERO_URL}}") center/cover;
+  font-family: var(--font-body, system-ui, sans-serif);
+  position: relative;
+  overflow: hidden;
+}
+.logo  { position: absolute; top: 48px; left: 60px; }
+.logo img { height: 36pt; width: auto; }
+.block { position: absolute; bottom: 110px; left: 60px; right: 60px; max-width: 900px; }
+.overline {
+  font-family: var(--font-mono, monospace);
+  font-size: 11pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 16pt;
+}
+h1 {
+  font-family: var(--font-display, var(--font-heading));
+  font-size: 56pt;
+  line-height: 1.05;
+  margin: 0;
+  color: white;
+}
+.subtitle {
+  font-size: 16pt;
+  opacity: 0.85;
+  margin-top: 18pt;
+  max-width: 75%;
+}
+.meta {
+  position: absolute;
+  bottom: 32px;
+  left: 60px;
+  right: 60px;
+  font-family: var(--font-mono, monospace);
+  font-size: 9pt;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+}
+</style>
+</head>
+<body>
+  <div class="logo"><img src="{{LOGO_WHITE_URL}}" alt=""></div>
+  <div class="block">
+    <div class="overline">{{OVERLINE}}</div>
+    <h1>{{TITLE}}</h1>
+    <p class="subtitle">{{SUBTITLE}}</p>
+  </div>
+  <div class="meta">
+    <span>{{CONFIDENTIALITY}}</span>
+    <span>{{DATE}}</span>
+  </div>
+</body>
+</html>

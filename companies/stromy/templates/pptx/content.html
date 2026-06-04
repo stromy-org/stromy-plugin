@@ -1,0 +1,80 @@
+<!--
+  PPTX content slide — anchor template (FRAME ONLY).
+  Consumed by `pptx-hd` render-anchors mode.
+
+  IMPORTANT: This anchor encodes ONLY the brand-consistent frame —
+  margins, header zone, footer bar, page-number position, brand background.
+  The slide BODY area is intentionally left empty; the LLM authoring a real
+  deck fills it with whatever layout the content requires (cards, split,
+  data, quote, etc). Do NOT add prescriptive layout here.
+
+  Injected: {{LOGO_MONO_URL}} {{CLIENT_NAME}} {{CONFIDENTIALITY}}
+            {{PAGE}} {{PAGES}} {{TOKENS_CSS}} {{FONT_FACES}}
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+
+html, body { margin: 0; padding: 0; }
+body {
+  width: 1280px; height: 720px;
+  background: var(--color-background, white);
+  color: var(--color-text, #111);
+  font-family: var(--font-body, system-ui, sans-serif);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Brand header strip — optional thin band; LLM can choose to honor or override */
+.brand-strip {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--color-primary);
+}
+
+/* Body zone — LLM creative space. Anchor leaves this empty. */
+.body-zone {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+}
+
+/* Footer bar — brand-consistent across every content slide */
+.footer-bar {
+  position: absolute;
+  bottom: 16px;
+  left: 60px;
+  right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono, monospace);
+  font-size: 8pt;
+  color: var(--color-text-light, #666);
+}
+.footer-bar img { height: 14pt; width: auto; opacity: 0.7; }
+.footer-left, .footer-right { display: flex; align-items: center; gap: 10pt; }
+</style>
+</head>
+<body>
+  <div class="brand-strip"></div>
+  <div class="body-zone"><!-- LLM fills this --></div>
+  <div class="footer-bar">
+    <div class="footer-left">
+      <img src="{{LOGO_MONO_URL}}" alt="">
+      <span>{{CLIENT_NAME}}</span>
+    </div>
+    <div class="footer-right">
+      <span>{{CONFIDENTIALITY}}</span>
+      <span>{{PAGE}} / {{PAGES}}</span>
+    </div>
+  </div>
+</body>
+</html>

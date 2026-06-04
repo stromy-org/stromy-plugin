@@ -1,0 +1,16 @@
+<svg viewBox="0 0 380 115" xmlns="http://www.w3.org/2000/svg">
+  <!-- STROMY — Wordmark with Tagline (light background) -->
+  <!-- Orchestration node -->
+  <circle cx="30" cy="42" r="8" fill="none" stroke="#1D342B" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="30" cy="42" r="2.2" fill="#B96034"/>
+  <!-- Upper route stem -->
+  <line x1="38" y1="37" x2="56" y2="37" stroke="#1D342B" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Lower route stem -->
+  <line x1="38" y1="47" x2="52" y2="47" stroke="#B96034" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Wordmark -->
+  <text x="64" y="53" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="44" font-weight="500" fill="#0F1310" letter-spacing="5">STROMY</text>
+  <!-- Score line separator -->
+  <line x1="64" y1="68" x2="330" y2="68" stroke="#1D342B" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+  <!-- Tagline -->
+  <text x="64" y="86" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500" fill="#6D665C" letter-spacing="3.5">INTELLIGENCE, ORCHESTRATED.</text>
+</svg>

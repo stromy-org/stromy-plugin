@@ -1,0 +1,458 @@
+{
+  "meta": {
+    "tier": "producer",
+    "displayName": "Stromy",
+    "tagline": "Intelligence, Orchestrated.",
+    "industry": "AI / Technology",
+    "domain": "stromy.com.au",
+    "contact": "hello@stromy.com.au",
+    "protection_class": "protected",
+    "protected_assets": { "heading_font": true, "body_font": true, "primary_color": true, "accent_color": true, "motif_family": true }
+  },
+  "colors": {
+    "primary": "#1D342B",
+    "secondary": "#0F1310",
+    "accent": "#B96034",
+    "background": "#ECE6DA",
+    "backgroundAlt": "#F3EDE2",
+    "text": "#171611",
+    "textLight": "#6D665C",
+    "success": "#47685B",
+    "warning": "#B96034",
+    "error": "#8E3F2E"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Fraunces",
+      "fallback": "Georgia, 'Times New Roman', serif",
+      "weight": "500"
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "weight": "normal"
+    },
+    "mono": {
+      "family": "IBM Plex Mono",
+      "fallback": "'SF Mono', 'Fira Code', monospace",
+      "weight": "normal"
+    }
+  },
+  "logo": {
+    "primary": "logos/logo.svg",
+    "png": "logos/logo.png",
+    "white": "logos/logo_white.svg",
+    "whitePng": "logos/logo_white.png",
+    "mono": "logos/logo_mono.svg",
+    "tagline": "logos/logo_tagline.svg",
+    "mark": "logos/symbol.svg",
+    "icon": "logos/icon_dark.svg",
+    "iconPng": "logos/icon_dark.png",
+    "iconGreen": "logos/icon_green.svg",
+    "iconGreenPng": "logos/icon_green.png",
+    "iconPaper": "logos/icon_paper.svg",
+    "iconPaperPng": "logos/icon_paper.png",
+    "favicon": "logos/favicon.svg",
+    "maxWidth": "220pt",
+    "maxHeight": "60pt",
+    "sizing": "contain"
+  },
+  "images": {
+    "catalog": [
+      {
+        "file": "images/01_brutalist_concrete.jpg",
+        "description": "Brutalist parking spiral — raw concrete layers, industrial geometry",
+        "roles": ["divider"],
+        "theme": "existing"
+      },
+      {
+        "file": "images/02_brutalist_geometric.jpg",
+        "description": "Monumental concrete cantilever — bold, authoritative brutalist form",
+        "roles": ["cover", "divider", "closing"],
+        "hero": true,
+        "theme": "existing"
+      },
+      {
+        "file": "images/04_concrete_curves.jpg",
+        "description": "Industrial curved pipes — sculptural concrete forms in B&W",
+        "roles": ["divider"],
+        "theme": "existing"
+      },
+      {
+        "file": "images/07_geometric_bw.jpg",
+        "description": "Geometric B&W architecture — stark light and shadow on tiled facade",
+        "roles": ["cover", "divider", "closing"],
+        "theme": "existing"
+      },
+      {
+        "file": "images/08_arch_lines_shadow.jpg",
+        "description": "Architectural lines with rhythmic shadows — chevron geometry",
+        "roles": ["divider", "background", "closing"],
+        "theme": "existing"
+      },
+      {
+        "file": "images/11_corten_vertical_slats.jpg",
+        "description": "Warm corten steel building with vertical slats — excellent oxide-tone match",
+        "roles": ["divider", "background"],
+        "theme": "oxidized-infrastructure"
+      },
+      {
+        "file": "images/12_corten_pyramid.jpg",
+        "description": "Corten pyramid — geometric oxidized form with many windows",
+        "roles": ["divider", "closing"],
+        "theme": "oxidized-infrastructure"
+      },
+      {
+        "file": "images/13_corten_tower.jpg",
+        "description": "Corten steel tower — oxidized vertical structure, street context",
+        "roles": ["divider", "background"],
+        "theme": "oxidized-infrastructure"
+      },
+      {
+        "file": "images/14_corten_tall_orange.jpg",
+        "description": "Tall orange corten building — bold oxide tones against sky",
+        "roles": [],
+        "theme": "oxidized-infrastructure",
+        "reserve": true
+      },
+      {
+        "file": "images/15_brown_concrete_lowangle.jpg",
+        "description": "Low-angle brown concrete building — warm monumental form",
+        "roles": ["cover", "closing"],
+        "theme": "oxidized-infrastructure"
+      },
+      {
+        "file": "images/16_rusted_metal_rivets.jpg",
+        "description": "Close-up rusted metal with rivets — raw oxidized detail texture",
+        "roles": ["background"],
+        "hero": true,
+        "theme": "oxidized-infrastructure"
+      },
+      {
+        "file": "images/17_industrial_staircase.jpg",
+        "description": "Industrial staircase — corten interior, modern building",
+        "roles": ["divider", "closing"],
+        "theme": "oxidized-infrastructure"
+      },
+      {
+        "file": "images/18_brown_building_monumental.jpg",
+        "description": "Brown concrete building — warm tones, white sky, monumental",
+        "roles": ["cover", "closing"],
+        "hero": true,
+        "theme": "oxidized-infrastructure"
+      },
+      {
+        "file": "images/19_diamond_facade.jpg",
+        "description": "Geometric diamond pattern on building facade — structured repetition",
+        "roles": ["divider", "background"],
+        "theme": "brutalist-architecture"
+      },
+      {
+        "file": "images/20_geometric_window_grid.jpg",
+        "description": "Geometric window grid — repetitive facade pattern, systematic",
+        "roles": ["divider", "background"],
+        "theme": "brutalist-architecture"
+      },
+      {
+        "file": "images/21_brutalist_bw_curves.jpg",
+        "description": "B&W brutalist building — stark contrast, bold curved balconies",
+        "roles": ["divider"],
+        "theme": "brutalist-architecture"
+      },
+      {
+        "file": "images/22_concrete_curves_sky.jpg",
+        "description": "Concrete building curves against sky — sculptural brutalist form",
+        "roles": ["cover", "divider", "closing"],
+        "hero": true,
+        "theme": "brutalist-architecture"
+      },
+      {
+        "file": "images/23_vertical_fins.jpg",
+        "description": "Repeating vertical fins — modern brutalist rhythm",
+        "roles": ["cover", "closing"],
+        "theme": "brutalist-architecture"
+      },
+      {
+        "file": "images/24_shadow_lines_grayscale.jpg",
+        "description": "Grayscale building — shadow lines creating rhythmic pattern",
+        "roles": ["divider", "background"],
+        "theme": "structural-shadow"
+      },
+      {
+        "file": "images/25_tall_building_shadow.jpg",
+        "description": "Tall building — vertical shadow rhythm with architectural detail",
+        "roles": ["cover", "closing"],
+        "hero": true,
+        "theme": "structural-shadow"
+      },
+      {
+        "file": "images/26_white_concrete_daylight.jpg",
+        "description": "White concrete — clean daylight shadow lines, minimal",
+        "roles": ["divider", "background"],
+        "theme": "structural-shadow"
+      },
+      {
+        "file": "images/27_brown_concrete_warm.jpg",
+        "description": "Brown concrete with warm shadows — warm-toned rhythm",
+        "roles": ["divider", "background"],
+        "theme": "structural-shadow"
+      },
+      {
+        "file": "images/28_metal_poles_parallel.jpg",
+        "description": "Metal poles closeup — parallel lines, industrial rhythm",
+        "roles": ["cover", "closing"],
+        "theme": "structural-shadow"
+      },
+      {
+        "file": "images/29_dark_wood_floor.jpg",
+        "description": "Dark wood floor — rich timber grain, warm texture",
+        "roles": ["background"],
+        "theme": "workshop-material"
+      },
+      {
+        "file": "images/30_weathered_barn_door.jpg",
+        "description": "Weathered barn door — aged timber with character",
+        "roles": ["background"],
+        "theme": "workshop-material"
+      },
+      {
+        "file": "images/31_dark_wood_grain.jpg",
+        "description": "Dark wood grain — deep tones, organic pattern",
+        "roles": ["background"],
+        "theme": "workshop-material"
+      },
+      {
+        "file": "images/32_amber_wood.jpg",
+        "description": "Amber wood — warm golden tones, crafted surface",
+        "roles": ["background"],
+        "theme": "workshop-material"
+      },
+      {
+        "file": "images/33_black_marble.jpg",
+        "description": "Black marble with white veins — dark premium texture",
+        "roles": ["background"],
+        "theme": "workshop-material"
+      },
+      {
+        "file": "images/34_dark_geometry_angular.jpg",
+        "description": "B&W dark geometry — angular architecture, deep contrast",
+        "roles": ["divider", "background"],
+        "theme": "dark-geometry"
+      },
+      {
+        "file": "images/35_illuminated_windows_night.jpg",
+        "description": "Illuminated windows at night — warm glow in dark facade",
+        "roles": ["cover", "closing"],
+        "hero": true,
+        "theme": "dark-geometry"
+      },
+      {
+        "file": "images/36_stairwell_glass.jpg",
+        "description": "Stairwell through glass — geometric depth, moody interior",
+        "roles": ["divider"],
+        "theme": "dark-geometry"
+      },
+      {
+        "file": "images/37_glass_facade_reflections.jpg",
+        "description": "Glass facade with warm building reflections at night",
+        "roles": ["cover", "background", "closing"],
+        "hero": true,
+        "theme": "dark-geometry"
+      },
+      {
+        "file": "images/38_dark_building_silhouette.jpg",
+        "description": "B&W dark building — stark silhouette, dramatic composition",
+        "roles": ["cover", "closing"],
+        "hero": true,
+        "theme": "dark-geometry"
+      },
+      {
+        "file": "images/39_industrial_pipes_bw.jpg",
+        "description": "B&W industrial pipes — complex system, structured chaos",
+        "roles": ["divider"],
+        "theme": "framed-urban-systems"
+      },
+      {
+        "file": "images/40_urban_framing_post.jpg",
+        "description": "Grayscale building with structural post — urban framing",
+        "roles": ["divider"],
+        "theme": "framed-urban-systems"
+      },
+      {
+        "file": "images/41_aerial_train_yard.jpg",
+        "description": "Aerial train yard — track switching systems, orchestration literal",
+        "roles": ["cover", "background", "closing"],
+        "hero": true,
+        "theme": "framed-urban-systems"
+      }
+    ],
+    "overlay": {
+      "color": "primary",
+      "opacity": 0.65
+    },
+    "logoVariantOnImage": "white"
+  },
+  "website": {
+    "archetype": "sage",
+    "aesthetic": "editorial-systems",
+    "layout": {
+      "density": "measured",
+      "symmetry": "balanced",
+      "flowDirection": "stack",
+      "heroStyle": "editorial-stack",
+      "gridSystem": "structured-2col",
+      "sectionSpacing": "generous",
+      "sectionDividers": "motif-band",
+      "footerStyle": "indexed",
+      "whitespaceStrategy": "measured"
+    },
+    "texture": {
+      "backgroundTreatment": "solid",
+      "surfaceFinish": "matte",
+      "borderStyle": "thin-line",
+      "shadowDepth": "none",
+      "cornerRadius": "sharp",
+      "overlayStyle": "brand-tint",
+      "patternDensity": "none"
+    },
+    "typography": {
+      "headingStyle": "display-serif",
+      "headingScale": 1.35,
+      "bodyLineHeight": 1.7,
+      "letterSpacing": "tight",
+      "textTransform": "none",
+      "pullQuoteStyle": "serif-led",
+      "listStyle": "mono-indexed"
+    },
+    "motion": {
+      "intensity": "moderate",
+      "revealStyle": "clip-reveal",
+      "scrollBehavior": "smooth",
+      "hoverBehavior": "color-shift",
+      "transitionSpeed": "cinematic",
+      "loadingAnimation": "stagger-fade",
+      "cursorStyle": "default"
+    },
+    "components": {
+      "navigation": "sticky-minimal",
+      "cards": "bordered",
+      "buttons": "outline",
+      "forms": "minimal-underline",
+      "imagePresentation": "full-bleed",
+      "testimonials": "quote-panel",
+      "ctaStyle": "inline",
+      "socialProof": "case-facts",
+      "codeBlocks": "terminal-style"
+    },
+    "colorApplication": {
+      "darkSections": true,
+      "darkSectionFrequency": 3,
+      "accentUsage": "balanced",
+      "gradientDirection": "none",
+      "colorBlockSections": true,
+      "imageOverlayBehavior": "brand-tint"
+    },
+    "pages": {
+      "home": {
+        "enabled": true,
+        "sections": [
+          { "type": "hero", "variant": "split" },
+          { "type": "service", "variant": "capability-grid" },
+          { "type": "stats", "variant": "counter-band" },
+          { "type": "case-study", "variant": "featured-card" },
+          { "type": "content", "variant": "tech-teaser" },
+          { "type": "cta", "variant": "full-width-band" }
+        ]
+      },
+      "about": { "enabled": true },
+      "services": { "enabled": true },
+      "case-studies": { "enabled": true },
+      "blog": { "enabled": true },
+      "contact": { "enabled": true }
+    },
+    "deployment": {
+      "platform": "github-pages",
+      "domain": "stromy.com.au",
+      "analytics": "plausible",
+      "contactForm": "formspree"
+    }
+  },
+  "document": {
+    "margins": { "top": "1in", "bottom": "1in", "left": "1in", "right": "1in" },
+    "header": { "content": "STROMY", "logo": true },
+    "footer": { "content": "Confidential", "pageNumbers": true },
+    "headingColor": "primary",
+    "tableHeaderColor": "primary"
+  },
+  "presentation": {
+    "slideMargin": "40pt",
+    "titleMargin": "30pt",
+    "contentMargin": "20pt",
+    "aspectRatio": "16:9"
+  },
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 30
+  },
+  "formatting": {
+    "headingThreshold": 24,
+    "accentCycleColors": ["primary", "accent", "success"],
+    "autoContrastText": true
+  },
+  "plotly": {
+    "categoricalPalette": ["#1D342B", "#B96034", "#47685B", "#7F9B90", "#D68A60", "#6D665C"],
+    "defaultHeight": 500,
+    "titleFontSize": 18,
+    "axisFontSize": 12,
+    "legendFontSize": 11,
+    "margins": { "top": 80, "bottom": 70, "left": 60, "right": 50 },
+    "baseTemplate": "plotly_white",
+    "gridColor": "#D7D0C3",
+    "secondaryTextColor": "#8C857A",
+    "bar": {
+      "markerColor": "#1D342B",
+      "markerLineColor": "#152019",
+      "markerLineWidth": 1
+    },
+    "line": {
+      "color": "#1D342B",
+      "width": 2.5,
+      "markerColor": "#B96034",
+      "markerSize": 7
+    },
+    "scatter": {
+      "markerColor": "#1D342B",
+      "markerSize": 8,
+      "markerLineWidth": 0
+    },
+    "pie": {
+      "hole": 0.4,
+      "textfontSize": 13,
+      "markerLineColor": "#ECE6DA",
+      "markerLineWidth": 2
+    },
+    "sentiment": {
+      "positiveColor": "#47685B",
+      "neutralColor": "#8C857A",
+      "negativeColor": "#8E3F2E"
+    }
+  },
+  "excalidraw": {
+    "strokeColor": "#1D342B",
+    "backgroundColor": "#ECE6DA",
+    "fillColors": ["#1D342B", "#B96034", "#47685B", "#7F9B90", "#D68A60", "#6D665C"],
+    "textColor": "#171611",
+    "fontFamily": 2,
+    "fontSize": 16,
+    "strokeWidth": 2,
+    "roughness": 0,
+    "arrowColor": "#6D665C",
+    "labelFontSize": 14
+  },
+  "placeholderPolicy": {
+    "brandFields": ["brandName", "tagline", "domain", "logoPath"],
+    "externalFields": ["sender.name", "sender.title", "sender.email", "sender.phone", "sender.mobile", "sender.address"],
+    "fallback": "placeholders",
+    "placeholderFormat": "{{fieldName}}"
+  }
+}

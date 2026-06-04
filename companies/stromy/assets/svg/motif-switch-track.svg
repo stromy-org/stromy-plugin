@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" role="img" aria-label="Stromy Switch Track motif">
+  <!-- Track 1: paper -->
+  <path d="M 0 18 L 180 18 Q 200 18, 220 28 L 400 28" fill="none" stroke="#ECE6DA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Track 2: oxide (continues straight) -->
+  <line x1="0" y1="42" x2="400" y2="42" stroke="#B96034" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Junction node: bold double-ring at divergence point -->
+  <circle cx="200" cy="30" r="7" fill="none" stroke="#B96034" stroke-width="2.2"/>
+  <circle cx="200" cy="30" r="3" fill="#0F1310"/>
+
+  <!-- Exit indicator tick at terminus -->
+  <line x1="394" y1="22" x2="400" y2="28" stroke="#ECE6DA" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 380 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- STROMY — Monochrome Wordmark (single color, for emboss/watermark) -->
+  <circle cx="30" cy="42" r="8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="30" cy="42" r="2.2" fill="currentColor"/>
+  <!-- Upper route stem -->
+  <line x1="38" y1="37" x2="56" y2="37" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Lower route stem (lighter for hierarchy) -->
+  <line x1="38" y1="47" x2="52" y2="47" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity="0.5"/>
+  <!-- Wordmark -->
+  <text x="64" y="53" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="44" font-weight="500" fill="currentColor" letter-spacing="5">STROMY</text>
+</svg>

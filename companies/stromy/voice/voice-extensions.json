@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "additional_banned_phrases": [
+    "revolutionary",
+    "game-changing",
+    "game changer",
+    "disruptive",
+    "cutting-edge",
+    "in today'?s rapidly changing landscape",
+    "paradigm shift",
+    "unlock the power",
+    "supercharge"
+  ],
+  "additional_banned_substrings": [],
+  "notes": "Stromy L2: additive-only hype bans on top of the L1 baseline. Mirrors the 'Do not' list in guidelines.md."
+}

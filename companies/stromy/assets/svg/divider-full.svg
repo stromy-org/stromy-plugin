@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 34" preserveAspectRatio="none" role="img" aria-label="Stromy full-width divider">
+  <!-- Upper rule: forest -->
+  <line x1="0" y1="7" x2="1128" y2="7" stroke="#1D342B" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Lower rule: oxide, offset -->
+  <line x1="22" y1="23" x2="1168" y2="23" stroke="#B96034" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Registration block -->
+  <rect x="1174" y="2" width="16" height="30" rx="3" fill="none" stroke="#B96034" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="1182" y1="10" x2="1182" y2="24" stroke="#B96034" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
