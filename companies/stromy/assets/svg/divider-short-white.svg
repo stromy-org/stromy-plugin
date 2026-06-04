@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 34" role="img" aria-label="Stromy short divider (light on dark)">
+  <!-- Upper rule: paper -->
+  <line x1="0" y1="7" x2="128" y2="7" stroke="#ECE6DA" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Lower rule: oxide, offset -->
+  <line x1="22" y1="23" x2="168" y2="23" stroke="#B96034" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Registration block -->
+  <rect x="174" y="2" width="16" height="30" rx="3" fill="none" stroke="#B96034" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="182" y1="10" x2="182" y2="24" stroke="#B96034" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

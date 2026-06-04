@@ -1,0 +1,498 @@
+/* ============================================================
+   STROMY Design Tokens
+   Intelligence, Orchestrated.
+   
+   Usage: Import this file at the root of any project.
+   All values are CSS custom properties for easy theming.
+   ============================================================ */
+
+:root {
+  /* ── Primary Palette ─────────────────────────────────── */
+  --stromy-obsidian:       #0F1310;
+  --stromy-green:          #1D342B;
+  --stromy-signal-orange:  #B96034;
+
+  /* ── Green Scale ─────────────────────────────────────── */
+  --stromy-green-900:      #152019;  /* Black forest */
+  --stromy-green-700:      #1D342B;  /* Deep forest */
+  --stromy-green-500:      #47685B;  /* Mineral green */
+  --stromy-green-300:      #7F9B90;  /* Oxidized sage */
+  --stromy-green-100:      #C9D6CF;  /* Soft mineral */
+  --stromy-green-50:       #E7EEE8;  /* Pale mist */
+
+  /* ── Orange Scale ────────────────────────────────────── */
+  --stromy-orange-900:     #6A341D;
+  --stromy-orange-700:     #924B29;
+  --stromy-orange-500:     #B96034;  /* Oxide signal */
+  --stromy-orange-300:     #D68A60;
+  --stromy-orange-100:     #E9C6AF;
+  --stromy-orange-50:      #F4E5D9;
+
+  /* ── Neutral Scale ───────────────────────────────────── */
+  --stromy-neutral-950:    #0F1310;  /* Obsidian forest */
+  --stromy-neutral-900:    #171611;
+  --stromy-neutral-800:    #2A2924;  /* Graphite bark */
+  --stromy-neutral-700:    #464138;
+  --stromy-neutral-600:    #6D665C;  /* Stone */
+  --stromy-neutral-500:    #8C857A;  /* Pewter */
+  --stromy-neutral-400:    #AEA495;
+  --stromy-neutral-300:    #CDC2B3;  /* Ash */
+  --stromy-neutral-200:    #DDD4C7;
+  --stromy-neutral-100:    #E8E0D4;
+  --stromy-neutral-50:     #ECE6DA;  /* Warm paper */
+  --stromy-white:          #F3EDE2;
+
+  /* ── Semantic Colors ─────────────────────────────────── */
+  --stromy-success:        #47685B;
+  --stromy-success-light:  #E7EEE8;
+  --stromy-warning:        #B96034;
+  --stromy-warning-light:  #F4E5D9;
+  --stromy-error:          #8E3F2E;
+  --stromy-error-light:    #F2E2DC;
+  --stromy-info:           #2D4B3E;
+  --stromy-info-light:     #E4EBE7;
+
+  /* ── Typography ──────────────────────────────────────── */
+  --font-display:          'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:             'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:             'IBM Plex Mono', 'SF Mono', 'Fira Code', monospace;
+
+  /* Display sizes */
+  --text-display-xl:       3rem;      /* 48px — hero, cover */
+  --text-display-lg:       2.25rem;   /* 36px — report title */
+  --text-display-md:       1.5rem;    /* 24px — section title */
+  --text-display-sm:       1.25rem;   /* 20px — card title */
+
+  /* Body sizes */
+  --text-heading:          1.125rem;  /* 18px */
+  --text-body:             0.9375rem; /* 15px */
+  --text-body-sm:          0.8125rem; /* 13px */
+  --text-caption:          0.75rem;   /* 12px */
+  --text-overline:         0.6875rem; /* 11px */
+  --text-micro:            0.625rem;  /* 10px */
+
+  /* Line heights */
+  --leading-tight:         1.15;
+  --leading-snug:          1.3;
+  --leading-normal:        1.5;
+  --leading-relaxed:       1.65;
+  --leading-loose:         1.8;
+
+  /* Letter spacing */
+  --tracking-tight:        -0.02em;
+  --tracking-snug:         -0.01em;
+  --tracking-normal:       0;
+  --tracking-wide:         0.03em;
+  --tracking-wider:        0.06em;
+  --tracking-widest:       0.1em;
+
+  /* Font weights */
+  --weight-regular:        400;
+  --weight-medium:         500;
+  --weight-bold:           700;
+
+  /* ── Spacing Scale (4px base) ────────────────────────── */
+  --space-1:   0.25rem;   /* 4px */
+  --space-2:   0.5rem;    /* 8px */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-5:   1.25rem;   /* 20px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-10:  2.5rem;    /* 40px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-20:  5rem;      /* 80px */
+  --space-24:  6rem;      /* 96px */
+  --space-32:  8rem;      /* 128px */
+
+  /* ── Border Radius ───────────────────────────────────── */
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:   12px;
+  --radius-2xl:  16px;
+  --radius-full: 9999px;
+
+  /* ── Shadows (subtle, editorial) ─────────────────────── */
+  --shadow-sm:   0 1px 2px rgba(11,11,11,0.04);
+  --shadow-md:   0 2px 8px rgba(11,11,11,0.06);
+  --shadow-lg:   0 4px 16px rgba(11,11,11,0.08);
+  --shadow-xl:   0 8px 32px rgba(11,11,11,0.10);
+
+  /* ── Transitions ─────────────────────────────────────── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast:    120ms;
+  --duration-normal:  200ms;
+  --duration-slow:    400ms;
+
+  /* ── Motif Family ────────────────────────────────────── */
+  --motif-ink:              var(--stromy-neutral-950);
+  --motif-paper:            var(--stromy-neutral-50);
+  --motif-forest:           var(--stromy-green-700);
+  --motif-mineral:          var(--stromy-green-500);
+  --motif-oxide:            var(--stromy-orange-500);
+  --motif-line-weight:      2.2px;
+  --motif-node-size:        9px;
+  --motif-ledger-box-w:     16px;
+  --motif-ledger-box-h:     30px;
+  --motif-band-gap:         16px;
+
+  /* ── Layout ──────────────────────────────────────────── */
+  --content-width:    720px;
+  --content-wide:     960px;
+  --content-max:      1200px;
+  --sidebar-width:    280px;
+  --header-height:    64px;
+}
+
+/* ── Dark Mode Overrides ─────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --stromy-surface:         var(--stromy-neutral-950);
+    --stromy-surface-raised:  var(--stromy-neutral-900);
+    --stromy-text-primary:    var(--stromy-neutral-50);
+    --stromy-text-secondary:  var(--stromy-neutral-500);
+    --stromy-text-tertiary:   var(--stromy-neutral-600);
+    --stromy-border:          var(--stromy-neutral-800);
+    --stromy-border-subtle:   var(--stromy-neutral-900);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --stromy-surface:         var(--stromy-white);
+    --stromy-surface-raised:  var(--stromy-neutral-50);
+    --stromy-text-primary:    var(--stromy-neutral-950);
+    --stromy-text-secondary:  var(--stromy-neutral-600);
+    --stromy-text-tertiary:   var(--stromy-neutral-500);
+    --stromy-border:          var(--stromy-neutral-200);
+    --stromy-border-subtle:   var(--stromy-neutral-100);
+  }
+}
+
+
+/* ============================================================
+   Utility Classes
+   ============================================================ */
+
+/* ── Typography ────────────────────────────────────────────── */
+.stromy-display-xl {
+  font-family: var(--font-display);
+  font-size: var(--text-display-xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-regular);
+}
+
+.stromy-display-lg {
+  font-family: var(--font-display);
+  font-size: var(--text-display-lg);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-snug);
+  font-weight: var(--weight-regular);
+}
+
+.stromy-display-md {
+  font-family: var(--font-display);
+  font-size: var(--text-display-md);
+  line-height: var(--leading-snug);
+  font-weight: var(--weight-regular);
+}
+
+.stromy-heading {
+  font-family: var(--font-body);
+  font-size: var(--text-heading);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-snug);
+  font-weight: var(--weight-medium);
+}
+
+.stromy-subhead {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-wider);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+}
+
+.stromy-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
+  font-weight: var(--weight-regular);
+}
+
+.stromy-caption {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  line-height: var(--leading-normal);
+}
+
+.stromy-overline {
+  font-family: var(--font-body);
+  font-size: var(--text-overline);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-widest);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+}
+
+.stromy-mono {
+  font-family: var(--font-mono);
+  font-size: var(--text-body-sm);
+  line-height: var(--leading-normal);
+}
+
+/* ── Score Line Component ──────────────────────────────────── */
+.score-line {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.score-line::before {
+  content: '';
+  flex: 1;
+  height: var(--score-line-weight);
+  background: var(--score-line-color);
+}
+
+.score-line::after {
+  content: '';
+  width: var(--score-dot-size);
+  height: var(--score-dot-size);
+  border-radius: 50%;
+  background: var(--score-dot-color);
+  flex-shrink: 0;
+}
+
+.score-line--short::before {
+  flex: 0 0 60px;
+}
+
+.score-line--light::before {
+  background: var(--score-line-color-light);
+}
+
+/* ── Buttons ───────────────────────────────────────────────── */
+.btn {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--stromy-green-700);
+  color: var(--stromy-neutral-50);
+}
+.btn-primary:hover {
+  background: var(--stromy-green-500);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--stromy-neutral-300);
+  border: 1px solid var(--stromy-neutral-800);
+}
+.btn-secondary:hover {
+  border-color: var(--stromy-neutral-600);
+  color: var(--stromy-neutral-50);
+}
+
+.btn-accent {
+  background: var(--stromy-signal-orange);
+  color: var(--stromy-white);
+}
+.btn-accent:hover {
+  background: var(--stromy-orange-700);
+}
+
+/* ── Cards ─────────────────────────────────────────────────── */
+.card {
+  background: var(--stromy-surface-raised);
+  border: 1px solid var(--stromy-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  transition: box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card--dark {
+  background: var(--stromy-neutral-950);
+  border-color: var(--stromy-neutral-800);
+}
+
+.card--green {
+  background: var(--stromy-green-700);
+  border-color: var(--stromy-green-500);
+}
+
+/* ── Report Header ─────────────────────────────────────────── */
+.report-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.report-header__label {
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--stromy-green-300);
+}
+
+.report-header__title {
+  font-family: var(--font-display);
+  font-size: var(--text-display-md);
+  line-height: var(--leading-snug);
+  color: var(--stromy-neutral-50);
+}
+
+.report-header__meta {
+  font-family: var(--font-body);
+  font-size: var(--text-overline);
+  color: var(--stromy-neutral-500);
+}
+
+/* ── Data Table ────────────────────────────────────────────── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+}
+
+.data-table th {
+  font-family: var(--font-body);
+  font-size: var(--text-overline);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  text-align: left;
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 2px solid var(--stromy-green-700);
+  color: var(--stromy-text-secondary);
+}
+
+.data-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--stromy-border-subtle);
+  color: var(--stromy-text-primary);
+}
+
+.data-table td.mono {
+  font-family: var(--font-mono);
+}
+
+/* ── Badge / Tag ───────────────────────────────────────────── */
+.badge {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  font-weight: var(--weight-medium);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.badge--green {
+  background: var(--stromy-green-50);
+  color: var(--stromy-green-700);
+}
+
+.badge--orange {
+  background: var(--stromy-orange-50);
+  color: var(--stromy-orange-700);
+}
+
+.badge--neutral {
+  background: var(--stromy-neutral-100);
+  color: var(--stromy-neutral-700);
+}
+
+/* ── Motif Utilities ─────────────────────────────────────── */
+.stromy-tempo-ledger {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.stromy-tempo-ledger__rule {
+  position: relative;
+  height: 34px;
+}
+
+.stromy-tempo-ledger__rule::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 4.5rem;
+  top: 7px;
+  border-top: var(--motif-line-weight) solid var(--motif-ink);
+}
+
+.stromy-tempo-ledger__rule::after {
+  content: "";
+  position: absolute;
+  left: 1.375rem;
+  right: 0;
+  top: 23px;
+  border-top: var(--motif-line-weight) solid var(--motif-oxide);
+}
+
+.stromy-tempo-ledger__box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: var(--motif-ledger-box-w);
+  height: var(--motif-ledger-box-h);
+  border: var(--motif-line-weight) solid var(--motif-oxide);
+}
+
+.stromy-data-rail {
+  position: relative;
+  padding-left: var(--space-6);
+}
+
+.stromy-data-rail::before {
+  content: "";
+  position: absolute;
+  left: var(--space-3);
+  top: 0;
+  bottom: 0;
+  width: var(--motif-line-weight);
+  background: var(--motif-ink);
+}
+
+.stromy-switch-track {
+  display: block;
+  width: 100%;
+  height: 36px;
+}
+
+.stromy-echo-band {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.stromy-echo-band__line {
+  height: 8px;
+  border-top: var(--motif-line-weight) solid currentColor;
+  border-bottom: var(--motif-line-weight) solid color-mix(in srgb, currentColor 18%, transparent);
+}

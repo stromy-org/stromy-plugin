@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 50" role="img" aria-label="Stromy Echo Band motif">
+  <!-- Band 1: paper -->
+  <line x1="0" y1="8" x2="380" y2="8" stroke="#ECE6DA" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Ghost echo 1 -->
+  <line x1="10" y1="14" x2="370" y2="14" stroke="#ECE6DA" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.35"/>
+
+  <!-- Band 2: oxide -->
+  <line x1="8" y1="22" x2="388" y2="22" stroke="#B96034" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Ghost echo 2 -->
+  <line x1="18" y1="28" x2="378" y2="28" stroke="#B96034" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.35"/>
+
+  <!-- Band 3: mineral -->
+  <line x1="4" y1="36" x2="384" y2="36" stroke="#47685B" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Ghost echo 3 -->
+  <line x1="14" y1="42" x2="374" y2="42" stroke="#47685B" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.35"/>
+
+  <!-- Vertical registration notch at right edge -->
+  <line x1="394" y1="4" x2="394" y2="46" stroke="#B96034" stroke-width="2" stroke-linecap="round"/>
+</svg>
