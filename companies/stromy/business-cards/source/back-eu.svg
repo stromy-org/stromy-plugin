@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91mm" height="61mm" viewBox="0 0 91 61">
+  <!-- Stromy — business card BACK (forest). EU bleed box 91x61mm; trim 85x55 inset 3mm. -->
+  <rect width="91" height="61" fill="#1D342B"/>
+  <!-- S-curve mark top-right: paper stroke, oxide node -->
+  <svg x="75" y="11" width="9" height="9" viewBox="0 0 96 96">
+    <path d="M 24 24 C 24 24, 72 24, 72 48 C 72 72, 24 72, 24 72" fill="none" stroke="#ECE6DA" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="48" cy="48" r="4.4" fill="none" stroke="#ECE6DA" stroke-width="3"/>
+    <circle cx="48" cy="48" r="2.4" fill="#B96034"/>
+  </svg>
+  <!-- Wordmark + descriptor -->
+  <text x="11" y="27" fill="#ECE6DA" font-family="Fraunces, Georgia, serif" font-weight="500" font-size="7">Stromy</text>
+  <text x="11" y="32.5" fill="#A9A296" font-family="'Plus Jakarta Sans', sans-serif" font-size="2.3" letter-spacing="0.5">AI SYSTEMS · ORCHESTRATION</text>
+  <!-- Tagline (italic), oxide emphasis -->
+  <text x="11" y="47" fill="#ECE6DA" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="500" font-size="4.4">Intelligence,<tspan dx="1.5" fill="#B96034">orchestrated.</tspan></text>
+  <text x="11" y="54" fill="#A9A296" font-family="'Plus Jakarta Sans', sans-serif" font-size="2.4">stromy.com.au</text>
+</svg>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stromy — Business Cards</title>
+<style>
+  :root { --forest:#1D342B; --oxide:#B96034; --paper:#ECE6DA; --ink:#171611; --muted:#6D665C; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#F3EDE2; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; padding:56px 40px 80px; }
+  header { max-width:980px; margin:0 auto 48px; }
+  .overline { font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:var(--oxide); margin-bottom:10px; }
+  h1 { font-family:Georgia,'Times New Roman',serif; font-size:40px; font-weight:500; color:var(--forest); }
+  .sub { color:var(--muted); margin-top:10px; font-size:14px; max-width:560px; }
+  .holders { max-width:980px; margin:0 auto; display:flex; flex-direction:column; gap:48px; }
+  .holder { background:#fff; border:1px solid #E5E2DA; border-radius:8px; padding:28px 30px; box-shadow:0 10px 30px rgba(23,22,17,.06); }
+  .holder h2 { font-family:Georgia,serif; font-weight:500; font-size:22px; color:var(--forest); }
+  .holder .role { color:var(--muted); font-size:12px; letter-spacing:1px; text-transform:uppercase; margin-top:2px; }
+  .faces { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:20px; }
+  .face { border:1px solid #E5E2DA; border-radius:5px; overflow:hidden; aspect-ratio:91/61; background:#fff; }
+  .face img { width:100%; height:100%; display:block; }
+  .face .cap { display:none; }
+  .dl { margin-top:18px; font-size:13px; }
+  .dl a { color:var(--oxide); text-decoration:none; font-weight:600; }
+  .dl a:hover { text-decoration:underline; }
+  @media (max-width:680px){ .faces{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="overline">Stromy · Print review</div>
+  <h1>Business Cards</h1>
+  <p class="sub">EU 85×55 mm · 3 mm bleed · crop marks · CMYK · PDF/X-1a:2003. The SVGs below are the editable bleed-sized masters; each links to its 2-page press PDF.</p>
+</header>
+<div class="holders">
+
+  <div class="holder">
+    <h2>William Masquelier</h2>
+    <div class="role">Founder</div>
+    <div class="faces">
+      <div class="face"><img src="../source/william-eu-front.svg" alt="William front"></div>
+      <div class="face"><img src="../source/back-eu.svg" alt="Stromy back"></div>
+    </div>
+    <div class="dl">Press file: <a href="../print/william-eu-print.pdf">william-eu-print.pdf</a> (2-page PDF/X-1a)</div>
+  </div>
+
+  <div class="holder">
+    <h2>Corentin Merlé</h2>
+    <div class="role">Founder</div>
+    <div class="faces">
+      <div class="face"><img src="../source/corentin-eu-front.svg" alt="Corentin front"></div>
+      <div class="face"><img src="../source/back-eu.svg" alt="Stromy back"></div>
+    </div>
+    <div class="dl">Press file: <a href="../print/corentin-eu-print.pdf">corentin-eu-print.pdf</a> (2-page PDF/X-1a)</div>
+  </div>
+
+</div>
+</body>
+</html>
