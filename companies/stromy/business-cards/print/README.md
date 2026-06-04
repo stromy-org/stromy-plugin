@@ -36,6 +36,6 @@ into `<stromy-org>/.claude/skills/brand-builder/assets/icc/` and re-run with
 `--icc-target eu`. Always confirm the standard/profile the chosen print house
 prefers.
 
-Phone numbers are placeholders (`+61 (0) — — —`) — fill in before printing.
+Direct lines: William +32 479 83 72 97, Corentin +32 485 85 53 87.
 
 Requires `brew install librsvg ghostscript` (native tools, operator-local).
