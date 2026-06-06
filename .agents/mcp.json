@@ -16,7 +16,7 @@
       "_consumed_by": ["claude", "codex", "gemini"],
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
-      "_notes": "Dutch government open-data MCP — search/fetch legislation, parliamentary records, Rijksoverheid documents, plus the intel/analysis skills (nl-gov-data, tensions, nl-policy-legislative-landscape, nl-parliamentary-positioning, nl-official-issue-framing, nl-gov-shared). Per-user OAuth via Microsoft Entra ID. Composes with stromy-format for rendering — see infra-docs/ai/three-layer-tooling.md."
+      "_notes": "Dutch government open-data MCP — search/fetch legislation, parliamentary records, Rijksoverheid documents, plus the intel/analysis skills (nl-gov-data, nl-tensions, nl-policy-legislative-landscape, nl-parliamentary-positioning, nl-issue-framing, nl-gov-shared). Per-user OAuth via Microsoft Entra ID. Composes with stromy-format for rendering — see infra-docs/ai/three-layer-tooling.md."
     },
     "stromy-format": {
       "transport": "http",
@@ -24,7 +24,7 @@
       "_consumed_by": ["claude", "codex", "gemini"],
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
-      "_notes": "Hosted format skills (pptx, pptx-hd, docx, pdf, pdf-hd, xlsx, mermaid, diagram, chart, remotion-video). Fetched at runtime via ReadMcpResourceTool — see skills/<name>/SKILL.md stubs."
+      "_notes": "Hosted format skills (format-pptx, format-pptx-hd, format-docx, format-pdf, format-pdf-hd, format-xlsx, format-mermaid, format-diagram, format-chart, format-remotion-video). Fetched at runtime via fs_read — see skills/<name>/SKILL.md stubs."
     }
   }
 }
