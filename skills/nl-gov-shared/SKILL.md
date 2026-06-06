@@ -1,6 +1,6 @@
 ---
 name: nl-gov-shared
-description: "References hub for the Dutch government data skill family (nl-gov-data, tensions, nl-policy-legislative-landscape, nl-parliamentary-positioning, nl-official-issue-framing). Not invoked directly — exists to host canonical specs (portal docs, tool reference, output contract, evidence rules, domain packs) cited by all sibling skills."
+description: "References hub for the Dutch government data skill family (nl-gov-data, nl-tensions, nl-policy-legislative-landscape, nl-parliamentary-positioning, nl-issue-framing). Not invoked directly — exists to host canonical specs (portal docs, tool reference, output contract, evidence rules, domain packs) cited by all sibling skills."
 ---
 
 # nl-gov-shared (MCP-hosted skill)
