@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "stromy",
-  "version": "0.2.0",
-  "description": "Claude Code plugin for Stromy branded deliverables",
+  "version": "0.3.0",
+  "description": "Claude Code plugin for Stromy branded deliverables — composes nl-gov-data intel/analysis + stromy-format rendering + deliverable-canvas planning over Stromy's brand",
   "author": {
     "name": "stromy-org"
   },
