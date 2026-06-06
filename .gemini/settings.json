@@ -14,6 +14,13 @@
         "https://deliverable-canvas-mcp.salmonglacier-1282ede1.northeurope.azurecontainerapps.io/mcp"
       ]
     },
+    "nl-gov-data": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
+      ]
+    },
     "stromy-format": {
       "command": "npx",
       "args": [
