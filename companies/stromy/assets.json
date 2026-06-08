@@ -1,0 +1,622 @@
+{
+  "version": "1.0",
+  "fonts": [
+    {
+      "family": "Fraunces",
+      "weight": 900,
+      "style": "italic",
+      "sha256": "b24448c43702fac4ee856781d461a0dfba8d8e594b6e8e190234b75fed2c0e01",
+      "mime": "font/ttf",
+      "name": "Fraunces-Italic[SOFT,WONK,opsz,wght].ttf"
+    },
+    {
+      "family": "Fraunces",
+      "weight": 900,
+      "style": "normal",
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+      "mime": "font/ttf",
+      "name": "Fraunces[SOFT,WONK,opsz,wght].ttf"
+    },
+    {
+      "family": "IBM Plex Mono",
+      "weight": 700,
+      "style": "normal",
+      "sha256": "ac27abd6450a64dd94467580a02fe6235156d5b92f2926ebbc8e7489df64e0be",
+      "mime": "font/ttf",
+      "name": "IBMPlexMono-Bold.ttf"
+    },
+    {
+      "family": "IBM Plex Mono",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "mime": "font/ttf",
+      "name": "IBMPlexMono-Regular.ttf"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "weight": 400,
+      "style": "italic",
+      "sha256": "9529eb888668b6a3c6dd75b6341a2fc5263fb6c9e788822e6117c29dd9e8b115",
+      "mime": "font/ttf",
+      "name": "PlusJakartaSans-Italic[wght].ttf"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8",
+      "mime": "font/ttf",
+      "name": "PlusJakartaSans[wght].ttf"
+    }
+  ],
+  "logos": [
+    {
+      "name": "favicon.svg",
+      "sha256": "f56affb7313874920d92fb79d2aeceb78abd5c06f0b7f83ec690f5c21c4d08d4",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon_dark.png",
+      "sha256": "050971e33335dc58dc5e0210c933d9bfd9fc63caf537c0f58ad256ee7066a986",
+      "mime": "image/png"
+    },
+    {
+      "name": "icon_dark.svg",
+      "sha256": "948bfae1f98d6dae6f13b79e0e79acb8777ec4caa26afcb5b11898200560f512",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon_green.png",
+      "sha256": "2e26802e2a4edb7033266b12e7ff7ce571421dfc1c03ade46bc334ce5c03fe9d",
+      "mime": "image/png"
+    },
+    {
+      "name": "icon_green.svg",
+      "sha256": "4608977132b184cf3942e75db357eefd44b7c27e1aa8f3e7aa04ee4e79d4ede2",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon_paper.png",
+      "sha256": "4f346210366bf35f4d07c5ec5a8ae4d6ce456a7a5a5b7d85e00c1fb4b56fd01b",
+      "mime": "image/png"
+    },
+    {
+      "name": "icon_paper.svg",
+      "sha256": "07e8630c2f45e369466ce414a40e0a92117290b8de57fcf65d6be8b3217d8cdf",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo.png",
+      "sha256": "82429a9ca6f3102376e62538cdb9498c092cc7b6f9e0476d8ea24eadaf5a51ab",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo.svg",
+      "sha256": "3f72472a305cca6958cc1280ecf11b36f030542e973c87f71aa25c60b6fd0eb2",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo_mono.svg",
+      "sha256": "98b0f0acb9542c6c65428fb45c0148c63af112eef514a6205fbdaeb8ded7831f",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo_tagline.svg",
+      "sha256": "b9e9a18775b858957bc9d7a77ffba4f5955e4a13ea1c0fee6e2653ad653623d6",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo_white.png",
+      "sha256": "4418a33fe3698b562d11a8b2fb5a1e01afcbe2be8e63c6fe03be8f98fb2ec5db",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo_white.svg",
+      "sha256": "07456e4881e2fdfd410d7aacd1b3d09eb53b891555f57f949a7b0f4c133e50be",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "symbol.svg",
+      "sha256": "83a42f474e44d9c0242ec8e33b4ef9079b550e62b6a008e4a2887a1b5a9c8313",
+      "mime": "image/svg+xml"
+    }
+  ],
+  "images": [
+    {
+      "name": "01_brutalist_concrete.brand.jpg",
+      "sha256": "5c77ac6f39d03e28fad2e8b38bc360fb7fdea9dc86208d550d815f22540efc8e",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "01_brutalist_concrete.jpg",
+      "sha256": "16a9c677d589a6512a7c051af715d1e04e7ad87c8d434a7b08e19ce4d7166c6f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "02_brutalist_geometric.brand.jpg",
+      "sha256": "a2350f31e490df957e9c9203ae04b925b010270ccef6fd133ebf239d8d201032",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "02_brutalist_geometric.hero-16x9.jpg",
+      "sha256": "14498a244602e79cf89ec45bb7601b18fce1392c155702e716a4c76f9911cc98",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "02_brutalist_geometric.hero-2x1.jpg",
+      "sha256": "f8d2d988958c9cb5022f7766df8f7d11048dd8a04c8ed18ffc7bdc29a77d3d60",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "02_brutalist_geometric.hero.jpg",
+      "sha256": "f6a33f908aa03b50ce43af1284c7930167c046eefd59df16f5910069b16dff29",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "02_brutalist_geometric.jpg",
+      "sha256": "8966020407a94362036e4e808b0c70de9eefc29b4bcb92190205338e38a01b11",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "04_concrete_curves.brand.jpg",
+      "sha256": "7902db9348a7000a641cea6d62e11ea91b1e684bfa78c5d458aa402b96bc4a51",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "04_concrete_curves.jpg",
+      "sha256": "3f9d0dbaade24c1fe8223495e993023f309364b1dd3e859e3b488cdc5a3b130a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "07_geometric_bw.brand.jpg",
+      "sha256": "177aaa4ce1b212dd334fd3aafdf2a8c3da894a85f7637a253e0edff60609e103",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "07_geometric_bw.jpg",
+      "sha256": "8df51da242c8c03010756611392b064a96db4a85391fac14108ce12cdbbee94a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "08_arch_lines_shadow.brand.jpg",
+      "sha256": "1553fa4c848ca121039a5c128ac26a03910e0b61e0eceb204f2330c755e90f08",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "08_arch_lines_shadow.jpg",
+      "sha256": "44a95162f0d68dcae1fdcd3a5fb9249fca0167f0aefe0588c289c6d1e5c89fe4",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "11_corten_vertical_slats.brand.jpg",
+      "sha256": "6e1a963cbfc02f3bfa943157f992bc7cf2dd1c5a1c5fd68742f34ff7a05012d7",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "11_corten_vertical_slats.jpg",
+      "sha256": "a193af996b3760b76da689748d889af33939635a1e85d95806d407abd2b6791a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "12_corten_pyramid.brand.jpg",
+      "sha256": "51b2b30bf9a24ddb773e69ae5193176033b44b71b50d5ac20c8a18111a8eaf5c",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "12_corten_pyramid.jpg",
+      "sha256": "98661ed121402c6c85e9d78d0cdfabb6d620962fac400f5e9be4e64f0104b594",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "13_corten_tower.brand.jpg",
+      "sha256": "d59c44b9a2bb9c2601e5b2d174bb522c6fdd8d9ca526ed8301c54294acdc97e7",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "13_corten_tower.jpg",
+      "sha256": "f861baf2d14230be830766d85f272b74c93d872dca8d25f72a2d9a5b71ee3cef",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "14_corten_tall_orange.brand.jpg",
+      "sha256": "b1997f55fe618d66a8816426936a232d1adb020085cdd7d31952379193706018",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "14_corten_tall_orange.jpg",
+      "sha256": "d5d4f0d8fe498a8ac303ae50865241cf9c6d1aec5b16c742c72eba4c38ec25ee",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "15_brown_concrete_lowangle.brand.jpg",
+      "sha256": "5d8a265b6460c02bd9e3b13d33ab478abae0b1f65a79142ab8784d8ba75ce8c6",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "15_brown_concrete_lowangle.jpg",
+      "sha256": "42176e26b3f94604bfc6d98bbc01f653597ac359e80bce06bccf3d85b304813e",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "16_rusted_metal_rivets.brand.jpg",
+      "sha256": "659d9da296b8e72daf0bece566ab0b34911e3c384fc1fc5ce80ed492ad7abe7f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "16_rusted_metal_rivets.hero-16x9.jpg",
+      "sha256": "2e5afe4dc9965a134ab6324b71bbb474cc565e5b2ce13a717035abf14028a98a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "16_rusted_metal_rivets.hero-2x1.jpg",
+      "sha256": "232b2ca50a562f37a289c481d60569d407a37cd0a0748f204a6489a6c1407665",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "16_rusted_metal_rivets.hero.jpg",
+      "sha256": "539fc58d17117daac4ac63e47c02eade6249b359368b2ae5b4a55eb7eeb1d365",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "16_rusted_metal_rivets.jpg",
+      "sha256": "c97a6bbcfe2a972dc7cb24ba2a1eecb28f1a2e93eeccb141f5554056103204fe",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "17_industrial_staircase.brand.jpg",
+      "sha256": "2ec706ad0f7d20f291bc9b7696fd8ab7230637d961a98ac7744ae8920ce16c33",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "17_industrial_staircase.jpg",
+      "sha256": "5882fcb88cdc204a0e3cc7d661e22d4c17a51d215d56889d3a163e079d4801f4",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "18_brown_building_monumental.brand.jpg",
+      "sha256": "0b680d42d76587b02682c6a776579716d43936467ad2aa13cf040e92080b32cd",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "18_brown_building_monumental.hero-16x9.jpg",
+      "sha256": "9fbe76ed2d109a7fca91ed92d87a40ae5c619ed81e5cd02f19e118efb06b9689",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "18_brown_building_monumental.hero-2x1.jpg",
+      "sha256": "c49404bdd92645815569d4548e47ae827dbdbff3aa065605206daf75fb48a37a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "18_brown_building_monumental.hero.jpg",
+      "sha256": "0a0b9570099085aa2cdb8ead0302d593a029d066e1690b59f52bf0ad36fd77c9",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "18_brown_building_monumental.jpg",
+      "sha256": "90ec8f8324ddcb1916096d6d9a6ce2c34de5e1f3b580882f8ea3756a02594a8c",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "19_diamond_facade.brand.jpg",
+      "sha256": "e7abbd49599c0af1ea87d23ea2caa6f0573be5188e76d23533125d598c356ff3",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "19_diamond_facade.jpg",
+      "sha256": "44feae7574b06b41d4fb3a9965780de945dad00e88745b541eadc644da5f6e59",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "20_geometric_window_grid.brand.jpg",
+      "sha256": "c1da8859cd8c6800462483ac1955d5bd3f47b142cd333435cee9754ecd8c1f83",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "20_geometric_window_grid.jpg",
+      "sha256": "1f70754766efe878dbfcdd27692e7386b08a05189879acfd609271a1197c188c",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "21_brutalist_bw_curves.brand.jpg",
+      "sha256": "76da048a15c0d5a383d56b1ecef7a6a6d06efdcb8dda0ad78dd9be4e2ef99d54",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "21_brutalist_bw_curves.jpg",
+      "sha256": "1aaae0519d4cf49749bd42b9a6cf48195b9e7fabb8502449c829e7b671ba3628",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "22_concrete_curves_sky.brand.jpg",
+      "sha256": "280971524eafd6614c63cd0124f1f26cb12195212f37def85ec06c030938e4ff",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "22_concrete_curves_sky.hero-16x9.jpg",
+      "sha256": "4864344ba2bb3130d1ba63d1e2d8805299450ace5e7da9523a3f62ea3c6df725",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "22_concrete_curves_sky.hero-2x1.jpg",
+      "sha256": "5f6b83ced4752c6fa2994d9ce8ea5e9e5405b5a9bf376f3e6f18dd9e0c08694a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "22_concrete_curves_sky.hero.jpg",
+      "sha256": "62fa17da30904471815ab8987c315fd76984289b66177fcef5bc9bd7dd66d6fe",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "22_concrete_curves_sky.jpg",
+      "sha256": "5f446b8d007cd00f0c606916faa4d046d3b3307488d7022931e695e30d8fc34e",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "23_vertical_fins.brand.jpg",
+      "sha256": "1f21377001bc575a68d3006a3733f98ff674230c1459ca9cade993021b4c320d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "23_vertical_fins.jpg",
+      "sha256": "57e5cbdd8e1a009833b8c0611c1a156e4cdf25378570a92c6f640780dd7539d6",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "24_shadow_lines_grayscale.brand.jpg",
+      "sha256": "c561a69171ffc65da8a84e2e7b37d8cb26c8eba09b47ed453f6c3f3a6ef44baa",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "24_shadow_lines_grayscale.jpg",
+      "sha256": "2a0b9868cc4c6b5b5609c5cef11a08d2b2f31eeb386ec21f96faf0536ef55111",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "25_tall_building_shadow.brand.jpg",
+      "sha256": "e3e900ef2b5339c3e4d0d34b606471679db5cbab8bf2a7463ab167d711d9a6ac",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "25_tall_building_shadow.hero-16x9.jpg",
+      "sha256": "a82f1933d4e4da3f2cfd780a62b7bbebcc751572437d73e7ebcbff31aec56826",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "25_tall_building_shadow.hero-2x1.jpg",
+      "sha256": "0550bbc3d0d9a7f98dc8ac2af3a38753519d9df653e7cc476ff840ce0ab36cc1",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "25_tall_building_shadow.hero.jpg",
+      "sha256": "30f1196b306a0f2793d93ced901b8822b0f40be61e89ead4e148b8ad72efe759",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "25_tall_building_shadow.jpg",
+      "sha256": "521dd757c80b9d3a5830fb02e61769e6f7b0e9bd594df7ae6694403a6f7da8e9",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "26_white_concrete_daylight.brand.jpg",
+      "sha256": "740ed71e7b1be859501cf7b59fb1ab345ff9b6d5a6b4139f04c5d8f2495cc000",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "26_white_concrete_daylight.jpg",
+      "sha256": "59db635df067af3f961ecbcb61b597e24ee286998ac06583d7cf61f12f618334",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "27_brown_concrete_warm.brand.jpg",
+      "sha256": "bc12479a4bf99df6975833497094bab4a4b135c3f44f0d943ca9d2ae49f70618",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "27_brown_concrete_warm.jpg",
+      "sha256": "a69d7708f46649c77f9fe010bd0b91598b24a4a321bb3525e0e32f70e1a8ab7e",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "28_metal_poles_parallel.brand.jpg",
+      "sha256": "b968ad91d29c33f1d842ae44c005ab02e340597d12335c6ef9591338039a0d9a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "28_metal_poles_parallel.jpg",
+      "sha256": "dee61f1c65b4bb300381d8974ed6eef8c4be3b2c8572c547d42c0843dc20446d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "29_dark_wood_floor.brand.jpg",
+      "sha256": "937b5b53458a17e35806d4520dc70d969e5a13c8ad8333bac8fb9b80b9a123ca",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "29_dark_wood_floor.jpg",
+      "sha256": "6bafb993f9ad5831a745596c62e8359c5087c0a6566cb3443d7c59834d6dbbab",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "30_weathered_barn_door.brand.jpg",
+      "sha256": "9be93baf1210252543b9c72ff6ec85023048d130c86ee8d69c4ada77b9521954",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "30_weathered_barn_door.jpg",
+      "sha256": "9b226bd3fc0ff45c343b75f9465b843796eb8fccc9f5950ec591e40fcdc6fa59",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "31_dark_wood_grain.brand.jpg",
+      "sha256": "409c20b233531ebbc159effc9f2c9947fe6abb74e6de090759a3eadd5ae78237",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "31_dark_wood_grain.jpg",
+      "sha256": "724b36573a48d6ad0f2dd44e8be44f1d0be0578e08273620632d1da6886d7d20",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "32_amber_wood.brand.jpg",
+      "sha256": "6de0cdcf28d8d9352af7aa8889fc9e762f218e631af438dcf504e2e08233249d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "32_amber_wood.jpg",
+      "sha256": "a1c939842a1f01be9aa9150124356b4d565bf08807e75c5e61e196cad6b97043",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "33_black_marble.brand.jpg",
+      "sha256": "e8599a0da6bca3a89a2bb2b3f615037bc3229ff2bcd5b54dfc70e13b068d11eb",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "33_black_marble.jpg",
+      "sha256": "f33fd1c24d7eb98aa7f2261463722e6b631217797ba0c1ea6d2d55b2f986aa12",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "34_dark_geometry_angular.brand.jpg",
+      "sha256": "e41db85a22e93f864c880202ca5a06ab09c309c876e7b6e37e8491d3ab3dfab6",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "34_dark_geometry_angular.jpg",
+      "sha256": "4cf3421abc7b124ca99ee1119385f1c83b9eeccdc5b7800f6a619e91f94721f6",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "35_illuminated_windows_night.brand.jpg",
+      "sha256": "c3692bdd44477c7e669d9beec9dea6bb836c11babb8650b12a50233e1f5ad4f9",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "35_illuminated_windows_night.hero-16x9.jpg",
+      "sha256": "96b29e92c60cb00ba2a93934dc64d25f0f6a8f7cb6c40ea2754cbfeebb106776",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "35_illuminated_windows_night.hero-2x1.jpg",
+      "sha256": "1d46ce370717754a1e86f5826456ccea25a35123d575ad5b3f5db9c3cd520ae0",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "35_illuminated_windows_night.hero.jpg",
+      "sha256": "ef5a32d50b0902d5e1bc98378db759ebe7aef258660ddbfac6b3aba471eb03ab",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "35_illuminated_windows_night.jpg",
+      "sha256": "a0382cc8e336342569d248b28dedff56cec38c1afe9960911e886e15463968f6",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "36_stairwell_glass.brand.jpg",
+      "sha256": "8c863dcb74dfc98bdac96bd37b066ae42ba20457673ce7611aa0a4f55a37debe",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "36_stairwell_glass.jpg",
+      "sha256": "83c1c611b19103d37170339eb085f562d90edf5d28d159a7c00c757255ec3ab5",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "37_glass_facade_reflections.brand.jpg",
+      "sha256": "35e23ba3ad364a5d0c2b35e5b085286f3dcfd42b6294d8edca671dbe662a587f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "37_glass_facade_reflections.hero-16x9.jpg",
+      "sha256": "662ff9155e973f0c7bf81dbfcf4adee90b8d4516118520334e50782f678b1765",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "37_glass_facade_reflections.hero-2x1.jpg",
+      "sha256": "1da7527cb079e6f8b33c3ab04e2e050fda2735bf3db3955d94231ead5369535f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "37_glass_facade_reflections.hero.jpg",
+      "sha256": "e45d62b8618b5b88708cf7aa3e574bcfe1b3b72ec0d209db2e4fe92e10d680d0",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "37_glass_facade_reflections.jpg",
+      "sha256": "60c5dd45b328b721ee4baff5b44f890553652517752488e10e03c42de8fd3655",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "38_dark_building_silhouette.brand.jpg",
+      "sha256": "9419951fde1f3111ea39add696c6878c4a2d22ea5a24ccaba722f334081aaec8",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "38_dark_building_silhouette.hero-16x9.jpg",
+      "sha256": "3a2f4eff6eb9649e72df008105994339355f1a907f77474c283fbd13362da911",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "38_dark_building_silhouette.hero-2x1.jpg",
+      "sha256": "b8dab20cc4eb64bdbd141d11e059ace3bca263772a95d43b0864d9879f8ef231",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "38_dark_building_silhouette.hero.jpg",
+      "sha256": "c7593b40ec7a69ab0364d981650edb6fa1aaac8f603773509de985ad809065e0",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "38_dark_building_silhouette.jpg",
+      "sha256": "63313ddad97d98c9c3a8c053624f4b5b7823b1f3c5d96ba9a76e9d4d83d9153c",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "39_industrial_pipes_bw.brand.jpg",
+      "sha256": "0096fccb5f6d4c40ce90bf6b116f8b66113d17e56b949c75fe990e038c960a63",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "39_industrial_pipes_bw.jpg",
+      "sha256": "e81b455ac85d545c458642e1d91ca08076e61799392a92c91ea27720adc1366a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "40_urban_framing_post.brand.jpg",
+      "sha256": "99c99e818d72543574fb64378a7a97a819c22e5195290b07fd418f375f6499b4",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "40_urban_framing_post.jpg",
+      "sha256": "f6d93803b2da31c3608b7fe78c5d73d282c923985e4b5a109c5ba1109851bfec",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "41_aerial_train_yard.brand.jpg",
+      "sha256": "48e643c677692f6abeb359571cf012bc2252bf91fe4226d54159d1e207e0237d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "41_aerial_train_yard.hero-16x9.jpg",
+      "sha256": "6522f53848cd12020db7adf30ee853934aadbcf21b535bbd0db1e627c46cf9a5",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "41_aerial_train_yard.hero-2x1.jpg",
+      "sha256": "15b66dedea5b494496854e8f41120a7eb8eb494bb4abfe942f91a79b1e3d59d8",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "41_aerial_train_yard.hero.jpg",
+      "sha256": "7af3c4b108f30ac39e2633d0c5704e179875733d2a2076ffd368d7943f3e7712",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "41_aerial_train_yard.jpg",
+      "sha256": "9dc7bb88fa9ecd931e9e597ff2602574f8984e235de3bd27af97958935355574",
+      "mime": "image/jpeg"
+    }
+  ]
+}
