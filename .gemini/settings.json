@@ -27,6 +27,13 @@
         "mcp-remote",
         "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
       ]
+    },
+    "asset-broker": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"
+      ]
     }
   }
 }
