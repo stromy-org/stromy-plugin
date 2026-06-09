@@ -1,0 +1,26 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+# Codex project configuration
+
+# BEGIN:RENDERED-MCP — managed by scripts/render-mcp.py
+# Rendered from .agents/mcp.json by scripts/render-mcp.py — DO NOT EDIT BY HAND. Edit .agents/mcp.json and re-run.
+[mcp_servers.deliverable-canvas]
+command = "npx"
+args = ["mcp-remote", "https://deliverable-canvas-mcp.salmonglacier-1282ede1.northeurope.azurecontainerapps.io/mcp"]
+
+[mcp_servers.nl-gov-data]
+command = "npx"
+args = ["mcp-remote", "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"]
+
+[mcp_servers.stromy-format]
+command = "npx"
+args = ["mcp-remote", "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"]
+
+[mcp_servers.asset-broker]
+command = "npx"
+args = ["mcp-remote", "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"]
+
+[mcp_servers.ms365]
+command = "npx"
+args = ["-y", "@softeria/ms-365-mcp-server", "--org-mode", "--enabled-tools", "^(create-upload-session|create-drive-item-share-link|get-current-user|list-drives|get-sharepoint-site)$"]
+# END:RENDERED-MCP
