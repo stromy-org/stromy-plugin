@@ -5,6 +5,8 @@ author_name: William Masquelier
 client_name: Stromy
 client_slug: stromy
 description: Claude Code plugin for Stromy branded deliverables
+enable_asset_broker: true
+enable_stromy_format: true
 github_org: stromy-org
 include_mcp: false
 include_node: true
