@@ -36,7 +36,7 @@
       ],
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
-      "_notes": "Authenticated client-asset broker — propose reviewed website/brand edits as GitHub PRs (asset-editor skill, fetched via fs_read). Per-user OAuth via Microsoft Entra ID. Stromy self-client only until per-caller repo scoping (ORG-072) lands — the App installation is scoped to Stromy's repos."
+      "_notes": "Authenticated client-asset broker — propose reviewed website/brand edits as GitHub PRs (asset-editor skill, fetched via fs_read). Per-user OAuth via Microsoft Entra ID. This is the operator master surface: with the Entra `operator` role the caller is unrestricted and can edit any client-data folder or website for testing — reach is bounded only by where the stromy-asset-broker GitHub App is installed (client-data + every *-website repo). Every non-operator caller stays scoped to their own client.<slug>(s)."
     },
     "ms365": {
       "transport": "stdio",
