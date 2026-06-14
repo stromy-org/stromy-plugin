@@ -454,5 +454,181 @@
     "externalFields": ["sender.name", "sender.title", "sender.email", "sender.phone", "sender.mobile", "sender.address"],
     "fallback": "placeholders",
     "placeholderFormat": "{{fieldName}}"
+  },
+  "identity": {
+    "archetype": {
+      "primary": "sage",
+      "secondary": "magician",
+      "status": "approved",
+      "rationale": "Primary Sage: knowledge authority, editorial restraint, evidence-first — sourced from guidelines.md §1 archetype decision (user-approved 2026-04-07) and confirmed by website.archetype='sage'. Secondary Magician: transformative complex-to-simple edge, visionary but grounded — also sourced from guidelines.md §1 and build-log Phase 0 decision."
+    },
+    "essence": "STROMY transforms complex workflows into orchestrated intelligence.",
+    "positioning": "For corporates and consulting agencies drowning in unstructured processes, STROMY is the AI orchestration partner that designs and builds analytical workflows — from media research to crisis management to strategy audits — delivering the structured, trust-grade outputs their stakeholders expect. Unlike generic AI consultancies, Stromy brings the maestro's precision: every workflow is composed, every output is publication-ready.",
+    "personalityTraits": [
+      {
+        "trait": "authoritative",
+        "description": "Speaks with earned confidence, never arrogance"
+      },
+      {
+        "trait": "precise",
+        "description": "Data-led, evidence-first, structured outputs"
+      },
+      {
+        "trait": "transformative",
+        "description": "Takes the complex and makes it actionable"
+      },
+      {
+        "trait": "restrained",
+        "description": "Lets the work speak; no flash without substance"
+      },
+      {
+        "trait": "grounded",
+        "description": "Trusted partner energy, not disruptor posturing"
+      }
+    ],
+    "personalityAxes": {
+      "formal_casual": {
+        "label": "Formal ↔ Casual",
+        "value": 0.8,
+        "note": "4/5 toward formal — guidelines.md personality table: Formal ◆◆◆◆○ Casual"
+      },
+      "analytical_intuitive": {
+        "label": "Analytical ↔ Intuitive",
+        "value": 0.8,
+        "note": "4/5 toward analytical — guidelines.md personality table: Analytical ◆◆◆◆○ Intuitive"
+      },
+      "traditional_innovative": {
+        "label": "Traditional ↔ Innovative",
+        "value": 0.6,
+        "note": "3/5 toward innovative — guidelines.md personality table: Traditional ○○◆◆◆ Innovative"
+      },
+      "reserved_expressive": {
+        "label": "Reserved ↔ Expressive",
+        "value": 0.6,
+        "note": "3/5 toward reserved (value=0 is expressive, 1 is reserved) — guidelines.md personality table: Reserved ◆◆◆○○ Expressive"
+      },
+      "established_rebellious": {
+        "label": "Established ↔ Rebellious",
+        "value": 0.6,
+        "note": "3/5 toward established (value=0 is rebellious, 1 is established) — guidelines.md personality table: Established ◆◆◆○○ Rebellious"
+      }
+    }
+  },
+  "expression": {
+    "source": "co_created",
+    "confidence": "approved",
+    "status": "approved",
+    "principles": [
+      "Substance before style — the work speaks; decoration must earn its place.",
+      "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
+      "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
+      "Signal economy — oxide is a signal color, never a flood; motifs are assigned by role, not taste.",
+      "Infrastructure as image world — urban, architectural, raw-material photography; no stock offices, no AI futurism."
+    ],
+    "visualAxes": {
+      "density": {
+        "value": "spacious",
+        "note": "website.layout.whitespaceStrategy='measured', sectionSpacing='generous'; guidelines motif rules avoid crowding"
+      },
+      "contrast": {
+        "value": "high",
+        "note": "website.colorApplication.darkSections=true; 60/30/10 color rule (obsidian/forest/oxide); imagery treatment 'desaturated, high-contrast' (guidelines §6); shadow tokens are deliberately minimal (editorial), contrast carried by color not depth"
+      },
+      "symmetry": {
+        "value": "controlled-asymmetry",
+        "note": "website.layout.symmetry='balanced' with gridSystem='structured-2col'; Tempo Ledger motif uses offset upper/lower rules — balanced but intentionally off-register"
+      },
+      "geometry": {
+        "value": "rectilinear",
+        "note": "website.texture.cornerRadius='sharp'; logo construction 'all angles grid-aligned (45° or 90°)' (guidelines §2); motif strokes all horizontal/vertical with round linecaps only at stroke terminals"
+      },
+      "typeExpression": {
+        "value": "editorial",
+        "note": "website.aesthetic='editorial-systems'; website.typography.headingStyle='display-serif'; Fraunces 'should feel authored and calm, not ornamental' (guidelines §4); display scale tight leading (1.05–1.12)"
+      },
+      "imageTreatment": {
+        "value": "documentary-muted",
+        "note": "guidelines §6: 'desaturated, high-contrast, editorial'; 'tight crops over scenic views'; 'subtle forest-toned overlays'; image overlay opacity=0.65 (charter.json images.overlay)"
+      },
+      "motifProminence": {
+        "value": "structural",
+        "note": "Four-part motif family is integral to layouts (Tempo Ledger for headers, Data Rail for evidence panels, Switch Track for workflows, Echo Band for transitions) — guidelines §5 and §8; motif tokens in tokens.css --motif-* vars"
+      },
+      "colorRhythm": {
+        "value": "dark-light-indexed",
+        "note": "website.colorApplication.darkSections=true, darkSectionFrequency=3; primary surface alternates obsidian-forest dark with warm-paper light; 60/30/10 rule (guidelines §3)"
+      },
+      "ornament": {
+        "value": "restrained",
+        "note": "guidelines §5 motif rules: 'do not invent additional motif styles casually'; personality trait 'restrained: lets the work speak; no flash without substance'; oxide used as signal accent, never decorative flood"
+      }
+    },
+    "signatureElements": [
+      "Tempo Ledger — primary signature motif (upper paper rule + offset oxide rule + registration box); anchors all major section headers and report covers",
+      "Data Rail — analytical annotation motif (vertical rail + hierarchical checkpoint nodes); marks evidence trails, scorecards, and sidebars",
+      "Switch Track — orchestration motif (dual tracks with controlled divergence + double-ring junction node); used in workflow and process storytelling",
+      "Echo Band — rhythm motif (three parallel offset bands at 35% ghost); chapter transitions and section dividers",
+      "S-Curve symbol — standalone icon mark encoding complexity→clarity transformation; used where name is already established",
+      "Orchestration Node Wordmark — STROMY set in Fraunces with compact orchestration node; primary identity mark",
+      "Oxide signal dot — small filled circle in #B96034 used as a terminal node across all motifs; encodes the decision/transformation point"
+    ],
+    "antiPatterns": [
+      "Do not use pure white (#FFFFFF) or pure black (#000000) — use Warm Paper (#ECE6DA) and Obsidian Forest (#0F1310) respectively",
+      "Do not flood oxide (#B96034) as a background or dominant color — it is a signal accent (10% of color balance)",
+      "Do not add gradient fills or gradient directions — website.colorApplication.gradientDirection='none'",
+      "Do not use rounded corners on layout containers — cornerRadius='sharp'",
+      "Do not invent new motif styles outside the four-part family",
+      "Do not mix the wordmark and S-Curve symbol in the same immediate composition",
+      "Do not use playful or organic geometry — all angles grid-aligned at 45° or 90°",
+      "Do not use startup hype language ('revolutionary', 'game-changing', 'disruptive') — voice-extensions.json banned phrases",
+      "Do not use drop shadows for decorative depth — shadow tokens exist for elevation only; shadowDepth='none' at surface level",
+      "Do not place imagery without brand-tint overlay (opacity 0.65) when used as section background"
+    ],
+    "requiredMotifs": [
+      "Stroke weight 2.2px on all motif lines (--motif-line-weight: 2.2px) — never below 1.8px",
+      "Round linecaps and linejoins on all motif strokes",
+      "Oxide node treatment (outer ring + inner oxide fill, diameter = 2× stroke) for all primary nodes",
+      "Warm Paper as default light surface — not pure white",
+      "Fraunces for all display/headline type; Plus Jakarta Sans for body; IBM Plex Mono for metadata and data labels",
+      "Logo clear space = cap height of 'S' in wordmark on all sides"
+    ],
+    "evidence": [
+      {
+        "path": "guidelines.md",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Version 3.0 · April 2026 — primary evidence source for archetype, essence, positioning, personality, voice, logo system, color system, typography, motif family, imagery direction, brand applications"
+      },
+      {
+        "path": "website",
+        "kind": "website",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "charter.json 'website' block — archetype='sage', aesthetic='editorial-systems', layout/texture/typography/colorApplication fields provide machine-readable design axes; darkSections, symmetry='balanced', cornerRadius='sharp', whitespaceStrategy='measured'"
+      },
+      {
+        "path": "tokens.css",
+        "kind": "design_tokens",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Full CSS custom property system — confirms motif-line-weight=2.2px, color scale (obsidian/green/oxide/paper), type stack (Fraunces/Plus Jakarta Sans/IBM Plex Mono), shadow tokens (subtle, editorial), spacing scale"
+      },
+      {
+        "path": "voice/voice-profile.md",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "L2 voice profile — confirms restrained, evidence-first, Economist-register stance; hype bans mirror guidelines.md"
+      }
+    ]
   }
 }
