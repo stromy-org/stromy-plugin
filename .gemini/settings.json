@@ -38,7 +38,7 @@
         "--telemetry-enabled=false"
       ],
       "env": {
-        "APIFY_TOKEN": "${APIFY_TOKEN}"
+        "APIFY_TOKEN": "${APIFY_API_TOKEN}"
       }
     }
   }
