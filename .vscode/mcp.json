@@ -12,6 +12,19 @@
     "asset-broker": {
       "type": "http",
       "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"
+    },
+    "apify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server@latest",
+        "--tools",
+        "actors,docs,apify/rag-web-browser",
+        "--telemetry-enabled=false"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}"
+      }
     }
   }
 }

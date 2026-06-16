@@ -15,4 +15,8 @@ args = ["mcp-remote", "https://stromy-format-mcp.whitetree-762cff59.westeurope.a
 [mcp_servers.asset-broker]
 command = "npx"
 args = ["mcp-remote", "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"]
+
+[mcp_servers.apify]
+command = "npx"
+args = ["-y", "@apify/actors-mcp-server@latest", "--tools", "actors,docs,apify/rag-web-browser", "--telemetry-enabled=false"]
 # END:RENDERED-MCP
