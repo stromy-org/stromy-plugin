@@ -49,14 +49,14 @@
         "--telemetry-enabled=false"
       ],
       "env": {
-        "APIFY_TOKEN": "${APIFY_TOKEN}"
+        "APIFY_TOKEN": "${APIFY_API_TOKEN}"
       },
       "_consumed_by": [
         "claude",
         "codex",
         "gemini"
       ],
-      "_notes": "Official Apify MCP (BYOK). The client's own APIFY_TOKEN authorizes actor runs billed to their Apify account; it goes client → Apify directly through the local MCP subprocess and never transits Stromy infra. Drives the research-apify skill (web search/crawl/extract → standard envelope → format-* handoff). Hosted https://mcp.apify.com is valid for OAuth, but hosted bearer mode needs renderer support for safe prefixed Authorization headers before it can be the BYOK default."
+      "_notes": "Official Apify MCP (BYOK). The subprocess env var the server reads is APIFY_TOKEN; its value is sourced from the operator's existing ${APIFY_API_TOKEN} (the org's one Apify token, also used by lead-scout) so no second secret is maintained. The token authorizes actor runs billed to the client's Apify account and goes client → Apify directly through the local subprocess, never transiting Stromy infra. Drives the research-apify skill (web search/crawl/extract → standard envelope → format-* handoff). CODEX CAVEAT: render-mcp.py strips placeholder env refs (dollar-brace form) for Codex (it would pass them literally), so under Codex the subprocess inherits the shell env — APIFY_TOKEN (the name the server reads) must be exported there; the APIFY_API_TOKEN mapping only reaches Claude/Gemini/VS Code. Hosted https://mcp.apify.com is valid for OAuth, but hosted bearer mode needs renderer support for safe prefixed Authorization headers before it can be the BYOK default."
     }
   }
 }
