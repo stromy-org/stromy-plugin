@@ -22,7 +22,7 @@ def _bare(spec: str) -> str:
 declared = {"npm": set(), "pypi": set()}
 declarations = {}  # name -> list of (kind, skill)
 
-# Plugins use skills/ at repo root; Cowork-style nurseries use .claude/skills/. Check both.
+# Plugins use skills/ at repo root; Workspace Studio-style nurseries use .claude/skills/. Check both.
 skill_roots = [p for p in (pathlib.Path("skills"), pathlib.Path(".claude/skills")) if p.exists()]
 total_manifests = 0
 for skills_root in skill_roots:
