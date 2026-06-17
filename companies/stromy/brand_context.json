@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0",
+  "generatedFrom": {
+    "charterSha": "b23023983feb52d8cc9e21ab034d8ae1e69c86d1486efc1f8bdecaef8eb5d4f9",
+    "compiler": "1.0"
+  },
+  "tier": "producer",
+  "colors": {
+    "primary": "#1D342B",
+    "secondary": "#0F1310",
+    "accent": "#B96034",
+    "background": "#ECE6DA",
+    "backgroundAlt": "#F3EDE2",
+    "text": "#171611",
+    "textLight": "#6D665C",
+    "success": "#47685B",
+    "warning": "#B96034",
+    "error": "#8E3F2E"
+  },
+  "typography": {
+    "heading": {
+      "family": "Fraunces",
+      "weight": "500",
+      "fallback": "Georgia, 'Times New Roman', serif"
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "weight": "normal",
+      "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    },
+    "mono": {
+      "family": "IBM Plex Mono",
+      "weight": "normal",
+      "fallback": "'SF Mono', 'Fira Code', monospace"
+    }
+  },
+  "tokens_css": "/* ============================================================\n   STROMY Design Tokens\n   Intelligence, Orchestrated.\n   \n   Usage: Import this file at the root of any project.\n   All values are CSS custom properties for easy theming.\n   ============================================================ */\n\n:root {\n  /* ── Primary Palette ─────────────────────────────────── */\n  --stromy-obsidian:       #0F1310;\n  --stromy-green:          #1D342B;\n  --stromy-signal-orange:  #B96034;\n\n  /* ── Green Scale ─────────────────────────────────────── */\n  --stromy-green-900:      #152019;  /* Black forest */\n  --stromy-green-700:      #1D342B;  /* Deep forest */\n  --stromy-green-500:      #47685B;  /* Mineral green */\n  --stromy-green-300:      #7F9B90;  /* Oxidized sage */\n  --stromy-green-100:      #C9D6CF;  /* Soft mineral */\n  --stromy-green-50:       #E7EEE8;  /* Pale mist */\n\n  /* ── Orange Scale ────────────────────────────────────── */\n  --stromy-orange-900:     #6A341D;\n  --stromy-orange-700:     #924B29;\n  --stromy-orange-500:     #B96034;  /* Oxide signal */\n  --stromy-orange-300:     #D68A60;\n  --stromy-orange-100:     #E9C6AF;\n  --stromy-orange-50:      #F4E5D9;\n\n  /* ── Neutral Scale ───────────────────────────────────── */\n  --stromy-neutral-950:    #0F1310;  /* Obsidian forest */\n  --stromy-neutral-900:    #171611;\n  --stromy-neutral-800:    #2A2924;  /* Graphite bark */\n  --stromy-neutral-700:    #464138;\n  --stromy-neutral-600:    #6D665C;  /* Stone */\n  --stromy-neutral-500:    #8C857A;  /* Pewter */\n  --stromy-neutral-400:    #AEA495;\n  --stromy-neutral-300:    #CDC2B3;  /* Ash */\n  --stromy-neutral-200:    #DDD4C7;\n  --stromy-neutral-100:    #E8E0D4;\n  --stromy-neutral-50:     #ECE6DA;  /* Warm paper */\n  --stromy-white:          #F3EDE2;\n\n  /* ── Semantic Colors ─────────────────────────────────── */\n  --stromy-success:        #47685B;\n  --stromy-success-light:  #E7EEE8;\n  --stromy-warning:        #B96034;\n  --stromy-warning-light:  #F4E5D9;\n  --stromy-error:          #8E3F2E;\n  --stromy-error-light:    #F2E2DC;\n  --stromy-info:           #2D4B3E;\n  --stromy-info-light:     #E4EBE7;\n\n  /* ── Typography ──────────────────────────────────────── */\n  --font-display:          'Fraunces', Georgia, 'Times New Roman', serif;\n  --font-body:             'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n  --font-mono:             'IBM Plex Mono', 'SF Mono', 'Fira Code', monospace;\n\n  /* Display sizes */\n  --text-display-xl:       3rem;      /* 48px — hero, cover */\n  --text-display-lg:       2.25rem;   /* 36px — report title */\n  --text-display-md:       1.5rem;    /* 24px — section title */\n  --text-display-sm:       1.25rem;   /* 20px — card title */\n\n  /* Body sizes */\n  --text-heading:          1.125rem;  /* 18px */\n  --text-body:             0.9375rem; /* 15px */\n  --text-body-sm:          0.8125rem; /* 13px */\n  --text-caption:          0.75rem;   /* 12px */\n  --text-overline:         0.6875rem; /* 11px */\n  --text-micro:            0.625rem;  /* 10px */\n\n  /* Line heights */\n  --leading-tight:         1.15;\n  --leading-snug:          1.3;\n  --leading-normal:        1.5;\n  --leading-relaxed:       1.65;\n  --leading-loose:         1.8;\n\n  /* Letter spacing */\n  --tracking-tight:        -0.02em;\n  --tracking-snug:         -0.01em;\n  --tracking-normal:       0;\n  --tracking-wide:         0.03em;\n  --tracking-wider:        0.06em;\n  --tracking-widest:       0.1em;\n\n  /* Font weights */\n  --weight-regular:        400;\n  --weight-medium:         500;\n  --weight-bold:           700;\n\n  /* ── Spacing Scale (4px base) ────────────────────────── */\n  --space-1:   0.25rem;   /* 4px */\n  --space-2:   0.5rem;    /* 8px */\n  --space-3:   0.75rem;   /* 12px */\n  --space-4:   1rem;      /* 16px */\n  --space-5:   1.25rem;   /* 20px */\n  --space-6:   1.5rem;    /* 24px */\n  --space-8:   2rem;      /* 32px */\n  --space-10:  2.5rem;    /* 40px */\n  --space-12:  3rem;      /* 48px */\n  --space-16:  4rem;      /* 64px */\n  --space-20:  5rem;      /* 80px */\n  --space-24:  6rem;      /* 96px */\n  --space-32:  8rem;      /* 128px */\n\n  /* ── Border Radius ───────────────────────────────────── */\n  --radius-sm:   4px;\n  --radius-md:   6px;\n  --radius-lg:   8px;\n  --radius-xl:   12px;\n  --radius-2xl:  16px;\n  --radius-full: 9999px;\n\n  /* ── Shadows (subtle, editorial) ─────────────────────── */\n  --shadow-sm:   0 1px 2px rgba(11,11,11,0.04);\n  --shadow-md:   0 2px 8px rgba(11,11,11,0.06);\n  --shadow-lg:   0 4px 16px rgba(11,11,11,0.08);\n  --shadow-xl:   0 8px 32px rgba(11,11,11,0.10);\n\n  /* ── Transitions ─────────────────────────────────────── */\n  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);\n  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);\n  --duration-fast:    120ms;\n  --duration-normal:  200ms;\n  --duration-slow:    400ms;\n\n  /* ── Motif Family ────────────────────────────────────── */\n  --motif-ink:              var(--stromy-neutral-950);\n  --motif-paper:            var(--stromy-neutral-50);\n  --motif-forest:           var(--stromy-green-700);\n  --motif-mineral:          var(--stromy-green-500);\n  --motif-oxide:            var(--stromy-orange-500);\n  --motif-line-weight:      2.2px;\n  --motif-node-size:        9px;\n  --motif-ledger-box-w:     16px;\n  --motif-ledger-box-h:     30px;\n  --motif-band-gap:         16px;\n\n  /* ── Layout ──────────────────────────────────────────── */\n  --content-width:    720px;\n  --content-wide:     960px;\n  --content-max:      1200px;\n  --sidebar-width:    280px;\n  --header-height:    64px;\n}\n\n/* ── Dark Mode Overrides ─────────────────────────────────── */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --stromy-surface:         var(--stromy-neutral-950);\n    --stromy-surface-raised:  var(--stromy-neutral-900);\n    --stromy-text-primary:    var(--stromy-neutral-50);\n    --stromy-text-secondary:  var(--stromy-neutral-500);\n    --stromy-text-tertiary:   var(--stromy-neutral-600);\n    --stromy-border:          var(--stromy-neutral-800);\n    --stromy-border-subtle:   var(--stromy-neutral-900);\n  }\n}\n\n@media (prefers-color-scheme: light) {\n  :root {\n    --stromy-surface:         var(--stromy-white);\n    --stromy-surface-raised:  var(--stromy-neutral-50);\n    --stromy-text-primary:    var(--stromy-neutral-950);\n    --stromy-text-secondary:  var(--stromy-neutral-600);\n    --stromy-text-tertiary:   var(--stromy-neutral-500);\n    --stromy-border:          var(--stromy-neutral-200);\n    --stromy-border-subtle:   var(--stromy-neutral-100);\n  }\n}\n\n\n/* ============================================================\n   Utility Classes\n   ============================================================ */\n\n/* ── Typography ────────────────────────────────────────────── */\n.stromy-display-xl {\n  font-family: var(--font-display);\n  font-size: var(--text-display-xl);\n  line-height: var(--leading-tight);\n  letter-spacing: var(--tracking-tight);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-display-lg {\n  font-family: var(--font-display);\n  font-size: var(--text-display-lg);\n  line-height: var(--leading-tight);\n  letter-spacing: var(--tracking-snug);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-display-md {\n  font-family: var(--font-display);\n  font-size: var(--text-display-md);\n  line-height: var(--leading-snug);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-heading {\n  font-family: var(--font-body);\n  font-size: var(--text-heading);\n  line-height: var(--leading-snug);\n  letter-spacing: var(--tracking-snug);\n  font-weight: var(--weight-medium);\n}\n\n.stromy-subhead {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n  letter-spacing: var(--tracking-wider);\n  font-weight: var(--weight-medium);\n  text-transform: uppercase;\n}\n\n.stromy-body {\n  font-family: var(--font-body);\n  font-size: var(--text-body);\n  line-height: var(--leading-relaxed);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-caption {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n}\n\n.stromy-overline {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  line-height: var(--leading-normal);\n  letter-spacing: var(--tracking-widest);\n  font-weight: var(--weight-medium);\n  text-transform: uppercase;\n}\n\n.stromy-mono {\n  font-family: var(--font-mono);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n}\n\n/* ── Score Line Component ──────────────────────────────────── */\n.score-line {\n  display: flex;\n  align-items: center;\n  gap: 0;\n}\n\n.score-line::before {\n  content: '';\n  flex: 1;\n  height: var(--score-line-weight);\n  background: var(--score-line-color);\n}\n\n.score-line::after {\n  content: '';\n  width: var(--score-dot-size);\n  height: var(--score-dot-size);\n  border-radius: 50%;\n  background: var(--score-dot-color);\n  flex-shrink: 0;\n}\n\n.score-line--short::before {\n  flex: 0 0 60px;\n}\n\n.score-line--light::before {\n  background: var(--score-line-color-light);\n}\n\n/* ── Buttons ───────────────────────────────────────────────── */\n.btn {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-wide);\n  padding: var(--space-3) var(--space-5);\n  border-radius: var(--radius-md);\n  border: none;\n  cursor: pointer;\n  transition: all var(--duration-normal) var(--ease-out);\n  display: inline-flex;\n  align-items: center;\n  gap: var(--space-2);\n  text-decoration: none;\n}\n\n.btn-primary {\n  background: var(--stromy-green-700);\n  color: var(--stromy-neutral-50);\n}\n.btn-primary:hover {\n  background: var(--stromy-green-500);\n}\n\n.btn-secondary {\n  background: transparent;\n  color: var(--stromy-neutral-300);\n  border: 1px solid var(--stromy-neutral-800);\n}\n.btn-secondary:hover {\n  border-color: var(--stromy-neutral-600);\n  color: var(--stromy-neutral-50);\n}\n\n.btn-accent {\n  background: var(--stromy-signal-orange);\n  color: var(--stromy-white);\n}\n.btn-accent:hover {\n  background: var(--stromy-orange-700);\n}\n\n/* ── Cards ─────────────────────────────────────────────────── */\n.card {\n  background: var(--stromy-surface-raised);\n  border: 1px solid var(--stromy-border-subtle);\n  border-radius: var(--radius-xl);\n  padding: var(--space-6);\n  transition: box-shadow var(--duration-normal) var(--ease-out);\n}\n\n.card:hover {\n  box-shadow: var(--shadow-md);\n}\n\n.card--dark {\n  background: var(--stromy-neutral-950);\n  border-color: var(--stromy-neutral-800);\n}\n\n.card--green {\n  background: var(--stromy-green-700);\n  border-color: var(--stromy-green-500);\n}\n\n/* ── Report Header ─────────────────────────────────────────── */\n.report-header {\n  display: flex;\n  flex-direction: column;\n  gap: var(--space-3);\n}\n\n.report-header__label {\n  font-family: var(--font-body);\n  font-size: var(--text-micro);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-widest);\n  text-transform: uppercase;\n  color: var(--stromy-green-300);\n}\n\n.report-header__title {\n  font-family: var(--font-display);\n  font-size: var(--text-display-md);\n  line-height: var(--leading-snug);\n  color: var(--stromy-neutral-50);\n}\n\n.report-header__meta {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  color: var(--stromy-neutral-500);\n}\n\n/* ── Data Table ────────────────────────────────────────────── */\n.data-table {\n  width: 100%;\n  border-collapse: collapse;\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n}\n\n.data-table th {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-wider);\n  text-transform: uppercase;\n  text-align: left;\n  padding: var(--space-2) var(--space-4);\n  border-bottom: 2px solid var(--stromy-green-700);\n  color: var(--stromy-text-secondary);\n}\n\n.data-table td {\n  padding: var(--space-3) var(--space-4);\n  border-bottom: 1px solid var(--stromy-border-subtle);\n  color: var(--stromy-text-primary);\n}\n\n.data-table td.mono {\n  font-family: var(--font-mono);\n}\n\n/* ── Badge / Tag ───────────────────────────────────────────── */\n.badge {\n  font-family: var(--font-mono);\n  font-size: var(--text-micro);\n  font-weight: var(--weight-medium);\n  padding: var(--space-1) var(--space-2);\n  border-radius: var(--radius-sm);\n  display: inline-block;\n}\n\n.badge--green {\n  background: var(--stromy-green-50);\n  color: var(--stromy-green-700);\n}\n\n.badge--orange {\n  background: var(--stromy-orange-50);\n  color: var(--stromy-orange-700);\n}\n\n.badge--neutral {\n  background: var(--stromy-neutral-100);\n  color: var(--stromy-neutral-700);\n}\n\n/* ── Motif Utilities ─────────────────────────────────────── */\n.stromy-tempo-ledger {\n  display: grid;\n  gap: var(--space-2);\n}\n\n.stromy-tempo-ledger__rule {\n  position: relative;\n  height: 34px;\n}\n\n.stromy-tempo-ledger__rule::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 4.5rem;\n  top: 7px;\n  border-top: var(--motif-line-weight) solid var(--motif-ink);\n}\n\n.stromy-tempo-ledger__rule::after {\n  content: \"\";\n  position: absolute;\n  left: 1.375rem;\n  right: 0;\n  top: 23px;\n  border-top: var(--motif-line-weight) solid var(--motif-oxide);\n}\n\n.stromy-tempo-ledger__box {\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: var(--motif-ledger-box-w);\n  height: var(--motif-ledger-box-h);\n  border: var(--motif-line-weight) solid var(--motif-oxide);\n}\n\n.stromy-data-rail {\n  position: relative;\n  padding-left: var(--space-6);\n}\n\n.stromy-data-rail::before {\n  content: \"\";\n  position: absolute;\n  left: var(--space-3);\n  top: 0;\n  bottom: 0;\n  width: var(--motif-line-weight);\n  background: var(--motif-ink);\n}\n\n.stromy-switch-track {\n  display: block;\n  width: 100%;\n  height: 36px;\n}\n\n.stromy-echo-band {\n  display: grid;\n  gap: 0.45rem;\n}\n\n.stromy-echo-band__line {\n  height: 8px;\n  border-top: var(--motif-line-weight) solid currentColor;\n  border-bottom: var(--motif-line-weight) solid color-mix(in srgb, currentColor 18%, transparent);\n}\n",
+  "identity": {
+    "essence": "STROMY transforms complex workflows into orchestrated intelligence.",
+    "positioning": "For corporates and consulting agencies drowning in unstructured processes, STROMY is the AI orchestration partner that designs and builds analytical workflows — from media research to crisis management to strategy audits — delivering the structured, trust-grade outputs their stakeholders expect. Unlike generic AI consultancies, Stromy brings the maestro's precision: every workflow is composed, every output is publication-ready.",
+    "personalityTraits": [
+      {
+        "trait": "authoritative",
+        "description": "Speaks with earned confidence, never arrogance"
+      },
+      {
+        "trait": "precise",
+        "description": "Data-led, evidence-first, structured outputs"
+      },
+      {
+        "trait": "transformative",
+        "description": "Takes the complex and makes it actionable"
+      },
+      {
+        "trait": "restrained",
+        "description": "Lets the work speak; no flash without substance"
+      },
+      {
+        "trait": "grounded",
+        "description": "Trusted partner energy, not disruptor posturing"
+      }
+    ],
+    "personalityAxes": {
+      "formal_casual": {
+        "label": "Formal ↔ Casual",
+        "value": 0.8,
+        "note": "4/5 toward formal — guidelines.md personality table: Formal ◆◆◆◆○ Casual"
+      },
+      "analytical_intuitive": {
+        "label": "Analytical ↔ Intuitive",
+        "value": 0.8,
+        "note": "4/5 toward analytical — guidelines.md personality table: Analytical ◆◆◆◆○ Intuitive"
+      },
+      "traditional_innovative": {
+        "label": "Traditional ↔ Innovative",
+        "value": 0.6,
+        "note": "3/5 toward innovative — guidelines.md personality table: Traditional ○○◆◆◆ Innovative"
+      },
+      "reserved_expressive": {
+        "label": "Reserved ↔ Expressive",
+        "value": 0.6,
+        "note": "3/5 toward reserved (value=0 is expressive, 1 is reserved) — guidelines.md personality table: Reserved ◆◆◆○○ Expressive"
+      },
+      "established_rebellious": {
+        "label": "Established ↔ Rebellious",
+        "value": 0.6,
+        "note": "3/5 toward established (value=0 is rebellious, 1 is established) — guidelines.md personality table: Established ◆◆◆○○ Rebellious"
+      }
+    }
+  },
+  "boilerplate": {
+    "footer": "Stromy · {{confidentiality.deck}} · {{page}} / {{pages}}",
+    "confidentiality": "Confidential",
+    "copyright": "© {{year}} Stromy Pty Ltd. All rights reserved."
+  },
+  "expression": {
+    "sourceLevel": "expression",
+    "principles": [
+      "Substance before style — the work speaks; decoration must earn its place.",
+      "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
+      "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
+      "Signal economy — oxide is a signal color, never a flood; motifs are assigned by role, not taste.",
+      "Infrastructure as image world — urban, architectural, raw-material photography; no stock offices, no AI futurism."
+    ],
+    "visualAxes": {
+      "density": "spacious",
+      "contrast": "high",
+      "symmetry": "controlled-asymmetry",
+      "geometry": "rectilinear",
+      "typeExpression": "editorial",
+      "imageTreatment": "documentary-muted",
+      "motifProminence": "structural",
+      "colorRhythm": "dark-light-indexed",
+      "ornament": "restrained"
+    },
+    "signatureElements": [
+      "Tempo Ledger — primary signature motif (upper paper rule + offset oxide rule + registration box); anchors all major section headers and report covers",
+      "Data Rail — analytical annotation motif (vertical rail + hierarchical checkpoint nodes); marks evidence trails, scorecards, and sidebars",
+      "Switch Track — orchestration motif (dual tracks with controlled divergence + double-ring junction node); used in workflow and process storytelling",
+      "Echo Band — rhythm motif (three parallel offset bands at 35% ghost); chapter transitions and section dividers",
+      "S-Curve symbol — standalone icon mark encoding complexity→clarity transformation; used where name is already established",
+      "Orchestration Node Wordmark — STROMY set in Fraunces with compact orchestration node; primary identity mark",
+      "Oxide signal dot — small filled circle in #B96034 used as a terminal node across all motifs; encodes the decision/transformation point"
+    ],
+    "antiPatterns": [
+      "Do not use pure white (#FFFFFF) or pure black (#000000) — use Warm Paper (#ECE6DA) and Obsidian Forest (#0F1310) respectively",
+      "Do not flood oxide (#B96034) as a background or dominant color — it is a signal accent (10% of color balance)",
+      "Do not add gradient fills or gradient directions — website.colorApplication.gradientDirection='none'",
+      "Do not use rounded corners on layout containers — cornerRadius='sharp'",
+      "Do not invent new motif styles outside the four-part family",
+      "Do not mix the wordmark and S-Curve symbol in the same immediate composition",
+      "Do not use playful or organic geometry — all angles grid-aligned at 45° or 90°",
+      "Do not use startup hype language ('revolutionary', 'game-changing', 'disruptive') — voice-extensions.json banned phrases",
+      "Do not use drop shadows for decorative depth — shadow tokens exist for elevation only; shadowDepth='none' at surface level",
+      "Do not place imagery without brand-tint overlay (opacity 0.65) when used as section background"
+    ],
+    "requiredMotifs": [
+      "Stroke weight 2.2px on all motif lines (--motif-line-weight: 2.2px) — never below 1.8px",
+      "Round linecaps and linejoins on all motif strokes",
+      "Oxide node treatment (outer ring + inner oxide fill, diameter = 2× stroke) for all primary nodes",
+      "Warm Paper as default light surface — not pure white",
+      "Fraunces for all display/headline type; Plus Jakarta Sans for body; IBM Plex Mono for metadata and data labels",
+      "Logo clear space = cap height of 'S' in wordmark on all sides"
+    ]
+  },
+  "surfaceExpression": {
+    "presentation": {
+      "visualAxes": {
+        "density": "spacious",
+        "contrast": "high",
+        "symmetry": "controlled-asymmetry",
+        "geometry": "rectilinear",
+        "typeExpression": "editorial",
+        "imageTreatment": "documentary-muted",
+        "motifProminence": "structural",
+        "colorRhythm": "dark-light-indexed",
+        "ornament": "restrained"
+      },
+      "principles": [
+        "Substance before style — the work speaks; decoration must earn its place.",
+        "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
+        "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
+        "Signal economy — oxide is a signal color, never a flood; motifs are assigned by role, not taste.",
+        "Infrastructure as image world — urban, architectural, raw-material photography; no stock offices, no AI futurism."
+      ]
+    },
+    "document": {
+      "visualAxes": {
+        "density": "spacious",
+        "contrast": "high",
+        "symmetry": "controlled-asymmetry",
+        "geometry": "rectilinear",
+        "typeExpression": "editorial",
+        "imageTreatment": "documentary-muted",
+        "motifProminence": "structural",
+        "colorRhythm": "dark-light-indexed",
+        "ornament": "restrained"
+      },
+      "principles": [
+        "Substance before style — the work speaks; decoration must earn its place.",
+        "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
+        "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
+        "Signal economy — oxide is a signal color, never a flood; motifs are assigned by role, not taste.",
+        "Infrastructure as image world — urban, architectural, raw-material photography; no stock offices, no AI futurism."
+      ]
+    }
+  },
+  "plotly_theme": {
+    "colorway": [
+      "#1D342B",
+      "#B96034",
+      "#0F1310",
+      "#47685B",
+      "#B96034",
+      "#8E3F2E"
+    ],
+    "baseTemplate": "plotly_white",
+    "font": {
+      "family": "Plus Jakarta Sans",
+      "color": "#171611"
+    },
+    "titleFontSize": 18,
+    "gridColor": "#D7D0C3",
+    "sentiment": {
+      "positiveColor": "#47685B",
+      "neutralColor": "#8C857A",
+      "negativeColor": "#8E3F2E"
+    },
+    "categoricalPalette": [
+      "#1D342B",
+      "#B96034",
+      "#47685B",
+      "#7F9B90",
+      "#D68A60",
+      "#6D665C"
+    ],
+    "defaultHeight": 500,
+    "axisFontSize": 12,
+    "legendFontSize": 11,
+    "margins": {
+      "top": 80,
+      "bottom": 70,
+      "left": 60,
+      "right": 50
+    },
+    "secondaryTextColor": "#8C857A",
+    "bar": {
+      "markerColor": "#1D342B",
+      "markerLineColor": "#152019",
+      "markerLineWidth": 1
+    },
+    "line": {
+      "color": "#1D342B",
+      "width": 2.5,
+      "markerColor": "#B96034",
+      "markerSize": 7
+    },
+    "scatter": {
+      "markerColor": "#1D342B",
+      "markerSize": 8,
+      "markerLineWidth": 0
+    },
+    "pie": {
+      "hole": 0.4,
+      "textfontSize": 13,
+      "markerLineColor": "#ECE6DA",
+      "markerLineWidth": 2
+    }
+  },
+  "excalidraw_theme": {
+    "strokeColor": "#1D342B",
+    "fillColors": [
+      "#1D342B",
+      "#B96034",
+      "#47685B",
+      "#7F9B90",
+      "#D68A60",
+      "#6D665C"
+    ],
+    "textColor": "#171611",
+    "arrowColor": "#6D665C",
+    "backgroundColor": "#ECE6DA",
+    "roughness": 0,
+    "headingFont": "Fraunces",
+    "bodyFont": "Plus Jakarta Sans",
+    "fontFamily": 2,
+    "fontSize": 16,
+    "strokeWidth": 2,
+    "labelFontSize": 14
+  },
+  "formatting": {
+    "slideMargin": "40pt",
+    "titleMargin": "30pt",
+    "contentMargin": "20pt",
+    "aspectRatio": "16:9",
+    "headingThreshold": 24,
+    "accentCycleColors": [
+      "primary",
+      "accent",
+      "success"
+    ],
+    "autoContrastText": true
+  },
+  "document": {
+    "margins": {
+      "top": "1in",
+      "bottom": "1in",
+      "left": "1in",
+      "right": "1in"
+    },
+    "header": {
+      "content": "STROMY",
+      "logo": true
+    },
+    "footer": {
+      "content": "Confidential",
+      "pageNumbers": true
+    },
+    "headingColor": "primary",
+    "tableHeaderColor": "primary"
+  },
+  "images": {
+    "overlay": {
+      "color": "primary",
+      "opacity": 0.65
+    },
+    "logoVariantOnImage": "white"
+  },
+  "logo": {
+    "primary": "logos/logo.svg",
+    "png": "logos/logo.png",
+    "white": "logos/logo_white.svg",
+    "whitePng": "logos/logo_white.png",
+    "mono": "logos/logo_mono.svg",
+    "tagline": "logos/logo_tagline.svg",
+    "mark": "logos/symbol.svg",
+    "icon": "logos/icon_dark.svg",
+    "iconPng": "logos/icon_dark.png",
+    "iconGreen": "logos/icon_green.svg",
+    "iconGreenPng": "logos/icon_green.png",
+    "iconPaper": "logos/icon_paper.svg",
+    "iconPaperPng": "logos/icon_paper.png",
+    "favicon": "logos/favicon.svg",
+    "maxWidth": "220pt",
+    "maxHeight": "60pt",
+    "sizing": "contain"
+  },
+  "fallbacksUsed": [],
+  "warnings": []
+}

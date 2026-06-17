@@ -1,5 +1,7 @@
 {
+  "$schema": "../../schema/boilerplate.schema.json",
   "$comment": "Stromy fixed cross-deliverable strings. Edit this once to update every newly-rendered deck/doc/PDF/spreadsheet footer.",
+  "version": "1.0",
   "footer": {
     "deck": "Stromy · {{confidentiality.deck}} · {{page}} / {{pages}}",
     "doc": "Stromy · {{document.title}} · {{date}}",
