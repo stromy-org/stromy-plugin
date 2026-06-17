@@ -6,10 +6,11 @@ license: Proprietary. LICENSE.txt has complete terms
 
 # Web Research via the official Apify MCP (BYOK)
 
-Drive the **official Apify MCP** (`@apify/actors-mcp-server`, wired per-plugin
-under the server key `apify`) to run vetted Apify actors for web search, site
-crawling, and structured extraction — then reshape the results into the standard
-Stromy envelope and hand off to a `format-*` skill for a branded deliverable.
+Drive the **official Apify MCP** (the hosted server `https://mcp.apify.com`, added
+as an **OAuth workspace connector**) to run vetted Apify actors for web search,
+site crawling, and structured extraction — then reshape the results into the
+standard Stromy envelope and hand off to a `format-*` skill for a branded
+deliverable.
 
 This skill owns **policy**, not infrastructure: which actors to use, what caps to
 set, when to stop and confirm, and what shape to emit. Apify maintains the MCP and
@@ -17,12 +18,21 @@ the actors; Stromy hosts nothing for this capability.
 
 ## Bring-your-own-key (BYOK) — the defining constraint
 
-Every Apify run is authorized by the **client's own** `APIFY_TOKEN`, set in the
-client's local `.env` and read by the client's local Apify MCP subprocess. All
-Apify spend lands on the **client's** Apify account. The token goes
-**client machine → Apify directly** and **never transits any Stromy-hosted
-process**. There is no Stromy container, no proxy, and no Stromy log that ever
-sees the token.
+Every Apify run is authorized by the **client's own Apify account**, via the
+hosted Apify MCP connector's **OAuth sign-in** (`https://mcp.apify.com`). There is
+no token to paste and no `.env` to maintain — the client connects the Apify MCP
+connector once and authorizes it against their own Apify login. All Apify spend
+lands on the **client's** Apify account. Auth goes **client → Apify directly**;
+**no Stromy-hosted process** ever sees a credential — no container, no proxy, no
+log.
+
+> **Why OAuth, not a plugin-declared stdio token.** An authenticated HTTP MCP is
+> consumed as a workspace connector, never declared in a plugin (connection model
+> + plugin-completeness Invariant #13). A stdio `APIFY_TOKEN=${VAR}` wiring also
+> silently fails in the desktop app, which does not expand `${VAR}` in a plugin
+> connector's env. So the apify connector is added at the **workspace** level and
+> authorized by the user — this skill simply drives whichever apify tools that
+> authorized connector exposes.
 
 This skill is **brand-agnostic** — it takes no client-data input and does not
 resolve a `client_slug`. Brand is injected only later, at the `format-*` step.
@@ -63,11 +73,11 @@ on two things you must make prominent:
 You set per-run caps (`maxItems`/`maxCrawlPages` + a timeout) on every run, but
 they are *advisory* run inputs, not code-enforced ceilings. Be conservative.
 
-## Tools provided by the wired Apify MCP
+## Tools provided by the Apify MCP connector
 
-The plugin wires the official Apify MCP under the `apify` server key. The tools
-you drive (documented names; your client surfaces them namespaced under that
-server):
+The workspace has the official Apify MCP connected (hosted, OAuth). The tools you
+drive (documented names; your client surfaces them namespaced under that
+connector — e.g. a "Call Actor" / `call-actor` form):
 
 | Tool | Use |
 |---|---|
@@ -168,11 +178,12 @@ applied there from the plugin overlay, not here.
 
 ## Exact MCP tool calls (worked sequence)
 
-The Apify MCP is wired under the server key `apify`; your client surfaces its tools
-namespaced (e.g. `apify:call-actor`, or `mcp__…__call-actor`). The **actor input**
-shapes below match the Apify Store actor schemas; the **MCP tool argument** names
-(`actor`, `input`, `runId`, `datasetId`, …) are whatever the connected `apify` tools
-expose — read each tool's input schema once the MCP is connected; it is authoritative.
+The Apify MCP is a connected workspace connector; your client surfaces its tools
+namespaced (e.g. a "Call Actor" / `call-actor` form). The **actor input** shapes
+below match the Apify Store actor schemas; the **MCP tool argument** names
+(`actor`, `input`, `runId`, `datasetId`, …) are whatever the connected Apify tools
+expose — read each tool's input schema once the connector is authorized; it is
+authoritative.
 
 A typical `web_research` run, end to end:
 
@@ -229,16 +240,15 @@ traceability.
 
 ## Edge cases
 
-- **Apify token unset or rejected.** The Apify MCP returns its own auth error. The
-  server reads `APIFY_TOKEN`; the `apify` wiring maps it from the operator's
-  configured env var (e.g. `${APIFY_API_TOKEN}` — see the consumer's `.env.example`).
-  Surface the error plainly and tell the user to set that token in their `.env`
-  (BYOK — their token, billed to their Apify account). Under Codex the value must be
-  exported in the shell (the renderer drops the env mapping for Codex). Do not retry
-  blindly.
-- **Apify MCP subprocess won't start.** The local server needs Node.js ≥ 18.
-  Check the version and retry; the official hosted `https://mcp.apify.com` (OAuth)
-  is a non-BYOK-token fallback configuration.
+- **Apify connector not authorized / auth rejected.** The Apify MCP returns its own
+  auth error when the connector isn't signed in. Surface it plainly and tell the user
+  to **connect (or re-connect) the Apify MCP connector** — add `https://mcp.apify.com`
+  as a workspace connector and complete the OAuth sign-in to their own Apify account
+  (BYOK — their account, their spend). There is no token to set. Do not retry blindly.
+- **Apify tools missing entirely.** The Apify MCP connector isn't added to this
+  workspace. Tell the user to add it (`https://mcp.apify.com`, OAuth) — it is **not**
+  shipped inside the plugin (authenticated HTTP MCPs are workspace connectors, never
+  plugin-declared). Do not fall back to a billed pull or a browser.
 - **Actor returns no dataset.** Emit empty `results` and a `metadata.warnings`
   entry; do not invent data.
 - **Over-threshold request.** Confirm first (step 4); never run until the user
@@ -250,5 +260,6 @@ traceability.
 ## Self-containment
 
 This skill reads no client-data, hardcodes no `client_slug`, and calls no other
-skill. Its only external dependency is the wired `apify` MCP (the client's own
-key) and, by mention only, the downstream `format-*` skills the agent routes to.
+skill. Its only external dependency is the connected Apify MCP connector (hosted,
+OAuth — the client's own Apify account) and, by mention only, the downstream
+`format-*` skills the agent routes to.
