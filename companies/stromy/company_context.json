@@ -1,7 +1,19 @@
 {
   "schemaVersion": 1,
   "generatedFrom": {
+    "profileSha": "e8bb690e73213930e84c4841caaed88ed83b869d5aa49a16fb7b75b64026ee4b",
     "compiler": "1.0"
   },
-  "company": {}
+  "company": {
+    "name": "Stromy",
+    "displayName": "Stromy",
+    "shortName": "Stromy",
+    "description": "Stromy is an AI orchestration partner that designs and builds analytical workflows — from media research and share-of-voice analysis to public-affairs monitoring, crisis management, and strategy audits — turning unstructured processes into structured, trust-grade, publication-ready outputs for corporates and consulting agencies. Stromy operates across Australia and the Netherlands.",
+    "tagline": "Intelligence, Orchestrated.",
+    "website": "https://stromy.com.au",
+    "industry": "AI / Technology",
+    "publicContact": {
+      "website": "https://stromy.com.au"
+    }
+  }
 }
