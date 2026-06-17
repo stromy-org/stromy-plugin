@@ -8,19 +8,6 @@
     "stromy-format": {
       "type": "http",
       "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
-    },
-    "apify": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@apify/actors-mcp-server@latest",
-        "--tools",
-        "actors,docs,apify/rag-web-browser",
-        "--telemetry-enabled=false"
-      ],
-      "env": {
-        "APIFY_TOKEN": "${APIFY_API_TOKEN}"
-      }
     }
   }
 }
