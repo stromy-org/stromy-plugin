@@ -147,11 +147,76 @@ applied there from the plugin overlay, not here.
 > agent orchestrates the research→format handoff at the plugin layer. MCPs/skills
 > never call each other directly.
 
+## Exact MCP tool calls (worked sequence)
+
+The Apify MCP is wired under the server key `apify`; your client surfaces its tools
+namespaced (e.g. `apify:call-actor`, or `mcp__…__call-actor`). The **actor input**
+shapes below match the Apify Store actor schemas; the **MCP tool argument** names
+(`actor`, `input`, `runId`, `datasetId`, …) are whatever the connected `apify` tools
+expose — read each tool's input schema once the MCP is connected; it is authoritative.
+
+A typical `web_research` run, end to end:
+
+**1 — (optional) discover an actor** when the curated one doesn't fit:
+```jsonc
+// tool: search-actors
+{ "search": "extract company profiles from a directory", "limit": 5 }
+```
+
+**2 — read schema + pricing of the chosen actor** (always, before running):
+```jsonc
+// tool: fetch-actor-details
+{ "actor": "apify/rag-web-browser" }
+// → returns the input JSON schema + pricing model; use it to set caps and to
+//   estimate cost for the §4 confirm gate.
+```
+
+**3 — run the actor with a capped input** (`apify/rag-web-browser` for search):
+```jsonc
+// tool: call-actor
+{
+  "actor": "apify/rag-web-browser",
+  "input": {
+    "query": "EU AI Act enforcement timeline 2026",
+    "maxResults": 5,
+    "timeoutSecs": 120,
+    "maxRequestRetries": 1
+  }
+}
+// site_crawl instead → actor "apify/website-content-crawler",
+//   input: { "startUrls": [{ "url": "https://example.com/docs" }],
+//            "maxCrawlPages": 10, "maxCrawlDepth": 1, "timeoutSecs": 300 }
+```
+
+**4 — fetch the full dataset** if `call-actor`'s preview is truncated:
+```jsonc
+// tool: get-actor-output            // by run
+{ "runId": "<runId from call-actor>" }
+// or, by dataset:
+// tool: get-dataset-items
+{ "datasetId": "<defaultDatasetId from the run>", "limit": 100 }
+```
+
+**5 — on failure**, inspect the run:
+```jsonc
+// tool: get-actor-run   { "runId": "<runId>" }
+// tool: get-actor-log   { "runId": "<runId>" }
+```
+
+Then map the dataset items into the
+`{workflow_type, query_params, results, metadata}` envelope (§6) and hand off (§7).
+Record the actor + `runId` + `datasetId` + the caps in `metadata.apify` for
+traceability.
+
 ## Edge cases
 
-- **`APIFY_TOKEN` unset or rejected.** The Apify MCP returns its own auth error.
-  Surface it plainly and tell the user to set `APIFY_TOKEN` in the plugin's `.env`
-  (it is BYOK — their token, billed to their account). Do not retry blindly.
+- **Apify token unset or rejected.** The Apify MCP returns its own auth error. The
+  server reads `APIFY_TOKEN`; the `apify` wiring maps it from the operator's
+  configured env var (e.g. `${APIFY_API_TOKEN}` — see the consumer's `.env.example`).
+  Surface the error plainly and tell the user to set that token in their `.env`
+  (BYOK — their token, billed to their Apify account). Under Codex the value must be
+  exported in the shell (the renderer drops the env mapping for Codex). Do not retry
+  blindly.
 - **Apify MCP subprocess won't start.** The local server needs Node.js ≥ 18.
   Check the version and retry; the official hosted `https://mcp.apify.com` (OAuth)
   is a non-BYOK-token fallback configuration.
