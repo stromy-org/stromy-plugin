@@ -29,6 +29,25 @@ resolve a `client_slug`. Brand is injected only later, at the `format-*` step.
 This skill therefore declares **no client-data inputs** (no overlay block), which
 the plugin-completeness validator treats as "no client-data dependency".
 
+## Opt-in only — never a silent fallback (the cost rule that comes first)
+
+Every actor run spends real money on the **client's** Apify account, so this
+capability is **explicitly opt-in**. Two hard behavioural rules:
+
+1. **Invoke only on an explicit web-research / scrape / extract request.** Run this
+   skill when the user actually asked to gather data from the web, search the live
+   web, crawl a site, or extract structured records — the intents in the description.
+   It is never the default research path.
+2. **Never reach for it as an automatic fallback.** If some *other* tool fails or is
+   unavailable — `WebSearch` disabled, a `WebFetch` page comes back empty, no browser
+   connector present — do **not** silently fall through to a billed Apify run, and do
+   **not** borrow a connected browser. **Stop and tell the user** that no free
+   research path is available and ask whether to run a (billed) Apify pull, naming the
+   estimate from the §4 cost gate. The user opts in per request; default is off.
+
+This sits above the governance section because the cheapest run is the one you don't
+make: confirm the intent *before* you even price the actor.
+
 ## Governance is advisory; the console spend cap is the backstop
 
 The official Apify MCP exposes **no** account-usage / limits / billing tool, so
