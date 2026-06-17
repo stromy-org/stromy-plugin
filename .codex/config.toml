@@ -11,8 +11,4 @@ args = ["mcp-remote", "https://nl-gov-data.whitebush-d817afec.westeurope.azureco
 [mcp_servers.stromy-format]
 command = "npx"
 args = ["mcp-remote", "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"]
-
-[mcp_servers.apify]
-command = "npx"
-args = ["-y", "@apify/actors-mcp-server@latest", "--tools", "actors,docs,apify/rag-web-browser", "--telemetry-enabled=false"]
 # END:RENDERED-MCP

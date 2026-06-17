@@ -87,6 +87,12 @@
         "value": 0.6,
         "note": "3/5 toward established (value=0 is rebellious, 1 is established) — guidelines.md personality table: Established ◆◆◆○○ Rebellious"
       }
+    },
+    "company": {
+      "name": "Stromy",
+      "displayName": "Stromy",
+      "description": "Stromy is an AI orchestration partner that designs and builds analytical workflows — from media research and share-of-voice analysis to public-affairs monitoring, crisis management, and strategy audits — turning unstructured processes into structured, trust-grade, publication-ready outputs for corporates and consulting agencies. Stromy operates across Australia and the Netherlands.",
+      "website": "https://stromy.com.au"
     }
   },
   "boilerplate": {
