@@ -39,6 +39,12 @@
   "identity": {
     "essence": "STROMY transforms complex workflows into orchestrated intelligence.",
     "positioning": "For corporates and consulting agencies drowning in unstructured processes, STROMY is the AI orchestration partner that designs and builds analytical workflows — from media research to crisis management to strategy audits — delivering the structured, trust-grade outputs their stakeholders expect. Unlike generic AI consultancies, Stromy brings the maestro's precision: every workflow is composed, every output is publication-ready.",
+    "archetype": {
+      "primary": "sage",
+      "secondary": "magician",
+      "status": "approved",
+      "rationale": "Primary Sage: knowledge authority, editorial restraint, evidence-first — sourced from guidelines.md §1 archetype decision (user-approved 2026-04-07) and confirmed by website.archetype='sage'. Secondary Magician: transformative complex-to-simple edge, visionary but grounded — also sourced from guidelines.md §1 and build-log Phase 0 decision."
+    },
     "personalityTraits": [
       {
         "trait": "authoritative",
@@ -102,6 +108,47 @@
   },
   "expression": {
     "sourceLevel": "expression",
+    "status": "approved",
+    "confidence": "approved",
+    "source": "co_created",
+    "evidence": [
+      {
+        "path": "guidelines.md",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Version 3.0 · April 2026 — primary evidence source for archetype, essence, positioning, personality, voice, logo system, color system, typography, motif family, imagery direction, brand applications"
+      },
+      {
+        "path": "website",
+        "kind": "website",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "charter.json 'website' block — archetype='sage', aesthetic='editorial-systems', layout/texture/typography/colorApplication fields provide machine-readable design axes; darkSections, symmetry='balanced', cornerRadius='sharp', whitespaceStrategy='measured'"
+      },
+      {
+        "path": "tokens.css",
+        "kind": "design_tokens",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Full CSS custom property system — confirms motif-line-weight=2.2px, color scale (obsidian/green/oxide/paper), type stack (Fraunces/Plus Jakarta Sans/IBM Plex Mono), shadow tokens (subtle, editorial), spacing scale"
+      },
+      {
+        "path": "voice/voice-profile.md",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "L2 voice profile — confirms restrained, evidence-first, Economist-register stance; hype bans mirror guidelines.md"
+      }
+    ],
     "principles": [
       "Substance before style — the work speaks; decoration must earn its place.",
       "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
@@ -331,6 +378,10 @@
     "maxWidth": "220pt",
     "maxHeight": "60pt",
     "sizing": "contain"
+  },
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 30
   },
   "fallbacksUsed": [],
   "warnings": []
