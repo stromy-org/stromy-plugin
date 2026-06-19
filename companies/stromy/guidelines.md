@@ -2,6 +2,12 @@
 
 **Intelligence, Orchestrated.**
 
+> **⚠️ v4.0 "Velvet Score" (June 2026).** Foundation (§1), Logo (§2), Colour (§3), Type (§4),
+> Motif (§5) and Iconography (§7) are the **new** system. The imagery **library** (§6) is built in
+> the imagery phase (Pillar 5) — the *direction* there is locked. The S-curve symbol is **retired**;
+> the mark is the **dot-dome** (orchestra seating, one indigo focal dot). `charter.json` is the
+> source of truth.
+
 ---
 
 ## 1. Brand Foundation
@@ -50,58 +56,52 @@ Do not:
 
 ## 2. Logo System
 
-### Dual Identity
-STROMY has two complementary marks that share visual DNA:
+### The Dot-Dome
+STROMY's mark is the **dot-dome**: a polar lattice of dots forming an orchestra dome (the seating curve of an ensemble), with a single **indigo focal dot** at the podium on the central axis. It renders orchestration literally — many individual parts arranged into one coherent, rising form — without depicting an instrument. The S-curve symbol and orchestration-node wordmark of the prior identity are **retired**.
 
-1. **The Orchestration Node Wordmark** — `STROMY` set in Fraunces, preceded by a compact orchestration node. The node (outer ring in forest/paper, inner fill in oxide) emits two horizontal route stems — an upper structural stem and a lower oxide signal stem — bridging into the letterforms. The node encodes the brand promise: a central hub orchestrating multiple outputs.
-
-2. **The S-Curve Symbol** — A standalone S-shaped signal path with a single centered node at the inflection point. The S-curve represents the moment where complexity transforms into clarity (Sage → Magician). The oxide-filled node at the center is the decision/transformation point. Ultra-minimal: one continuous curve, one node.
-
-Both marks share:
-- Consistent 2.2px stroke weight with round linecaps
-- The oxide node treatment (outer ring + inner oxide fill, diameter = 2× stroke)
-- The same color DNA (forest/paper for structure, oxide for signal)
+### Wordmark
+`STROMY` is set in **Space Grotesk 600** with open tracking (~0.14em) — a contemporary geometric sans, deliberately not a serif. On covers and heroes the wordmark rises from the dot-dome (dome below, wordmark above) as a single composition.
 
 ### Construction Rules
-- Stroke weight: 2.2px everywhere, no exceptions
-- Linecap: round; Linejoin: round
-- Node sizing: primary = 4.4px diameter (2× stroke), inner fill = 2.2px radius
-- All angles grid-aligned (45° or 90°)
-- Minimum gap between parallel elements = 2.2px (stroke weight)
+- Dots are true circles; the dome is a 6-row polar lattice, dots scaling slightly larger toward the base.
+- Exactly **one** indigo (`#61009E`) focal dot — at the podium, on the central axis.
+- All other dots are cream (`#F4F1EA`) on dark grounds or ink (`#16161A`) on light grounds.
+- The wordmark uses Space Grotesk 600; never substitute another face in production.
 
 ### Core Lockups
-- **Primary** (`logo.svg`) — orchestration node wordmark for light backgrounds
-- **White** (`logo_white.svg`) — orchestration node wordmark for dark backgrounds (upper stem ghosted at 35% opacity)
-- **With tagline** (`logo_tagline.svg`) — wordmark + score line separator + tagline in Plus Jakarta Sans
-- **Mono** (`logo_mono.svg`) — single-color `currentColor` version for emboss, watermark, or constrained applications
-- **Icon (dark)** (`icon_dark.svg`) — S-Curve symbol on obsidian background
-- **Icon (green)** (`icon_green.svg`) — S-Curve symbol on forest background
-- **Icon (paper)** (`icon_paper.svg`) — S-Curve symbol on paper background
-- **Symbol** (`symbol.svg`) — S-Curve symbol with no background (`currentColor` stroke)
-- **Favicon** (`favicon.svg`) — simplified optical variant with bolder 7px stroke and solid oxide node, optimized for 16px rendering
+- **Primary** (`logo.svg`) — dot-dome + Space Grotesk wordmark for light backgrounds
+- **White** (`logo_white.svg`) — primary lockup for dark backgrounds (cream dots)
+- **With tagline** (`logo_tagline.svg`) — wordmark + "Intelligence, Orchestrated."
+- **Mono** (`logo_mono.svg`) — single-colour `currentColor` version for emboss, watermark, constrained use
+- **Mark** (`symbol.svg`) — dot-dome only, cream dots (dark grounds)
+- **Mark light** (`symbol_light.svg`) — dot-dome only, ink dots (light grounds)
+- **Mark mono** (`symbol_mono.svg`) — single-colour dome
+- **Living-mark variants** (`symbol_apex.svg`, `symbol_center.svg`) — the focal dot relocated to the dome apex / centre, for motion frames and expressive placements; **the podium (base-axis) dome is the canonical mark**
+- **Secondary "scored" lockup** (`secondary.svg`, `secondary_white.svg`) — the deliberately misaligned STROMY wordmark for cover slides, home-page heroes, section openers
+- **Favicon** (`favicon.svg`) — simplified dome optimised for 16px rendering
 
 ### When to Use Which
-- **Wordmark**: headers, hero sections, report covers, presentation title slides, business cards — anywhere the brand name needs to be read
-- **S-Curve symbol**: favicons, app icons, social avatars, watermarks, product marks, tab icons — anywhere the name is already established or space is constrained
-- **Favicon**: browser tabs, bookmarks, PWA icons — the 16px-optimized variant specifically
+- **Primary lockup**: headers, hero sections, report covers, presentation title slides, business cards
+- **Secondary "scored" lockup**: cover slides, home-page hero, section openers — where the brand can be expressive
+- **Mark alone**: favicons, app icons, social avatars, watermarks, footers — where the name is established or space is constrained
+- **Living-mark variants (apex/center)**: motion entrances and editorial placements only — never for primary identification
 
 ### Clear Space
-Minimum clear space equals the cap height of the `S` in the wordmark on all sides.
+Minimum clear space equals the height of one dome row on all sides.
 
 ### Minimum Size
-- Full wordmark: do not render below 120px wide
+- Full lockup: do not render below 120px wide
 - With tagline lockup: do not render below 180px wide
-- S-Curve symbol: minimum 24px at hero detail; use favicon variant below 24px
-- Favicon variant: optimized for 16px, works down to 12px
+- Mark alone: minimum 24px; use the favicon variant below 24px
+- Favicon variant: optimised for 16px, works down to 12px
 
 ### Logo Do Nots
-- Do not stretch, skew, or rotate the logo
-- Do not change the node diameter or stroke weight ratio
-- Do not recolor the route stems or S-curve arbitrarily
-- Do not place the wordmark over busy images without a calm backing
-- Do not substitute a different serif in production
-- Do not mix the wordmark and S-Curve symbol in the same immediate composition (one or the other)
-- Do not add extra nodes to the S-Curve — the single centered node is the design
+- Do not stretch, skew, or rotate the mark
+- Do not add a second focal dot — the signal is singular
+- Do not recolour the focal dot away from indigo, or the field dots away from cream/ink
+- Do not set the wordmark in a serif or any face other than Space Grotesk
+- Do not place the mark over busy images without a calm backing
+- Do not reintroduce the retired S-curve or orchestration-node mark
 
 ---
 
@@ -110,35 +110,33 @@ Minimum clear space equals the cap height of the `S` in the wordmark on all side
 ### Primary Palette
 | Name | Hex | Role |
 |------|-----|------|
-| Obsidian Forest | `#0F1310` | Primary dark ground |
-| Deep Forest | `#1D342B` | Brand color, headers, structure |
-| Oxide | `#B96034` | Signal accent, highlights, motif secondary line |
-| Warm Paper | `#ECE6DA` | Report paper, light UI surfaces |
+| Concert Black | `#0B0B0C` | Primary dark ground |
+| Dark Amethyst | `#31004F` | Brand colour, headers, structure |
+| Indigo | `#61009E` | Signal accent, highlights, the dome's focal dot |
+| Cream | `#F4EFE6` | Report paper, light UI surfaces |
+| White | `#FFFFFF` | High-contrast light surface |
 
-### Supporting Greens
+### Supporting
 | Name | Hex | Role |
 |------|-----|------|
-| Black Forest | `#152019` | Deep UI and marker lines |
-| Mineral Green | `#47685B` | Secondary brand green, nodes, success states |
-| Oxidized Sage | `#7F9B90` | Light secondary accents |
+| Deep Forest | `#1E462F` | Secondary colour, success states |
+| Mauve | `#9B7BB8` | Light secondary accent |
+| Thistle | `#E5D2FA` | Light tint surface, callout panels |
 
 ### Neutrals
 | Name | Hex | Role |
 |------|-----|------|
-| Ink | `#171611` | Primary text on light |
-| Stone | `#6D665C` | Secondary text |
-| Pewter | `#8C857A` | Metadata and tertiary text |
-| Warm Paper Alt | `#F3EDE2` | Raised light surface |
+| Ink | `#16161A` | Primary text on light |
+| Slate | `#6E6A75` | Secondary text |
+| Ash | `#8C8792` | Metadata and tertiary text |
+| Mist | `#C9C9D0` | Hairlines, disabled |
 
 ### Usage Rules
-- **Oxide is a signal, not a flood color.**
-- **Warm paper replaces pure white.**
-- **Obsidian forest replaces pure black.**
-- **Deep Forest carries the brand weight.**
-- Use color in a **60 / 30 / 10** balance:
-  - 60% dark or paper neutral
-  - 30% forest structure
-  - 10% oxide signal
+- **Indigo is a signal, not a flood colour** (≈10% of any composition).
+- **Cream / White** are the light surfaces; **Concert Black** (`#0B0B0C`, not pure `#000`) is the dark ground.
+- **Dark Amethyst carries the brand weight.**
+- **Deep Forest** is the sparing secondary (and `success`); functional **ochre** (`#B8860B`) and **wine** (`#8E2F4F`) cover warning / error in RAG contexts only.
+- Use colour in a **60 / 30 / 10** balance: 60% black/cream neutral · 30% amethyst structure · 10% indigo signal.
 
 ---
 
@@ -147,8 +145,9 @@ Minimum clear space equals the cap height of the `S` in the wordmark on all side
 ### Type Stack
 | Role | Family | Usage |
 |------|--------|-------|
-| Display | Fraunces | Wordmark, headlines, cover titles, pull quotes |
-| Body | Plus Jakarta Sans | Interface copy, body text, navigation, labels |
+| Wordmark / Label | Space Grotesk | Logo wordmark, UI labels, overlines, navigation |
+| Display | Fraunces | Editorial headlines, cover titles, pull quotes |
+| Body | Plus Jakarta Sans | Interface copy, body text, navigation |
 | Data | IBM Plex Mono | Metadata, captions, system labels, tables, chart notes |
 
 ### Type Scale
@@ -165,105 +164,62 @@ Minimum clear space equals the cap height of the `S` in the wordmark on all side
 | Mono | 12px | 400 | 1.45 |
 
 ### Typography Principles
-- Fraunces should feel authored and calm, not ornamental
+- Space Grotesk is the wordmark + UI/label voice — precise, contemporary, set tight
+- Fraunces should feel authored and calm, not ornamental — editorial headlines only
 - Plus Jakarta Sans carries most dense reading and UI work
 - IBM Plex Mono should be used as a precision layer, not as decoration
 
 ---
 
-## 5. Motif Family
+## 5. Motif Family — the Velvet Score dot family
 
-STROMY uses a **four-part motif family**, not one single repeated flourish.
+STROMY uses a **three-part dot family**, all descended from the dot-dome. Abstract dots only — **no literal staves, clefs, or noteheads.** Each motif is assigned by role, never sprinkled for taste.
 
-### 1. Tempo Ledger
-Role: **primary signature**
+### 1. Dot-dome
+Role: **identity** (also the logo mark)
 
-Use for:
-- report and proposal headers
-- section openers
-- footers
-- website hero separators
+The polar dome itself, reused as a signature flourish at small scale — closing slides, footers, watermarks. Carries the one indigo focal dot. Drives the **dome-assemble** motion ("the orchestra composes itself" — the focal lands at the podium and settles, no bounce).
 
-Construction:
-- upper rule (2.2px, paper or forest)
-- offset lower rule in oxide (2.2px)
-- registration block at the terminal edge (rounded corners, 2px stroke, with internal tick mark)
+### 2. Dot-field — `motif-dot-field.svg` / `motif-dot-field-light.svg`
+Role: **texture**
 
-### 2. Data Rail
-Role: **analytical annotation**
+Concentric rings of dots radiating from a single indigo focal. Use full-bleed and faint (opacity 0.10–0.30) as hero/divider background texture, or small and crisp as a corner mark — the focal dot must stay perceptible. Drives the **field-breathe** motion (the field pulses; the focal pulses at centre).
 
-Use for:
-- scorecards
-- sidebars
-- evidence trails
-- timeline markers
-- chart notes
+### 3. Barline — `motif-barline.svg` / `motif-barline-light.svg`
+Role: **rhythm / structure**
 
-Construction:
-- single vertical rail (2px, paper)
-- hierarchical checkpoint nodes: primary oxide (6.5px filled) > secondary mineral (5px filled) > tertiary paper (5.5px outlined)
-- horizontal evidence stems at varied lengths for visual rhythm
-- terminus mark at rail endpoint
-
-### 3. Switch Track
-Role: **process and orchestration language**
-
-Use for:
-- workflow diagrams
-- case-study process storytelling
-- CTA lead-ins
-- product explanations
-
-Construction:
-- dual tracks (2.4px, paper + oxide)
-- one controlled divergence point
-- bold double-ring junction node (7px oxide outer, 3px dark inner)
-- exit indicator tick at terminus
-
-### 4. Echo Band
-Role: **rhythm and transition**
-
-Use for:
-- chapter transitions
-- divider pages
-- appendix sections
-- footer bands
-- subtle background rhythm
-
-Construction:
-- three parallel offset bands (2.2px: paper, oxide, mineral)
-- ghost echoes at 35% opacity (visible, not invisible)
-- vertical registration notch at right edge
-- no standalone hero use without supporting content
+Abstract vertical barlines dividing horizontal space, with beat-dots on the baseline and one indigo accent beat. Use for footers, rails, and content-grid registration. Drives the **barline-reveal** motion (measures reveal left-to-right; the accent beat keys last).
 
 ### Family Rules
-- All motifs use 2-2.4px stroke weights (never thinner than 1.8px)
-- All strokes use rounded linecaps and linejoins
-- Keep corners and endpoints disciplined and minimal
-- Do not invent additional motif styles casually
-- Do not use all four motifs in one composition
-- Assign motifs by role instead of by taste
-- The Signal Path icon shares DNA with the motif family but is a logo, not a motif
+- Dots are true circles; barlines orthogonal with round linecaps.
+- Exactly **one** indigo focal/accent dot per composition.
+- Field dots are cream (`#F4F1EA`) on dark, ink (`#16161A`) on light.
+- Assign by role — dome = identity, field = texture, barline = rhythm. Do not mix all three as decoration in one composition.
+- **No literal musical notation** — orchestration is rendered through abstract dots.
+- The stage-light radial (`--gradient-hero-stage`) is permitted **only** on hero surfaces; content/document backgrounds stay flat.
+
+> *Superseded June 2026:* the prior Tempo Ledger / Data Rail / Switch Track / Echo Band family and the `pattern-tile` / `divider-*` SVGs are retired with the S-curve identity.
 
 ---
 
 ## 6. Imagery Direction
 
+> The imagery **library** is built in the imagery phase (Pillar 5); the *direction* below is locked.
+
 ### Photography World
-- urban, architectural, industrial, and materially raw
-- no nature-first imagery
-- no generic stock office scenes
-- no synthetic “AI futurism” imagery
+- the orchestra and the concert hall — strings, brass, woodwind, hands on instruments, the conductor, the hall and its architecture
+- architectural and materially raw where it reinforces "system / structure"
+- no generic stock office scenes; no synthetic "AI futurism" imagery
 
 ### Preferred Subjects
-- facades, rails, structural shadows
-- concrete, metal, glass, and workshop textures
-- infrastructure, systems, and framed urban geometry
+- instruments and players in tight, intimate crops (a bow on strings, a row of cellos, hands at a keyboard)
+- the hall: seating curves, ceilings, stage light, structural geometry
+- the dot-dome echoed in real ensembles seen from above
 
 ### Treatment
 - desaturated, high-contrast, editorial
 - tight crops over scenic views
-- subtle forest-toned overlays when needed for cohesion
+- subtle indigo-toned overlay (opacity ~0.62) for cohesion on dark grounds
 
 ---
 
@@ -271,10 +227,10 @@ Construction:
 
 ### Style
 - stroke-led
-- clean terminals
-- geometric but not playful
+- clean terminals, round caps (matches the dot family)
+- geometric but not playful; dot terminals where natural
 - 24 × 24 grid
-- Deep Forest on light, Warm Paper on dark
+- Ink (`#16161A`) on light, Cream (`#F4F1EA`) on dark; indigo only as the single accent
 
 ### Usage
 Icons should support information hierarchy, not become decorative stickers.
@@ -324,15 +280,11 @@ Icons should support information hierarchy, not become decorative stickers.
 - `favicon.svg` — simplified 16px-optimized S-Curve variant
 
 ### Motifs (`assets/svg/`)
-- `divider-full.svg` / `divider-full-white.svg` — Tempo Ledger full-width dividers
-- `divider-short.svg` / `divider-short-white.svg` — Tempo Ledger short dividers
-- `motif-tempo-ledger.svg` — primary signature motif
-- `motif-data-rail.svg` — analytical annotation motif
-- `motif-switch-track.svg` — process/orchestration motif
-- `motif-echo-band.svg` — rhythm/transition motif
-- `pattern-tile.svg` — combined pattern tile for backgrounds
+- `motif-dot-field.svg` / `motif-dot-field-light.svg` — concentric dot-field texture (ink / cream)
+- `motif-barline.svg` / `motif-barline-light.svg` — barline measure rhythm (ink / cream)
+- *(the dot-dome itself lives in `logos/symbol*.svg`)*
 
 ---
 
 *STROMY — Intelligence, Orchestrated.*
-*Version 3.0 · April 2026*
+*Version 4.0 — Velvet Score · June 2026 · imagery library (§6) pending Pillar 5*

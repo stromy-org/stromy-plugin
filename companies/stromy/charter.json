@@ -7,19 +7,25 @@
     "domain": "stromy.com.au",
     "contact": "hello@stromy.com.au",
     "protection_class": "protected",
-    "protected_assets": { "heading_font": true, "body_font": true, "primary_color": true, "accent_color": true, "motif_family": true }
+    "protected_assets": {
+      "heading_font": true,
+      "body_font": true,
+      "primary_color": true,
+      "accent_color": true,
+      "motif_family": true
+    }
   },
   "colors": {
-    "primary": "#1D342B",
-    "secondary": "#0F1310",
-    "accent": "#B96034",
-    "background": "#ECE6DA",
-    "backgroundAlt": "#F3EDE2",
-    "text": "#171611",
-    "textLight": "#6D665C",
-    "success": "#47685B",
-    "warning": "#B96034",
-    "error": "#8E3F2E"
+    "primary": "#31004F",
+    "secondary": "#0B0B0C",
+    "accent": "#61009E",
+    "background": "#FFFFFF",
+    "backgroundAlt": "#E5D2FA",
+    "text": "#16161A",
+    "textLight": "#6E6A75",
+    "success": "#1E462F",
+    "warning": "#B8860B",
+    "error": "#8E2F4F"
   },
   "fonts": {
     "heading": {
@@ -36,6 +42,16 @@
       "family": "IBM Plex Mono",
       "fallback": "'SF Mono', 'Fira Code', monospace",
       "weight": "normal"
+    },
+    "wordmark": {
+      "family": "Space Grotesk",
+      "fallback": "'Helvetica Neue', Arial, sans-serif",
+      "weight": "600"
+    },
+    "label": {
+      "family": "Space Grotesk",
+      "fallback": "'Helvetica Neue', Arial, sans-serif",
+      "weight": "500"
     }
   },
   "logo": {
@@ -46,15 +62,18 @@
     "mono": "logos/logo_mono.svg",
     "tagline": "logos/logo_tagline.svg",
     "mark": "logos/symbol.svg",
-    "icon": "logos/icon_dark.svg",
-    "iconPng": "logos/icon_dark.png",
-    "iconGreen": "logos/icon_green.svg",
-    "iconGreenPng": "logos/icon_green.png",
-    "iconPaper": "logos/icon_paper.svg",
-    "iconPaperPng": "logos/icon_paper.png",
+    "markLight": "logos/symbol_light.svg",
+    "markMono": "logos/symbol_mono.svg",
+    "secondary": "logos/secondary.svg",
+    "secondaryWhite": "logos/secondary_white.svg",
+    "variants": {
+      "apex": "logos/symbol_apex.svg",
+      "center": "logos/symbol_center.svg"
+    },
     "favicon": "logos/favicon.svg",
+    "faviconPng": "logos/favicon.png",
     "maxWidth": "220pt",
-    "maxHeight": "60pt",
+    "maxHeight": "72pt",
     "sizing": "contain"
   },
   "images": {
@@ -62,50 +81,75 @@
       {
         "file": "images/01_brutalist_concrete.jpg",
         "description": "Brutalist parking spiral — raw concrete layers, industrial geometry",
-        "roles": ["divider"],
+        "roles": [
+          "divider"
+        ],
         "theme": "existing"
       },
       {
         "file": "images/02_brutalist_geometric.jpg",
         "description": "Monumental concrete cantilever — bold, authoritative brutalist form",
-        "roles": ["cover", "divider", "closing"],
+        "roles": [
+          "cover",
+          "divider",
+          "closing"
+        ],
         "hero": true,
         "theme": "existing"
       },
       {
         "file": "images/04_concrete_curves.jpg",
         "description": "Industrial curved pipes — sculptural concrete forms in B&W",
-        "roles": ["divider"],
+        "roles": [
+          "divider"
+        ],
         "theme": "existing"
       },
       {
         "file": "images/07_geometric_bw.jpg",
         "description": "Geometric B&W architecture — stark light and shadow on tiled facade",
-        "roles": ["cover", "divider", "closing"],
+        "roles": [
+          "cover",
+          "divider",
+          "closing"
+        ],
         "theme": "existing"
       },
       {
         "file": "images/08_arch_lines_shadow.jpg",
         "description": "Architectural lines with rhythmic shadows — chevron geometry",
-        "roles": ["divider", "background", "closing"],
+        "roles": [
+          "divider",
+          "background",
+          "closing"
+        ],
         "theme": "existing"
       },
       {
         "file": "images/11_corten_vertical_slats.jpg",
         "description": "Warm corten steel building with vertical slats — excellent oxide-tone match",
-        "roles": ["divider", "background"],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "theme": "oxidized-infrastructure"
       },
       {
         "file": "images/12_corten_pyramid.jpg",
         "description": "Corten pyramid — geometric oxidized form with many windows",
-        "roles": ["divider", "closing"],
+        "roles": [
+          "divider",
+          "closing"
+        ],
         "theme": "oxidized-infrastructure"
       },
       {
         "file": "images/13_corten_tower.jpg",
         "description": "Corten steel tower — oxidized vertical structure, street context",
-        "roles": ["divider", "background"],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "theme": "oxidized-infrastructure"
       },
       {
@@ -118,177 +162,251 @@
       {
         "file": "images/15_brown_concrete_lowangle.jpg",
         "description": "Low-angle brown concrete building — warm monumental form",
-        "roles": ["cover", "closing"],
+        "roles": [
+          "cover",
+          "closing"
+        ],
         "theme": "oxidized-infrastructure"
       },
       {
         "file": "images/16_rusted_metal_rivets.jpg",
         "description": "Close-up rusted metal with rivets — raw oxidized detail texture",
-        "roles": ["background"],
+        "roles": [
+          "background"
+        ],
         "hero": true,
         "theme": "oxidized-infrastructure"
       },
       {
         "file": "images/17_industrial_staircase.jpg",
         "description": "Industrial staircase — corten interior, modern building",
-        "roles": ["divider", "closing"],
+        "roles": [
+          "divider",
+          "closing"
+        ],
         "theme": "oxidized-infrastructure"
       },
       {
         "file": "images/18_brown_building_monumental.jpg",
         "description": "Brown concrete building — warm tones, white sky, monumental",
-        "roles": ["cover", "closing"],
+        "roles": [
+          "cover",
+          "closing"
+        ],
         "hero": true,
         "theme": "oxidized-infrastructure"
       },
       {
         "file": "images/19_diamond_facade.jpg",
         "description": "Geometric diamond pattern on building facade — structured repetition",
-        "roles": ["divider", "background"],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "theme": "brutalist-architecture"
       },
       {
         "file": "images/20_geometric_window_grid.jpg",
         "description": "Geometric window grid — repetitive facade pattern, systematic",
-        "roles": ["divider", "background"],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "theme": "brutalist-architecture"
       },
       {
         "file": "images/21_brutalist_bw_curves.jpg",
         "description": "B&W brutalist building — stark contrast, bold curved balconies",
-        "roles": ["divider"],
+        "roles": [
+          "divider"
+        ],
         "theme": "brutalist-architecture"
       },
       {
         "file": "images/22_concrete_curves_sky.jpg",
         "description": "Concrete building curves against sky — sculptural brutalist form",
-        "roles": ["cover", "divider", "closing"],
+        "roles": [
+          "cover",
+          "divider",
+          "closing"
+        ],
         "hero": true,
         "theme": "brutalist-architecture"
       },
       {
         "file": "images/23_vertical_fins.jpg",
         "description": "Repeating vertical fins — modern brutalist rhythm",
-        "roles": ["cover", "closing"],
+        "roles": [
+          "cover",
+          "closing"
+        ],
         "theme": "brutalist-architecture"
       },
       {
         "file": "images/24_shadow_lines_grayscale.jpg",
         "description": "Grayscale building — shadow lines creating rhythmic pattern",
-        "roles": ["divider", "background"],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "theme": "structural-shadow"
       },
       {
         "file": "images/25_tall_building_shadow.jpg",
         "description": "Tall building — vertical shadow rhythm with architectural detail",
-        "roles": ["cover", "closing"],
+        "roles": [
+          "cover",
+          "closing"
+        ],
         "hero": true,
         "theme": "structural-shadow"
       },
       {
         "file": "images/26_white_concrete_daylight.jpg",
         "description": "White concrete — clean daylight shadow lines, minimal",
-        "roles": ["divider", "background"],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "theme": "structural-shadow"
       },
       {
         "file": "images/27_brown_concrete_warm.jpg",
         "description": "Brown concrete with warm shadows — warm-toned rhythm",
-        "roles": ["divider", "background"],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "theme": "structural-shadow"
       },
       {
         "file": "images/28_metal_poles_parallel.jpg",
         "description": "Metal poles closeup — parallel lines, industrial rhythm",
-        "roles": ["cover", "closing"],
+        "roles": [
+          "cover",
+          "closing"
+        ],
         "theme": "structural-shadow"
       },
       {
         "file": "images/29_dark_wood_floor.jpg",
         "description": "Dark wood floor — rich timber grain, warm texture",
-        "roles": ["background"],
+        "roles": [
+          "background"
+        ],
         "theme": "workshop-material"
       },
       {
         "file": "images/30_weathered_barn_door.jpg",
         "description": "Weathered barn door — aged timber with character",
-        "roles": ["background"],
+        "roles": [
+          "background"
+        ],
         "theme": "workshop-material"
       },
       {
         "file": "images/31_dark_wood_grain.jpg",
         "description": "Dark wood grain — deep tones, organic pattern",
-        "roles": ["background"],
+        "roles": [
+          "background"
+        ],
         "theme": "workshop-material"
       },
       {
         "file": "images/32_amber_wood.jpg",
         "description": "Amber wood — warm golden tones, crafted surface",
-        "roles": ["background"],
+        "roles": [
+          "background"
+        ],
         "theme": "workshop-material"
       },
       {
         "file": "images/33_black_marble.jpg",
         "description": "Black marble with white veins — dark premium texture",
-        "roles": ["background"],
+        "roles": [
+          "background"
+        ],
         "theme": "workshop-material"
       },
       {
         "file": "images/34_dark_geometry_angular.jpg",
         "description": "B&W dark geometry — angular architecture, deep contrast",
-        "roles": ["divider", "background"],
+        "roles": [
+          "divider",
+          "background"
+        ],
         "theme": "dark-geometry"
       },
       {
         "file": "images/35_illuminated_windows_night.jpg",
         "description": "Illuminated windows at night — warm glow in dark facade",
-        "roles": ["cover", "closing"],
+        "roles": [
+          "cover",
+          "closing"
+        ],
         "hero": true,
         "theme": "dark-geometry"
       },
       {
         "file": "images/36_stairwell_glass.jpg",
         "description": "Stairwell through glass — geometric depth, moody interior",
-        "roles": ["divider"],
+        "roles": [
+          "divider"
+        ],
         "theme": "dark-geometry"
       },
       {
         "file": "images/37_glass_facade_reflections.jpg",
         "description": "Glass facade with warm building reflections at night",
-        "roles": ["cover", "background", "closing"],
+        "roles": [
+          "cover",
+          "background",
+          "closing"
+        ],
         "hero": true,
         "theme": "dark-geometry"
       },
       {
         "file": "images/38_dark_building_silhouette.jpg",
         "description": "B&W dark building — stark silhouette, dramatic composition",
-        "roles": ["cover", "closing"],
+        "roles": [
+          "cover",
+          "closing"
+        ],
         "hero": true,
         "theme": "dark-geometry"
       },
       {
         "file": "images/39_industrial_pipes_bw.jpg",
         "description": "B&W industrial pipes — complex system, structured chaos",
-        "roles": ["divider"],
+        "roles": [
+          "divider"
+        ],
         "theme": "framed-urban-systems"
       },
       {
         "file": "images/40_urban_framing_post.jpg",
         "description": "Grayscale building with structural post — urban framing",
-        "roles": ["divider"],
+        "roles": [
+          "divider"
+        ],
         "theme": "framed-urban-systems"
       },
       {
         "file": "images/41_aerial_train_yard.jpg",
         "description": "Aerial train yard — track switching systems, orchestration literal",
-        "roles": ["cover", "background", "closing"],
+        "roles": [
+          "cover",
+          "background",
+          "closing"
+        ],
         "hero": true,
         "theme": "framed-urban-systems"
       }
     ],
     "overlay": {
-      "color": "primary",
-      "opacity": 0.65
+      "color": "secondary",
+      "opacity": 0.62
     },
     "logoVariantOnImage": "white"
   },
@@ -356,19 +474,47 @@
       "home": {
         "enabled": true,
         "sections": [
-          { "type": "hero", "variant": "split" },
-          { "type": "service", "variant": "capability-grid" },
-          { "type": "stats", "variant": "counter-band" },
-          { "type": "case-study", "variant": "featured-card" },
-          { "type": "content", "variant": "tech-teaser" },
-          { "type": "cta", "variant": "full-width-band" }
+          {
+            "type": "hero",
+            "variant": "split"
+          },
+          {
+            "type": "service",
+            "variant": "capability-grid"
+          },
+          {
+            "type": "stats",
+            "variant": "counter-band"
+          },
+          {
+            "type": "case-study",
+            "variant": "featured-card"
+          },
+          {
+            "type": "content",
+            "variant": "tech-teaser"
+          },
+          {
+            "type": "cta",
+            "variant": "full-width-band"
+          }
         ]
       },
-      "about": { "enabled": true },
-      "services": { "enabled": true },
-      "case-studies": { "enabled": true },
-      "blog": { "enabled": true },
-      "contact": { "enabled": true }
+      "about": {
+        "enabled": true
+      },
+      "services": {
+        "enabled": true
+      },
+      "case-studies": {
+        "enabled": true
+      },
+      "blog": {
+        "enabled": true
+      },
+      "contact": {
+        "enabled": true
+      }
     },
     "deployment": {
       "platform": "github-pages",
@@ -378,9 +524,20 @@
     }
   },
   "document": {
-    "margins": { "top": "1in", "bottom": "1in", "left": "1in", "right": "1in" },
-    "header": { "content": "STROMY", "logo": true },
-    "footer": { "content": "Confidential", "pageNumbers": true },
+    "margins": {
+      "top": "1in",
+      "bottom": "1in",
+      "left": "1in",
+      "right": "1in"
+    },
+    "header": {
+      "content": "STROMY",
+      "logo": true
+    },
+    "footer": {
+      "content": "Confidential",
+      "pageNumbers": true
+    },
     "headingColor": "primary",
     "tableHeaderColor": "primary"
   },
@@ -396,62 +553,97 @@
   },
   "formatting": {
     "headingThreshold": 24,
-    "accentCycleColors": ["primary", "accent", "success"],
+    "accentCycleColors": [
+      "primary",
+      "accent",
+      "success"
+    ],
     "autoContrastText": true
   },
   "plotly": {
-    "categoricalPalette": ["#1D342B", "#B96034", "#47685B", "#7F9B90", "#D68A60", "#6D665C"],
+    "categoricalPalette": [
+      "#61009E",
+      "#31004F",
+      "#1E462F",
+      "#9B7BB8",
+      "#5C5C66",
+      "#E5D2FA"
+    ],
     "defaultHeight": 500,
     "titleFontSize": 18,
     "axisFontSize": 12,
     "legendFontSize": 11,
-    "margins": { "top": 80, "bottom": 70, "left": 60, "right": 50 },
+    "margins": {
+      "top": 80,
+      "bottom": 70,
+      "left": 60,
+      "right": 50
+    },
     "baseTemplate": "plotly_white",
-    "gridColor": "#D7D0C3",
-    "secondaryTextColor": "#8C857A",
+    "gridColor": "#E3DCEC",
+    "secondaryTextColor": "#6E6A75",
     "bar": {
-      "markerColor": "#1D342B",
-      "markerLineColor": "#152019",
+      "markerColor": "#31004F",
+      "markerLineColor": "#1C0030",
       "markerLineWidth": 1
     },
     "line": {
-      "color": "#1D342B",
+      "color": "#31004F",
       "width": 2.5,
-      "markerColor": "#B96034",
+      "markerColor": "#61009E",
       "markerSize": 7
     },
     "scatter": {
-      "markerColor": "#1D342B",
+      "markerColor": "#61009E",
       "markerSize": 8,
       "markerLineWidth": 0
     },
     "pie": {
       "hole": 0.4,
       "textfontSize": 13,
-      "markerLineColor": "#ECE6DA",
+      "markerLineColor": "#FFFFFF",
       "markerLineWidth": 2
     },
     "sentiment": {
-      "positiveColor": "#47685B",
-      "neutralColor": "#8C857A",
-      "negativeColor": "#8E3F2E"
+      "positiveColor": "#1E462F",
+      "neutralColor": "#9A9AA4",
+      "negativeColor": "#8E2F4F"
     }
   },
   "excalidraw": {
-    "strokeColor": "#1D342B",
-    "backgroundColor": "#ECE6DA",
-    "fillColors": ["#1D342B", "#B96034", "#47685B", "#7F9B90", "#D68A60", "#6D665C"],
-    "textColor": "#171611",
+    "strokeColor": "#31004F",
+    "backgroundColor": "#FFFFFF",
+    "fillColors": [
+      "#61009E",
+      "#31004F",
+      "#1E462F",
+      "#E5D2FA",
+      "#9B7BB8",
+      "#5C5C66"
+    ],
+    "textColor": "#16161A",
     "fontFamily": 2,
     "fontSize": 16,
     "strokeWidth": 2,
     "roughness": 0,
-    "arrowColor": "#6D665C",
+    "arrowColor": "#5C5C66",
     "labelFontSize": 14
   },
   "placeholderPolicy": {
-    "brandFields": ["brandName", "tagline", "domain", "logoPath"],
-    "externalFields": ["sender.name", "sender.title", "sender.email", "sender.phone", "sender.mobile", "sender.address"],
+    "brandFields": [
+      "brandName",
+      "tagline",
+      "domain",
+      "logoPath"
+    ],
+    "externalFields": [
+      "sender.name",
+      "sender.title",
+      "sender.email",
+      "sender.phone",
+      "sender.mobile",
+      "sender.address"
+    ],
     "fallback": "placeholders",
     "placeholderFormat": "{{fieldName}}"
   },
@@ -520,78 +712,336 @@
     "status": "approved",
     "principles": [
       "Substance before style — the work speaks; decoration must earn its place.",
-      "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
+      "Orchestration as metaphor — every layout, motif, and typographic choice encodes disparate parts resolved into one coherent system.",
       "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
-      "Signal economy — oxide is a signal color, never a flood; motifs are assigned by role, not taste.",
-      "Infrastructure as image world — urban, architectural, raw-material photography; no stock offices, no AI futurism."
+      "Signal economy — indigo is a signal colour, never a flood; a single focal dot carries the accent.",
+      "The score made visible — concentric dot-fields and barline rhythm render orchestration as a structural system, not a picture of instruments."
     ],
     "visualAxes": {
       "density": {
         "value": "spacious",
-        "note": "website.layout.whitespaceStrategy='measured', sectionSpacing='generous'; guidelines motif rules avoid crowding"
+        "note": "measured whitespace, generous section spacing; the dot family never crowds a surface"
       },
       "contrast": {
         "value": "high",
-        "note": "website.colorApplication.darkSections=true; 60/30/10 color rule (obsidian/forest/oxide); imagery treatment 'desaturated, high-contrast' (guidelines §6); shadow tokens are deliberately minimal (editorial), contrast carried by color not depth"
+        "note": "Concert Black (#0B0B0C) against Cream (#F4F1EA); 60/30/10 black/cream/indigo; depth carried by colour, shadows deliberately minimal"
       },
       "symmetry": {
         "value": "controlled-asymmetry",
-        "note": "website.layout.symmetry='balanced' with gridSystem='structured-2col'; Tempo Ledger motif uses offset upper/lower rules — balanced but intentionally off-register"
+        "note": "misaligned section numerals (cream + offset indigo), off-register focal dot; balanced structured grids underneath"
       },
       "geometry": {
-        "value": "rectilinear",
-        "note": "website.texture.cornerRadius='sharp'; logo construction 'all angles grid-aligned (45° or 90°)' (guidelines §2); motif strokes all horizontal/vertical with round linecaps only at stroke terminals"
+        "value": "geometric",
+        "note": "polar dot lattice (dot-dome, dot-field) + rectilinear barline measures; dots are true circles, rules orthogonal with round linecaps"
       },
       "typeExpression": {
         "value": "editorial",
-        "note": "website.aesthetic='editorial-systems'; website.typography.headingStyle='display-serif'; Fraunces 'should feel authored and calm, not ornamental' (guidelines §4); display scale tight leading (1.05–1.12)"
+        "note": "Fraunces display/headline (authored, calm), Space Grotesk wordmark + labels (open tracking), Plus Jakarta Sans body, IBM Plex Mono metadata"
       },
       "imageTreatment": {
         "value": "documentary-muted",
-        "note": "guidelines §6: 'desaturated, high-contrast, editorial'; 'tight crops over scenic views'; 'subtle forest-toned overlays'; image overlay opacity=0.65 (charter.json images.overlay)"
+        "note": "orchestral + architectural photography, desaturated/high-contrast, indigo-toned overlay (opacity 0.62); tight crops — full direction owned by Pillar 5"
       },
       "motifProminence": {
         "value": "structural",
-        "note": "Four-part motif family is integral to layouts (Tempo Ledger for headers, Data Rail for evidence panels, Switch Track for workflows, Echo Band for transitions) — guidelines §5 and §8; motif tokens in tokens.css --motif-* vars"
+        "note": "dot-dome (identity), dot-field (texture), barline (rhythm) are integral to layouts, assigned by role"
       },
       "colorRhythm": {
         "value": "dark-light-indexed",
-        "note": "website.colorApplication.darkSections=true, darkSectionFrequency=3; primary surface alternates obsidian-forest dark with warm-paper light; 60/30/10 rule (guidelines §3)"
+        "note": "Concert Black heroes/dividers alternate with Cream/White content; indigo as the singular signal"
       },
       "ornament": {
         "value": "restrained",
-        "note": "guidelines §5 motif rules: 'do not invent additional motif styles casually'; personality trait 'restrained: lets the work speak; no flash without substance'; oxide used as signal accent, never decorative flood"
+        "note": "one focal dot per composition; no decorative motif flood; the stage-light radial is hero-only"
       }
     },
     "signatureElements": [
-      "Tempo Ledger — primary signature motif (upper paper rule + offset oxide rule + registration box); anchors all major section headers and report covers",
-      "Data Rail — analytical annotation motif (vertical rail + hierarchical checkpoint nodes); marks evidence trails, scorecards, and sidebars",
-      "Switch Track — orchestration motif (dual tracks with controlled divergence + double-ring junction node); used in workflow and process storytelling",
-      "Echo Band — rhythm motif (three parallel offset bands at 35% ghost); chapter transitions and section dividers",
-      "S-Curve symbol — standalone icon mark encoding complexity→clarity transformation; used where name is already established",
-      "Orchestration Node Wordmark — STROMY set in Fraunces with compact orchestration node; primary identity mark",
-      "Oxide signal dot — small filled circle in #B96034 used as a terminal node across all motifs; encodes the decision/transformation point"
+      "Dot-dome — the primary mark: a polar lattice of dots forming an orchestra dome with one indigo focal dot at the podium; the rising-ensemble signature.",
+      "Concentric dot-field — rings of dots radiating from a single indigo focal; full-bleed texture for heroes and dividers; drives the field-breathe motion.",
+      "Barline measure — abstract vertical barlines with beat-dots and one indigo accent beat; rhythm and structure motif for footers, rails, and content grids.",
+      "Misaligned numeral — large Fraunces section numbers split cream/indigo with a deliberate baseline offset; the 'scored' editorial cue.",
+      "Space Grotesk wordmark — STROMY set in Space Grotesk 600 with open tracking, rising from the dot-dome; primary identity lockup.",
+      "Misaligned secondary lockup — the 'scored' STROMY wordmark for cover slides, home-page heroes, and section openers."
     ],
     "antiPatterns": [
-      "Do not use pure white (#FFFFFF) or pure black (#000000) — use Warm Paper (#ECE6DA) and Obsidian Forest (#0F1310) respectively",
-      "Do not flood oxide (#B96034) as a background or dominant color — it is a signal accent (10% of color balance)",
-      "Do not add gradient fills or gradient directions — website.colorApplication.gradientDirection='none'",
-      "Do not use rounded corners on layout containers — cornerRadius='sharp'",
-      "Do not invent new motif styles outside the four-part family",
-      "Do not mix the wordmark and S-Curve symbol in the same immediate composition",
-      "Do not use playful or organic geometry — all angles grid-aligned at 45° or 90°",
-      "Do not use startup hype language ('revolutionary', 'game-changing', 'disruptive') — voice-extensions.json banned phrases",
-      "Do not use drop shadows for decorative depth — shadow tokens exist for elevation only; shadowDepth='none' at surface level",
-      "Do not place imagery without brand-tint overlay (opacity 0.65) when used as section background"
+      "No literal musical notation — no staves, clefs, or noteheads; orchestration is rendered through abstract dots, not sheet music.",
+      "No orange or Claude-adjacent accent — indigo (#61009E) is the only signal colour; the retired oxide/orange must not reappear.",
+      "No gradient floods on working surfaces — the stage-light radial is a hero-only device; content and document backgrounds stay flat.",
+      "No decorative motif scatter — the dot family is assigned by role (dome=identity, field=texture, barline=rhythm), never sprinkled for taste.",
+      "No pure-white document grounds where Cream is specified; no stock-office or AI-futurism imagery.",
+      "Never more than one indigo focal dot in a single composition — the signal is singular."
     ],
-    "requiredMotifs": [
-      "Stroke weight 2.2px on all motif lines (--motif-line-weight: 2.2px) — never below 1.8px",
-      "Round linecaps and linejoins on all motif strokes",
-      "Oxide node treatment (outer ring + inner oxide fill, diameter = 2× stroke) for all primary nodes",
-      "Warm Paper as default light surface — not pure white",
-      "Fraunces for all display/headline type; Plus Jakarta Sans for body; IBM Plex Mono for metadata and data labels",
-      "Logo clear space = cap height of 'S' in wordmark on all sides"
-    ],
+    "requiredMotifs": [],
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "Velvet Score palette + GRAMMAR-BOARD.html slides 1/4/5 (render-reviewed 2026-06-19)"
+        },
+        "assets": [],
+        "tokens": [
+          "--hero-surface",
+          "--content-surface-light",
+          "--panel-tint"
+        ],
+        "spec": {
+          "canvases": [
+            {
+              "name": "concert-black",
+              "role": "primary-dark",
+              "css": "#0B0B0C"
+            },
+            {
+              "name": "cream",
+              "role": "primary-light",
+              "css": "#F4F1EA"
+            },
+            {
+              "name": "white",
+              "role": "document-light",
+              "css": "#FFFFFF"
+            },
+            {
+              "name": "thistle-tint",
+              "role": "accent-panel",
+              "css": "#E5D2FA"
+            }
+          ],
+          "default": "dark-light-indexed — Concert Black heroes/dividers alternate with Cream/White content"
+        }
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "GRAMMAR-BOARD.html + BRAND-Review-Board.html — co_created, render-reviewed 2026-06-19"
+        },
+        "assets": [
+          "logos/symbol.svg",
+          "logos/symbol_light.svg",
+          "assets/svg/motif-dot-field.svg",
+          "assets/svg/motif-dot-field-light.svg",
+          "assets/svg/motif-barline.svg",
+          "assets/svg/motif-barline-light.svg"
+        ],
+        "tokens": [],
+        "spec": {
+          "name": "Velvet Score dot family",
+          "marks": [
+            {
+              "name": "dot-dome",
+              "role": "identity",
+              "asset": "logos/symbol.svg",
+              "desc": "polar dot lattice forming an orchestra dome; one indigo focal at the podium"
+            },
+            {
+              "name": "dot-field",
+              "role": "texture",
+              "asset": "assets/svg/motif-dot-field.svg",
+              "desc": "concentric rings of dots radiating from a single indigo focal"
+            },
+            {
+              "name": "barline",
+              "role": "rhythm",
+              "asset": "assets/svg/motif-barline.svg",
+              "desc": "abstract vertical measures with beat-dots; one indigo accent beat"
+            }
+          ],
+          "roles": {
+            "identity": "dot-dome",
+            "texture": "dot-field",
+            "rhythm": "barline"
+          },
+          "allowedSurfaces": {
+            "dot-dome": [
+              "cover",
+              "footer-mark",
+              "favicon"
+            ],
+            "dot-field": [
+              "hero",
+              "divider",
+              "corner-mark"
+            ],
+            "barline": [
+              "footer",
+              "rail",
+              "content-grid"
+            ]
+          },
+          "usageCaps": {
+            "focalDotsPerComposition": 1,
+            "domePerDeck": "cover + closing only"
+          },
+          "tokenPrefix": "--motif",
+          "dropped": [
+            "staff",
+            "noteheads",
+            "clef"
+          ],
+          "supersedes": [
+            "motif-tempo-ledger",
+            "motif-data-rail",
+            "motif-switch-track",
+            "motif-echo-band",
+            "pattern-tile",
+            "S-curve symbol"
+          ],
+          "enforcement": "advisory — the dot family is a toolkit; the variance engine + agent compose freely. Brand essence (palette/fonts/logo authenticity) is enforced by brand_gate fonts/colors/images checks, NOT by mandating which motifs appear."
+        }
+      },
+      "patterns": {
+        "status": "proposed",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "dot-field used as full-bleed texture on GRAMMAR-BOARD slides 3/5"
+        },
+        "assets": [
+          "assets/svg/motif-dot-field.svg",
+          "assets/svg/motif-dot-field-light.svg"
+        ],
+        "tokens": [],
+        "spec": {
+          "patterns": [
+            {
+              "name": "dot-field-texture",
+              "tile": "single concentric instance scaled full-bleed (non-tiling)",
+              "scale": "480-880px",
+              "opacity": "0.10-0.30",
+              "usage": "hero/divider background texture; the focal dot must stay perceptible"
+            }
+          ]
+        }
+      },
+      "grid": {
+        "status": "proposed",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "website.layout structured-2col + barline measure rhythm"
+        },
+        "assets": [],
+        "tokens": [],
+        "spec": {
+          "columns": "structured 2-col content over a 12-col base",
+          "gutter": "generous",
+          "maxWidth": "measured (editorial)",
+          "margins": "wide",
+          "rhythm": "barline measures register horizontal divisions"
+        }
+      },
+      "iconography": {
+        "status": "proposed",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "stroke/dot language of the motif family; representative sample set deferred to Pillar 6 productionize"
+        },
+        "assets": [],
+        "tokens": [],
+        "spec": {
+          "style": "stroke-led geometric",
+          "strokeWeight": "2px",
+          "corner": "round caps/joins",
+          "fillVsLine": "line-dominant with dot terminals",
+          "sample": []
+        }
+      },
+      "gradients": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "GRAMMAR-BOARD cover s2; operator pick 2026-06-19 — radial heroes, flat content"
+        },
+        "assets": [],
+        "tokens": [
+          "--gradient-hero-stage"
+        ],
+        "spec": {
+          "gradients": [
+            {
+              "name": "hero-stage-light",
+              "stops": "radial-gradient(ellipse 62% 52% at 50% 82%, rgba(97,0,158,0.42), rgba(49,0,79,0.10) 46%, transparent 68%)",
+              "usage": "hero surfaces ONLY (covers, section heroes, website hero) over Concert Black; never on content/document backgrounds"
+            }
+          ],
+          "policy": "flat content, radial heroes"
+        }
+      },
+      "photo": {
+        "status": "deferred",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "Pillar 5 — literal orchestral imagery library (instruments, strings, halls)"
+        },
+        "assets": [],
+        "tokens": [],
+        "spec": {
+          "overlayOpacity": 0.62,
+          "treatment": "desaturated, high-contrast, indigo-toned overlay",
+          "crop": "tight crops over scenic",
+          "note": "full imagery direction owned by Pillar 5"
+        }
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "tokens.css shadow scale; depth carried by colour contrast, not shadow (editorial)"
+        },
+        "assets": [],
+        "tokens": [
+          "--shadow-sm",
+          "--shadow-md"
+        ],
+        "spec": {
+          "shadows": [
+            "minimal editorial only (--shadow-sm/md)"
+          ],
+          "glows": [
+            "the stage-light radial is the only glow, hero-only"
+          ],
+          "borders": "1-1.5px hairline rules in thistle/ink at low opacity; depth via colour not shadow"
+        }
+      },
+      "motion": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "BRAND-Review-Board.html live motions — co_created, operator-approved 2026-06-19"
+        },
+        "assets": [],
+        "tokens": [],
+        "spec": {
+          "behaviors": [
+            {
+              "name": "dome-assemble",
+              "trigger": "cover/hero entrance",
+              "desc": "the dot-dome composes itself ring by ring; the indigo focal lands at the podium and settles (no bounce) — 'the orchestra composes itself'"
+            },
+            {
+              "name": "barline-reveal",
+              "trigger": "section/measure reveal",
+              "desc": "barlines and beat-dots reveal left-to-right in measure order; the indigo accent beat keys last"
+            },
+            {
+              "name": "field-breathe",
+              "trigger": "ambient/idle on hero",
+              "desc": "the concentric dot-field breathes (subtle scale/opacity pulse); the indigo focal pulses gently at the centre"
+            }
+          ],
+          "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule — these are real approved decisions, not a silent drop). Bake/Remotion productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
+        }
+      }
+    },
     "evidence": [
       {
         "path": "guidelines.md",
@@ -600,16 +1050,25 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "Version 3.0 · April 2026 — primary evidence source for archetype, essence, positioning, personality, voice, logo system, color system, typography, motif family, imagery direction, brand applications"
+        "note": "Version 4.0 (Velvet Score refresh) — archetype, essence, positioning, voice, dot-dome logo system, Velvet Score colour system, Space Grotesk + Fraunces/Jakarta/Plex type, dot-family motif grammar, imagery direction"
       },
       {
-        "path": "website",
-        "kind": "website",
+        "path": "_build/reviews/GRAMMAR-BOARD.html",
+        "kind": "design_artifact",
         "sourceAuthority": "co_created",
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "charter.json 'website' block — archetype='sage', aesthetic='editorial-systems', layout/texture/typography/colorApplication fields provide machine-readable design axes; darkSections, symmetry='balanced', cornerRadius='sharp', whitespaceStrategy='measured'"
+        "note": "Pillar 4 render-review board — 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19"
+      },
+      {
+        "path": "_build/reviews/inspiration",
+        "kind": "design_artifact",
+        "sourceAuthority": "reference",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) — 'notation as a structural system' DNA behind the dot family"
       },
       {
         "path": "tokens.css",
@@ -618,7 +1077,7 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "Full CSS custom property system — confirms motif-line-weight=2.2px, color scale (obsidian/green/oxide/paper), type stack (Fraunces/Plus Jakarta Sans/IBM Plex Mono), shadow tokens (subtle, editorial), spacing scale"
+        "note": "Velvet Score scale (Concert Black/Amethyst/Indigo/Thistle/Cream), Space Grotesk wordmark+label, Fraunces/Jakarta/Plex stacks, --gradient-hero-stage, surface tokens, minimal editorial shadows"
       },
       {
         "path": "voice/voice-profile.md",
@@ -627,7 +1086,7 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "L2 voice profile — confirms restrained, evidence-first, Economist-register stance; hype bans mirror guidelines.md"
+        "note": "L2 voice profile — restrained, evidence-first, Economist-register; hype bans mirror guidelines.md"
       }
     ]
   }

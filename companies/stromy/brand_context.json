@@ -2,21 +2,21 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "b23023983feb52d8cc9e21ab034d8ae1e69c86d1486efc1f8bdecaef8eb5d4f9",
+    "charterSha": "ddf01f1bcd103d367a51538c650ad7b7bc7a08e772367e192ccd6cd4e63ecf0e",
     "compiler": "1.0"
   },
   "tier": "producer",
   "colors": {
-    "primary": "#1D342B",
-    "secondary": "#0F1310",
-    "accent": "#B96034",
-    "background": "#ECE6DA",
-    "backgroundAlt": "#F3EDE2",
-    "text": "#171611",
-    "textLight": "#6D665C",
-    "success": "#47685B",
-    "warning": "#B96034",
-    "error": "#8E3F2E"
+    "primary": "#31004F",
+    "secondary": "#0B0B0C",
+    "accent": "#61009E",
+    "background": "#FFFFFF",
+    "backgroundAlt": "#E5D2FA",
+    "text": "#16161A",
+    "textLight": "#6E6A75",
+    "success": "#1E462F",
+    "warning": "#B8860B",
+    "error": "#8E2F4F"
   },
   "typography": {
     "heading": {
@@ -35,7 +35,7 @@
       "fallback": "'SF Mono', 'Fira Code', monospace"
     }
   },
-  "tokens_css": "/* ============================================================\n   STROMY Design Tokens\n   Intelligence, Orchestrated.\n   \n   Usage: Import this file at the root of any project.\n   All values are CSS custom properties for easy theming.\n   ============================================================ */\n\n:root {\n  /* ── Primary Palette ─────────────────────────────────── */\n  --stromy-obsidian:       #0F1310;\n  --stromy-green:          #1D342B;\n  --stromy-signal-orange:  #B96034;\n\n  /* ── Green Scale ─────────────────────────────────────── */\n  --stromy-green-900:      #152019;  /* Black forest */\n  --stromy-green-700:      #1D342B;  /* Deep forest */\n  --stromy-green-500:      #47685B;  /* Mineral green */\n  --stromy-green-300:      #7F9B90;  /* Oxidized sage */\n  --stromy-green-100:      #C9D6CF;  /* Soft mineral */\n  --stromy-green-50:       #E7EEE8;  /* Pale mist */\n\n  /* ── Orange Scale ────────────────────────────────────── */\n  --stromy-orange-900:     #6A341D;\n  --stromy-orange-700:     #924B29;\n  --stromy-orange-500:     #B96034;  /* Oxide signal */\n  --stromy-orange-300:     #D68A60;\n  --stromy-orange-100:     #E9C6AF;\n  --stromy-orange-50:      #F4E5D9;\n\n  /* ── Neutral Scale ───────────────────────────────────── */\n  --stromy-neutral-950:    #0F1310;  /* Obsidian forest */\n  --stromy-neutral-900:    #171611;\n  --stromy-neutral-800:    #2A2924;  /* Graphite bark */\n  --stromy-neutral-700:    #464138;\n  --stromy-neutral-600:    #6D665C;  /* Stone */\n  --stromy-neutral-500:    #8C857A;  /* Pewter */\n  --stromy-neutral-400:    #AEA495;\n  --stromy-neutral-300:    #CDC2B3;  /* Ash */\n  --stromy-neutral-200:    #DDD4C7;\n  --stromy-neutral-100:    #E8E0D4;\n  --stromy-neutral-50:     #ECE6DA;  /* Warm paper */\n  --stromy-white:          #F3EDE2;\n\n  /* ── Semantic Colors ─────────────────────────────────── */\n  --stromy-success:        #47685B;\n  --stromy-success-light:  #E7EEE8;\n  --stromy-warning:        #B96034;\n  --stromy-warning-light:  #F4E5D9;\n  --stromy-error:          #8E3F2E;\n  --stromy-error-light:    #F2E2DC;\n  --stromy-info:           #2D4B3E;\n  --stromy-info-light:     #E4EBE7;\n\n  /* ── Typography ──────────────────────────────────────── */\n  --font-display:          'Fraunces', Georgia, 'Times New Roman', serif;\n  --font-body:             'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n  --font-mono:             'IBM Plex Mono', 'SF Mono', 'Fira Code', monospace;\n\n  /* Display sizes */\n  --text-display-xl:       3rem;      /* 48px — hero, cover */\n  --text-display-lg:       2.25rem;   /* 36px — report title */\n  --text-display-md:       1.5rem;    /* 24px — section title */\n  --text-display-sm:       1.25rem;   /* 20px — card title */\n\n  /* Body sizes */\n  --text-heading:          1.125rem;  /* 18px */\n  --text-body:             0.9375rem; /* 15px */\n  --text-body-sm:          0.8125rem; /* 13px */\n  --text-caption:          0.75rem;   /* 12px */\n  --text-overline:         0.6875rem; /* 11px */\n  --text-micro:            0.625rem;  /* 10px */\n\n  /* Line heights */\n  --leading-tight:         1.15;\n  --leading-snug:          1.3;\n  --leading-normal:        1.5;\n  --leading-relaxed:       1.65;\n  --leading-loose:         1.8;\n\n  /* Letter spacing */\n  --tracking-tight:        -0.02em;\n  --tracking-snug:         -0.01em;\n  --tracking-normal:       0;\n  --tracking-wide:         0.03em;\n  --tracking-wider:        0.06em;\n  --tracking-widest:       0.1em;\n\n  /* Font weights */\n  --weight-regular:        400;\n  --weight-medium:         500;\n  --weight-bold:           700;\n\n  /* ── Spacing Scale (4px base) ────────────────────────── */\n  --space-1:   0.25rem;   /* 4px */\n  --space-2:   0.5rem;    /* 8px */\n  --space-3:   0.75rem;   /* 12px */\n  --space-4:   1rem;      /* 16px */\n  --space-5:   1.25rem;   /* 20px */\n  --space-6:   1.5rem;    /* 24px */\n  --space-8:   2rem;      /* 32px */\n  --space-10:  2.5rem;    /* 40px */\n  --space-12:  3rem;      /* 48px */\n  --space-16:  4rem;      /* 64px */\n  --space-20:  5rem;      /* 80px */\n  --space-24:  6rem;      /* 96px */\n  --space-32:  8rem;      /* 128px */\n\n  /* ── Border Radius ───────────────────────────────────── */\n  --radius-sm:   4px;\n  --radius-md:   6px;\n  --radius-lg:   8px;\n  --radius-xl:   12px;\n  --radius-2xl:  16px;\n  --radius-full: 9999px;\n\n  /* ── Shadows (subtle, editorial) ─────────────────────── */\n  --shadow-sm:   0 1px 2px rgba(11,11,11,0.04);\n  --shadow-md:   0 2px 8px rgba(11,11,11,0.06);\n  --shadow-lg:   0 4px 16px rgba(11,11,11,0.08);\n  --shadow-xl:   0 8px 32px rgba(11,11,11,0.10);\n\n  /* ── Transitions ─────────────────────────────────────── */\n  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);\n  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);\n  --duration-fast:    120ms;\n  --duration-normal:  200ms;\n  --duration-slow:    400ms;\n\n  /* ── Motif Family ────────────────────────────────────── */\n  --motif-ink:              var(--stromy-neutral-950);\n  --motif-paper:            var(--stromy-neutral-50);\n  --motif-forest:           var(--stromy-green-700);\n  --motif-mineral:          var(--stromy-green-500);\n  --motif-oxide:            var(--stromy-orange-500);\n  --motif-line-weight:      2.2px;\n  --motif-node-size:        9px;\n  --motif-ledger-box-w:     16px;\n  --motif-ledger-box-h:     30px;\n  --motif-band-gap:         16px;\n\n  /* ── Layout ──────────────────────────────────────────── */\n  --content-width:    720px;\n  --content-wide:     960px;\n  --content-max:      1200px;\n  --sidebar-width:    280px;\n  --header-height:    64px;\n}\n\n/* ── Dark Mode Overrides ─────────────────────────────────── */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --stromy-surface:         var(--stromy-neutral-950);\n    --stromy-surface-raised:  var(--stromy-neutral-900);\n    --stromy-text-primary:    var(--stromy-neutral-50);\n    --stromy-text-secondary:  var(--stromy-neutral-500);\n    --stromy-text-tertiary:   var(--stromy-neutral-600);\n    --stromy-border:          var(--stromy-neutral-800);\n    --stromy-border-subtle:   var(--stromy-neutral-900);\n  }\n}\n\n@media (prefers-color-scheme: light) {\n  :root {\n    --stromy-surface:         var(--stromy-white);\n    --stromy-surface-raised:  var(--stromy-neutral-50);\n    --stromy-text-primary:    var(--stromy-neutral-950);\n    --stromy-text-secondary:  var(--stromy-neutral-600);\n    --stromy-text-tertiary:   var(--stromy-neutral-500);\n    --stromy-border:          var(--stromy-neutral-200);\n    --stromy-border-subtle:   var(--stromy-neutral-100);\n  }\n}\n\n\n/* ============================================================\n   Utility Classes\n   ============================================================ */\n\n/* ── Typography ────────────────────────────────────────────── */\n.stromy-display-xl {\n  font-family: var(--font-display);\n  font-size: var(--text-display-xl);\n  line-height: var(--leading-tight);\n  letter-spacing: var(--tracking-tight);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-display-lg {\n  font-family: var(--font-display);\n  font-size: var(--text-display-lg);\n  line-height: var(--leading-tight);\n  letter-spacing: var(--tracking-snug);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-display-md {\n  font-family: var(--font-display);\n  font-size: var(--text-display-md);\n  line-height: var(--leading-snug);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-heading {\n  font-family: var(--font-body);\n  font-size: var(--text-heading);\n  line-height: var(--leading-snug);\n  letter-spacing: var(--tracking-snug);\n  font-weight: var(--weight-medium);\n}\n\n.stromy-subhead {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n  letter-spacing: var(--tracking-wider);\n  font-weight: var(--weight-medium);\n  text-transform: uppercase;\n}\n\n.stromy-body {\n  font-family: var(--font-body);\n  font-size: var(--text-body);\n  line-height: var(--leading-relaxed);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-caption {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n}\n\n.stromy-overline {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  line-height: var(--leading-normal);\n  letter-spacing: var(--tracking-widest);\n  font-weight: var(--weight-medium);\n  text-transform: uppercase;\n}\n\n.stromy-mono {\n  font-family: var(--font-mono);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n}\n\n/* ── Score Line Component ──────────────────────────────────── */\n.score-line {\n  display: flex;\n  align-items: center;\n  gap: 0;\n}\n\n.score-line::before {\n  content: '';\n  flex: 1;\n  height: var(--score-line-weight);\n  background: var(--score-line-color);\n}\n\n.score-line::after {\n  content: '';\n  width: var(--score-dot-size);\n  height: var(--score-dot-size);\n  border-radius: 50%;\n  background: var(--score-dot-color);\n  flex-shrink: 0;\n}\n\n.score-line--short::before {\n  flex: 0 0 60px;\n}\n\n.score-line--light::before {\n  background: var(--score-line-color-light);\n}\n\n/* ── Buttons ───────────────────────────────────────────────── */\n.btn {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-wide);\n  padding: var(--space-3) var(--space-5);\n  border-radius: var(--radius-md);\n  border: none;\n  cursor: pointer;\n  transition: all var(--duration-normal) var(--ease-out);\n  display: inline-flex;\n  align-items: center;\n  gap: var(--space-2);\n  text-decoration: none;\n}\n\n.btn-primary {\n  background: var(--stromy-green-700);\n  color: var(--stromy-neutral-50);\n}\n.btn-primary:hover {\n  background: var(--stromy-green-500);\n}\n\n.btn-secondary {\n  background: transparent;\n  color: var(--stromy-neutral-300);\n  border: 1px solid var(--stromy-neutral-800);\n}\n.btn-secondary:hover {\n  border-color: var(--stromy-neutral-600);\n  color: var(--stromy-neutral-50);\n}\n\n.btn-accent {\n  background: var(--stromy-signal-orange);\n  color: var(--stromy-white);\n}\n.btn-accent:hover {\n  background: var(--stromy-orange-700);\n}\n\n/* ── Cards ─────────────────────────────────────────────────── */\n.card {\n  background: var(--stromy-surface-raised);\n  border: 1px solid var(--stromy-border-subtle);\n  border-radius: var(--radius-xl);\n  padding: var(--space-6);\n  transition: box-shadow var(--duration-normal) var(--ease-out);\n}\n\n.card:hover {\n  box-shadow: var(--shadow-md);\n}\n\n.card--dark {\n  background: var(--stromy-neutral-950);\n  border-color: var(--stromy-neutral-800);\n}\n\n.card--green {\n  background: var(--stromy-green-700);\n  border-color: var(--stromy-green-500);\n}\n\n/* ── Report Header ─────────────────────────────────────────── */\n.report-header {\n  display: flex;\n  flex-direction: column;\n  gap: var(--space-3);\n}\n\n.report-header__label {\n  font-family: var(--font-body);\n  font-size: var(--text-micro);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-widest);\n  text-transform: uppercase;\n  color: var(--stromy-green-300);\n}\n\n.report-header__title {\n  font-family: var(--font-display);\n  font-size: var(--text-display-md);\n  line-height: var(--leading-snug);\n  color: var(--stromy-neutral-50);\n}\n\n.report-header__meta {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  color: var(--stromy-neutral-500);\n}\n\n/* ── Data Table ────────────────────────────────────────────── */\n.data-table {\n  width: 100%;\n  border-collapse: collapse;\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n}\n\n.data-table th {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-wider);\n  text-transform: uppercase;\n  text-align: left;\n  padding: var(--space-2) var(--space-4);\n  border-bottom: 2px solid var(--stromy-green-700);\n  color: var(--stromy-text-secondary);\n}\n\n.data-table td {\n  padding: var(--space-3) var(--space-4);\n  border-bottom: 1px solid var(--stromy-border-subtle);\n  color: var(--stromy-text-primary);\n}\n\n.data-table td.mono {\n  font-family: var(--font-mono);\n}\n\n/* ── Badge / Tag ───────────────────────────────────────────── */\n.badge {\n  font-family: var(--font-mono);\n  font-size: var(--text-micro);\n  font-weight: var(--weight-medium);\n  padding: var(--space-1) var(--space-2);\n  border-radius: var(--radius-sm);\n  display: inline-block;\n}\n\n.badge--green {\n  background: var(--stromy-green-50);\n  color: var(--stromy-green-700);\n}\n\n.badge--orange {\n  background: var(--stromy-orange-50);\n  color: var(--stromy-orange-700);\n}\n\n.badge--neutral {\n  background: var(--stromy-neutral-100);\n  color: var(--stromy-neutral-700);\n}\n\n/* ── Motif Utilities ─────────────────────────────────────── */\n.stromy-tempo-ledger {\n  display: grid;\n  gap: var(--space-2);\n}\n\n.stromy-tempo-ledger__rule {\n  position: relative;\n  height: 34px;\n}\n\n.stromy-tempo-ledger__rule::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 4.5rem;\n  top: 7px;\n  border-top: var(--motif-line-weight) solid var(--motif-ink);\n}\n\n.stromy-tempo-ledger__rule::after {\n  content: \"\";\n  position: absolute;\n  left: 1.375rem;\n  right: 0;\n  top: 23px;\n  border-top: var(--motif-line-weight) solid var(--motif-oxide);\n}\n\n.stromy-tempo-ledger__box {\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: var(--motif-ledger-box-w);\n  height: var(--motif-ledger-box-h);\n  border: var(--motif-line-weight) solid var(--motif-oxide);\n}\n\n.stromy-data-rail {\n  position: relative;\n  padding-left: var(--space-6);\n}\n\n.stromy-data-rail::before {\n  content: \"\";\n  position: absolute;\n  left: var(--space-3);\n  top: 0;\n  bottom: 0;\n  width: var(--motif-line-weight);\n  background: var(--motif-ink);\n}\n\n.stromy-switch-track {\n  display: block;\n  width: 100%;\n  height: 36px;\n}\n\n.stromy-echo-band {\n  display: grid;\n  gap: 0.45rem;\n}\n\n.stromy-echo-band__line {\n  height: 8px;\n  border-top: var(--motif-line-weight) solid currentColor;\n  border-bottom: var(--motif-line-weight) solid color-mix(in srgb, currentColor 18%, transparent);\n}\n",
+  "tokens_css": "/* ============================================================\n   STROMY Design Tokens\n   Intelligence, Orchestrated.\n   \n   Usage: Import this file at the root of any project.\n   All values are CSS custom properties for easy theming.\n   ============================================================ */\n\n:root {\n  /* ── Primary Palette ─────────────────────────────────── */\n  /* Velvet Score palette (refresh 2026-06). Scale var-names kept for a non-breaking\n     cascade; the Pillar-7 website re-theme renames them. green-scale = purple,\n     orange-scale = forest secondary. */\n  --stromy-obsidian:       #0B0B0C;  /* Concert Black ground */\n  --stromy-green:          #31004F;  /* Dark Amethyst — primary */\n  --stromy-signal-orange:  #61009E;  /* Indigo — signal accent */\n\n  /* ── Purple Scale (var name 'green' kept) ────────────── */\n  --stromy-green-900:      #15002A;  /* Deepest amethyst */\n  --stromy-green-700:      #31004F;  /* Dark Amethyst */\n  --stromy-green-500:      #61009E;  /* Indigo signal */\n  --stromy-green-300:      #9B7BB8;  /* Mauve */\n  --stromy-green-100:      #D9C7EC;  /* Soft lilac */\n  --stromy-green-50:       #F1EAF8;  /* Pale thistle */\n\n  /* ── Forest Scale — secondary (var name 'orange' kept) ─ */\n  --stromy-orange-900:     #0E2419;\n  --stromy-orange-700:     #143D29;\n  --stromy-orange-500:     #1E462F;  /* Deep Forest — secondary */\n  --stromy-orange-300:     #4E7A63;\n  --stromy-orange-100:     #BCD6C8;\n  --stromy-orange-50:      #E8F0EA;\n\n  /* ── Neutral Scale (cool grey + thistle/cream) ───────── */\n  --stromy-neutral-950:    #0B0B0C;  /* Concert Black */\n  --stromy-neutral-900:    #16161A;  /* Ink */\n  --stromy-neutral-800:    #2A2A30;  /* Graphite */\n  --stromy-neutral-700:    #46464F;\n  --stromy-neutral-600:    #6E6A75;  /* Slate-grey (textLight) */\n  --stromy-neutral-500:    #8C8792;  /* Ash */\n  --stromy-neutral-400:    #A8A4B0;\n  --stromy-neutral-300:    #C9C9D0;  /* Mist */\n  --stromy-neutral-200:    #DAD7E0;\n  --stromy-neutral-100:    #E9E6EF;\n  --stromy-neutral-50:     #F4EFE6;  /* Cream — light surface */\n  --stromy-white:          #FFFFFF;\n\n  /* ── Semantic Colors ─────────────────────────────────── */\n  --stromy-success:        #1E462F;  /* forest */\n  --stromy-success-light:  #E8F0EA;\n  --stromy-warning:        #B8860B;  /* functional ochre (status only) */\n  --stromy-warning-light:  #F5ECD2;\n  --stromy-error:          #8E2F4F;  /* wine */\n  --stromy-error-light:    #F3E2E9;\n  --stromy-info:           #31004F;  /* amethyst */\n  --stromy-info-light:     #EEE4F4;\n\n  /* ── Typography ──────────────────────────────────────── */\n  --font-display:          'Fraunces', Georgia, 'Times New Roman', serif;\n  --font-body:             'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n  --font-mono:             'IBM Plex Mono', 'SF Mono', 'Fira Code', monospace;\n  --font-wordmark:         'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;\n  --font-label:            'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;\n\n  /* Display sizes */\n  --text-display-xl:       3rem;      /* 48px — hero, cover */\n  --text-display-lg:       2.25rem;   /* 36px — report title */\n  --text-display-md:       1.5rem;    /* 24px — section title */\n  --text-display-sm:       1.25rem;   /* 20px — card title */\n\n  /* Body sizes */\n  --text-heading:          1.125rem;  /* 18px */\n  --text-body:             0.9375rem; /* 15px */\n  --text-body-sm:          0.8125rem; /* 13px */\n  --text-caption:          0.75rem;   /* 12px */\n  --text-overline:         0.6875rem; /* 11px */\n  --text-micro:            0.625rem;  /* 10px */\n\n  /* Line heights */\n  --leading-tight:         1.15;\n  --leading-snug:          1.3;\n  --leading-normal:        1.5;\n  --leading-relaxed:       1.65;\n  --leading-loose:         1.8;\n\n  /* Letter spacing */\n  --tracking-tight:        -0.02em;\n  --tracking-snug:         -0.01em;\n  --tracking-normal:       0;\n  --tracking-wide:         0.03em;\n  --tracking-wider:        0.06em;\n  --tracking-widest:       0.1em;\n\n  /* Font weights */\n  --weight-regular:        400;\n  --weight-medium:         500;\n  --weight-bold:           700;\n\n  /* ── Spacing Scale (4px base) ────────────────────────── */\n  --space-1:   0.25rem;   /* 4px */\n  --space-2:   0.5rem;    /* 8px */\n  --space-3:   0.75rem;   /* 12px */\n  --space-4:   1rem;      /* 16px */\n  --space-5:   1.25rem;   /* 20px */\n  --space-6:   1.5rem;    /* 24px */\n  --space-8:   2rem;      /* 32px */\n  --space-10:  2.5rem;    /* 40px */\n  --space-12:  3rem;      /* 48px */\n  --space-16:  4rem;      /* 64px */\n  --space-20:  5rem;      /* 80px */\n  --space-24:  6rem;      /* 96px */\n  --space-32:  8rem;      /* 128px */\n\n  /* ── Border Radius ───────────────────────────────────── */\n  --radius-sm:   4px;\n  --radius-md:   6px;\n  --radius-lg:   8px;\n  --radius-xl:   12px;\n  --radius-2xl:  16px;\n  --radius-full: 9999px;\n\n  /* ── Shadows (subtle, editorial) ─────────────────────── */\n  --shadow-sm:   0 1px 2px rgba(11,11,11,0.04);\n  --shadow-md:   0 2px 8px rgba(11,11,11,0.06);\n  --shadow-lg:   0 4px 16px rgba(11,11,11,0.08);\n  --shadow-xl:   0 8px 32px rgba(11,11,11,0.10);\n\n  /* ── Transitions ─────────────────────────────────────── */\n  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);\n  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);\n  --duration-fast:    120ms;\n  --duration-normal:  200ms;\n  --duration-slow:    400ms;\n\n  /* ── Motif Family ────────────────────────────────────── */\n  --motif-ink:              var(--stromy-neutral-950);\n  --motif-paper:            var(--stromy-neutral-50);\n  --motif-forest:           var(--stromy-green-700);\n  --motif-mineral:          var(--stromy-green-500);\n  --motif-oxide:            var(--stromy-orange-500);\n  --motif-line-weight:      2.2px;\n  --motif-node-size:        9px;\n  --motif-ledger-box-w:     16px;\n  --motif-ledger-box-h:     30px;\n  --motif-band-gap:         16px;\n\n  /* ── Layout ──────────────────────────────────────────── */\n  --content-width:    720px;\n  --content-wide:     960px;\n  --content-max:      1200px;\n  --sidebar-width:    280px;\n  --header-height:    64px;\n}\n\n/* ── Dark Mode Overrides ─────────────────────────────────── */\n@media (prefers-color-scheme: dark) {\n  :root {\n    --stromy-surface:         var(--stromy-neutral-950);\n    --stromy-surface-raised:  var(--stromy-neutral-900);\n    --stromy-text-primary:    var(--stromy-neutral-50);\n    --stromy-text-secondary:  var(--stromy-neutral-500);\n    --stromy-text-tertiary:   var(--stromy-neutral-600);\n    --stromy-border:          var(--stromy-neutral-800);\n    --stromy-border-subtle:   var(--stromy-neutral-900);\n  }\n}\n\n@media (prefers-color-scheme: light) {\n  :root {\n    --stromy-surface:         var(--stromy-white);\n    --stromy-surface-raised:  var(--stromy-neutral-50);\n    --stromy-text-primary:    var(--stromy-neutral-950);\n    --stromy-text-secondary:  var(--stromy-neutral-600);\n    --stromy-text-tertiary:   var(--stromy-neutral-500);\n    --stromy-border:          var(--stromy-neutral-200);\n    --stromy-border-subtle:   var(--stromy-neutral-100);\n  }\n}\n\n\n/* ============================================================\n   Utility Classes\n   ============================================================ */\n\n/* ── Typography ────────────────────────────────────────────── */\n.stromy-display-xl {\n  font-family: var(--font-display);\n  font-size: var(--text-display-xl);\n  line-height: var(--leading-tight);\n  letter-spacing: var(--tracking-tight);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-display-lg {\n  font-family: var(--font-display);\n  font-size: var(--text-display-lg);\n  line-height: var(--leading-tight);\n  letter-spacing: var(--tracking-snug);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-display-md {\n  font-family: var(--font-display);\n  font-size: var(--text-display-md);\n  line-height: var(--leading-snug);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-heading {\n  font-family: var(--font-body);\n  font-size: var(--text-heading);\n  line-height: var(--leading-snug);\n  letter-spacing: var(--tracking-snug);\n  font-weight: var(--weight-medium);\n}\n\n.stromy-subhead {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n  letter-spacing: var(--tracking-wider);\n  font-weight: var(--weight-medium);\n  text-transform: uppercase;\n}\n\n.stromy-body {\n  font-family: var(--font-body);\n  font-size: var(--text-body);\n  line-height: var(--leading-relaxed);\n  font-weight: var(--weight-regular);\n}\n\n.stromy-caption {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n}\n\n.stromy-overline {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  line-height: var(--leading-normal);\n  letter-spacing: var(--tracking-widest);\n  font-weight: var(--weight-medium);\n  text-transform: uppercase;\n}\n\n.stromy-mono {\n  font-family: var(--font-mono);\n  font-size: var(--text-body-sm);\n  line-height: var(--leading-normal);\n}\n\n/* ── Score Line Component ──────────────────────────────────── */\n.score-line {\n  display: flex;\n  align-items: center;\n  gap: 0;\n}\n\n.score-line::before {\n  content: '';\n  flex: 1;\n  height: var(--score-line-weight);\n  background: var(--score-line-color);\n}\n\n.score-line::after {\n  content: '';\n  width: var(--score-dot-size);\n  height: var(--score-dot-size);\n  border-radius: 50%;\n  background: var(--score-dot-color);\n  flex-shrink: 0;\n}\n\n.score-line--short::before {\n  flex: 0 0 60px;\n}\n\n.score-line--light::before {\n  background: var(--score-line-color-light);\n}\n\n/* ── Buttons ───────────────────────────────────────────────── */\n.btn {\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-wide);\n  padding: var(--space-3) var(--space-5);\n  border-radius: var(--radius-md);\n  border: none;\n  cursor: pointer;\n  transition: all var(--duration-normal) var(--ease-out);\n  display: inline-flex;\n  align-items: center;\n  gap: var(--space-2);\n  text-decoration: none;\n}\n\n.btn-primary {\n  background: var(--stromy-green-700);\n  color: var(--stromy-neutral-50);\n}\n.btn-primary:hover {\n  background: var(--stromy-green-500);\n}\n\n.btn-secondary {\n  background: transparent;\n  color: var(--stromy-neutral-300);\n  border: 1px solid var(--stromy-neutral-800);\n}\n.btn-secondary:hover {\n  border-color: var(--stromy-neutral-600);\n  color: var(--stromy-neutral-50);\n}\n\n.btn-accent {\n  background: var(--stromy-signal-orange);\n  color: var(--stromy-white);\n}\n.btn-accent:hover {\n  background: var(--stromy-orange-700);\n}\n\n/* ── Cards ─────────────────────────────────────────────────── */\n.card {\n  background: var(--stromy-surface-raised);\n  border: 1px solid var(--stromy-border-subtle);\n  border-radius: var(--radius-xl);\n  padding: var(--space-6);\n  transition: box-shadow var(--duration-normal) var(--ease-out);\n}\n\n.card:hover {\n  box-shadow: var(--shadow-md);\n}\n\n.card--dark {\n  background: var(--stromy-neutral-950);\n  border-color: var(--stromy-neutral-800);\n}\n\n.card--green {\n  background: var(--stromy-green-700);\n  border-color: var(--stromy-green-500);\n}\n\n/* ── Report Header ─────────────────────────────────────────── */\n.report-header {\n  display: flex;\n  flex-direction: column;\n  gap: var(--space-3);\n}\n\n.report-header__label {\n  font-family: var(--font-body);\n  font-size: var(--text-micro);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-widest);\n  text-transform: uppercase;\n  color: var(--stromy-green-300);\n}\n\n.report-header__title {\n  font-family: var(--font-display);\n  font-size: var(--text-display-md);\n  line-height: var(--leading-snug);\n  color: var(--stromy-neutral-50);\n}\n\n.report-header__meta {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  color: var(--stromy-neutral-500);\n}\n\n/* ── Data Table ────────────────────────────────────────────── */\n.data-table {\n  width: 100%;\n  border-collapse: collapse;\n  font-family: var(--font-body);\n  font-size: var(--text-body-sm);\n}\n\n.data-table th {\n  font-family: var(--font-body);\n  font-size: var(--text-overline);\n  font-weight: var(--weight-medium);\n  letter-spacing: var(--tracking-wider);\n  text-transform: uppercase;\n  text-align: left;\n  padding: var(--space-2) var(--space-4);\n  border-bottom: 2px solid var(--stromy-green-700);\n  color: var(--stromy-text-secondary);\n}\n\n.data-table td {\n  padding: var(--space-3) var(--space-4);\n  border-bottom: 1px solid var(--stromy-border-subtle);\n  color: var(--stromy-text-primary);\n}\n\n.data-table td.mono {\n  font-family: var(--font-mono);\n}\n\n/* ── Badge / Tag ───────────────────────────────────────────── */\n.badge {\n  font-family: var(--font-mono);\n  font-size: var(--text-micro);\n  font-weight: var(--weight-medium);\n  padding: var(--space-1) var(--space-2);\n  border-radius: var(--radius-sm);\n  display: inline-block;\n}\n\n.badge--green {\n  background: var(--stromy-green-50);\n  color: var(--stromy-green-700);\n}\n\n.badge--orange {\n  background: var(--stromy-orange-50);\n  color: var(--stromy-orange-700);\n}\n\n.badge--neutral {\n  background: var(--stromy-neutral-100);\n  color: var(--stromy-neutral-700);\n}\n\n/* ── Motif Utilities ─────────────────────────────────────── */\n.stromy-tempo-ledger {\n  display: grid;\n  gap: var(--space-2);\n}\n\n.stromy-tempo-ledger__rule {\n  position: relative;\n  height: 34px;\n}\n\n.stromy-tempo-ledger__rule::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  right: 4.5rem;\n  top: 7px;\n  border-top: var(--motif-line-weight) solid var(--motif-ink);\n}\n\n.stromy-tempo-ledger__rule::after {\n  content: \"\";\n  position: absolute;\n  left: 1.375rem;\n  right: 0;\n  top: 23px;\n  border-top: var(--motif-line-weight) solid var(--motif-oxide);\n}\n\n.stromy-tempo-ledger__box {\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: var(--motif-ledger-box-w);\n  height: var(--motif-ledger-box-h);\n  border: var(--motif-line-weight) solid var(--motif-oxide);\n}\n\n.stromy-data-rail {\n  position: relative;\n  padding-left: var(--space-6);\n}\n\n.stromy-data-rail::before {\n  content: \"\";\n  position: absolute;\n  left: var(--space-3);\n  top: 0;\n  bottom: 0;\n  width: var(--motif-line-weight);\n  background: var(--motif-ink);\n}\n\n.stromy-switch-track {\n  display: block;\n  width: 100%;\n  height: 36px;\n}\n\n.stromy-echo-band {\n  display: grid;\n  gap: 0.45rem;\n}\n\n.stromy-echo-band__line {\n  height: 8px;\n  border-top: var(--motif-line-weight) solid currentColor;\n  border-bottom: var(--motif-line-weight) solid color-mix(in srgb, currentColor 18%, transparent);\n}\n\n/* ============================================================\n   Velvet Score visual grammar (Pillar 4 — 2026-06-19)\n   Background canvases + the hero-only stage-light gradient.\n   Policy: flat content, radial heroes. The radial is permitted\n   ONLY on hero surfaces (covers, section heroes, website hero),\n   never on content/document backgrounds.\n   ============================================================ */\n:root {\n  --hero-surface:           #0B0B0C;  /* Concert Black — dark hero/divider ground */\n  --content-surface-light:  #F4F1EA;  /* Cream — default warm light content ground (not pure white) */\n  --panel-tint:             #E5D2FA;  /* Thistle — accent panel tint */\n  --focal-signal:           #61009E;  /* Indigo — the single focal/accent dot */\n\n  /* hero-only stage-light radial — see expression.visual_grammar.gradients */\n  --gradient-hero-stage: radial-gradient(ellipse 62% 52% at 50% 82%,\n                           rgba(97,0,158,0.42), rgba(49,0,79,0.10) 46%, transparent 68%);\n}\n\n/* Apply the stage light to a hero block over Concert Black; content stays flat. */\n.stromy-hero--stage {\n  background-color: var(--hero-surface);\n  background-image: var(--gradient-hero-stage);\n}\n",
   "identity": {
     "essence": "STROMY transforms complex workflows into orchestrated intelligence.",
     "positioning": "For corporates and consulting agencies drowning in unstructured processes, STROMY is the AI orchestration partner that designs and builds analytical workflows — from media research to crisis management to strategy audits — delivering the structured, trust-grade outputs their stakeholders expect. Unlike generic AI consultancies, Stromy brings the maestro's precision: every workflow is composed, every output is publication-ready.",
@@ -119,16 +119,25 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "Version 3.0 · April 2026 — primary evidence source for archetype, essence, positioning, personality, voice, logo system, color system, typography, motif family, imagery direction, brand applications"
+        "note": "Version 4.0 (Velvet Score refresh) — archetype, essence, positioning, voice, dot-dome logo system, Velvet Score colour system, Space Grotesk + Fraunces/Jakarta/Plex type, dot-family motif grammar, imagery direction"
       },
       {
-        "path": "website",
-        "kind": "website",
+        "path": "_build/reviews/GRAMMAR-BOARD.html",
+        "kind": "design_artifact",
         "sourceAuthority": "co_created",
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "charter.json 'website' block — archetype='sage', aesthetic='editorial-systems', layout/texture/typography/colorApplication fields provide machine-readable design axes; darkSections, symmetry='balanced', cornerRadius='sharp', whitespaceStrategy='measured'"
+        "note": "Pillar 4 render-review board — 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19"
+      },
+      {
+        "path": "_build/reviews/inspiration",
+        "kind": "design_artifact",
+        "sourceAuthority": "reference",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) — 'notation as a structural system' DNA behind the dot family"
       },
       {
         "path": "tokens.css",
@@ -137,7 +146,7 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "Full CSS custom property system — confirms motif-line-weight=2.2px, color scale (obsidian/green/oxide/paper), type stack (Fraunces/Plus Jakarta Sans/IBM Plex Mono), shadow tokens (subtle, editorial), spacing scale"
+        "note": "Velvet Score scale (Concert Black/Amethyst/Indigo/Thistle/Cream), Space Grotesk wordmark+label, Fraunces/Jakarta/Plex stacks, --gradient-hero-stage, surface tokens, minimal editorial shadows"
       },
       {
         "path": "voice/voice-profile.md",
@@ -146,21 +155,21 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "L2 voice profile — confirms restrained, evidence-first, Economist-register stance; hype bans mirror guidelines.md"
+        "note": "L2 voice profile — restrained, evidence-first, Economist-register; hype bans mirror guidelines.md"
       }
     ],
     "principles": [
       "Substance before style — the work speaks; decoration must earn its place.",
-      "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
+      "Orchestration as metaphor — every layout, motif, and typographic choice encodes disparate parts resolved into one coherent system.",
       "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
-      "Signal economy — oxide is a signal color, never a flood; motifs are assigned by role, not taste.",
-      "Infrastructure as image world — urban, architectural, raw-material photography; no stock offices, no AI futurism."
+      "Signal economy — indigo is a signal colour, never a flood; a single focal dot carries the accent.",
+      "The score made visible — concentric dot-fields and barline rhythm render orchestration as a structural system, not a picture of instruments."
     ],
     "visualAxes": {
       "density": "spacious",
       "contrast": "high",
       "symmetry": "controlled-asymmetry",
-      "geometry": "rectilinear",
+      "geometry": "geometric",
       "typeExpression": "editorial",
       "imageTreatment": "documentary-muted",
       "motifProminence": "structural",
@@ -168,34 +177,277 @@
       "ornament": "restrained"
     },
     "signatureElements": [
-      "Tempo Ledger — primary signature motif (upper paper rule + offset oxide rule + registration box); anchors all major section headers and report covers",
-      "Data Rail — analytical annotation motif (vertical rail + hierarchical checkpoint nodes); marks evidence trails, scorecards, and sidebars",
-      "Switch Track — orchestration motif (dual tracks with controlled divergence + double-ring junction node); used in workflow and process storytelling",
-      "Echo Band — rhythm motif (three parallel offset bands at 35% ghost); chapter transitions and section dividers",
-      "S-Curve symbol — standalone icon mark encoding complexity→clarity transformation; used where name is already established",
-      "Orchestration Node Wordmark — STROMY set in Fraunces with compact orchestration node; primary identity mark",
-      "Oxide signal dot — small filled circle in #B96034 used as a terminal node across all motifs; encodes the decision/transformation point"
+      "Dot-dome — the primary mark: a polar lattice of dots forming an orchestra dome with one indigo focal dot at the podium; the rising-ensemble signature.",
+      "Concentric dot-field — rings of dots radiating from a single indigo focal; full-bleed texture for heroes and dividers; drives the field-breathe motion.",
+      "Barline measure — abstract vertical barlines with beat-dots and one indigo accent beat; rhythm and structure motif for footers, rails, and content grids.",
+      "Misaligned numeral — large Fraunces section numbers split cream/indigo with a deliberate baseline offset; the 'scored' editorial cue.",
+      "Space Grotesk wordmark — STROMY set in Space Grotesk 600 with open tracking, rising from the dot-dome; primary identity lockup.",
+      "Misaligned secondary lockup — the 'scored' STROMY wordmark for cover slides, home-page heroes, and section openers."
     ],
     "antiPatterns": [
-      "Do not use pure white (#FFFFFF) or pure black (#000000) — use Warm Paper (#ECE6DA) and Obsidian Forest (#0F1310) respectively",
-      "Do not flood oxide (#B96034) as a background or dominant color — it is a signal accent (10% of color balance)",
-      "Do not add gradient fills or gradient directions — website.colorApplication.gradientDirection='none'",
-      "Do not use rounded corners on layout containers — cornerRadius='sharp'",
-      "Do not invent new motif styles outside the four-part family",
-      "Do not mix the wordmark and S-Curve symbol in the same immediate composition",
-      "Do not use playful or organic geometry — all angles grid-aligned at 45° or 90°",
-      "Do not use startup hype language ('revolutionary', 'game-changing', 'disruptive') — voice-extensions.json banned phrases",
-      "Do not use drop shadows for decorative depth — shadow tokens exist for elevation only; shadowDepth='none' at surface level",
-      "Do not place imagery without brand-tint overlay (opacity 0.65) when used as section background"
+      "No literal musical notation — no staves, clefs, or noteheads; orchestration is rendered through abstract dots, not sheet music.",
+      "No orange or Claude-adjacent accent — indigo (#61009E) is the only signal colour; the retired oxide/orange must not reappear.",
+      "No gradient floods on working surfaces — the stage-light radial is a hero-only device; content and document backgrounds stay flat.",
+      "No decorative motif scatter — the dot family is assigned by role (dome=identity, field=texture, barline=rhythm), never sprinkled for taste.",
+      "No pure-white document grounds where Cream is specified; no stock-office or AI-futurism imagery.",
+      "Never more than one indigo focal dot in a single composition — the signal is singular."
     ],
-    "requiredMotifs": [
-      "Stroke weight 2.2px on all motif lines (--motif-line-weight: 2.2px) — never below 1.8px",
-      "Round linecaps and linejoins on all motif strokes",
-      "Oxide node treatment (outer ring + inner oxide fill, diameter = 2× stroke) for all primary nodes",
-      "Warm Paper as default light surface — not pure white",
-      "Fraunces for all display/headline type; Plus Jakarta Sans for body; IBM Plex Mono for metadata and data labels",
-      "Logo clear space = cap height of 'S' in wordmark on all sides"
-    ]
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "Velvet Score palette + GRAMMAR-BOARD.html slides 1/4/5 (render-reviewed 2026-06-19)"
+        },
+        "tokens": [
+          "--hero-surface",
+          "--content-surface-light",
+          "--panel-tint"
+        ],
+        "spec": {
+          "canvases": [
+            {
+              "name": "concert-black",
+              "role": "primary-dark",
+              "css": "#0B0B0C"
+            },
+            {
+              "name": "cream",
+              "role": "primary-light",
+              "css": "#F4F1EA"
+            },
+            {
+              "name": "white",
+              "role": "document-light",
+              "css": "#FFFFFF"
+            },
+            {
+              "name": "thistle-tint",
+              "role": "accent-panel",
+              "css": "#E5D2FA"
+            }
+          ],
+          "default": "dark-light-indexed — Concert Black heroes/dividers alternate with Cream/White content"
+        }
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "GRAMMAR-BOARD.html + BRAND-Review-Board.html — co_created, render-reviewed 2026-06-19"
+        },
+        "assets": [
+          "logos/symbol.svg",
+          "logos/symbol_light.svg",
+          "assets/svg/motif-dot-field.svg",
+          "assets/svg/motif-dot-field-light.svg",
+          "assets/svg/motif-barline.svg",
+          "assets/svg/motif-barline-light.svg"
+        ],
+        "spec": {
+          "name": "Velvet Score dot family",
+          "marks": [
+            {
+              "name": "dot-dome",
+              "role": "identity",
+              "asset": "logos/symbol.svg",
+              "desc": "polar dot lattice forming an orchestra dome; one indigo focal at the podium"
+            },
+            {
+              "name": "dot-field",
+              "role": "texture",
+              "asset": "assets/svg/motif-dot-field.svg",
+              "desc": "concentric rings of dots radiating from a single indigo focal"
+            },
+            {
+              "name": "barline",
+              "role": "rhythm",
+              "asset": "assets/svg/motif-barline.svg",
+              "desc": "abstract vertical measures with beat-dots; one indigo accent beat"
+            }
+          ],
+          "roles": {
+            "identity": "dot-dome",
+            "texture": "dot-field",
+            "rhythm": "barline"
+          },
+          "allowedSurfaces": {
+            "dot-dome": [
+              "cover",
+              "footer-mark",
+              "favicon"
+            ],
+            "dot-field": [
+              "hero",
+              "divider",
+              "corner-mark"
+            ],
+            "barline": [
+              "footer",
+              "rail",
+              "content-grid"
+            ]
+          },
+          "usageCaps": {
+            "focalDotsPerComposition": 1,
+            "domePerDeck": "cover + closing only"
+          },
+          "tokenPrefix": "--motif",
+          "dropped": [
+            "staff",
+            "noteheads",
+            "clef"
+          ],
+          "supersedes": [
+            "motif-tempo-ledger",
+            "motif-data-rail",
+            "motif-switch-track",
+            "motif-echo-band",
+            "pattern-tile",
+            "S-curve symbol"
+          ],
+          "enforcement": "advisory — the dot family is a toolkit; the variance engine + agent compose freely. Brand essence (palette/fonts/logo authenticity) is enforced by brand_gate fonts/colors/images checks, NOT by mandating which motifs appear."
+        }
+      },
+      "patterns": {
+        "status": "proposed",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "dot-field used as full-bleed texture on GRAMMAR-BOARD slides 3/5"
+        },
+        "assets": [
+          "assets/svg/motif-dot-field.svg",
+          "assets/svg/motif-dot-field-light.svg"
+        ],
+        "spec": {
+          "patterns": [
+            {
+              "name": "dot-field-texture",
+              "tile": "single concentric instance scaled full-bleed (non-tiling)",
+              "scale": "480-880px",
+              "opacity": "0.10-0.30",
+              "usage": "hero/divider background texture; the focal dot must stay perceptible"
+            }
+          ]
+        }
+      },
+      "grid": {
+        "status": "proposed",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "website.layout structured-2col + barline measure rhythm"
+        },
+        "spec": {
+          "columns": "structured 2-col content over a 12-col base",
+          "gutter": "generous",
+          "maxWidth": "measured (editorial)",
+          "margins": "wide",
+          "rhythm": "barline measures register horizontal divisions"
+        }
+      },
+      "iconography": {
+        "status": "proposed",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "stroke/dot language of the motif family; representative sample set deferred to Pillar 6 productionize"
+        },
+        "spec": {
+          "style": "stroke-led geometric",
+          "strokeWeight": "2px",
+          "corner": "round caps/joins",
+          "fillVsLine": "line-dominant with dot terminals"
+        }
+      },
+      "gradients": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "GRAMMAR-BOARD cover s2; operator pick 2026-06-19 — radial heroes, flat content"
+        },
+        "tokens": [
+          "--gradient-hero-stage"
+        ],
+        "spec": {
+          "gradients": [
+            {
+              "name": "hero-stage-light",
+              "stops": "radial-gradient(ellipse 62% 52% at 50% 82%, rgba(97,0,158,0.42), rgba(49,0,79,0.10) 46%, transparent 68%)",
+              "usage": "hero surfaces ONLY (covers, section heroes, website hero) over Concert Black; never on content/document backgrounds"
+            }
+          ],
+          "policy": "flat content, radial heroes"
+        }
+      },
+      "photo": {
+        "status": "deferred",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "Pillar 5 — literal orchestral imagery library (instruments, strings, halls)"
+        },
+        "spec": {
+          "overlayOpacity": 0.62,
+          "treatment": "desaturated, high-contrast, indigo-toned overlay",
+          "crop": "tight crops over scenic",
+          "note": "full imagery direction owned by Pillar 5"
+        }
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "tokens.css shadow scale; depth carried by colour contrast, not shadow (editorial)"
+        },
+        "tokens": [
+          "--shadow-sm",
+          "--shadow-md"
+        ],
+        "spec": {
+          "shadows": [
+            "minimal editorial only (--shadow-sm/md)"
+          ],
+          "glows": [
+            "the stage-light radial is the only glow, hero-only"
+          ],
+          "borders": "1-1.5px hairline rules in thistle/ink at low opacity; depth via colour not shadow"
+        }
+      },
+      "motion": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "BRAND-Review-Board.html live motions — co_created, operator-approved 2026-06-19"
+        },
+        "spec": {
+          "behaviors": [
+            {
+              "name": "dome-assemble",
+              "trigger": "cover/hero entrance",
+              "desc": "the dot-dome composes itself ring by ring; the indigo focal lands at the podium and settles (no bounce) — 'the orchestra composes itself'"
+            },
+            {
+              "name": "barline-reveal",
+              "trigger": "section/measure reveal",
+              "desc": "barlines and beat-dots reveal left-to-right in measure order; the indigo accent beat keys last"
+            },
+            {
+              "name": "field-breathe",
+              "trigger": "ambient/idle on hero",
+              "desc": "the concentric dot-field breathes (subtle scale/opacity pulse); the indigo focal pulses gently at the centre"
+            }
+          ],
+          "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule — these are real approved decisions, not a silent drop). Bake/Remotion productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
+        }
+      }
+    }
   },
   "surfaceExpression": {
     "presentation": {
@@ -203,7 +455,7 @@
         "density": "spacious",
         "contrast": "high",
         "symmetry": "controlled-asymmetry",
-        "geometry": "rectilinear",
+        "geometry": "geometric",
         "typeExpression": "editorial",
         "imageTreatment": "documentary-muted",
         "motifProminence": "structural",
@@ -212,10 +464,10 @@
       },
       "principles": [
         "Substance before style — the work speaks; decoration must earn its place.",
-        "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
+        "Orchestration as metaphor — every layout, motif, and typographic choice encodes disparate parts resolved into one coherent system.",
         "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
-        "Signal economy — oxide is a signal color, never a flood; motifs are assigned by role, not taste.",
-        "Infrastructure as image world — urban, architectural, raw-material photography; no stock offices, no AI futurism."
+        "Signal economy — indigo is a signal colour, never a flood; a single focal dot carries the accent.",
+        "The score made visible — concentric dot-fields and barline rhythm render orchestration as a structural system, not a picture of instruments."
       ]
     },
     "document": {
@@ -223,7 +475,7 @@
         "density": "spacious",
         "contrast": "high",
         "symmetry": "controlled-asymmetry",
-        "geometry": "rectilinear",
+        "geometry": "geometric",
         "typeExpression": "editorial",
         "imageTreatment": "documentary-muted",
         "motifProminence": "structural",
@@ -232,41 +484,41 @@
       },
       "principles": [
         "Substance before style — the work speaks; decoration must earn its place.",
-        "Orchestration as metaphor — every layout, motif, and typographic choice encodes the idea of a system made coherent.",
+        "Orchestration as metaphor — every layout, motif, and typographic choice encodes disparate parts resolved into one coherent system.",
         "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
-        "Signal economy — oxide is a signal color, never a flood; motifs are assigned by role, not taste.",
-        "Infrastructure as image world — urban, architectural, raw-material photography; no stock offices, no AI futurism."
+        "Signal economy — indigo is a signal colour, never a flood; a single focal dot carries the accent.",
+        "The score made visible — concentric dot-fields and barline rhythm render orchestration as a structural system, not a picture of instruments."
       ]
     }
   },
   "plotly_theme": {
     "colorway": [
-      "#1D342B",
-      "#B96034",
-      "#0F1310",
-      "#47685B",
-      "#B96034",
-      "#8E3F2E"
+      "#31004F",
+      "#61009E",
+      "#0B0B0C",
+      "#1E462F",
+      "#B8860B",
+      "#8E2F4F"
     ],
     "baseTemplate": "plotly_white",
     "font": {
       "family": "Plus Jakarta Sans",
-      "color": "#171611"
+      "color": "#16161A"
     },
     "titleFontSize": 18,
-    "gridColor": "#D7D0C3",
+    "gridColor": "#E3DCEC",
     "sentiment": {
-      "positiveColor": "#47685B",
-      "neutralColor": "#8C857A",
-      "negativeColor": "#8E3F2E"
+      "positiveColor": "#1E462F",
+      "neutralColor": "#9A9AA4",
+      "negativeColor": "#8E2F4F"
     },
     "categoricalPalette": [
-      "#1D342B",
-      "#B96034",
-      "#47685B",
-      "#7F9B90",
-      "#D68A60",
-      "#6D665C"
+      "#61009E",
+      "#31004F",
+      "#1E462F",
+      "#9B7BB8",
+      "#5C5C66",
+      "#E5D2FA"
     ],
     "defaultHeight": 500,
     "axisFontSize": 12,
@@ -277,43 +529,43 @@
       "left": 60,
       "right": 50
     },
-    "secondaryTextColor": "#8C857A",
+    "secondaryTextColor": "#6E6A75",
     "bar": {
-      "markerColor": "#1D342B",
-      "markerLineColor": "#152019",
+      "markerColor": "#31004F",
+      "markerLineColor": "#1C0030",
       "markerLineWidth": 1
     },
     "line": {
-      "color": "#1D342B",
+      "color": "#31004F",
       "width": 2.5,
-      "markerColor": "#B96034",
+      "markerColor": "#61009E",
       "markerSize": 7
     },
     "scatter": {
-      "markerColor": "#1D342B",
+      "markerColor": "#61009E",
       "markerSize": 8,
       "markerLineWidth": 0
     },
     "pie": {
       "hole": 0.4,
       "textfontSize": 13,
-      "markerLineColor": "#ECE6DA",
+      "markerLineColor": "#FFFFFF",
       "markerLineWidth": 2
     }
   },
   "excalidraw_theme": {
-    "strokeColor": "#1D342B",
+    "strokeColor": "#31004F",
     "fillColors": [
-      "#1D342B",
-      "#B96034",
-      "#47685B",
-      "#7F9B90",
-      "#D68A60",
-      "#6D665C"
+      "#61009E",
+      "#31004F",
+      "#1E462F",
+      "#E5D2FA",
+      "#9B7BB8",
+      "#5C5C66"
     ],
-    "textColor": "#171611",
-    "arrowColor": "#6D665C",
-    "backgroundColor": "#ECE6DA",
+    "textColor": "#16161A",
+    "arrowColor": "#5C5C66",
+    "backgroundColor": "#FFFFFF",
     "roughness": 0,
     "headingFont": "Fraunces",
     "bodyFont": "Plus Jakarta Sans",
@@ -355,8 +607,8 @@
   },
   "images": {
     "overlay": {
-      "color": "primary",
-      "opacity": 0.65
+      "color": "secondary",
+      "opacity": 0.62
     },
     "logoVariantOnImage": "white"
   },
@@ -368,15 +620,18 @@
     "mono": "logos/logo_mono.svg",
     "tagline": "logos/logo_tagline.svg",
     "mark": "logos/symbol.svg",
-    "icon": "logos/icon_dark.svg",
-    "iconPng": "logos/icon_dark.png",
-    "iconGreen": "logos/icon_green.svg",
-    "iconGreenPng": "logos/icon_green.png",
-    "iconPaper": "logos/icon_paper.svg",
-    "iconPaperPng": "logos/icon_paper.png",
+    "markLight": "logos/symbol_light.svg",
+    "markMono": "logos/symbol_mono.svg",
+    "secondary": "logos/secondary.svg",
+    "secondaryWhite": "logos/secondary_white.svg",
+    "variants": {
+      "apex": "logos/symbol_apex.svg",
+      "center": "logos/symbol_center.svg"
+    },
     "favicon": "logos/favicon.svg",
+    "faviconPng": "logos/favicon.png",
     "maxWidth": "220pt",
-    "maxHeight": "60pt",
+    "maxHeight": "72pt",
     "sizing": "contain"
   },
   "video": {

@@ -8,54 +8,59 @@
 
 :root {
   /* ── Primary Palette ─────────────────────────────────── */
-  --stromy-obsidian:       #0F1310;
-  --stromy-green:          #1D342B;
-  --stromy-signal-orange:  #B96034;
+  /* Velvet Score palette (refresh 2026-06). Scale var-names kept for a non-breaking
+     cascade; the Pillar-7 website re-theme renames them. green-scale = purple,
+     orange-scale = forest secondary. */
+  --stromy-obsidian:       #0B0B0C;  /* Concert Black ground */
+  --stromy-green:          #31004F;  /* Dark Amethyst — primary */
+  --stromy-signal-orange:  #61009E;  /* Indigo — signal accent */
 
-  /* ── Green Scale ─────────────────────────────────────── */
-  --stromy-green-900:      #152019;  /* Black forest */
-  --stromy-green-700:      #1D342B;  /* Deep forest */
-  --stromy-green-500:      #47685B;  /* Mineral green */
-  --stromy-green-300:      #7F9B90;  /* Oxidized sage */
-  --stromy-green-100:      #C9D6CF;  /* Soft mineral */
-  --stromy-green-50:       #E7EEE8;  /* Pale mist */
+  /* ── Purple Scale (var name 'green' kept) ────────────── */
+  --stromy-green-900:      #15002A;  /* Deepest amethyst */
+  --stromy-green-700:      #31004F;  /* Dark Amethyst */
+  --stromy-green-500:      #61009E;  /* Indigo signal */
+  --stromy-green-300:      #9B7BB8;  /* Mauve */
+  --stromy-green-100:      #D9C7EC;  /* Soft lilac */
+  --stromy-green-50:       #F1EAF8;  /* Pale thistle */
 
-  /* ── Orange Scale ────────────────────────────────────── */
-  --stromy-orange-900:     #6A341D;
-  --stromy-orange-700:     #924B29;
-  --stromy-orange-500:     #B96034;  /* Oxide signal */
-  --stromy-orange-300:     #D68A60;
-  --stromy-orange-100:     #E9C6AF;
-  --stromy-orange-50:      #F4E5D9;
+  /* ── Forest Scale — secondary (var name 'orange' kept) ─ */
+  --stromy-orange-900:     #0E2419;
+  --stromy-orange-700:     #143D29;
+  --stromy-orange-500:     #1E462F;  /* Deep Forest — secondary */
+  --stromy-orange-300:     #4E7A63;
+  --stromy-orange-100:     #BCD6C8;
+  --stromy-orange-50:      #E8F0EA;
 
-  /* ── Neutral Scale ───────────────────────────────────── */
-  --stromy-neutral-950:    #0F1310;  /* Obsidian forest */
-  --stromy-neutral-900:    #171611;
-  --stromy-neutral-800:    #2A2924;  /* Graphite bark */
-  --stromy-neutral-700:    #464138;
-  --stromy-neutral-600:    #6D665C;  /* Stone */
-  --stromy-neutral-500:    #8C857A;  /* Pewter */
-  --stromy-neutral-400:    #AEA495;
-  --stromy-neutral-300:    #CDC2B3;  /* Ash */
-  --stromy-neutral-200:    #DDD4C7;
-  --stromy-neutral-100:    #E8E0D4;
-  --stromy-neutral-50:     #ECE6DA;  /* Warm paper */
-  --stromy-white:          #F3EDE2;
+  /* ── Neutral Scale (cool grey + thistle/cream) ───────── */
+  --stromy-neutral-950:    #0B0B0C;  /* Concert Black */
+  --stromy-neutral-900:    #16161A;  /* Ink */
+  --stromy-neutral-800:    #2A2A30;  /* Graphite */
+  --stromy-neutral-700:    #46464F;
+  --stromy-neutral-600:    #6E6A75;  /* Slate-grey (textLight) */
+  --stromy-neutral-500:    #8C8792;  /* Ash */
+  --stromy-neutral-400:    #A8A4B0;
+  --stromy-neutral-300:    #C9C9D0;  /* Mist */
+  --stromy-neutral-200:    #DAD7E0;
+  --stromy-neutral-100:    #E9E6EF;
+  --stromy-neutral-50:     #F4EFE6;  /* Cream — light surface */
+  --stromy-white:          #FFFFFF;
 
   /* ── Semantic Colors ─────────────────────────────────── */
-  --stromy-success:        #47685B;
-  --stromy-success-light:  #E7EEE8;
-  --stromy-warning:        #B96034;
-  --stromy-warning-light:  #F4E5D9;
-  --stromy-error:          #8E3F2E;
-  --stromy-error-light:    #F2E2DC;
-  --stromy-info:           #2D4B3E;
-  --stromy-info-light:     #E4EBE7;
+  --stromy-success:        #1E462F;  /* forest */
+  --stromy-success-light:  #E8F0EA;
+  --stromy-warning:        #B8860B;  /* functional ochre (status only) */
+  --stromy-warning-light:  #F5ECD2;
+  --stromy-error:          #8E2F4F;  /* wine */
+  --stromy-error-light:    #F3E2E9;
+  --stromy-info:           #31004F;  /* amethyst */
+  --stromy-info-light:     #EEE4F4;
 
   /* ── Typography ──────────────────────────────────────── */
   --font-display:          'Fraunces', Georgia, 'Times New Roman', serif;
   --font-body:             'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono:             'IBM Plex Mono', 'SF Mono', 'Fira Code', monospace;
+  --font-wordmark:         'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-label:            'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
 
   /* Display sizes */
   --text-display-xl:       3rem;      /* 48px — hero, cover */
@@ -495,4 +500,28 @@
   height: 8px;
   border-top: var(--motif-line-weight) solid currentColor;
   border-bottom: var(--motif-line-weight) solid color-mix(in srgb, currentColor 18%, transparent);
+}
+
+/* ============================================================
+   Velvet Score visual grammar (Pillar 4 — 2026-06-19)
+   Background canvases + the hero-only stage-light gradient.
+   Policy: flat content, radial heroes. The radial is permitted
+   ONLY on hero surfaces (covers, section heroes, website hero),
+   never on content/document backgrounds.
+   ============================================================ */
+:root {
+  --hero-surface:           #0B0B0C;  /* Concert Black — dark hero/divider ground */
+  --content-surface-light:  #F4F1EA;  /* Cream — default warm light content ground (not pure white) */
+  --panel-tint:             #E5D2FA;  /* Thistle — accent panel tint */
+  --focal-signal:           #61009E;  /* Indigo — the single focal/accent dot */
+
+  /* hero-only stage-light radial — see expression.visual_grammar.gradients */
+  --gradient-hero-stage: radial-gradient(ellipse 62% 52% at 50% 82%,
+                           rgba(97,0,158,0.42), rgba(49,0,79,0.10) 46%, transparent 68%);
+}
+
+/* Apply the stage light to a hero block over Concert Black; content stays flat. */
+.stromy-hero--stage {
+  background-color: var(--hero-surface);
+  background-image: var(--gradient-hero-stage);
 }
