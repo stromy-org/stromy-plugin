@@ -79,336 +79,545 @@
   "images": {
     "catalog": [
       {
-        "file": "images/01_brutalist_concrete.jpg",
-        "description": "Brutalist parking spiral — raw concrete layers, industrial geometry",
-        "roles": [
-          "divider"
-        ],
-        "theme": "existing"
-      },
-      {
-        "file": "images/02_brutalist_geometric.jpg",
-        "description": "Monumental concrete cantilever — bold, authoritative brutalist form",
+        "file": "images/conductor-hands-baton.jpg",
+        "description": "Conductor's hands and baton, mid-gesture — the signal that resolves the parts",
         "roles": [
           "cover",
+          "hero"
+        ],
+        "hero": true,
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/conductor-backlit.jpg",
+        "description": "Conductor silhouetted, backlit on a dark stage",
+        "roles": [
+          "closing",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/spotlight-player.jpg",
+        "description": "Single musician under a concert spotlight against black",
+        "roles": [
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/orchestra-dotfield-above.jpg",
+        "description": "Orchestra seen from above as a field of points — the dot-field motif made real",
+        "roles": [
+          "hero",
           "divider",
+          "background",
+          "texture"
+        ],
+        "hero": true,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/orchestra-from-above.jpg",
+        "description": "Wide overhead of the full orchestra mid-performance",
+        "roles": [
+          "cover",
+          "hero",
+          "closing",
+          "background",
+          "texture",
+          "content"
+        ],
+        "hero": true,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/string-arc-above.jpg",
+        "description": "Sweeping arc of the string section from above",
+        "roles": [
+          "cover",
+          "hero",
           "closing"
         ],
         "hero": true,
-        "theme": "existing"
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
       },
       {
-        "file": "images/04_concrete_curves.jpg",
-        "description": "Industrial curved pipes — sculptural concrete forms in B&W",
+        "file": "images/brass-section-above.jpg",
+        "description": "Brass section catching stage light from above",
         "roles": [
-          "divider"
-        ],
-        "theme": "existing"
-      },
-      {
-        "file": "images/07_geometric_bw.jpg",
-        "description": "Geometric B&W architecture — stark light and shadow on tiled facade",
-        "roles": [
-          "cover",
           "divider",
-          "closing"
+          "section",
+          "content"
         ],
-        "theme": "existing"
+        "hero": false,
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
       },
       {
-        "file": "images/08_arch_lines_shadow.jpg",
-        "description": "Architectural lines with rhythmic shadows — chevron geometry",
+        "file": "images/harpist-strings.jpg",
+        "description": "Harpist's hands among the strings",
+        "roles": [
+          "closing",
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/percussion-timpani.jpg",
+        "description": "Timpani in low light, mallets poised",
+        "roles": [
+          "divider",
+          "section"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/stage-rigging-lights.jpg",
+        "description": "Stage rigging and lights overhead — the architecture of the hall",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/abstract-waveform-dotfield.jpg",
+        "description": "Sound rendered as a field of points — abstract waveform dot-field",
+        "roles": [
+          "background"
+        ],
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/abstract-wave-interference.jpg",
+        "description": "Interfering wavefronts — abstract resonance",
+        "roles": [
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/abstract-flowing-ribbon.jpg",
+        "description": "A single flowing ribbon of light — phrase made visible",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/str-03.jpg",
+        "description": "Violin against dark surface",
         "roles": [
           "divider",
           "background",
-          "closing"
+          "section",
+          "texture",
+          "content"
         ],
-        "theme": "existing"
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
       },
       {
-        "file": "images/11_corten_vertical_slats.jpg",
-        "description": "Warm corten steel building with vertical slats — excellent oxide-tone match",
+        "file": "images/str-05.jpg",
+        "description": "Black and white violin",
         "roles": [
-          "divider",
-          "background"
-        ],
-        "theme": "oxidized-infrastructure"
-      },
-      {
-        "file": "images/12_corten_pyramid.jpg",
-        "description": "Corten pyramid — geometric oxidized form with many windows",
-        "roles": [
-          "divider",
-          "closing"
-        ],
-        "theme": "oxidized-infrastructure"
-      },
-      {
-        "file": "images/13_corten_tower.jpg",
-        "description": "Corten steel tower — oxidized vertical structure, street context",
-        "roles": [
-          "divider",
-          "background"
-        ],
-        "theme": "oxidized-infrastructure"
-      },
-      {
-        "file": "images/14_corten_tall_orange.jpg",
-        "description": "Tall orange corten building — bold oxide tones against sky",
-        "roles": [],
-        "theme": "oxidized-infrastructure",
-        "reserve": true
-      },
-      {
-        "file": "images/15_brown_concrete_lowangle.jpg",
-        "description": "Low-angle brown concrete building — warm monumental form",
-        "roles": [
-          "cover",
-          "closing"
-        ],
-        "theme": "oxidized-infrastructure"
-      },
-      {
-        "file": "images/16_rusted_metal_rivets.jpg",
-        "description": "Close-up rusted metal with rivets — raw oxidized detail texture",
-        "roles": [
-          "background"
+          "closing",
+          "hero"
         ],
         "hero": true,
-        "theme": "oxidized-infrastructure"
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
       },
       {
-        "file": "images/17_industrial_staircase.jpg",
-        "description": "Industrial staircase — corten interior, modern building",
+        "file": "images/wav-10.jpg",
+        "description": "Purple wave light",
         "roles": [
           "divider",
-          "closing"
-        ],
-        "theme": "oxidized-infrastructure"
-      },
-      {
-        "file": "images/18_brown_building_monumental.jpg",
-        "description": "Brown concrete building — warm tones, white sky, monumental",
-        "roles": [
-          "cover",
-          "closing"
-        ],
-        "hero": true,
-        "theme": "oxidized-infrastructure"
-      },
-      {
-        "file": "images/19_diamond_facade.jpg",
-        "description": "Geometric diamond pattern on building facade — structured repetition",
-        "roles": [
-          "divider",
-          "background"
-        ],
-        "theme": "brutalist-architecture"
-      },
-      {
-        "file": "images/20_geometric_window_grid.jpg",
-        "description": "Geometric window grid — repetitive facade pattern, systematic",
-        "roles": [
-          "divider",
-          "background"
-        ],
-        "theme": "brutalist-architecture"
-      },
-      {
-        "file": "images/21_brutalist_bw_curves.jpg",
-        "description": "B&W brutalist building — stark contrast, bold curved balconies",
-        "roles": [
-          "divider"
-        ],
-        "theme": "brutalist-architecture"
-      },
-      {
-        "file": "images/22_concrete_curves_sky.jpg",
-        "description": "Concrete building curves against sky — sculptural brutalist form",
-        "roles": [
-          "cover",
-          "divider",
-          "closing"
-        ],
-        "hero": true,
-        "theme": "brutalist-architecture"
-      },
-      {
-        "file": "images/23_vertical_fins.jpg",
-        "description": "Repeating vertical fins — modern brutalist rhythm",
-        "roles": [
-          "cover",
-          "closing"
-        ],
-        "theme": "brutalist-architecture"
-      },
-      {
-        "file": "images/24_shadow_lines_grayscale.jpg",
-        "description": "Grayscale building — shadow lines creating rhythmic pattern",
-        "roles": [
-          "divider",
-          "background"
-        ],
-        "theme": "structural-shadow"
-      },
-      {
-        "file": "images/25_tall_building_shadow.jpg",
-        "description": "Tall building — vertical shadow rhythm with architectural detail",
-        "roles": [
-          "cover",
-          "closing"
-        ],
-        "hero": true,
-        "theme": "structural-shadow"
-      },
-      {
-        "file": "images/26_white_concrete_daylight.jpg",
-        "description": "White concrete — clean daylight shadow lines, minimal",
-        "roles": [
-          "divider",
-          "background"
-        ],
-        "theme": "structural-shadow"
-      },
-      {
-        "file": "images/27_brown_concrete_warm.jpg",
-        "description": "Brown concrete with warm shadows — warm-toned rhythm",
-        "roles": [
-          "divider",
-          "background"
-        ],
-        "theme": "structural-shadow"
-      },
-      {
-        "file": "images/28_metal_poles_parallel.jpg",
-        "description": "Metal poles closeup — parallel lines, industrial rhythm",
-        "roles": [
-          "cover",
-          "closing"
-        ],
-        "theme": "structural-shadow"
-      },
-      {
-        "file": "images/29_dark_wood_floor.jpg",
-        "description": "Dark wood floor — rich timber grain, warm texture",
-        "roles": [
-          "background"
-        ],
-        "theme": "workshop-material"
-      },
-      {
-        "file": "images/30_weathered_barn_door.jpg",
-        "description": "Weathered barn door — aged timber with character",
-        "roles": [
-          "background"
-        ],
-        "theme": "workshop-material"
-      },
-      {
-        "file": "images/31_dark_wood_grain.jpg",
-        "description": "Dark wood grain — deep tones, organic pattern",
-        "roles": [
-          "background"
-        ],
-        "theme": "workshop-material"
-      },
-      {
-        "file": "images/32_amber_wood.jpg",
-        "description": "Amber wood — warm golden tones, crafted surface",
-        "roles": [
-          "background"
-        ],
-        "theme": "workshop-material"
-      },
-      {
-        "file": "images/33_black_marble.jpg",
-        "description": "Black marble with white veins — dark premium texture",
-        "roles": [
-          "background"
-        ],
-        "theme": "workshop-material"
-      },
-      {
-        "file": "images/34_dark_geometry_angular.jpg",
-        "description": "B&W dark geometry — angular architecture, deep contrast",
-        "roles": [
-          "divider",
-          "background"
-        ],
-        "theme": "dark-geometry"
-      },
-      {
-        "file": "images/35_illuminated_windows_night.jpg",
-        "description": "Illuminated windows at night — warm glow in dark facade",
-        "roles": [
-          "cover",
-          "closing"
-        ],
-        "hero": true,
-        "theme": "dark-geometry"
-      },
-      {
-        "file": "images/36_stairwell_glass.jpg",
-        "description": "Stairwell through glass — geometric depth, moody interior",
-        "roles": [
-          "divider"
-        ],
-        "theme": "dark-geometry"
-      },
-      {
-        "file": "images/37_glass_facade_reflections.jpg",
-        "description": "Glass facade with warm building reflections at night",
-        "roles": [
-          "cover",
           "background",
-          "closing"
+          "texture"
         ],
-        "hero": true,
-        "theme": "dark-geometry"
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
       },
       {
-        "file": "images/38_dark_building_silhouette.jpg",
-        "description": "B&W dark building — stark silhouette, dramatic composition",
+        "file": "images/wav-02.jpg",
+        "description": "Audio pattern, monochrome",
         "roles": [
-          "cover",
-          "closing"
-        ],
-        "hero": true,
-        "theme": "dark-geometry"
-      },
-      {
-        "file": "images/39_industrial_pipes_bw.jpg",
-        "description": "B&W industrial pipes — complex system, structured chaos",
-        "roles": [
-          "divider"
-        ],
-        "theme": "framed-urban-systems"
-      },
-      {
-        "file": "images/40_urban_framing_post.jpg",
-        "description": "Grayscale building with structural post — urban framing",
-        "roles": [
-          "divider"
-        ],
-        "theme": "framed-urban-systems"
-      },
-      {
-        "file": "images/41_aerial_train_yard.jpg",
-        "description": "Aerial train yard — track switching systems, orchestration literal",
-        "roles": [
-          "cover",
+          "divider",
           "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/wav-01.jpg",
+        "description": "Black & white wavy lines",
+        "roles": [
+          "closing",
+          "divider",
+          "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/wav-08.jpg",
+        "description": "Abstract black wavy lines",
+        "roles": [
+          "divider",
+          "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/wav-03.jpg",
+        "description": "Circular audio pattern",
+        "roles": [
+          "cover",
+          "closing",
+          "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/wav-04.jpg",
+        "description": "Black & white wavy lines",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/wav-05.jpg",
+        "description": "Monochrome flowing waves",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/wav-06.jpg",
+        "description": "Black wavy surface",
+        "roles": [
+          "hero",
+          "closing",
+          "background",
+          "texture"
+        ],
+        "hero": true,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/wav-07.jpg",
+        "description": "Curved monochrome form",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/wav-09.jpg",
+        "description": "Dark blue/black fluid",
+        "roles": [
+          "closing",
+          "divider"
+        ],
+        "hero": false,
+        "treatment": "velvet-tritone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/hal-05.jpg",
+        "description": "Theatre stairs interior",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/hal-03.jpg",
+        "description": "Empty auditorium, seats + stage",
+        "roles": [
+          "closing",
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/hal-02.jpg",
+        "description": "Hall with pipe organ",
+        "roles": [
+          "cover",
+          "hero",
           "closing"
         ],
         "hero": true,
-        "theme": "framed-urban-systems"
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/hal-01.jpg",
+        "description": "B&W empty auditorium",
+        "roles": [
+          "closing"
+        ],
+        "hero": false,
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/pno-05.jpg",
+        "description": "Hand position study",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/pno-01.jpg",
+        "description": "Hands on keys, focused",
+        "roles": [
+          "content"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/prc-04.jpg",
+        "description": "Grayscale drum set",
+        "roles": [
+          "closing"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/prc-01.jpg",
+        "description": "Snare drum close-up B&W",
+        "roles": [
+          "closing"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/prc-07.jpg",
+        "description": "Drumsticks on drums",
+        "roles": [
+          "closing"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/brs-01.jpg",
+        "description": "Trumpet on black textile",
+        "roles": [
+          "divider",
+          "background",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/brs-06.jpg",
+        "description": "Trumpet close photography",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/orc-10.jpg",
+        "description": "Orchestra and choir on stage",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/orc-09.jpg",
+        "description": "Group on stage, empty seats",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/orc-08.jpg",
+        "description": "Audience watching orchestra",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "nocturne",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/orc-02.jpg",
+        "description": "Orchestra in dim-lit room",
+        "roles": [
+          "cover",
+          "hero",
+          "closing"
+        ],
+        "hero": true,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/orc-01.jpg",
+        "description": "Grayscale orchestra in theatre",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "amethyst-splittone",
+        "theme": "orchestral",
+        "stock": false
+      },
+      {
+        "file": "images/orc-03.jpg",
+        "description": "Conductor + orchestra in hall",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "hero": false,
+        "treatment": "spotlight-noir",
+        "theme": "orchestral",
+        "stock": false
       }
     ],
     "overlay": {
       "color": "secondary",
-      "opacity": 0.62
+      "opacity": 0.4
     },
-    "logoVariantOnImage": "white"
+    "logoVariantOnImage": "white",
+    "note": "Role-tagged library in images/manifest.json (orchestral, Velvet Score; generated + treated Unsplash). 'treatment' is the PREFERRED look — advisory; downstream (format-MCP/website) may override to harmonise a deck. Named looks in expression.treatments apply downstream; overlay is a legibility scrim."
   },
   "website": {
     "archetype": "sage",
@@ -710,6 +919,39 @@
     "source": "co_created",
     "confidence": "approved",
     "status": "approved",
+    "treatments": {
+      "default": "amethyst-splittone",
+      "note": "Named brand 'house looks' applied to photography DOWNSTREAM (format-MCP render + website CSS) — never pre-baked into the shipped library. Restrained: one clean base image x the treatment = flexible reuse. ORG-PLAN-045.",
+      "looks": {
+        "nocturne": {
+          "label": "Nocturne",
+          "usage": "Editorial monochrome + fine grain — the timeless default for dividers, quotes, and dense content backgrounds.",
+          "css_filter": "grayscale(1) contrast(1.1)",
+          "grain": { "opacity": 0.1, "blend": "overlay" }
+        },
+        "velvet-tritone": {
+          "label": "Velvet Tritone",
+          "usage": "Signature deep-amethyst wash for covers + hero moments — applied transparently (rich dark-amethyst shadows through amethyst mids to soft thistle highlights, low strength so the photo breathes). A rich purple hue, kept subtle.",
+          "css_filter": "grayscale(1) contrast(1.05)",
+          "duotone": { "shadows": "#15002A", "mid": "#31004F", "highlights": "#E5D2FA", "strength": 0.45 },
+          "grain": { "opacity": 0.07, "blend": "overlay" }
+        },
+        "amethyst-splittone": {
+          "label": "Amethyst Split-tone",
+          "usage": "Subtle cinematic grade for backgrounds + section imagery — mostly neutral, a whisper of amethyst in shadows and warm cream in highlights. The restrained default.",
+          "css_filter": "saturate(0.4) contrast(1.05)",
+          "duotone": { "shadows": "#241038", "mid": "#6E6675", "highlights": "#EFE7E0", "strength": 0.35 },
+          "grain": { "opacity": 0.08, "blend": "overlay" }
+        },
+        "spotlight-noir": {
+          "label": "Spotlight Noir",
+          "usage": "B&W with a soft radial vignette (echoes the concert spotlight) + grain — focal hero treatment that draws the eye.",
+          "css_filter": "grayscale(1) contrast(1.08)",
+          "vignette": { "strength": 0.5, "shape": "radial" },
+          "grain": { "opacity": 0.1, "blend": "overlay" }
+        }
+      }
+    },
     "principles": [
       "Substance before style — the work speaks; decoration must earn its place.",
       "Orchestration as metaphor — every layout, motif, and typographic choice encodes disparate parts resolved into one coherent system.",

@@ -525,3 +525,41 @@
   background-color: var(--hero-surface);
   background-image: var(--gradient-hero-stage);
 }
+
+/* ============================================================
+   Image treatment system (Pillar 5 — ORG-PLAN-045)
+   Named brand "house looks" applied to photography DOWNSTREAM
+   (format-MCP render + website CSS) — never pre-baked into the
+   shipped library. Definition of record: charter.expression.treatments.
+   Restrained by design; default = amethyst-splittone (subtle).
+   Duotone/tritone stops feed an inline SVG <feComponentTransfer>;
+   grain feeds a tiled-noise overlay layer; vignette a radial ::after.
+   ============================================================ */
+:root {
+  --treatment-default: amethyst-splittone;
+
+  /* nocturne — editorial B&W + grain (dividers, quotes, dense backgrounds) */
+  --treatment-nocturne-filter:          grayscale(1) contrast(1.1);
+  --treatment-nocturne-grain:           0.10;
+
+  /* velvet-tritone — DEEP amethyst wash applied TRANSPARENTLY (covers, hero); rich purple, subtle */
+  --treatment-velvet-tritone-filter:    grayscale(1) contrast(1.05);
+  --treatment-velvet-tritone-shadow:    #15002A;
+  --treatment-velvet-tritone-mid:       #31004F;
+  --treatment-velvet-tritone-highlight: #E5D2FA;
+  --treatment-velvet-tritone-strength:  0.45;
+  --treatment-velvet-tritone-grain:     0.07;
+
+  /* amethyst-splittone — subtle cinematic grade (DEFAULT; backgrounds, sections) */
+  --treatment-amethyst-splittone-filter:    saturate(0.4) contrast(1.05);
+  --treatment-amethyst-splittone-shadow:    #241038;
+  --treatment-amethyst-splittone-mid:       #6E6675;
+  --treatment-amethyst-splittone-highlight: #EFE7E0;
+  --treatment-amethyst-splittone-strength:  0.35;
+  --treatment-amethyst-splittone-grain:     0.08;
+
+  /* spotlight-noir — B&W + concert-spotlight vignette (focal hero) */
+  --treatment-spotlight-noir-filter:    grayscale(1) contrast(1.08);
+  --treatment-spotlight-noir-vignette:  0.5;
+  --treatment-spotlight-noir-grain:     0.10;
+}

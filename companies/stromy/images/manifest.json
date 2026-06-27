@@ -1,1041 +1,707 @@
 {
-  "version": 1,
-  "generatedAt": "2026-04-07T13:43:55.608Z",
-  "scope": "Full image library — 33 images across 7 themes with processed variants and hero crops",
+  "version": 2,
+  "scope": "stromy-velvet-score",
+  "note": "Clean base images; treatments apply downstream (charter.expression.treatments).",
   "library": [
     {
-      "id": "01-brutalist-concrete",
-      "source": "images/01_brutalist_concrete.jpg",
-      "processed": "images/processed/01_brutalist_concrete.brand.jpg",
-      "theme": "existing",
+      "id": "conductor-hands-baton",
+      "source": "images/conductor-hands-baton.jpg",
+      "theme": "orchestral",
       "roles": [
-        "divider"
+        "cover",
+        "hero"
       ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Brutalist parking spiral — raw concrete layers, industrial geometry",
-      "printSafe": true,
+      "hero": true,
+      "treatment": "amethyst-splittone",
+      "altText": "Conductor's hands and baton, mid-gesture \u2014 the signal that resolves the parts",
       "dimensions": {
-        "width": 1920,
-        "height": 2880
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
+        "width": 1408,
+        "height": 768
       }
     },
     {
-      "id": "02-brutalist-geometric",
-      "source": "images/02_brutalist_geometric.jpg",
-      "processed": "images/processed/02_brutalist_geometric.brand.jpg",
-      "theme": "existing",
+      "id": "conductor-backlit",
+      "source": "images/conductor-backlit.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Conductor silhouetted, backlit on a dark stage",
+      "dimensions": {
+        "width": 896,
+        "height": 1280
+      }
+    },
+    {
+      "id": "spotlight-player",
+      "source": "images/spotlight-player.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Single musician under a concert spotlight against black",
+      "dimensions": {
+        "width": 896,
+        "height": 1280
+      }
+    },
+    {
+      "id": "orchestra-dotfield-above",
+      "source": "images/orchestra-dotfield-above.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "hero",
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": true,
+      "treatment": "spotlight-noir",
+      "altText": "Orchestra seen from above as a field of points \u2014 the dot-field motif made real",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      }
+    },
+    {
+      "id": "orchestra-from-above",
+      "source": "images/orchestra-from-above.jpg",
+      "theme": "orchestral",
       "roles": [
         "cover",
-        "divider",
+        "hero",
+        "closing",
+        "background",
+        "texture",
+        "content"
+      ],
+      "hero": true,
+      "treatment": "spotlight-noir",
+      "altText": "Wide overhead of the full orchestra mid-performance",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      }
+    },
+    {
+      "id": "string-arc-above",
+      "source": "images/string-arc-above.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "cover",
+        "hero",
         "closing"
       ],
       "hero": true,
-      "preferredCrop": "hero-2x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "Monumental concrete cantilever — bold, authoritative brutalist form",
-      "printSafe": true,
+      "treatment": "amethyst-splittone",
+      "altText": "Sweeping arc of the string section from above",
       "dimensions": {
-        "width": 1920,
-        "height": 1281
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": "images/heroes/02_brutalist_geometric.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/02_brutalist_geometric.hero-2x1.jpg",
-        "hero": "images/heroes/02_brutalist_geometric.hero.jpg"
+        "width": 1408,
+        "height": 768
       }
     },
     {
-      "id": "04-concrete-curves",
-      "source": "images/04_concrete_curves.jpg",
-      "processed": "images/processed/04_concrete_curves.brand.jpg",
-      "theme": "existing",
+      "id": "brass-section-above",
+      "source": "images/brass-section-above.jpg",
+      "theme": "orchestral",
       "roles": [
-        "divider"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Industrial curved pipes — sculptural concrete forms in B&W",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2895
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "07-geometric-bw",
-      "source": "images/07_geometric_bw.jpg",
-      "processed": "images/processed/07_geometric_bw.brand.jpg",
-      "theme": "existing",
-      "roles": [
-        "cover",
         "divider",
-        "closing"
+        "section",
+        "content"
       ],
       "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Geometric B&W architecture — stark light and shadow on tiled facade",
-      "printSafe": true,
+      "treatment": "amethyst-splittone",
+      "altText": "Brass section catching stage light from above",
       "dimensions": {
-        "width": 1920,
-        "height": 2560
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
+        "width": 1408,
+        "height": 768
       }
     },
     {
-      "id": "08-arch-lines-shadow",
-      "source": "images/08_arch_lines_shadow.jpg",
-      "processed": "images/processed/08_arch_lines_shadow.brand.jpg",
-      "theme": "existing",
+      "id": "harpist-strings",
+      "source": "images/harpist-strings.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing",
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Harpist's hands among the strings",
+      "dimensions": {
+        "width": 896,
+        "height": 1280
+      }
+    },
+    {
+      "id": "percussion-timpani",
+      "source": "images/percussion-timpani.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Timpani in low light, mallets poised",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      }
+    },
+    {
+      "id": "stage-rigging-lights",
+      "source": "images/stage-rigging-lights.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Stage rigging and lights overhead \u2014 the architecture of the hall",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      }
+    },
+    {
+      "id": "abstract-waveform-dotfield",
+      "source": "images/abstract-waveform-dotfield.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "background"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Sound rendered as a field of points \u2014 abstract waveform dot-field",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      }
+    },
+    {
+      "id": "abstract-wave-interference",
+      "source": "images/abstract-wave-interference.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Interfering wavefronts \u2014 abstract resonance",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "id": "abstract-flowing-ribbon",
+      "source": "images/abstract-flowing-ribbon.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "A single flowing ribbon of light \u2014 phrase made visible",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      }
+    },
+    {
+      "id": "str-03",
+      "source": "images/str-03.jpg",
+      "theme": "orchestral",
       "roles": [
         "divider",
         "background",
-        "closing"
+        "section",
+        "texture",
+        "content"
       ],
       "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Architectural lines with rhythmic shadows — chevron geometry",
-      "printSafe": true,
+      "treatment": "velvet-tritone",
+      "altText": "Violin against dark surface",
       "dimensions": {
-        "width": 1920,
-        "height": 2880
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
+        "width": 1600,
+        "height": 2400
       }
     },
     {
-      "id": "11-corten-vertical-slats",
-      "source": "images/11_corten_vertical_slats.jpg",
-      "processed": "images/processed/11_corten_vertical_slats.brand.jpg",
-      "theme": "oxidized-infrastructure",
+      "id": "str-05",
+      "source": "images/str-05.jpg",
+      "theme": "orchestral",
       "roles": [
-        "divider",
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Warm corten steel building with vertical slats — excellent oxide-tone match",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2560
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "switch-track"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "12-corten-pyramid",
-      "source": "images/12_corten_pyramid.jpg",
-      "processed": "images/processed/12_corten_pyramid.brand.jpg",
-      "theme": "oxidized-infrastructure",
-      "roles": [
-        "divider",
-        "closing"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Corten pyramid — geometric oxidized form with many windows",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "switch-track"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "13-corten-tower",
-      "source": "images/13_corten_tower.jpg",
-      "processed": "images/processed/13_corten_tower.brand.jpg",
-      "theme": "oxidized-infrastructure",
-      "roles": [
-        "divider",
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Corten steel tower — oxidized vertical structure, street context",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2560
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "switch-track"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "14-corten-tall-orange",
-      "source": "images/14_corten_tall_orange.jpg",
-      "processed": "images/processed/14_corten_tall_orange.brand.jpg",
-      "theme": "oxidized-infrastructure",
-      "roles": [],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Tall orange corten building — bold oxide tones against sky",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "switch-track"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "15-brown-concrete-lowangle",
-      "source": "images/15_brown_concrete_lowangle.jpg",
-      "processed": "images/processed/15_brown_concrete_lowangle.brand.jpg",
-      "theme": "oxidized-infrastructure",
-      "roles": [
-        "cover",
-        "closing"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Low-angle brown concrete building — warm monumental form",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "switch-track"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "16-rusted-metal-rivets",
-      "source": "images/16_rusted_metal_rivets.jpg",
-      "processed": "images/processed/16_rusted_metal_rivets.brand.jpg",
-      "theme": "oxidized-infrastructure",
-      "roles": [
-        "background"
+        "closing",
+        "hero"
       ],
       "hero": true,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "Close-up rusted metal with rivets — raw oxidized detail texture",
-      "printSafe": true,
+      "treatment": "amethyst-splittone",
+      "altText": "Black and white violin",
       "dimensions": {
-        "width": 1920,
-        "height": 2878
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "switch-track"
-      ],
-      "crops": {
-        "hero-16x9": "images/heroes/16_rusted_metal_rivets.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/16_rusted_metal_rivets.hero-2x1.jpg",
-        "hero": "images/heroes/16_rusted_metal_rivets.hero.jpg"
+        "width": 1600,
+        "height": 2134
       }
     },
     {
-      "id": "17-industrial-staircase",
-      "source": "images/17_industrial_staircase.jpg",
-      "processed": "images/processed/17_industrial_staircase.brand.jpg",
-      "theme": "oxidized-infrastructure",
+      "id": "wav-10",
+      "source": "images/wav-10.jpg",
+      "theme": "orchestral",
       "roles": [
         "divider",
-        "closing"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Industrial staircase — corten interior, modern building",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2560
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "switch-track"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "18-brown-building-monumental",
-      "source": "images/18_brown_building_monumental.jpg",
-      "processed": "images/processed/18_brown_building_monumental.brand.jpg",
-      "theme": "oxidized-infrastructure",
-      "roles": [
-        "cover",
-        "closing"
-      ],
-      "hero": true,
-      "preferredCrop": "hero-2x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "Brown concrete building — warm tones, white sky, monumental",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "switch-track"
-      ],
-      "crops": {
-        "hero-16x9": "images/heroes/18_brown_building_monumental.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/18_brown_building_monumental.hero-2x1.jpg",
-        "hero": "images/heroes/18_brown_building_monumental.hero.jpg"
-      }
-    },
-    {
-      "id": "19-diamond-facade",
-      "source": "images/19_diamond_facade.jpg",
-      "processed": "images/processed/19_diamond_facade.brand.jpg",
-      "theme": "brutalist-architecture",
-      "roles": [
-        "divider",
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Geometric diamond pattern on building facade — structured repetition",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1440
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "20-geometric-window-grid",
-      "source": "images/20_geometric_window_grid.jpg",
-      "processed": "images/processed/20_geometric_window_grid.brand.jpg",
-      "theme": "brutalist-architecture",
-      "roles": [
-        "divider",
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Geometric window grid — repetitive facade pattern, systematic",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2560
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "21-brutalist-bw-curves",
-      "source": "images/21_brutalist_bw_curves.jpg",
-      "processed": "images/processed/21_brutalist_bw_curves.brand.jpg",
-      "theme": "brutalist-architecture",
-      "roles": [
-        "divider"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "B&W brutalist building — stark contrast, bold curved balconies",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2560
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "22-concrete-curves-sky",
-      "source": "images/22_concrete_curves_sky.jpg",
-      "processed": "images/processed/22_concrete_curves_sky.brand.jpg",
-      "theme": "brutalist-architecture",
-      "roles": [
-        "cover",
-        "divider",
-        "closing"
-      ],
-      "hero": true,
-      "preferredCrop": "hero-2x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "Concrete building curves against sky — sculptural brutalist form",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2563
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": "images/heroes/22_concrete_curves_sky.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/22_concrete_curves_sky.hero-2x1.jpg",
-        "hero": "images/heroes/22_concrete_curves_sky.hero.jpg"
-      }
-    },
-    {
-      "id": "23-vertical-fins",
-      "source": "images/23_vertical_fins.jpg",
-      "processed": "images/processed/23_vertical_fins.brand.jpg",
-      "theme": "brutalist-architecture",
-      "roles": [
-        "cover",
-        "closing"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Repeating vertical fins — modern brutalist rhythm",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "24-shadow-lines-grayscale",
-      "source": "images/24_shadow_lines_grayscale.jpg",
-      "processed": "images/processed/24_shadow_lines_grayscale.brand.jpg",
-      "theme": "structural-shadow",
-      "roles": [
-        "divider",
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Grayscale building — shadow lines creating rhythmic pattern",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "echo-band",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "25-tall-building-shadow",
-      "source": "images/25_tall_building_shadow.jpg",
-      "processed": "images/processed/25_tall_building_shadow.brand.jpg",
-      "theme": "structural-shadow",
-      "roles": [
-        "cover",
-        "closing"
-      ],
-      "hero": true,
-      "preferredCrop": "hero-2x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "Tall building — vertical shadow rhythm with architectural detail",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "echo-band",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": "images/heroes/25_tall_building_shadow.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/25_tall_building_shadow.hero-2x1.jpg",
-        "hero": "images/heroes/25_tall_building_shadow.hero.jpg"
-      }
-    },
-    {
-      "id": "26-white-concrete-daylight",
-      "source": "images/26_white_concrete_daylight.jpg",
-      "processed": "images/processed/26_white_concrete_daylight.brand.jpg",
-      "theme": "structural-shadow",
-      "roles": [
-        "divider",
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "White concrete — clean daylight shadow lines, minimal",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1372
-      },
-      "motifAffinity": [
-        "echo-band",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "27-brown-concrete-warm",
-      "source": "images/27_brown_concrete_warm.jpg",
-      "processed": "images/processed/27_brown_concrete_warm.brand.jpg",
-      "theme": "structural-shadow",
-      "roles": [
-        "divider",
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Brown concrete with warm shadows — warm-toned rhythm",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2501
-      },
-      "motifAffinity": [
-        "echo-band",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "28-metal-poles-parallel",
-      "source": "images/28_metal_poles_parallel.jpg",
-      "processed": "images/processed/28_metal_poles_parallel.brand.jpg",
-      "theme": "structural-shadow",
-      "roles": [
-        "cover",
-        "closing"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Metal poles closeup — parallel lines, industrial rhythm",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1260
-      },
-      "motifAffinity": [
-        "echo-band",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "29-dark-wood-floor",
-      "source": "images/29_dark_wood_floor.jpg",
-      "processed": "images/processed/29_dark_wood_floor.brand.jpg",
-      "theme": "workshop-material",
-      "roles": [
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Dark wood floor — rich timber grain, warm texture",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "30-weathered-barn-door",
-      "source": "images/30_weathered_barn_door.jpg",
-      "processed": "images/processed/30_weathered_barn_door.brand.jpg",
-      "theme": "workshop-material",
-      "roles": [
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Weathered barn door — aged timber with character",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "31-dark-wood-grain",
-      "source": "images/31_dark_wood_grain.jpg",
-      "processed": "images/processed/31_dark_wood_grain.brand.jpg",
-      "theme": "workshop-material",
-      "roles": [
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Dark wood grain — deep tones, organic pattern",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1080
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "32-amber-wood",
-      "source": "images/32_amber_wood.jpg",
-      "processed": "images/processed/32_amber_wood.brand.jpg",
-      "theme": "workshop-material",
-      "roles": [
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Amber wood — warm golden tones, crafted surface",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2560
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "33-black-marble",
-      "source": "images/33_black_marble.jpg",
-      "processed": "images/processed/33_black_marble.brand.jpg",
-      "theme": "workshop-material",
-      "roles": [
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "Black marble with white veins — dark premium texture",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "34-dark-geometry-angular",
-      "source": "images/34_dark_geometry_angular.jpg",
-      "processed": "images/processed/34_dark_geometry_angular.brand.jpg",
-      "theme": "dark-geometry",
-      "roles": [
-        "divider",
-        "background"
-      ],
-      "hero": false,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-40",
-      "textSafeZone": "center-safe",
-      "altText": "B&W dark geometry — angular architecture, deep contrast",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2899
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "35-illuminated-windows-night",
-      "source": "images/35_illuminated_windows_night.jpg",
-      "processed": "images/processed/35_illuminated_windows_night.brand.jpg",
-      "theme": "dark-geometry",
-      "roles": [
-        "cover",
-        "closing"
-      ],
-      "hero": true,
-      "preferredCrop": "hero-2x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "Illuminated windows at night — warm glow in dark facade",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 1281
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": "images/heroes/35_illuminated_windows_night.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/35_illuminated_windows_night.hero-2x1.jpg",
-        "hero": "images/heroes/35_illuminated_windows_night.hero.jpg"
-      }
-    },
-    {
-      "id": "36-stairwell-glass",
-      "source": "images/36_stairwell_glass.jpg",
-      "processed": "images/processed/36_stairwell_glass.brand.jpg",
-      "theme": "dark-geometry",
-      "roles": [
-        "divider"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Stairwell through glass — geometric depth, moody interior",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2889
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "37-glass-facade-reflections",
-      "source": "images/37_glass_facade_reflections.jpg",
-      "processed": "images/processed/37_glass_facade_reflections.brand.jpg",
-      "theme": "dark-geometry",
-      "roles": [
-        "cover",
         "background",
-        "closing"
-      ],
-      "hero": true,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "Glass facade with warm building reflections at night",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2886
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": "images/heroes/37_glass_facade_reflections.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/37_glass_facade_reflections.hero-2x1.jpg",
-        "hero": "images/heroes/37_glass_facade_reflections.hero.jpg"
-      }
-    },
-    {
-      "id": "38-dark-building-silhouette",
-      "source": "images/38_dark_building_silhouette.jpg",
-      "processed": "images/processed/38_dark_building_silhouette.brand.jpg",
-      "theme": "dark-geometry",
-      "roles": [
-        "cover",
-        "closing"
-      ],
-      "hero": true,
-      "preferredCrop": "hero-2x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "B&W dark building — stark silhouette, dramatic composition",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2879
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": "images/heroes/38_dark_building_silhouette.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/38_dark_building_silhouette.hero-2x1.jpg",
-        "hero": "images/heroes/38_dark_building_silhouette.hero.jpg"
-      }
-    },
-    {
-      "id": "39-industrial-pipes-bw",
-      "source": "images/39_industrial_pipes_bw.jpg",
-      "processed": "images/processed/39_industrial_pipes_bw.brand.jpg",
-      "theme": "framed-urban-systems",
-      "roles": [
-        "divider"
+        "texture"
       ],
       "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "B&W industrial pipes — complex system, structured chaos",
-      "printSafe": true,
+      "treatment": "velvet-tritone",
+      "altText": "Purple wave light",
       "dimensions": {
-        "width": 1920,
-        "height": 1280
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
+        "width": 1600,
+        "height": 900
       }
     },
     {
-      "id": "40-urban-framing-post",
-      "source": "images/40_urban_framing_post.jpg",
-      "processed": "images/processed/40_urban_framing_post.brand.jpg",
-      "theme": "framed-urban-systems",
+      "id": "wav-02",
+      "source": "images/wav-02.jpg",
+      "theme": "orchestral",
       "roles": [
-        "divider"
-      ],
-      "hero": false,
-      "preferredCrop": "hero-16x9",
-      "overlayPolicy": "dark-32",
-      "textSafeZone": "lower-third",
-      "altText": "Grayscale building with structural post — urban framing",
-      "printSafe": true,
-      "dimensions": {
-        "width": 1920,
-        "height": 2401
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
-      ],
-      "crops": {
-        "hero-16x9": null,
-        "hero-2x1": null,
-        "hero": null
-      }
-    },
-    {
-      "id": "41-aerial-train-yard",
-      "source": "images/41_aerial_train_yard.jpg",
-      "processed": "images/processed/41_aerial_train_yard.brand.jpg",
-      "theme": "framed-urban-systems",
-      "roles": [
-        "cover",
+        "divider",
         "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Audio pattern, monochrome",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "id": "wav-01",
+      "source": "images/wav-01.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing",
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Black & white wavy lines",
+      "dimensions": {
+        "width": 1600,
+        "height": 2133
+      }
+    },
+    {
+      "id": "wav-08",
+      "source": "images/wav-08.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Abstract black wavy lines",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      }
+    },
+    {
+      "id": "wav-03",
+      "source": "images/wav-03.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "cover",
+        "closing",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Circular audio pattern",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "id": "wav-04",
+      "source": "images/wav-04.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Black & white wavy lines",
+      "dimensions": {
+        "width": 1600,
+        "height": 1371
+      }
+    },
+    {
+      "id": "wav-05",
+      "source": "images/wav-05.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Monochrome flowing waves",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      }
+    },
+    {
+      "id": "wav-06",
+      "source": "images/wav-06.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "hero",
+        "closing",
+        "background",
+        "texture"
+      ],
+      "hero": true,
+      "treatment": "velvet-tritone",
+      "altText": "Black wavy surface",
+      "dimensions": {
+        "width": 1600,
+        "height": 2316
+      }
+    },
+    {
+      "id": "wav-07",
+      "source": "images/wav-07.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Curved monochrome form",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "wav-09",
+      "source": "images/wav-09.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing",
+        "divider"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Dark blue/black fluid",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      }
+    },
+    {
+      "id": "hal-05",
+      "source": "images/hal-05.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Theatre stairs interior",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "hal-03",
+      "source": "images/hal-03.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing",
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Empty auditorium, seats + stage",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      }
+    },
+    {
+      "id": "hal-02",
+      "source": "images/hal-02.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "cover",
+        "hero",
         "closing"
       ],
       "hero": true,
-      "preferredCrop": "square-1x1",
-      "overlayPolicy": "dark-52",
-      "textSafeZone": "bottom-left",
-      "altText": "Aerial train yard — track switching systems, orchestration literal",
-      "printSafe": true,
+      "treatment": "nocturne",
+      "altText": "Hall with pipe organ",
       "dimensions": {
-        "width": 1920,
-        "height": 2882
-      },
-      "motifAffinity": [
-        "tempo-ledger",
-        "data-rail"
+        "width": 1600,
+        "height": 2403
+      }
+    },
+    {
+      "id": "hal-01",
+      "source": "images/hal-01.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing"
       ],
-      "crops": {
-        "hero-16x9": "images/heroes/41_aerial_train_yard.hero-16x9.jpg",
-        "hero-2x1": "images/heroes/41_aerial_train_yard.hero-2x1.jpg",
-        "hero": "images/heroes/41_aerial_train_yard.hero.jpg"
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "B&W empty auditorium",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "pno-05",
+      "source": "images/pno-05.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Hand position study",
+      "dimensions": {
+        "width": 1600,
+        "height": 1779
+      }
+    },
+    {
+      "id": "pno-01",
+      "source": "images/pno-01.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Hands on keys, focused",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "prc-04",
+      "source": "images/prc-04.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Grayscale drum set",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      }
+    },
+    {
+      "id": "prc-01",
+      "source": "images/prc-01.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Snare drum close-up B&W",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "prc-07",
+      "source": "images/prc-07.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Drumsticks on drums",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "brs-01",
+      "source": "images/brs-01.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "background",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Trumpet on black textile",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "brs-06",
+      "source": "images/brs-06.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Trumpet close photography",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "orc-10",
+      "source": "images/orc-10.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Orchestra and choir on stage",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "orc-09",
+      "source": "images/orc-09.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Group on stage, empty seats",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "orc-08",
+      "source": "images/orc-08.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Audience watching orchestra",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "orc-02",
+      "source": "images/orc-02.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "cover",
+        "hero",
+        "closing"
+      ],
+      "hero": true,
+      "treatment": "spotlight-noir",
+      "altText": "Orchestra in dim-lit room",
+      "dimensions": {
+        "width": 1600,
+        "height": 1060
+      }
+    },
+    {
+      "id": "orc-01",
+      "source": "images/orc-01.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Grayscale orchestra in theatre",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "id": "orc-03",
+      "source": "images/orc-03.jpg",
+      "theme": "orchestral",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Conductor + orchestra in hall",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
       }
     }
   ]
