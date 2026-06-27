@@ -1306,7 +1306,7 @@
       {
         "path": "_build/reviews/inspiration",
         "kind": "design_artifact",
-        "sourceAuthority": "reference",
+        "sourceAuthority": "public_scrape",
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",

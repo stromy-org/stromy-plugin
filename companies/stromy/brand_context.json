@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "fdb6b77297fe9491fa62bd0348a465ff0bd9541310b84e42440081c6431c03a6",
+    "charterSha": "c4f5b281afb48aaee47846955ef2a46f2cf327de90c2dab606795a36efe5aa72",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -134,7 +134,7 @@
       {
         "path": "_build/reviews/inspiration",
         "kind": "design_artifact",
-        "sourceAuthority": "reference",
+        "sourceAuthority": "public_scrape",
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
