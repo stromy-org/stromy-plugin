@@ -680,6 +680,13 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.62,
+            "y": 0.38
+          },
+          "textSafeZone": "lower-third"
         }
       },
       {
@@ -696,6 +703,13 @@
         "dimensions": {
           "width": 896,
           "height": 1280
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.4
+          },
+          "textSafeZone": "lower-third"
         }
       },
       {
@@ -712,6 +726,13 @@
         "dimensions": {
           "width": 896,
           "height": 1280
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.47,
+            "y": 0.78
+          },
+          "textSafeZone": "upper-third"
         }
       },
       {
@@ -730,6 +751,12 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -750,6 +777,12 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.62
+          }
         }
       },
       {
@@ -767,6 +800,13 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.4
+          },
+          "textSafeZone": "lower-third"
         }
       },
       {
@@ -784,6 +824,12 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.45,
+            "y": 0.55
+          }
         }
       },
       {
@@ -802,6 +848,12 @@
         "dimensions": {
           "width": 896,
           "height": 1280
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.62
+          }
         }
       },
       {
@@ -818,6 +870,12 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.3
+          }
         }
       },
       {
@@ -834,6 +892,12 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.62
+          }
         }
       },
       {
@@ -849,6 +913,12 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -864,6 +934,12 @@
         "dimensions": {
           "width": 1024,
           "height": 1024
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -880,6 +956,12 @@
         "dimensions": {
           "width": 1408,
           "height": 768
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -899,6 +981,13 @@
         "dimensions": {
           "width": 1600,
           "height": 2400
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.4,
+            "y": 0.5
+          },
+          "textSafeZone": "right-safe"
         }
       },
       {
@@ -915,6 +1004,13 @@
         "dimensions": {
           "width": 1600,
           "height": 2134
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.68,
+            "y": 0.52
+          },
+          "textSafeZone": "left-safe"
         }
       },
       {
@@ -932,6 +1028,12 @@
         "dimensions": {
           "width": 1600,
           "height": 900
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -949,6 +1051,12 @@
         "dimensions": {
           "width": 1600,
           "height": 900
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -967,6 +1075,12 @@
         "dimensions": {
           "width": 1600,
           "height": 2133
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -984,6 +1098,12 @@
         "dimensions": {
           "width": 1600,
           "height": 2400
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1002,6 +1122,12 @@
         "dimensions": {
           "width": 1600,
           "height": 900
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1018,6 +1144,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1371
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1034,6 +1166,12 @@
         "dimensions": {
           "width": 1600,
           "height": 2400
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1052,6 +1190,12 @@
         "dimensions": {
           "width": 1600,
           "height": 2316
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1068,6 +1212,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1084,6 +1234,12 @@
         "dimensions": {
           "width": 1600,
           "height": 2400
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1101,6 +1257,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.45
+          }
         }
       },
       {
@@ -1119,6 +1281,12 @@
         "dimensions": {
           "width": 1600,
           "height": 2400
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.45
+          }
         }
       },
       {
@@ -1136,6 +1304,12 @@
         "dimensions": {
           "width": 1600,
           "height": 2403
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1151,6 +1325,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.4,
+            "y": 0.4
+          }
         }
       },
       {
@@ -1168,6 +1348,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1779
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.6,
+            "y": 0.6
+          }
         }
       },
       {
@@ -1183,6 +1369,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.6,
+            "y": 0.62
+          }
         }
       },
       {
@@ -1198,6 +1390,12 @@
         "dimensions": {
           "width": 1600,
           "height": 2400
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.42,
+            "y": 0.62
+          }
         }
       },
       {
@@ -1213,6 +1411,13 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.65,
+            "y": 0.55
+          },
+          "textSafeZone": "left-safe"
         }
       },
       {
@@ -1228,6 +1433,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.45,
+            "y": 0.6
+          }
         }
       },
       {
@@ -1246,6 +1457,13 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.72,
+            "y": 0.5
+          },
+          "textSafeZone": "left-safe"
         }
       },
       {
@@ -1263,6 +1481,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.42,
+            "y": 0.45
+          }
         }
       },
       {
@@ -1280,6 +1504,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1297,6 +1527,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1314,6 +1550,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1331,6 +1573,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1060
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.55
+          }
         }
       },
       {
@@ -1348,6 +1596,12 @@
         "dimensions": {
           "width": 1600,
           "height": 900
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
         }
       },
       {
@@ -1365,6 +1619,12 @@
         "dimensions": {
           "width": 1600,
           "height": 1067
+        },
+        "geometry": {
+          "focalPoint": {
+            "x": 0.55,
+            "y": 0.5
+          }
         }
       }
     ],
