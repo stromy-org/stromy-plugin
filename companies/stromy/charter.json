@@ -927,28 +927,53 @@
           "label": "Nocturne",
           "usage": "Editorial monochrome + fine grain — the timeless default for dividers, quotes, and dense content backgrounds.",
           "css_filter": "grayscale(1) contrast(1.1)",
-          "grain": { "opacity": 0.1, "blend": "overlay" }
+          "grain": {
+            "opacity": 0.1,
+            "blend": "overlay"
+          }
         },
         "velvet-tritone": {
           "label": "Velvet Tritone",
           "usage": "Signature deep-amethyst wash for covers + hero moments — applied transparently (rich dark-amethyst shadows through amethyst mids to soft thistle highlights, low strength so the photo breathes). A rich purple hue, kept subtle.",
           "css_filter": "grayscale(1) contrast(1.05)",
-          "duotone": { "shadows": "#15002A", "mid": "#31004F", "highlights": "#E5D2FA", "strength": 0.45 },
-          "grain": { "opacity": 0.07, "blend": "overlay" }
+          "duotone": {
+            "shadows": "#15002A",
+            "mid": "#31004F",
+            "highlights": "#E5D2FA",
+            "strength": 0.45
+          },
+          "grain": {
+            "opacity": 0.07,
+            "blend": "overlay"
+          }
         },
         "amethyst-splittone": {
           "label": "Amethyst Split-tone",
           "usage": "Subtle cinematic grade for backgrounds + section imagery — mostly neutral, a whisper of amethyst in shadows and warm cream in highlights. The restrained default.",
           "css_filter": "saturate(0.4) contrast(1.05)",
-          "duotone": { "shadows": "#241038", "mid": "#6E6675", "highlights": "#EFE7E0", "strength": 0.35 },
-          "grain": { "opacity": 0.08, "blend": "overlay" }
+          "duotone": {
+            "shadows": "#241038",
+            "mid": "#6E6675",
+            "highlights": "#EFE7E0",
+            "strength": 0.35
+          },
+          "grain": {
+            "opacity": 0.08,
+            "blend": "overlay"
+          }
         },
         "spotlight-noir": {
           "label": "Spotlight Noir",
           "usage": "B&W with a soft radial vignette (echoes the concert spotlight) + grain — focal hero treatment that draws the eye.",
           "css_filter": "grayscale(1) contrast(1.08)",
-          "vignette": { "strength": 0.5, "shape": "radial" },
-          "grain": { "opacity": 0.1, "blend": "overlay" }
+          "vignette": {
+            "strength": 0.5,
+            "shape": "radial"
+          },
+          "grain": {
+            "opacity": 0.1,
+            "blend": "overlay"
+          }
         }
       }
     },
@@ -1052,6 +1077,11 @@
             }
           ],
           "default": "dark-light-indexed — Concert Black heroes/dividers alternate with Cream/White content"
+        },
+        "cssTokens": {
+          "--hero-surface": "#0B0B0C",
+          "--content-surface-light": "#F4F1EA",
+          "--panel-tint": "#E5D2FA"
         }
       },
       "motifs": {
@@ -1174,6 +1204,11 @@
           "maxWidth": "measured (editorial)",
           "margins": "wide",
           "rhythm": "barline measures register horizontal divisions"
+        },
+        "cssTokens": {
+          "--grid-max": "72rem",
+          "--grid-gutter": "2rem",
+          "--grid-margin": "6vw"
         }
       },
       "iconography": {
@@ -1213,6 +1248,9 @@
             }
           ],
           "policy": "flat content, radial heroes"
+        },
+        "cssTokens": {
+          "--gradient-hero-stage": "radial-gradient(ellipse 62% 52% at 50% 82%, rgba(97,0,158,0.42), rgba(49,0,79,0.10) 46%, transparent 68%)"
         }
       },
       "photo": {
@@ -1251,6 +1289,11 @@
             "the stage-light radial is the only glow, hero-only"
           ],
           "borders": "1-1.5px hairline rules in thistle/ink at low opacity; depth via colour not shadow"
+        },
+        "cssTokens": {
+          "--shadow-sm": "0 1px 2px rgba(11,11,12,0.06)",
+          "--shadow-md": "0 4px 14px rgba(11,11,12,0.10)",
+          "--border-hairline": "1px solid rgba(49,0,79,0.14)"
         }
       },
       "motion": {
@@ -1281,6 +1324,10 @@
             }
           ],
           "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule — these are real approved decisions, not a silent drop). Bake/Remotion productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
+        },
+        "cssTokens": {
+          "--motion-duration": "520ms",
+          "--motion-ease": "cubic-bezier(0.22,1,0.36,1)"
         }
       }
     },
