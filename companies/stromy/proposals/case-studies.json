@@ -1,0 +1,105 @@
+[
+ {
+  "id": "CS-001",
+  "title": "Research & AI Workspace Partner for a Boutique Public-Affairs Firm",
+  "client": {
+   "name": "Duke Strategies",
+   "industry": "Public Affairs / Strategic Communications",
+   "namePublic": true
+  },
+  "challenge": "A boutique NL consultancy needed a data & research partner and an internal AI workspace to scale analysis.",
+  "approach": "Retainer engagement building a branded AI workspace with 20+ branded AI skills.",
+  "outcome": "Ongoing research + AI partnership; 20+ branded AI skills deployed.",
+  "tags": [
+   "ai-workspace",
+   "research-partner"
+  ],
+  "source": "case-studies/duke-strategies-research-ai-partner.mdx"
+ },
+ {
+  "id": "CS-002",
+  "title": "Strategic Media Analysis for Global Tech",
+  "client": {
+   "name": "ASML",
+   "industry": "Semiconductors / Technology",
+   "namePublic": true
+  },
+  "challenge": "Monitor and analyse strategic media narratives across many markets.",
+  "approach": "AI-orchestrated media analysis pipeline across 12 markets.",
+  "outcome": "12 markets analysed, 1,200+ sources monitored, 24-hour report turnaround, narrative-shift early warning 48–72h ahead of Western outlets.",
+  "tags": [
+   "media-analysis",
+   "share-of-voice"
+  ],
+  "source": "case-studies/nl-asml-media-analysis.mdx"
+ },
+ {
+  "id": "CS-003",
+  "title": "Technology Product Partner for a Communications Consultancy",
+  "client": {
+   "name": "AI4comms",
+   "industry": "Communications",
+   "namePublic": true
+  },
+  "challenge": "Build a re-skinnable client toolchain for a communications consultancy.",
+  "approach": "One toolchain that re-skins per client; 6 campaign phases.",
+  "outcome": "Reusable branded toolchain delivered as a product partnership.",
+  "tags": [
+   "product-partner",
+   "toolchain"
+  ],
+  "source": "case-studies/ai4comms-product-partner.mdx"
+ },
+ {
+  "id": "CS-004",
+  "title": "Incubator Package for a New Advisory Firm",
+  "client": {
+   "name": "Start to Scale Financial Management",
+   "industry": "Fractional CFO / Finance",
+   "namePublic": true
+  },
+  "challenge": "Stand up a new advisory firm's brand, site, ERP, and AI tooling fast.",
+  "approach": "Incubator package: brand identity, Astro website, Odoo config, Claude Code plugin suite, marketplace listing.",
+  "outcome": "6 weeks to market, 40+ brand assets generated, 6 AI skills deployed.",
+  "tags": [
+   "incubator",
+   "brand",
+   "tooling"
+  ],
+  "source": "case-studies/start-to-scale-incubator.mdx"
+ },
+ {
+  "id": "CS-005",
+  "title": "Dutch Parliamentary Intelligence Platform",
+  "client": {
+   "name": "Confidential (Enterprise)",
+   "industry": "Public Affairs",
+   "namePublic": false
+  },
+  "challenge": "Unify real-time intelligence across Dutch official government sources.",
+  "approach": "FastMCP server across 6 official Dutch government APIs; 22+ intelligence tools; 12 workflow types.",
+  "outcome": "6 government APIs integrated, 22+ tools, 12 workflow types.",
+  "tags": [
+   "gov-intelligence",
+   "mcp"
+  ],
+  "source": "case-studies (parliamentary platform)"
+ },
+ {
+  "id": "CS-006",
+  "title": "Strategy Audit at Bain-Grade Quality (Rule of Three)",
+  "client": {
+   "name": "Confidential (Boutique Strategy Consultancy)",
+   "industry": "Management Consulting",
+   "namePublic": false
+  },
+  "challenge": "Deliver a rigorous, defensible strategy audit.",
+  "approach": "'Rule of Three' methodology — 35 scored criteria, role-specific interview packs, AI-assembled evidentiary scoring with human override.",
+  "outcome": "Branded deliverable suite (Excel role-packs, PPTX prep deck, Word interview list, full report).",
+  "tags": [
+   "strategy-audit",
+   "rule-of-three"
+  ],
+  "source": "case-studies/strategy-audit-rule-of-three.mdx"
+ }
+]

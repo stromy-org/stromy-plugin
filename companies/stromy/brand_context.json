@@ -110,7 +110,21 @@
   "boilerplate": {
     "footer": "Stromy · {{confidentiality.deck}} · {{page}} / {{pages}}",
     "confidentiality": "Confidential",
-    "copyright": "© {{year}} Stromy Pty Ltd. All rights reserved."
+    "copyright": "© {{year}} Stromy Pty Ltd. All rights reserved.",
+    "sign_off": {
+      "proposal": "We would welcome the chance to orchestrate this with you.\n\n— The Stromy team",
+      "press_release": "About Stromy\nStromy is an AI orchestration partner that designs and builds analytical workflows — from media research and share-of-voice analysis to public-affairs monitoring and strategy audits — turning unstructured processes into structured, trust-grade, publication-ready outputs for corporates and consulting agencies. Stromy operates across Australia and the Netherlands. Intelligence, Orchestrated.",
+      "email": "Warm regards,\nThe Stromy team"
+    },
+    "contact_block": {
+      "website": "stromy.com.au",
+      "email": "william.masquelier@stromy.com.au",
+      "regions": [
+        "Australia",
+        "Netherlands"
+      ],
+      "tagline": "Intelligence, Orchestrated."
+    }
   },
   "expression": {
     "sourceLevel": "expression",

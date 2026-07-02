@@ -1,26 +1,45 @@
 {
-  "$schema": "../../schema/boilerplate.schema.json",
-  "$comment": "Stromy fixed cross-deliverable strings. Edit this once to update every newly-rendered deck/doc/PDF/spreadsheet footer.",
-  "version": "1.0",
-  "footer": {
-    "deck": "Stromy · {{confidentiality.deck}} · {{page}} / {{pages}}",
-    "doc": "Stromy · {{document.title}} · {{date}}",
-    "showLogo": true,
-    "logoVariant": "mono"
-  },
-  "confidentiality": {
-    "public": "",
-    "internal": "Internal — Stromy team",
-    "confidential": "Strictly confidential — do not distribute",
-    "draft": "DRAFT — not for circulation",
-    "deck": "Confidential",
-    "doc": "Confidential"
-  },
-  "watermark": {
-    "draft": { "text": "DRAFT", "opacity": 0.08, "rotation": -30, "color": "textLight" }
-  },
-  "legal": {
-    "copyright": "© {{year}} Stromy Pty Ltd. All rights reserved.",
-    "trademark": "Stromy and the Stromy mark are trademarks of Stromy Pty Ltd."
+ "$schema": "../../schema/boilerplate.schema.json",
+ "$comment": "Stromy fixed cross-deliverable strings. Edit this once to update every newly-rendered deck/doc/PDF/spreadsheet footer.",
+ "version": "1.0",
+ "footer": {
+  "deck": "Stromy · {{confidentiality.deck}} · {{page}} / {{pages}}",
+  "doc": "Stromy · {{document.title}} · {{date}}",
+  "showLogo": true,
+  "logoVariant": "mono"
+ },
+ "confidentiality": {
+  "public": "",
+  "internal": "Internal — Stromy team",
+  "confidential": "Strictly confidential — do not distribute",
+  "draft": "DRAFT — not for circulation",
+  "deck": "Confidential",
+  "doc": "Confidential"
+ },
+ "watermark": {
+  "draft": {
+   "text": "DRAFT",
+   "opacity": 0.08,
+   "rotation": -30,
+   "color": "textLight"
   }
+ },
+ "legal": {
+  "copyright": "© {{year}} Stromy Pty Ltd. All rights reserved.",
+  "trademark": "Stromy and the Stromy mark are trademarks of Stromy Pty Ltd."
+ },
+ "sign_off": {
+  "proposal": "We would welcome the chance to orchestrate this with you.\n\n— The Stromy team",
+  "press_release": "About Stromy\nStromy is an AI orchestration partner that designs and builds analytical workflows — from media research and share-of-voice analysis to public-affairs monitoring and strategy audits — turning unstructured processes into structured, trust-grade, publication-ready outputs for corporates and consulting agencies. Stromy operates across Australia and the Netherlands. Intelligence, Orchestrated.",
+  "email": "Warm regards,\nThe Stromy team"
+ },
+ "contact_block": {
+  "website": "stromy.com.au",
+  "email": "william.masquelier@stromy.com.au",
+  "regions": [
+   "Australia",
+   "Netherlands"
+  ],
+  "tagline": "Intelligence, Orchestrated."
+ }
 }

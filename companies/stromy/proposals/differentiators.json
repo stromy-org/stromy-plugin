@@ -1,0 +1,41 @@
+[
+ {
+  "id": "diff-001",
+  "theme": "Maestro's precision",
+  "headline": "Unlike generic AI consultancies, Stromy brings the maestro's precision — orchestrated intelligence, not point tools.",
+  "evidence": [
+   "CS-002",
+   "CS-005"
+  ],
+  "source": "guidelines.md / brand_context"
+ },
+ {
+  "id": "diff-002",
+  "theme": "Owned, not rented",
+  "headline": "Systems are designed to be owned by your team — capability transfer, not lock-in.",
+  "evidence": [
+   "CS-001",
+   "CS-004"
+  ],
+  "source": "stromy.com.au /about"
+ },
+ {
+  "id": "diff-003",
+  "theme": "Government-grade depth",
+  "headline": "35+ government API tools and MCP-native delivery across Dutch and Australian public-affairs systems.",
+  "evidence": [
+   "CS-005"
+  ],
+  "source": "stromy.com.au stats + case studies"
+ },
+ {
+  "id": "diff-004",
+  "theme": "Track record that compounds",
+  "headline": "40+ production skills, 8 custom MCP servers, 7 output formats — a reusable orchestration stack.",
+  "evidence": [
+   "CS-003",
+   "CS-004"
+  ],
+  "source": "stromy.com.au stats.ts"
+ }
+]

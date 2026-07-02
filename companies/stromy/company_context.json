@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
   "generatedFrom": {
-    "profileSha": "e8bb690e73213930e84c4841caaed88ed83b869d5aa49a16fb7b75b64026ee4b",
+    "profileSha": "89526029d80895cbe24b7661f2621330e3dec6e4d9cb95373e40c10388eb2d31",
+    "peopleSha": "7f551fec71a67941e320871e3470d6f2329679a0886e5d44f523358dfd9e55fe",
     "compiler": "1.0"
   },
   "company": {
@@ -15,5 +16,29 @@
     "publicContact": {
       "website": "https://stromy.com.au"
     }
-  }
+  },
+  "credentials": {
+    "_note": "No formal awards/accreditations published; proof points live in proposals/case-studies + stats (40+ skills, 8 MCP servers, 35+ gov API tools)."
+  },
+  "people": [
+    {
+      "id": "person-001",
+      "name": "William Masquelier",
+      "title": "Co-Founder — Applied AI & Agentic Systems",
+      "publicRole": "spokesperson",
+      "publicBio": "William builds the substance: the agentic systems, MCP skills, and AI workspaces that turn strategy into tools teams actually use. An economics graduate with a double master's in financial and behavioural economics from Erasmus University Rotterdam, he developed LLM-driven analysis prototypes at Hill+Knowlton Strategies, advised corporates on digital transformation at PwC, and built analytical frameworks at Duke Strategies.",
+      "quoteStyle": "precise, systems-minded, practical"
+    },
+    {
+      "id": "person-002",
+      "name": "Corentin Merlé",
+      "title": "Co-Founder — AI Architecture & Infrastructure",
+      "publicRole": "spokesperson",
+      "publicBio": "Corentin designs the architecture: the AI infrastructure and systems that Stromy's tooling runs on. A data science and engineering graduate of the University of Liège, he wrote his thesis on retrieval-augmented generation for enterprise use at Safran. As a data scientist at GAMING1, he leads AI adoption across the organisation.",
+      "quoteStyle": "architectural, rigorous, infrastructure-first"
+    }
+  ],
+  "redactions": [
+    "personal contact (email / phone)"
+  ]
 }

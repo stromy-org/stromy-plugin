@@ -1,0 +1,20 @@
+[
+ {
+  "id": "test-001",
+  "quote": "Stromy is our technology product partner — one toolchain that re-skins for each client.",
+  "attribution": "Emma van Gelder, Co-Founder, AI4comms",
+  "source": "case-studies/ai4comms-product-partner.mdx"
+ },
+ {
+  "id": "test-002",
+  "quote": "Stromy is our data and research partner and the AI workspace behind our analysis.",
+  "attribution": "Ingo Heijnen, Managing Partner, Duke Strategies",
+  "source": "case-studies/duke-strategies-research-ai-partner.mdx"
+ },
+ {
+  "id": "test-003",
+  "quote": "Stromy took us from zero to market in weeks — brand, site, ERP and AI tooling.",
+  "attribution": "Wilgert Hart, Managing Partner, Start to Scale Financial Management",
+  "source": "case-studies/start-to-scale-incubator.mdx"
+ }
+]
