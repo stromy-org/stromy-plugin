@@ -758,7 +758,7 @@
       }
     },
     "deployment": {
-      "platform": "github-pages",
+      "platform": "azure-swa",
       "domain": "stromy.com.au",
       "analytics": "plausible",
       "contactForm": "formspree"
