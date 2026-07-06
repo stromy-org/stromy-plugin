@@ -1114,7 +1114,46 @@
           "--hero-surface": "#0B0B0C",
           "--content-surface-light": "#F4F1EA",
           "--panel-tint": "#E5D2FA"
-        }
+        },
+        "selected": "indexed",
+        "approved": [
+          "indexed",
+          "hall-immersion",
+          "cream-forward"
+        ],
+        "candidates": [
+          {
+            "id": "indexed",
+            "spec": {
+              "canvases": [
+                { "name": "concert-black", "role": "primary-dark", "css": "#0B0B0C" },
+                { "name": "cream", "role": "primary-light", "css": "#F4F1EA" },
+                { "name": "white", "role": "document-light", "css": "#FFFFFF" },
+                { "name": "thistle-tint", "role": "accent-panel", "css": "#E5D2FA" }
+              ],
+              "default": "dark-light-indexed — Concert Black heroes/dividers alternate with Cream/White content"
+            },
+            "tokens": [
+              "--hero-surface",
+              "--content-surface-light",
+              "--panel-tint"
+            ]
+          },
+          {
+            "id": "hall-immersion",
+            "spec": {
+              "cadence": "hall-immersion",
+              "default": "hall-immersion — Concert Black sustained across hero + section opens; Cream reserved for dense reading spreads. Same surfaces, a darker, more immersive rhythm."
+            }
+          },
+          {
+            "id": "cream-forward",
+            "spec": {
+              "cadence": "cream-forward",
+              "default": "cream-forward — Cream/White carry the deck; Concert Black punctuates covers + dividers only. Same surfaces, a lighter, editorial rhythm."
+            }
+          }
+        ]
       },
       "motifs": {
         "status": "approved",

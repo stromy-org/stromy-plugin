@@ -6,14 +6,14 @@
     {
       "id": "conductor-hands-baton",
       "source": "images/conductor-hands-baton.jpg",
-      "theme": "orchestral",
+      "theme": "conductor-gesture",
       "roles": [
         "cover",
         "hero"
       ],
       "hero": true,
       "treatment": "amethyst-splittone",
-      "altText": "Conductor's hands and baton, mid-gesture \u2014 the signal that resolves the parts",
+      "altText": "Conductor's hands and baton, mid-gesture — the signal that resolves the parts",
       "dimensions": {
         "width": 1408,
         "height": 768
@@ -29,7 +29,7 @@
     {
       "id": "conductor-backlit",
       "source": "images/conductor-backlit.jpg",
-      "theme": "orchestral",
+      "theme": "conductor-gesture",
       "roles": [
         "closing",
         "content"
@@ -52,8 +52,9 @@
     {
       "id": "spotlight-player",
       "source": "images/spotlight-player.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
+        "cover",
         "section",
         "content"
       ],
@@ -75,7 +76,7 @@
     {
       "id": "orchestra-dotfield-above",
       "source": "images/orchestra-dotfield-above.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "hero",
         "divider",
@@ -84,7 +85,7 @@
       ],
       "hero": true,
       "treatment": "spotlight-noir",
-      "altText": "Orchestra seen from above as a field of points \u2014 the dot-field motif made real",
+      "altText": "Orchestra seen from above as a field of points — the dot-field motif made real",
       "dimensions": {
         "width": 1408,
         "height": 768
@@ -99,7 +100,7 @@
     {
       "id": "orchestra-from-above",
       "source": "images/orchestra-from-above.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "cover",
         "hero",
@@ -125,7 +126,7 @@
     {
       "id": "string-arc-above",
       "source": "images/string-arc-above.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "cover",
         "hero",
@@ -149,7 +150,7 @@
     {
       "id": "brass-section-above",
       "source": "images/brass-section-above.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "divider",
         "section",
@@ -172,7 +173,7 @@
     {
       "id": "harpist-strings",
       "source": "images/harpist-strings.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "closing",
         "divider",
@@ -196,7 +197,7 @@
     {
       "id": "percussion-timpani",
       "source": "images/percussion-timpani.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "divider",
         "section"
@@ -218,14 +219,14 @@
     {
       "id": "stage-rigging-lights",
       "source": "images/stage-rigging-lights.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "background",
         "texture"
       ],
       "hero": false,
       "treatment": "spotlight-noir",
-      "altText": "Stage rigging and lights overhead \u2014 the architecture of the hall",
+      "altText": "Stage rigging and lights overhead — the architecture of the hall",
       "dimensions": {
         "width": 1408,
         "height": 768
@@ -240,13 +241,13 @@
     {
       "id": "abstract-waveform-dotfield",
       "source": "images/abstract-waveform-dotfield.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "background"
       ],
       "hero": false,
       "treatment": "velvet-tritone",
-      "altText": "Sound rendered as a field of points \u2014 abstract waveform dot-field",
+      "altText": "Sound rendered as a field of points — abstract waveform dot-field",
       "dimensions": {
         "width": 1408,
         "height": 768
@@ -261,13 +262,13 @@
     {
       "id": "abstract-wave-interference",
       "source": "images/abstract-wave-interference.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "texture"
       ],
       "hero": false,
       "treatment": "velvet-tritone",
-      "altText": "Interfering wavefronts \u2014 abstract resonance",
+      "altText": "Interfering wavefronts — abstract resonance",
       "dimensions": {
         "width": 1024,
         "height": 1024
@@ -282,14 +283,14 @@
     {
       "id": "abstract-flowing-ribbon",
       "source": "images/abstract-flowing-ribbon.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "background",
         "texture"
       ],
       "hero": false,
       "treatment": "velvet-tritone",
-      "altText": "A single flowing ribbon of light \u2014 phrase made visible",
+      "altText": "A single flowing ribbon of light — phrase made visible",
       "dimensions": {
         "width": 1408,
         "height": 768
@@ -304,7 +305,7 @@
     {
       "id": "str-03",
       "source": "images/str-03.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "divider",
         "background",
@@ -330,7 +331,7 @@
     {
       "id": "str-05",
       "source": "images/str-05.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "closing",
         "hero"
@@ -353,7 +354,7 @@
     {
       "id": "wav-10",
       "source": "images/wav-10.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "divider",
         "background",
@@ -376,7 +377,7 @@
     {
       "id": "wav-02",
       "source": "images/wav-02.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "divider",
         "background",
@@ -399,7 +400,7 @@
     {
       "id": "wav-01",
       "source": "images/wav-01.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "closing",
         "divider",
@@ -423,7 +424,7 @@
     {
       "id": "wav-08",
       "source": "images/wav-08.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "divider",
         "background",
@@ -446,7 +447,7 @@
     {
       "id": "wav-03",
       "source": "images/wav-03.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "cover",
         "closing",
@@ -470,7 +471,7 @@
     {
       "id": "wav-04",
       "source": "images/wav-04.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "background",
         "texture"
@@ -492,7 +493,7 @@
     {
       "id": "wav-05",
       "source": "images/wav-05.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "background",
         "texture"
@@ -514,7 +515,7 @@
     {
       "id": "wav-06",
       "source": "images/wav-06.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "hero",
         "closing",
@@ -538,7 +539,7 @@
     {
       "id": "wav-07",
       "source": "images/wav-07.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "background",
         "texture"
@@ -560,7 +561,7 @@
     {
       "id": "wav-09",
       "source": "images/wav-09.jpg",
-      "theme": "orchestral",
+      "theme": "score-abstract",
       "roles": [
         "closing",
         "divider"
@@ -582,7 +583,7 @@
     {
       "id": "hal-05",
       "source": "images/hal-05.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "divider",
         "section",
@@ -605,7 +606,7 @@
     {
       "id": "hal-03",
       "source": "images/hal-03.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "closing",
         "divider",
@@ -629,7 +630,7 @@
     {
       "id": "hal-02",
       "source": "images/hal-02.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "cover",
         "hero",
@@ -652,7 +653,7 @@
     {
       "id": "hal-01",
       "source": "images/hal-01.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "closing"
       ],
@@ -673,7 +674,7 @@
     {
       "id": "pno-05",
       "source": "images/pno-05.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "divider",
         "section",
@@ -696,7 +697,7 @@
     {
       "id": "pno-01",
       "source": "images/pno-01.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "content"
       ],
@@ -717,7 +718,7 @@
     {
       "id": "prc-04",
       "source": "images/prc-04.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "closing"
       ],
@@ -738,7 +739,7 @@
     {
       "id": "prc-01",
       "source": "images/prc-01.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "closing"
       ],
@@ -760,7 +761,7 @@
     {
       "id": "prc-07",
       "source": "images/prc-07.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "closing"
       ],
@@ -781,7 +782,7 @@
     {
       "id": "brs-01",
       "source": "images/brs-01.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "divider",
         "background",
@@ -806,7 +807,7 @@
     {
       "id": "brs-06",
       "source": "images/brs-06.jpg",
-      "theme": "orchestral",
+      "theme": "instruments-detail",
       "roles": [
         "divider",
         "section",
@@ -829,7 +830,7 @@
     {
       "id": "orc-10",
       "source": "images/orc-10.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "divider",
         "section",
@@ -852,7 +853,7 @@
     {
       "id": "orc-09",
       "source": "images/orc-09.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "divider",
         "section",
@@ -875,7 +876,7 @@
     {
       "id": "orc-08",
       "source": "images/orc-08.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "divider",
         "section",
@@ -898,7 +899,7 @@
     {
       "id": "orc-02",
       "source": "images/orc-02.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "cover",
         "hero",
@@ -921,7 +922,7 @@
     {
       "id": "orc-01",
       "source": "images/orc-01.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "divider",
         "section",
@@ -944,7 +945,7 @@
     {
       "id": "orc-03",
       "source": "images/orc-03.jpg",
-      "theme": "orchestral",
+      "theme": "hall-architecture",
       "roles": [
         "divider",
         "section",
