@@ -112,7 +112,7 @@
     "catalog": [
       {
         "file": "images/conductor-hands-baton.jpg",
-        "description": "Conductor's hands and baton, mid-gesture \u2014 the signal that resolves the parts",
+        "description": "Conductor's hands and baton, mid-gesture — the signal that resolves the parts",
         "roles": [
           "cover",
           "hero"
@@ -148,7 +148,7 @@
       },
       {
         "file": "images/orchestra-dotfield-above.jpg",
-        "description": "Orchestra seen from above as a field of points \u2014 the dot-field motif made real",
+        "description": "Orchestra seen from above as a field of points — the dot-field motif made real",
         "roles": [
           "hero",
           "divider",
@@ -230,7 +230,7 @@
       },
       {
         "file": "images/stage-rigging-lights.jpg",
-        "description": "Stage rigging and lights overhead \u2014 the architecture of the hall",
+        "description": "Stage rigging and lights overhead — the architecture of the hall",
         "roles": [
           "background",
           "texture"
@@ -242,7 +242,7 @@
       },
       {
         "file": "images/abstract-waveform-dotfield.jpg",
-        "description": "Sound rendered as a field of points \u2014 abstract waveform dot-field",
+        "description": "Sound rendered as a field of points — abstract waveform dot-field",
         "roles": [
           "background"
         ],
@@ -253,7 +253,7 @@
       },
       {
         "file": "images/abstract-wave-interference.jpg",
-        "description": "Interfering wavefronts \u2014 abstract resonance",
+        "description": "Interfering wavefronts — abstract resonance",
         "roles": [
           "texture"
         ],
@@ -264,7 +264,7 @@
       },
       {
         "file": "images/abstract-flowing-ribbon.jpg",
-        "description": "A single flowing ribbon of light \u2014 phrase made visible",
+        "description": "A single flowing ribbon of light — phrase made visible",
         "roles": [
           "background",
           "texture"
@@ -649,7 +649,7 @@
       "opacity": 0.4
     },
     "logoVariantOnImage": "white",
-    "note": "Role-tagged library in images/manifest.json (orchestral, Velvet Score; generated + treated Unsplash). 'treatment' is the PREFERRED look \u2014 advisory; downstream (format-MCP/website) may override to harmonise a deck. Named looks in expression.treatments apply downstream; overlay is a legibility scrim."
+    "note": "Role-tagged library in images/manifest.json (orchestral, Velvet Score; generated + treated Unsplash). 'treatment' is the PREFERRED look — advisory; downstream (format-MCP/website) may override to harmonise a deck. Named looks in expression.treatments apply downstream; overlay is a legibility scrim."
   },
   "website": {
     "archetype": "sage",
@@ -893,10 +893,10 @@
       "primary": "sage",
       "secondary": "magician",
       "status": "approved",
-      "rationale": "Primary Sage: knowledge authority, editorial restraint, evidence-first \u2014 sourced from guidelines.md \u00a71 archetype decision (user-approved 2026-04-07) and confirmed by website.archetype='sage'. Secondary Magician: transformative complex-to-simple edge, visionary but grounded \u2014 also sourced from guidelines.md \u00a71 and build-log Phase 0 decision."
+      "rationale": "Primary Sage: knowledge authority, editorial restraint, evidence-first — sourced from guidelines.md §1 archetype decision (user-approved 2026-04-07) and confirmed by website.archetype='sage'. Secondary Magician: transformative complex-to-simple edge, visionary but grounded — also sourced from guidelines.md §1 and build-log Phase 0 decision."
     },
     "essence": "STROMY transforms complex workflows into orchestrated intelligence.",
-    "positioning": "For corporates and consulting agencies drowning in unstructured processes, STROMY is the AI orchestration partner that designs and builds analytical workflows \u2014 from media research to crisis management to strategy audits \u2014 delivering the structured, trust-grade outputs their stakeholders expect. Unlike generic AI consultancies, Stromy brings the maestro's precision: every workflow is composed, every output is publication-ready.",
+    "positioning": "For corporates and consulting agencies drowning in unstructured processes, STROMY is the AI orchestration partner that designs and builds analytical workflows — from media research to crisis management to strategy audits — delivering the structured, trust-grade outputs their stakeholders expect. Unlike generic AI consultancies, Stromy brings the maestro's precision: every workflow is composed, every output is publication-ready.",
     "personalityTraits": [
       {
         "trait": "authoritative",
@@ -921,29 +921,29 @@
     ],
     "personalityAxes": {
       "formal_casual": {
-        "label": "Formal \u2194 Casual",
+        "label": "Formal ↔ Casual",
         "value": 0.8,
-        "note": "4/5 toward formal \u2014 guidelines.md personality table: Formal \u25c6\u25c6\u25c6\u25c6\u25cb Casual"
+        "note": "4/5 toward formal — guidelines.md personality table: Formal ◆◆◆◆○ Casual"
       },
       "analytical_intuitive": {
-        "label": "Analytical \u2194 Intuitive",
+        "label": "Analytical ↔ Intuitive",
         "value": 0.8,
-        "note": "4/5 toward analytical \u2014 guidelines.md personality table: Analytical \u25c6\u25c6\u25c6\u25c6\u25cb Intuitive"
+        "note": "4/5 toward analytical — guidelines.md personality table: Analytical ◆◆◆◆○ Intuitive"
       },
       "traditional_innovative": {
-        "label": "Traditional \u2194 Innovative",
+        "label": "Traditional ↔ Innovative",
         "value": 0.6,
-        "note": "3/5 toward innovative \u2014 guidelines.md personality table: Traditional \u25cb\u25cb\u25c6\u25c6\u25c6 Innovative"
+        "note": "3/5 toward innovative — guidelines.md personality table: Traditional ○○◆◆◆ Innovative"
       },
       "reserved_expressive": {
-        "label": "Reserved \u2194 Expressive",
+        "label": "Reserved ↔ Expressive",
         "value": 0.6,
-        "note": "3/5 toward reserved (value=0 is expressive, 1 is reserved) \u2014 guidelines.md personality table: Reserved \u25c6\u25c6\u25c6\u25cb\u25cb Expressive"
+        "note": "3/5 toward reserved (value=0 is expressive, 1 is reserved) — guidelines.md personality table: Reserved ◆◆◆○○ Expressive"
       },
       "established_rebellious": {
-        "label": "Established \u2194 Rebellious",
+        "label": "Established ↔ Rebellious",
         "value": 0.6,
-        "note": "3/5 toward established (value=0 is rebellious, 1 is established) \u2014 guidelines.md personality table: Established \u25c6\u25c6\u25c6\u25cb\u25cb Rebellious"
+        "note": "3/5 toward established (value=0 is rebellious, 1 is established) — guidelines.md personality table: Established ◆◆◆○○ Rebellious"
       }
     }
   },
@@ -953,11 +953,11 @@
     "status": "approved",
     "treatments": {
       "default": "amethyst-splittone",
-      "note": "Named brand 'house looks' applied to photography DOWNSTREAM (format-MCP render + website CSS) \u2014 never pre-baked into the shipped library. Restrained: one clean base image x the treatment = flexible reuse. ORG-PLAN-045.",
+      "note": "Named brand 'house looks' applied to photography DOWNSTREAM (format-MCP render + website CSS) — never pre-baked into the shipped library. Restrained: one clean base image x the treatment = flexible reuse. ORG-PLAN-045.",
       "looks": {
         "nocturne": {
           "label": "Nocturne",
-          "usage": "Editorial monochrome + fine grain \u2014 the timeless default for dividers, quotes, and dense content backgrounds.",
+          "usage": "Editorial monochrome + fine grain — the timeless default for dividers, quotes, and dense content backgrounds.",
           "css_filter": "grayscale(1) contrast(1.1)",
           "grain": {
             "opacity": 0.1,
@@ -966,7 +966,7 @@
         },
         "velvet-tritone": {
           "label": "Velvet Tritone",
-          "usage": "Signature deep-amethyst wash for covers + hero moments \u2014 applied transparently (rich dark-amethyst shadows through amethyst mids to soft thistle highlights, low strength so the photo breathes). A rich purple hue, kept subtle.",
+          "usage": "Signature deep-amethyst wash for covers + hero moments — applied transparently (rich dark-amethyst shadows through amethyst mids to soft thistle highlights, low strength so the photo breathes). A rich purple hue, kept subtle.",
           "css_filter": "grayscale(1) contrast(1.05)",
           "duotone": {
             "shadows": "#15002A",
@@ -981,7 +981,7 @@
         },
         "amethyst-splittone": {
           "label": "Amethyst Split-tone",
-          "usage": "Subtle cinematic grade for backgrounds + section imagery \u2014 mostly neutral, a whisper of amethyst in shadows and warm cream in highlights. The restrained default.",
+          "usage": "Subtle cinematic grade for backgrounds + section imagery — mostly neutral, a whisper of amethyst in shadows and warm cream in highlights. The restrained default.",
           "css_filter": "saturate(0.4) contrast(1.05)",
           "duotone": {
             "shadows": "#241038",
@@ -996,7 +996,7 @@
         },
         "spotlight-noir": {
           "label": "Spotlight Noir",
-          "usage": "B&W with a soft radial vignette (echoes the concert spotlight) + grain \u2014 focal hero treatment that draws the eye.",
+          "usage": "B&W with a soft radial vignette (echoes the concert spotlight) + grain — focal hero treatment that draws the eye.",
           "css_filter": "grayscale(1) contrast(1.08)",
           "vignette": {
             "strength": 0.5,
@@ -1010,11 +1010,11 @@
       }
     },
     "principles": [
-      "Substance before style \u2014 the work speaks; decoration must earn its place.",
-      "Orchestration as metaphor \u2014 every layout, motif, and typographic choice encodes disparate parts resolved into one coherent system.",
-      "Editorial restraint \u2014 spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
-      "Signal economy \u2014 indigo is a signal colour, never a flood; a single focal dot carries the accent.",
-      "The score made visible \u2014 concentric dot-fields and barline rhythm render orchestration as a structural system, not a picture of instruments."
+      "Substance before style — the work speaks; decoration must earn its place.",
+      "Orchestration as metaphor — every layout, motif, and typographic choice encodes disparate parts resolved into one coherent system.",
+      "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
+      "Signal economy — indigo is a signal colour, never a flood; a single focal dot carries the accent.",
+      "The score made visible — concentric dot-fields and barline rhythm render orchestration as a structural system, not a picture of instruments."
     ],
     "visualAxes": {
       "density": {
@@ -1039,7 +1039,7 @@
       },
       "imageTreatment": {
         "value": "documentary-muted",
-        "note": "orchestral + architectural photography, desaturated/high-contrast, indigo-toned overlay (opacity 0.62); tight crops \u2014 full direction owned by Pillar 5"
+        "note": "orchestral + architectural photography, desaturated/high-contrast, indigo-toned overlay (opacity 0.62); tight crops — full direction owned by Pillar 5"
       },
       "motifProminence": {
         "value": "structural",
@@ -1055,20 +1055,20 @@
       }
     },
     "signatureElements": [
-      "Dot-dome \u2014 the primary mark: a polar lattice of dots forming an orchestra dome with one indigo focal dot at the podium; the rising-ensemble signature.",
-      "Concentric dot-field \u2014 rings of dots radiating from a single indigo focal; full-bleed texture for heroes and dividers; drives the field-breathe motion.",
-      "Barline measure \u2014 abstract vertical barlines with beat-dots and one indigo accent beat; rhythm and structure motif for footers, rails, and content grids.",
-      "Misaligned numeral \u2014 large Fraunces section numbers split cream/indigo with a deliberate baseline offset; the 'scored' editorial cue.",
-      "Space Grotesk wordmark \u2014 STROMY set in Space Grotesk 600 with open tracking, rising from the dot-dome; primary identity lockup.",
-      "Misaligned secondary lockup \u2014 the 'scored' STROMY wordmark for cover slides, home-page heroes, and section openers."
+      "Dot-dome — the primary mark: a polar lattice of dots forming an orchestra dome with one indigo focal dot at the podium; the rising-ensemble signature.",
+      "Concentric dot-field — rings of dots radiating from a single indigo focal; full-bleed texture for heroes and dividers; drives the field-breathe motion.",
+      "Barline measure — abstract vertical barlines with beat-dots and one indigo accent beat; rhythm and structure motif for footers, rails, and content grids.",
+      "Misaligned numeral — large Fraunces section numbers split cream/indigo with a deliberate baseline offset; the 'scored' editorial cue.",
+      "Space Grotesk wordmark — STROMY set in Space Grotesk 600 with open tracking, rising from the dot-dome; primary identity lockup.",
+      "Misaligned secondary lockup — the 'scored' STROMY wordmark for cover slides, home-page heroes, and section openers."
     ],
     "antiPatterns": [
-      "No literal musical notation \u2014 no staves, clefs, or noteheads; orchestration is rendered through abstract dots, not sheet music.",
-      "No orange or Claude-adjacent accent \u2014 indigo (#61009E) is the only signal colour; the retired oxide/orange must not reappear.",
-      "No gradient floods on working surfaces \u2014 the stage-light radial is a hero-only device; content and document backgrounds stay flat.",
-      "No decorative motif scatter \u2014 the dot family is assigned by role (dome=identity, field=texture, barline=rhythm), never sprinkled for taste.",
+      "No literal musical notation — no staves, clefs, or noteheads; orchestration is rendered through abstract dots, not sheet music.",
+      "No orange or Claude-adjacent accent — indigo (#61009E) is the only signal colour; the retired oxide/orange must not reappear.",
+      "No gradient floods on working surfaces — the stage-light radial is a hero-only device; content and document backgrounds stay flat.",
+      "No decorative motif scatter — the dot family is assigned by role (dome=identity, field=texture, barline=rhythm), never sprinkled for taste.",
       "No pure-white document grounds where Cream is specified; no stock-office or AI-futurism imagery.",
-      "Never more than one indigo focal dot in a single composition \u2014 the signal is singular."
+      "Never more than one indigo focal dot in a single composition — the signal is singular."
     ],
     "requiredMotifs": [],
     "visual_grammar": {
@@ -1108,7 +1108,7 @@
               "css": "#E5D2FA"
             }
           ],
-          "default": "dark-light-indexed \u2014 Concert Black heroes/dividers alternate with Cream/White content"
+          "default": "dark-light-indexed — Concert Black heroes/dividers alternate with Cream/White content"
         },
         "cssTokens": {
           "--hero-surface": "#0B0B0C",
@@ -1126,10 +1126,26 @@
             "id": "indexed",
             "spec": {
               "canvases": [
-                { "name": "concert-black", "role": "primary-dark", "css": "#0B0B0C" },
-                { "name": "cream", "role": "primary-light", "css": "#F4F1EA" },
-                { "name": "white", "role": "document-light", "css": "#FFFFFF" },
-                { "name": "thistle-tint", "role": "accent-panel", "css": "#E5D2FA" }
+                {
+                  "name": "concert-black",
+                  "role": "primary-dark",
+                  "css": "#0B0B0C"
+                },
+                {
+                  "name": "cream",
+                  "role": "primary-light",
+                  "css": "#F4F1EA"
+                },
+                {
+                  "name": "white",
+                  "role": "document-light",
+                  "css": "#FFFFFF"
+                },
+                {
+                  "name": "thistle-tint",
+                  "role": "accent-panel",
+                  "css": "#E5D2FA"
+                }
               ],
               "default": "dark-light-indexed — Concert Black heroes/dividers alternate with Cream/White content"
             },
@@ -1160,7 +1176,7 @@
         "required": false,
         "evidence": {
           "tier": "source-artifact",
-          "source": "GRAMMAR-BOARD.html + BRAND-Review-Board.html \u2014 co_created, render-reviewed 2026-06-19"
+          "source": "GRAMMAR-BOARD.html + BRAND-Review-Board.html — co_created, render-reviewed 2026-06-19"
         },
         "assets": [
           "logos/symbol.svg",
@@ -1233,7 +1249,7 @@
             "pattern-tile",
             "S-curve symbol"
           ],
-          "enforcement": "advisory \u2014 the dot family is a toolkit; the variance engine + agent compose freely. Brand essence (palette/fonts/logo authenticity) is enforced by brand_gate fonts/colors/images checks, NOT by mandating which motifs appear."
+          "enforcement": "advisory — the dot family is a toolkit; the variance engine + agent compose freely. Brand essence (palette/fonts/logo authenticity) is enforced by brand_gate fonts/colors/images checks, NOT by mandating which motifs appear."
         }
       },
       "patterns": {
@@ -1304,7 +1320,7 @@
         "required": false,
         "evidence": {
           "tier": "source-artifact",
-          "source": "GRAMMAR-BOARD cover s2; operator pick 2026-06-19 \u2014 radial heroes, flat content"
+          "source": "GRAMMAR-BOARD cover s2; operator pick 2026-06-19 — radial heroes, flat content"
         },
         "assets": [],
         "tokens": [
@@ -1329,7 +1345,7 @@
         "required": false,
         "evidence": {
           "tier": "proposed",
-          "source": "Pillar 5 \u2014 literal orchestral imagery library (instruments, strings, halls)"
+          "source": "Pillar 5 — literal orchestral imagery library (instruments, strings, halls)"
         },
         "assets": [],
         "tokens": [],
@@ -1372,7 +1388,7 @@
         "required": false,
         "evidence": {
           "tier": "source-artifact",
-          "source": "BRAND-Review-Board.html live motions \u2014 co_created, operator-approved 2026-06-19"
+          "source": "BRAND-Review-Board.html live motions — co_created, operator-approved 2026-06-19"
         },
         "assets": [],
         "tokens": [],
@@ -1381,7 +1397,7 @@
             {
               "name": "dome-assemble",
               "trigger": "cover/hero entrance",
-              "desc": "the dot-dome composes itself ring by ring; the indigo focal lands at the podium and settles (no bounce) \u2014 'the orchestra composes itself'"
+              "desc": "the dot-dome composes itself ring by ring; the indigo focal lands at the podium and settles (no bounce) — 'the orchestra composes itself'"
             },
             {
               "name": "barline-reveal",
@@ -1394,7 +1410,7 @@
               "desc": "the concentric dot-field breathes (subtle scale/opacity pulse); the indigo focal pulses gently at the centre"
             }
           ],
-          "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule \u2014 these are real approved decisions, not a silent drop). Bake/Remotion productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
+          "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule — these are real approved decisions, not a silent drop). Bake/Remotion productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
         },
         "cssTokens": {
           "--motion-duration": "520ms",
@@ -1410,7 +1426,7 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "Version 4.0 (Velvet Score refresh) \u2014 archetype, essence, positioning, voice, dot-dome logo system, Velvet Score colour system, Space Grotesk + Fraunces/Jakarta/Plex type, dot-family motif grammar, imagery direction"
+        "note": "Version 4.0 (Velvet Score refresh) — archetype, essence, positioning, voice, dot-dome logo system, Velvet Score colour system, Space Grotesk + Fraunces/Jakarta/Plex type, dot-family motif grammar, imagery direction"
       },
       {
         "path": "_build/reviews/GRAMMAR-BOARD.html",
@@ -1419,7 +1435,7 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "Pillar 4 render-review board \u2014 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19"
+        "note": "Pillar 4 render-review board — 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19"
       },
       {
         "path": "_build/reviews/inspiration",
@@ -1428,7 +1444,7 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) \u2014 'notation as a structural system' DNA behind the dot family"
+        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) — 'notation as a structural system' DNA behind the dot family"
       },
       {
         "path": "tokens.css",
@@ -1446,8 +1462,13 @@
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "L2 voice profile \u2014 restrained, evidence-first, Economist-register; hype bans mirror guidelines.md"
+        "note": "L2 voice profile — restrained, evidence-first, Economist-register; hype bans mirror guidelines.md"
       }
     ]
+  },
+  "templates": {
+    "html": {
+      "signature": "templates/html/email-signature.html"
+    }
   }
 }

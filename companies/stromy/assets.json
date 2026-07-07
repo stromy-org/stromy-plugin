@@ -150,6 +150,11 @@
       "mime": "image/svg+xml"
     },
     {
+      "name": "signature-mark@2x.png",
+      "sha256": "4f6db0be0378e4128a7ad3a10bac4f0cb9106a0e8ccf49532ce3758575bc640e",
+      "mime": "image/png"
+    },
+    {
       "name": "symbol.svg",
       "sha256": "627189c0b01c78a960d61263fb6276d17528399d87b4e2f146447a0a9509716f",
       "mime": "image/svg+xml"
@@ -207,6 +212,21 @@
       "mime": "image/jpeg"
     },
     {
+      "name": "cnd-02.jpg",
+      "sha256": "9d12df86cb46ca270784c1bc4d9666afeffe0ea05da9138e31512fff310f51d6",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "cnd-03.jpg",
+      "sha256": "8d559a4160288dba7b7793eedfcc97c0e6740f01edaeeac363cd6bf274e2e153",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "cnd-04.jpg",
+      "sha256": "68c3053b9ff73989d398556388099efb39191977a04d3e6a43039037ee01a32d",
+      "mime": "image/jpeg"
+    },
+    {
       "name": "conductor-backlit.jpg",
       "sha256": "394bf5efb072da68716134a5ab964c9a4768635681c0f728be8cdb495eb161ed",
       "mime": "image/jpeg"
@@ -237,8 +257,93 @@
       "mime": "image/jpeg"
     },
     {
+      "name": "hal-06.jpg",
+      "sha256": "ce7c3976149001973c50e4d4dd0cf44fda7a012c0ecca915ef93d97a0f855cfb",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "hal-07.jpg",
+      "sha256": "3b99df2807aa619a0de04b1fbdd07ce35c8405bb20ab5b06bffedca6a80856bb",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "hal-08.jpg",
+      "sha256": "7cbbe9da9a886263622f159a2d59f3f1296ad3415e36df27c1b56bd6e95c01e5",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "hal-09.jpg",
+      "sha256": "814a20cdcd3b72034dba5b746ad3e03f1c53cea5c4731d06caa4557b6b75a7ef",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "hal-10.jpg",
+      "sha256": "e6f5907ffa4b621e1fc575ea4a1ef9908ab2cddea477bcf3c309baa2b9c8dcea",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "hal-11.jpg",
+      "sha256": "6c8899a1fb62b9495cfdf2dedb1b3466a582348e621e169bdf1cf0701994ab05",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "hal-12.jpg",
+      "sha256": "4741565658e7264a47f93e027a2d92aad221b8fe0313859c9530055f8fcf006d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "hal-13.jpg",
+      "sha256": "79743d45e51ae70acea21e44117ee63510e0c963302d5e494f331c667edb91cb",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "hal-14.jpg",
+      "sha256": "0144d57617d42538fef1a317d61d77db82a0b3366bfdc3f13e823be9b6e49f8f",
+      "mime": "image/jpeg"
+    },
+    {
       "name": "harpist-strings.jpg",
       "sha256": "9f1cb4e36a65e9bf7ae4b7071c0a79e486876cbcc481b1ae966cb4734bec0885",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "ins-01.jpg",
+      "sha256": "ea0f58dc9e499f8bf8d9164f9934c2fd519f7b559f543a4ce8a7f5d4bc9f64e9",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "ins-02.jpg",
+      "sha256": "5f9bda7cf4eb4f1817dfb2a34fdae6a2697e8bb00792cf0eaaf030c78509df86",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "ins-03.jpg",
+      "sha256": "0e6ce875053d3899cc803f66a28021fc36d70e0087ff24e855072ba375678ee2",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "ins-04.jpg",
+      "sha256": "d06e10000624a15f358b32e181e8de5f94317db22ffac59d5518cca6019129e0",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "ins-05.jpg",
+      "sha256": "52ea010510958491187aaa5a815b478182eed4a1a4d72584f73272feffa98e1b",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "ins-06.jpg",
+      "sha256": "8de5951dc7e87867c9ae34559d3485752a186531d59c9a46c6c86897024007dd",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "ins-07.jpg",
+      "sha256": "b2bf586669091b623f1b16d30ca63083dabe61b566c4f33a5c384ec661f379ea",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "ins-08.jpg",
+      "sha256": "ae2ee02b7d874e8fd18dbd6261e33d0b46d21981b451c12f43edd341f69f2294",
       "mime": "image/jpeg"
     },
     {
@@ -384,6 +489,36 @@
     {
       "name": "wav-10.jpg",
       "sha256": "bf6708cec9fd0d685534947e17e8c92dbe317246c7bee38aba121c0c9ea9d093",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "wav-11.jpg",
+      "sha256": "09a90d4755fa46315979f4bcf360fe0ca0755e8230ab6b167542a04fbf6b0c72",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "wav-12.jpg",
+      "sha256": "acbf442980f9821a688ae395451ac3929a899e1bbfe660b259a0521af25b2b9d",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "wav-13.jpg",
+      "sha256": "94a122c088cc06d169e922628def9c459aca187e3f1a1f77f470459343320b1f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "wav-14.jpg",
+      "sha256": "0900afc522687b507f2e541894cbe3150fa49dfd5d60565580526bedd386e474",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "wav-15.jpg",
+      "sha256": "a93680317d0b6d5bb176340176885b414c00234b5fc0982b49581d7a21b9f8a0",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "wav-16.jpg",
+      "sha256": "fa9d53b9f490b3eae4c78633e260d9f01efaba2e8645ff8bd00691499b418b97",
       "mime": "image/jpeg"
     }
   ]
