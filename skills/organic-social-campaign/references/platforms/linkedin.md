@@ -39,7 +39,22 @@ Pages with complete information get 30% more weekly views. Ensure every field is
 
 ### Format Performance Patterns (B2B)
 
-- **Carousels/documents** consistently outperform other formats for reach in B2B. They encourage swipe-through (dwell time signal) and saves
+**Quantified hierarchy (refreshed 2026-07).** Socialinsider's benchmark study of ~1.3M business posts gives the ordering below. Read the metric definition before quoting any figure — all rows are **average engagement rate per impression**, and the two datasets have different periods:
+
+| Format | Engagement rate | Dataset period |
+|---|---|---|
+| **Native document** (carousel/PDF) | **7.0%** | 2025 full-year table |
+| **Multi-image** | **≈6.8%** | Q1 2026 |
+| **Video** | **≈5.9%** | Q1 2026 |
+| **Image** | **≈5.2%** | Q1 2026 |
+| **Text only** | **≈4.3%** | Q1 2026 |
+
+*Source: Socialinsider, LinkedIn benchmarks, accessed 2026-07-14 — https://www.socialinsider.io/social-media-benchmarks/linkedin. Directional and vendor-reported; the 7.0% document reading and the Q1-2026 rows come from different tables, so do not present them as one ranked series without noting the period split. Re-verify annually.*
+
+Practical read: **documents and multi-image lead; text trails** — but the gap (≈4.3% → ≈7.0%) is meaningful, not decisive. A strong text POV from a credible executive still beats a mediocre carousel from the Page (see the person-led note at the top of this file).
+
+**Company-page reach decline — vendor evidence, not LinkedIn data.** **Ordinal** (a vendor, reporting its own analysis — attribute it as such, never as platform-published data) reports company-page reach **down 60–66% since 2024**, with only **2–5% of followers** included in a post's initial distribution test. Treat as directional support for the person-led posture, not as a LinkedIn-published statistic. (Ordinal, accessed 2026-07-14 — https://www.tryordinal.com/blog/the-declining-reach-of-linkedin-company-pages)
+
 - **Text posts** with line breaks and strong opening hooks outperform text walls
 - **Native video** gets priority in feed but must hook in first 3 seconds — add captions (85% watch muted)
 - **External links** in the post body reduce reach. Put links in first comment or use "link in comments" pattern

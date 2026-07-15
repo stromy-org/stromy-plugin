@@ -11,6 +11,109 @@ Employee posts generate on the order of **~14× the engagement** of brand-page c
 
 > **Advocacy is the breadth layer; the executive/founder program is the primary engine.** They are complementary but distinct — see `executive-led-content.md` for the exec program and a side-by-side comparison. When capacity is scarce, fund the executive program first (highest ROI), then scale advocacy for reach. (Figures are directional 2026 industry reporting — see `strategy-foundations.md`.)
 
+## Variant: member & association advocacy
+
+**When the "employees" are member organisations.** A trade body, alliance, or
+franchise network has no large staff to activate — but it has something better: a
+**member base**, each member with its own channels, staff, and audience. The
+distribution logic of this whole file still holds (people out-reach pages); only
+the population changes. Everything below is a **delta** on the employee model,
+not a separate programme.
+
+The structural difference that drives every other delta: **members are
+independent legal entities, not staff.** You cannot mandate, schedule, or
+performance-manage their posting. Participation is voluntary and earned, so the
+programme is built around making participation trivially easy rather than around
+compliance.
+
+### The member-amplification kit
+
+The unit of work is a **kit**, not a request. Per beat (see
+[campaign-narrative-arc.md](campaign-narrative-arc.md)), ship:
+
+- **Copy variants** — 2–3 versions in different registers, so members don't all
+  post identical text (identical reshares suppress reach and read as astroturf).
+- **Native assets** — correctly sized per surface, and **co-brandable** (space
+  for the member's own logo/handle).
+- **Suggested personalisation** — the *prompt*, not the words: "add the one thing
+  your customers always ask you about this."
+- **A date** — kits work when everyone lands together (see the participation
+  moment below).
+
+Distribute through the association's **existing** member channels (member
+newsletter, portal, WhatsApp/Slack group) — not a new tool nobody will adopt.
+
+### Co-brandable asset rules
+
+- The member's brand sits **alongside** the association's, never replaces it.
+- Assets must survive a member adding their logo — leave the space in the design.
+- State the **brand-use licence** explicitly: what a member may alter (crop,
+  caption, personalise) and what they may not (the claims, the data, the
+  association's mark).
+
+### Opt-in tiers
+
+Members self-select depth; do not push everyone to tier 3:
+
+| Tier | Ask | Typical share of the base |
+|---|---|---|
+| **1 — Share as-is** | repost the kit asset with a supplied caption | the majority — this is the floor, and it is fine |
+| **2 — Localise** | swap in their own example, market, or customer | the engaged middle |
+| **3 — Feature in content** | appear in the association's own content (quote, case, on camera) | a small, high-value few |
+
+A large tier-1 base beats a coerced tier-3 one. Tier-3 members are also the
+natural protagonists for the arc's "new protagonist" differentiation angle.
+
+### The participation moment
+
+The highest-leverage pattern for a membership org is a **concentrated
+participation moment**: one date, one kit, everyone posts. **Love Paper** is the
+worked evidence — nearly **400 organisations participated globally**, and, as a
+**separate, non-overlapping** figure, **500,000 people were reached in North
+America**. Keep the two geographies distinct; they are not the same measurement.
+Sources (accessed 2026-07-14; directional, revisit annually):
+https://lovepaper.org/love-paper-week/ ,
+https://revistas.alborum.com/pdfs/lp_latam/lplatam77web.pdf , and
+https://www.linkedin.com/posts/twosidesna_lovepaperweek-twosidesna-papersustainability-activity-7444760540125667328-OrkB
+
+What transfers: **participation over broadcast** (organisations *did* something,
+rather than a page posting more); **a kit, not a request**; and a
+**UGC/competition mechanic** that gives members a reason to post in their own
+voice — which is exactly the reach a page cannot buy.
+
+### Measurement deltas
+
+Page metrics under-describe this programme. Track instead:
+
+- **Kit downloads / opens** — the leading indicator of intent.
+- **Member participation count** — how many *organisations* posted (the honest
+  headline number).
+- **Member-post reach vs page reach** — the ratio that justifies the programme.
+- **Tier mix over time** — movement from tier 1 → 2 → 3 is the health signal.
+
+If citing the ratio that ~30% of engagement comes from ~3% of employees as
+rationale, attribute it explicitly as **Ordinal's vendor-reported figure**, not
+platform data:
+https://www.tryordinal.com/blog/the-declining-reach-of-linkedin-company-pages
+
+### Governance deltas (members ≠ employees)
+
+- **No mandated wording.** Suggest; never require. A member is not bound by the
+  association's comms policy.
+- **Disclose the relationship.** Member posts amplifying an association campaign
+  should make the membership relationship evident — the same transparency logic
+  as [influencer-advisory.md](influencer-advisory.md), applied to member orgs.
+- **Brand-use licence** in writing (see above).
+- **No performance management.** Recognition works; a league table of who posted
+  breeds resentment among independent businesses.
+
+> **Never-fabricate applies.** Member advocates are real organisations and real
+> people from client data — never invented. An empty member roster is *missing
+> data*: ask for real member names, or keep the kit **unaddressed** (a generic
+> pack the association distributes to its own base). Do not populate a member
+> list, a testimonial, or a named participant from imagination — the same rule
+> that governs executives and employee advocates.
+
 ## The Stepwise Approach
 
 ### Phase 1: Define Goals (Week 1)

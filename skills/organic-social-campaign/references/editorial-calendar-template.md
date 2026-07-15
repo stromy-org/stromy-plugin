@@ -24,6 +24,8 @@
 
 | Column | Description |
 |--------|-------------|
+| **Act** (`act`) | *Campaign mode.* Int ≥ 1 — which narrative act this row serves. Omit entirely in program mode. |
+| **Beat** (`beat`) | *Campaign mode.* Short string — the weekly beat within the act (e.g. "Evidence lands"). Omit entirely in program mode. |
 | **Messaging Pillar** | Links to messaging framework pillar |
 | **Visual Brief** | Description of required visual asset |
 | **Copy Draft** | Link to draft copy document |
@@ -31,6 +33,13 @@
 | **Employee Advocacy** | Should this be shared to advocate queue |
 | **Repurpose From** | If adapted from another piece (blog, webinar, etc.) |
 | **Performance Notes** | Post-publish engagement notes |
+
+`act`/`beat` are the arc's handles on the calendar — they make it checkable that
+every act actually has slots and that no row is orphaned from the story. They
+pass straight through Phase 7 onto each post object and are **not** part of
+`post_id`, so they can be added or revised without re-keying posts. See
+[campaign-narrative-arc.md](campaign-narrative-arc.md) and
+[post-object-schema.md](post-object-schema.md).
 
 ## Example 4-Week Calendar
 

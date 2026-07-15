@@ -114,6 +114,37 @@ def _require(row: dict[str, Any], key: str, index: int) -> Any:
     return row[key]
 
 
+def _arc_fields(row: dict[str, Any], index: int) -> dict[str, Any]:
+    """Validate and extract the optional narrative-arc metadata (``act``/``beat``).
+
+    Campaign-mode calendars carry these; program-mode calendars omit them, and
+    absent stays absent — neither field is ever defaulted. They are deliberately
+    NOT part of the ``post_id`` hash, so adding or removing arc metadata on a row
+    never changes the identity of the posts that row fans out to.
+
+    Validation runs once per row *before* fan-out, so a malformed value fails
+    with the row index and writes no partial output. An explicit JSON ``null`` is
+    treated as absent, consistent with ``_require``.
+    """
+    arc: dict[str, Any] = {}
+
+    act = row.get("act")
+    if act is not None:
+        # bool is a subclass of int in Python, so `True` would otherwise sail
+        # through as `act == 1`. Reject it explicitly.
+        if isinstance(act, bool) or not isinstance(act, int) or act < 1:
+            raise BuildError(f"calendar row {index}: 'act' must be an int >= 1")
+        arc["act"] = act
+
+    beat = row.get("beat")
+    if beat is not None:
+        if not isinstance(beat, str) or not beat.strip():
+            raise BuildError(f"calendar row {index}: 'beat' must be a non-empty string")
+        arc["beat"] = beat.strip()
+
+    return arc
+
+
 def _platform_config(config: dict[str, Any], platform: str, index: int) -> dict[str, Any]:
     cg_raw = config.get("content_generation")
     if not isinstance(cg_raw, dict):
@@ -185,6 +216,9 @@ def build_posts(calendar: dict[str, Any], config: dict[str, Any]) -> dict[str, A
         owner = row.get("owner")
         overrides = as_obj(row.get("surface_overrides"))
         row_utm = as_obj(row.get("utm"))
+        # Optional campaign-mode narrative-arc metadata. Validated before fan-out
+        # so a bad value fails on the row, not on N derived posts.
+        arc = _arc_fields(row, index)
 
         for platform in sorted(str(p) for p in platforms):
             pc = _platform_config(config, platform, index)
@@ -244,6 +278,9 @@ def build_posts(calendar: dict[str, Any], config: dict[str, Any]) -> dict[str, A
                 "status": "draft",
                 "qa_tier": "tier_1",
             }
+            # Pass through act/beat only when the row carried them; absent stays
+            # absent so program-mode posts are byte-identical to pre-arc output.
+            post.update(arc)
             posts.append(post)
 
     return {"schema_version": SCHEMA_VERSION, "posts": posts}

@@ -1,6 +1,6 @@
 ---
 name: organic-social-campaign
-description: "Build organic B2B social media campaigns — editorial strategy, content pillars, editorial calendars, content matrices, executive & founder-led thought-leadership programs, employee advocacy, community-building and community-management playbooks, AEO/GEO (getting content cited by AI answer engines), and dark-funnel measurement specs. Interactive multi-phase process from discovery through governance. Person-led and community-anchored by default (company-page organic reach has collapsed; executives, employees, and communities carry distribution). Integrates with company profiles, messaging libraries, and brand data for consistent voice and positioning. Use this skill whenever the user asks to build an organic social strategy, create a content calendar, plan social media content, develop editorial pillars, build a community-management or community-building playbook, set up employee advocacy or an executive/founder LinkedIn program, optimize content to be cited by AI answer engines, plan organic LinkedIn or Reddit content, create a social content program, or anything involving 'what should we post and how do we build an audience' — even if they just say 'we need a social presence' or 'help me plan our LinkedIn content.'"
+description: "Build organic B2B social media campaigns — editorial strategy, content pillars, editorial calendars, content matrices, executive & founder-led thought-leadership programs, employee advocacy, community-building and community-management playbooks, AEO/GEO (getting content cited by AI answer engines), and dark-funnel measurement specs. Interactive multi-phase process from discovery through governance. Person-led and community-anchored by default (company-page organic reach has collapsed; executives, employees, and communities carry distribution). Integrates with company profiles, messaging libraries, and brand data for consistent voice and positioning. Runs as an always-on program (default) or a time-boxed, story-driven campaign with a narrative arc. Use this skill whenever the user asks to build an organic social strategy, plan a time-boxed social media campaign, design a campaign narrative arc, sequence a multi-week advocacy or repositioning campaign, create a content calendar, plan social media content, develop editorial pillars, build a community-management or community-building playbook, set up employee advocacy or an executive/founder LinkedIn program, build a member advocacy or member activation kit for a trade association or membership org, advise on influencer use (archetypes, briefing, disclosure — advice only, never sourcing), optimize content to be cited by AI answer engines, plan organic LinkedIn or Reddit content, create a social content program, or anything involving 'what should we post and how do we build an audience' — even if they just say 'we need a social presence', 'help me plan our LinkedIn content', or 'we're running a campaign for the next six weeks.'"
 ---
 
 # Organic Social Campaign
@@ -104,6 +104,18 @@ discovery — the overlay-first rule above governs which client is in scope.
 
 > **Empty `people` → never fabricate an SME, spokesperson, or advocate.** A present overlay can still lack public people. If `company_context.people[]` is empty or absent, do **not** attribute a quote, point of view, bio, or advocacy role to a named individual, and do **not** invent a spokesperson or employee advocate. Spokesperson visibility (Phase 3), employee advocacy (Phase 5), and any recurring on-camera subject (Phase 8) must use only real people from `company_context.people[]`; if there are none, ask the user who to feature or keep the content org/brand-level (no named individuals). A present-but-empty `people[]` is missing data, not a license to improvise a real person's identity — the within-overlay twin of the no-overlay STOP above.
 
+### Run mode — `internal-draft` (provisional data)
+
+> **`run_mode: internal-draft` is a guard-*preserving* mode, not a guard bypass.** Set it **only when the operator explicitly asks** for an end-to-end run on unverified or template-grade client data — the real kickoff pattern of "draft now, verify later", where an early draft is itself the instrument that tells the humans which inputs need work. It defers **one** thing: the *verified-data precondition*. Every guard above stays in force. In this mode:
+> - **Label everything.** Every deliverable carries **`DRAFT — INTERNAL / NIET PUBLICEREN`** (title-page/slide watermark) and a **`-DRAFT` filename suffix**. No exceptions — an unlabeled draft is how a provisional artifact reaches a client.
+> - **Emit a gaps ledger.** Write `gaps.md` alongside the outputs listing every unverified claim, person, asset, right, and channel fact the run leaned on — each with **what would verify it** and **who owns the answer**. The ledger is the deliverable's other half.
+> - **Phase 7 and Phase 8 are blocked.** No `posts.json`, no `validate_posts` run on draft data, no generated assets. Asked to freeze or publish while in draft mode → **refuse** and point at the open ledger.
+> - **Never-fabricate is untouched.** A missing person, claim, or number is referenced as **"TBD (gap #n)"** — never a placeholder name, invented figure, or improvised identity. The no-overlay STOP and the empty-`people` guard apply exactly as written.
+> - **Unverified brand assets** (logo rights, charter) may be used in **internal** renders only, and that use is itself a ledger entry.
+> - **Draft → verified:** when verification lands, re-run the affected phases from the verified data using the ledger as the checklist. A draft artifact is **never** silently promoted to client-facing. Items close individually, but the run stays `internal-draft` until every load-bearing item is closed.
+>
+> Campaign mode records this as `run_mode: "internal-draft"` in `campaign.json`, which must be cleared before `status` may move to `live`. Program mode uses the same labeling + ledger rules with no campaign manifest involved.
+
 ### Loading Company Data
 
 ```
@@ -117,16 +129,21 @@ discovery — the overlay-first rule above governs which client is in scope.
 {base}/voice/                    → L2 voice profile (optional; see voice-integration.md)
 {base}/social-media/             → Social media config and content (optional):
   ├── config.json          → Platforms, UTM taxonomy, hashtags, compliance, content_generation
-  └── organic/
-      ├── pillars.json     → Editorial pillars (if previous run exists)
-      ├── series.json      → Repeatable content series
-      ├── community-playbook.json → Response SLAs, tone, escalation
-      ├── advocacy.json    → Employee advocacy program config
-      ├── posts.json       → Frozen per-post objects (Phase 7, if previous run exists)
-      └── style-blocks/    → Locked visual prompt blocks (Phase 8, if generated)
+  ├── organic/             → PROGRAM state (always-on; the default mode)
+  │   ├── pillars.json     → Editorial pillars (if previous run exists)
+  │   ├── series.json      → Repeatable content series
+  │   ├── community-playbook.json → Response SLAs, tone, escalation
+  │   ├── advocacy.json    → Employee advocacy program config
+  │   ├── posts.json       → Frozen per-post objects (Phase 7, if previous run exists)
+  │   └── style-blocks/    → Locked visual prompt blocks (Phase 8, if generated)
+  └── campaigns/<campaign_slug>/   → CAMPAIGN state (time-boxed; campaign mode only)
+      ├── campaign.json    → Manifest: window, tracks (account + amplification), arc, status
+      └── organic/         → same shapes as the program organic/ above
 ```
 
-When `{base}/social-media/organic/` already exists, the skill operates in **resume mode** — read the existing content and offer the user a choice: continue from where they left off, rework a specific phase, or start fresh. Resume can re-enter mid-Phase-8 by edition (see Phase 8).
+**Mode decides the root.** Program mode reads and writes root `organic/` — unchanged. Campaign mode reads and writes `campaigns/<campaign_slug>/organic/`, and may read root `organic/pillars.json` **read-only as a seed** when the campaign has none; every campaign write stays inside the campaign namespace, so a client's always-on program is never clobbered by a campaign (or by a second campaign). Client-level `config.json` stays at the root and is shared by both. Full contract: [social-data-schema.md](references/social-data-schema.md).
+
+**Resume mode** triggers when the mode's own state directory already exists — root `organic/` for program, `campaigns/<campaign_slug>/organic/` for campaign. Read the existing content and offer: continue from where they left off, rework a specific phase, or start fresh. Resume can re-enter mid-Phase-8 by edition (see Phase 8). A campaign-slug collision is a resume offer, never a silent overwrite.
 
 ### Content Assembly
 
@@ -190,6 +207,8 @@ If starting new, understand the brief. The user's input could range from "we nee
 **Step 2: Gather scope**
 
 Ask (unless already clear from context or company data):
+- **Engagement type?** — **Program** (always-on presence; the **default**) or **Campaign** (time-boxed, story-driven). Campaign mode needs `campaign_slug`, a window, tracks/audiences, and the campaign objective, and it activates: the Phase 2 prior-wave inventory, the Phase 3 narrative-arc step, the Phase 4 hero→derivative step, `act`/`beat` on the Phase 5 calendar, and persistence under `{base}/social-media/campaigns/<campaign_slug>/organic/`. A user saying "campaign" colloquially is not the signal — this question is. **Validate before using the slug in any path:** lowercase kebab matching `^[a-z0-9]+(?:-[a-z0-9]+)*$`; reject slashes, `..`, whitespace, and empty values; a collision with an existing campaign offers **resume**, never overwrite. **Normalize the window:** accept `start`+`end` or `start`+`weeks`; ISO-validate dates, derive the missing value, require `end >= start`, and reject a `weeks` that contradicts the dates. No end date → default to 8 weeks from the confirmed start and mark the end **provisional** in the scope summary.
+- **Per track (campaign mode): which account posts, and what carries reach?** `account` = handle + `ownership` (`owned` | **`borrowed`** — posting the client's campaign on a third party's channel, e.g. a sector platform) + `owner_org` + `access_via` (the named person who actually has posting access). `amplification` = one or more of `organic` | `paid-boost` | `influencer-seeded`. A **borrowed** account makes channel-access confirmation a tracked intake item and requires Phase 3 to capture co-branding/attribution rules (whose brand fronts the post, how the client is credited). Shapes + semantics: [social-data-schema.md](references/social-data-schema.md).
 - What is the primary business objective? (thought leadership, lead generation, recruitment, partner visibility)
 - Which services or sectors should the content focus on?
 - Which platforms? (If `config.json` has platforms defined, confirm; if not, recommend based on B2B context)
@@ -233,6 +252,9 @@ Lead discovery with listening, not self-report. Before defining the ICP or basel
 - **Where they gather** — the subreddits, niche Slack/Discord, forums, and voices worth participating in (feeds community-building — see [community-building.md](references/community-building.md)).
 - **Competitor & category narrative** — who owns which topics, and the whitespace. For a deep quantitative read, the org's `sov-competitor-analysis` / `sov-sentiment-analysis` skills exist — *mention* them as context; never invoke another skill from here.
 - **Live trends & timely hooks** — signals worth a reactive/newsjacking response (feeds the Phase 5 reactive lane).
+
+- **Voice baseline from prior content.** When the client has prior posts/content (including partner or influencer content they endorse), **that corpus is the tone-of-voice baseline** — calibrate the working voice profile against it (register, rhythm, warmth, emoji/hashtag habits, language idiom) **before** drafting, recording deltas as *proposed* `voice-extensions` for the client to confirm, never a silent overwrite. Cold brand → skip. Corpus contradicts the stated profile → surface it, don't pick silently. See [voice-integration.md](references/voice-integration.md).
+- **Prior-wave inventory (campaign mode).** Before any strategy, inventory previous campaigns/posts on the **same evidence or theme** — the client's own channels, *and* adjacent channels it borrows or partners with (including any **live** influencer work). For each: what did it assert, to whom, when, and what did it leave unsaid? A repositioning campaign that repeats a wave the audience already saw lands weakly and reads to the client as a copy-paste. This inventory is what makes the arc's differentiation note real rather than asserted — see [campaign-narrative-arc.md](references/campaign-narrative-arc.md) § Differentiation vs prior waves.
 
 Use available listening tools or manual scans; present a short intelligence brief. This is a continuous input, not a one-time step — refresh it each planning cycle.
 
@@ -290,6 +312,18 @@ Recommend a posting cadence using the walk/run/fly framework:
 
 Recommend a starting level based on the team's capacity. For each post frequency, suggest the format mix (text, image, carousel, video, document, poll). **Bias the mix toward video** — short-form for discovery, long-form for depth/credibility; video out-reaches static formats and long-form is resurging, while carousels remain strong for saves/dwell. See [content-formats.md](references/content-formats.md) for format guidance.
 
+**Step 2b: Design the narrative arc (campaign mode only)**
+
+A campaign converges on a deadline; a program compounds. Sequence the story **before** any content planning — a flat grid of on-pillar slots never accumulates into an argument. Full method, templates, and a worked example: [campaign-narrative-arc.md](references/campaign-narrative-arc.md).
+
+- **Acts (2–4 over the window).** Each declares: name, **belief shift** (explicit *from → to*), pillar emphasis, hero asset, and a one-line **differentiation note** ("what this audience already heard vs what is new this time") grounded in the Phase 2 prior-wave inventory. Default 3 acts: *disrupt the assumption → evidence and proof → invitation and choice*. Frame the **audience as hero, the brand as guide** — never brand-as-hero (the audience gets no role), and never make the hero the villain (the assumption was reasonable given what they were told). Under 4 weeks → 2 acts; never add an act to fill time.
+- **Beats (one theme per week).** Expressed **once per track** — the **cross-track echo**: same beat, same week, per-audience dialect, **never cross-posted verbatim** (recycled content is down-ranked). Asymmetric tracks are fine — declare them rather than faking coverage. Single-track campaigns collapse to one dialect; the arc still applies.
+- **One peak moment.** A concentrated multi-channel burst, usually at the **start of the final act**; where boost/influencer budget concentrates. Ship a kit, not a request.
+- **The reactive lane is not arc-exempt** — a reactive post still serves the current act's belief shift, or it dilutes the campaign.
+- **Boost strategy is mandatory, not optional prose,** when **any** track's `amplification` is non-`organic`: budget class, boost triggers, and expectation-setting for a cold/low-reach account. A **borrowed** account additionally needs its **co-branding/attribution rules** captured here — whose brand fronts the post, how the client is credited, who approves.
+
+Present the arc as a table. **User approval gates Phase 4.**
+
 **Step 3: Propose the community strategy (building + management)**
 
 Two distinct disciplines — decide both:
@@ -305,9 +339,17 @@ Company-page organic reach has collapsed; **people carry distribution**. Propose
 
 - **Executive & founder-led (primary engine)** — the highest-ROI organic play. Which real leaders (from `company_context.people[]` only — never fabricate one) run a thought-leadership program: profile-as-channel plus a capture → ghostwrite → approve content engine. See [executive-led-content.md](references/executive-led-content.md).
 - **Employee advocacy (breadth)** — None → Pilot (8–15 advocates) → Structured program, tuned to company size and capacity. See [employee-advocacy.md](references/employee-advocacy.md).
+- **Member advocacy (associations)** — for a membership org (trade body, alliance, franchise) the advocacy layer **is the member base**: member organisations and their people, activated with a ready-to-share kit rather than a mandate (members are independent legal entities — suggest, never require). See the variant in [employee-advocacy.md](references/employee-advocacy.md).
 - **Brand Page (credibility anchor)** — the proof/legitimacy surface and paid-amplification origin, not the primary reach channel.
 
 If capacity is scarce, fund the executive program first, then advocacy. Present the model for approval.
+
+**Step 4b: Influencer advisory (optional — both modes; B2C/hybrid emphasis)**
+
+Offer when a track is B2C/hybrid or `influencer-seeded`. **Advice-only** — this skill never sources, contacts, or negotiates; asked to pick named influencers, **decline** and produce archetype + criteria instead. Full method, brief template, and disclosure detail: [influencer-advisory.md](references/influencer-advisory.md).
+
+- Propose **whether** influencers fit, then **archetype × mode** (B2B defaults to nano/micro — credibility with a narrow audience beats reach; mid-tier is a B2C awareness instrument), plus **2–3 content concept directions**. Constrain the **claim**, free the **telling** — a script removes the trusted voice you were buying.
+- **State the advice-only boundary in the deliverable**, and carry the **NL RSM + EU disclosure** baseline: a relevant paid/gifted relationship must be clearly recognisable, the advertiser holds a duty of care, and gifting counts. `#reclame`/`#ad` and platform labels are examples, not a safe harbour or a substitute for legal review. Regulated sectors → tier-3 QA. Never invent an influencer, follower count, or rate.
 
 **Step 5: Cross-channel integration points**
 
@@ -322,7 +364,7 @@ Present integration points as a brief table mapping channel → social touchpoin
 
 Present the full strategy package. Wait for approval before proceeding.
 
-**Phase 3 deliverables**: Editorial strategy doc, content pillar map, distribution model (executive / advocacy / page), community strategy (building + management).
+**Phase 3 deliverables**: Editorial strategy doc, content pillar map, distribution model (executive / advocacy / page), community strategy (building + management), **campaign narrative arc** (campaign mode), boost strategy (when any track is non-`organic`), influencer advisory (if scoped).
 
 ### Phase 4 — Creative System
 
@@ -340,6 +382,14 @@ For each cell, define 1-2 series with:
 - Production requirements (who provides input, typical turnaround)
 
 Present the matrix. Ask the user to refine series definitions.
+
+**Step 1b: Plan hero assets and derivatives (COPE)**
+
+*Campaign mode: runs per act. Program mode: offer only when explicitly requested — it adds no default checkpoint.* A campaign needing 36–48 posts cannot produce 40 originals; it produces a few flagships and fans each out, which is also what keeps the posts coherent. Method + producer mapping: [content-formats.md](references/content-formats.md) § Hero → derivative production (COPE).
+
+- **Per act, define 1–2 hero assets** — the flagship the act hangs off (research explainer, factsheet, mini-doc, animated data story).
+- **Map each hero → 3–6 derivatives per track** (carousel slides → single images; video → clips + quote cards; document → text-post series). **A hero yields 4–6 derivatives before fatigue — refresh the hero, don't stretch it.** Every derivative is **native, never cross-posted verbatim** (recycled assets are down-ranked).
+- **Output:** a hero/derivative table appended to the content matrix. No hero capacity (tiny team) → build the map from pillar-level evergreen assets and **flag the reduced coherence**. Formats out of scope (e.g. client excludes video) → map only permitted surfaces.
 
 **Step 2: Define template needs**
 
@@ -362,6 +412,8 @@ Produce an N-week calendar (default: 4 weeks). Each entry includes:
 
 | Week | Pillar | Series | Concept | Format | CTA | Owner | UTM tags | Paid amplification trigger |
 |------|--------|--------|---------|--------|-----|-------|----------|---------------------------|
+
+**Campaign mode adds `Act` and `Beat` columns** (omit both in program mode) — every row states which act it serves and which weekly beat it expresses, so no slot is orphaned from the arc. They flow through Phase 7 onto each post object. See [campaign-narrative-arc.md](references/campaign-narrative-arc.md).
 
 The "paid amplification trigger" column defines when a post's performance warrants boosting — this is the handoff point to paid media. The `paid-social-campaign` skill handles the actual ad buying and optimization.
 
@@ -398,6 +450,7 @@ Activate the Phase 3 distribution model:
   6. Measure results (shares, engagement, reach, site traffic)
 
   See [employee-advocacy.md](references/employee-advocacy.md) for detailed program design.
+- **Member advocacy (if scoped)** — build the **member-amplification kit** per beat (copy variants + co-brandable native assets + suggested personalisation + a date), distributed via the association's existing member channels; plan the concentrated participation moment against the arc's peak. Real member orgs only — an empty roster means a generic, unaddressed pack, never invented members.
 
 **Phase 5 deliverables**: Editorial calendar (with reactive lane), community playbook (management + building), person-led activation plan (executive + advocacy).
 
@@ -450,12 +503,13 @@ After Phase 6, compile all deliverables and present a summary to the user. Then 
 
 Use `category: data-shortfall` when content improvised under a client-data gap.
 
-**Offer to save reusable config** to `{base}/social-media/`:
-- `config.json` — platform + UTM + compliance settings (if new or changed)
+**Offer to save reusable config** to `{base}/social-media/` — in campaign mode every `organic/*` path below is written under `campaigns/<campaign_slug>/` instead of the root:
+- `config.json` — platform + UTM + compliance settings (if new or changed). **Always root-level and shared** — never nested under a campaign.
 - `organic/pillars.json` — editorial pillar definitions
 - `organic/series.json` — content series definitions
 - `organic/community-playbook.json` — community management rules
 - `organic/advocacy.json` — advocacy program config (if scoped)
+- **Campaign mode only** — `campaigns/<campaign_slug>/campaign.json`, the manifest: `campaign_slug`, `name`, `window` {start, end, weeks}, `tracks[]` {platform, audience_id, `account` {handle, ownership, owner_org, access_via}, `amplification[]`}, `objective`, `arc` {acts[]} summary, `status` (`planned` | `live` | `closed`), optional `run_mode: "internal-draft"`, `schema_version: "1.0"`.
 
 Write `"schema_version": "1.0"` into **every** file persisted here. The shapes
 and the shared contract with `paid-social-campaign` are documented in
@@ -481,7 +535,9 @@ into N native per-post objects. Three artifacts (full schemas in
 
 1. **Emit `calendar.json`** — the structured form of the Phase 5 calendar (rows
    of week / pillar_id / series_id / concept / format / cta / platforms / owner /
-   utm).
+   utm, plus optional `act`/`beat` in campaign mode — the builder validates them
+   per row and copies them onto every post it emits; they are not part of
+   `post_id`, so arc metadata never re-keys a campaign's posts).
 2. **Run the builder** —
    `uv run python scripts/build_posts.py calendar.json {base}/social-media/config.json -o posts.json`.
    This fills the **structural** fields deterministically (stable `post_id`,
@@ -566,7 +622,9 @@ Load these as needed — do not read all at once.
 | [twitter-x.md](references/platforms/twitter-x.md) | When X/Twitter is a selected platform. B2B usage patterns, formats, threads. |
 | [youtube.md](references/platforms/youtube.md) | When YouTube is a selected platform. B2B video strategy, Shorts, SEO. |
 | [reddit.md](references/platforms/reddit.md) | When Reddit is selected. B2B participation etiquette, AI-citation surface, community play (not a posting-cadence channel). |
-| [content-formats.md](references/content-formats.md) | Phase 3 — when designing cadence and format mix. Format taxonomy with B2B effectiveness notes. |
+| [campaign-narrative-arc.md](references/campaign-narrative-arc.md) | **Phase 3 Step 2b — campaign mode only.** Acts/beats, belief-shift sequencing, cross-track echo, differentiation vs prior waves, peak-moment design, worked example. |
+| [influencer-advisory.md](references/influencer-advisory.md) | Phase 3 Step 4b — when influencers are in scope. Advice-only boundary, archetypes × modes, concept brief, NL/EU disclosure baseline. |
+| [content-formats.md](references/content-formats.md) | Phase 3 — when designing cadence and format mix. Format taxonomy with B2B effectiveness notes, and the hero → derivative (COPE) production map. |
 | [employee-advocacy.md](references/employee-advocacy.md) | Phase 3/5 — when designing employee advocacy program. Step-by-step program design. |
 | [executive-led-content.md](references/executive-led-content.md) | Phase 3/5 — the executive/founder-led thought-leadership program (primary distribution engine). Profile-as-channel, ghostwriting engine, governance. |
 | [aeo-geo-social.md](references/aeo-geo-social.md) | Phase 3 pillars + Phase 6 measurement — getting content cited by AI answer engines and found in social search. |
@@ -620,6 +678,8 @@ workspace/<client>/output/organic-social-campaign/
 ├── measurement-spec.md
 └── governance.md
 ```
+
+**Campaign mode** nests deliverables under the campaign slug — `workspace/<client>/output/organic-social-campaign/<campaign-slug>/` (adding `campaign-arc.md`, and `gaps.md` when `run_mode: internal-draft`) — so multi-campaign clients keep separate outputs, mirroring the `campaigns/<campaign_slug>/` persistence namespace.
 
 **Override**: If the prompt specifies a target output directory, use it.
 

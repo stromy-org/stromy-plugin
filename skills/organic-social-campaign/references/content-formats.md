@@ -163,7 +163,15 @@ Carousels and long-form video are the most versatile formats for B2B because the
 | Event | Yes | No | Yes | Spaces | Live |
 | Live | Yes (apply) | Yes | Yes | Spaces | Yes |
 
-## Cross-Platform Repurposing Flow
+## Hero → derivative production (COPE)
+
+"Create once, publish everywhere" is only affordable if it is **planned**, not
+improvised per post. A campaign needing 36–48 posts across two tracks cannot
+produce 40 original assets — it produces a handful of **hero** assets and fans
+each into **derivatives**. Planned this way the posts also stay *coherent*,
+because they inherit their argument from a shared source.
+
+### The flow
 
 The most efficient production workflow creates once and adapts:
 
@@ -173,3 +181,46 @@ The most efficient production workflow creates once and adapts:
 4. **Create engagement hooks** (Poll asking about the topic, question post inviting discussion)
 
 This gives you 4-6 pieces of content from one core idea, each native to its platform.
+
+### Hero assets
+
+A **hero** is the flagship an act hangs off — a research explainer, factsheet,
+mini-documentary, or animated data story. In campaign mode, plan **1–2 heroes
+per act** (see [campaign-narrative-arc.md](campaign-narrative-arc.md)); in
+program mode, plan them per pillar only when the user asks.
+
+### Derivative map
+
+Each hero fans into **3–6 satellites per track**:
+
+- carousel slides → single images
+- video → clips + quote cards
+- document → a text-post series
+- data → a chart, then an animated reveal
+
+**Derivative-count guidance: a hero yields 4–6 derivatives before fatigue.** Past
+that the audience recognises the source and the returns invert. When an act needs
+more volume, **refresh the hero — don't stretch it**.
+
+### Producer mapping (informational)
+
+Which capability typically renders each derivative. This is **orientation, not
+instruction** — this skill never invokes another skill; the user runs the
+producer, or Phase 8 handles the media-gen subset.
+
+| Derivative | Platform surface | Typical producer |
+|---|---|---|
+| PDF carousel (document post) | LinkedIn document | HD PDF rendering (e.g. `format-pdf-hd`) |
+| Data visual / comparison graphic | LinkedIn + Instagram image | chart/diagram skills |
+| Animated data reveal (MP4) | both feeds | motion baking (e.g. `format-motion`) |
+| Reel / short + branded imagery | Instagram reel, LinkedIn video | `media-gen` MCP (Phase 8 loop) |
+| Quote card | both | media-gen or diagram |
+| Text-post series | LinkedIn text | agent copy via voice cascade |
+
+### Every derivative must be native
+
+A derivative is **re-cut for its surface, never cross-posted verbatim**. Beyond
+reading as lazy, recycled/watermarked assets are algorithmically down-ranked (see
+[platforms/meta.md](platforms/meta.md)) — so the verbatim shortcut costs reach.
+A carousel exported as a PDF and dropped on Instagram is not a derivative; it is
+the same asset in the wrong place.

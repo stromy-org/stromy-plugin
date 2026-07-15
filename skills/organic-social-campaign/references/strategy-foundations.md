@@ -137,7 +137,29 @@ community-anchored, video-first, dark-funnel measurement), never as targets to
 hit. Set client targets from the client's own baseline (see
 `measurement-benchmarks.md`). Re-verify the figures at the next annual review.
 
+## Addendum — 2026-07 refresh
+
+*A dated layer on top of the five Shifts, not a replacement for them. The Shifts held; this refresh **quantifies** two of them, adds an association-distribution pattern, and records one architectural consequence. Same rules as above: directional, sourced, revisit annually.*
+
+**1. The LinkedIn format hierarchy is now quantified (Shift 4).** Socialinsider's ~1.3M-business-post sample gives an ordering rather than a vibe: native documents **7.0%** average engagement per impression (2025 table), then Q1-2026 readings of multi-image **≈6.8%**, video **≈5.9%**, image **≈5.2%**, text **≈4.3%**. Two cautions travel with these numbers: the 7.0% and the Q1-2026 rows are **different tables/periods**, and the spread (≈4.3% → 7.0%) is meaningful but not decisive — a credible executive's text POV still beats a mediocre Page carousel, which is Shift 1 reasserting itself over format choice. Separately, **Ordinal** (vendor-reported, *not* LinkedIn data) puts company-page reach **down 60–66% since 2024** with only **2–5% of followers** in the initial distribution test — directional support for Shift 1, and the reason Page-first plans keep underdelivering.
+
+**2. Instagram shifted to sends + caption search (Shift 2 + Shift 4).** Two changes matter for B2B. **Sends/shares now outweigh saves** as the ranking signal — the unit of value is a DM forward, which is *dark social made visible to the algorithm* (Shift 5's dark funnel showing up as a ranking input). And Instagram now surfaces content from **natural-language keywords in captions, bio, alt text, and hashtags** — a *search* surface, which extends Shift 2's citability logic beyond AI answer engines into in-platform discovery. Buffer's 2026 readings split cleanly by axis: carousels **6.9%** median reach-based engagement and **1.55×** single-image engagement rate; Reels **2.25×** single-image **reach**. Carousels win depth, Reels win reach — do not merge the two denominators into one claim. **No credible source quantifies sends as a fixed multiple of likes; do not invent one.**
+
+**3. Association/member distribution is a real amplification pattern (Shift 1, extended).** Shift 1 says people carry distribution. For a membership organisation, the "people" are **member organisations and their staff** — a distribution layer an association already has and usually under-uses. The Love Paper campaign is the worked evidence: **nearly 400 organisations participating globally**, and — a **separate, non-overlapping** figure — **500,000 people reached in North America**. Keep the two geographies distinct; they are not the same measurement, and collapsing them into one number is exactly the sloppiness this section exists to prevent. The mechanism is a concentrated participation moment plus a ready-to-share kit, not a bigger page budget. See `employee-advocacy.md` § Variant: member & association advocacy.
+
+**4. Architectural consequence — programs and campaigns are different shapes.** The five Shifts were written for **always-on programs**: pillars, cadence, community, compounding. A time-boxed advocacy campaign has a property a program does not — it must **land a belief change on a deadline**, so its content needs *sequence* (what the audience believes in week 1 vs week 8), not just a slot grid. This is why the skill gained a campaign mode with an explicit narrative arc (`campaign-narrative-arc.md`) rather than a second skill: the evidence base, voice machinery, and data contracts are identical; only the sequencing layer is new. Programs compound; campaigns converge.
+
 ## Sources consulted (2026)
+
+2026-07 refresh (platform benchmarks, association distribution — all accessed 2026-07-14):
+- Socialinsider — LinkedIn benchmarks (format engagement hierarchy, ~1.3M business posts): https://www.socialinsider.io/social-media-benchmarks/linkedin
+- Hootsuite — Instagram algorithm (sends outweigh saves; Reels under 90s, 3-second hook): https://blog.hootsuite.com/instagram-algorithm/
+- Buffer — State of Social Media Engagement 2026 (carousel 6.9% / 1.55× engagement; Reel 2.25× reach): https://buffer.com/resources/state-of-social-media-engagement-2026/
+- Later — Instagram SEO (caption/bio/alt-text keyword discovery, surface-specific ranking): https://later.com/blog/instagram-seo/
+- Ordinal — The declining reach of LinkedIn company pages (**vendor-reported**, not platform data): https://www.tryordinal.com/blog/the-declining-reach-of-linkedin-company-pages
+- Love Paper Week — campaign resources / participation mechanics (≈400 organisations globally): https://lovepaper.org/love-paper-week/
+- Love Paper LATAM (campaign results context): https://revistas.alborum.com/pdfs/lp_latam/lplatam77web.pdf
+- Two Sides North America — Love Paper Week reach (500,000 people reached, North America): https://www.linkedin.com/posts/twosidesna_lovepaperweek-twosidesna-papersustainability-activity-7444760540125667328-OrkB
 
 Person-led distribution & executive-led content:
 - Avenue Z — 2026 LinkedIn Organic Social Media Guide: https://avenuez.com/blog/linkedin-organic-social-media-guide-for-brands/

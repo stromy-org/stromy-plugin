@@ -52,18 +52,23 @@ Meta platforms are primarily consumer-oriented. For B2B corporate services, orga
 | Format | Best For (B2B) |
 |--------|----------------|
 | **Feed post (image)** | Branded graphics, data visualizations, quotes |
-| **Carousel** | Frameworks, checklists, case study slides (up to 20 slides) |
-| **Reel** | Short video content, trending formats adapted to B2B |
+| **Carousel** | Frameworks, checklists, case study slides (up to 20 slides) — the engagement-depth format |
+| **Reel** | Short video content, trending formats adapted to B2B — the reach format; keep under 90s |
 | **Stories** | Day-of events, polls, quick updates (24hr, saveable to Highlights) |
 | **Live** | Panels, interviews, behind-the-scenes |
 
+**Every Instagram format is a search surface (2026).** Whatever the format, the caption, bio, alt text, and hashtags are indexed for keyword discovery — write them in the ICP's own language rather than as an afterthought. See Algorithm Signals → Instagram.
+
 ### B2B Format Priorities
 
-For resource-constrained B2B teams, prioritize in this order:
-1. **Instagram carousels**: Highest organic reach on Instagram, repurposable from LinkedIn carousels
-2. **Reels**: Algorithm-favored on both platforms, 15-30 seconds is sufficient
-3. **Facebook events**: Genuine utility for driving registrations
-4. **Feed posts with images**: Baseline content to keep pages active
+For resource-constrained B2B teams, prioritise by **what the account needs right now** — the two leading formats win on different axes (see Algorithm Signals → Instagram for the sourced figures):
+
+1. **Instagram carousels** — the **engagement-depth** play (Buffer 2026: 6.9% median reach-based engagement; 1.55× the engagement rate of single images). Best when the existing audience must absorb a substantive argument. Repurposable from LinkedIn carousels — but redesign for square/portrait, never re-upload the PDF export.
+2. **Reels** — the **reach** play (Buffer 2026: 2.25× single-image reach). Best when the account needs new eyes. Keep under **90 seconds**, hook in 3 seconds, design to loop; native cut only (a watermarked re-post is down-ranked).
+3. **Facebook events** — genuine utility for driving registrations.
+4. **Feed posts with images** — baseline content to keep pages active.
+
+**Sequencing rule:** a cold or low-reach account leads with Reels to build the audience, then shifts weight to carousels to deepen it. Reversing that order starves the carousels of anyone to engage.
 
 ## Algorithm Signals
 
@@ -77,11 +82,26 @@ For resource-constrained B2B teams, prioritize in this order:
 
 ### Instagram
 
-- **Interest**: Predicted likelihood the user will engage based on past behavior
-- **Timeliness**: Newer posts prioritized
-- **Relationship**: Frequency of interaction between the user and the account
-- **Saves and shares**: Weighted more heavily than likes in 2024+
-- **Reels algorithm**: Separate from feed — optimized for entertainment value and watch-through rate
+*Refreshed 2026-07. Figures are directional and vendor-reported — check the source on each claim and revisit annually.*
+
+- **Sends/shares are the top-tier signal.** A DM forward is the strongest endorsement a post can earn. Hootsuite reports **shares now outweigh saves**, reversing the older saves-first guidance. Design for *sendability*: make the post something one professional forwards to another. (Hootsuite, *Instagram algorithm*, accessed 2026-07-14 — https://blog.hootsuite.com/instagram-algorithm/)
+  - **State no multiplier.** Shares/sends outrank likes, but no reliable source quantifies that gap as a fixed multiple. Never present a numeric likes-multiple to a client.
+- **Ranking is surface-specific, not one algorithm.** Feed, Stories, Explore, and Reels rank on different signal weights — Feed leans on relationship and interest history, Explore on interest for non-followers, Reels on watch-through and sends. Optimise per surface; one asset reused across all four is optimised for none. (Hootsuite, ibid.; Later, *Instagram SEO*, accessed 2026-07-14 — https://later.com/blog/instagram-seo/)
+- **Caption SEO is a real discovery surface.** Instagram surfaces content from natural-language **keywords in captions, bio, alt text, and hashtags** — content is increasingly *found by search*, not only served in-feed. Write captions in the words the ICP would actually type; write alt text descriptively rather than stuffing keywords. (Later, ibid.)
+- **Interest, timeliness, relationship** remain baseline inputs: predicted engagement from past behaviour, recency, and interaction frequency with the account.
+- **Originality is rewarded; recycled content is down-ranked.** Visibly reposted or **watermarked** content (a TikTok-watermarked Reel especially) is suppressed. Re-cut natively — never upload the exported file from another platform.
+
+**Format readings (Buffer, *State of Social Media Engagement 2026*, accessed 2026-07-14 — https://buffer.com/resources/state-of-social-media-engagement-2026/).** These metrics are **not interchangeable** — one is an engagement rate, the other a reach ratio:
+
+| Reading | Metric (definition) | Value |
+|---|---|---|
+| Carousel engagement | median **reach-based engagement rate** | **6.9%** |
+| Carousel vs single image | **engagement-rate** ratio | **1.55×** |
+| Reel vs single image | **reach** ratio (not engagement) | **2.25×** |
+
+Practical read: **carousels win engagement depth; Reels win reach.** An account that needs new eyes leans Reels; one that needs its existing audience to absorb a substantive argument leans carousels. Do not collapse these into a single "Reels are 2.25× better" claim — the denominators differ.
+
+- **Reels length:** keep under **90 seconds**, hook in the first 3 seconds, and design the ending to loop. (Hootsuite, ibid.)
 
 ### What Suppresses Reach on Meta
 
@@ -139,7 +159,7 @@ For resource-constrained B2B teams, prioritize in this order:
 - **Employer brand content**: Team photos, culture moments, hiring announcements — this is where Meta outperforms LinkedIn for some companies
 - **Visual case studies**: Before/after, data graphics, project photos
 - **Event content**: Pre-event teasers, live coverage, post-event recaps
-- **Short-form video**: Reels of 15-30 seconds with a single insight or tip
+- **Short-form video**: Reels carrying a single insight or tip — under 90 seconds, hooked in the first 3 seconds (a tight 15-30s cut is still ideal when the idea allows)
 - **Behind-the-scenes**: Office, team retreats, project work in progress
 
 ### What Does Not Work

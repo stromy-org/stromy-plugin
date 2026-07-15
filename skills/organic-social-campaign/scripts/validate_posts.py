@@ -47,12 +47,36 @@ _COPY_REQUIRED_SURFACES = frozenset(
 )
 
 
+def _validate_arc(post: dict[str, Any], pid: str) -> list[str]:
+    """Validate the optional narrative-arc fields on an enriched post object.
+
+    Mirrors ``build_posts._arc_fields`` so a hand-authored or agent-edited
+    posts.json is held to the same contract as builder output. Absent is valid
+    (program mode omits both); an explicit ``null`` is treated as absent.
+    """
+    errors: list[str] = []
+
+    act = post.get("act")
+    if act is not None and (isinstance(act, bool) or not isinstance(act, int) or act < 1):
+        # bool is an int subclass — `True` must not slip through as act == 1.
+        errors.append(f"{pid}: 'act' must be an int >= 1")
+
+    beat = post.get("beat")
+    if beat is not None and (not isinstance(beat, str) or not beat.strip()):
+        errors.append(f"{pid}: 'beat' must be a non-empty string")
+
+    return errors
+
+
 def _validate_post(post: dict[str, Any]) -> list[str]:
     pid = post.get("post_id", "<no post_id>")
-    errors: list[str] = []
+    # Arc errors are collected first and preserved through the early returns
+    # below, so a post with a broken media_spec still reports a bad act/beat.
+    errors: list[str] = _validate_arc(post, pid)
     spec_raw = post.get("media_spec")
     if not isinstance(spec_raw, dict):
-        return [f"{pid}: media_spec missing or not an object"]
+        errors.append(f"{pid}: media_spec missing or not an object")
+        return errors
     spec = as_obj(spec_raw)
 
     surface = spec.get("type")
@@ -60,7 +84,8 @@ def _validate_post(post: dict[str, Any]) -> list[str]:
     aspect = spec.get("aspect_ratio")
 
     if surface not in ALLOWED_PRODUCERS_BY_SURFACE:
-        return [f"{pid}: unknown media_spec.type '{surface}'"]
+        errors.append(f"{pid}: unknown media_spec.type '{surface}'")
+        return errors
 
     # producer <-> type consistency (High-2 guardrail).
     allowed_producers = ALLOWED_PRODUCERS_BY_SURFACE[surface]

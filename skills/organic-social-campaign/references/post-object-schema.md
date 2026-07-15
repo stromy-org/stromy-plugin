@@ -53,10 +53,21 @@ the downstream consumer):
 | `owner` | string | optional | becomes `author_surface` |
 | `surface_overrides` | object | optional | `{platform: surface}` — overrides the platform's `media_default`; must be in that platform's `allowed` set or the builder fails the row |
 | `utm` | object | optional | merged over the config UTM defaults |
+| `act` | int ≥ 1 | optional | **campaign mode** — which narrative act this row belongs to (see [campaign-narrative-arc.md](campaign-narrative-arc.md)). Program-mode calendars omit it. Copied to every post the row emits; **not** part of the `post_id` hash |
+| `beat` | string | optional | **campaign mode** — the weekly beat name within the act. Non-empty after trimming; stored trimmed. Program-mode calendars omit it. Copied to every post the row emits; **not** part of the `post_id` hash |
 
-A malformed row (missing required field, override not in `allowed`) makes
-`build_posts.py` **fail with the offending row index and write no partial
-`posts.json`**.
+**Arc fields are optional and identity-neutral.** `act`/`beat` carry narrative
+position, not identity, so building the same calendar with and without them
+yields **identical `post_id` sets** — arc metadata can be added to or removed
+from an existing campaign without re-keying its posts. Absent stays absent (the
+keys are never defaulted onto a post); an explicit JSON `null` is treated as
+absent. Validation is strict: `act` must be a non-boolean int ≥ 1 (Python's
+`bool` is an `int` subclass, so `true` is rejected explicitly rather than
+sailing through as `1`), and `beat` must be a non-empty string after trimming.
+
+A malformed row (missing required field, override not in `allowed`, bad
+`act`/`beat`) makes `build_posts.py` **fail with the offending row index and
+write no partial `posts.json`**.
 
 ## Per-post object (`posts.json`)
 
@@ -126,6 +137,8 @@ A malformed row (missing required field, override not in `allowed`) makes
 | `utm` | builder | config UTM defaults merged with the row override |
 | `status` | builder→Phase 8 | `draft` → `media_ready` / `brief_ready` after Phase 8 review |
 | `qa_tier` | builder | default `tier_1`; raise per Phase 4 QA tiers |
+| `act` | builder | **optional, campaign mode** — pass-through of the row's `act` (int ≥ 1). Absent in program mode; never defaulted; not in the `post_id` hash |
+| `beat` | builder | **optional, campaign mode** — pass-through of the row's `beat` (non-empty trimmed string). Absent in program mode; never defaulted; not in the `post_id` hash |
 
 ### Aspect-ratio Literal sets (kept in sync with `media_gen.types`)
 

@@ -71,6 +71,8 @@ YouTube does not have a single "engagement rate." Key engagement metrics:
 
 ## Directional Benchmark Ranges
 
+*Figures updated 2026-07. The ranges in this section are **account-level** — the performance band a given page/account sits in. The 2026-07 refresh added **format-level** averages (per-format engagement across a vendor's whole sample), which answer a different question and are recorded in the per-platform notes below rather than merged into these bands. Never read a format average as an account target, and never compare across platforms — LinkedIn engagement rate is **impression-based**, Instagram and Facebook are **reach-based** (see Engagement Rate Calculation above).*
+
 ### LinkedIn (Company Pages, B2B)
 
 | Metric | Below Average | Average | Good | Excellent |
@@ -83,6 +85,10 @@ YouTube does not have a single "engagement rate." Key engagement metrics:
 
 **Context**: Smaller pages (<5,000 followers) typically show higher engagement rates because the audience is more concentrated and engaged. As follower count grows, engagement rate naturally decreases. A 50,000-follower page at 2% engagement is outperforming a 1,000-follower page at 4% in absolute terms.
 
+**Format-level readings (2026-07 refresh — not account targets).** Socialinsider's ~1.3M-business-post sample reports **average engagement rate per impression** by format: native document **7.0%** (2025 full-year table), then Q1-2026 readings of multi-image **≈6.8%**, video **≈5.9%**, image **≈5.2%**, text **≈4.3%**. Same denominator as the account table above (impression-based), but a **different unit of analysis** — these are per-format averages across many accounts, so a 4.3% text post is not "below average" for *your* page. Use them to choose format mix, not to set a page KPI. Vendor-reported and directional; the 7.0% row and the Q1-2026 rows come from different tables. Source: https://www.socialinsider.io/social-media-benchmarks/linkedin (accessed 2026-07-14). Full hierarchy: `platforms/linkedin.md`.
+
+**Company-page reach (vendor evidence).** Ordinal — a vendor reporting its own analysis, **not** LinkedIn-published data — reports page reach down **60–66% since 2024** and only **2–5% of followers** in a post's initial distribution test. This is why the "Organic reach (% of followers)" style bands keep drifting down, and why the person-led posture carries distribution. Source: https://www.tryordinal.com/blog/the-declining-reach-of-linkedin-company-pages (accessed 2026-07-14).
+
 ### Instagram (Business Accounts, B2B)
 
 | Metric | Below Average | Average | Good | Excellent |
@@ -93,7 +99,11 @@ YouTube does not have a single "engagement rate." Key engagement metrics:
 | Save rate | <0.5% | 0.5-1.5% | 1.5-3% | >3% |
 | Stories completion rate | <50% | 50-70% | 70-85% | >85% |
 
-**Context**: B2B Instagram engagement is generally lower than B2C. Save rate is a more meaningful metric for B2B — it indicates content utility.
+**Context**: B2B Instagram engagement is generally lower than B2C. Save rate is a meaningful utility signal for B2B — but as of the 2026-07 refresh, **sends/shares outrank saves** as the ranking signal, so track send rate alongside it (see `platforms/meta.md`).
+
+**Format-level readings (2026-07 refresh — not account targets).** Buffer's *State of Social Media Engagement 2026* reports carousels at **6.9% median reach-based engagement**, **1.55×** the engagement rate of single images, and Reels at **2.25×** single-image **reach**. The first two are engagement-rate readings (same reach-based denominator as the account table above); the third is a **reach** ratio and must not be quoted as an engagement figure. Per-format averages across many accounts — a format-mix input, not a page KPI. Source: https://buffer.com/resources/state-of-social-media-engagement-2026/ (accessed 2026-07-14).
+
+**No likes-multiple.** Sends/shares are top-signal, but no reliable source quantifies them as a fixed multiple of likes — do not put such a number in a client deliverable.
 
 ### Facebook (Business Pages, B2B)
 
