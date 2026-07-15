@@ -1,6 +1,6 @@
 ---
 name: nl-horizon-scan
-description: ">"
+description: "Forward-foresight scan for Dutch policy and regulatory signals over 6–36 months. STEEP/STEEPS environmental scan across the internetconsultatie/Wetgevingskalender pipeline, EU forcing functions (EUR-Lex directives/regulations), procurement signals (TED), Senate status (Eerste Kamer), and planning-bureau foresight (PBL/CPB/SCP); time-bucketed 0–6/6–18/18–36 months; rated on a 2×2 impact×likelihood grid (Watch/Track/Alert/Priority); prioritised watchlist with review cadence. Use when the user asks what is coming in the next 1–3 years, what EU directives will force NL legislation, what signals to monitor for a sector, or wants a horizon scan, foresight brief, or forward radar. Do NOT trigger for: a single known bill's passage forecast (→ nl-dossier-tracker); article-level directive transposition mapping (→ nl-eu-transposition); a weekly what-changed digest (→ nl-monitor); deep backward/current topic synthesis on one topic (→ nl-policy-legislative-landscape)."
 ---
 
 # Horizon Scan (MCP-hosted skill)
