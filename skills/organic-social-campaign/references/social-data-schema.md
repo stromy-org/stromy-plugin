@@ -1,4 +1,4 @@
-<!-- since: 2026-06-01 -->
+<!-- since: 2026-06-01 --><!-- updated: 2026-07-15 campaign namespace + campaign.json -->
 
 # `social-media/*` shared data schema (v1.0)
 

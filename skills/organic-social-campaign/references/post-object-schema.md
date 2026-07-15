@@ -1,4 +1,4 @@
-<!-- since: 2026-06-01 -->
+<!-- since: 2026-06-01 --><!-- updated: 2026-07-15 optional act/beat fields -->
 
 # Phase 7 schemas — `calendar.json` and the per-post object
 
