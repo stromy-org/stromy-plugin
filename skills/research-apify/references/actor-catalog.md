@@ -10,11 +10,30 @@ All costs below are **approximate** and bill the **client's** Apify account
 `fetch-actor-details` pricing are your only basis for the confirm-before-large-pull
 estimate. The client's Apify **console spend cap** is the authoritative backstop.
 
-> Verified against the Apify Store / MCP docs on 2026-06-16: `apify/rag-web-browser`
-> is a default MCP tool; `--tools`/`--actors`/`--telemetry-enabled` flags and the
-> `search-actors` / `fetch-actor-details` / `call-actor` / `get-actor-output` tools
-> are current. Always re-verify a slug + its input keys with `fetch-actor-details`
-> at runtime — the keys below are the common ones, not a guarantee.
+> Verified against the Apify Store / MCP docs on 2026-06-16, re-verified
+> 2026-07-16: `apify/rag-web-browser` is a default MCP tool; the
+> `search-actors` / `fetch-actor-details` / `call-actor` / `get-actor-output`
+> tools are current, and specific actors can be pinned as first-class tools via
+> the connector's `?tools=` parameter. Always re-verify a slug + its input keys
+> with `fetch-actor-details` at runtime — the keys below are the common ones,
+> not a guarantee.
+
+## Pricing-model migration (2026) — how to read an actor's price
+
+Apify is retiring the **rental** (flat monthly) actor model: no new rental
+actors since 2026-04-01, and remaining rentals migrate to pay-per-usage on
+**2026-10-01**. Most Store actors now price as:
+
+- **Pay-per-event (PPE)** — a per-run **start fee** plus a per-item (or
+  per-event) price. Estimate = *start fee + cap × unit price*, not just
+  cap × unit price; for small capped runs the start fee can dominate.
+- **Pay-per-usage** — platform compute units (CU) only; cost scales with pages
+  × page weight. Harder to estimate up front — keep caps low and lean on the
+  confirm gate.
+
+`fetch-actor-details` returns the live pricing model — read it, don't assume.
+If an actor still shows as *rental* after 2026-10-01, the listing is stale;
+prefer a PPE/usage-priced alternative.
 
 ## `web_research` → `apify/rag-web-browser`
 
@@ -70,6 +89,28 @@ There is no single universal extract actor — the right one depends on the sour
 
 **Cost (approximate):** entirely actor-dependent — read pricing from
 `fetch-actor-details` and apply the cost gate.
+
+**Commonly fitting example** (verify live before running, as always):
+`compass/crawler-google-places` (the Google Maps scraper — places / local
+business listings) is the Store's most-used extract actor and a sound default
+for place/business directory pulls. For anything else, discover per-task.
+
+### Personal-data & compliance caveats (binding for people-shaped data)
+
+When a `structured_extract` target is **people data** (profiles, contact
+details, employee lists), extra rules apply on top of the cost gate:
+
+- **Treat every scraped person field as personal data** (GDPR/CCPA). Before
+  running, tell the user the pull returns personal data and that lawful basis,
+  retention, and opt-out handling are *their* responsibility; record that
+  notice in `metadata.warnings`.
+- **Cookieless actors only.** Never run an actor that asks for the client's
+  platform session cookies or login (LinkedIn especially) — session-based
+  scraping defeats authentication and carries account-ban risk for the
+  client's account. `fetch-actor-details` shows required inputs; a
+  `cookies`/`sessionCookie` field is a hard stop.
+- **Never use any actor to defeat auth, CAPTCHAs, or paywalls** — same
+  discipline as every other Stromy fetch surface.
 
 ## Caps discipline (applies to every actor)
 

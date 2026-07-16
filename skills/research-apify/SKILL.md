@@ -34,6 +34,33 @@ log.
 > authorized by the user — this skill simply drives whichever apify tools that
 > authorized connector exposes.
 
+Client-side setup steps (account, spend cap, connector URL, OAuth) live in
+[`references/client-onboarding.md`](references/client-onboarding.md).
+
+### Recommended connector URL — scope the tool surface
+
+Add the connector with an explicit `?tools=` parameter rather than the bare
+default endpoint (Apify's own production recommendation):
+
+```
+https://mcp.apify.com/?tools=actors,docs,runs,storage,apify/rag-web-browser,apify/website-content-crawler
+```
+
+This pins the two curated actors as first-class tools and enables exactly the
+tool categories this skill drives (`actors`, `docs`, `runs`, `storage`). Under
+BYOK, governance is advisory — the connector URL is the **one structural lever**
+that narrows what the agent can reach, so use it. The bare
+`https://mcp.apify.com` still works; this skill drives whichever apify tools the
+authorized connector exposes.
+
+> **Dynamic discovery caveat.** On clients that support dynamic tool discovery
+> (e.g. Claude.ai web), the `actors` category surfaces `add-actor` instead of
+> `call-actor`: you first add a discovered actor as a tool, then call that tool
+> directly. The pinned curated actors are already direct tools either way. All
+> rules in this skill still bind regardless of surface form — curated list
+> first, `fetch-actor-details` before running, the §4 cost gate before any
+> large pull. Never `add-actor` your way around the curation.
+
 This skill is **brand-agnostic** — it takes no client-data input and does not
 resolve a `client_slug`. Brand is injected only later, at the `format-*` step.
 This skill therefore declares **no client-data inputs** (no overlay block), which
@@ -130,7 +157,10 @@ Default low and raise only on explicit user request.
 
 ### 4. Cost gate — confirm before any large pull
 
-Estimate the run from the cap × the actor's unit price. If the run would exceed a
+Estimate the run from the actor's pricing model in `fetch-actor-details`: for
+pay-per-event actors, **start fee + cap × unit price** (the per-run start fee can
+dominate small runs); for pay-per-usage actors, be conservative — compute-unit
+cost is hard to predict, so keep caps low. If the run would exceed a
 conservative threshold — **roughly > 25 results/pages, or an estimated > ~US$1 on
 the client's account** — **STOP and ask the user to confirm before calling the
 actor**, naming the estimate and that it bills their Apify account. Do not run
@@ -242,13 +272,17 @@ traceability.
 
 - **Apify connector not authorized / auth rejected.** The Apify MCP returns its own
   auth error when the connector isn't signed in. Surface it plainly and tell the user
-  to **connect (or re-connect) the Apify MCP connector** — add `https://mcp.apify.com`
-  as a workspace connector and complete the OAuth sign-in to their own Apify account
-  (BYOK — their account, their spend). There is no token to set. Do not retry blindly.
+  to **connect (or re-connect) the Apify MCP connector** — add the scoped connector
+  URL as a workspace connector and complete the OAuth sign-in to their own Apify
+  account (BYOK — their account, their spend). Walk them through
+  [`references/client-onboarding.md`](references/client-onboarding.md). There is no
+  token to set. Do not retry blindly.
 - **Apify tools missing entirely.** The Apify MCP connector isn't added to this
-  workspace. Tell the user to add it (`https://mcp.apify.com`, OAuth) — it is **not**
-  shipped inside the plugin (authenticated HTTP MCPs are workspace connectors, never
-  plugin-declared). Do not fall back to a billed pull or a browser.
+  workspace. Tell the user to add it (the scoped URL above, OAuth) and walk them
+  through [`references/client-onboarding.md`](references/client-onboarding.md) —
+  including the **required console spend cap**. It is **not** shipped inside the
+  plugin (authenticated HTTP MCPs are workspace connectors, never plugin-declared).
+  Do not fall back to a billed pull or a browser.
 - **Actor returns no dataset.** Emit empty `results` and a `metadata.warnings`
   entry; do not invent data.
 - **Over-threshold request.** Confirm first (step 4); never run until the user
