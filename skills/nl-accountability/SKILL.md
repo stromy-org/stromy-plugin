@@ -2,6 +2,15 @@
 name: nl-accountability
 description: "Track what Dutch ministers and cabinets formally committed to, and classify each commitment's delivery status (Kept / Compromised / Stalled / Deferred / Broken / Not-yet-testable) with cited evidence. Cross-checks against Rijksfinanciën budget appropriations and CBS outcome statistics. Use this skill when the user asks what a minister promised vs delivered, wants a coalition-agreement scorecard, needs to track toezeggingen delivery for a client brief, wants a said-vs-done ledger, or wants to ground a promised-vs-delivered narrative in citable official-record evidence. Do NOT use for adversarial contradiction-hunting or angle-finding on a topic (→ `nl-tensions`) or for open-ended topic/dossier monitoring (→ `nl-gov-data`, referred to here as `nl-monitor`-shaped requests). This skill needs a **frozen, bounded commitment corpus** — it is a comprehensive tracker, not a spot-check."
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
+  Source:      MCPs/nl-gov-data/skills/nl-accountability/SKILL.md
+  This workflow pushes DIRECT to this repo's main — a local edit here will be
+  overwritten or rejected non-fast-forward. Edit the source, push, then:
+    gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Accountability (MCP-hosted skill)
 

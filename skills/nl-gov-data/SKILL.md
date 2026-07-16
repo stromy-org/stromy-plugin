@@ -2,6 +2,15 @@
 name: nl-gov-data
 description: "Track Dutch public affairs signals across Tweede Kamer, Rijksoverheid, KOOP publications (incl. CVDR + local gmb/prb/wsb/bgr), BWB legislation, Wetgevingskalender, ROO organizations, Rechtspraak (caselaw), CBS (statistics), and data.overheid.nl (discovery) using the `nl-gov-data` MCP. Supports fifteen workflows: topic monitoring, dossier tracking, actor briefs, committee watch, legislative scan, ministry narrative, parliamentary landscape snapshot, legislation lookup, legislative calendar watch, law-to-dossier brief, organization lookup, caselaw watch, quantitative grounding (CBS), discovery (data.overheid.nl), and exploratory MCP testing. Now also supports content deep-reading: fetching and quoting actual document text (motions, bills, letters, debate transcripts, law articles, attachments). Produces structured JSON shaped for downstream Stromy workflows with `workflow_type`, `query_params`, `results`, and `metadata`. Use this skill whenever the user asks about Dutch parliament activity, Tweede Kamer dossiers, Dutch government policy signals, kamerstukken, dossier numbers, Dutch MPs, faction composition, ministry narrative, Dutch laws, legislation, wetgeving, wetgevingskalender, government organizations, OR wants to read/quote/summarize a specific Dutch government document, transcript, law article, or attachment."
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
+  Source:      MCPs/nl-gov-data/skills/nl-gov-data/SKILL.md
+  This workflow pushes DIRECT to this repo's main — a local edit here will be
+  overwritten or rejected non-fast-forward. Edit the source, push, then:
+    gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Dutch Government Data (MCP-hosted skill)
 

@@ -2,6 +2,15 @@
 name: org-guide
 description: "Answer questions about the Stromy organization — sales pipelines, clients, deployment, infrastructure, products, skills, projects, company facts — grounded in the org's live repos via the org-atlas read tools. Use whenever someone asks "how does Stromy…", "what are the…", "which clients…", "where is…", or any org-knowledge / onboarding question. Routes the question to the right repo, reads the source live, and answers with citations. Never guesses."
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
+  Source:      MCPs/org-atlas-mcp/skills/org-guide/SKILL.md
+  This workflow pushes DIRECT to this repo's main — a local edit here will be
+  overwritten or rejected non-fast-forward. Edit the source, push, then:
+    gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Org Guide — answer org questions from the live repos (MCP-hosted skill)
 

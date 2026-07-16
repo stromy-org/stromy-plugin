@@ -2,6 +2,15 @@
 name: nl-policy-legislative-landscape
 description: "Build deep Dutch official-source policy and legislative landscape analyses from the nl-gov-data MCP. Use this whenever the user asks for a policy landscape, legislative scan, dossier map, official activity timeline, regulatory baseline, PA/PR policy baseline, or consulting-style report on a Dutch public-policy topic. The skill is strongest for connecting Tweede Kamer, KOOP, BWB, Wetgevingskalender, Rijksoverheid, ministries, committees, and official bodies into a client-ready landscape with sources, dates, links, implications, and priority reading. Do NOT use once the request narrows to a single named entity or product (→ nl-issue-framing), asks who matters or who moves a decision (→ nl-parliamentary-positioning), asks about said-vs-done or a specific contradiction (→ nl-tensions for ad hoc angles, nl-accountability for a frozen commitment-corpus tracker), or asks to verify one specific figure or claim (→ nl-evidence-grounding)."
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
+  Source:      MCPs/nl-gov-data/skills/nl-policy-legislative-landscape/SKILL.md
+  This workflow pushes DIRECT to this repo's main — a local edit here will be
+  overwritten or rejected non-fast-forward. Edit the source, push, then:
+    gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Dutch Policy And Legislative Landscape (MCP-hosted skill)
 

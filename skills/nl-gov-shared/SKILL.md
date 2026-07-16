@@ -2,6 +2,15 @@
 name: nl-gov-shared
 description: "References hub for the Dutch government data skill family (nl-gov-data, nl-tensions, nl-accountability, nl-eu-transposition, nl-dossier-tracker, nl-policy-legislative-landscape, nl-parliamentary-positioning, nl-issue-framing). Not invoked directly — exists to host canonical specs (portal docs, tool reference, output contract, evidence rules, doctrine, absence-confidence, domain packs) cited by all sibling skills."
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
+  Source:      MCPs/nl-gov-data/skills/nl-gov-shared/SKILL.md
+  This workflow pushes DIRECT to this repo's main — a local edit here will be
+  overwritten or rejected non-fast-forward. Edit the source, push, then:
+    gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # nl-gov-shared (MCP-hosted skill)
 

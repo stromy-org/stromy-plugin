@@ -2,6 +2,15 @@
 name: nl-monitor
 description: "Recurring monitoring digest and breaking-alert product for Dutch parliamentary and legislative activity. Watches a defined issue matrix (topics, dossier IDs, actors) across weekly lookback windows, detects procedural state-changes against a caller-supplied prior_state, and produces a structured weekly briefing (Breaking alerts / This week / Dossier-status table / Forward agenda / machine-readable state snapshot). Use this skill whenever the user asks to monitor a topic or dossier set on a recurring basis, wants a weekly brief, asks "what changed", "what's happening this week", "what's coming up", wants to be alerted when a watched dossier crosses a threshold, wants a dossier watch, or wants a recurring digest they (or a scheduled routine) can re-run. Do NOT use for: deep single-dossier status and passage forecasting (→ nl-dossier-tracker); 6-36 month forward pipeline foresight (→ nl-horizon-scan); said-vs-done accountability / toezeggingen delivery tracking (→ nl-accountability); contradiction and said-vs-spent hunting (→ nl-tensions); a one-off ad-hoc "what's happening on X right now" question with no recurring cadence or state comparison (→ nl-gov-data's lighter topic-monitoring workflow)."
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
+  Source:      MCPs/nl-gov-data/skills/nl-monitor/SKILL.md
+  This workflow pushes DIRECT to this repo's main — a local edit here will be
+  overwritten or rejected non-fast-forward. Edit the source, push, then:
+    gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # NL Monitor (MCP-hosted skill)
 

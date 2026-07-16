@@ -2,6 +2,15 @@
 name: nl-evidence-grounding
 description: "Fact-check a Dutch policy claim or numeric assertion against the official record — triangulating CBS statistics, Rijksfinanciën budget data (phase-labelled OWB/O1/O2/JV), kamerstukken framing, and Rechtspraak rulings — into a source-cited Evidence Dossier with a falsifiable restatement, a source-independence table, a fixed-vocabulary triangulation verdict, a causation audit, and a debate-connect trace (toezegging → budget trajectory → CBS realisation → parliamentary framing). Use this skill whenever the user asks "is this claim true", wants to fact-check a minister's statement or a stated figure, wants to ground a numeric claim in the official record, asks "what does CBS say about X", wants to verify the minister's numbers, or wants a beleidsdoorlichting-style evidence check on a specific assertion. Do NOT use for: tracking a pledge's delivery status over time or a said-vs-done ledger across a frozen, bounded commitment corpus (→ `nl-accountability`); adversarial angle-hunting or contradiction-mining across an entire topic for roundtable angles (→ `nl-tensions`); a comprehensive topic or policy landscape survey (→ `nl-policy-legislative-landscape`). This skill grounds one bounded claim, or a small batch of 1-5 claims — it is a targeted fact-check, not a monitoring stream."
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
+  Source:      MCPs/nl-gov-data/skills/nl-evidence-grounding/SKILL.md
+  This workflow pushes DIRECT to this repo's main — a local edit here will be
+  overwritten or rejected non-fast-forward. Edit the source, push, then:
+    gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Evidence grounding (MCP-hosted skill)
 
