@@ -3,6 +3,15 @@ name: research-apify
 description: "Agent-driven web research and data extraction backed by the official Apify MCP, bring-your-own-key (BYOK). Use when the user wants to gather data on a topic from the web, search the live web for current information, scrape or crawl a website or a list of URLs, or extract structured records (directory listings, product specs, profiles) — and turn the results into a branded deliverable. Drives a short list of vetted Apify actors with hard per-run caps and a confirm-before-large-pull step, reshapes the dataset into the standard {workflow_type, query_params, results, metadata} envelope, then hands the envelope to a format-* skill (format-docx, format-pdf-hd) for the branded document. Triggers on: web research, gather data on a topic, scrape, crawl a site, extract structured data from URLs, data extraction, web data, competitor/market scan."
 license: Proprietary. LICENSE.txt has complete terms
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-local-skills.py (operator-run: ./scripts/sync.sh local-skills)
+  Source:      workspace-studio/.claude/skills/research-apify/SKILL.md
+  This file is a mirror of its canonical source. A local edit here will be
+  overwritten by the next mirror run. Edit the source, then:
+    ./scripts/sync.sh local-skills
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Web Research via the official Apify MCP (BYOK)
 

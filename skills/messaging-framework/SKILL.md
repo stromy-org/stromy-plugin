@@ -2,6 +2,15 @@
 name: messaging-framework
 description: "Build structured messaging frameworks — core narrative, messaging pillars, proof points, audience adaptations, and verbal guardrails — from positioning and research inputs. Supports five framework types: Message House, Messaging Hierarchy, Messaging Matrix, Strategic Narrative, and Product Messaging. Produces format-agnostic messaging architecture that downstream skills (talking-points, media-pitch, campaign briefs) can consume. Integrates with company profiles for branded output and maintains a reusable messaging content library. Use this skill whenever the user asks to build a messaging framework, create a message house, develop messaging pillars, write a messaging hierarchy, build a messaging matrix, define key messages, create a messaging architecture, develop brand messaging, write positioning messages, structure audience-specific messaging, or anything involving 'what should we say and to whom' — even if they just say 'we need messaging for X' or 'help me figure out what to say about this.'"
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-local-skills.py (operator-run: ./scripts/sync.sh local-skills)
+  Source:      workspace-studio/.claude/skills/messaging-framework/SKILL.md
+  This file is a mirror of its canonical source. A local edit here will be
+  overwritten by the next mirror run. Edit the source, then:
+    ./scripts/sync.sh local-skills
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Messaging Framework
 

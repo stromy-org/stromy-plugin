@@ -3,6 +3,15 @@ name: proposal
 description: "Build production-quality consulting proposals, executive briefs, and bid documents. Supports 5 proposal archetypes (Corporate, Consultant, Entrepreneur, Creative, Minimal) with quick-setup and full intake workflows. Format-agnostic — handles proposal strategy, content assembly, and quality validation, then produces the final document in the requested output format (DOCX, PPTX, PDF). Use when creating new proposals, revising existing ones, merging sections, or condensing documents."
 license: Proprietary. LICENSE.txt has complete terms
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-local-skills.py (operator-run: ./scripts/sync.sh local-skills)
+  Source:      workspace-studio/.claude/skills/proposal/SKILL.md
+  This file is a mirror of its canonical source. A local edit here will be
+  overwritten by the next mirror run. Edit the source, then:
+    ./scripts/sync.sh local-skills
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Consulting Proposal Builder
 

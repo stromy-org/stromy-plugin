@@ -2,6 +2,15 @@
 name: press-release
 description: "Write and manage corporate press releases with full governance lifecycle — from newsworthiness assessment through drafting, legal review, and distribution planning. Produces AP-style, journalist-ready releases with inverted pyramid structure, proper datelines, sourced quotes, and boilerplate from company data. Covers all announcement types: product launches, funding rounds, partnerships, acquisitions, executive hires, milestones, research/reports, and crisis communications. Integrates with company profiles for branded output, spokesperson management, and approval workflows. Use this skill whenever the user asks to write a press release, draft a media announcement, create a news release, prepare a PR statement, write an announcement for the press, handle media communications, or produce journalist-ready content — even if they just say 'announce this' or 'we need to tell the media about X'."
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-local-skills.py (operator-run: ./scripts/sync.sh local-skills)
+  Source:      workspace-studio/.claude/skills/press-release/SKILL.md
+  This file is a mirror of its canonical source. A local edit here will be
+  overwritten by the next mirror run. Edit the source, then:
+    ./scripts/sync.sh local-skills
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Corporate Press Release
 

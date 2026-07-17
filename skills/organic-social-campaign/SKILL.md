@@ -2,6 +2,15 @@
 name: organic-social-campaign
 description: "Build organic B2B social media campaigns — editorial strategy, content pillars, editorial calendars, content matrices, executive & founder-led thought-leadership programs, employee advocacy, community-building and community-management playbooks, AEO/GEO (getting content cited by AI answer engines), and dark-funnel measurement specs. Interactive multi-phase process from discovery through governance. Person-led and community-anchored by default (company-page organic reach has collapsed; executives, employees, and communities carry distribution). Integrates with company profiles, messaging libraries, and brand data for consistent voice and positioning. Runs as an always-on program (default) or a time-boxed, story-driven campaign with a narrative arc. Use this skill whenever the user asks to build an organic social strategy, plan a time-boxed social media campaign, design a campaign narrative arc, sequence a multi-week advocacy or repositioning campaign, create a content calendar, plan social media content, develop editorial pillars, build a community-management or community-building playbook, set up employee advocacy or an executive/founder LinkedIn program, build a member advocacy or member activation kit for a trade association or membership org, advise on influencer use (archetypes, briefing, disclosure — advice only, never sourcing), optimize content to be cited by AI answer engines, plan organic LinkedIn or Reddit content, create a social content program, or anything involving 'what should we post and how do we build an audience' — even if they just say 'we need a social presence', 'help me plan our LinkedIn content', or 'we're running a campaign for the next six weeks.'"
 ---
+<!--
+  GENERATED FILE — DO NOT EDIT.
+  Owner:       scripts/sync-local-skills.py (operator-run: ./scripts/sync.sh local-skills)
+  Source:      workspace-studio/.claude/skills/organic-social-campaign/SKILL.md
+  This file is a mirror of its canonical source. A local edit here will be
+  overwritten by the next mirror run. Edit the source, then:
+    ./scripts/sync.sh local-skills
+  Hand-authored skill? Set `_local: true` in frontmatter instead.
+-->
 
 # Organic Social Campaign
 
