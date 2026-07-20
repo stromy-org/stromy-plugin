@@ -1,11 +1,11 @@
-<!-- since: 2026-06-01 --><!-- updated: 2026-07-15 prior-content corpus calibration -->
+<!-- since: 2026-06-01 --><!-- updated: 2026-07-16 mechanical self-check as a distinct, non-skippable step -->
 
 # Voice cascade integration
 
-Every copy-producing step in this skill runs a **draft → review → rewrite** pass
-against the org voice cascade. This is the dominant lever against AI-slop in
-social copy. The cascade is mentioned here as context — this skill never invokes
-another skill.
+Every copy-producing step in this skill runs a **draft → review → rewrite →
+verify** pass against the org voice cascade. This is the dominant lever against
+AI-slop in social copy. The cascade is mentioned here as context — this skill
+never invokes another skill.
 
 ## The two layers
 
@@ -26,7 +26,10 @@ supplies prior posts or content — including partner/influencer content they
 **endorse** — derive or calibrate the working voice profile from that corpus
 *before* drafting. This is a standing method step, not a per-engagement
 improvisation: a voice profile written from a brand adjective list will not match
-what the audience already recognises as the client.
+what the audience already recognises as the client. It is also the primary
+voice source in the skill's **Narrowed-intake mode** (Phase 1 Step 2), where a
+full voice questionnaire isn't realistic — the corpus does the work a
+heavyweight intake pass would otherwise do.
 
 Read the corpus for:
 
@@ -79,7 +82,24 @@ never relax L1).
 2. **Draft.** Write the copy (Phase 5 sample copy, Phase 8 hooks/captions/CTAs).
 3. **Self-review.** Check the draft against the combined ruleset — flag every
    violation explicitly before rewriting.
-4. **Rewrite.** Revise until the draft passes. Only then present it to the user.
+4. **Rewrite.** Revise the draft until every flagged violation is fixed.
+5. **Mechanical self-check (non-skippable — run every time, no exceptions).**
+   Do not close the loop on an eyeballed re-read. Explicitly enumerate every L1
+   + L2 banned construction as a checklist and **count matches against the
+   final draft, one item at a time**:
+   - Count every em-dash in the draft. If em-dashes are banned (L1 default, or
+     an explicit L2 ban), the count must be **zero** — not "mostly clean," not
+     "just a couple." A single missed instance is a failed gate.
+   - Check each banned phrase / substring from `voice-extensions.json` and the
+     anti-slop checklist individually — do not scan for "the vibe of" a
+     banned phrase, check the literal string.
+   - Any nonzero count → **go back to step 4**, fix, and re-run this checklist.
+     Only present the copy to the user once every count is zero.
+
+   This step exists because a self-review that "feels" clean is not the same
+   check as a literal count: a run shipped dozens of em-dashes against an
+   explicit client ban because the review was read-through rather than
+   counted. Treat step 5 as a mechanical gate, not a second read of step 3.
 
 ## Where it applies in this skill
 
@@ -88,6 +108,7 @@ never relax L1).
 | Phase 5 | Sample post copy / concept hooks carried in calendar rows |
 | Phase 7 | The creative fields the agent fills on `posts.json` (`hook`, `body`, `thread_parts`, `cta`) |
 | Phase 8 | Per-edition captions, hooks, CTAs |
+| Phase 3 Step 6 | The assembled strategy document's prose (executive summary, pillar copy, distribution/arc narrative) — the client-facing artifact with the highest cost of a missed ban |
 
 ## Anti-slop quick checklist (always, even headless)
 
@@ -100,6 +121,9 @@ never relax L1).
 - Platform tone notes still apply — cross-check the relevant
   `references/platforms/<platform>.md` for channel-specific register.
 
+This checklist is the enumeration that step 5 above counts against — it is not
+a separate, optional pass.
+
 ## Fallback when the voice MCP is unreachable (headless / no network)
 
 If `voice://*` resources cannot be fetched:
@@ -108,5 +132,9 @@ If `voice://*` resources cannot be fetched:
 2. Apply the anti-slop quick checklist above as the L1 floor.
 3. `log()` the degradation ("voice L1 resources unreachable — applied L2 + inline
    checklist only") so the user knows the pass ran in fallback mode.
+
+The mechanical self-check (step 5) still runs in fallback mode — losing the L1
+MCP resource is not a reason to skip counting bans, since the anti-slop
+checklist and any L2 bans are still fully enumerable offline.
 
 Never fail the copy step on an unreachable voice MCP — degrade and log.

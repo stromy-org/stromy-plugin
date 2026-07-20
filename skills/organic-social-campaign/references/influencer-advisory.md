@@ -23,6 +23,14 @@ criteria so the client (or their agency) can select against them. This is an
 engagement boundary, not a capability gap: selection carries brand-safety and
 contractual risk that belongs with the people who can actually diligence it.
 
+**Selection is client/PM-owned — archetypes travel, names don't.** The
+client-facing deliverable ships archetypes + criteria + placeholders; when the
+client or a reviewing partner (agency PM) supplies named candidates, theirs
+govern the deliverable. If a separately-commissioned research shortlist exists,
+it stays an **advisory backup** in the working files — offered, never baked
+into the client deck uninvited, and set aside without protest when the
+client/PM picks differently.
+
 > **Never-fabricate.** Do not invent an influencer, a follower count, an audience
 > overlap figure, or a rate. Archetype bands below are **directional planning
 > aids**, not quotes for a named person.
