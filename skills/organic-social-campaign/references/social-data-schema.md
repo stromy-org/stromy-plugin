@@ -1,4 +1,4 @@
-<!-- since: 2026-06-01 --><!-- updated: 2026-07-15 campaign namespace + campaign.json -->
+<!-- since: 2026-06-01 --><!-- updated: 2026-07-16 co-owned enum + tie-break, gaps.md template, additive campaign.json fields, config.json campaign-agnostic rule -->
 
 # `social-media/*` shared data schema (v1.0)
 
@@ -14,6 +14,7 @@ Never repurpose or remove a documented key without bumping `schema_version`.
 ```
 {base}/social-media/
 ├── config.json                      # shared by BOTH modes and by paid-social-campaign
+├── claims-to-avoid.json             # banned claims/figures (optional; see strategy-document-template.md)
 ├── organic/                         # PROGRAM state (always-on — the default mode)
 │   ├── pillars.json
 │   ├── series.json
@@ -63,6 +64,23 @@ Platform, tracking, and compliance settings. Read by **both** skills.
 
 `content_generation` is **additive and optional**: `paid-social-campaign` ignores
 it. It is documented separately because it is large and Phase-8-specific.
+
+**`config.json` stays campaign-agnostic (directive).** Never embed a campaign's
+`account` (handle/ownership/owner_org/access_via) or attribution rules in this
+file, even for a client running exactly one campaign. Those fields live
+**exclusively** in the campaign manifest at `campaigns/<slug>/campaign.json` →
+`tracks[].account`. Two independent runs mixing campaign-specific account
+fields into `config.json` produced incompatible, hand-invented resolutions —
+this file's silence on the boundary was the root cause. `config.json`'s
+`platforms`/`utm`/`hashtags`/`compliance` are shared across every campaign and
+the always-on program; a campaign's account contract is not.
+
+## `claims-to-avoid.json`
+
+Banned claims and figures, loaded before drafting any evidence-bearing pillar.
+Full schema and usage: [strategy-document-template.md](strategy-document-template.md)
+§ `claimsToAvoid` schema. Optional and additive; absence means no known bans,
+not license to assume any claim is safe.
 
 ## `organic/pillars.json`
 
@@ -161,6 +179,7 @@ in the scope summary.
   "name": "Paper Is Not The Problem",
   "objective": "Shift procurement decision-makers from 'paper = waste' to 'paper = renewable'",
   "window": { "start": "2026-09-07", "end": "2026-11-01", "weeks": 8 },
+  "campaignInsight": "What's invisible feels clean — the audience never sees the digital side of the comparison, so the assumption is reasonable, not naive.",
   "tracks": [
     {
       "platform": "linkedin",
@@ -186,6 +205,24 @@ in the scope summary.
     }
   ],
   "arc": { "acts": [{ "n": 1, "name": "Disrupt the assumption" }] },
+  "priorWaves": [
+    {
+      "summary": "House-to-house print insert + newspaper ads, same evidence, three months prior",
+      "channel": "print",
+      "topically_related": true
+    }
+  ],
+  "counterArguments": [
+    {
+      "argument": "Independent ministry-commissioned research found digital infrastructure is a small share of national energy use",
+      "source": "Ministry-commissioned study, 2020 data, ICT-sector-wide scope",
+      "rebuttal": "Accurate for its own 2020, pre-AI-datacenter scope; growth curves since then are the open question, not the 2020 figure",
+      "publish_mandate": "pending"
+    }
+  ],
+  "openConsiderations": [
+    "Whether the retailer case study needs a domestic example alongside the international one"
+  ],
   "status": "planned"
 }
 ```
@@ -197,12 +234,16 @@ in the scope summary.
 | `name` | string | yes | human-readable campaign title |
 | `objective` | string | yes | the campaign's single business objective |
 | `window` | object | yes | `{start, end, weeks}` — normalized per **Window normalization** above |
+| `campaignInsight` | string | optional | the one-line core insight anchoring the frame (Evidence Discipline / strategy-document-template.md Chapter 1) |
 | `tracks[]` | object[] | yes | one entry per platform × audience — the account/amplification contract |
 | `tracks[].platform` | string | yes | platform slug (`linkedin`, `instagram`, …) |
 | `tracks[].audience_id` | string | yes | audience/ICP key this track speaks to |
 | `tracks[].account` | object | yes | **which account posts** — see the sub-table below |
 | `tracks[].amplification[]` | string[] | yes | one or more of `organic` \| `paid-boost` \| `influencer-seeded` — **what carries reach** |
 | `arc` | object | optional | summary of the Phase 3 narrative arc (`acts[]`); full arc lives in the deliverable |
+| `priorWaves[]` | object[] | optional | the Phase 2 prior-wave inventory — `{summary, channel, topically_related}` per wave (see [campaign-narrative-arc.md](campaign-narrative-arc.md) § Inventory method); excluded candidates may be listed with `topically_related: false` so the exclusion is traceable |
+| `counterArguments[]` | object[] | optional | adversarial claims surfaced by Evidence Discipline — `{argument, source, rebuttal, publish_mandate}`, `publish_mandate` one of `pending` \| `approved` \| `declined` |
+| `openConsiderations[]` | string[] | optional | unresolved strategic questions distinct from the operational gaps ledger — things the strategy itself hasn't decided yet, not missing input data |
 | `status` | string | yes | `planned` \| `live` \| `closed` — see **Status** below |
 | `run_mode` | string | optional | `"internal-draft"` when the run is a draft on unverified data |
 
@@ -211,24 +252,38 @@ in the scope summary.
 | Key | Type | Required | Notes |
 |-----|------|----------|-------|
 | `handle` | string | yes | the posting handle (`@kvgo`) |
-| `ownership` | string | yes | `owned` (the client's own channel) \| `borrowed` (a **third party's** channel the client posts onto) |
-| `owner_org` | string | yes | who owns the account — for `owned`, the client; for `borrowed`, the third party |
+| `ownership` | string | yes | `owned` (the client's own channel) \| `borrowed` (a **third party's** channel the client posts onto) \| `co-owned` (multi-party governance — e.g. a joint sector initiative with no single controlling party) |
+| `owner_org` | string | yes | who owns the account — for `owned`, the client; for `borrowed`, the third party; for `co-owned`, the governing coalition |
 | `access_via` | string | yes | the **named person** who actually has posting access. Never assume access exists because the relationship does. |
 
-**Borrowed-account semantics.** A `borrowed` account is not a cosmetic label — it
-changes strategy structure three ways: (1) channel-access confirmation becomes a
-tracked intake item (access runs through a named human, and that human is a
-single point of failure); (2) Phase 3 MUST capture **co-branding/attribution
-rules** — whose brand fronts the post, how the client is credited, who approves;
-(3) the audience is the *owner's* audience, not the client's, so voice and
-follower expectations follow the owner's channel, not the client's brand.
+**Ownership tie-break rule.** When ownership is ambiguous (public reporting
+describes the account as a joint initiative but formal governance/access has
+not been confirmed), **default to `borrowed`** — the stricter contract, which
+forces the co-branding/attribution and access confirmation steps below.
+Relaxing to `owned` (or confirming `co-owned`) is a **confirmable correction**
+once governance is verified — never the reverse. Treating an ambiguous account
+as `owned` by default is how two independent sessions produced incompatible
+resolutions for the same account.
+
+**Borrowed/co-owned-account semantics.** A `borrowed` or `co-owned` account is
+not a cosmetic label — it changes strategy structure three ways: (1)
+channel-access confirmation becomes a tracked intake item (access runs through
+a named human, and that human is a single point of failure); (2) Phase 3 MUST
+capture **co-branding/attribution rules** — whose brand fronts the post, how
+the client is credited, who approves (for `co-owned`, **every** governing
+party signs off, not just the client); (3) the audience is the *owner's*
+audience, not the client's, so voice and follower expectations follow the
+owner's channel, not the client's brand.
 
 **Amplification semantics.** When **any** track's `amplification` is non-`organic`,
 the Phase 3 strategy deliverable MUST include a boost-strategy section (budget
 class, boost triggers, expectation-setting for a cold/low-reach account). A
 paid-first track is strategy *structure*, not an advisory afterthought — the
 common real case is a B2C track where organic reach is realistically ~zero and
-boost plus influencer seeding carry the whole distribution.
+boost plus influencer seeding carry the whole distribution. When the account is
+also dormant/cold, sequence per the **revival ladder** in
+[campaign-narrative-arc.md](campaign-narrative-arc.md) § Dormant/borrowed-account
+revival ladder — amplification order is not optional once a track is cold.
 
 ### Status
 
@@ -253,11 +308,17 @@ never a placeholder or invented value).
 |---|---|
 | Field | `run_mode: "internal-draft"` — optional; **absent** means a normal verified run |
 | Publish interlock | `status` may move to `live` **only** when `run_mode` is absent. Clearing it requires a verified re-run of the affected phases, not an edit to the field |
-| Ledger location | `gaps.md`, written **alongside the run's outputs** (campaign mode: beside the campaign's deliverables; program mode: beside the program's). It is not a JSON schema file — it is an operator-facing checklist |
-| Ledger content | one entry per unverified claim, person, asset, right, or channel fact the run leaned on; each states **what would verify it** and **who owns the answer** |
+| Ledger location | `gaps.md`, written **alongside the run's outputs** (campaign mode: beside the campaign's deliverables; program mode: beside the program's) |
+| Ledger structure | **Not an invented-per-run shape.** `gaps.md` follows the shared structure in [strategy-document-template.md](strategy-document-template.md) § Validation appendix: a 🔴/🟠/🟡 severity key; categories (people, channels, evidence, prior-wave, voice, assets, measurement); 4-column rows (`# \| topic \| what's unresolved \| what's needed`); a ranked-for-review agenda (rows sorted by severity, presented first); and a running change log of what closed and when |
 | Ledger lifecycle | entries close individually as verification lands; the run stays `internal-draft` until **every load-bearing** entry is closed |
-| Output labeling | every deliverable watermarked `DRAFT — INTERNAL / NIET PUBLICEREN` with a `-DRAFT` filename suffix |
+| Output labeling | every deliverable watermarked `DRAFT — INTERNAL / DO NOT DISTRIBUTE` with a `-DRAFT` filename suffix |
 | Blocked phases | Phase 7 freeze and Phase 8 generation — no `posts.json` is written and `validate_posts` is not run on draft data |
+
+Two runs inventing incompatible `gaps.md` shapes (different severity keys,
+different categories, no ranked agenda) produce an artifact the next session
+can't read without re-deriving its structure — the shared structure above is
+mandatory precisely so a returning reviewer, or a different session, can pick
+up any client's `gaps.md` without relearning its shape.
 
 Clearing `run_mode` is therefore a **re-run**, not a field edit: flipping the key
 without re-deriving the content from verified data is exactly the silent

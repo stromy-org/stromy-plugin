@@ -160,6 +160,22 @@ Before writing the arc, inventory:
 
 For each: **what did that wave assert, to whom, and what did it leave unsaid?**
 
+**Record channel and format, not just the assertion.** A prior wave that ran
+through a print insert or a house-to-house mailer is a different differentiation
+problem than one that ran on the same social platform this campaign targets —
+the format mismatch itself is available as a "new surface" angle, and it
+changes how much work the *content* angle has to do on top of it. Recording
+each wave's channel and format alongside its assertion is what makes that
+distinction visible instead of assumed.
+
+**A shared channel or partner is not a shared topic.** Two candidates can share
+a channel or a partner without being the same prior wave — e.g. a partner's
+unrelated recruitment or careers push shares an account with this campaign's
+sustainability repositioning but shares no topic. Verify topical relevance
+before counting a candidate as a prior wave, and note excluded candidates
+explicitly ("X ran on the same account but on an unrelated topic — not
+counted") so a reviewer can see the inventory was deliberate, not incomplete.
+
 ### The "different angle, not copy-paste" test
 
 For every act, answer in one line: *what has this audience already heard, and
@@ -223,6 +239,42 @@ What the mechanics teach:
 influencers in a peak plan must be real people/orgs from client data — or the
 moment stays org-level and unaddressed. Do not invent participants.
 
+## Dormant/borrowed-account revival ladder
+
+A common track shape: the account that carries a B2C (or otherwise
+lower-priority) track is dormant, cold, or borrowed from a partner who hasn't
+posted in a long time. Treating that track's amplification like a healthy
+account's — organic and paid running together from day one — wastes budget on
+a channel with no one watching yet. Sequence it as a **ladder**, strictly in
+order:
+
+1. **Organic first.** Post to show signs of life. The goal is *presence*, not
+   reach — do not promise stakeholders a reach number in this step.
+2. **Paid boost, once the account is breathing.** Only after organic content is
+   landing (posting cadence holding, some engagement above the dead-account
+   floor) does paid amplification start. Boosting a still-silent account
+   spends budget amplifying nothing.
+3. **One influencer/partner collaboration, last.** A single collaboration
+   layered on top of an already-revived, already-boosted account has an
+   audience to land in. The same collaboration layered onto a cold account (the
+   frequent real-world mistake) gets the collaborator's reach but nothing
+   sticks, because there is no account for that attention to convert into.
+
+**Account revival is itself a KPI**, tracked alongside — not instead of —
+community engagement, follower growth, and message reach (see Phase 6 Step 1).
+A cold-start account gives the campaign a legitimate framing: reviving a
+near-dead account from a very low floor is a real, measurable win independent
+of absolute follower counts.
+
+**Pin the baseline before the ladder starts.** Take a **dated, timestamped
+snapshot** of the account's state (follower count, last-post date, recent
+engagement) immediately before organic revival begins, and treat that snapshot
+— not a verbally reported number that will vary between stakeholders — as the
+KPI's zero point. A baseline that isn't pinned this way drifts: different
+people report different follower counts weeks apart, and the revival KPI loses
+its anchor exactly when it matters most (the go/no-go review at the end of the
+window).
+
 ## The reactive lane lives *inside* the arc
 
 Phase 5 reserves ~15–25% of capacity for reactive/newsjacking content. In
@@ -280,3 +332,11 @@ here. Act 1 does not ask anyone to do anything — it has not earned it yet.
 **Why this reads as one story:** week 4's B2B carousel and B2C reel carry the
 *same* belief shift in *different* dialects, in the same week — the cross-track
 echo. Neither is a repost of the other.
+
+**Track B revival (excerpt).** Track B's account was dormant before the
+campaign (last post over a year prior, near-zero engagement). The revival
+ladder ran: organic posts in weeks 1–2 to re-establish presence, paid boost
+starting week 3 once posts were landing, and the single influencer
+collaboration held back to week 7's peak rather than opening with it. A dated
+follower/engagement snapshot was taken the day before week 1 posting began and
+used as the sole revival-KPI baseline throughout the campaign.
