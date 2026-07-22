@@ -1,6 +1,6 @@
 ---
 name: org-guide
-description: "Answer questions about the Stromy organization — sales pipelines, clients, deployment, infrastructure, products, skills, projects, company facts — grounded in the org's live repos via the org-atlas read tools. Use whenever someone asks "how does Stromy…", "what are the…", "which clients…", "where is…", or any org-knowledge / onboarding question. Routes the question to the right repo, reads the source live, and answers with citations. Never guesses."
+description: "Answer questions about the Stromy organization — sales pipelines, clients, deployment, infrastructure, products, skills, projects, company facts — grounded in the org's live repos via the org-atlas read tools. Use whenever someone asks \"how does Stromy…\", \"what are the…\", \"which clients…\", \"where is…\", or any org-knowledge / onboarding question. Routes the question to the right repo, reads the source live, and answers with citations. Never guesses."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

@@ -1,6 +1,6 @@
 ---
 name: nl-dossier-tracker
-description: "Deep intelligence brief on a single Dutch legislative dossier — current phase, full timeline, revealed-preference analysis (moties + votes), EU forcing function, and a transparent passage forecast (likelihood band + confidence qualifier + decisive variable + explicit assumptions + scenario forks + base rate), framed as a forecast, never asserted as fact, per evidence-rules.md §5 (as amended 2026-07-03). Use for "dossier tracker", "bill status", "will it pass", "passage signals", "dossier {number}", "wet {name}", "wetsvoorstel", "TK dossier", "legislative dossier", "bill outlook"."
+description: "Deep intelligence brief on a single Dutch legislative dossier — current phase, full timeline, revealed-preference analysis (moties + votes), EU forcing function, and a transparent passage forecast (likelihood band + confidence qualifier + decisive variable + explicit assumptions + scenario forks + base rate), framed as a forecast, never asserted as fact, per evidence-rules.md §5 (as amended 2026-07-03). Use for \"dossier tracker\", \"bill status\", \"will it pass\", \"passage signals\", \"dossier {number}\", \"wet {name}\", \"wetsvoorstel\", \"TK dossier\", \"legislative dossier\", \"bill outlook\"."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
