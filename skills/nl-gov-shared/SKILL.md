@@ -1,29 +1,29 @@
 ---
-name: nl-evidence-grounding
-description: "Fact-check a Dutch policy claim or numeric assertion against the official record — triangulating CBS statistics, Rijksfinanciën budget data (phase-labelled OWB/O1/O2/JV), kamerstukken framing, and Rechtspraak rulings — into a source-cited Evidence Dossier with a falsifiable restatement, a source-independence table, a fixed-vocabulary triangulation verdict, a causation audit, and a debate-connect trace (toezegging → budget trajectory → CBS realisation → parliamentary framing). Use this skill whenever the user asks "is this claim true", wants to fact-check a minister's statement or a stated figure, wants to ground a numeric claim in the official record, asks "what does CBS say about X", wants to verify the minister's numbers, or wants a beleidsdoorlichting-style evidence check on a specific assertion. Do NOT use for: tracking a pledge's delivery status over time or a said-vs-done ledger across a frozen, bounded commitment corpus (→ `nl-accountability`); adversarial angle-hunting or contradiction-mining across an entire topic for roundtable angles (→ `nl-tensions`); a comprehensive topic or policy landscape survey (→ `nl-policy-legislative-landscape`). This skill grounds one bounded claim, or a small batch of 1-5 claims — it is a targeted fact-check, not a monitoring stream."
+name: nl-gov-shared
+description: "References hub for the Dutch government data skill family (nl-gov-data, nl-tensions, nl-accountability, nl-eu-transposition, nl-dossier-tracker, nl-policy-legislative-landscape, nl-parliamentary-positioning, nl-issue-framing). Not invoked directly — exists to host canonical specs (portal docs, tool reference, output contract, evidence rules, doctrine, absence-confidence, domain packs) cited by all sibling skills."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
   Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
-  Source:      MCPs/nl-gov-data/skills/nl-evidence-grounding/SKILL.md
+  Source:      MCPs/nl-gov-data/skills/nl-gov-shared/SKILL.md
   This workflow pushes DIRECT to this repo's main — a local edit here will be
   overwritten or rejected non-fast-forward. Edit the source, push, then:
     gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
   Hand-authored skill? Set `_local: true` in frontmatter instead.
 -->
 
-# Evidence grounding (MCP-hosted skill)
+# nl-gov-shared (MCP-hosted skill)
 
 This skill's full instructions are hosted on the `nl-gov-data` MCP server. Do not hardcode workflow logic locally — always fetch the live version from the MCP.
 
 ## Loading instructions
 
 1. Read the main skill instructions:
-   → call the `fs_read` tool on the `nl-gov-data` MCP with `path="skills/nl-evidence-grounding/SKILL.md"`.
+   → call the `fs_read` tool on the `nl-gov-data` MCP with `path="skills/nl-gov-shared/SKILL.md"`.
 
 2. Discover reference files (and any other skill assets), then read on demand:
-   → call `fs_list` with `path="skills/nl-evidence-grounding"` (and `path="skills/nl-evidence-grounding/references"`),
-   → call `fs_read` with `path="skills/nl-evidence-grounding/references/<file>"`.
+   → call `fs_list` with `path="skills/nl-gov-shared"` (and `path="skills/nl-gov-shared/references"`),
+   → call `fs_read` with `path="skills/nl-gov-shared/references/<file>"`.
 
 Follow the instructions returned by the MCP exactly.
 
