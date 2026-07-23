@@ -307,6 +307,28 @@ For type-specific guidance (what to emphasize for product launches vs. funding v
 - [ ] Market-sensitive timing coordinated with IR (if applicable)
 - [ ] Embargo terms documented (if applicable)
 
+**Fact-verification gate (non-skippable close-out — `research://verification-gate`).**
+The "All claims traced to fact pack" checkbox above is not a self-report — enforce
+it mechanically before the release is marked ready (read the L1 resource when the
+connector is present:
+`ReadMcpResourceTool(server="stromy-format", uri="research://verification-gate")`):
+
+- **(a) Recompute every derived number** in the release (a percentage, ratio, growth
+  figure, or delta) from its stated inputs and flag any mismatch.
+- **(b) Resolve every citation and third-party claim** (analyst quote, study, market
+  figure) to a real, findable source via the capability-map path (attended:
+  WebSearch / `nl-gov-data` / confirmed `research-apify` / attended browser;
+  unattended: WebSearch → STOP-and-surface if no free path exists). A real citation
+  with an unreachable primary softens + flags "unverified against primary"; contested
+  figures across sources soften to a directional statement + flag — neither hard-blocks.
+- **(c) Trace every non-obvious claim** to the fact pack or a source (cite-or-hedge);
+  flag unsourced assertions.
+- **Blocking rule:** an **unresolved citation** or an **unreconciled arithmetic
+  mismatch** means the release is **NOT marked ready** — fix the claim (replace/soften)
+  or ask; never ship on a self-report. Fold the digest
+  (`{claims, unresolved_citations, recomputed_mismatches}`) into the pre-publish
+  digest this skill already presents (Research §).
+
 ### Phase 7 — Distribution Planning
 
 Recommend a distribution approach based on announcement type and classification. See [distribution-guide.md](references/distribution-guide.md) for the full decision tree.
