@@ -404,7 +404,7 @@ Brand data is resolved from `companies/{client_slug}/brand_context.json` (the do
 
 - **`document`** section → DOCX margins, headers, footers, heading colors
 - **`presentation`** section → PPTX slide margins, aspect ratio
-- **`video`** section → Remotion resolution, fps
+- **`video`** section → `format-video-hd`/`render_video` resolution, fps
 
 If no company data exists, accept brand parameters as manual inputs:
 - **Primary color** — used for headings, cover page accents

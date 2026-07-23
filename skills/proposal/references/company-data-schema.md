@@ -256,7 +256,7 @@ Unified visual identity covering all output formats.
 | `contentMargin` | string | Content area margin |
 | `aspectRatio` | string | Aspect ratio (e.g., "16:9", "4:3") |
 
-### `video` (optional — Remotion-specific)
+### `video` (optional — `format-video-hd`/`render_video`)
 
 | Field | Type | Description |
 |-------|------|-------------|
