@@ -63,7 +63,14 @@ as generic architecture, not a client instance: two audiences sharing one frame
 is one shape of the matrix; three audiences with divergent frames is another;
 a single-audience program with three pillars collapses the matrix to one row.
 Never hardcode "B2B/B2C" as if it were structural — state the client's actual
-audiences and let the matrix take whatever shape they require.
+audiences and let the matrix take whatever shape they require. **State each
+audience using the exact label already defined in client-data or the
+campaign manifest** (`messaging/audiences.json`, or the campaign manifest's
+resolved `tracks[].audience_id` definition) — never a paraphrase or a
+generic stand-in ("decision-makers", "consumers") invented while drafting;
+a reviewer with their own defined audience language reads a paraphrase as a
+fidelity gap, not a wording nit. Applies identically to the deck follow-on —
+see [strategy-deck-stage1.md](strategy-deck-stage1.md).
 
 ### Chapter 3 — Core messages per pillar
 

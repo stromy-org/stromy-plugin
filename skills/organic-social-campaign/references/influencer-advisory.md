@@ -84,6 +84,23 @@ schedulable modes; gifting cannot be timed and should not be load-bearing.
    [campaign-narrative-arc.md](campaign-narrative-arc.md) § Differentiation vs
    prior waves).
 
+## Presenting a candidate on a client-facing slide/page
+
+When an archetype recommendation, or a client/PM-supplied named creator,
+appears on a client-facing deck or document, use a consistent card: **name/
+handle**, **follower count** (verified and dated — never a guess),
+**archetype fit**, **content angle** (the concept direction this creator
+would run), and **tone** — the creator's actual communication register
+(e.g. "warm and informal", "dry and expert", "energetic and youth-facing"),
+sourced from the client/PM's own description or a documented profile
+review, **never invented from the follower count or a stereotype of the
+archetype**. Tone is a distinct field from archetype: two nano-tier
+creators in the same niche can carry very different tones, and the concept
+brief's creative-freedom envelope below should reflect the one actually
+being used, not an assumed one. See
+[strategy-deck-stage1.md](strategy-deck-stage1.md) for where this card
+renders in the deck spine.
+
 ## Concept brief template
 
 The brief the client hands a selected influencer. **Recommend the shape; do not

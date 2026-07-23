@@ -2,6 +2,23 @@
 
 > **Video-first (2026).** Bias the mix toward video: short-form vertical for discovery, long-form for depth and credibility. Video out-reaches static formats, and long-form is resurging as scroll fatigue grows (creator-driven long-form reportedly earns ~10× the views and ~3× the save rate of short clips, and a majority of buyers say it makes a brand feel more credible). Carousels remain strong for saves and dwell but are no longer the unquestioned reach king. Creator/UGC-style framing — real faces, real stakes — beats polished corporate talk, including **external B2B creator / industry-voice partnerships**, now a legitimate organic play. See `strategy-foundations.md`, Shift 4.
 
+## Declaring content formats per track (strategy document + deck)
+
+When the strategy document or its slide follow-on presents the audience ×
+pillar architecture, state **concrete format examples per track** rather
+than leaving formats implicit in pillar-level `format_affinity` alone — a
+reviewer reading an N-track strategy artifact needs to see, at the overview
+level and again at each track's own opener, which few formats will actually
+carry that track (e.g. one track running short-form video + carousels +
+creator collaborations, another running document posts + carousels +
+expert-quote cards). Source these from the campaign's own format
+definitions — `campaign.json` → `tracks[].contentFormats` (see
+[social-data-schema.md](social-data-schema.md)) when set, else the union of
+the track's pillars' `format_affinity` (`organic/pillars.json`), else ask
+the client — **never invent examples that merely sound plausible for the
+industry**. This is a default deck element, not a review-round add-on: see
+[strategy-deck-stage1.md](strategy-deck-stage1.md) for where it renders.
+
 ## Format Definitions
 
 ### Text Post

@@ -632,6 +632,7 @@ Load these as needed: do not read all at once.
 |------|-------------|
 | [strategy-foundations.md](references/strategy-foundations.md) | **Read once at the start.** The 2026 posture (person-led, citable, community-anchored, video-first, dark-funnel) and the evidence behind every phase. |
 | [strategy-document-template.md](references/strategy-document-template.md) | Phase 3 Step 6: assembling the client-facing strategy document. Generic chapter list, evidence-discipline mechanics, `claimsToAvoid` schema, validation-ledger + gaps.md formats, reference-list convention. |
+| [strategy-deck-stage1.md](references/strategy-deck-stage1.md) | Output Format Production / Phase 3 Step 6 slide follow-on: the Stage-1 strategy-deck production process — reusable slide spine (incl. per-track content formats + creator tone), source-attribution discipline, render path, and review loop. |
 | [linkedin.md](references/platforms/linkedin.md) | When LinkedIn is a selected platform. Page optimization, analytics, formats, posting guidance. |
 | [meta.md](references/platforms/meta.md) | When Meta/Instagram is a selected platform. Page setup, content formats, algorithm notes. |
 | [twitter-x.md](references/platforms/twitter-x.md) | When X/Twitter is a selected platform. B2B usage patterns, formats, threads. |
@@ -661,7 +662,7 @@ This skill owns organic social campaign architecture: editorial strategy, conten
 
 **Default sequencing: DOCX first.** The Phase 3 Step 6 strategy document always ships as DOCX first; a PPTX/slide version is an optional follow-on once the DOCX is approved: never generate the deck before the document is signed off.
 
-**Deck density budget.** For the slide follow-on: set a slide-count target up front (~15-20), one idea per slide, at most 5 supporting lines or one visual/table; anything needing a paragraph moves to per-slide speaker notes and the content plan. Internal provenance legends or source tags never appear on client-facing slides: dense supporting content and sourcing live in the speaker notes. Full budget: [strategy-document-template.md](references/strategy-document-template.md) § Deck density budget.
+**Deck density budget.** For the slide follow-on: set a slide-count target up front (~15-20), one idea per slide, at most 5 supporting lines or one visual/table; anything needing a paragraph moves to per-slide speaker notes and the content plan. Internal provenance legends or source tags never appear on client-facing slides: dense supporting content and sourcing live in the speaker notes. Full budget: [strategy-document-template.md](references/strategy-document-template.md) § Deck density budget. Full production process (reusable slide spine, render path, review loop): [strategy-deck-stage1.md](references/strategy-deck-stage1.md).
 
 | Output | Routed renderer / skill | Recommended For |
 |--------|-------------------------|-----------------|
@@ -671,9 +672,7 @@ This skill owns organic social campaign architecture: editorial strategy, conten
 | XLSX | `format-xlsx` | Editorial calendars, content matrices, KPI dashboards |
 **Default**: Produce markdown first; route prose through `format-prepare-document` when formatted output is wanted, keeping XLSX direct for calendars and matrices.
 
-**Brand context to carry forward**: brand location `{base}/brand_context.json`; heading color from `colors.primary`, body font from `typography.body`; logo from `{base}/logos/`; include resolved `expression` (if present) and `deliverable_genre: "organic-social"` in the envelope for downstream render direction.
-
-**Diagram integration**: funnel/flow diagrams (content funnel, campaign architecture, editorial workflow) can be generated using the `diagram` skill for branded visual output.
+**Brand context to carry forward**: brand location `{base}/brand_context.json`; heading color from `colors.primary`, body font from `typography.body`; logo from `{base}/logos/`; include resolved `expression` (if present) and `deliverable_genre: "organic-social"` in the envelope for downstream render direction. **Diagram integration**: funnel/flow diagrams (content funnel, campaign architecture, editorial workflow) can be generated using the `diagram` skill for branded visual output.
 
 ## Output Location
 
