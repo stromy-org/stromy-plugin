@@ -312,6 +312,27 @@ Quick validation summary:
 
 Flag any criterion that fails and suggest fixes before finalizing.
 
+**Fact-verification gate (non-skippable close-out — `research://verification-gate`).**
+Proof points are evidence-bearing, so before the framework is marked ready run the
+mechanical recheck (read the L1 resource when the connector is present:
+`ReadMcpResourceTool(server="stromy-format", uri="research://verification-gate")`):
+
+- **(a) Recompute every derived number** in a proof point or core claim (a percentage,
+  ratio, growth figure, or delta) from its stated inputs and flag any mismatch.
+- **(b) Resolve every citation** backing a proof point (author/year/venue, analyst
+  ranking, study) to a real, findable source via the capability-map path (attended:
+  WebSearch / `nl-gov-data` / confirmed `research-apify` / attended browser;
+  unattended: WebSearch → STOP-and-surface if no free path exists). A real citation
+  with an unreachable primary softens + flags "unverified against primary"; contested
+  figures across sources soften to a directional statement + flag — neither hard-blocks.
+- **(c) Trace every non-obvious claim** to a source (cite-or-hedge); flag unsourced
+  proof points (this enforces the "Provable — 2 proof points" rule mechanically).
+- **Blocking rule:** an **unresolved citation** or an **unreconciled arithmetic
+  mismatch** means the framework is **NOT marked ready** — fix the claim (replace a
+  fabricated proof point, soften) or ask; never ship on a self-report. Carry the digest
+  (`{claims, unresolved_citations, recomputed_mismatches}`) into the unsourced-ledger
+  close-out that feeds `asset-feedback.unsourced_content`.
+
 **Step 2: Produce output**
 
 The primary output is a structured markdown document. After the content is finalized, keep that markdown as the canonical messaging artifact. Only if the user explicitly wants a rendered document should you route the signed-off envelope through `format-prepare-document`. See the Output Format Production section below.

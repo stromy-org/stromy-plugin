@@ -269,6 +269,18 @@ For detailed guidance on each section, see [sections.md](references/sections.md)
 
 Draft each section **in the deliverable canvas**, following the guidance in [sections.md](references/sections.md):
 
+> **Research before you draft (the research cascade — read from source, never embed).**
+> When a section needs facts you don't already have from client-data (a market
+> figure, a benchmark, a cited study), gather them *before* drafting — never
+> improvise a fact mid-draft. When the `stromy-format` connector is present, read
+> the L1 discipline: `ReadMcpResourceTool(server="stromy-format", uri="research://baseline")`,
+> `research://capability-map` (pick an attended vs unattended path), and
+> `research://fact-discipline` (cite-or-hedge; state the precise legislative/policy
+> stage and never imply a later one; flag forward-looking claims; **surface gaps —
+> never fabricate** a figure, date, quote, citation, or URL). Billed `research-apify`
+> runs only on an explicit/confirmed request. If no research path is available, say
+> so and do not fabricate.
+
 - **Pull from content library first** — reuse and adapt case studies, bios, and methodology descriptions before writing new content
 - **Substantiate every claim** — each assertion needs a proof point (case study reference, metric with source, certification)
 - **Maintain the unsourced ledger as you draft** — record each section's `basis` in an in-canvas ledger *when you write it* (not reconstructed at the end): `client_data` (every claim/bio traces to the overlay), `inferred` (extrapolated from real data), or `fabricated` (no client-data source). Any named person's bio/role with no `publicBio` source, or any claim with no proof point, is `fabricated` — which means you must revisit the empty-`people`/`credentials` guard (ask or omit). This ledger seeds `asset-feedback.unsourced_content` at close-out (Step 7).
@@ -344,6 +356,29 @@ Run the quality checklist. See [quality-gates.md](references/quality-gates.md) f
 | Visual consistency | Cover page present, TOC generated, heading styles consistent, page numbers present |
 | Formatting hygiene | All formatting via styles (no manual), no orphan headings, tables don't split badly |
 | Cross-references | All "see Section X" references point to actual sections; all appendix references valid |
+
+**Fact-verification gate (non-skippable close-out — `research://verification-gate`).**
+Before the proposal is marked ready, run the mechanical recheck (read the L1
+resource when the connector is present:
+`ReadMcpResourceTool(server="stromy-format", uri="research://verification-gate")`):
+
+- **(a) Recompute every derived number** — for each percentage, ratio, sum, or delta,
+  re-derive it from its stated inputs and flag any mismatch (a "52% less" that is
+  actually ~34% from a 102→67 pair is a mismatch).
+- **(b) Resolve every citation** — confirm each cited author/year/venue resolves to a
+  real, findable publication via the capability-map path (attended: WebSearch /
+  `nl-gov-data` / confirmed `research-apify` / attended browser; unattended:
+  WebSearch → STOP-and-surface if no free path exists). A real citation with an
+  unreachable/paywalled primary softens + flags "unverified against primary"; a real
+  citation with contested figures across sources softens to a directional statement +
+  flag — neither hard-blocks.
+- **(c) Trace every non-obvious claim** to a source (cite-or-hedge); flag unsourced
+  assertions.
+- **Blocking rule:** an **unresolved citation** or an **unreconciled arithmetic
+  mismatch** means the proposal is **NOT marked ready** — fix the claim
+  (replace/soften) or ask the user; never ship on a self-report. Emit the digest
+  (`{claims, unresolved_citations, recomputed_mismatches}`) as part of the pre-publish
+  digest.
 
 ### Step 7 — Packaging
 
