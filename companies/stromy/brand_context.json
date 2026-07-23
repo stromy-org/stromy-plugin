@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "d7e57d0023118559651bad603b87553531e002ee1b7f4d05c0e9699fcc362c76",
+    "charterSha": "85f9e4945dbf49c5e60ca0e2fd28f3bfac44c5085ed51944f73aa6a6984bb4e1",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -536,7 +536,7 @@
               "desc": "the concentric dot-field breathes (subtle scale/opacity pulse); the indigo focal pulses gently at the centre"
             }
           ],
-          "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule — these are real approved decisions, not a silent drop). Bake/Remotion productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
+          "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule — these are real approved decisions, not a silent drop). Bake/render_video productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
         },
         "cssTokens": {
           "--motion-duration": "520ms",
