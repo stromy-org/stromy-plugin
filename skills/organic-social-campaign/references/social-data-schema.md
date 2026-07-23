@@ -185,21 +185,22 @@ in the scope summary.
       "platform": "linkedin",
       "audience_id": "b2b-procurement",
       "account": {
-        "handle": "@kvgo",
+        "handle": "@acme-federation",
         "ownership": "owned",
-        "owner_org": "KVGO",
-        "access_via": "Emma van Gelder"
+        "owner_org": "Acme Federation",
+        "access_via": "client marketing lead"
       },
-      "amplification": ["organic"]
+      "amplification": ["organic"],
+      "contentFormats": ["document posts", "carousels", "expert-quote cards"]
     },
     {
       "platform": "instagram",
       "audience_id": "b2c-awareness",
       "account": {
-        "handle": "@indruk.nu",
+        "handle": "@acme-community",
         "ownership": "borrowed",
-        "owner_org": "Indruk (sector education platform)",
-        "access_via": "Emma van Gelder"
+        "owner_org": "a partner community platform",
+        "access_via": "client marketing lead"
       },
       "amplification": ["paid-boost", "influencer-seeded"]
     }
@@ -240,6 +241,7 @@ in the scope summary.
 | `tracks[].audience_id` | string | yes | audience/ICP key this track speaks to |
 | `tracks[].account` | object | yes | **which account posts** — see the sub-table below |
 | `tracks[].amplification[]` | string[] | yes | one or more of `organic` \| `paid-boost` \| `influencer-seeded` — **what carries reach** |
+| `tracks[].contentFormats[]` | string[] | optional | 2–4 concrete format examples that carry this track (e.g. `["short-form video", "carousels", "creator collaborations"]`); rendered on the strategy document's/deck's N-track overview and each track's opener (see [content-formats.md](content-formats.md), [strategy-deck-stage1.md](strategy-deck-stage1.md)); absent → fall back to the union of the track's pillars' `format_affinity`, else ask the client — never invented |
 | `arc` | object | optional | summary of the Phase 3 narrative arc (`acts[]`); full arc lives in the deliverable |
 | `priorWaves[]` | object[] | optional | the Phase 2 prior-wave inventory — `{summary, channel, topically_related}` per wave (see [campaign-narrative-arc.md](campaign-narrative-arc.md) § Inventory method); excluded candidates may be listed with `topically_related: false` so the exclusion is traceable |
 | `counterArguments[]` | object[] | optional | adversarial claims surfaced by Evidence Discipline — `{argument, source, rebuttal, publish_mandate}`, `publish_mandate` one of `pending` \| `approved` \| `declined` |
@@ -251,7 +253,7 @@ in the scope summary.
 
 | Key | Type | Required | Notes |
 |-----|------|----------|-------|
-| `handle` | string | yes | the posting handle (`@kvgo`) |
+| `handle` | string | yes | the posting handle (`@acme-federation`) |
 | `ownership` | string | yes | `owned` (the client's own channel) \| `borrowed` (a **third party's** channel the client posts onto) \| `co-owned` (multi-party governance — e.g. a joint sector initiative with no single controlling party) |
 | `owner_org` | string | yes | who owns the account — for `owned`, the client; for `borrowed`, the third party; for `co-owned`, the governing coalition |
 | `access_via` | string | yes | the **named person** who actually has posting access. Never assume access exists because the relationship does. |
