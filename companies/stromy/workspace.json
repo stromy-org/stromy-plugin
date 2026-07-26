@@ -1,11 +1,44 @@
 {
-  "schemaVersion": 1,
-  "destination": { "tenant": "stromy" },
-  "taxonomy": [
-    { "key": "section", "label": "Section", "naming": "title" },
-    { "key": "workstream", "label": "Workstream", "naming": "kebab" },
-    { "key": "project", "label": "Project", "naming": "kebab" }
-  ],
-  "context_bundle": ["brand_context.json", "company_context.json"],
-  "manifest": { "enabled": true, "filename": "WORKSPACE.md" }
+  "schemaVersion": 3,
+  "destination": {
+    "tenant": "stromy",
+    "sharepoint": {
+      "site": "stromy.sharepoint.com:/sites/stromy-workspace",
+      "base_path": "",
+      "link_mode": "webUrl"
+    }
+  },
+  "structure": {
+    "levels": [
+      {
+        "key": "area",
+        "label": "Business area",
+        "naming": "title",
+        "required": true
+      },
+      {
+        "key": "project",
+        "label": "Project",
+        "naming": "title",
+        "required": false
+      }
+    ],
+    "stages": {
+      "intake": "01 Intake",
+      "working": "02 Working",
+      "deliverables": "03 Deliverables",
+      "reference": "04 Reference"
+    },
+    "default_stage": "working"
+  },
+  "memory": {
+    "enabled": true,
+    "index_filename": "WORKSPACE.md",
+    "events_dirname": "workspace-events",
+    "max_events_returned": 50
+  },
+  "context_bundle": [
+    "brand_context.json",
+    "company_context.json"
+  ]
 }
