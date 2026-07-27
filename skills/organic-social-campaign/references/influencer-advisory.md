@@ -67,6 +67,33 @@ defined segment, more followers is not better.
 For a campaign with a **peak moment**, paid posts and ambassadors are the
 schedulable modes; gifting cannot be timed and should not be load-bearing.
 
+## Timing & the production window
+
+- **The use-creators-or-not decision belongs in the content-plan stage — "the
+  sooner the better", never deferred to roll-out.** The client's
+  sourcing → negotiation → contracting chain sits on *their* critical path and
+  can take anywhere from days to weeks; it must **complete inside the
+  pre-launch window** (for a go-live in month N, contracting happens in month
+  N−1, in parallel with content-plan finalization).
+- **Our stage deliverable is the briefing + concept ideas** (concept directions
+  may sit in the content plan itself); the **creator makes the
+  publication-ready content** — that is the point of the lane. A creator slot
+  in the calendar is therefore never an in-house copy task.
+- If the chain cannot complete before go-live, fold that into the engagement's
+  **production-window feasibility gate**
+  ([content-plan-stage2.md](content-plan-stage2.md) §4): advise shifting
+  go-live rather than launching a track whose load-bearing amplification is
+  uncontracted.
+- **Format heuristic for message-led campaigns** (no product to show): prefer
+  **short video/reel** over a static image (a message needs a telling; an image
+  "does little") and over stories (too ephemeral, usually too short). Either
+  one creator × several reels or several creators × one reel each.
+- **Cross-post + boost pattern:** publish on **both** the creator's channel and
+  the campaign's own track account, and run paid boost **from the campaign
+  account**, so spend, targeting, and analytics stay on a surface the client
+  controls (and the collab content feeds the account-revival KPI when the
+  revival ladder is in play).
+
 ## Selection criteria (the client applies these)
 
 1. **Audience overlap with the ICP** — not follower count. Ask for audience

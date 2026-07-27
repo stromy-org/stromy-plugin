@@ -2,6 +2,13 @@
 
 ## Calendar Structure
 
+> **Stage boundary (client engagements).** When the calendar is a stage-2 client
+> deliverable (content plan), it fixes **everything needed to produce each post
+> except the post itself** — schedule, format, key-message allocation, cited
+> data, concept, producer. Publication-ready copy (captions/hooks/CTAs) is
+> stage-3 roll-out work, generated week-by-week after calendar approval. Full
+> process: [content-plan-stage2.md](content-plan-stage2.md).
+
 ### Required Columns
 
 | Column | Description | Example Values |
@@ -13,7 +20,10 @@
 | **Pillar** | Content pillar this maps to | Thought Leadership, Proof Points |
 | **Series** | Recurring series name (if applicable) | "Tuesday Insights", "Client Spotlight" |
 | **Concept** | Working title or brief description | "Why most stakeholder maps fail" |
-| **Format** | Content format | Carousel, Text post, Video, Poll |
+| **Format** | Content format | Carousel, Text post, Video, Poll, Reel |
+| **Key messages** | Which of the week's pillar key messages this post carries (divide the week's messages over its posts — every message lands somewhere, no post carries all) | "KM-2, KM-5" or the message lines verbatim |
+| **Data/evidence** | The specific figures/data the post will cite, source-mapped to the research library | "38% store-visit lift (source PP-12)" |
+| **Producer** | Who makes the final asset: in-house, a creator, or a production partner | Us / Creator / Studio |
 | **CTA** | Call to action | Comment, Visit link, Register, DM |
 | **Owner** | Person responsible for creation | JS, MK, Brand team |
 | **UTM Tags** | Tracking parameters | utm_source=linkedin&utm_medium=organic&utm_campaign=q2-thought-leadership |
