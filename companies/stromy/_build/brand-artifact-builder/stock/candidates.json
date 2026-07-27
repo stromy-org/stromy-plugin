@@ -1,0 +1,109 @@
+{
+  "conductor-gesture": {
+    "query": "orchestra-conductor",
+    "note": "ENRICH — currently thin (2 imgs). The signature theme.",
+    "urls": [
+      ["photo-1551696785-927d4ac2d35b", "Samuel Sianipar"],
+      ["photo-1519683109079-d5f539e1542f", "Manuel Nägeli"],
+      ["photo-1488630228244-bcdf33562a43", "Arindam Mahanta"],
+      ["photo-1519682718457-c82ce8296645", "Manuel Nägeli"],
+      ["photo-1571299803548-831c31e293e7", "Pencari Angin"],
+      ["photo-1617544518238-492c0c419a6d", "Andrea Zanenga"],
+      ["photo-1745328599617-5c9796ca4d71", "Kazuo ota"],
+      ["photo-1600443446566-c8a2e34c779b", "Kazuo ota"],
+      ["photo-1602694251352-c8040a589547", "Kazuo ota"],
+      ["photo-1730098482564-259a89064e47", "Kazuo ota"],
+      ["photo-1699521376923-b07550a613f0", "Alex Cooper"],
+      ["photo-1763414102826-309fcdae266a", "Pierre Goiffon"],
+      ["photo-1699521376652-a5666c8552fb", "Alex Cooper"]
+    ]
+  },
+  "instruments-detail": {
+    "query": "violin-cello-closeup",
+    "note": "ENRICH — instrument/player close detail.",
+    "urls": [
+      ["photo-1739290734126-1800c93e82a3", "Karina Syrotiuk"],
+      ["photo-1585934269136-703ed76b133b", "Sérgio André"],
+      ["photo-1724859080569-9f284e5974f4", "Miguel Lindo"],
+      ["photo-1678830789557-a6e187fd397f", "ENG-HS"],
+      ["photo-1492563817904-5f1dc687974f", "Johanna Vogt"],
+      ["photo-1624451890723-f703369672e5", "Joachim Schnürle"],
+      ["photo-1667680620015-040582480d3c", "Haim Charbit"],
+      ["photo-1617659135133-147c170c93f2", "Jairo Zambrano"],
+      ["photo-1506423456648-c11ccb27338d", "Ira Selendripity"],
+      ["photo-1585425189078-427f27d0c075", "Maksym Kaharlytskyi"],
+      ["photo-1643666805740-f2f9e0600a4e", "Megs Harrison"],
+      ["photo-1649919254591-244eb807d5e8", "Samantha Beaty"],
+      ["photo-1724145353564-2d454235bd97", "Thomas Kinto"]
+    ]
+  },
+  "hall-architecture": {
+    "query": "concert-hall-interior",
+    "note": "ENRICH — halls, architecture, wide from-above.",
+    "urls": [
+      ["photo-1675327161957-929e3faa37cc", "D5 Render"],
+      ["photo-1719753457285-d61d11305aff", "Robert Katzki"],
+      ["photo-1509782642997-4befdc4b21c9", "Rodrigo Ruiz"],
+      ["photo-1764643588158-79ac8406f87b", "Humberto Arellano"],
+      ["photo-1631552256073-6556ced1cf15", "Elena Rabkina"],
+      ["photo-1738958047435-3818ca63ee5e", "Monique Caraballo"],
+      ["photo-1738958047425-dd5dbefa2f78", "Monique Caraballo"],
+      ["photo-1646905103565-5c8348075920", "Goetheanum"],
+      ["photo-1765308767818-1e7fd17c8067", "Belov Sergey"],
+      ["photo-1740432276173-7a0e546e26cf", "Evgeniya Pron"],
+      ["photo-1722321974501-059dff03e970", "Evan Jeung"]
+    ]
+  },
+  "score-abstract": {
+    "query": "sound-wave-abstract",
+    "note": "ENRICH — waveforms, abstract, texture (backgrounds).",
+    "urls": [
+      ["photo-1617994452722-4145e196248b", "Pawel Czerwinski"],
+      ["photo-1655138629937-0f21671e1d1f", "Susan Wilkinson"],
+      ["photo-1729420199992-c85770a255fb", "Pawel Czerwinski"],
+      ["photo-1686519093104-3140c6dcf284", "Martin Martz"],
+      ["photo-1652909865322-1515df3a2efd", "Susan Wilkinson"],
+      ["photo-1663810473454-452e4b63117b", "Susan Wilkinson"],
+      ["photo-1739056352870-17df21abfab8", "Logan Voss"],
+      ["photo-1698430484131-efc9f5ccba1a", "Milad Fakurian"],
+      ["photo-1668361293649-2abf3f7a132c", "abhijeet gourav"],
+      ["photo-1543187018-21e461e7538e", "Rostyslav Savchyn"],
+      ["photo-1687618084591-8523977ae737", "Ruido 98"],
+      ["photo-1698429894891-c5a9e538072d", "Milad Fakurian"]
+    ]
+  },
+  "audience-reception": {
+    "query": "concert-audience",
+    "note": "NEW THEME — audience, applause, reception (closing/section warmth).",
+    "urls": [
+      ["photo-1459749411175-04bf5292ceea", "Nainoa Shizuru"],
+      ["photo-1470229722913-7c0e2dbbafd3", "Yvette de Wit"],
+      ["photo-1429962714451-bb934ecdc4ec", "Anthony DELANOIX"],
+      ["photo-1501386761578-eac5c94b800a", "Nicholas Green"],
+      ["photo-1540039155733-5bb30b53aa14", "ActionVance"],
+      ["photo-1533174072545-7a4b6ad7a6c3", "Danny Howe"],
+      ["photo-1524368535928-5b5e00ddc76b", "Vishnu R Nair"],
+      ["photo-1522158637959-30385a09e0da", "Rachel Coyne"],
+      ["photo-1565035010268-a3816f98589a", "Tijs van Leur"],
+      ["photo-1509824227185-9c5a01ceba0d", "Jordon Conner"],
+      ["photo-1435686858161-59da32dfd4b4", "davide ragusa"],
+      ["photo-1603190287605-e6ade32fa852", "Tijs van Leur"]
+    ]
+  },
+  "rehearsal-backstage": {
+    "query": "orchestra-rehearsal",
+    "note": "NEW THEME — rehearsal, music stands, backstage, preparation (process/section).",
+    "urls": [
+      ["photo-1465847899084-d164df4dedc6", "Larisa Birta"],
+      ["photo-1590377894621-65093facaef0", "Rob Simmons"],
+      ["photo-1719753458800-c09cfb167ac5", "Robert Katzki"],
+      ["photo-1519412666065-94acb3f8838f", "Manuel Nägeli"],
+      ["photo-1613142659418-718b2ae6940d", "Lucas Alexander"],
+      ["photo-1567619822659-2094d3ebef04", "Julio Rionaldo"],
+      ["photo-1512053459797-38c3a066cabd", "Dolo Iglesias"],
+      ["photo-1519139270028-ab664cf42264", "Kael Bloom"],
+      ["photo-1611927264378-faced7a32de9", "Guy Basabose"],
+      ["photo-1745328597533-3df3e5db2dec", "Kazuo ota"]
+    ]
+  }
+}
