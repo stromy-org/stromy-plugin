@@ -49,6 +49,8 @@ above. Resolve it **overlay-first** (per `skill-data-loading.md` §2):
 
 > **Operator environment only.** The `client-data/clients/<slug>/` fallback path is only reachable inside the Workspace Studio checkout. Deployed plugins have no `client-data/` directory: if the `companies/` overlay is absent, **STOP**: do not fabricate brand data, do not default to a Stromy brand, and do not attempt to read `client-data/` paths.
 
+> **`{base}` is the INPUT root. Outputs go elsewhere.** In the Workspace Studio operator checkout, `{base}` = `client-data/clients/<slug>/`, which is **inputs-only** (durable client data: brand, `messaging/`, `voice/`, channel `config.json`). It must **never** receive campaign outputs. Campaign **outputs** (the `organic/*` data, `campaign.json`, calendar/posts freeze, rendered werkdocumenten) are project deliverables and persist to the **`projects` submodule** at `projects/<client>/<project>/campaigns/<campaign_slug>/`, never under `client-data/`. client-data CI (`scripts/check_no_project_outputs.py`) fails the build if an output-shaped file lands under `clients/`. In a *deployed plugin* there is no `client-data/` and no `projects/`: the `companies/` overlay is the client's own working repo and may hold both, so this input/output split matters specifically in the shared Workspace Studio checkout. Litmus test: would this file exist if we had never run the engagement? Yes → input (`{base}`); no, we produced it → output (`projects`).
+
 This skill is authored in Workspace Studio and synced into client plugin overlays (the
 same distribution model as `proposal`, `messaging-framework`, `press-release`).
 The plugin overlay is therefore the **primary, steady-state contract** (it is
@@ -454,14 +456,14 @@ For each content risk tier:
 
 ### Phase 5: Calendar & Execution Plan
 
-The calendar instantiates the strategy document's audience × narrative matrix into dated, owned rows: it never re-derives strategy from scratch.
+The calendar instantiates the strategy document's audience × narrative matrix into dated, owned rows: it never re-derives strategy from scratch. In a client engagement the calendar is itself the **stage-2 client deliverable — everything needed to produce each post except the post itself** (format, per-week key-message allocation, cited data, concept idea, producer); publication-ready copy stays in the roll-out stage, generated week-by-week after calendar approval. Full process, the three production lanes (in-house / creator / production partner), and the production-window feasibility gate: [content-plan-stage2.md](references/content-plan-stage2.md).
 
 **Step 1: Generate the editorial calendar**
 
 Produce an N-week calendar (default: 4 weeks). Each entry includes:
 
-| Week | Pillar | Series | Concept | Format | CTA | Owner | UTM tags | Paid amplification trigger |
-|------|--------|--------|---------|--------|-----|-------|----------|---------------------------|
+| Week | Pillar | Series | Concept | Format | Key messages | Data/evidence | Producer | CTA | Owner | UTM tags | Paid amplification trigger |
+|------|--------|--------|---------|--------|--------------|---------------|----------|-----|-------|----------|---------------------------|
 
 **Campaign mode adds `Act` and `Beat` columns** (omit both in program mode): every row states which act it serves and which weekly beat it expresses, so no slot is orphaned from the arc. They flow through Phase 7 onto each post object. See [campaign-narrative-arc.md](references/campaign-narrative-arc.md).
 
@@ -535,8 +537,8 @@ After Phase 6, compile all deliverables and present a summary to the user. Then 
 
 Use `category: data-shortfall` when content improvised under a client-data gap.
 
-**Offer to save reusable config** to `{base}/social-media/`: in campaign mode every `organic/*` path below is written under `campaigns/<campaign_slug>/` instead of the root:
-- `config.json`: platform + UTM + compliance settings (if new or changed). **Always root-level and shared**; never nested under a campaign.
+**Offer to save reusable config.** Split by input vs output (see the `{base}` INPUT-root rule above): in the Workspace Studio operator checkout, `config.json` is an INPUT and may be saved to `{base}/social-media/` (i.e. `client-data/clients/<slug>/social-media/`), but every `organic/*` and `campaigns/<campaign_slug>/*` OUTPUT below persists to the **`projects` submodule** at `projects/<client>/<project>/campaigns/<campaign_slug>/`, never under `client-data/`. In a deployed plugin both persist to the `companies/` overlay. In campaign mode every `organic/*` path below is written under `campaigns/<campaign_slug>/` instead of the root:
+- `config.json`: platform + UTM + compliance settings (if new or changed). **Always root-level and shared**, an INPUT; never nested under a campaign, never written to the projects output tree.
 - `organic/pillars.json`: editorial pillar definitions
 - `organic/series.json`: content series definitions
 - `organic/community-playbook.json`: community management rules
@@ -560,10 +562,7 @@ generated assets (Phase 8), or a published-calendar export.
 
 ### Phase 7: Freeze to post objects
 
-At calendar approval, freeze the approved calendar into a validated,
-graph-portable `posts.json`: the COPE expansion where one pillar atom fans out
-into N native per-post objects. Three artifacts (full schemas in
-[post-object-schema.md](references/post-object-schema.md)):
+At calendar approval, freeze the approved calendar into a validated, graph-portable `posts.json`: the COPE expansion where one pillar atom fans out into N native per-post objects. In an engagement with a content-plan/roll-out stage boundary, run this freeze **structurally at content-plan stage** (creative fields left empty) and fill copy **per weekly edition** during roll-out — the builder's structure/copy seam is the stage boundary ([content-plan-stage2.md](references/content-plan-stage2.md) §5). Three artifacts (full schemas in [post-object-schema.md](references/post-object-schema.md)):
 
 1. **Emit `calendar.json`**: the structured form of the Phase 5 calendar (rows
    of week / pillar_id / series_id / concept / format / cta / platforms / owner /
@@ -634,6 +633,7 @@ Load these as needed: do not read all at once.
 | [strategy-foundations.md](references/strategy-foundations.md) | **Read once at the start.** The 2026 posture (person-led, citable, community-anchored, video-first, dark-funnel) and the evidence behind every phase. |
 | [strategy-document-template.md](references/strategy-document-template.md) | Phase 3 Step 6: assembling the client-facing strategy document. Generic chapter list, evidence-discipline mechanics, `claimsToAvoid` schema, validation-ledger + gaps.md formats, reference-list convention. |
 | [strategy-deck-stage1.md](references/strategy-deck-stage1.md) | Output Format Production / Phase 3 Step 6 slide follow-on: the Stage-1 strategy-deck production process — reusable slide spine (incl. per-track content formats + creator tone), source-attribution discipline, render path, and review loop. |
+| [content-plan-stage2.md](references/content-plan-stage2.md) | Phase 5/7: the Stage-2 content-plan production process — the plan-not-posts stage boundary, calendar shape (key-message allocation + cited data + producer per row), the three production lanes and briefing tiers, production-window feasibility gate, structural-freeze/weekly-creative-fill split, matched-spend amplification experiment. |
 | [linkedin.md](references/platforms/linkedin.md) | When LinkedIn is a selected platform. Page optimization, analytics, formats, posting guidance. |
 | [meta.md](references/platforms/meta.md) | When Meta/Instagram is a selected platform. Page setup, content formats, algorithm notes. |
 | [twitter-x.md](references/platforms/twitter-x.md) | When X/Twitter is a selected platform. B2B usage patterns, formats, threads. |

@@ -11,6 +11,8 @@ file as `"1.0"`** (back-compat: pre-versioning files remain valid).
 All additions to these schemas are **additive** — consumers ignore unknown keys.
 Never repurpose or remove a documented key without bumping `schema_version`.
 
+> **Operator environment: inputs vs outputs.** `{base}` is the INPUT root (`client-data/clients/<slug>/` in the Workspace Studio checkout), which is **inputs-only**. Of the tree below, only `config.json` and `claims-to-avoid.json` are inputs that may live under `{base}`; the `organic/*` and `campaigns/<slug>/*` files are campaign **OUTPUTS** and persist to the **`projects` submodule** at `projects/<client>/<project>/campaigns/<campaign_slug>/`, never under `client-data/` (enforced by client-data CI `check_no_project_outputs.py`). In a deployed plugin the `companies/` overlay holds both. See SKILL.md's `{base}` INPUT-root rule. The tree below shows the *shapes and relative layout*; in the operator checkout the `organic/`+`campaigns/` subtree is rooted in `projects`, not `{base}`.
+
 ```
 {base}/social-media/
 ├── config.json                      # shared by BOTH modes and by paid-social-campaign
