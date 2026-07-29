@@ -1,6 +1,6 @@
 ---
 name: nl-guide
-description: "Getting-started guide for researching Dutch government, policy, and legislation — what to ask for, which research skill fits, how findings hand off to your branded documents, and where finished work lands. Use whenever someone asks \"how do I get started\", \"what can this plugin do\", \"how do I research Dutch government/policy/legislation\", \"how do I turn research into a report/briefing\", or any orientation question about Dutch public-affairs research. Routes to the right research skill and hands off to the document tools; does not itself produce documents."
+description: "Product guide for researching Dutch government, policy, and legislation — what to ask for, which research skill fits, how findings hand off to your branded documents, and where finished work lands. Use whenever someone asks \"how do I research Dutch government/policy/legislation\", \"how do I turn research into a report/briefing\", \"which research skill do I need\", or any orientation question specifically about Dutch public-affairs research. For first-time install, switching on connectors, or a general \"how do I get started\", the `getting-started` skill is the entry point. Routes to the right research skill and hands off to the document tools; does not itself produce documents."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
