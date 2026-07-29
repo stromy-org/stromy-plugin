@@ -28,11 +28,14 @@ post itself.** Per planned slot it fixes:
   **divide them across the week's posts**, so every message lands somewhere and
   no post carries all of them.
 - **Evidence** — the specific figures/data points the post will cite, drawn from
-  the engagement's verified research library, listed on the row (source-mapped).
+  the engagement's research library, listed on the row **with its source and a
+  working link, not an internal proof-point ID**. Evidence crossing into this
+  stage gets a boundary re-verification first: [evidence-library-integrity.md](evidence-library-integrity.md) §6–7.
 - **Concept idea** — a one-to-two-line creative direction (enough to brief from,
   not a caption).
 - **Producer** — who makes the asset: in-house, creator, or production partner
-  (§3).
+  (§3). Every row's named producer must be a party that **exists and is in
+  scope** — checked mechanically at §7, not assumed.
 
 **Deliberately absent: publication-ready copy.** No captions, hooks, CTA copy, or
 hashtags. Two reasons, and both should survive into any engagement's phase
@@ -138,3 +141,128 @@ to size future campaigns with, which is itself a sellable outcome. Frame as
 "and, not or": the experiment needs both lanes live. Record the design in the
 Phase 6 measurement spec; the lanes' dark-funnel caveats
 ([measurement-benchmarks.md](measurement-benchmarks.md)) apply per lane.
+
+## 7 · Production-route completeness (mechanical, before freeze)
+
+§3 says every row names its producer. That is necessary and not sufficient: a
+named producer can be a party that does not exist for this engagement, or one
+whose lane the contract excludes. Run this as a **count, not an impression**:
+
+1. **Group the rows by format and producer.** Print the matrix. A plan that
+   looks fine row-by-row is where the imbalance hides.
+2. **For each row, ask whether the named producer can actually make that
+   format.** The in-house lane is *text and visual* posts (§3). A row that says
+   in-house and *video* is already a contradiction — and it is the exact shape
+   the failure takes, because the format was chosen for the story and the
+   producer column was filled in afterwards by default.
+3. **Reconcile against scope.** If video production sits outside the engagement's
+   scope, then every video row belongs to the creator lane, the production
+   partner, or a format that is not video. There is no fourth option, and
+   "we'll figure it out" resolves to the agency absorbing out-of-scope work.
+4. **Reconcile against capacity, not just scope.** A client with an in-house
+   designer can carry animated infographics; one without cannot. Ask before
+   assuming either way.
+
+**Conversion is the normal remedy, not a compromise.** A video row with no
+producer has three honest resolutions:
+
+| Resolution | When it fits |
+|---|---|
+| **Route to a lane that exists** — creator or production partner | The story genuinely needs a filmed telling, and there is budget/time |
+| **Convert to an animated format** — a motion graphic delivered as a video file, built from the same design system as the static assets | The point is a message, a number, or a comparison. No camera, no location, no crew, and it still reads as video in-feed |
+| **Convert to a still format** — carousel or single image | The idea leaned on footage a sequence carries just as well |
+
+In a message-led campaign — no product to show — the animated route covers more
+rows than teams expect, and it is the one that keeps a video-shaped feed
+achievable inside an agency's actual scope.
+
+**The check passes when zero rows name a producer who cannot make that row.**
+State the resulting format mix in the deliverable so the client sees what they
+are agreeing to.
+
+### The shoot-day upside, marked as an option
+
+When the plan already sends **two or more** rows to a production partner, a
+filming day is happening regardless — crew, location, and a day are already
+committed. At that point the marginal cost of filming more on the same day is
+low, while other rows may be sitting in a converted format precisely *because*
+there was no filming capacity.
+
+Surface this as a marked **option**, never a dependency: a column flagging which
+rows would be upgraded if the shoot happens, plus a short concept for what one
+day yields (a longer hero piece, cut-downs for the flagged rows, stills for the
+carousels, and reserve footage for the roll-out stage). The calendar must stand
+completely without the shoot; the option only says what improves if it lands.
+This is a high-value, low-cost proposal to put in front of a client and it is
+invisible unless someone counts the partner rows.
+
+## 8 · Conformance to the agreed scope document (line by line)
+
+The engagement has a signed scope document. Before the plan is presented, walk
+its component-2 bullets **one at a time** against the deliverable and record a
+verdict per bullet. Not a general impression — a list.
+
+This catches the omission that a good-looking plan hides: in the originating
+engagement the scope named "captions, visual directions and calls-to-action". The
+call had (correctly, §1) moved *captions* to the roll-out stage — and **visual
+directions and CTAs quietly went with them**, unmentioned by anyone, absent from
+the deliverable. One bullet, three sub-items, two silently dropped.
+
+Also check the format list. Scope naming "reels, carousels **and stories**" and a
+calendar containing no stories is a gap that needs a decision — add them as a
+rhythm or drop them deliberately — not an oversight discovered at roll-out.
+
+Where the plan intentionally departs from scope, say so in the deliverable with
+the reason. An agreed departure is fine; a silent one is a dispute waiting.
+
+## 9 · Column discipline — what earns a column
+
+A working document's credibility comes from every column carrying information.
+Two anti-patterns, both from real builds:
+
+**A column with one value per group is noise.** A Status column reading `idea`
+for every row on one track and `planned` for every row on the other tells the
+reader nothing except that it was filled in. Either populate it with real state
+or drop it. The same applies to approval-tier columns copied from a governance
+model the client has not actually adopted.
+
+**Invented precision is worse than no precision.** A per-post boost trigger like
+"boost when engagement exceeds 2x the track median within 24 hours" reads as
+rigour and is fabrication: nobody has that baseline before a campaign starts on a
+channel with no history. Mark **boost candidates** — the posts that carry the
+story — and state the real rule plainly: *we boost what works.* Precision that
+cannot be sourced is the amplification-plan twin of an unsourced statistic.
+
+Keep a column when it changes what someone does. Drop it when it does not.
+
+## 10 · Blocked, never fabricated
+
+Rows waiting on client input — a named case study, a creator not yet contracted,
+a decision above the day-to-day contact — stay in the calendar **visibly
+blocked**, with what is missing and who owns it. They are not quietly filled with
+a plausible substitute, and they are not deleted to make the plan look complete.
+
+A blocked row is doing useful work: it makes the dependency legible at review,
+which is exactly when the client can still resolve it. The same row silently
+invented becomes a fabricated case study in a client-facing artifact.
+
+Use one blocker column, populated only where something genuinely blocks. Blank
+means nothing is in the way — which is only true if the §7 check passed.
+
+## 11 · Multi-language plans are generated, never hand-maintained
+
+When the engagement runs in more than one language, **derive** the second version
+from the first at build time. A hand-maintained twin drifts: fields get
+translated on the first pass and forgotten on the second, and the reader who
+needs that language is the one least able to notice.
+
+Two properties make it reliable, and both are mechanical:
+
+- The generator **reports every string it has no translation for**, and that
+  count is meant to read zero. Silent fallback to the source language is the
+  exact failure it exists to prevent.
+- Judgement calls — a quotation, a study title, a legal term, a proper noun —
+  are recorded per unit, not re-decided each run, so output is reproducible.
+
+Never overwrite a shared-space copy without checking whether someone edited it
+there; a target that diverged is reported, not regenerated over.

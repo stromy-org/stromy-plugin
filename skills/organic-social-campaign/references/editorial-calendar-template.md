@@ -22,13 +22,16 @@
 | **Concept** | Working title or brief description | "Why most stakeholder maps fail" |
 | **Format** | Content format | Carousel, Text post, Video, Poll, Reel |
 | **Key messages** | Which of the week's pillar key messages this post carries (divide the week's messages over its posts — every message lands somewhere, no post carries all) | "KM-2, KM-5" or the message lines verbatim |
-| **Data/evidence** | The specific figures/data the post will cite, source-mapped to the research library | "38% store-visit lift (source PP-12)" |
-| **Producer** | Who makes the final asset: in-house, a creator, or a production partner | Us / Creator / Studio |
+| **Data/evidence** | The specific figure the post cites | "33% visit a shop because of a leaflet" |
+| **Source** | The publication, its date, and a **working link**. Never an internal proof-point ID: that is a pointer, not a citation ([evidence-library-integrity.md](evidence-library-integrity.md) §7) | "Markteffect, 2024" + hyperlink |
+| **Producer** | Who makes the final asset. Leave **blank for the default collaboration** (we propose, the client finishes and publishes) and fill it only where a **third party** is genuinely needed — that keeps the column meaningful instead of reading "us" on every row. Every filled value must pass the §7 completeness check | (blank) / Creator / Studio |
+| **Visual direction** | What the asset actually shows — composition, card count, what is on screen. Named in most scope documents alongside CTA; the pair is easy to lose when captions move to roll-out ([content-plan-stage2.md](content-plan-stage2.md) §8) | "Two bars, absolute numbers inside, full source line beneath" |
 | **CTA** | Call to action | Comment, Visit link, Register, DM |
 | **Owner** | Person responsible for creation | JS, MK, Brand team |
 | **UTM Tags** | Tracking parameters | utm_source=linkedin&utm_medium=organic&utm_campaign=q2-thought-leadership |
-| **Paid Amplification** | Whether this post should be boosted | Yes/No + budget if yes |
-| **Status** | Production status | Idea, Drafting, Review, Approved, Scheduled, Published |
+| **Boost candidate** | A flag on the posts that carry the story. **Not** a per-post performance trigger: a threshold invented before the channel has a baseline is fabricated precision ([content-plan-stage2.md](content-plan-stage2.md) §9). The real rule — we boost what works — belongs in the legend | ★ or blank |
+| **Blocker** | Populated **only** where something genuinely blocks: a missing case, an uncontracted creator, a decision above the day-to-day contact. Blank means nothing is in the way. Blocked rows stay visible, never fabricated over ([content-plan-stage2.md](content-plan-stage2.md) §10) | "No named member case yet — client supplies" |
+| **Status** *(conditional)* | Production status. Include **only if it will carry real per-row state**. A Status column reading one value for every row on a track is noise — drop it instead | Idea, Drafting, Review, Approved, Scheduled, Published |
 
 ### Optional Columns
 
@@ -37,7 +40,7 @@
 | **Act** (`act`) | *Campaign mode.* Int ≥ 1 — which narrative act this row serves. Omit entirely in program mode. |
 | **Beat** (`beat`) | *Campaign mode.* Short string — the weekly beat within the act (e.g. "Evidence lands"). Omit entirely in program mode. |
 | **Messaging Pillar** | Links to messaging framework pillar |
-| **Visual Brief** | Description of required visual asset |
+| **Film option** | *Conditional.* When ≥2 rows already go to a production partner, flag the rows a shoot day would upgrade — an option, never a dependency ([content-plan-stage2.md](content-plan-stage2.md) §7) |
 | **Copy Draft** | Link to draft copy document |
 | **Approval** | Who needs to sign off |
 | **Employee Advocacy** | Should this be shared to advocate queue |
