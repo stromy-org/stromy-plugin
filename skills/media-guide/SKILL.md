@@ -16,6 +16,16 @@ description: "Explain and route branded image and video generation: what the med
 
 This skill's full instructions are hosted on the `media-gen` MCP server. Do not hardcode workflow logic locally — always fetch the live version from the MCP.
 
+## Before you start — this skill needs the `media-gen` connector
+
+This skill's instructions live on the `media-gen` MCP, which reaches you as an **authorized connector** rather than as part of the plugin. Before step 1 below, check whether this conversation actually has the `media-gen` MCP's tools (`fs_read` / `fs_list`) available to call.
+
+**If those tools are not present at all, STOP — and do not retry.** A missing tool is not a slow server: it means the connector is either not added to this workspace or not switched on for this conversation. Retrying cannot fix it. Tell the user plainly what to do, naming the connector:
+
+> This needs the **Media Gen** connector, which isn't switched on for this chat. Open your connector settings, check it's connected and enabled for this conversation, then ask me again.
+
+Then stop and wait. Never fall back to a local or identically-named base skill, and never answer from your own knowledge instead — an unsourced answer is **wrong output, not a fallback**.
+
 ## Loading instructions
 
 1. Read the main skill instructions:
