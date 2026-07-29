@@ -12,7 +12,19 @@
       ],
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
-      "_notes": "Dutch government open-data MCP — search/fetch legislation, parliamentary records, Rijksoverheid documents, plus the intel/analysis skills (nl-gov-data, nl-tensions, nl-policy-legislative-landscape, nl-parliamentary-positioning, nl-issue-framing, nl-gov-shared). Per-user OAuth via Microsoft Entra ID. Composes with stromy-format for rendering — see infra-docs/ai/three-layer-tooling.md."
+      "_notes": "Dutch government open-data MCP — search/fetch legislation, parliamentary records, Rijksoverheid documents, plus the twelve intel/analysis skills (nl-gov-data, nl-monitor, nl-tensions, nl-accountability, nl-policy-legislative-landscape, nl-parliamentary-positioning, nl-issue-framing, nl-dossier-tracker, nl-eu-transposition, nl-evidence-grounding, nl-horizon-scan, nl-guide). Unauthenticated (catalog auth: null; /.well-known/oauth-protected-resource/mcp 404s), which is what makes it plugin-declarable under Invariant #13 — an earlier note here claimed per-user Entra OAuth and was wrong. Composes with stromy-format for rendering."
+    },
+    "au-gov-data": {
+      "transport": "http",
+      "url": "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": [
+        "claude",
+        "codex",
+        "gemini"
+      ],
+      "_codex_via": "mcp-remote",
+      "_gemini_via": "mcp-remote",
+      "_notes": "Australian government open-data MCP — federal legislation (FRL), ABS statistics, AusTender procurement, AEC political finance + electorates, the AGOR organisations register, official feeds, e-petitions, federal parliament, and the cross-jurisdiction Hansard corpus (~888k interventions over 8 parliaments, refreshed daily from au-parliament-data; NT excluded). Unauthenticated, so plugin-declared — no connector step. Two live caveats taught in au-guide: TheyVoteForYou is unkeyed in production (tvfy_* return a disabled envelope, so no Senate voting evidence) and the corpus loads lazily, so a first Hansard call after idle can take ~a minute — bound the first query by jurisdiction + date window. Composes with stromy-format for rendering."
     },
     "stromy-format": {
       "transport": "http",
@@ -27,5 +39,6 @@
       "_notes": "Hosted format skills (format-pptx, format-pptx-hd, format-docx, format-pdf, format-pdf-hd, format-xlsx, format-mermaid, format-diagram, format-chart, format-video-hd). Fetched at runtime via fs_read — see skills/<name>/SKILL.md stubs."
     }
   },
+  "_connectors_note": "This plugin is the org's full-fleet dogfooding surface, so it also depends on FOUR OAuth-gated MCPs that are deliberately NOT declared here — Invariant #13 fails a plugin that declares an auth:\"oauth\" HTTP server, because a remote sandbox cannot complete the localhost loopback callback. They are added once as workspace/desktop connectors and the plugin ships only their skill stubs, which fs_read against the authorized connector at runtime: asset-broker (https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp — asset-editor/asset-feedback/asset-brand-studio/asset-website-studio/asset-guide), org-atlas (https://org-atlas-mcp.gentleground-6f68b100.westeurope.azurecontainerapps.io/mcp — org-guide), stromy-workflows (https://stromy-workflows-mcp.happysand-98ed07c8.northeurope.azurecontainerapps.io/mcp — wf-guide/wf-stakeholder-analysis), media-gen (https://media-gen-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp — media-image-campaign/media-social-pack/media-video-clip/media-guide). All four are Entra app-role gated: an app-role change only enters the roles claim on a FRESH sign-in, so re-authorize the connector after any grant change or every tool call dead-ends while appearing connected.",
   "_apify_note": "The official Apify MCP is NOT declared here. It is an authenticated HTTP MCP (hosted https://mcp.apify.com, OAuth) and per the connection model (infra-docs/ai/mcp-connection-model.md) + validate-plugin-completeness Invariant #13, authenticated HTTP MCPs are consumed as Cowork workspace connectors, never plugin-declared. Recommended connector URL (scoped tool surface, pins the curated actors): https://mcp.apify.com/?tools=actors,docs,runs,storage,apify/rag-web-browser,apify/website-content-crawler — client setup steps in skills/research-apify/references/client-onboarding.md. The research-apify skill drives whatever apify connector the workspace has authorized (the client signs into their own Apify account; spend lands there). The earlier stdio BYOK wiring (APIFY_TOKEN set to a dollar-brace env-ref) was dropped because the desktop app does not expand dollar-brace refs in a plugin connector env, so the token never reached the subprocess — see infra-docs/ai/byok-apify-research.md."
 }

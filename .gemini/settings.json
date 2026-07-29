@@ -14,6 +14,13 @@
         "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
       ]
     },
+    "au-gov-data": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+      ]
+    },
     "stromy-format": {
       "command": "npx",
       "args": [

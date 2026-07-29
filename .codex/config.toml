@@ -8,6 +8,10 @@
 command = "npx"
 args = ["mcp-remote", "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"]
 
+[mcp_servers.au-gov-data]
+command = "npx"
+args = ["mcp-remote", "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"]
+
 [mcp_servers.stromy-format]
 command = "npx"
 args = ["mcp-remote", "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"]
