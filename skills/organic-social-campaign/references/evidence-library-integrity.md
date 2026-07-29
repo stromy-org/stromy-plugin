@@ -1,0 +1,197 @@
+<!-- since: 2026-07-28 -->
+
+# Evidence library integrity — verification state across stages
+
+The [Evidence Discipline](../SKILL.md) gates govern a **claim in a deliverable**.
+This file governs the **library those claims are drawn from**, because a
+multi-stage engagement reuses evidence and reuse is where verification silently
+lapses.
+
+The originating failure: a six-week campaign's strategy stage built an evidence
+library, the content-plan stage cited it by ID, and a verification round at
+content-plan time found **six figures that could not be traced to any findable
+source at all** — including two that had reached a client-facing deck. Every
+Evidence Discipline gate had nominally been satisfied. None of them caught it,
+for reasons worth naming precisely.
+
+## 1 · Why the per-claim gates were not enough
+
+| What the gate checks | What slipped past it |
+|---|---|
+| "Every stated number carries a named, dated source" | The source was named, real and findable — **the number simply was not in it**. A named source is not a verified source. |
+| Close-out verification runs "before the deliverable is marked ready" | The figures entered the library at *strategy* stage and were inherited into the content plan by ID. Nothing re-ran at the boundary; the second deliverable trusted the first. |
+| Citations resolve to a real publication | The content plan cited `[digital-78-end-user-devices]` — an internal pointer that **looks like a citation** to a reader and a reviewer, and resolves for neither. |
+| Source tiering (peer-reviewed → journalistic) | Several bad figures came from **the client's own brochures**, a tier the ladder does not name and the one an engagement trusts most uncritically. |
+
+The structural lesson: **an evidence library is a persistent asset that crosses
+stage boundaries, so verification must be a property of the entry, not an event
+in a deliverable's close-out.**
+
+## 2 · Verification state lives on the entry
+
+Every library entry carries its own verification state. Downstream stages
+inherit **state**, never trust.
+
+```json
+{
+  "id": "oko-co2-5x",
+  "claim": "A paper leaflet emits up to 5x less CO2 than the digital alternative",
+  "stat": "642 kg vs 3,360 kg CO2 per million impressions",
+  "source": "Öko-Institut e.V., 'Vergleichende Bewertung…' (Köhler & Gröger)",
+  "sourceUrl": "https://www.oeko.de/fileadmin/oekodoc/2025-PCF_Print_vs_Digital_Werbung.pdf",
+  "publishedDate": "2025-11-05",
+  "commissionedBy": "bvdm, Austropapier, dpsuisse, Jorcon b.v.",
+  "independence": "industry-funded, ISO 14071 critical review by a named reviewer",
+  "geography": "DE/AT/CH/NL",
+  "verification": "VERIFIED 2026-07-27 — Tabelle 4-7 p.48, read from the primary PDF",
+  "doNotUse": "Always name the commissioning party. …"
+}
+```
+
+Six fields are load-bearing and none is optional for an externally-usable figure:
+
+- **`sourceUrl`** — a working link. Without it nobody, including the next agent,
+  can check the claim. A source name alone is a claim about a claim.
+- **`publishedDate`** — a figure's scope is bounded by its date.
+- **`commissionedBy`** — who paid for it. Disclosed every time it is used.
+- **`independence`** — the honest tier, including "industry-funded but externally
+  reviewed" where that is the truth.
+- **`geography`** — the population it measured. A German figure used for a Dutch
+  audience is labelled or dropped.
+- **`verification`** — verdict, date, and **where in the source it was found**
+  (page, table, verbatim line). "Checked" is not a verification record.
+
+An entry missing `verification` is **unverified**, regardless of how confident
+its prose sounds. It may inform internal thinking; it may not reach a
+client-facing artifact.
+
+## 3 · The verification ladder
+
+Each rung is a distinct check, and each has failed in practice at exactly the
+rung above the one people stop at:
+
+1. **The source exists.** A real publication, not a plausible-sounding title.
+2. **The source is findable.** A working URL a reviewer can open today.
+3. **The source contains the number.** Open it and find the figure. This is the
+   rung most often skipped, and it is where four of the six failures sat.
+4. **The number means what we say it means.** Scope check — see §4.
+5. **The number is about the population we imply.** Population check — see §4.
+
+Stop below rung 3 and you have verified a bibliography, not a fact.
+
+## 4 · Two failure classes the per-claim gates do not name
+
+**Scope-widening.** A figure is real, correctly cited, and quietly generalised
+past what it measured. A study found 78% of a *banner ad's* emissions come from
+the end-user device; the same study puts a PDF brochure at 9%. Written as "78%
+of online advertising", the citation still resolves and the claim is now false.
+*Rule: the claim sentence must carry the scope the source measured, not the
+scope we wish it measured. When the scope makes the line clumsy, the line
+changes — not the scope.*
+
+**Population conflation.** Two true numbers about **different populations**
+welded into one sentence. "Over 600 companies and more than 20,000 people" — the
+600 was the trade association's *membership*, the 20,000 was the *whole sector*
+(~3,190 companies). Both numbers true, the sentence false, and every citation
+check passes because each half resolves. *Rule: one population per sentence,
+named. If two populations are genuinely needed, two sentences with two sources.*
+
+Both classes are invisible to citation resolution, which is why they need their
+own named check rather than trust in the existing gate.
+
+## 5 · Client-supplied collateral is a source tier — the most dangerous one
+
+Add to the tier ladder, **below journalistic**:
+
+> **Client collateral** — the client's own brochures, one-pagers, decks and
+> website copy.
+
+It ranks lowest for a reason that has nothing to do with the client's honesty:
+collateral is *already* a secondary rendering, produced under marketing
+pressure, often uncited, and sometimes internally contradictory. In the
+originating engagement the client's own materials carried the same comparison
+framed two different ways, attached a distributor's advertorial figure to a
+research institute, and welded an unsourced equivalence onto a regulator's
+statistic.
+
+**Treat a figure arriving via client collateral as a lead, not a source.** Trace
+it to the primary publication before it goes anywhere external. When the trace
+fails, say so to the client — a trade body publishing an unsourceable number
+carries more risk than the missing number costs, and clients generally want to
+know.
+
+The same applies to figures arriving through a **briefing chain** with no
+attribution. If nobody can say where a number came from, it did not come from
+anywhere.
+
+## 6 · Stage-boundary re-verification
+
+When evidence crosses a stage boundary (strategy → content plan → roll-out),
+run a **boundary check** on the entries the next stage will actually use:
+
+1. List the entries the downstream deliverable cites.
+2. For each, read its `verification` field. Missing, older than the engagement's
+   staleness window, or marked provisional → re-verify now.
+3. Re-verified → update the field. Fails → **retire the entry** and record why.
+
+Retirement is a first-class outcome, not a failure of the run. Keep retired
+entries with their reason:
+
+```json
+{"id": "folder-winkelbezoek-38",
+ "retired": "NOT FOUND 2026-07-27 — neither '38% visits a shop' nor '54% would
+ miss the folder' appears in the primary study or any secondary source.
+ Independent research gives a different, lower figure. Replaced by …"}
+```
+
+A retired entry with its reason stops the figure returning next quarter through
+someone's memory. A silently deleted entry does not.
+
+## 7 · An internal ID is not a citation
+
+Citing `[proof-point-id]` in a client-facing artifact is a pointer, not a
+citation: the reader cannot follow it and the reviewer cannot check it.
+
+**Any artifact leaving the team resolves IDs to source + date + working link at
+build time.** Where the artifact is generated (a rendered calendar, a document),
+make that resolution a **build-time gate**:
+
+- Resolve every referenced ID against the library.
+- An ID that does not resolve, or resolves to an entry with no `sourceUrl`,
+  **fails the build** and names the offending row.
+- Print the count of unlinked entries on every build. It is meant to read zero.
+
+This is the mechanical twin of cite-or-hedge: the discipline is not "remember to
+cite", it is "the artifact cannot be produced without a resolvable citation".
+
+## 8 · Publish what argues against you — as a decision, not a reflex
+
+Counter-argument discovery is already a gate. Two additions from practice:
+
+- **Look for the counter-evidence inside your own strongest source.** The
+  academic paper carrying the campaign's best retail finding had an earlier,
+  peer-reviewed companion by the same authors reaching a more inconvenient
+  conclusion. Citing only the flattering half is the kind of omission a
+  journalist finds first. Cite both or expect to be asked why not.
+- **Whether to publish stays the client's call**, and it usually needs sign-off
+  at a level above the day-to-day contact. Draft the rebuttal, mark the row
+  blocked on that decision, and never publish an "honest reckoning" post
+  autonomously.
+
+## 9 · Close-out digest
+
+The verification round emits a digest carried into the deliverable's own
+documentation, so the next stage inherits state instead of assumptions:
+
+| Line | Meaning |
+|---|---|
+| Entries cited | How many library entries the deliverable uses |
+| Verified / unverified | With the unverified named |
+| Retired this round | With reasons |
+| Scope or population corrections | The claims whose wording changed and why |
+| Open verification items | What still needs a human, and who owns it |
+
+The originating engagement's digest read: 19 entries cited, 0 without a source
+link, 6 retired, 2 rescoped, 3 sector facts corrected, 6 open items for the
+client. That is a healthy result, not an embarrassing one — the embarrassing
+version is the run that reports nothing because it checked nothing.
