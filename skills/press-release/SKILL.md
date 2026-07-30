@@ -117,7 +117,7 @@ Press releases are still valued by journalists (Cision reports 72% prefer receiv
 
 1. Resolve `{client_slug}` from the invoking plugin's `companies/` directory:
    - Zero entries → STOP (see guard above).
-   - One entry → use it directly; state the resolved client name at the start of your response (e.g. "Using the Amaris brand.").
+   - One entry → use it directly; state the resolved client name at the start of your response (e.g. "Using the <resolved brand> brand.").
    - Multiple entries → ask the user which company is announcing; do not guess.
 2. If the overlay exists but the announced company isn't in it → gather company details manually and note the gap.
 
