@@ -17,7 +17,7 @@ description: "Build organic B2B social media campaigns: editorial strategy, cont
 ## Inputs from client-data
 
 - `companies/{client_slug}/brand_context.json`: resolved brand (expression, colors, fonts, logo); read `expression` (`principles`, `signatureElements`, `antiPatterns`) for compact brand direction and `identity.positioning`. **Reference, never bind**; prose guidance, not hard rules. (Image catalog lives in `images/manifest.json`.)
-- `companies/{client_slug}/company_context.json`: redacted public company facts (name, positioning, values, services, publicContact) and public people (SMEs, spokespersons). PII such as banking, registration, VAT, billing, and personal contact details is intentionally absent from deployed overlays.
+- `companies/{client_slug}/company_context.json`: redacted public company facts (name, positioning, values, services, publicContact, `company.headquarters` — the **jurisdiction** the influencer-disclosure baseline resolves from) and public people (SMEs, spokespersons). PII such as banking, registration, VAT, billing, and personal contact details is intentionally absent from deployed overlays.
 - `companies/{client_slug}/messaging/pillars.json` (optional): reusable messaging pillars
 - `companies/{client_slug}/messaging/proof-points.json` (optional): evidence library
 - `companies/{client_slug}/messaging/audiences.json` (optional): audience profiles / ICP seeds

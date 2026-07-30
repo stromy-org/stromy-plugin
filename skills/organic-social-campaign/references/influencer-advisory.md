@@ -147,11 +147,33 @@ fill it with invented specifics.**
 creator is that their audience trusts *their* voice; a script removes the only
 thing you were buying. Constrain the **claim**, free the **telling**.
 
-## Disclosure baseline (NL + EU)
+## Disclosure baseline — resolve the client's jurisdiction FIRST
 
 > **Advisory, not legal counsel.** This is what to *design for*. Regulated
 > sectors (health, finance, food claims) escalate to **tier-3 QA** (legal + SME +
 > brand) — and any live campaign gets actual legal review.
+
+**Disclosure law is jurisdictional, so the applicable rules are a property of the
+client, not of this skill.** Resolve the jurisdiction before you apply anything
+below: read `company.headquarters.country` from
+`companies/{client_slug}/company_context.json`, and where the campaign's audience
+is somewhere else, the **audience's** market governs disclosure — say which you
+used.
+
+- **The resolved jurisdiction is the Netherlands and/or the EU** → the worked
+  baseline below applies as written.
+- **It is anywhere else** (or the campaign targets another market) → the
+  *principles* below travel — a material relationship must be recognisable,
+  up-front, and the advertiser carries the duty of care — but the **named codes,
+  regulators and links do not**. Do not present NL/EU authorities as the client's
+  rules. State plainly that the market's own regime needs confirming, name it as
+  a legal-review item, and design to the principles meanwhile.
+- **The overlay carries no country** (the field is absent or `null`) → do **not**
+  assume. Ask the client which market governs, and say in the deliverable that
+  disclosure rules are unconfirmed until they answer.
+
+The NL/EU text below is the fully worked instance, kept because it is the one most
+of this skill's current engagements need — not because it is the default.
 
 **Netherlands — Reclamecode Social Media & Influencer Marketing (RSM).** The
 Dutch self-regulatory code requires that a **relevant relationship** between
