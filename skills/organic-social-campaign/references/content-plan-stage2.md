@@ -266,3 +266,59 @@ Two properties make it reliable, and both are mechanical:
 
 Never overwrite a shared-space copy without checking whether someone edited it
 there; a target that diverged is reported, not regenerated over.
+
+## 12 · Revision rounds that change the campaign, not the document
+
+<!-- since: 2026-07-30 -->
+
+Most feedback rounds refine wording. Occasionally one changes a campaign
+parameter — the dates, the cadence, the channel mix — and then every artifact
+downstream is wrong in ways no reviewer will read for. Four things go wrong
+quietly.
+
+**A cadence cut is a recount, not a delete.** "B2B goes to one post a week" over
+six weeks means 18 posts become 6. The other 12 are finished, sourced content, and
+which 6 survive is an editorial call the client may want to revisit. Move them to a
+named reserve and surface it as its own tab — a silent deletion reads as a plan that
+was always this size, and destroys the cheapest source of replacements.
+
+**A date shift must preserve the weekday rhythm.** A calendar with a deliberate
+Mon/Wed/Fri cadence, shifted by the literal number of days to the new start date,
+lands on Sun/Tue/Thu — no error, no warning, just a plan that quietly publishes on
+weekends. **Shift by a multiple of 7** and adjust the start to match, rather than
+shifting to an exact date and losing the pattern.
+
+**A date shift invalidates every event tie-in.** Posts anchored to a conference,
+a sector week or a seasonal moment are now anchored to nothing. Re-anchor them
+explicitly and say what changed; leaving the copy in place means the deliverable
+asserts a connection that no longer exists. Whether to chase the event again is a
+*start-date* question, not a content one — surface it that way.
+
+**Renaming rows breaks anything keyed on their identity.** Re-sequencing posts
+after a cadence change and renaming them to their new slot (`b2b-w5-p1`) collides
+with names already held by displaced posts. Anything keyed on the id — a
+translation map above all — then attaches the wrong text to the wrong row, with no
+error. Give every row a **stable id** written once at creation, keep the
+sequence-based name as a display label only, and assert the stable ids are unique.
+
+## 13 · Folding a collaborator's direct edits back into the source
+
+When a deliverable is generated and also co-edited in a shared workspace, the
+collaborator's edits live only in the rendered file. **The next rebuild reverts
+them** — silently, because a build cannot know what it did not author.
+
+So on any round where the shared copy has moved:
+
+1. **Fetch the live copy and diff it against what you last published**, before
+   changing anything. That diff, not the comment thread, is the record of what they
+   actually changed.
+2. **Fold each edit into the build source**, not into the output. Then rebuild.
+3. **Distinguish their intent from their artifact.** A hand-edit made in a
+   web editor often leaves the layout broken — text running together, a lost line
+   break. That breakage is not a request to reproduce; it is usually the very thing
+   their comment asks you to fix.
+4. **Say which of their edits you kept**, so a reviewer can tell folded-in from
+   overwritten.
+
+A round that also carries comments has two sources of truth for the same file, and
+the file wins on anything the comments do not mention.

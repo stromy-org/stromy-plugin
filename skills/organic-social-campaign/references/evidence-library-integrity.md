@@ -195,3 +195,74 @@ The originating engagement's digest read: 19 entries cited, 0 without a source
 link, 6 retired, 2 rescoped, 3 sector facts corrected, 6 open items for the
 client. That is a healthy result, not an embarrassing one — the embarrassing
 version is the run that reports nothing because it checked nothing.
+
+## 10 · Unit conflation, and the control value that catches it
+
+<!-- since: 2026-07-30 -->
+
+A third failure class, alongside the two in §4, and the one that survived longest
+in practice: the figure is real, the source is real, the population is right —
+and the **unit** is wrong.
+
+A trade association's own library carried *"7,5 miljoen brievenbussen bereikt per
+week — 92% van de Nederlandse huishoudens."* 7,5 million is the weekly
+**circulation** of a medium: copies printed. Not letterboxes, not households,
+not people. Every citation check passes, because the source really does say
+7,5 million.
+
+Media reach is where this concentrates, because one medium is routinely measured
+four ways — copies distributed, households delivered to, people who receive, people
+who read — and the four differ by a factor of two in both directions. Money, energy
+and emissions data have the same property.
+
+**The cheap catch is a control value: divide by the total.** The Netherlands has
+~8,4 million households, so "7,5 million households reached weekly" claims **89% of
+the entire country through one medium** — implausible on its face, and it takes one
+division to see. Register the denominator as its own library entry, marked as a
+control rather than a campaign claim, so the check is available instead of
+remembered.
+
+*Rule: state the unit in the claim sentence, every time — copies, households,
+people, and the age floor if the research has one. A number whose unit is implied
+is a number waiting to be misread. When a figure asserts coverage of a
+population, divide by that population before it goes anywhere.*
+
+## 11 · Promote the verdict, or the library re-infects the work
+
+Verification usually runs **inside a deliverable**, and its verdicts get written
+to whatever register that deliverable reads. If the canonical library lives
+somewhere else, nothing propagates, and the retired figures sit there waiting.
+
+In the originating engagement two rounds of verification retired five figures in
+the campaign's register while the canonical client library kept all five — one of
+them flagged `needs-source-check` and sourced to a footnote in a client brochure.
+The next round, the client read that entry and asked for it on a slide. The
+library had quietly re-issued a claim we had already killed.
+
+- **A verdict is not landed until it reaches the canonical library.** Retiring a
+  figure in a deliverable's local register is half the work; the promotion is the
+  other half, and it belongs in the same unit of work.
+- **`needs-source-check` is not a state a library can rest in.** It is a claim
+  that has not been checked, sitting where colleagues and clients read it as
+  established. Resolve it or retire it.
+- **When the bad figure came from your own library, say so.** The client who asked
+  for it was reading what you gave them. Owning that is what makes the correction
+  land as rigour rather than as contradiction.
+
+## 12 · When a client instruction fails verification
+
+An explicit instruction to publish a specific number, where that number does not
+survive checking, is neither a licence nor a veto. Both silent responses are wrong:
+complying ships a claim you know is false, and quietly substituting your own figure
+overrides a decision that is not yours.
+
+Do all three, in this order:
+
+1. **Do not publish either version yet.** New information pauses an instruction;
+   it never reverses it on your own authority.
+2. **Bring the verified alternatives**, not just the objection. "That figure is a
+   circulation count; here are three verified persons-based figures from the same
+   research family, with links" is actionable. "That figure is wrong" is not.
+3. **Name where the wrong figure came from**, especially if the answer is you.
+
+Then let the client decide, and record the decision.
