@@ -110,6 +110,20 @@ columns and flow through Phase 7 onto every post object (see
 **One beat per week.** Two beats in a week means neither lands — the audience
 sees fragments, and the arc's causality breaks.
 
+**Never invent a pillar or a beat to fill a week.** Pillar count and week count
+are independent numbers, and forcing them to match is how a campaign acquires a
+theme nobody believes in. A strong pillar can hold two consecutive weeks (state
+that it does, and give the second week a different angle on it); a weak one is
+dropped. **Retirement without replacement is a valid outcome** — the same rule
+as "never add an act to fill time", one level down.
+
+Test each pillar against **audience sophistication**, not only topical
+relevance: a pillar that explains to an audience something they practise for a
+living fails on fit, however well it is written and however on-topic it is.
+That failure is invisible in a pillar table and obvious to the reader, which is
+why it usually surfaces in review — ask, at design time, "what does this
+audience already know better than we do?"
+
 ## Cross-track echo (multi-audience campaigns)
 
 A two-track campaign (e.g. B2B LinkedIn + B2C Instagram) must read as **one

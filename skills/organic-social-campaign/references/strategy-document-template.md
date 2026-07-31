@@ -72,6 +72,37 @@ a reviewer with their own defined audience language reads a paraphrase as a
 fidelity gap, not a wording nit. Applies identically to the deck follow-on —
 see [strategy-deck-stage1.md](strategy-deck-stage1.md).
 
+#### Who is actually on the channel — establish before assigning a track
+
+An audience definition says who the client *wants*. It does not say who is
+**on the account the track will publish from**, and those are routinely
+different. Before assigning `tracks[].audience_id`, establish per owned
+channel: who populates it, in what proportion, dated and sourced (the client's
+own analytics or their own statement — never an assumption from the brand's
+positioning). Record it; a track pointed at an audience that is not on its
+channel builds an entire lane for a reader who will never see it.
+
+#### Relay audiences — when the reachable audience is not the one who must change
+
+Where the channel reaches an **intermediary** who carries the message onward —
+a trade association's members, a distribution partner, a franchisee, a
+practitioner selling to their own customers — the matrix gains a relation, not
+just a row: declare which audience is **reached via** which. Three consequences,
+and they change the content, not only the labelling:
+
+- **The job is ammunition, not persuasion.** Content for a relay audience hands
+  them an argument they can use with *their* customer — a fact, a case, a
+  comparison worth forwarding — rather than trying to convert them.
+- **They are practitioners of the subject, not students of it.** Explaining
+  their own trade to a relay audience reads as lecturing, and a pillar built on
+  something they already know fails on *fit*, not on wording.
+- **Measure forwarding, not conversion** on that track — shares, saves,
+  reposts, "sent this to a client" — because the conversion happens one step
+  away, off your instrumentation.
+
+Ambiguity resolves toward relay: treating a direct audience as a relay costs a
+sharper, more forwardable post; the reverse costs the whole track.
+
 ### Chapter 3 — Core messages per pillar
 
 Per pillar: the headline claim, its evidence (tiered per Evidence Discipline

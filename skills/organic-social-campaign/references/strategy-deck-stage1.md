@@ -162,47 +162,24 @@ render skill as context; it never invokes another skill directly.
   team iterates on; it crosses to the client only as the PDF, never as the
   editable source file, unless the client explicitly asks to co-edit.
 
-## The review loop (shared collaboration surface)
+## The review loop
 
-When the working deck lives on a shared collaboration surface (a client or
-partner's document workspace) rather than only in chat, apply the same
-discipline any shared-surface production run should:
+The deck is generated *and* marked up by a reviewer, so every round has to
+reconcile their comments and their direct edits before rebuilding — and a
+rebuild that skips that reverts their work. The full discipline is defined once
+for both this deliverable and the content plan in
+**[co-produced-deliverables.md](co-produced-deliverables.md)**: comments as
+intent vs edits as decisions, the mechanical diff and its sanity check, folding
+into the build source, a label change as a scope instruction, instruction
+provenance, and the review-response ledger that closes the round. The workspace
+mechanics it defers to — fetch the live version, read its history, handle locks,
+publish in place, keep the pickup→republish window short — belong to the org's
+`workspace-cowork` protocol and are not restated in this skill.
 
-- **Fetch the latest version first, every run.** A reviewer's own direct
-  small edits, or new comments, can land on the shared file between runs —
-  never process a locally-cached or previously-fetched copy as if it were
-  current.
-- **Comments are directional, not verbatim insertions.** Interpret and
-  integrate a reviewer's comment into the deck's own structure and voice;
-  do not paste comment text onto the slide unedited.
-- **Publish revisions in place.** Replace the same file/link's content
-  rather than uploading a new version under a different name — the shared
-  surface's own version history is the audit trail; a `-v2` filename
-  destroys it.
-- **Watch the file-lock gotcha.** An open viewer session on the file can
-  silently block a re-publish from landing. Close viewer sessions before
-  republishing, and verify the upload actually took (re-fetch and check)
-  rather than assuming success.
-
-## Review → response ledger, and PM authority
-
-When a reviewer (a client-side PM, an agency partner, the client themselves)
-marks up the deck, this is the **same** review discipline the strategy
-document already uses — not a separate deck-specific process:
-
-- **The reviewer's editorial call governs.** The skill's job is to justify
-  the original reasoning and comply, not to defend research-maximalism
-  against an explicit cut instruction.
-- **Produce a review-response ledger** — per comment: decision, the
-  original grounded rationale (traceable to a source or a prior decision;
-  never reconstructed from imagination), and the action (stays on the deck /
-  moves to the content plan / moves to a briefing / dropped / open
-  question). Full ledger format:
-  [strategy-document-template.md](strategy-document-template.md)
-  § Review-response ledger.
-- **Collect genuinely open questions into one clarification message**, after
-  first answering everything self-researchable — never ask a reviewer
-  something verifiable independently.
+Deck-specific consequence: **the reviewer's editorial call governs.** The job is
+to justify the original reasoning and comply, not to defend research-maximalism
+against an explicit cut instruction — a cut usually moves content to the content
+plan or a briefing rather than destroying it, and the ledger records which.
 
 ## Audience-label discipline
 

@@ -73,6 +73,37 @@ never relax L1).
 - **Running under `run_mode: internal-draft`** → an uncalibrated voice profile is
   itself a **gaps-ledger entry**.
 
+## Client lexicon — the market's word for the thing
+
+Voice is not only register; it is **which noun**. Every sector has a settled
+term for a role, a channel, a format, a partner type — and the near-synonym the
+industry press uses, or that this skill's own reference files use, is often not
+it. Getting it wrong does not read as a style choice; it reads as an outsider
+writing about their world.
+
+- **Resolve the terms before drafting**, from the client's own materials (their
+  posts, their brief, their site) — the same corpus the L2 calibration above
+  already reads. Cheap, and it is the one voice input that is fully knowable in
+  advance.
+- **Record the resolved terms in the client's voice profile**, as preferred
+  vocabulary rather than as bans. A term is a preference with a right answer,
+  not a prohibition that should hard-fail a render — and unrecorded, the next
+  build regenerates the wrong word.
+- **A reviewer sweeping one word across a whole deliverable is the signal.**
+  They are not editing sentences; they are correcting vocabulary, and every
+  future artifact will need the same sweep until it is written down. Treat it
+  as a lexicon entry the moment it happens (see
+  [co-produced-deliverables.md](co-produced-deliverables.md) § Keep the
+  reviewer's own words).
+
+**A profile file that fails to load is a profile that does not exist.** Where a
+client's L2 extensions are validated (additive-only schemas typically reject
+unknown keys outright), an unrelated stray key silently disables *every* ban in
+the file, and nothing downstream announces it: the copy simply comes out
+unconstrained. Load the client's profile and assert its bans are present before
+trusting a voice pass — a parked "proposed" block dropped into the validated
+file is the usual cause, and it belongs beside that file, never in it.
+
 ## The loop (run at every copy step)
 
 1. **Load.** Fetch L1 `voice://baseline` + `voice://rules.json` from
