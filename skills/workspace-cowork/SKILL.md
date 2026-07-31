@@ -65,6 +65,12 @@ This skill is self-contained. It does not call or activate other skills.
    run-together hand-edits) and a replace-in-place publish then destroys the
    rest — recoverable only by going back to the version history. Record which
    version ids you diffed, so the next run can audit the claim.
+   **Diff mechanically, then sanity-check the count.** Extract the text of
+   every part on both sides programmatically — every slide, notes page, sheet
+   and cell — rather than eyeballing the surfaces you expect to have changed,
+   and state how many changes you found. If a collaborator says they edited
+   and the diff finds almost none, the diff is wrong, not the collaborator:
+   investigate before rebuilding anything on that number.
    6b. **Keep the pickup→republish window short.** Fetch, work, and republish
    in the same sitting whenever possible — every hour the window stays open
    raises the chance a collaborator edits in between. Never carry a fetched

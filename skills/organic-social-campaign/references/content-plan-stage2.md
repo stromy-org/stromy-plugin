@@ -116,6 +116,29 @@ parties the client, not we, must mobilize. A slipped go-live recommendation made
 *at content-plan sign-off* is advice; the same recommendation mid-roll-out is an
 apology.
 
+### 4b · Publishing capacity — the gate's twin, and the one that gets skipped
+
+The window gate asks whether the content can be *made* in time. It says nothing
+about whether the client can **post** it. Cadence is capped by two client-side
+facts, and both have to be asked for — neither is derivable from reach maths:
+
+- **The publisher's own throughput** on that account. Whoever actually posts has
+  a schedule of their own; a campaign is one item on it, not the whole channel.
+- **The audience's tolerance on that channel.** A frequency the audience reads
+  as repetitive is a cost, not a reach gain, and it is the client — who has
+  watched their own audience for years — who knows where the line is.
+
+Ask both **at intake**, alongside the window, and treat the answer as a ceiling
+the calendar is designed under. A cadence discovered to be unpublishable *after*
+the calendar exists does not shrink gracefully: it re-cuts pillar coverage, the
+per-week key-message allocation and the arc's beat spacing all at once. In the
+originating engagement a three-a-week track met a one-a-week ceiling at review
+and cost a full replan of calendar, pillars and both language workbooks.
+
+Asymmetric ceilings across tracks are normal and fine — declare them
+(one track weekly, another three times a week) rather than averaging to a
+cadence neither channel wants.
+
 ## 5 · Structural freeze now, creative fill per week
 
 Run the Phase 7 builder at content-plan stage in **structural mode**: emit
@@ -301,24 +324,18 @@ translation map above all — then attaches the wrong text to the wrong row, wit
 error. Give every row a **stable id** written once at creation, keep the
 sequence-based name as a display label only, and assert the stable ids are unique.
 
-## 13 · Folding a collaborator's direct edits back into the source
+## 13 · When the reviewer also edits the plan directly
 
-When a deliverable is generated and also co-edited in a shared workspace, the
-collaborator's edits live only in the rendered file. **The next rebuild reverts
-them** — silently, because a build cannot know what it did not author.
+The content plan is generated *and* co-edited, so a rebuild silently reverts
+every edit it did not author. That discipline — comments vs direct edits, the
+mechanical diff and its sanity check, folding into the build source, intent vs
+web-editor artifact, label changes as scope instructions, instruction
+provenance, and what the closing ledger must record — is defined once for both
+this deliverable and the strategy deck in
+**[co-produced-deliverables.md](co-produced-deliverables.md)**. The workspace
+mechanics it defers to (fetch-latest, version history, locks, publish in place)
+belong to the org's `workspace-cowork` protocol.
 
-So on any round where the shared copy has moved:
-
-1. **Fetch the live copy and diff it against what you last published**, before
-   changing anything. That diff, not the comment thread, is the record of what they
-   actually changed.
-2. **Fold each edit into the build source**, not into the output. Then rebuild.
-3. **Distinguish their intent from their artifact.** A hand-edit made in a
-   web editor often leaves the layout broken — text running together, a lost line
-   break. That breakage is not a request to reproduce; it is usually the very thing
-   their comment asks you to fix.
-4. **Say which of their edits you kept**, so a reviewer can tell folded-in from
-   overwritten.
-
-A round that also carries comments has two sources of truth for the same file, and
-the file wins on anything the comments do not mention.
+Plan-specific consequence: a fold-in that changes a row's **cadence, week or
+producer** is a campaign change, not a copy change — run it through §12 before
+rebuilding, or the calendar and the campaign manifest drift apart.

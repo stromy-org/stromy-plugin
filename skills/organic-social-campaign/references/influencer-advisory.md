@@ -55,6 +55,36 @@ consumer track whose job is cultural presence, wrong for a procurement audience.
 audience is also a *looser* one. If the campaign's job is belief change in a
 defined segment, more followers is not better.
 
+### Spread the shortlist across tiers
+
+A shortlist whose candidates all sit in one reach band gives the client no
+budget decision to make — only a yes or a no to a single price point, and the
+predictable next request is "give me some cheaper options". Present candidates
+**across at least two tiers with their cost class shown**, so the choice on the
+table is a portfolio one (one larger name for reach plus two smaller ones for
+credibility, or the reverse) rather than an affordability test.
+
+### When the client asks for a fee indication
+
+The never-fabricate rule stands: no invented rate for a named person. But
+"we cannot say" is not the answer either when the client needs a number to plan
+a budget. A **defensible indication** is assembled, never guessed:
+
+1. **Ask the client for their own prior costs first.** What they paid on a
+   comparable collaboration is the strongest possible benchmark — same market,
+   same category, same negotiating position — and asking costs nothing.
+2. Otherwise take a **published market band for the reach tier** in that market,
+   and apply the **format multiplier** the market uses (video/reel formats
+   command a multiple of a static post).
+3. **State what the number excludes** — usage rights and exclusivity are the
+   two variables that move a real quote most, and an indication that ignores
+   them will be wrong by more than the band's own width.
+4. **Label it an indication, with its basis**, and keep it out of anything that
+   reads as a quote. The client, not we, negotiates (see the scope boundary).
+
+A range built this way is advice; the same range without its basis is a number
+the client will hold you to.
+
 ## Engagement modes
 
 | Mode | What it is | Best for | Watch out |

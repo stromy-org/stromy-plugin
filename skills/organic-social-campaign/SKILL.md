@@ -51,13 +51,12 @@ above. Resolve it **overlay-first** (per `skill-data-loading.md` §2):
 
 > **`{base}` is the INPUT root. Outputs go elsewhere.** In the Workspace Studio operator checkout, `{base}` = `client-data/clients/<slug>/`, which is **inputs-only** (durable client data: brand, `messaging/`, `voice/`, channel `config.json`). It must **never** receive campaign outputs. Campaign **outputs** (the `organic/*` data, `campaign.json`, calendar/posts freeze, rendered werkdocumenten) are project deliverables and persist to the **`projects` submodule** at `projects/<client>/<project>/campaigns/<campaign_slug>/`, never under `client-data/`. client-data CI (`scripts/check_no_project_outputs.py`) fails the build if an output-shaped file lands under `clients/`. In a *deployed plugin* there is no `client-data/` and no `projects/`: the `companies/` overlay is the client's own working repo and may hold both, so this input/output split matters specifically in the shared Workspace Studio checkout. Litmus test: would this file exist if we had never run the engagement? Yes → input (`{base}`); no, we produced it → output (`projects`).
 
-This skill is authored in Workspace Studio and synced into client plugin overlays (the
-same distribution model as `proposal`, `messaging-framework`, `press-release`).
-The plugin overlay is therefore the **primary, steady-state contract** (it is
-what `validate-plugin-completeness.py` Invariant #3 enforces); the Workspace Studio
-direct-read path is the development fallback. The `{base}` rule is correct in
-both contexts. Missing **required** input (brand_context/company_context) → surface the full
-resolved path and ask. Missing **optional** input → degrade per the Content
+This skill is authored in Workspace Studio and synced into client plugin overlays (the same
+distribution model as `proposal`, `messaging-framework`, `press-release`). The plugin overlay is
+therefore the **primary, steady-state contract** (what `validate-plugin-completeness.py`
+Invariant #3 enforces); the Workspace Studio direct-read path is the development fallback, and the
+`{base}` rule is correct in both. Missing **required** input (brand_context/company_context) →
+surface the full resolved path and ask; missing **optional** input → degrade per the Content
 Assembly fallbacks below.
 
 ## Deliverable canvas (prerequisite for prose deliverables)
@@ -233,10 +232,7 @@ Every phase is interactive: present options, ask questions, propose directions, 
 
 **Step 1: Understand the request and detect entry point**
 
-If `social-media/organic/` exists, summarize what's there and ask:
-- **Continue**: Pick up from where the last run left off
-- **Rework phase N**: Jump to a specific phase with existing context
-- **Start fresh**: Ignore existing and rebuild
+If `social-media/organic/` exists, summarize what's there and ask: **Continue** (pick up where the last run left off) · **Rework phase N** (jump to a phase with existing context) · **Start fresh** (ignore existing and rebuild).
 
 If starting new, understand the brief. The user's input could range from "we need a LinkedIn presence" to a detailed brief with audiences and themes.
 
@@ -252,7 +248,8 @@ Ask (unless already clear from context or company data):
 - Current state? (Starting from zero vs. optimizing existing presence)
 - Any partner constraints or co-marketing requirements?
 - Geographic scope and language requirements?
-- Audience type? (B2B decision-makers, B2C consumers, or hybrid: where B2B is the primary target but consumer awareness reinforces B2B credibility)
+- Audience type? (B2B decision-makers, B2C consumers, or hybrid: where B2B is the primary target but consumer awareness reinforces B2B credibility). Also: **who is actually on each owned account** (composition, dated + sourced), and whether that audience is the one who must change or an **intermediary who carries the message onward** — a relay track is written as ammunition, not persuasion ([strategy-document-template.md](references/strategy-document-template.md) Chapter 2).
+- **How many posts per week can the client actually publish** on each account, and what cadence does that audience tolerate? Both are client-side ceilings the calendar is designed under, not outputs of reach maths ([content-plan-stage2.md](references/content-plan-stage2.md) §4b).
 
 **Platform selection (2026).** Default the B2B set to **LinkedIn** (primary: but person-led; see Phase 3), plus, per fit: **YouTube** (long-form authority + AI-citation surface), **Reddit** (buyer research, niche community, and a top AI-citation source; a participation/community play, not a posting-cadence play; see [platforms/reddit.md](references/platforms/reddit.md) and [community-building.md](references/community-building.md)), **X**, and **Meta/Instagram**. Note emerging surfaces where the ICP is present; **TikTok** (rising for B2B), **Bluesky/Threads**; but don't spread thin: 1–2 primary platforms done well beat five neglected ones.
 
@@ -414,7 +411,7 @@ Present the full strategy package (including the assembled document). Wait for a
 
 **Step 7: Client review round (when a client-side reviewer marks up the document)**
 
-A reviewer's editorial calls govern: justify the original reasoning and comply, never defend research-maximalism. Produce a **review-response ledger** (per comment: decision; why it was there, traceable to a source, never invented; action = deck / content plan / briefing / dropped / validate-with-client), route cut depth to the content plan or a briefing rather than deleting it, and collect genuinely open questions into one short clarification message instead of guessing. Never ask the reviewer anything you can verify yourself first. Ledger format: [strategy-document-template.md](references/strategy-document-template.md) § Review-response ledger.
+A reviewer's editorial calls govern: justify the original reasoning and comply, never defend research-maximalism. Produce a **review-response ledger** (per comment: decision; why it was there, traceable to a source, never invented; action = deck / content plan / briefing / dropped / validate-with-client), route cut depth to the content plan or a briefing rather than deleting it, and collect genuinely open questions into one short clarification message instead of guessing. Never ask the reviewer anything you can verify yourself first. Ledger format: [strategy-document-template.md](references/strategy-document-template.md) § Review-response ledger. **When the reviewer also edits the deliverable directly** — the norm once it lives on a shared workspace — their edits are decisions, not suggestions, and must be folded into the *build source* or the next rebuild reverts them: [co-produced-deliverables.md](references/co-produced-deliverables.md).
 
 **Phase 3 deliverables**: The **strategy document** (DOCX-first; Step 6) assembling editorial strategy, the audience × narrative matrix / content pillar map, distribution model (page/exec/advocacy + launch-anchor + ecosystem tagging), community strategy, campaign narrative arc (campaign mode, incl. revival ladder where scoped), boost strategy, influencer advisory (if scoped), the evidence/reference appendix, and, for a client-facing external send, the validation ledger.
 
@@ -637,11 +634,8 @@ Load these as needed: do not read all at once.
 | [evidence-library-integrity.md](references/evidence-library-integrity.md) | Evidence Discipline gate 10, and at every stage boundary that reuses evidence. Verification state on the library entry, the five-rung verification ladder, scope-widening + population-conflation failure classes, client-collateral source tier, entry retirement, build-time citation resolution, close-out digest. |
 | [strategy-deck-stage1.md](references/strategy-deck-stage1.md) | Output Format Production / Phase 3 Step 6 slide follow-on: the Stage-1 strategy-deck production process — reusable slide spine (incl. per-track content formats + creator tone), source-attribution discipline, render path, and review loop. |
 | [content-plan-stage2.md](references/content-plan-stage2.md) | Phase 5/7: the Stage-2 content-plan production process — the plan-not-posts stage boundary, calendar shape (key-message allocation + cited data + producer per row), the three production lanes and briefing tiers, production-window feasibility gate, production-route completeness + format reconciliation, scope-document conformance, column discipline, structural-freeze split, matched-spend experiment. |
-| [linkedin.md](references/platforms/linkedin.md) | When LinkedIn is a selected platform. Page optimization, analytics, formats, posting guidance. |
-| [meta.md](references/platforms/meta.md) | When Meta/Instagram is a selected platform. Page setup, content formats, algorithm notes. |
-| [twitter-x.md](references/platforms/twitter-x.md) | When X/Twitter is a selected platform. B2B usage patterns, formats, threads. |
-| [youtube.md](references/platforms/youtube.md) | When YouTube is a selected platform. B2B video strategy, Shorts, SEO. |
-| [reddit.md](references/platforms/reddit.md) | When Reddit is selected. B2B participation etiquette, AI-citation surface, community play (not a posting-cadence channel). |
+| `references/platforms/` — [linkedin](references/platforms/linkedin.md) · [meta](references/platforms/meta.md) · [twitter-x](references/platforms/twitter-x.md) · [youtube](references/platforms/youtube.md) · [reddit](references/platforms/reddit.md) | One per platform, loaded **only when that platform is selected**: setup, native formats, algorithm notes and posting guidance. Reddit is a participation/community + AI-citation play, not a posting-cadence channel. |
+| [co-produced-deliverables.md](references/co-produced-deliverables.md) | Every review round on a generated client deliverable (deck or content plan). Comments vs direct edits, the mechanical diff + its sanity check, folding edits into the build source, label-change-as-scope, instruction provenance, closing ledger. Workspace mechanics (fetch-latest, version history, locks, publish-in-place) belong to the org's `workspace-cowork` protocol, not here. |
 | [campaign-narrative-arc.md](references/campaign-narrative-arc.md) | **Phase 3 Step 2b: campaign mode only.** Acts/beats, belief-shift sequencing, cross-track echo, differentiation vs prior waves, revival ladder, peak-moment design, worked example. |
 | [influencer-advisory.md](references/influencer-advisory.md) | Phase 3 Step 4b: when influencers are in scope. Advice-only boundary, archetypes × modes, concept brief, disclosure baseline. |
 | [content-formats.md](references/content-formats.md) | Phase 3: when designing cadence and format mix. Format taxonomy with B2B effectiveness notes, and the hero → derivative (COPE) production map. |

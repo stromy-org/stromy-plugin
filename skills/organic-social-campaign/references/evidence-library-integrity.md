@@ -249,6 +249,32 @@ library had quietly re-issued a claim we had already killed.
   for it was reading what you gave them. Owning that is what makes the correction
   land as rigour rather than as contradiction.
 
+### Retiring a figure is a sweep, and it ends in a count
+
+"Promote the verdict to the canonical library" is not one write. A retired
+figure survives in every place it was ever copied to, and each of those places
+is a live source for the next build:
+
+- **Every surface of every deliverable** — not only the visible one. Slide
+  bodies *and* speaker notes, both language twins, the content plan, the source
+  register, any exported PDF still circulating.
+- **Every file of the library**, not just the register the retirement was
+  written in. A claim library is usually several files — proof points,
+  narratives, pillars, audience descriptions — and a figure that lives in a
+  narrative summary or a pillar's one-liner is exactly what a build reads
+  first.
+
+So: **grep the retired figure — and its rounded and reworded variants — across
+every deliverable surface and every library file, and report the hit count in
+the close-out digest.** Zero is the only passing number, and a number is what
+makes the sweep auditable; "propagated" is not.
+
+Two live instances, one engagement, two days apart: a withdrawn figure still
+sitting in a published deck's *speaker notes* after the slides were corrected,
+and the same figure live in three places in a narratives file plus one in a
+pillars file while its own register carried a correct, dated retirement record.
+Both were found by looking, not by the process.
+
 ## 12 · When a client instruction fails verification
 
 An explicit instruction to publish a specific number, where that number does not
