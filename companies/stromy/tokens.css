@@ -144,6 +144,15 @@
   --motif-ledger-box-h:     30px;
   --motif-band-gap:         16px;
 
+  /* Score line — a rule terminated by a dot (see the .score-line component
+     below). Every value tracks the motif family so the component inherits
+     those design decisions instead of introducing new visual constants. */
+  --score-line-weight:      var(--motif-line-weight);
+  --score-line-color:       var(--motif-ink);
+  --score-line-color-light: var(--stromy-neutral-300);
+  --score-dot-size:         var(--motif-node-size);
+  --score-dot-color:        var(--motif-oxide);
+
   /* ── Layout ──────────────────────────────────────────── */
   --content-width:    720px;
   --content-wide:     960px;
