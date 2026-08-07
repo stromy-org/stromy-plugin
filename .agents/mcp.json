@@ -1,6 +1,7 @@
 {
   "$schema": "https://gofastmcp.com/public/schemas/mcp-config.schema.json",
-  "_notes": "Canonical MCP server config for stromy-plugin. Edit only this file. Run scripts/render-mcp.py to regenerate .mcp.json / .gemini/settings.json / .codex/config.toml / .vscode/mcp.json.",
+  "_notes": "Canonical MCP server config for stromy-plugin. Edit only this file. Run scripts/render-mcp.py to regenerate .mcp.json (Claude Code only — this is a distribution product, not a cross-agent workspace, so no .gemini/.codex/.vscode configs are emitted).",
+  "_connection_model": "Authenticated HTTP MCPs (interactive OAuth, e.g. asset-broker) are consumed as Cowork workspace connectors — do NOT declare them here; a plugin-declared OAuth MCP can only auth via a localhost loopback that fails in remote sessions. Only no-auth HTTP MCPs (stromy-format, nl-gov-data, au-gov-data) and stdio servers belong in a plugin. See infra-docs/ai/mcp-connection-model.md (enforced by validate-plugin-completeness.py Invariant #13).",
   "servers": {
     "nl-gov-data": {
       "transport": "http",
