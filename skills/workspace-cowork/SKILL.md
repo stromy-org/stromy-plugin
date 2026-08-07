@@ -90,6 +90,19 @@ This skill is self-contained. It does not call or activate other skills.
 8. **Surface blockers; never branch the document.** Report a blocked write,
    lost lock race, or unmergeable edit to the humans. Never silently supersede
    the workspace copy with a private version.
+9. **A language sibling is part of the artifact, not a copy of it.** When a
+   deliverable exists in the space in more than one language, a collaborator's
+   edit to one copy makes every sibling stale — and every rule above protects
+   only the file that was edited. Nothing here notices the others, and a stale
+   translation is invisible precisely to the reader who needs it. So after a
+   reconciled write, name the sibling copies and report which are now behind.
+   Never regenerate a sibling wholesale to catch it up: that destroys the direct
+   human corrections rule 6 exists to preserve. Never leave the staleness unsaid
+   because the sibling was not the file you were asked to touch. The
+   `format-i18n` skill on the `stromy-format` MCP settles missing / stale /
+   current / obsolete from content hashes rather than judgement and returns only
+   the units genuinely outstanding — named here as context; this skill does not
+   activate it.
 
 ## Mechanics
 
