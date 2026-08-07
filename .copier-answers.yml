@@ -1,11 +1,10 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
-_commit: 34675f8
+_commit: v1.0.0
 _src_path: gh:stromy-org/claude-plugin-template
 author_name: William Masquelier
 client_name: Stromy
 client_slug: stromy
 description: Claude Code plugin for Stromy branded deliverables
-enable_asset_broker: true
 enable_stromy_format: true
 github_org: stromy-org
 include_mcp: false
