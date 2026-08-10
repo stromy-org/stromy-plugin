@@ -32,7 +32,12 @@ post itself.** Per planned slot it fixes:
   working link, not an internal proof-point ID**. Evidence crossing into this
   stage gets a boundary re-verification first: [evidence-library-integrity.md](evidence-library-integrity.md) §6–7.
 - **Concept idea** — a one-to-two-line creative direction (enough to brief from,
-  not a caption).
+  not a caption), **ending in an explicit takeaway**: one line naming what the
+  viewer should think or remember afterwards, tied back to the campaign
+  message. Mood and craft posts need this most — "beautiful images of the
+  process" without a stated takeaway is the single most common review finding
+  (live client review, 2026-08): the post reads as random until its last card
+  or closing line makes the connection the concept never wrote down.
 - **Producer** — who makes the asset: in-house, creator, or production partner
   (§3). Every row's named producer must be a party that **exists and is in
   scope** — checked mechanically at §7, not assumed.

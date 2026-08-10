@@ -26,7 +26,7 @@
 | **Source** | The publication, its date, and a **working link**. Never an internal proof-point ID: that is a pointer, not a citation ([evidence-library-integrity.md](evidence-library-integrity.md) §7) | "Markteffect, 2024" + hyperlink |
 | **Producer** | Who makes the final asset. Leave **blank for the default collaboration** (we propose, the client finishes and publishes) and fill it only where a **third party** is genuinely needed — that keeps the column meaningful instead of reading "us" on every row. Every filled value must pass the §7 completeness check | (blank) / Creator / Studio |
 | **Visual direction** | What the asset actually shows — composition, card count, what is on screen. Named in most scope documents alongside CTA; the pair is easy to lose when captions move to roll-out ([content-plan-stage2.md](content-plan-stage2.md) §8) | "Two bars, absolute numbers inside, full source line beneath" |
-| **CTA** | Call to action | Comment, Visit link, Register, DM |
+| **CTA** | Call to action. Keep it **adjacent to Key messages** — same column block or the neighbouring column, and on a consumer track fold it under the Key messages cell — so a CTA that does not follow from the post's message is visible at review instead of surfacing after approval. The CTA also inherits the track's audience reality: on a relay track (the account's followers carry the message onward) the CTA asks them to *pass it on*, never to act as if they were the end audience | Comment, Visit link, Register, DM, "Share this with whoever decides the media mix" |
 | **Owner** | Person responsible for creation | JS, MK, Brand team |
 | **UTM Tags** | Tracking parameters | utm_source=linkedin&utm_medium=organic&utm_campaign=q2-thought-leadership |
 | **Boost candidate** | A flag on the posts that carry the story. **Not** a per-post performance trigger: a threshold invented before the channel has a baseline is fabricated precision ([content-plan-stage2.md](content-plan-stage2.md) §9). The real rule — we boost what works — belongs in the legend | ★ or blank |
@@ -98,6 +98,19 @@ This example is for a corporate communications consultancy with 3 content pillar
 | Thu 1 May | LinkedIn | Proof Points | — | Newsletter issue: Monthly sector roundup with original analysis | Newsletter | Subscribe | MD | No | Idea |
 
 ## Balancing Pillars Across Weeks
+
+### Scheduling rhythm — vary the days
+
+A fixed weekly slot (every Tuesday; every Mon/Wed/Fri) reads as automation, to
+the human scrolling past it as much as to anyone. Vary the posting days across
+weeks: alternate the day per week on a 1-post/week track (Tue, Thu, Tue, Thu…)
+and rotate between two day-patterns on a multi-post track (Mon/Wed/Fri one
+week, Tue/Thu/Sat the next — weekends are live slots on consumer platforms).
+Keep story order equal to date order within each week, and accept same-day
+overlap between tracks on different platforms — different audience, different
+feed. Ship the varied schedule in the first draft; a client asked to approve a
+robot cadence will send it back (live client review, 2026-08). Final days are
+validated together with the definitive launch date.
 
 ### Distribution Rules
 

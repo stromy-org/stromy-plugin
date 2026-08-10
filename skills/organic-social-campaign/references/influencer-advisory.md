@@ -64,6 +64,21 @@ predictable next request is "give me some cheaper options". Present candidates
 table is a portfolio one (one larger name for reach plus two smaller ones for
 credibility, or the reverse) rather than an affordability test.
 
+### Size the lane by budget, then hold the count
+
+The number of creator posts is a **budget decision made once, early** — not a
+slot-filling outcome of the calendar. Concepts multiply faster than budget
+(four worked-up creator concepts against a budget that covers three is the
+predictable shape), so: fix the count from the budget, place one creator post
+per week through the proof/conversion acts, and **name which concept drops** —
+the dropped concept survives in the strategy document as a reserve, it does not
+haunt the calendar. On the calendar row itself the creator lane keeps its
+freedom visible: the Concept column carries the concept idea from the strategy
+deck, and **Visual direction reads "Open — the creator develops the concept;
+we supply the briefing"** rather than a prescribed composition. Prescribing
+the visuals on the plan row quietly re-scripts the creator the envelope below
+just freed (live client review, 2026-08).
+
 ### When the client asks for a fee indication
 
 The never-fabricate rule stands: no invented rate for a named person. But

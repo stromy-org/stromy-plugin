@@ -55,7 +55,12 @@ industry**. This is a default deck element, not a review-round add-on: see
 
 **B2B use cases**: Frameworks and models, step-by-step guides, checklists, case study summaries, report highlights, training content, "X things I learned from Y" listicles.
 
-**Production requirements**: Design tool for consistent slide templates. 1080x1350px (portrait) recommended for LinkedIn and Instagram. Keep text large — many viewers are on mobile. 8-12 slides is the sweet spot. Include a title slide and a CTA slide.
+**Production requirements**: Design tool for consistent slide templates. 1080x1350px (portrait) recommended for LinkedIn and Instagram. Keep text large — many viewers are on mobile. Include a title slide and a CTA slide.
+
+**Length is per-surface, and shorter than instinct says** (live client review, 2026-08):
+
+- **Consumer feed carousels (Instagram): cap at ~4 cards.** Completion collapses beyond that; six cards "feels too long" to the very reviewer who asked for depth. If the idea needs six, it is two posts.
+- **LinkedIn PDF documents: 8–12 pages only when every page earns its place.** Compact beats complete — a 4-page document with one shareable page per audience segment (one core page + one page each for the segments the reader forwards it to) outperforms a 6-pager nobody forwards. One document, never per-segment versions: the value is that the reader shares exactly the page their contact needs.
 
 **Engagement characteristics**: Strong organic reach on LinkedIn, with high dwell time (algorithm signal), high save rate, and moderate share rate — though video now leads for discovery. Lower comment rate than text posts.
 

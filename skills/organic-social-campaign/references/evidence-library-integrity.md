@@ -292,3 +292,23 @@ Do all three, in this order:
 3. **Name where the wrong figure came from**, especially if the answer is you.
 
 Then let the client decide, and record the decision.
+
+## 12 · Recent sources lead; old frameworks are cited as frameworks
+
+Age is part of a figure's credibility, independent of its truth. An audience
+that reads "2017" under the lead statistic concludes it was the best you could
+find — and a reviewer will say exactly that ("a 2017 reference feels somewhat
+outdated", live client review, 2026-08).
+
+The rule, applied when allocating evidence to posts and again at the close-out
+digest:
+
+- **The newest national source that supports the claim leads.** If the library
+  holds a recent domestic figure and an older international one for the same
+  claim, the recent domestic figure is the headline; never the reverse.
+- **An older international framework may still support the piece — cited AS a
+  framework**, with its year and geography visible ("as a framework, not a
+  <market> figure"), never presented as the lead statistic.
+- **Review flag:** any lead figure older than ~3 years without a stated reason
+  on the row. The reason can be good (a landmark study nothing newer replaces);
+  it must be written down, or the reviewer writes it for you.
