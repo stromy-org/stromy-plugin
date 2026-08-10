@@ -91,6 +91,15 @@ The default for a repositioning campaign:
 **Do not add acts to fill time.** A 12-week campaign with three strong acts beats
 one with four, where the fourth is act 3 restated.
 
+**The closing post entertains — it never summarises.** The last beat of the last
+act is the campaign's final impression, and an informative recap is the weakest
+possible one: the audience already got the evidence, and a summary re-delivers
+it to the people who least need it. Close on something engaging and memorable
+in the campaign's own register — a rapid-fire quiz on what six weeks taught
+you, a payoff, a wink — carrying at most **one** figure (the anchor number) as
+its final reveal (live client review, 2026-08). The informative wrap-up, if
+anyone needs it, is a report to the client, not a post to the audience.
+
 ## Beats
 
 Break each act into **weekly beats** — one theme per week. A beat is expressed
