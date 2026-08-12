@@ -84,6 +84,16 @@ This skill is self-contained. It does not call or activate other skills.
    diff it at content level (cells/text) first — zero differences means
    proceed; real differences mean run the 6a reconciliation before
    publishing. Never overwrite an unexamined newer collaborator version.
+   6d. **The deliverable reads standalone; the feedback trail lives beside
+   it** (soft practice, not a gate). When a feedback round is folded into a
+   republished artifact, the client-facing result reads as a first-class
+   document: no "(feedback <date>)" asides, no comparisons to the previous
+   version, no revision commentary inside body copy. Provenance of each
+   change belongs in the version history, in-file comments, run notes, or a
+   separate disposition record — the surfaces built for it. Before
+   republishing, sweep client-facing strings for feedback and version
+   references. A document whose purpose is to discuss revisions (a
+   changelog, a review memo) of course states them freely.
 7. **Keep records in the space.** Every project keeps a
    `Meeting Transcripts/` folder with dated `YYYY-MM-DD <topic>.md` files.
    Treat those transcripts as shared reference material and agent-run input.
