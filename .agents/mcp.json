@@ -27,6 +27,18 @@
       "_gemini_via": "mcp-remote",
       "_notes": "Australian government open-data MCP — federal legislation (FRL), ABS statistics, AusTender procurement, AEC political finance + electorates, the AGOR organisations register, official feeds, e-petitions, federal parliament, and the cross-jurisdiction Hansard corpus (~888k interventions over 8 parliaments, refreshed daily from au-parliament-data; NT excluded). Unauthenticated, so plugin-declared — no connector step. Two live caveats taught in au-guide: TheyVoteForYou is unkeyed in production (tvfy_* return a disabled envelope, so no Senate voting evidence) and the corpus loads lazily, so a first Hansard call after idle can take ~a minute — bound the first query by jurisdiction + date window. Composes with stromy-format for rendering."
     },
+    "do-gov-data": {
+      "transport": "http",
+      "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": [
+        "claude",
+        "codex",
+        "gemini"
+      ],
+      "_codex_via": "mcp-remote",
+      "_gemini_via": "mcp-remote",
+      "_notes": "Dominican Republic government open-data MCP (ORG-PLAN-199) — procurement (DGCP: 621k processes, 708k contracts), budget execution, both chambers with roll-call votes, consolidated law from 1844, Supreme Court + Constitutional Court caselaw, audits, open-data discovery, regulators, and macro. Unauthenticated, so plugin-declared — no connector step. Skills are Spanish; start at do-guide. Three limits it teaches as limits rather than bugs: nothing publishes a law's in-force status (every law record carries an explicit null), consolidated law serves original texts and never consolidates amendments, and granular social statistics are a declared World Bank/CEPALSTAT substitution because the national statistics office has no API and blocks automated access. Shares au-gov-data's ACA environment (subscription env cap, see infra-docs/hosting/azure-regions.md), so its FQDN moves if it is ever given its own. Composes with stromy-format for rendering."
+    },
     "stromy-format": {
       "transport": "http",
       "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp",

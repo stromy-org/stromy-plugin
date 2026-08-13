@@ -9,6 +9,10 @@
       "type": "http",
       "url": "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
     },
+    "do-gov-data": {
+      "type": "http",
+      "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
     "stromy-format": {
       "type": "http",
       "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
