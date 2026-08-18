@@ -762,6 +762,36 @@
       "domain": "stromy.com.au",
       "analytics": "plausible",
       "contactForm": "formspree"
+    },
+    "effects": {
+      "schemaVersion": 2,
+      "selection": {
+        "status": "approved",
+        "profile": "premium",
+        "motionEngine": "anime",
+        "recipe": "tactile-showcase",
+        "params": {
+          "paper-shader": {
+            "intensity": 0.18,
+            "speed": 0.15
+          }
+        },
+        "surfaces": {
+          "blog": {
+            "recipe": "kinetic-narrative"
+          },
+          "case-studies": {
+            "recipe": "kinetic-narrative"
+          }
+        },
+        "brief": "2026-08-15, operator: 'definitely this one is now the best' — tactile-showcase at intensity 0.18, speed 0.15, described as 'a graphite and violet material on a true ground'. The recipe default (intensity 1.0) was rejected in the same breath as 'the wrong kind of contrast, white on white, unreadable'; that is now fixed in the recipe itself rather than left to each brand to rediscover. Also: 'still okay for different recipes for a lively website' — the per-surface split below was chosen under that delegation, not proposed and approved separately.",
+        "considered": [
+          "restrained-depth",
+          "atmospheric-field",
+          "technical-signal",
+          "static-editorial"
+        ]
+      }
     }
   },
   "document": {
@@ -1052,6 +1082,22 @@
       "ornament": {
         "value": "restrained",
         "note": "one focal dot per composition; no decorative motif flood; the stage-light radial is hero-only"
+      },
+      "energy": {
+        "value": "expressive",
+        "note": "ORG-PLAN-195, AUTHORED (owner decision 2026-08-13), superseding a first pass that derived 'restrained'. That derivation leaned on 'ornament: restrained', and ornament is decorative density — it says nothing about movement, which is the distinction this axis exists to draw. Read on its own terms the grammar is emphatic about motion: a named signature moment ('the ensemble rises, then holds'), a dome that assembles, a field that breathes. A brand with a signature MOTION is not a still one. Restraint here lives in the ornament axis, where it belongs."
+      },
+      "depth": {
+        "value": "layered",
+        "note": "ORG-PLAN-195. Straight from the contrast axis: 'depth carried by colour, shadows deliberately minimal'. That is layered by definition — not flat (colour genuinely carries depth here) and not immersive (a brand that removes its shadows is not asking to be stood inside). Unchanged by the 2026-08-13 review."
+      },
+      "materiality": {
+        "value": ["matte", "light", "metal"],
+        "note": "ORG-PLAN-195. matte and light are DERIVED: matte from 'documentary-muted, desaturated/high-contrast' plus the deliberately minimal shadows; light from the stage-light radial and the single indigo focal dot — illumination IS the brand's material idea. metal is AUTHORED (owner decision 2026-08-13), not derived: the captured grammar contains no reflective device, and this records a decision that Stromy's one premium moment reads as a worked material. Kept honest deliberately — a reader must be able to tell which of these came from evidence. Still explicitly NOT grain: nothing asks for texture noise, and the anti-pattern against gradient floods argues against it. The only multi-valued core axis."
+      },
+      "continuity": {
+        "value": "section-sequence",
+        "note": "ORG-PLAN-195, AUTHORED (owner decision 2026-08-13), superseding a first pass that derived 'settle' from the field-breathe behaviour alone. Still true that nothing loops indefinitely — but 'comes to rest' describes one element, while this axis asks when motion may occur across a whole surface. The signature is an ENSEMBLE rising, which is a sequence: each section arrives, settles, and hands to the next. `settle` under-described that as a single event."
       }
     },
     "signatureElements": [
@@ -1062,6 +1108,7 @@
       "Space Grotesk wordmark — STROMY set in Space Grotesk 600 with open tracking, rising from the dot-dome; primary identity lockup.",
       "Misaligned secondary lockup — the 'scored' STROMY wordmark for cover slides, home-page heroes, and section openers."
     ],
+    "signatureMotion": "The dot field breathes once — rings settling outward from the podium — and comes to rest with a single indigo focal dot still lit. The ensemble rises, then holds.",
     "antiPatterns": [
       "No literal musical notation — no staves, clefs, or noteheads; orchestration is rendered through abstract dots, not sheet music.",
       "No orange or Claude-adjacent accent — indigo (#61009E) is the only signal colour; the retired oxide/orange must not reappear.",
