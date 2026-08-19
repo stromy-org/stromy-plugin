@@ -2,6 +2,33 @@
 
 > **Video-first (2026).** Bias the mix toward video: short-form vertical for discovery, long-form for depth and credibility. Video out-reaches static formats, and long-form is resurging as scroll fatigue grows (creator-driven long-form reportedly earns ~10× the views and ~3× the save rate of short clips, and a majority of buyers say it makes a brand feel more credible). Carousels remain strong for saves and dwell but are no longer the unquestioned reach king. Creator/UGC-style framing — real faces, real stakes — beats polished corporate talk, including **external B2B creator / industry-voice partnerships**, now a legitimate organic play. See `strategy-foundations.md`, Shift 4.
 
+## Format follows content — the format contract
+
+<!-- since: 2026-08-18 -->
+
+Every format carries a content contract: a checklist needs checkable actions,
+a quiz needs questions the reader wants graded, a recap needs prior content to
+recap, a story needs a telling. Choose the format from what the content
+actually is — never from a "vary the formats" instruction. A variety-driven
+format choice produces artifacts that read wrong in a way no copy edit fixes:
+in a live client review (2026-08-17) a "checklist" built to vary the mix
+turned out to be a fact list wearing checkboxes — every box was a statistic,
+nothing was an action — and the fix was to change the format (that slot became
+a campaign recap), not the copy. When a slot's content stops fitting its
+planned format, convert the slot (fact list → recap or infographic; quiz →
+carousel with a reveal) and say so in the plan.
+
+Two companion rules from the same review:
+
+- **Single images are a first-class consumer format, not a degraded
+  carousel.** A consumer-feed plan of wall-to-wall carousels is a signal to
+  convert some slots to single images — one idea, one image outperforms a
+  thin four-card swipe.
+- **The delivery artifact is per-platform.** Instagram carousels ship as
+  per-slide images (JPEG/PNG); a PDF is an internal review intermediary only.
+  LinkedIn document posts are the one surface where the PDF *is* the
+  deliverable.
+
 ## Declaring content formats per track (strategy document + deck)
 
 When the strategy document or its slide follow-on presents the audience ×
@@ -74,11 +101,17 @@ industry**. This is a default deck element, not a review-round add-on: see
 
 **B2B use cases**: Quick tips, behind-the-scenes moments, event highlights, "one thing I wish I knew about X", response to trending topics, humanizing the brand.
 
-**Production requirements**: Smartphone with decent camera, basic editing app. Captions are mandatory (80%+ watch muted). Vertical format (9:16). Hook in first 2 seconds. No long intros.
+**Production requirements**: Two distinct routes — pick per post, they are different products.
+- *Filmed / generative footage*: smartphone with a decent camera and a basic editing app, a creator, or a production partner. Choose it when the row needs a place, a person, or a moment.
+- *Designed motion graphic*: a server-rendered branded animation (kinetic type, animated data, image reveals) built from the same design system as the static assets. No camera, no location, no crew, and it still reads as video in-feed. Choose it when the point is a message, a number, a comparison, or a reveal — this is the route that makes a video-shaped calendar achievable without a filming lane.
+
+Common to both: captions are mandatory (80%+ watch muted, so they are the primary channel, not an accessibility afterthought). Vertical (9:16). Hook in the first 2 seconds — and *hook* means something visibly moving, not a title card that finishes building in half a second and then holds.
 
 **Engagement characteristics**: High reach (algorithm-favored on most platforms). Lower engagement quality (views are easy, comments are hard). Good for discovery — new audiences find you through short-form. Lower save rate than carousels.
 
-**Tips**: One idea per video. State the takeaway in the first 3 seconds. End with a question or CTA, not a fade-out. Repurpose across platforms but re-export natively for each (avoid watermarks).
+**Tips**: One idea per video. State the takeaway in the first 3 seconds. End with a question or CTA, not a fade-out. Design the last frame to resolve into the first — a seamless loop buys a second play for free. Something visible should change every 3–5 seconds, and a hero subject should fill roughly 55–75% of the frame width; below that it reads as a diagram rather than a subject. Repurpose across platforms but re-export natively for each (avoid watermarks).
+
+**Name the shape, not just the topic.** A short's job is usually to change one belief, and the arc that does it is a choice: state-the-assumption-then-break-it, a zoom-out scale reveal, an iceberg proportion, or a single visual gesture applied twice and then visibly failing. A row that says only "opener video on X" hands that choice to whoever renders it.
 
 ---
 

@@ -21,6 +21,20 @@ phase consumes/mutates are defined in
   reference) or **family resemblance** (fallback: reuse the locked prompt block
   verbatim). State the expectation to the user explicitly.
 
+## Batch renders demonstrate; production is one at a time
+
+<!-- since: 2026-08-18 -->
+
+Producing a family of sibling assets in one batch run yields visible
+cross-item repetition — the same layout beats, the same transitions, the same
+phrasing rhythm — because a single generation context converges. That is
+acceptable when the point is to demonstrate a format family (a test pack),
+and it must be said out loud when it is. Production assets are made **one at
+a time, each reviewed before the next starts** (originating engagement,
+2026-08-17: the batch repetition was the client-side reviewer's first
+observation). The per-edition gate in §3 bounds *review*; this rule bounds
+*generation* inside an edition too.
+
 ## 1. Gate
 
 Phase 8 runs **only** if the user opts in **AND**
@@ -67,6 +81,32 @@ Per recurring subject/series:
 - `carousel` → N × `generate_image` sharing the anchor; `reel`/`short` →
   `generate_video` at 9:16.
 
+### c3. Designed motion graphics (`reel`/`short` with `producer: video-hd`)
+
+<!-- since: 2026-08-19 -->
+
+A `video-hd` row is **not** a media-gen asset and does not enter the anchor loop. Route it
+to the branded-video skill and hold it to that skill's short-form rules. Three properties
+make the difference between a cut that ships and one that gets re-made:
+
+1. **The plan row owes a shape, not just a topic.** Before authoring, name which
+   rhetorical shape the piece uses — explainer arc, false-assumption-then-reveal,
+   zoom-out scale reveal, iceberg proportion, one-gesture-retargeted — and what the
+   viewer is supposed to believe differently at the end. "Opener video introducing X" is
+   a slot, not a brief, and a slot gets a storyline invented at render time.
+2. **Review frames before the render, not after.** Storyboard the key beats as still
+   frames and look at them (composition, subject scale, whether anything moves in the
+   first two seconds). A finished async render is the most expensive place to discover a
+   static hook.
+3. **Verify the delivered file before it reaches the client gate (e).** Muted autoplay
+   makes burned captions the primary channel, and a caption *setting* is not a caption on
+   the pixels. Confirm the real duration and the on-screen text on the delivered frames —
+   not from the render job's status block.
+
+Where a row's message would be undercut by the obvious visual cliché (an image that
+argues the opposite of the campaign's position), name the banned visuals at plan time and
+carry them on the row. That check costs nothing on paper and is invisible once rendered.
+
 ### c2. Brief non-media-gen posts (infographic/document)
 Emit a structured brief (data points, layout intent, brand refs) into the post
 object and **flag the producer skill** (`chart`/`diagram` for infographics,
@@ -80,6 +120,12 @@ Captions/hooks/CTAs for the whole edition pass the **voice cascade**
 ### e. Human reviews the edition
 Present tiles + briefs + captions side by side → approve → update each post
 `status`:
+
+For a video row, present a **contact sheet of frames from the delivered file** (not the
+render job's own preview strip, which shows only the frames it chose) alongside the
+caption — a reviewer cannot judge pacing, a static hook, or caption legibility from a
+thumbnail. Say what the piece is trying to make the viewer believe, so the review is
+about the argument and not only the finish.
 - `media_ready` for generated media-gen assets,
 - `brief_ready` for non-media-gen (infographic/document) posts.
 
@@ -111,6 +157,18 @@ share no filesystem in deployed mode. Write returned bytes to:
 ```
 workspace/<client>/output/organic-social-campaign/assets/
 ```
+
+## Narrated video: the voice is a client decision
+
+<!-- since: 2026-08-18 -->
+
+Before any narrated cut goes to client review, send short samples of the
+candidate TTS preset voices speaking one campaign-toned line **in the
+campaign language**, and let the client pick. Record the pick in the brand
+folder (e.g. `brand_context.video.tts.presetVoice`) so every subsequent
+render uses it — a voice change mid-campaign is a brand break. A cloned voice
+(a client spokesperson) is a client option with its own consent, cost and
+recording requirements: note it, never default to it.
 
 ## Edge cases
 
