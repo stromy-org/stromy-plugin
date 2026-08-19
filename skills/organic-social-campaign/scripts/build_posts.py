@@ -58,12 +58,20 @@ DEFAULT_PRODUCER_BY_SURFACE: dict[str, str] = {
 }
 
 # surface -> the set of producers the validator accepts (the agent may switch an
-# infographic to diagram, or a document to pptx).
+# infographic to diagram, a document to pptx, or a reel/short from generative footage
+# to a designed motion graphic).
+#
+# `video-hd` is the DESIGNED-MOTION route: a server-rendered branded motion graphic
+# (titles, kinetic type, animated data) built from the campaign's own design system,
+# as opposed to `media-gen`'s generative footage. The content plan already offers
+# "convert to an animated format" as a first-class resolution for a video row with no
+# filming lane (content-plan-stage2.md §7), so the post schema has to be able to
+# express it — otherwise the plan promises a route production cannot record.
 ALLOWED_PRODUCERS_BY_SURFACE: dict[str, frozenset[str]] = {
     "image": frozenset({"media-gen"}),
     "carousel": frozenset({"media-gen"}),
-    "reel": frozenset({"media-gen"}),
-    "short": frozenset({"media-gen"}),
+    "reel": frozenset({"media-gen", "video-hd"}),
+    "short": frozenset({"media-gen", "video-hd"}),
     "infographic": frozenset({"chart", "diagram"}),
     "document": frozenset({"pdf", "pptx"}),
     "none": frozenset({"none"}),

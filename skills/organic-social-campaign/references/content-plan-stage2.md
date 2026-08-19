@@ -22,7 +22,12 @@ post itself.** Per planned slot it fixes:
 
 - **Schedule** — date, week, platform/track, act/beat (campaign mode).
 - **Format** — the concrete content format: reel / single image / carousel /
-  video / text post / story.
+  video / text post / story. **Name the container, never its output
+  mechanics**: no page counts, slide counts, or video durations in the plan
+  (live client review, 2026-08-17 — "stay conceptual on content"). Those are
+  production decisions; written into the plan they bind the roll-out stage to
+  numbers nobody has validated, and they get renegotiated line by line at
+  client review.
 - **Key-message allocation** — which of the week's pillar key messages this post
   carries. Work per week: take the key messages of that week's pillar/beat and
   **divide them across the week's posts**, so every message lands somewhere and
@@ -223,6 +228,35 @@ carousels, and reserve footage for the roll-out stage). The calendar must stand
 completely without the shoot; the option only says what improves if it lands.
 This is a high-value, low-cost proposal to put in front of a client and it is
 invisible unless someone counts the partner rows.
+
+### 7b · Format promises need a proven route — the focus test
+
+<!-- since: 2026-08-18 -->
+
+§7 checks that a producer *exists* for every row. It cannot check that the
+route *reaches the publication bar* — and for demanding formats (motion
+graphics and animation above all) that is the riskier claim. A plan promising
+five animations is a quality commitment made before anyone has seen one.
+
+Before the plan goes to the client, run a **focus test** on the smallest
+representative set — one to three items, typically the campaign's first posts
+per track — produced end-to-end to the real bar (real brand folder, real
+narration, real platform spec) and reviewed with the client-side reviewer.
+Where competing production routes exist for the same format (e.g.
+HTML-animation baking vs generative video), the focus test runs both on the
+same item and lets the result pick. Two properties make it a gate rather than
+a demo:
+
+- **The fallback is designed before the verdict.** If motion does not reach
+  the bar, the plan falls back to static formats, with video routed to the
+  creator or production-partner lane. Write that fallback down *before* the
+  test, so a miss re-scopes the plan instead of triggering a scramble — and
+  never send a client plan promising a volume of a format the test has not
+  passed once.
+- **The verdict edits the plan.** Format mix, cadence and producer columns
+  are adjusted to what the test proved before the working draft goes out
+  (originating engagement, 2026-08-17: "the focus test decides how the
+  content plan is adjusted before it goes to the client").
 
 ## 8 · Conformance to the agreed scope document (line by line)
 
