@@ -293,7 +293,7 @@ Do all three, in this order:
 
 Then let the client decide, and record the decision.
 
-## 12 · Recent sources lead; old frameworks are cited as frameworks
+## 13 · Recent sources lead; old frameworks are cited as frameworks
 
 Age is part of a figure's credibility, independent of its truth. An audience
 that reads "2017" under the lead statistic concludes it was the best you could
