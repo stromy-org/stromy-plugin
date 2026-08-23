@@ -48,7 +48,7 @@ surface therefore declares a **`producer`**:
 |---|---|---|
 | `image` | `media-gen` | `generate_image` (anchor) / `generate_image_variants` (aspect fan-out) |
 | `carousel` | `media-gen` | N × `generate_image` sharing the anchor / locked block |
-| `reel` / `short` | `media-gen` | `generate_video` (9:16) |
+| `reel` / `short` | `media-gen` **or** `video-hd` | `media-gen`: `generate_video` (9:16) — generative footage. `video-hd`: a server-rendered **designed motion graphic** built from the campaign design system (see below) |
 | `none` | `none` | no asset |
 | `infographic` | `chart` or `diagram` | **out of media-gen scope** — produced by the `chart` (numeric) / `diagram` (structural) skills; Phase 8 emits the brief and flags it |
 | `document` | `pdf` or `pptx` | **out of media-gen scope** — multi-page carousel/PDF produced by the `pdf`/`pptx` skills |
@@ -60,9 +60,24 @@ infographics) but carry a non-media-gen `producer` — Phase 8 produces their
 matches `type`.
 
 `build_posts.py` stamps the default producer (`infographic`→`chart`,
-`document`→`pdf`); the agent may switch `infographic`→`diagram` or
-`document`→`pptx`. Only `image`/`carousel`/`reel`/`short` are media-gen-rendered
-in v1.
+`document`→`pdf`); the agent may switch `infographic`→`diagram`,
+`document`→`pptx`, or `reel`/`short`→`video-hd`. Only `image`/`carousel` and the
+`media-gen`-producer `reel`/`short` rows are media-gen-rendered in v1.
+
+### The two video routes are different products — choose per row
+
+<!-- since: 2026-08-19 -->
+
+| Producer | What it makes | Choose it when |
+|---|---|---|
+| `media-gen` | generative footage (a scene that looks filmed) | the row needs a place, a person, a texture, or a moment — something a camera would have captured |
+| `video-hd` | a designed motion graphic: kinetic type, animated diagrams and data, image reveals, on the brand's own type and palette | the point is a **message, a number, a comparison, or a reveal**. No camera, no location, no crew, and it still reads as video in-feed |
+
+The content plan's third resolution for a video row with no filming lane — "convert to
+an animated format" (`content-plan-stage2.md` §7) — **is** the `video-hd` route. A plan
+that offers it and a post schema that cannot record it is the gap that turns a signed-off
+format mix into an improvised one at production time. A `video-hd` row still carries a
+video surface, a 9:16 aspect, and a duration: nothing about the calendar changes.
 
 ## Aspect Literal sets (sync with `media_gen.types`)
 

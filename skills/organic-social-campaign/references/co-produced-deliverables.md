@@ -133,3 +133,24 @@ next rebuild:
   term in the client's voice profile
   ([voice-integration.md](voice-integration.md) § Client lexicon) so the next
   build cannot regress it.
+
+## 7 · Standalone deliverables carry no trace of the process
+
+<!-- since: 2026-08-18 -->
+
+The co-edit loop generates process residue — reviewer names, round numbers,
+"per feedback of <date>" notes, version labels, open-point cross-references.
+That residue belongs in the ledger (§5) and the internal working documents,
+and **nowhere in a client-facing deliverable**: an artifact that cites its own
+feedback trail reads as a draft to the exact reader it was cleaned up for, and
+shows the client their agency's kitchen (live review, 2026-08: a rendered plan
+cell citing the reviewer's own mail note, spotted by the reviewer).
+
+Enforce it mechanically, not by eyeball — the same principle as the voice
+gate's literal count. Before publishing, lint every rendered cell/paragraph of
+the client-facing artifact against a trigger list: reviewer and colleague
+names, "feedback"/"review", round and version numbers, internal file names,
+and dates coupled to process events rather than content. Zero hits or it does
+not ship; wire the lint into the build so a rebuild cannot regress it. Working
+documents — the internal twin, the ledger — keep the full trail deliberately:
+the lint separates the two postures, it never sanitizes the record.
