@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "85f9e4945dbf49c5e60ca0e2fd28f3bfac44c5085ed51944f73aa6a6984bb4e1",
+    "charterSha": "8a7c7ceeab6dde48286d15e612577129d30ab74b87b9c669e8502daebd76fabc",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -231,7 +231,15 @@
       "imageTreatment": "documentary-muted",
       "motifProminence": "structural",
       "colorRhythm": "dark-light-indexed",
-      "ornament": "restrained"
+      "ornament": "restrained",
+      "energy": "expressive",
+      "depth": "layered",
+      "materiality": [
+        "matte",
+        "light",
+        "metal"
+      ],
+      "continuity": "section-sequence"
     },
     "signatureElements": [
       "Dot-dome — the primary mark: a polar lattice of dots forming an orchestra dome with one indigo focal dot at the podium; the rising-ensemble signature.",
@@ -614,7 +622,15 @@
         "imageTreatment": "documentary-muted",
         "motifProminence": "structural",
         "colorRhythm": "dark-light-indexed",
-        "ornament": "restrained"
+        "ornament": "restrained",
+        "energy": "expressive",
+        "depth": "layered",
+        "materiality": [
+          "matte",
+          "light",
+          "metal"
+        ],
+        "continuity": "section-sequence"
       },
       "principles": [
         "Substance before style — the work speaks; decoration must earn its place.",
@@ -634,7 +650,15 @@
         "imageTreatment": "documentary-muted",
         "motifProminence": "structural",
         "colorRhythm": "dark-light-indexed",
-        "ornament": "restrained"
+        "ornament": "restrained",
+        "energy": "expressive",
+        "depth": "layered",
+        "materiality": [
+          "matte",
+          "light",
+          "metal"
+        ],
+        "continuity": "section-sequence"
       },
       "principles": [
         "Substance before style — the work speaks; decoration must earn its place.",
