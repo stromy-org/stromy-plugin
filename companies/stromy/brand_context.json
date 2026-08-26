@@ -893,7 +893,6 @@
           "hero",
           "closing",
           "background",
-          "texture",
           "content"
         ],
         "hero": true,
@@ -1008,8 +1007,7 @@
         "source": "images/stage-rigging-lights.jpg",
         "theme": "hall-architecture",
         "roles": [
-          "background",
-          "texture"
+          "background"
         ],
         "hero": false,
         "treatment": "spotlight-noir",
@@ -1097,7 +1095,6 @@
           "divider",
           "background",
           "section",
-          "texture",
           "content"
         ],
         "hero": false,
@@ -2125,8 +2122,7 @@
         "source": "images/hal-06.jpg",
         "theme": "hall-architecture",
         "roles": [
-          "background",
-          "texture"
+          "background"
         ],
         "hero": false,
         "treatment": "spotlight-noir",
@@ -2211,8 +2207,7 @@
         "source": "images/hal-09.jpg",
         "theme": "hall-architecture",
         "roles": [
-          "background",
-          "texture"
+          "background"
         ],
         "hero": false,
         "treatment": "velvet-tritone",
@@ -2295,8 +2290,7 @@
         "source": "images/hal-12.jpg",
         "theme": "hall-architecture",
         "roles": [
-          "background",
-          "texture"
+          "background"
         ],
         "hero": false,
         "treatment": "nocturne",
