@@ -90,6 +90,36 @@
       "mime": "image/svg+xml"
     },
     {
+      "name": "icon-crescendo.svg",
+      "sha256": "bd7e9aab0ba7734da81c94a1c7225e403308e16e01a096fc1473038e2b70eb66",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon-ensemble.svg",
+      "sha256": "23520d0db3023a5250323400072d2fed6034a59105e13d082a6ce3b046a81dc9",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon-measure.svg",
+      "sha256": "d325d3b42f8193619f4b1044f606243d2f0a98b68a5ce7f39bdddda6398ec52c",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon-score.svg",
+      "sha256": "604c92b28e81a2fc6ab3562f1557291a3962085b587e151bc015b258c2184939",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon-tempo.svg",
+      "sha256": "c18e554a257f8abc234e59ef2cdd2eed2ca2c0eb63c58ae5837af97232c26896",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon-waveform.svg",
+      "sha256": "ad86f1a84b8b9a4077ca5820e1163df5b1b5e843aae7190d8b37a41cf3064f18",
+      "mime": "image/svg+xml"
+    },
+    {
       "name": "logo.png",
       "sha256": "60f95168202b3ce1767161fcca96e0e5d7c2c83488595fcecb211baa622659a2",
       "mime": "image/png"

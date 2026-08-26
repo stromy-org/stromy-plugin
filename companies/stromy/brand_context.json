@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "c1b725e9db0e9dc659a10f3b40d6e0637535e532ef34f37a3c0894183d75c20e",
+    "charterSha": "b8873d97ae80c3c688d44d5d3fdad216931902fdde29d95c1afd835ed188ba37",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -404,7 +404,7 @@
         }
       },
       "patterns": {
-        "status": "proposed",
+        "status": "approved",
         "required": false,
         "evidence": {
           "tier": "derived",
@@ -424,41 +424,66 @@
               "usage": "hero/divider background texture; the focal dot must stay perceptible"
             }
           ]
-        }
+        },
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: the full 0.10–0.30 opacity band stands — renders pick within it depending on how much text sits over the field."
       },
       "grid": {
-        "status": "proposed",
+        "status": "approved",
         "required": false,
         "evidence": {
-          "tier": "derived",
-          "source": "website.layout structured-2col + barline measure rhythm"
+          "tier": "proposed",
+          "source": "net-new, no external source: the derived symmetric-2col reading of website.layout was reviewed against four alternatives on 2026-08-26 and rejected; the staff principle was authored in that review and signed off. tier stays 'proposed' because there is no upstream artefact to point at — status 'approved' is what records the acceptance. The site follows the brand here, not the other way round (ORG-225)."
         },
         "spec": {
-          "columns": "structured 2-col content over a 12-col base",
+          "principle": "staff — horizontal rules organise the page; columns are secondary",
+          "staff": "a five-line rule group (1px, 28% opacity, 10px line spacing) opens and closes each major section; the staff runs full-bleed to the margins",
+          "headings": "section headings sit ON the staff, knocked out of it with a small horizontal pad so the rules appear to pass behind the type",
+          "columns": "content below the staff runs in one measure by default; a second column is allowed but is a choice, not the structure",
           "gutter": "generous",
           "maxWidth": "measured (editorial)",
           "margins": "wide",
-          "rhythm": "barline measures register horizontal divisions"
+          "rhythm": "vertical rhythm is set by staff-to-staff distance, not by column count; barline measures remain available as an accent within a staff group"
         },
         "cssTokens": {
           "--grid-max": "72rem",
           "--grid-gutter": "2rem",
-          "--grid-margin": "6vw"
-        }
+          "--grid-margin": "6vw",
+          "--staff-line": "1px",
+          "--staff-gap": "10px",
+          "--staff-opacity": "0.28"
+        },
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: five candidate principles were drawn (recorded 2-col, staff, asymmetric 8/4, single measure, modular blocks). Staff was chosen as the most on-concept and the most distinctive. This supersedes the derived spec — stromy.com.au is now behind the grammar and needs to follow it."
       },
       "iconography": {
-        "status": "proposed",
+        "status": "approved",
         "required": false,
         "evidence": {
           "tier": "derived",
-          "source": "stroke/dot language of the motif family; representative sample set deferred to Pillar 6 productionize"
+          "source": "stroke/dot language of the motif family; the reference sample set was drawn and signed off 2026-08-26 (dot terminals reviewed and rejected)"
         },
+        "assets": [
+          "assets/svg/icons/icon-crescendo.svg",
+          "assets/svg/icons/icon-measure.svg",
+          "assets/svg/icons/icon-waveform.svg",
+          "assets/svg/icons/icon-tempo.svg",
+          "assets/svg/icons/icon-score.svg",
+          "assets/svg/icons/icon-ensemble.svg"
+        ],
         "spec": {
           "style": "stroke-led geometric",
           "strokeWeight": "2px",
           "corner": "round caps/joins",
-          "fillVsLine": "line-dominant with dot terminals"
-        }
+          "fillVsLine": "line-dominant, plain round caps (no dot terminals)",
+          "sample": [
+            "assets/svg/icons/icon-crescendo.svg",
+            "assets/svg/icons/icon-measure.svg",
+            "assets/svg/icons/icon-waveform.svg",
+            "assets/svg/icons/icon-tempo.svg",
+            "assets/svg/icons/icon-score.svg",
+            "assets/svg/icons/icon-ensemble.svg"
+          ]
+        },
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: option B chosen — the filled dot terminal was drawn alongside and rejected as too busy at icon scale. The six icons above are the reference set; new icons match their weight, cap style and 48px construction."
       },
       "gradients": {
         "status": "approved",
@@ -485,18 +510,18 @@
         }
       },
       "photo": {
-        "status": "deferred",
+        "status": "approved",
         "required": false,
         "evidence": {
-          "tier": "proposed",
-          "source": "Pillar 5 — literal orchestral imagery library (instruments, strings, halls)"
+          "tier": "derived",
+          "source": "Pillar 5 delivered (68-image orchestral library); this treatment is what the shipped renders already apply"
         },
         "spec": {
           "overlayOpacity": 0.62,
           "treatment": "desaturated, high-contrast, indigo-toned overlay",
-          "crop": "tight crops over scenic",
-          "note": "full imagery direction owned by Pillar 5"
-        }
+          "crop": "tight crops over scenic"
+        },
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: overlay 0.62 confirmed over a 0.45 alternative. The Pillar 5 deferral was stale — Pillar 5 is COMPLETE — so the dimension is terminal, not parked."
       },
       "elevation": {
         "status": "approved",
