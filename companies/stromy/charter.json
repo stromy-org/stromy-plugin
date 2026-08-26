@@ -37,7 +37,8 @@
         "Times New Roman",
         "serif"
       ],
-      "webSafe": "Georgia"
+      "webSafe": "Georgia",
+      "embedFamily": "Fraunces"
     },
     "body": {
       "family": "Plus Jakarta Sans",
@@ -48,7 +49,8 @@
         "Arial",
         "sans-serif"
       ],
-      "webSafe": "Segoe UI"
+      "webSafe": "Segoe UI",
+      "embedFamily": "Plus Jakarta Sans"
     },
     "mono": {
       "family": "IBM Plex Mono",
@@ -59,7 +61,8 @@
         "Courier New",
         "monospace"
       ],
-      "webSafe": "Consolas"
+      "webSafe": "Consolas",
+      "embedFamily": "IBM Plex Mono"
     },
     "wordmark": {
       "family": "Space Grotesk",
@@ -71,7 +74,8 @@
         "Helvetica",
         "sans-serif"
       ],
-      "webSafe": "Segoe UI"
+      "webSafe": "Segoe UI",
+      "embedFamily": "Space Grotesk"
     },
     "label": {
       "family": "Space Grotesk",
@@ -83,7 +87,8 @@
         "Helvetica",
         "sans-serif"
       ],
-      "webSafe": "Segoe UI"
+      "webSafe": "Segoe UI",
+      "embedFamily": "Space Grotesk"
     }
   },
   "logo": {
@@ -112,43 +117,35 @@
     "catalog": [
       {
         "file": "images/conductor-hands-baton.jpg",
-        "description": "Conductor's hands and baton, mid-gesture — the signal that resolves the parts",
         "roles": [
           "cover",
           "hero"
         ],
         "hero": true,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "conductor-gesture",
+        "description": "Conductor's hands and baton, mid-gesture — the signal that resolves the parts"
       },
       {
         "file": "images/conductor-backlit.jpg",
-        "description": "Conductor silhouetted, backlit on a dark stage",
         "roles": [
           "closing",
           "content"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "conductor-gesture",
+        "description": "Conductor silhouetted, backlit on a dark stage"
       },
       {
         "file": "images/spotlight-player.jpg",
-        "description": "Single musician under a concert spotlight against black",
         "roles": [
+          "cover",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Single musician under a concert spotlight against black"
       },
       {
         "file": "images/orchestra-dotfield-above.jpg",
-        "description": "Orchestra seen from above as a field of points — the dot-field motif made real",
         "roles": [
           "hero",
           "divider",
@@ -156,13 +153,11 @@
           "texture"
         ],
         "hero": true,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Orchestra seen from above as a field of points — the dot-field motif made real"
       },
       {
         "file": "images/orchestra-from-above.jpg",
-        "description": "Wide overhead of the full orchestra mid-performance",
         "roles": [
           "cover",
           "hero",
@@ -172,111 +167,86 @@
           "content"
         ],
         "hero": true,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Wide overhead of the full orchestra mid-performance"
       },
       {
         "file": "images/string-arc-above.jpg",
-        "description": "Sweeping arc of the string section from above",
         "roles": [
           "cover",
           "hero",
           "closing"
         ],
         "hero": true,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Sweeping arc of the string section from above"
       },
       {
         "file": "images/brass-section-above.jpg",
-        "description": "Brass section catching stage light from above",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Brass section catching stage light from above"
       },
       {
         "file": "images/harpist-strings.jpg",
-        "description": "Harpist's hands among the strings",
         "roles": [
           "closing",
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Harpist's hands among the strings"
       },
       {
         "file": "images/percussion-timpani.jpg",
-        "description": "Timpani in low light, mallets poised",
         "roles": [
           "divider",
           "section"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Timpani in low light, mallets poised"
       },
       {
         "file": "images/stage-rigging-lights.jpg",
-        "description": "Stage rigging and lights overhead — the architecture of the hall",
         "roles": [
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Stage rigging and lights overhead — the architecture of the hall"
       },
       {
         "file": "images/abstract-waveform-dotfield.jpg",
-        "description": "Sound rendered as a field of points — abstract waveform dot-field",
         "roles": [
           "background"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Sound rendered as a field of points — abstract waveform dot-field"
       },
       {
         "file": "images/abstract-wave-interference.jpg",
-        "description": "Interfering wavefronts — abstract resonance",
         "roles": [
           "texture"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Interfering wavefronts — abstract resonance"
       },
       {
         "file": "images/abstract-flowing-ribbon.jpg",
-        "description": "A single flowing ribbon of light — phrase made visible",
         "roles": [
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "A single flowing ribbon of light — phrase made visible"
       },
       {
         "file": "images/str-03.jpg",
-        "description": "Violin against dark surface",
         "roles": [
           "divider",
           "background",
@@ -284,117 +254,91 @@
           "texture",
           "content"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Violin against dark surface"
       },
       {
         "file": "images/str-05.jpg",
-        "description": "Black and white violin",
         "roles": [
           "closing",
           "hero"
         ],
         "hero": true,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Black and white violin"
       },
       {
         "file": "images/wav-10.jpg",
-        "description": "Purple wave light",
         "roles": [
           "divider",
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Purple wave light"
       },
       {
         "file": "images/wav-02.jpg",
-        "description": "Audio pattern, monochrome",
         "roles": [
           "divider",
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Audio pattern, monochrome"
       },
       {
         "file": "images/wav-01.jpg",
-        "description": "Black & white wavy lines",
         "roles": [
           "closing",
           "divider",
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Black & white wavy lines"
       },
       {
         "file": "images/wav-08.jpg",
-        "description": "Abstract black wavy lines",
         "roles": [
           "divider",
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Abstract black wavy lines"
       },
       {
         "file": "images/wav-03.jpg",
-        "description": "Circular audio pattern",
         "roles": [
           "cover",
           "closing",
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Circular audio pattern"
       },
       {
         "file": "images/wav-04.jpg",
-        "description": "Black & white wavy lines",
         "roles": [
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Black & white wavy lines"
       },
       {
         "file": "images/wav-05.jpg",
-        "description": "Monochrome flowing waves",
         "roles": [
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Monochrome flowing waves"
       },
       {
         "file": "images/wav-06.jpg",
-        "description": "Black wavy surface",
         "roles": [
           "hero",
           "closing",
@@ -402,246 +346,431 @@
           "texture"
         ],
         "hero": true,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Black wavy surface"
       },
       {
         "file": "images/wav-07.jpg",
-        "description": "Curved monochrome form",
         "roles": [
           "background",
           "texture"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Curved monochrome form"
       },
       {
         "file": "images/wav-09.jpg",
-        "description": "Dark blue/black fluid",
         "roles": [
           "closing",
           "divider"
         ],
-        "hero": false,
-        "treatment": "velvet-tritone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "score-abstract",
+        "description": "Dark blue/black fluid"
       },
       {
         "file": "images/hal-05.jpg",
-        "description": "Theatre stairs interior",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Theatre stairs interior"
       },
       {
         "file": "images/hal-03.jpg",
-        "description": "Empty auditorium, seats + stage",
         "roles": [
           "closing",
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Empty auditorium, seats + stage"
       },
       {
         "file": "images/hal-02.jpg",
-        "description": "Hall with pipe organ",
         "roles": [
           "cover",
           "hero",
           "closing"
         ],
         "hero": true,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Hall with pipe organ"
       },
       {
         "file": "images/hal-01.jpg",
-        "description": "B&W empty auditorium",
         "roles": [
           "closing"
         ],
-        "hero": false,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "B&W empty auditorium"
       },
       {
         "file": "images/pno-05.jpg",
-        "description": "Hand position study",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Hand position study"
       },
       {
         "file": "images/pno-01.jpg",
-        "description": "Hands on keys, focused",
         "roles": [
           "content"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Hands on keys, focused"
       },
       {
         "file": "images/prc-04.jpg",
-        "description": "Grayscale drum set",
         "roles": [
           "closing"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Grayscale drum set"
       },
       {
         "file": "images/prc-01.jpg",
-        "description": "Snare drum close-up B&W",
         "roles": [
           "closing"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Snare drum close-up B&W"
       },
       {
         "file": "images/prc-07.jpg",
-        "description": "Drumsticks on drums",
         "roles": [
           "closing"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Drumsticks on drums"
       },
       {
         "file": "images/brs-01.jpg",
-        "description": "Trumpet on black textile",
         "roles": [
           "divider",
           "background",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Trumpet on black textile"
       },
       {
         "file": "images/brs-06.jpg",
-        "description": "Trumpet close photography",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "instruments-detail",
+        "description": "Trumpet close photography"
       },
       {
         "file": "images/orc-10.jpg",
-        "description": "Orchestra and choir on stage",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Orchestra and choir on stage"
       },
       {
         "file": "images/orc-09.jpg",
-        "description": "Group on stage, empty seats",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Group on stage, empty seats"
       },
       {
         "file": "images/orc-08.jpg",
-        "description": "Audience watching orchestra",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "nocturne",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Audience watching orchestra"
       },
       {
         "file": "images/orc-02.jpg",
-        "description": "Orchestra in dim-lit room",
         "roles": [
           "cover",
           "hero",
           "closing"
         ],
         "hero": true,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Orchestra in dim-lit room"
       },
       {
         "file": "images/orc-01.jpg",
-        "description": "Grayscale orchestra in theatre",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "amethyst-splittone",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Grayscale orchestra in theatre"
       },
       {
         "file": "images/orc-03.jpg",
-        "description": "Conductor + orchestra in hall",
         "roles": [
           "divider",
           "section",
           "content"
         ],
-        "hero": false,
-        "treatment": "spotlight-noir",
-        "theme": "orchestral",
-        "stock": false
+        "theme": "hall-architecture",
+        "description": "Conductor + orchestra in hall"
+      },
+      {
+        "file": "images/hal-13.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Orchestra rehearsal seen from above, music stands and bows"
+      },
+      {
+        "file": "images/cnd-02.jpg",
+        "roles": [
+          "closing",
+          "content"
+        ],
+        "theme": "conductor-gesture",
+        "description": "Conductor silhouetted against stage light"
+      },
+      {
+        "file": "images/cnd-03.jpg",
+        "roles": [
+          "divider",
+          "background"
+        ],
+        "theme": "conductor-gesture",
+        "description": "Conductor's raised hand, motion blur"
+      },
+      {
+        "file": "images/cnd-04.jpg",
+        "roles": [
+          "section",
+          "content"
+        ],
+        "theme": "conductor-gesture",
+        "description": "Conductor viewed from behind, orchestra beyond"
+      },
+      {
+        "file": "images/hal-14.jpg",
+        "roles": [
+          "divider",
+          "section"
+        ],
+        "theme": "hall-architecture",
+        "description": "Concert hall balcony view over the stage, coloured light"
+      },
+      {
+        "file": "images/ins-01.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Cello close detail, dark wood grain"
+      },
+      {
+        "file": "images/ins-02.jpg",
+        "roles": [
+          "content",
+          "closing"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin body detail, wood grain and joinery"
+      },
+      {
+        "file": "images/ins-03.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "texture"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin bridge and strings, monochrome"
+      },
+      {
+        "file": "images/ins-04.jpg",
+        "roles": [
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin scroll and bow resting on case"
+      },
+      {
+        "file": "images/ins-05.jpg",
+        "roles": [
+          "closing",
+          "divider"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin bridge and strings, monochrome"
+      },
+      {
+        "file": "images/ins-06.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin f-hole detail, low light"
+      },
+      {
+        "file": "images/ins-07.jpg",
+        "roles": [
+          "content",
+          "closing"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin f-hole, warm sidelight"
+      },
+      {
+        "file": "images/ins-08.jpg",
+        "roles": [
+          "divider",
+          "background"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin f-hole and bow, close detail"
+      },
+      {
+        "file": "images/hal-06.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "hall-architecture",
+        "description": "Concert hall interior, architectural render"
+      },
+      {
+        "file": "images/hal-07.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Concert hall ceiling and balconies"
+      },
+      {
+        "file": "images/hal-08.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Grand concert hall, wide interior view"
+      },
+      {
+        "file": "images/hal-09.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "hall-architecture",
+        "description": "Hall interior, warm ambient light"
+      },
+      {
+        "file": "images/hal-10.jpg",
+        "roles": [
+          "divider",
+          "section"
+        ],
+        "theme": "hall-architecture",
+        "description": "Auditorium seating rows, architectural symmetry"
+      },
+      {
+        "file": "images/hal-11.jpg",
+        "roles": [
+          "closing",
+          "divider"
+        ],
+        "theme": "hall-architecture",
+        "description": "Concert hall stage from the seats"
+      },
+      {
+        "file": "images/hal-12.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "hall-architecture",
+        "description": "Domed hall interior, structural detail"
+      },
+      {
+        "file": "images/wav-11.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Abstract sound wave rendering"
+      },
+      {
+        "file": "images/wav-12.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Flowing light trails, abstract"
+      },
+      {
+        "file": "images/wav-13.jpg",
+        "roles": [
+          "divider",
+          "background"
+        ],
+        "theme": "score-abstract",
+        "description": "Abstract wave pattern, monochrome"
+      },
+      {
+        "file": "images/wav-14.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Fluid abstract texture"
+      },
+      {
+        "file": "images/wav-15.jpg",
+        "roles": [
+          "closing",
+          "divider"
+        ],
+        "theme": "score-abstract",
+        "description": "Radiating light pattern, abstract"
+      },
+      {
+        "file": "images/wav-16.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Layered wave texture, abstract"
       }
     ],
     "overlay": {
@@ -649,7 +778,8 @@
       "opacity": 0.4
     },
     "logoVariantOnImage": "white",
-    "note": "Role-tagged library in images/manifest.json (orchestral, Velvet Score; generated + treated Unsplash). 'treatment' is the PREFERRED look — advisory; downstream (format-MCP/website) may override to harmonise a deck. Named looks in expression.treatments apply downstream; overlay is a legibility scrim."
+    "note": "Role-tagged library in images/manifest.json (orchestral, Velvet Score; generated + treated Unsplash). 'treatment' is the PREFERRED look — advisory; downstream (format-MCP/website) may override to harmonise a deck. Named looks in expression.treatments apply downstream; overlay is a legibility scrim.",
+    "_catalogNote": "Reference only — regenerated 2026-08-26 from images/manifest.json (the sole source the compiler reads). If they disagree, the manifest wins; regenerate this catalog rather than editing it."
   },
   "website": {
     "archetype": "sage",
@@ -1092,7 +1222,11 @@
         "note": "ORG-PLAN-195. Straight from the contrast axis: 'depth carried by colour, shadows deliberately minimal'. That is layered by definition — not flat (colour genuinely carries depth here) and not immersive (a brand that removes its shadows is not asking to be stood inside). Unchanged by the 2026-08-13 review."
       },
       "materiality": {
-        "value": ["matte", "light", "metal"],
+        "value": [
+          "matte",
+          "light",
+          "metal"
+        ],
         "note": "ORG-PLAN-195. matte and light are DERIVED: matte from 'documentary-muted, desaturated/high-contrast' plus the deliberately minimal shadows; light from the stage-light radial and the single indigo focal dot — illumination IS the brand's material idea. metal is AUTHORED (owner decision 2026-08-13), not derived: the captured grammar contains no reflective device, and this records a decision that Stromy's one premium moment reads as a worked material. Kept honest deliberately — a reader must be able to tell which of these came from evidence. Still explicitly NOT grain: nothing asks for texture noise, and the anti-pattern against gradient floods argues against it. The only multi-valued core axis."
       },
       "continuity": {
@@ -1165,7 +1299,7 @@
         "selected": "indexed",
         "approved": [
           "indexed",
-          "hall-immersion",
+          "concert-hall-dark",
           "cream-forward"
         ],
         "candidates": [
@@ -1203,10 +1337,10 @@
             ]
           },
           {
-            "id": "hall-immersion",
+            "id": "concert-hall-dark",
             "spec": {
-              "cadence": "hall-immersion",
-              "default": "hall-immersion — Concert Black sustained across hero + section opens; Cream reserved for dense reading spreads. Same surfaces, a darker, more immersive rhythm."
+              "cadence": "concert-hall-dark",
+              "default": "concert-hall-dark — Concert Black sustained across hero + section opens; Cream reserved for dense reading spreads. Same surfaces, a darker, more immersive rhythm."
             }
           },
           {
@@ -1460,8 +1594,8 @@
           "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule — these are real approved decisions, not a silent drop). Bake/render_video productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
         },
         "cssTokens": {
-          "--motion-duration": "520ms",
-          "--motion-ease": "cubic-bezier(0.22,1,0.36,1)"
+          "--motion-duration": "560ms",
+          "--motion-ease": "cubic-bezier(0.19,0.88,0.27,1)"
         }
       }
     },
