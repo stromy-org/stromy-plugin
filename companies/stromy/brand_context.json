@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "b8873d97ae80c3c688d44d5d3fdad216931902fdde29d95c1afd835ed188ba37",
+    "charterSha": "cbf045c82955df5b5c4ec6eb89db18a1c4a486c555e56e6470d28fdacd5892d7",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -435,14 +435,15 @@
           "source": "net-new, no external source: the derived symmetric-2col reading of website.layout was reviewed against four alternatives on 2026-08-26 and rejected; the staff principle was authored in that review and signed off. tier stays 'proposed' because there is no upstream artefact to point at — status 'approved' is what records the acceptance. The site follows the brand here, not the other way round (ORG-225)."
         },
         "spec": {
-          "principle": "staff — horizontal rules organise the page; columns are secondary",
-          "staff": "a five-line rule group (1px, 28% opacity, 10px line spacing) opens and closes each major section; the staff runs full-bleed to the margins",
-          "headings": "section headings sit ON the staff, knocked out of it with a small horizontal pad so the rules appear to pass behind the type",
-          "columns": "content below the staff runs in one measure by default; a second column is allowed but is a choice, not the structure",
+          "principle": "staff — horizontal rules are the brand's organising device; columns are secondary",
+          "staff": "a five-line rule group at the charter metrics (--staff-line, --staff-gap, --staff-opacity). Running full-bleed to the margins, opening a major section, is the conventional reading and a good default. It is a device, not a mandate: place it where the composition wants it — one staff, several, a partial group, a short segment beside a heading, or none at all on a surface where it would crowd the content.",
+          "headings": "a label may sit on the staff, with the rules breaking either side of it and a small horizontal pad so they read as passing behind the type. Optional — a bare staff with no label is equally correct. (Breaking rather than knocking out is deliberate: a knockout needs a background matching its canvas, which fails on photographic and gradient surfaces.)",
+          "columns": "one measure is the default below a staff; a second column is allowed but is a choice, not the structure",
           "gutter": "generous",
           "maxWidth": "measured (editorial)",
           "margins": "wide",
-          "rhythm": "vertical rhythm is set by staff-to-staff distance, not by column count; barline measures remain available as an accent within a staff group"
+          "rhythm": "where staffs structure a surface, vertical rhythm follows staff-to-staff distance rather than column count; barline measures remain available as an accent within a staff group",
+          "latitude": "CONSUMER CONTRACT — metrics fixed, placement free. Renderers (deck, document, PDF) should treat the five-line group at the charter metrics as the recognisable form, and where it sits on the page as a per-surface compositional decision. Do not apply a staff to every section, slide or page automatically; a deck that opens and closes every slide with one has turned a device into wallpaper."
         },
         "cssTokens": {
           "--grid-max": "72rem",
@@ -452,7 +453,7 @@
           "--staff-gap": "10px",
           "--staff-opacity": "0.28"
         },
-        "decision": "signed off 2026-08-26 (William) against a drawn specimen: five candidate principles were drawn (recorded 2-col, staff, asymmetric 8/4, single measure, modular blocks). Staff was chosen as the most on-concept and the most distinctive. This supersedes the derived spec — stromy.com.au is now behind the grammar and needs to follow it."
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: five candidate principles were drawn (recorded 2-col, staff, asymmetric 8/4, single measure, modular blocks). Staff was chosen as the most on-concept and the most distinctive. This supersedes the derived spec — stromy.com.au is now behind the grammar and needs to follow it. Reframed 2026-08-27 (William) after seeing it rendered: the metrics are the brand, the placement is not. The spec previously read as a rule ('opens and closes each major section'), which brand_context carries verbatim to every format skill — so a deck renderer would have imposed it slide by slide. It is now stated as a device with defaults and an explicit consumer contract."
       },
       "iconography": {
         "status": "approved",
