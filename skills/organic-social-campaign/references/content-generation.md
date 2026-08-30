@@ -55,6 +55,80 @@ charter/tokens. Persist as
 `default_style_block_ref` from config). Reused across editions and by
 `paid-social-campaign`.
 
+<!-- since: 2026-08-28 -->
+
+## 2b. Lock the campaign visual system (designed assets)
+
+§2 locks *generated* imagery. The assets a campaign actually ships most of —
+carousels, one-pagers, motion — are **designed, not prompted**, and have no
+campaign-level lock at all, so every new post re-derives its look from the brand
+folder and the set drifts apart over six weeks.
+
+The moment the first assets of each track are approved, write
+`campaigns/<slug>/VISUAL-SYSTEM.md` and have every later post inherit it. It
+fixes: surface anatomy (and what each structural variant *means*), the type
+scale, the signature marks with a rule each, the pictogram and diagram
+vocabulary **including the diagram types already established by name**, so the
+next post reuses one instead of inventing a fourth, the density rule, the motion
+grammar where relevant, and the production constraints that shape all of it.
+
+Two rules keep it alive rather than decorative:
+
+- **The bar is brand smell, not pixel identity.** Recognisable as the same
+  campaign at a glance in a feed — not built identically.
+- **Deviation with a stated reason is fine; drift without one is not.**
+
+Where the client's channel already exists, derive the system from their **real
+feed** — a screenshot of the actual grid — not from the brand book. Continuity
+with what the audience already sees is what makes a post look native instead of
+like an ad dropped into someone's account.
+
+<!-- since: 2026-08-28 -->
+
+## 2c. Verify the delivered artifact, not the render intent
+
+A render tool's `status: ok` is a statement about the *request*, not about the
+file. Every one of these shipped green and was caught only by opening the bytes:
+a page silently rasterized (fonts unembedded, file 10-25× larger) because one
+decorative asset carried an alpha channel; a burn-in caption setting that emitted
+a subtitle track and burned nothing, on a platform that autoplays muted; a
+fallback typeface pulled in for a single glyph missing from the brand font; and
+an artifact returned as a storage push with no bytes at all once the output
+crossed the tool's inline size cap.
+
+So before anything reaches a review gate: rasterize the pages and look at them,
+list the embedded fonts, check duration and dimensions, and where text is burned
+in, read it back **off the pixels**. Then look at the whole set together —
+repetition and broken rhythm only show up side by side.
+
+Two extensions, both learned the expensive way:
+
+- **Check delivered *affordances*, not only delivered text.** A calendar cell
+  listing three sources carried a hyperlink on only the first, because a
+  spreadsheet cell holds one link — so the reviewer read "that source is
+  missing" while its label sat there unlinked. The failure is silent precisely
+  because the text looks right. Links, downloads, playable audio, alt text: a
+  thing the reader cannot *act on* is not delivered. (Render one row per cited
+  item, figure beside its own link, rather than stacking them in one cell.)
+- **Re-rendering an approved set to change one item is a regression risk.**
+  Brand data, tokens and the renderer itself move underneath an approved
+  deliverable. When a reviewer's edit touches one card of seven, re-render the
+  set, then **diff every unchanged item against the committed output** before
+  publishing, and publish only what actually differs. Two things follow: a
+  silent restyle of the six approved cards becomes impossible to miss, and the
+  untouched files keep a clean version history instead of collecting empty
+  versions. If a sibling comes back byte-identical, that is the proof — do not
+  re-upload it.
+
+**A verifier that fails a correct artifact is worse than no verifier**, because
+the next person learns to ignore it. When an automated check disagrees with what
+you can see, confirm the artifact by eye **first**, then fix the check — never
+the other way round, and never by loosening it until it passes. (Worked example:
+an OCR caption check cropped a fixed band and read it as "a single text line";
+new drawn objects appeared inside that band and the read turned to garbage while
+the caption was plainly legible. The fix was a tighter crop plus a second
+segmentation mode — not a lower threshold.)
+
 ## 3. Per edition (default one week), in order
 
 ### a. Select + partition
@@ -158,17 +232,47 @@ share no filesystem in deployed mode. Write returned bytes to:
 workspace/<client>/output/organic-social-campaign/assets/
 ```
 
-## Narrated video: the voice is a client decision
+## Narrated video: audio is a route decision, never a default
 
-<!-- since: 2026-08-18 -->
+<!-- since: 2026-08-18, extended 2026-08-28 -->
 
-Before any narrated cut goes to client review, send short samples of the
-candidate TTS preset voices speaking one campaign-toned line **in the
-campaign language**, and let the client pick. Record the pick in the brand
-folder (e.g. `brand_context.video.tts.presetVoice`) so every subsequent
-render uses it — a voice change mid-campaign is a brand break. A cloned voice
-(a client spokesperson) is a client option with its own consent, cost and
-recording requirements: note it, never default to it.
+**A preset TTS voice is a review placeholder, and it must be labelled as one.**
+Expect this verdict pattern: the client likes the film and rejects the voice
+("very AI"). It is not a wording problem and no amount of re-synthesis fixes it.
+
+Put the audio route to the client as an explicit choice, with a fallback
+designed for each: **studio-recorded voice-over** · **licensed music only** ·
+**silent with burned-in captions** (plus a static fallback where the format
+allows it). Burned-in captions stay in every route — most feed video plays
+muted, so captions are the primary channel, not an accessibility extra.
+
+**Ship the silent option as a file, not as a sentence.** Derive it from the
+approved narrated cut by a stream copy that drops the audio track only
+(`ffmpeg -an -c:v copy`), so the picture is bit-identical and the two cuts
+cannot drift. Deliver it **beside** the narrated cut rather than in place of it:
+the route is still open, and the silent cut is exactly what a studio voice-over
+gets laid over later. Then make the filenames do the work — when two files
+differ only in audio, a reader who clicks the wrong one concludes the work was
+not done, so name the route in the filename and say in the covering note which
+link is which.
+
+Where a preset voice is still in play, send short samples of the candidates
+speaking one campaign-toned line **in the campaign language** and let the client
+pick; record the pick in the brand folder (e.g.
+`brand_context.video.tts.presetVoice`) so every later render uses it — a voice
+change mid-campaign is a brand break. A cloned voice (a client spokesperson) is
+a client option with its own consent, cost and recording requirements: note it,
+never default to it.
+
+**Synthesized narration is not reproducible, and not only in length.** The same
+text re-synthesized gives a different duration *and a different pause
+structure* — the breath moves. Anything timed against it (caption windows, cuts)
+must be re-measured from the delivered file after every render, never rescaled
+from the previous one. When you map measured speech runs onto sentences, **count
+the runs against the sentences before concluding a line is missing**: a run
+count that exceeds the sentence count means one sentence breathes in the middle,
+and assuming last render's split is what makes a complete narration look
+truncated.
 
 ## Edge cases
 
