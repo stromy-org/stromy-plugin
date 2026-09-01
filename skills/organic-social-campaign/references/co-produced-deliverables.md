@@ -134,6 +134,32 @@ next rebuild:
   ([voice-integration.md](voice-integration.md) § Client lexicon) so the next
   build cannot regress it.
 
+<!-- since: 2026-08-28 -->
+
+### Replacement copy is applied verbatim — the only licence is typography
+
+When the reviewer sends replacement wording rather than a direction, it goes in
+**word for word**. On a campaign in the client's own language the reviewer is
+usually the native speaker and you are not, and there is no version of
+"improving" their sentence that is worth the trust it costs. Their phrasing has
+also usually been through their own client's ear already.
+
+The one thing you may change is how it **sets**: where a line breaks, whether a
+box is wide enough, whether the block still balances once a removed element
+leaves a hole. Fix the typography, report that you did, and quote what you left
+untouched.
+
+Two ambiguities to resolve rather than guess:
+
+- **A removal instruction names a thing, not a region.** "Leave out the
+  statistic" means the figure and its source line, not the diagram beside it
+  that happens to sit in the same block. Take the narrow reading, do it, and put
+  the wide reading back to the reviewer in one sentence. Guessing wide destroys
+  work they wanted; guessing narrow costs one reply.
+- **A rewrite can change an asset's claim status.** Dropping the only figure
+  from a card makes that card claim-free — which is a change worth noting in the
+  claims table and in the reply, because it moves what the asset needs verified.
+
 ## 7 · Standalone deliverables carry no trace of the process
 
 <!-- since: 2026-08-18 -->
