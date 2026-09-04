@@ -2548,14 +2548,14 @@
   "warnings": [],
   "token_roles": {
     "surface": "--content-surface-light",
-    "surfaceAlt": null,
+    "surfaceAlt": "--stromy-surface-raised",
     "elevation": "--shadow-md",
     "radius": "--radius-md",
     "lineWeight": "--motif-line-weight",
     "tracking": "--tracking-wide",
-    "textStrong": null,
-    "textMuted": null,
-    "edge": null
+    "textStrong": "--stromy-text-primary",
+    "textMuted": "--stromy-text-secondary",
+    "edge": "--stromy-border"
   },
   "integrity": {
     "compiler": "brand_compile.py",
@@ -2595,6 +2595,6 @@
       "patterns",
       "photo"
     ],
-    "sha256": "f346c9c021a412b3e95f91c1a140907f244f4222639549f2392bf0bfeaf599d0"
+    "sha256": "cbae0367b3fbe0b2f56b647e16965a1a96d9b31c1e51770e3144f25fd01184be"
   }
 }
