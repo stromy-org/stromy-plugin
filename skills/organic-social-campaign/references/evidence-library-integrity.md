@@ -293,6 +293,74 @@ Do all three, in this order:
 
 Then let the client decide, and record the decision.
 
+<!-- since: 2026-08-28 -->
+
+## 12b · The library freezes between plan rounds
+
+Once a content plan built from the library has been published, **the library is
+frozen until the next plan round.** Production keeps verifying figures — that is
+its job — but editing a register entry mid-production puts the published plan,
+and any generated translation of it, out of step with its own sources for the
+sake of a test asset.
+
+Facts verified during production go to a **dated verification note** in the
+project's research area, carrying the same fields the library entry would (exact
+wording, publisher, commissioner, independence, date, URL, scope caution), and
+are **proposed** as entries for the next round with their intended ids named.
+
+The note also records the figures that did **not** survive verification. That
+half is worth as much as the other: it stops the next production run
+re-researching, and re-adopting, a circulating number that was already checked
+and rejected.
+
+<!-- since: 2026-08-28 -->
+
+## 12c · Two conflicting figures: answer with both numbers *and* both addresses
+
+"We are using conflicting percentages" is not actionable. A conflict note earns
+its place only when it carries, for each figure: the number, **where it is
+stated** (trade press, the client's own prior asset, our own deck, the primary
+table), the arithmetic verdict, and a recommendation. Without the addresses the
+note just re-schedules the same question for the next meeting.
+
+Expect the awkward shape: the same true fact framed from opposite ends of one
+fraction produces two honest numbers, and a third figure that is neither —
+magnitude borrowed from one framing, direction from the other. That third one is
+the only one a reader holding the report can catch, and it is usually the one in
+widest circulation, because it travelled through syndicated coverage and into
+the client's own earlier collateral. Name it as the one to avoid, and expect
+whichever version is chosen to disagree with something the client has already
+printed — say so, rather than letting them discover it.
+
+<!-- since: 2026-08-28 -->
+
+## 12d · A consistency sweep may correctly find nothing — report that, with evidence
+
+When a figure is re-framed mid-campaign, the reflex is to sweep every asset and
+"make them consistent". Run the sweep, but be ready for the honest outcome that
+**nothing needed changing** — and report *that*, with what you searched and what
+the assets actually carry, rather than quietly returning nothing or inventing an
+edit to show work.
+
+The likely reason is structural: an early week's assets often carry a *different*
+comparison from the one under debate (a per-unit figure rather than the headline
+ratio), so the contested framing simply is not on them. Saying so precisely —
+"no week-1 item states that percentage at all; the only figure present is X,
+which already matches your line" — is more useful than a diff, because it tells
+the client where the decision *does* bite: in the plan's own note, at the next
+round.
+
+<!-- since: 2026-08-28 -->
+
+## 12e · A partner-forwarded article is a lead, not a source
+
+A client or partner forwarding an industry article is offering a lead. Register
+it with **independence flagged** — who publishes it, and what they sell — and
+use its company examples only as qualitative, provenance-named signals *beside*
+(never instead of) a measured case. Then mine it: the studies it cites are often
+already first-class entries in the register, and they get credited under their
+own entries, not under the article's.
+
 ## 13 · Recent sources lead; old frameworks are cited as frameworks
 
 Age is part of a figure's credibility, independent of its truth. An audience
