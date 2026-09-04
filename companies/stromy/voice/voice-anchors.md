@@ -4,13 +4,13 @@ Ground-truth reference passages for the Stromy voice. Treat these as
 higher-priority than any generic "professional" intuition. When a draft does not
 sound like the same writer as these anchors, simplify until it does.
 
-## Anchor — executive summary register
+## Anchor — executive summary register (constructed in register, not verbatim)
 
 > The pilot paid for itself in the first quarter. We cut report turnaround from
 > nine days to two and freed the analyst team for the work that actually moves
 > the number. The rest of this brief shows how, and where it scales next.
 
-## Anchor — analytical body register
+## Anchor — analytical body register (constructed in register, not verbatim)
 
 > Three forces explain the gap. Demand moved upmarket faster than the supply
 > base could retool, incumbents protected margin instead of share, and the
@@ -18,7 +18,7 @@ sound like the same writer as these anchors, simplify until it does.
 > reversible inside a year, so the plan assumes the constraint and works around
 > it.
 
-## Anchor — recommendation register
+## Anchor — recommendation register (constructed in register, not verbatim)
 
 > Do the phased rollout. It costs more upfront and it is the only version that
 > survives contact with the field teams. The single-shot alternative looks
