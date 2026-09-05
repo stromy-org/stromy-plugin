@@ -1,6 +1,7 @@
 ---
 name: do-caselaw-watch
 description: "Investigar jurisprudencia dominicana: sentencias de la Suprema Corte de Justicia (96.252 desde 1994, por Sala, materia y texto libre) y del Tribunal Constitucional (desde 2012, por año y tipo de proceso), con enlaces oficiales a los documentos. Incluye la disciplina de citación y los límites de cada fuente. Usar para «qué ha dicho la Suprema Corte sobre X», buscar sentencias, jurisprudencia dominicana, criterios de las Salas, sentencias del Tribunal Constitucional, o fundamentar un argumento con precedentes. Use for Dominican caselaw research, DR Supreme Court rulings, constitutional court decisions, or jurisprudence search."
+client_summary: "Busca jurisprudencia de la Suprema Corte y del Tribunal Constitucional dominicanos."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -20,6 +21,8 @@ This skill's full instructions are hosted on the `do-gov-data` MCP server. Do no
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-caselaw-watch/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/do-caselaw-watch"` (and `path="skills/do-caselaw-watch/references"`),

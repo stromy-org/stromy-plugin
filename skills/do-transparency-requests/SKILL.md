@@ -1,6 +1,7 @@
 ---
 name: do-transparency-requests
 description: "Investigar el sistema dominicano de acceso a la información pública (SAIP, Ley 200-04): qué le han preguntado ya a una institución, qué respondió literalmente, cuánto tarda, qué niega y con qué motivo, y a quién dirigirse para pedir información oficial. Cubre ~131.000 solicitudes en 345 instituciones desde 2016 y el directorio de las 359 Oficinas de Acceso a la Información (OAI). Usar para «¿alguien ya preguntó esto?», «¿qué contestó tal ministerio?», «¿esta institución responde en plazo?», «¿a quién le escribo para pedir X?», transparencia, derecho de acceso, Ley 200-04, o antes de redactar una solicitud de información. Use for Dominican freedom-of- information requests, SAIP, right-to-information research, or public-body responsiveness."
+client_summary: "Descubre qué le han preguntado ya a cada institución dominicana y qué respondió, con el contacto oficial para pedir más."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -20,6 +21,8 @@ This skill's full instructions are hosted on the `do-gov-data` MCP server. Do no
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-transparency-requests/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/do-transparency-requests"` (and `path="skills/do-transparency-requests/references"`),

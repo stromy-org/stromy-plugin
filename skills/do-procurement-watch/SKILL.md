@@ -1,6 +1,7 @@
 ---
 name: do-procurement-watch
 description: "Monitorear y analizar contrataciones públicas dominicanas: seguimiento de licitaciones por institución o rubro, historial completo de adjudicaciones de un proveedor, concentración de contratos, banderas de integridad (proveedores inhabilitados, adjudicación repetida a un mismo RPE, uso de modalidades excepcionales), y contraste entre el plan anual de compras y lo efectivamente licitado. Usar para vigilancia de licitaciones, perfil de proveedor, «quién gana los contratos de X», concentración de gasto, señales de riesgo en compras públicas, o cualquier pregunta de integridad sobre contrataciones en República Dominicana. Use for Dominican procurement monitoring, DR tender watch, supplier award history, or procurement integrity screening."
+client_summary: "Sigue licitaciones y contratos del Estado dominicano: quién compra qué, a quién y por cuánto."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -20,6 +21,8 @@ This skill's full instructions are hosted on the `do-gov-data` MCP server. Do no
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-procurement-watch/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/do-procurement-watch"` (and `path="skills/do-procurement-watch/references"`),

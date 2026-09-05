@@ -1,6 +1,7 @@
 ---
 name: do-gov-data
 description: "Orquestar investigación de asuntos públicos sobre la República Dominicana con fuentes oficiales: contrataciones públicas (DGCP), ejecución presupuestaria (Hacienda), congreso bicameral (Senado y Cámara de Diputados, con votaciones nominales), jurisprudencia (SCJ y Tribunal Constitucional), legislación consolidada (Consultoría Jurídica), auditorías (Cámara de Cuentas), datos abiertos (datos.gob.do), acceso a la información (SAIP, Ley 200-04) y macroeconomía (BCRD, Banco Mundial, FMI, CEPALSTAT). Usar para monitoreo de temas, perfiles de actores, rastreo de gasto público, búsqueda de licitaciones y contratos, historial de un proveedor, consultas de leyes y sentencias, y fundamentación cuantitativa. Use for Dominican Republic government data, DR procurement, Dominican legislation, DGCP, congreso dominicano, or any Dominican public-affairs research question."
+client_summary: "Investiga cualquier tema de gobierno dominicano en fuentes oficiales y devuelve datos con enlace verificable."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -20,6 +21,8 @@ This skill's full instructions are hosted on the `do-gov-data` MCP server. Do no
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-gov-data/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/do-gov-data"` (and `path="skills/do-gov-data/references"`),

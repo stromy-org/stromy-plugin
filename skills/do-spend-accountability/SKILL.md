@@ -1,6 +1,7 @@
 ---
 name: do-spend-accountability
 description: "Analizar la rendición de cuentas del gasto público dominicano: presupuestado frente a ejecutado por institución o función (2017–2025), tasas de ejecución, subejecución y sobreejecución, y el contraste entre lo presupuestado, lo licitado, lo adjudicado y lo devengado. Incluye el cruce con informes de auditoría de la Cámara de Cuentas. Usar para «cuánto gastó realmente el Ministerio de X», ejecución presupuestaria, subejecución, dijo-frente-a-gastó, análisis de presupuesto dominicano, o cualquier pregunta sobre si el dinero público se ejecutó como se anunció. Use for Dominican budget execution, said-vs-spent analysis, DR public spending accountability, or budget-vs-actual questions."
+client_summary: "Compara lo presupuestado con lo realmente ejecutado por cada institución dominicana."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -20,6 +21,8 @@ This skill's full instructions are hosted on the `do-gov-data` MCP server. Do no
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-spend-accountability/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/do-spend-accountability"` (and `path="skills/do-spend-accountability/references"`),

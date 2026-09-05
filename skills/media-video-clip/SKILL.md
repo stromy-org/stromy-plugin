@@ -1,6 +1,7 @@
 ---
 name: media-video-clip
 description: "Generate a single branded short-form video through media-gen-mcp by passing caller-built brand_context and a motion brief."
+client_summary: "Generate a short on-brand video clip from a brief."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -30,6 +31,8 @@ Then stop and wait. Never fall back to a local or identically-named base skill, 
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `media-gen` MCP with `path="skills/media-video-clip/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/media-video-clip"` (and `path="skills/media-video-clip/references"`),

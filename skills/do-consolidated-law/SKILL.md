@@ -1,6 +1,7 @@
 ---
 name: do-consolidated-law
 description: "Localizar y citar leyes, decretos, resoluciones y reglamentos dominicanos desde 1844 en la fuente oficial (Consultoría Jurídica del Poder Ejecutivo): búsqueda por número, título, año, Gaceta Oficial o texto completo, con el enlace al texto auténtico. Incluye la disciplina de citación y el tratamiento honesto de la vigencia, que ninguna fuente dominicana publica. Usar para «dame la Ley X», buscar un decreto, encontrar una norma por tema, citar legislación dominicana, o comprobar qué dice una norma. Use for Dominican legislation lookup, DR law text, decreto, Gaceta Oficial, or citing Dominican statutes."
+client_summary: "Encuentra y cita cualquier ley o decreto dominicano desde 1844 en la fuente oficial."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -20,6 +21,8 @@ This skill's full instructions are hosted on the `do-gov-data` MCP server. Do no
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-consolidated-law/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/do-consolidated-law"` (and `path="skills/do-consolidated-law/references"`),

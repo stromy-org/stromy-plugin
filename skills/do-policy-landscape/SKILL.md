@@ -1,6 +1,7 @@
 ---
 name: do-policy-landscape
 description: "Construir el panorama completo de un tema de política pública dominicana cruzando todas las fuentes oficiales disponibles: legislación vigente y su tramitación en las dos cámaras, gasto y ejecución presupuestaria, contratación pública asociada, jurisprudencia, auditorías, regulación sectorial y fundamentación cuantitativa. Usar para «hazme un panorama de X en República Dominicana», línea base regulatoria, informe de situación sobre un sector, briefing de asuntos públicos, o preparar una posición sobre un tema dominicano. Use for Dominican policy landscape, DR regulatory baseline, sector briefing, or public-affairs situation report."
+client_summary: "Construye el panorama completo de un tema dominicano: normas, actores, dinero, tribunales y huecos."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -20,6 +21,8 @@ This skill's full instructions are hosted on the `do-gov-data` MCP server. Do no
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-policy-landscape/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/do-policy-landscape"` (and `path="skills/do-policy-landscape/references"`),

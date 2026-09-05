@@ -1,6 +1,7 @@
 ---
 name: do-legislative-scan
 description: "Rastrear la actividad legislativa dominicana en las dos cámaras: estado y cronología de un proyecto de ley, proponentes, comisiones, votaciones nominales en la Cámara de Diputados, y el archivo histórico del Senado. Producir mapas de actores, seguimiento de un tema a través de iniciativas, y fichas de proyecto con fuente y enlace oficial. Usar para «en qué va el proyecto de ley sobre X», seguimiento legislativo, quién propone qué, cómo se votó, actividad del Congreso dominicano, o preparar una reunión con un legislador. Use for Dominican legislative tracking, DR bill status, congress activity, or roll-call votes."
+client_summary: "Sigue proyectos de ley en las dos cámaras dominicanas, con proponentes, comisiones y votaciones nominales."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -20,6 +21,8 @@ This skill's full instructions are hosted on the `do-gov-data` MCP server. Do no
 
 1. Read the main skill instructions:
    → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-legislative-scan/SKILL.md"`.
+
+   **Read it to the end.** `fs_read` returns one page at a time. If the result's `next_offset_chars` is not null — or the returned text ends in a `<<< PARTIAL READ … >>>` block — the body is incomplete: call `fs_read` again with `offset_chars` set to that value and concatenate, repeating until it comes back null. Do **not** start work on a partial skill body. Hard rules and anti-patterns often sit in the final third, and a partial read fails silently — it looks like a complete skill.
 
 2. Discover reference files (and any other skill assets), then read on demand:
    → call `fs_list` with `path="skills/do-legislative-scan"` (and `path="skills/do-legislative-scan/references"`),
