@@ -86,8 +86,24 @@ industry**. This is a default deck element, not a review-round add-on: see
 
 **Length is per-surface, and shorter than instinct says** (live client review, 2026-08):
 
-- **Consumer feed carousels (Instagram): cap at ~4 cards.** Completion collapses beyond that; six cards "feels too long" to the very reviewer who asked for depth. If the idea needs six, it is two posts.
+- **Consumer feed carousels (Instagram): completion collapses on dense cards, not on card count.** The instinct is a hard cap at ~4, and that is where a reviewer's first reaction usually lands — but the same reviewer, on the next round, asked for a post that was "a bit overly simple" to be made *heavier*. Both reactions are about density. The rule that satisfies both is **one idea and one visual per card**: under it a post can run longer and still complete, because the reader meets exactly one thing per swipe. Four cards is the comfortable floor, around seven the tested ceiling, and past that it is two posts. **Any post above the client's stated cap must name its cut-down path on delivery** — which cards to drop and what story survives — so the reviewer can trim without a rebuild. Treat a card count as a client preference to confirm, not a law.
 - **LinkedIn PDF documents: 8–12 pages only when every page earns its place.** Compact beats complete — a 4-page document with one shareable page per audience segment (one core page + one page each for the segments the reader forwards it to) outperforms a 6-pager nobody forwards. One document, never per-segment versions: the value is that the reader shares exactly the page their contact needs.
+
+<!-- since: 2026-08-28 -->
+
+**Format is delivery; the message is the invariant.** When a focus test shows a
+format is expensive or marginal for this campaign — animation is the usual
+culprit — swap the affected posts to another format **keeping the content idea
+and the key messages exactly as they are**, and change only the visual
+direction. The plan's argument does not depend on how a post is rendered, and
+re-deriving the idea alongside the format is how a format swap turns into a
+re-plan.
+
+Reach for the account's own native mix when you do. **Single-image posts are a
+first-class format**, not a fallback: most feeds use them heavily, they are the
+cheapest slot in the mix, and a plan without any is usually a plan that
+over-promised production. A figure set large and typographic *is* the image; a
+diagram can be one still rather than a four-card build.
 
 **Engagement characteristics**: Strong organic reach on LinkedIn, with high dwell time (algorithm signal), high save rate, and moderate share rate — though video now leads for discovery. Lower comment rate than text posts.
 
