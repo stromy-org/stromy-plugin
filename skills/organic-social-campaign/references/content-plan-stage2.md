@@ -257,6 +257,69 @@ a demo:
   are adjusted to what the test proved before the working draft goes out
   (originating engagement, 2026-08-17: "the focus test decides how the
   content plan is adjusted before it goes to the client").
+- **Record two verdicts, never one.** *Can this route produce the format at
+  all* decides what the plan may promise. *Is this specific asset good* decides
+  nothing about the plan and everything about the craft standard. A proven route
+  is not an approved craft standard: the first cut can clear the route gate and
+  still fail as a piece — a static hook, a reveal at no contrast, three
+  statements where the post needed one turn. **Budget at least one revision
+  round per focus-test item** and treat the client-side visual verdict as its
+  trigger.
+- **Retire the losing route explicitly.** Where two routes ran head to head,
+  delete the loser's assets from the working tree once the verdict is in and
+  write the decision down. A route left lying around returns as an option in the
+  next planning conversation, and the argument gets had twice.
+
+<!-- since: 2026-08-28 -->
+
+### 7c · The written-out week — showing a post, not a spec
+
+A content plan is a spreadsheet of intentions. The people who must approve it
+are usually being asked to picture something they have never seen, from a row
+that says "carousel, 7 cards, key message ov-3" — and a client who cannot
+picture it either delays, or approves something they did not understand. The
+cheapest fix found in practice is to write out **one week** exactly as it will
+appear.
+
+Build it the moment the plan's first assets exist and the client asks — in the
+originating engagement the request came from the client's own communications
+lead, as "an example of what a post actually looks like", and it was the single
+most valued artifact of the round.
+
+**What it is.** One page per post for one week: the real produced asset placed
+inside a realistic frame for its platform (the account's own avatar, handle,
+action row, card dots — the chrome the audience actually sees), beside the
+caption, the CTA and the hashtags **written out**, plus the row's own metadata
+(date, channel, format, key message).
+
+Four rules keep it honest:
+
+1. **Real assets only.** It shows produced items, never mock-ups of items that
+   do not exist. Its whole value is that it is not a promise.
+2. **Mark it as an example, on every page.** It deliberately crosses the
+   plan/copy boundary of §1 — the captions are stage-3 work shown early — so it
+   carries "presentation example, not a delivery" on the cover *and* on each
+   page. Drop that framing and the phasing collapses: the client reasonably
+   reads written copy as delivered copy.
+3. **No invented engagement numbers.** Standard mock-up chrome ships fake like
+   and comment counts. In a claim-disciplined campaign those read as forecasts.
+   Omit the counts; the frame still reads as a feed.
+4. **Name every disagreement between the asset and the caption on the page.**
+   Where the image still carries older wording, or the produced asset breaks a
+   plan rule (a card count above the client's cap), say so on the page rather
+   than silently re-rendering. The document's job is to be trusted, not tidy.
+
+**It is a living artifact, not a one-off.** It is generated from the same
+sources as the assets, so it goes stale the moment a caption or a card changes —
+rebuild it in the same unit of work, or it starts contradicting the very items
+it exists to explain.
+
+**Show the selection the reviewer will actually send.** When the reviewer says
+which items go to the client ("only cards 1-4 and 7"), the written-out week
+shows *that* set, and the selection is stored as declared data next to the
+copy — never as a directory glob, which silently picks up whatever is on disk.
+The reviewer's selection is part of the deliverable's specification; keep the
+dropped items in the produced set so restoring them is a one-line change.
 
 ## 8 · Conformance to the agreed scope document (line by line)
 
@@ -296,6 +359,15 @@ story — and state the real rule plainly: *we boost what works.* Precision that
 cannot be sourced is the amplification-plan twin of an unsourced statistic.
 
 Keep a column when it changes what someone does. Drop it when it does not.
+
+<!-- since: 2026-08-28 -->
+
+**A capability column must match the channel's operating model, not just be
+non-empty.** A Boost column on a track whose plan rules out boosting is not
+merely empty — it reads as a promise. Drop the column on that track, and guard
+it in the builder so the value cannot silently return on the next round. This is
+the same family as dropping empty columns, but keyed on what the channel's plan
+*allows*, not on whether a cell happens to be filled.
 
 ## 10 · Blocked, never fabricated
 
@@ -343,6 +415,13 @@ six weeks means 18 posts become 6. The other 12 are finished, sourced content, a
 which 6 survive is an editorial call the client may want to revisit. Move them to a
 named reserve and surface it as its own tab — a silent deletion reads as a plan that
 was always this size, and destroys the cheapest source of replacements.
+
+**Archive before a pivot, addressably.** When a reviewer asks for format or
+concept changes and adds "let's keep a copy", version history is the audit trail
+but it is not the courtesy they asked for. Snapshot the current deliverable as an
+explicit archived copy — its own folder, with a README naming the platform
+version numbers it corresponds to — and name that location in the reply.
+"Revisit the earlier ideas" has to be one click, or it never happens.
 
 **A date shift must preserve the weekday rhythm.** A calendar with a deliberate
 Mon/Wed/Fri cadence, shifted by the literal number of days to the new start date,

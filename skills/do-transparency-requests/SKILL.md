@@ -1,29 +1,29 @@
 ---
-name: do-gov-data
-description: "Orquestar investigación de asuntos públicos sobre la República Dominicana con fuentes oficiales: contrataciones públicas (DGCP), ejecución presupuestaria (Hacienda), congreso bicameral (Senado y Cámara de Diputados, con votaciones nominales), jurisprudencia (SCJ y Tribunal Constitucional), legislación consolidada (Consultoría Jurídica), auditorías (Cámara de Cuentas), datos abiertos (datos.gob.do), acceso a la información (SAIP, Ley 200-04) y macroeconomía (BCRD, Banco Mundial, FMI, CEPALSTAT). Usar para monitoreo de temas, perfiles de actores, rastreo de gasto público, búsqueda de licitaciones y contratos, historial de un proveedor, consultas de leyes y sentencias, y fundamentación cuantitativa. Use for Dominican Republic government data, DR procurement, Dominican legislation, DGCP, congreso dominicano, or any Dominican public-affairs research question."
+name: do-transparency-requests
+description: "Investigar el sistema dominicano de acceso a la información pública (SAIP, Ley 200-04): qué le han preguntado ya a una institución, qué respondió literalmente, cuánto tarda, qué niega y con qué motivo, y a quién dirigirse para pedir información oficial. Cubre ~131.000 solicitudes en 345 instituciones desde 2016 y el directorio de las 359 Oficinas de Acceso a la Información (OAI). Usar para «¿alguien ya preguntó esto?», «¿qué contestó tal ministerio?», «¿esta institución responde en plazo?», «¿a quién le escribo para pedir X?», transparencia, derecho de acceso, Ley 200-04, o antes de redactar una solicitud de información. Use for Dominican freedom-of- information requests, SAIP, right-to-information research, or public-body responsiveness."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
   Owner:       scripts/sync-mcp-skill-stubs.py (via sync-on-mcp-skill-change.yml)
-  Source:      MCPs/do-gov-data/skills/do-gov-data/SKILL.md
+  Source:      MCPs/do-gov-data/skills/do-transparency-requests/SKILL.md
   This workflow pushes DIRECT to this repo's main — a local edit here will be
   overwritten or rejected non-fast-forward. Edit the source, push, then:
     gh workflow run sync-on-mcp-skill-change.yml -R stromy-org/stromy-org
   Hand-authored skill? Set `_local: true` in frontmatter instead.
 -->
 
-# do-gov-data (MCP-hosted skill)
+# do-transparency-requests — acceso a la información (Ley 200-04) (MCP-hosted skill)
 
 This skill's full instructions are hosted on the `do-gov-data` MCP server. Do not hardcode workflow logic locally — always fetch the live version from the MCP.
 
 ## Loading instructions
 
 1. Read the main skill instructions:
-   → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-gov-data/SKILL.md"`.
+   → call the `fs_read` tool on the `do-gov-data` MCP with `path="skills/do-transparency-requests/SKILL.md"`.
 
 2. Discover reference files (and any other skill assets), then read on demand:
-   → call `fs_list` with `path="skills/do-gov-data"` (and `path="skills/do-gov-data/references"`),
-   → call `fs_read` with `path="skills/do-gov-data/references/<file>"`.
+   → call `fs_list` with `path="skills/do-transparency-requests"` (and `path="skills/do-transparency-requests/references"`),
+   → call `fs_read` with `path="skills/do-transparency-requests/references/<file>"`.
 
 Follow the instructions returned by the MCP exactly.
 
