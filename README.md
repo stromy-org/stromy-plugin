@@ -18,8 +18,8 @@ Via marketplace:
 
 For local development:
 ```bash
-git clone https://github.com/stromy-org/stromy.git
-cd stromy
+git clone https://github.com/stromy-org/stromy-plugin.git
+cd stromy-plugin
 npm install
 uv sync
 claude --plugin-dir .
