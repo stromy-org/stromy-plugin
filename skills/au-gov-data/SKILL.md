@@ -1,6 +1,7 @@
 ---
 name: au-gov-data
 description: "Orchestrate Australian government-relations research across federal legislation (FRL), statistics (ABS), procurement (AusTender), political finance (AEC), the organisations register (AGOR), dataset discovery (data.gov.au), federal parliament (APH divisions + parliamentarians, TheyVoteForYou when enabled), the cross-jurisdiction Hansard corpus (search, documents, bill lifecycle), e-petitions, official RSS monitoring (grants, committee inquiries, ministerial releases), and federal electoral boundaries. Use for topic monitoring, actor briefs, legislation lookups, money trails, quantitative grounding, \"which body regulates X\", parliamentary-document search, bill-lifecycle tracking, and early-warning monitoring across Australian parliaments and the Commonwealth."
+client_summary: "Research any Australian government topic across eight parliaments' Hansard, federal law, spending and statistics — every finding cited to a checkable identifier."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
