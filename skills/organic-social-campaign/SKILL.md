@@ -1,6 +1,6 @@
 ---
 name: organic-social-campaign
-description: "Build organic B2B social media campaigns: editorial strategy, content pillars, editorial calendars, content matrices, executive & founder-led thought-leadership programs, employee advocacy, community-building and community-management playbooks, AEO/GEO (getting content cited by AI answer engines), and dark-funnel measurement specs. Interactive multi-phase process from discovery through governance. Person-led and community-anchored by default (company-page organic reach has collapsed; executives, employees, and communities carry distribution). Models any engagement as an N-audience × M-narrative-pillar matrix under one shared frame (e.g. a B2B and a B2C audience sharing a core insight, expressed through several narrative pillars) so the same architecture runs across any industry. Produces a DOCX-first client-facing strategy document with evidence-tiered citations that becomes the baseline for the downstream editorial calendar. Integrates with company profiles, messaging libraries, and brand data for consistent voice and positioning. Runs as an always-on program (default) or a time-boxed, story-driven campaign with a narrative arc. Use this skill whenever the user asks to build an organic social strategy, plan a time-boxed social media campaign, design a campaign narrative arc, sequence a multi-week advocacy or repositioning campaign, create a content calendar, plan social media content, develop editorial pillars, build a community-management or community-building playbook, set up employee advocacy or an executive/founder LinkedIn program, build a member advocacy or member activation kit for a trade association or membership org, advise on influencer use (archetypes, briefing, disclosure; advice only, never sourcing), optimize content to be cited by AI answer engines, plan organic LinkedIn or Reddit content, create a social content program, or anything involving 'what should we post and how do we build an audience'; even if they just say 'we need a social presence', 'help me plan our LinkedIn content', or 'we're running a campaign for the next six weeks.'"
+description: 'Build organic B2B social media campaigns: editorial strategy, content pillars, editorial calendars, executive and founder-led thought leadership, employee advocacy, community-building and community-management playbooks, AEO/GEO (getting content cited by AI answer engines), and dark-funnel measurement. Person-led and community-anchored by default. Models an engagement as an N-audience x M-narrative-pillar matrix, so one architecture runs across any industry. Produces a DOCX-first client-facing strategy with evidence-tiered citations that anchors the downstream editorial calendar. Runs always-on or as a time-boxed campaign with a narrative arc. Use whenever the user asks to build an organic social strategy, plan a campaign or narrative arc, create a content calendar, develop editorial pillars, build a community or employee-advocacy playbook, set up an executive LinkedIn program, optimise content for AI answer engines, plan LinkedIn or Reddit content, or says ''we need a social presence''.'
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -678,7 +678,7 @@ This skill owns organic social campaign architecture: editorial strategy, conten
 
 ## Output Location
 
-Deliverables follow the standard workspace project structure:
+Deliverables follow the Workspace Studio project structure **on the operator's local disk**:
 
 ```
 workspace/<client>/output/organic-social-campaign/
@@ -694,6 +694,13 @@ workspace/<client>/output/organic-social-campaign/
 ```
 
 **Campaign mode** nests deliverables under the campaign slug: `workspace/<client>/output/organic-social-campaign/<campaign-slug>/` (adding `campaign-arc.md`, and `gaps.md` when `run_mode: internal-draft`); so multi-campaign clients keep separate outputs, mirroring the `campaigns/<campaign_slug>/` persistence namespace.
+
+**In the Claude app (plugin use) there is no local `workspace/` tree.** Hand the
+finished content to the format skill, which delivers it into the client's
+SharePoint space using the folder tree declared in
+`companies/<slug>/workspace.json`. Never create a folder named after this
+structure (`workspace/`, `<client>/`, `output/`) in SharePoint; the tree there
+is the client's setting, not this skill's.
 
 **Override**: If the prompt specifies a target output directory, use it.
 

@@ -94,9 +94,11 @@ This skill is self-contained. It does not call or activate other skills.
    republishing, sweep client-facing strings for feedback and version
    references. A document whose purpose is to discuss revisions (a
    changelog, a review memo) of course states them freely.
-7. **Keep records in the space.** Every project keeps a
-   `Meeting Transcripts/` folder with dated `YYYY-MM-DD <topic>.md` files.
-   Treat those transcripts as shared reference material and agent-run input.
+7. **Keep records in the space.** Where a project keeps a
+   `Meeting Transcripts/` folder (dated `YYYY-MM-DD <topic>.md` files), treat
+   those transcripts as shared reference material and agent-run input. Do not
+   create that folder, or any other, yourself: the folder tree is the client's
+   setting, and a folder created in their space stays until a person removes it.
 8. **Surface blockers; never branch the document.** Report a blocked write,
    lost lock race, or unmergeable edit to the humans. Never silently supersede
    the workspace copy with a private version.

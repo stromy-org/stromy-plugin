@@ -434,13 +434,20 @@ After the release is delivered, *mention* (never auto-activate) that the user ca
 
 ## Output Location
 
-Press releases follow the standard workspace project structure:
+Press releases follow the Workspace Studio project structure **on the operator's local disk**:
 
 ```
 workspace/<client>/
 ├── build/<deliverable>/    ← build scripts and intermediates
 └── output/<deliverable>/   ← final press release files (docx, pdf)
 ```
+
+**In the Claude app (plugin use) there is no local `workspace/` tree.** Hand the
+finished content to the format skill, which delivers it into the client's
+SharePoint space using the folder tree declared in
+`companies/<slug>/workspace.json`. Never create a folder named after this
+structure (`workspace/`, `<client>/`, `output/`) in SharePoint; the tree there
+is the client's setting, not this skill's.
 
 **Override**: If the prompt specifies a target output directory, pass it through to the output format skill.
 
