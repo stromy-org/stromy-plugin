@@ -116,10 +116,57 @@ This skill is self-contained. It does not call or activate other skills.
    the units genuinely outstanding — named here as context; this skill does not
    activate it.
 
+10. **When you publish through a Stromy render tool, the guard is REAL — hand it
+    the base.** Rules 2, 3 and 6c are a discipline you can forget. On the
+    `stromy-format` render path they are also enforced, and the enforcement only
+    engages if you pass what you read:
+
+    ```
+    fetch_workspace_file(… include_content=true)   → base_version, sha256
+    render_*(… options.base_version, options.base_sha256)
+    ```
+
+    The publish then carries `If-Match` and **refuses** to replace a destination
+    that moved: `status: "conflict"`, with the intervening versions and their
+    authors in `conflict.intervening`. Nothing is written on a refusal, and the
+    rendered bytes stay addressable by their `sha256` handle — so you reconcile
+    per 6a and re-render, you do not rebuild from scratch. `options.reconciled:
+    true` publishes anyway and is recorded as `forced`; use it only after you
+    have actually folded their edits in.
+
+    Three things worth knowing, because they change what you should do:
+
+    - **A zero-change editor save is not a conflict.** The guard compares
+      *content*, not version numbers, so someone merely opening the file in the
+      web editor does not stop your publish — it retries and proceeds
+      (`if_match_retried`). This is why 6c says diff at content level: on this
+      path the tool now does that for you.
+    - **Fetch with `include_content=true` or the guard fails CLOSED.** Without
+      `sha256` there is no `base_sha256`, the guard cannot tell a real edit from
+      an editor-open, and it refuses rather than guessing. A refusal you caused
+      by fetching cheaply reads exactly like a real conflict.
+    - **Omitting `base_version` publishes UNGUARDED.** That is still allowed — a
+      first publish needs no base — but the result says so
+      (`base_version_absent`), and on a file anyone else can reach it is the
+      thing this whole protocol exists to prevent.
+
+    Every publish also reports what it replaced (`replaced_existing`,
+    `replaced_etag`). Read it: a `replaced_existing: true` you did not expect is
+    the signal that your base was not what you thought.
+
+    Outside that path — an `ms365`-driven write, a metadata `PATCH` — nothing is
+    enforced and rules 2/3/6a–6c are the whole protection. Know which one you
+    are on before deciding how carefully to work.
+
 ## Mechanics
 
 - Direct Graph `PUT /content` supports files up to 250 MiB. Prefer an upload
   session above 10 MiB when the available tool supports resumable upload.
+- **Graph honours `If-Match` on `PUT /drives/{id}/root:/<path>:/content`** and
+  returns **412** on a stale eTag (measured 2026-09-08 against a live tenant;
+  Microsoft does not document it, so treat it as verified-by-test rather than a
+  contract). That is what makes rule 10's guard a true compare-and-swap rather
+  than a read-then-hope.
 - The single-purpose ms365 tools (`upload-file-content`,
   `create-upload-session`, and `move-rename-onedrive-item`) do not expose an
   `If-Match` parameter. Use `graph-batch` with a raw per-request
