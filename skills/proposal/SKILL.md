@@ -465,13 +465,20 @@ Define what counts as proof and how to cite it:
 
 ## Output Location
 
-Proposals follow the standard workspace project structure:
+Proposals follow the Workspace Studio project structure **on the operator's local disk**:
 
 ```
 workspace/<client>/
 ├── build/<deliverable>/    ← build scripts and intermediates
 └── output/<deliverable>/   ← final proposal files (docx, pptx, pdf)
 ```
+
+**In the Claude app (plugin use) there is no local `workspace/` tree.** Hand the
+finished content to the format skill, which delivers it into the client's
+SharePoint space using the folder tree declared in
+`companies/<slug>/workspace.json`. Never create a folder named after this
+structure (`workspace/`, `<client>/`, `output/`) in SharePoint; the tree there
+is the client's setting, not this skill's.
 
 **Override**: If the prompt specifies a target output directory, pass it through to the output format skill.
 
