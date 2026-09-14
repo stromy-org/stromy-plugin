@@ -1,0 +1,166 @@
+{
+  "skill": "organic-social-campaign",
+  "notes": "ORG-PLAN-244 added the trigger-routing half of this suite (tags: direct / indirect / incomplete / negative / confusable:<peer> / edge). The pre-existing output-assertion cases are preserved verbatim and carry should_trigger: true — each is a request this skill should handle, so it is a valid routing positive. The split is FIXED and checked in; runs never reshuffle it, because a suite that re-randomises each run cannot detect description overfitting. No prompt names its own target skill.",
+  "evals": [
+    {
+      "prompt": "Help me build an organic social strategy for the next year.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We're running a campaign for the next six weeks — how should we structure it?",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Create a content calendar for our LinkedIn presence.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "What editorial pillars should we be posting against?",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Set up an executive thought-leadership programme for the founder.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We need an employee advocacy programme people will actually use.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "How do we get our content cited by AI answer engines?",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Build a community-management playbook for our member base.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We need a social presence — where do we even start?",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "incomplete"
+      ]
+    },
+    {
+      "prompt": "Help me plan our LinkedIn content for the quarter.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Design the narrative arc for a multi-week repositioning push.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "What's our member activation kit going to look like for the association?",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Draft the core messaging and positioning statements for the brand.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:messaging-framework"
+      ]
+    },
+    {
+      "prompt": "I need our value proposition and proof points written up.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:messaging-framework"
+      ]
+    },
+    {
+      "prompt": "Write a press release announcing the funding round.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:press-release"
+      ]
+    },
+    {
+      "prompt": "We need an announcement for the trade press about the new hire.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:press-release"
+      ]
+    },
+    {
+      "prompt": "Plan the paid media budget and bidding strategy for the ads.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:paid-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Set up the LinkedIn ad campaign structure and targeting.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:paid-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Turn this into a branded PDF for the client.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "negative"
+      ]
+    },
+    {
+      "prompt": "What's happening in the Tweede Kamer on this topic?",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "edge"
+      ]
+    }
+  ]
+}
