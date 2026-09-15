@@ -452,7 +452,7 @@ provenance, and what the closing ledger must record — is defined once for both
 this deliverable and the strategy deck in
 **[co-produced-deliverables.md](co-produced-deliverables.md)**. The workspace
 mechanics it defers to (fetch-latest, version history, locks, publish in place)
-belong to the org's `workspace-cowork` protocol.
+belong to the org's `format-workspace-cowork` protocol.
 
 Plan-specific consequence: a fold-in that changes a row's **cadence, week or
 producer** is a campaign change, not a copy change — run it through §12 before

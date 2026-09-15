@@ -17,7 +17,7 @@ carrying half of it each.
 > *substrate* mechanics — fetching the live version, reading version history,
 > file locks, publishing in place, keeping the pickup→republish window short.
 > Those are identical for every artifact on a shared workspace, belong to the
-> workspace layer, and are defined once in the org's **`workspace-cowork`**
+> workspace layer, and are defined once in the org's **`format-workspace-cowork`**
 > protocol. Follow that protocol for the surface; follow this file for the
 > content. Never restate its mechanics here — a copy rots the moment the
 > substrate changes.
