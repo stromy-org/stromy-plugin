@@ -174,7 +174,7 @@ into the build source, a label change as a scope instruction, instruction
 provenance, and the review-response ledger that closes the round. The workspace
 mechanics it defers to — fetch the live version, read its history, handle locks,
 publish in place, keep the pickup→republish window short — belong to the org's
-`workspace-cowork` protocol and are not restated in this skill.
+`format-workspace-cowork` protocol and are not restated in this skill.
 
 Deck-specific consequence: **the reviewer's editorial call governs.** The job is
 to justify the original reasoning and comply, not to defend research-maximalism
