@@ -31,6 +31,7 @@
         "serif"
       ],
       "webSafe": "Georgia",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "unknown"
     },
     "body": {
@@ -44,6 +45,7 @@
         "sans-serif"
       ],
       "webSafe": "Segoe UI",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "unknown"
     },
     "mono": {
@@ -57,6 +59,7 @@
         "monospace"
       ],
       "webSafe": "Consolas",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "unknown"
     },
     "label": {
@@ -71,6 +74,7 @@
         "sans-serif"
       ],
       "webSafe": "Segoe UI",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "unknown"
     }
   },
@@ -2603,6 +2607,6 @@
       "patterns",
       "photo"
     ],
-    "sha256": "0fef2a289e86766b1baeafdcc8bb3d8672c150462edb2aade821d59f5e4bcb5a"
+    "sha256": "580f321d54adc973c649efe7877d4c03efdb8c690845a0a80be144353e573856"
   }
 }
