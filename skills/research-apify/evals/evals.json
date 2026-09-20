@@ -1,0 +1,167 @@
+{
+  "skill": "research-apify",
+  "notes": "Trigger-routing suite (ORG-PLAN-290 C9, 2026-09-19). 20 cases, 12 positive / 8 negative, 12 train / 8 holdout, per the C5 minimums in stromy-org/scripts/audit-skill-health.py. Negatives carry confusable:<peer> tags for the peers this skill's own description tells the agent NOT to route here. No prompt names the skill — a prompt that does measures instruction-following rather than routing.",
+  "evals": [
+    {
+      "prompt": "Gather everything current on EU packaging-waste regulation and put it in a document.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Crawl these 30 competitor sites and pull out their service pages.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Extract the directory listings from this industry association's member page.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "I need product specs for every model on these four manufacturer sites.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Search the live web — what has been published on textile recycling targets this month?",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Do a market scan of the Benelux circularity consultancies and write it up.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Pull structured records of every waste processor listed on this portal.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Scrape this page and turn it into a branded PDF for the client.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Collect current data on who is funding textile-to-textile recycling.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Get me the profiles of everyone on this company's leadership page.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Find out what is actually out there on chemical recycling, from the web, today.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Extract the pricing tables from these six SaaS sites into a comparison.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Compute our share of voice from the workflow run in this folder.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:sov-competitor-analysis"
+      ]
+    },
+    {
+      "prompt": "How is the company being talked about across the corpus we already collected?",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:sov-sentiment-analysis"
+      ]
+    },
+    {
+      "prompt": "Announce our new recycling partnership to the media.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:press-release"
+      ]
+    },
+    {
+      "prompt": "Build the messaging pillars for the enterprise segment.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:messaging-framework"
+      ]
+    },
+    {
+      "prompt": "Write the proposal for the tender.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:proposal"
+      ]
+    },
+    {
+      "prompt": "Plan the organic LinkedIn calendar for the next quarter.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:organic-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Set up the LinkedIn lead-gen ads and the tracking.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:paid-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Summarise this PDF I have already downloaded to my desktop.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "negative",
+        "edge"
+      ]
+    }
+  ]
+}
