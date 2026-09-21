@@ -457,3 +457,27 @@ belong to the org's `format-workspace-cowork` protocol.
 Plan-specific consequence: a fold-in that changes a row's **cadence, week or
 producer** is a campaign change, not a copy change — run it through §12 before
 rebuilding, or the calendar and the campaign manifest drift apart.
+
+## 14 · A figure already published in this campaign is flagged, not banned
+
+The plan records `cited_data` per post, which makes cross-post figure reuse
+mechanically checkable and nobody checks it. Before a post is built, compare its
+figures against what earlier posts in the same campaign already carry, and
+surface the overlap.
+
+**Surface it; do not auto-forbid it.** The distinction that matters is not
+whether a figure repeats but what job it is doing:
+
+- Repeating the campaign's **anchor** figure is reinforcement. It is the thing
+  the audience is meant to remember, and a campaign that says it once has not
+  run a campaign.
+- Repeating a **supporting** figure is filler. It arrived to prop up a different
+  argument and is now padding a card that had nothing to say.
+
+*Measured case: a client cut a mobile-data box from a week-2 closer because
+"we used these figures in week 1 already", and in the same email asked for the
+week-1 anchor percentage to be emphasised again on the same post. Both
+instructions are consistent under the rule above and contradictory under a naive
+no-repeats rule.*
+
+<!-- since: 2026-09-19 -->

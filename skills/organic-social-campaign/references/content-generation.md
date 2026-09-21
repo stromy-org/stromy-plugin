@@ -282,3 +282,40 @@ truncated.
 | Track A absent, user insists on identity | Flag the dependency on `PLAN_reference_conditioning.md`; offer family-resemblance or stop. |
 | Video cost (Veo ~600s/clip) | Keep video editions small; the per-edition gate + `max_assets_per_edition` bound spend. |
 | Voice MCP unreachable | L2-only + inline anti-slop checklist, logged (see voice-integration.md). |
+
+## Copy defects that clear every mechanical gate
+
+The usual copy gates — no em-dashes, no AI-tell phrasing, sentence length, banned
+terms — are all satisfiable by prose a native speaker would still send back. These
+are the classes that actually come back, and each one is checkable by reading the
+line aloud.
+
+- **Every pronoun needs a concrete antecedent, and the metaphor has to survive
+  it.** *"Je ziet hem nooit. Hij staat wel ergens aan, dag en nacht"* — where
+  "hem" pointed back at an invoice, and an invoice does not switch on. The
+  client's replacement named the thing: *"Maar de datacenters staan wel ergens
+  aan."* When a coined metaphor is the subject, check that the verbs still fit
+  it.
+- **A display figure must not be the grammatical subject of a sentence that
+  continues below it.** Setting the number large and starting the sentence
+  underneath produces a line that is broken the moment you say it aloud. Put the
+  figure INSIDE its sentence and make it big there.
+- **A noun in a headline may not be broader than the figure under it.** "The
+  digital volume is growing" over a mobile-data figure is scope-widening in
+  copy — the same defect the evidence gates police in claims, in the one place
+  they do not look. Name what the figure measures.
+- **A call to action names a reason for the reader, never your content
+  calendar.** "Follow for the rest of the comparison" describes your plan;
+  "follow for more on what print actually does" describes their reason.
+- **"Not preachy" covers the instructions too.** Telling the audience how to use
+  the asset — "so you can forward it", "for the conversation with your client" —
+  is the lecturing register arriving through a side door, especially in B2B where
+  the audience knows the material better than you do.
+
+**When replacement copy arrives from the client, it ships verbatim.** The only
+latitude is typography — where a line breaks, whether a box still balances.
+Where their wording forces a grammatical consequence (a verb moving to the end of
+a subordinate clause, a comma a conjunction requires), make the minimum change
+and say in the review that you made it and why.
+
+<!-- since: 2026-09-19 -->
