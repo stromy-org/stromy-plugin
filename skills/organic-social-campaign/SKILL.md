@@ -18,21 +18,12 @@ description: 'Build organic B2B social media campaigns: editorial strategy, cont
 
 - `companies/{client_slug}/brand_context.json`: resolved brand (expression, colors, fonts, logo); read `expression` (`principles`, `signatureElements`, `antiPatterns`) for compact brand direction and `identity.positioning`. **Reference, never bind**; prose guidance, not hard rules. (Image catalog lives in `images/manifest.json`.)
 - `companies/{client_slug}/company_context.json`: redacted public company facts (name, positioning, values, services, publicContact, `company.headquarters` — the **jurisdiction** the influencer-disclosure baseline resolves from) and public people (SMEs, spokespersons). PII such as banking, registration, VAT, billing, and personal contact details is intentionally absent from deployed overlays.
-- `companies/{client_slug}/messaging/pillars.json` (optional): reusable messaging pillars
-- `companies/{client_slug}/messaging/proof-points.json` (optional): evidence library
-- `companies/{client_slug}/messaging/audiences.json` (optional): audience profiles / ICP seeds
-- `companies/{client_slug}/messaging/narratives.json` (optional): core narratives, positioning
-- `companies/{client_slug}/voice/voice-profile.md` (optional): L2 voice profile
-- `companies/{client_slug}/voice/voice-anchors.md` (optional): L2 reference passages
-- `companies/{client_slug}/voice/voice-extensions.json` (optional): L2 additive bans
+- `companies/{client_slug}/messaging/` (all optional): `pillars.json` (reusable messaging pillars) · `proof-points.json` (evidence library) · `audiences.json` (audience profiles / ICP seeds) · `narratives.json` (core narratives, positioning)
+- `companies/{client_slug}/voice/` (all optional): `voice-profile.md` (L2 voice profile) · `voice-anchors.md` (L2 reference passages) · `voice-extensions.json` (L2 additive bans)
 - `companies/{client_slug}/social-media/config.json` (optional): platforms, UTM, compliance, content_generation
 - `companies/{client_slug}/social-media/claims-to-avoid.json` (optional): banned claims/figures and off-limits framing; load before drafting any evidence-bearing pillar (see Evidence Discipline)
-- `companies/{client_slug}/social-media/organic/pillars.json` (optional): editorial pillars from a prior run
-- `companies/{client_slug}/social-media/organic/series.json` (optional): repeatable content series
-- `companies/{client_slug}/social-media/organic/community-playbook.json` (optional): response SLAs, tone, escalation
-- `companies/{client_slug}/social-media/organic/advocacy.json` (optional): employee advocacy config
-- `companies/{client_slug}/tokens.css` (optional): design tokens for branded output
-- `companies/{client_slug}/logos/` (optional): logo variant files
+- `companies/{client_slug}/social-media/organic/` (all optional): `pillars.json` (editorial pillars from a prior run) · `series.json` (repeatable content series) · `community-playbook.json` (response SLAs, tone, escalation) · `advocacy.json` (employee advocacy config)
+- `companies/{client_slug}/tokens.css` (optional): design tokens for branded output · `logos/` (optional): logo variant files
 
 ### Path resolution (`{base}`)
 
@@ -211,9 +202,9 @@ loop, precedence, and checklist: [voice-integration.md](references/voice-integra
 Any step that states a statistic, cites a study, or asserts a fact as settled runs this gate before the claim reaches a Phase 3 pillar or the strategy document. Full mechanics, the `claimsToAvoid` schema, and the reference-list format: [strategy-document-template.md](references/strategy-document-template.md) § Evidence & citations.
 
 1. **Tier every source**: peer-reviewed > institutional/official statistics > industry-funded > journalistic. Name the tier next to each claim in working notes so a pillar's citation mix is visible before it goes client-facing.
-2. **Cite or hedge.** Every stated number carries a named, dated source. No source → hedge language ("directionally," "reported by X, unverified"): never state a number as settled fact without one.
-3. **Never merge incompatible statistics.** Two credible numbers measuring different scopes (different year, geography, methodology, or definition) are **both shown, never averaged or silently picked**: say what each one measures.
-4. **Evidence-diversification gate.** No pillar or narrative may rest on a single industry-funded source alone. Before a pillar goes client-facing, confirm at least one independent, peer-reviewed, or official/institutional anchor sits alongside any industry-funded figure.
+2. **Cite or hedge — and a quotation is a claim.** Every stated number carries a named, dated source. No source → hedge language ("directionally," "reported by X, unverified"): never state a number as settled fact without one. **The same applies to quoted speech**: a sentence in quotation marks on a client-facing asset must trace to a real, named, verifiable utterance, or it does not go in quotation marks. Write an archetypal objection as reported experience instead ("the question that comes up is…"). This gate exists because the no-fabrication rule is written about figures and sources, so an invented quotation passes every check in this list — see [evidence-library-integrity.md](references/evidence-library-integrity.md) §12g.
+3. **Never merge incompatible statistics.** Two credible numbers measuring different scopes (year, geography, methodology, definition) are **both shown, never averaged or silently picked**: say what each measures.
+4. **Evidence-diversification gate.** No pillar rests on a single industry-funded source alone: confirm at least one independent, peer-reviewed or official anchor sits alongside any industry-funded figure before it goes client-facing.
 5. **`claimsToAvoid` / banned figures.** Load `{base}/social-media/claims-to-avoid.json` (if present) before drafting any pillar. A banned claim or figure is never used even if independently verified true: flag it to the user instead of silently substituting.
 6. **Counter-argument discovery.** For each narrative pillar, research the single strongest credible counter-argument (regulator, watchdog, competitor, academic) and draft a sourced rebuttal before the pillar is finalized: see Phase 2 Step 1 "Adversarial check" and Phase 3 Step 1. Publishing that rebuttal as active content is a client sign-off decision, not an autonomous one. Counter-evidence is internal calibration: surface it in working notes and the internal twin so the team is never blindsided, but never foreground opposing research in a client-facing persuasion deliverable unless the client asks.
 7. **Mandatory reference list.** Every client-facing strategy document ends with a full reference list: every cited source, its tier, publication date, and a one-line scope note (what it measures, who funded it). No client-facing document ships without one.
@@ -625,7 +616,7 @@ human-publishable surface: an ms365 Planner board, a SharePoint list, or an
 Excel calendar (tabular). Mention `m365-manager`'s safety rules (draft / confirm;
 never delete) as context; do not invoke it. **No auto-publish** to LinkedIn /
 Meta / X / TikTok: the publishing boundary is the exported calendar. (`reepl`
-exists for LinkedIn only and is the user's separate choice.)
+exists for LinkedIn only and is the user's separate choice.) **Gate every asset that crosses this boundary**: Phase 7 validates a post OBJECT; `scripts/delivery_formats.py --verify <channel>/<surface> <files>` measures the ARTIFACT (extension, frame, pages, duration, and whether a carousel's cards agree with each other), at production and again here. A format rule with no measurement is a preference — that is how this skill shipped a client five weeks of PDFs against a rule everyone had agreed to, until she asked for PNG by hand. [delivery-formats.md](references/delivery-formats.md)
 
 ## Reference Files
 
@@ -653,6 +644,7 @@ Load these as needed: do not read all at once.
 | [social-data-schema.md](references/social-data-schema.md) | When persisting to `social-media/` (Final Output, Phase 7/8). `config.json` + `organic/*` shapes, `schema_version`, the paid-social shared contract. |
 | [voice-integration.md](references/voice-integration.md) | Any copy-producing step (Phase 5/7/8). The draft→review→rewrite→verify loop, L1/L2 precedence, mechanical self-check, headless fallback. |
 | [post-object-schema.md](references/post-object-schema.md) | Phase 7: when freezing the calendar. `calendar.json` input + per-post object schema, the builder/validator seam, aspect Literal sets. |
+| [delivery-formats.md](references/delivery-formats.md) | Phase 8 step 4 and every handover: what file each channel actually takes, how an open `document of carousel` choice resolves, and why only `documented`/`engagement` evidence may refuse a delivery. |
 | [platform-content-config.md](references/platform-content-config.md) | Phase 8: the `content_generation` config block + surface→producer→primitive media taxonomy (what media-gen renders vs what routes to chart/diagram/pdf/pptx). |
 | [content-generation.md](references/content-generation.md) | Phase 8: the edition-batched generation loop, anchor-select, Track A vs family-resemblance, brand_context construction, asset output, edge cases. |
 

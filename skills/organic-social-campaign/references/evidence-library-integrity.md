@@ -282,7 +282,7 @@ survive checking, is neither a licence nor a veto. Both silent responses are wro
 complying ships a claim you know is false, and quietly substituting your own figure
 overrides a decision that is not yours.
 
-Do all three, in this order:
+Do all four, in this order:
 
 1. **Do not publish either version yet.** New information pauses an instruction;
    it never reverses it on your own authority.
@@ -290,10 +290,56 @@ Do all three, in this order:
    circulation count; here are three verified persons-based figures from the same
    research family, with links" is actionable. "That figure is wrong" is not.
 3. **Name where the wrong figure came from**, especially if the answer is you.
-
-Then let the client decide, and record the decision.
+4. **Get a decision from the person whose decision it is, and record it as
+   theirs.** Not "flagged in the review sheet". Not "noted in the register". A
+   named person, a date, and an answer.
 
 <!-- since: 2026-08-28 -->
+
+### 12a · Only the asker can discharge the ask, and a repeat is a provenance signal
+
+Step 4 is the one that fails, and it fails in a way that looks like diligence.
+Two rules make it concrete, both learned the expensive way.
+
+**An ask that needs someone's decision cannot be discharged by an internal
+change.** Correcting your own register, rewriting your own rule and updating
+your own plan feels like resolution and is not: the person who asked has seen
+none of it and agreed to none of it. Before anything moves to "closed", answer
+two questions — *does the person who asked know this is closed, and did they
+agree?* If either answer is no, it is open. Worse, an internal rule written to
+settle an open question **hardens against the client**, and the next artefact
+built from it has to be retired.
+
+> Measured on one engagement: a client asked three times across four weeks for a
+> specific percentage. Each time it was flagged, recorded as "open, and theirs",
+> and followed by a note saying not to re-litigate. On the third round the
+> tracker showed the item under **Discharged** — closed on the strength of edits
+> to two internal JSON files plus a new campaign rule the client had never seen.
+> That rule then forbade what she was asking for. Cost: two retired
+> deliverables, one rejected page, three rounds of the same conversation.
+
+**When a client repeats an instruction you have already answered, stop
+explaining and go find out where their version comes from.** A repeat is
+evidence of an unexamined source, not of stubbornness. In the case above the
+answer was in the intake folder the whole time: the client's own published
+brochures printed the figure correctly once and with the direction reversed
+twice, and the person kept reading the reversed ones. Three rounds of explaining
+the arithmetic never touched the reason she kept asking, because the
+disagreement was never about arithmetic. **Re-read their material — their
+brochures, their site, their previous campaign — before you re-send your
+objection.** §5 already treats client-supplied collateral as a source tier; this
+extends it: read that collateral for FRAMINGS, not only for figures.
+
+**When the decision goes against the arithmetic, record it as a decision.** The
+client may knowingly choose their own house wording. That is theirs to choose.
+What must not happen is the record quietly becoming "the figure is fine": keep
+the arithmetic on the record, name who decided and when, write down the correct
+alternative that was offered and declined, and write the honest answer to give
+if someone challenges the number in public. A gate that enforces the chosen
+wording stays a gate — it just enforces the new one, and says in its own
+comments that it is doing so.
+
+<!-- since: 2026-09-19 -->
 
 ## 12b · The library freezes between plan rounds
 
@@ -360,6 +406,67 @@ use its company examples only as qualitative, provenance-named signals *beside*
 (never instead of) a measured case. Then mine it: the studies it cites are often
 already first-class entries in the register, and they get credited under their
 own entries, not under the article's.
+
+## 12f · A retired PHRASING is a sweep too, and it ends in a count
+
+§11 already says that retiring a figure is a sweep across every artefact that
+carries it, ending in a count. The same is true of a retired **wording** — a
+banned attribution, a forbidden framing, a house term the client has changed —
+and nobody applies it, because a phrase does not feel like a claim.
+
+It is. When a client bans a form of words, or a house rule changes a term, sweep
+every artefact already delivered, not only the ones named in the feedback, and
+report the count. Two things fall out of this every time:
+
+- **The instruction reaches further than the examples given.** A client naming
+  two assets is naming the two they happened to look at. On one engagement a
+  banned attribution line was named in two places and sat in five more — inside
+  a copy workbook already delivered to the client, which their own feedback had
+  not yet reached.
+- **Rules added mid-engagement were never applied backwards.** The same sweep
+  found a delivered caption still carrying a framing the campaign had banned by
+  name three weeks earlier, because the ban was written for new work and no pass
+  ever ran over the old.
+
+Grep is the whole technique. The reason it does not happen is that nobody
+schedules it, so schedule it: a phrasing change is not done until the sweep has
+run and its count is in the record.
+
+<!-- since: 2026-09-19 -->
+
+## 12g · A quotation is a claim, and the number gates cannot see it
+
+Every gate in this file is shaped around figures: cite or hedge, scope, units,
+populations, commissioners, recomputation. A sentence in quotation marks carries
+no number, so it passes all of them — and it is the single most damaging thing
+that can be invented, because a reader treats quoted speech as reported fact and
+a client's customer may be quoted back to them.
+
+**The rule: a sentence in quotation marks on a client-facing asset must trace to
+a real, named, verifiable utterance, or it does not go in quotation marks.** No
+exception for an "archetypal" or "illustrative" objection. Write it as reported
+experience instead — *"the question that comes up is…"*, *"the objection we hear
+is…"* — which makes the same rhetorical move and claims nothing false.
+
+*Measured case: a B2B factsheet designed to be forwarded by printers to their own
+customers carried* "Just put the ad online, that saves paper" *under the heading*
+"What a client says". *Nobody had said it. It cleared every gate on the build,
+including an explicit no-fabrication rule, because that rule reads "a missing
+figure or source" and a quotation is neither. The client caught it in review:
+"we don't actually have a retailer saying this."*
+
+**Extend the claims table accordingly.** The claims-and-citations table on a
+review sheet is figure-shaped by default, which is precisely why these get
+through. It covers:
+
+- every **figure**, as it always did;
+- every **quotation**, with who said it, when, and where it is recorded;
+- every **source description** — "a comparative study" is a genre label, not a
+  citation, any more than an internal proof-point id is (§7). Name the report;
+- every **scope-bearing noun in a headline**, checked against what the figure
+  under it actually measures.
+
+<!-- since: 2026-09-19 -->
 
 ## 13 · Recent sources lead; old frameworks are cited as frameworks
 

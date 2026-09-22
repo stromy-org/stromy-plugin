@@ -295,3 +295,47 @@ reading as lazy, recycled/watermarked assets are algorithmically down-ranked (se
 [platforms/meta.md](platforms/meta.md)) — so the verbatim shortcut costs reach.
 A carousel exported as a PDF and dropped on Instagram is not a derivative; it is
 the same asset in the wrong place.
+
+## Legibility is a gate, not a preference (designed assets)
+
+A data device that needs a legend, a "how to read this" line, or a second nested
+chart to be understood **has failed, whatever its arithmetic**. The test is a
+stranger reading it in about two seconds, from the asset alone, with nothing
+explained. In a scroll feed that is the entire budget.
+
+Two corollaries, both of which cost a review round when they were missing:
+
+- **A truthfulness fix gets re-tested for legibility.** The sequence that
+  produces this defect is virtuous at every step: a reviewer catches a device
+  that rounds or exaggerates its figure, the fix is a device that provably does
+  not, and the new device needs a sentence to explain it. The sentence is the
+  tell. *Measured case: a bar chart that showed a 4,6% share at true scale, with
+  dashed leaders down to a magnified inset, shipped carrying the line "the lower
+  bar is that yellow sliver above, enlarged; its scale runs 0 to 5%". Every
+  number was right and the client cut the whole device. The replacement — two
+  bars on one drawn, labelled 0-5% axis — is equally honest and needs no
+  sentence. An axis label is not a manual; every chart has one.*
+- **Check what the device does to the figure before defending the figure.** A
+  proportion device can argue against its own point: two filled cells out of
+  twenty-four made "two hours a day" look trivial on a card whose argument was
+  that it is a lot. The statistic was never in question.
+
+**Being asked twice for the same visual means the instrument is wrong, not the
+drawing.** Redrawing the same thing in the same grammar answers a question
+nobody asked. Ask instead whether the object can carry meaning in the form you
+chose:
+
+- **A pictogram identifies an object only if that object has a canonical
+  silhouette.** A book, a phone, a letterbox, an envelope: a reader knows the
+  outline. A data centre, a supply chain, an algorithm, a pension fund do not
+  have one, and no amount of redrawing on a 24-unit icon grid will make them
+  recognisable. *Measured case: a data centre drawn as two rounded rectangles
+  with rules and dots read as filing cabinets, and was rejected three times in
+  one email.*
+- **For an object with no silhouette, change instrument**: a wider drawn SCENE
+  with context cues (for a data centre: a row of racks, equipment bays, status
+  lights, ceiling cooling), a photograph, or a labelled illustration — sized as
+  a tile, not as an icon, and given its own aspect ratio rather than squeezed
+  into the icon slot's square.
+
+<!-- since: 2026-09-19 -->
