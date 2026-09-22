@@ -1,0 +1,167 @@
+{
+  "skill": "messaging-framework",
+  "notes": "Trigger-routing suite (ORG-PLAN-290 C9, 2026-09-19). 20 cases, 12 positive / 8 negative, 12 train / 8 holdout, per the C5 minimums in stromy-org/scripts/audit-skill-health.py. Negatives carry confusable:<peer> tags for the peers this skill's own description tells the agent NOT to route here. No prompt names the skill — a prompt that does measures instruction-following rather than routing.",
+  "evals": [
+    {
+      "prompt": "We need a message house for the sustainability practice before the sales kickoff.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Can you put together our messaging pillars and the proof points under each?",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Build a messaging matrix across our three buyer personas.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "I want a strategic narrative we can use consistently across the whole go-to-market.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "What should we actually be saying about the new compliance module, and to whom?",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Our team all describe the product differently. Fix that.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Define the key messages for the enterprise segment, with guardrails on what not to claim.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We need messaging for the partner channel.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Draft a messaging hierarchy — primary message down to supporting evidence.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Help me figure out what to say about the price increase.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Put together product messaging for the new tier, including the differentiators.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We keep losing deals on 'why you'. What's our answer, written down?",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Announce our Series B to the trade press.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:press-release"
+      ]
+    },
+    {
+      "prompt": "Write the media announcement for the new CTO hire.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:press-release"
+      ]
+    },
+    {
+      "prompt": "Set up a LinkedIn ad campaign targeting facilities managers.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:paid-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Plan our content calendar and editorial pillars for the next quarter on LinkedIn.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:organic-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Put together a consulting proposal for the Rotterdam tender.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:proposal"
+      ]
+    },
+    {
+      "prompt": "Scrape the top 50 competitor sites and pull out their pricing pages.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:research-apify"
+      ]
+    },
+    {
+      "prompt": "How is our brand being talked about in the Dutch trade press this quarter?",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:sov-sentiment-analysis"
+      ]
+    },
+    {
+      "prompt": "Translate the existing message house into German.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "negative",
+        "edge"
+      ]
+    }
+  ]
+}

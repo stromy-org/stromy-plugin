@@ -363,3 +363,36 @@ starting week 3 once posts were landing, and the single influencer
 collaboration held back to week 7's peak rather than opening with it. A dated
 follower/engagement snapshot was taken the day before week 1 posting began and
 used as the sole revival-KPI baseline throughout the campaign.
+
+## Every asset traces to the campaign proposition, not only to its own brief
+
+A post specification is a description of one asset. Satisfying it completely is
+not evidence that the asset belongs to the campaign, and the gap opens quietly:
+the spec is met, every figure is sourced, every gate is green, and the piece
+argues for something adjacent to the thing you are being paid to argue for.
+
+*Measured case: a campaign about print versus digital ADVERTISING produced a
+carousel about data-centre electricity. It matched its `concept`, its
+`key_messages` and its `visual_direction` exactly. Every one of the client's four
+rewrites pulled it back to the same place — from "data centres use electricity"
+to "the ads on your timeline have an electricity bill". Nothing in the build was
+wrong; the subject had drifted one step and no gate looks one step out.*
+
+Before a designed asset is called done, read each surface against the campaign
+proposition and ask what it is arguing FOR. A card that only argues that
+something is true, without arguing the campaign's point about it, is a card that
+belongs to a different campaign.
+
+**Figure-to-track fit.** Where several channels share one evidence library, the
+same figure is not equally at home in each:
+
+| Figure shape | Belongs to |
+|---|---|
+| Local, personal, measured, recent | Consumer channels |
+| Macro, institutional, forecast, international | Professional channels |
+
+**A forecast year on a consumer asset is a smell.** A projection to 2030 carries
+no personal register and cannot be felt; it is evidence for a professional
+audience arguing about scale. Moving it is usually better than explaining it.
+
+<!-- since: 2026-09-19 -->
