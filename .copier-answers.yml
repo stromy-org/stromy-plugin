@@ -1,17 +1,20 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
-_commit: v1.0.2
+_commit: v1.2.0
 _src_path: gh:stromy-org/claude-plugin-template
 author_name: William Masquelier
 client_name: Stromy
 client_slug: stromy
 description: Claude Code plugin for Stromy branded deliverables
+display_name: Stromy
 enable_stromy_format: true
 github_org: stromy-org
 include_mcp: false
 include_node: true
 include_python: true
+marketplace_slug: stromy-marketplace
 mcp_servers: []
 plugin_name: Stromy Deliverables
 plugin_slug: stromy
 provider_targets: claude
+repo_slug: stromy-plugin
 version: 0.1.0
