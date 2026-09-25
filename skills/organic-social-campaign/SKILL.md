@@ -615,8 +615,11 @@ After Phase 7/8, offer to export `posts.json` (+ asset references) to a
 human-publishable surface: an ms365 Planner board, a SharePoint list, or an
 Excel calendar (tabular). Mention `m365-manager`'s safety rules (draft / confirm;
 never delete) as context; do not invoke it. **No auto-publish** to LinkedIn /
-Meta / X / TikTok: the publishing boundary is the exported calendar. (`reepl`
-exists for LinkedIn only and is the user's separate choice.) **Gate every asset that crosses this boundary**: Phase 7 validates a post OBJECT; `scripts/delivery_formats.py --verify <channel>/<surface> <files>` measures the ARTIFACT (extension, frame, pages, duration, and whether a carousel's cards agree with each other), at production and again here. A format rule with no measurement is a preference — that is how this skill shipped a client five weeks of PDFs against a rule everyone had agreed to, until she asked for PNG by hand. [delivery-formats.md](references/delivery-formats.md)
+Meta / X / TikTok: the publishing boundary is the exported calendar. For LinkedIn
+specifically, a reviewed post may optionally be handed off to the org's LinkedIn
+publish rail (`linkedin-mcp`, ORG-PLAN-285) for scheduled posting — that handoff is
+opt-in per post, requires an explicit pre-flight approval before anything publishes,
+and never replaces the human-reviewed export as the default path. **Gate every asset that crosses this boundary**: Phase 7 validates a post OBJECT; `scripts/delivery_formats.py --verify <channel>/<surface> <files>` measures the ARTIFACT (extension, frame, pages, duration, and whether a carousel's cards agree with each other), at production and again here. A format rule with no measurement is a preference — that is how this skill shipped a client five weeks of PDFs against a rule everyone had agreed to, until she asked for PNG by hand. [delivery-formats.md](references/delivery-formats.md)
 
 ## Reference Files
 
