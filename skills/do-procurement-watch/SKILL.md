@@ -1,7 +1,8 @@
 ---
 name: do-procurement-watch
 description: "Monitorear y analizar contrataciones públicas dominicanas: seguimiento de licitaciones por institución o rubro, historial completo de adjudicaciones de un proveedor, concentración de contratos, banderas de integridad (proveedores inhabilitados, adjudicación repetida a un mismo RPE, uso de modalidades excepcionales), y contraste entre el plan anual de compras y lo efectivamente licitado. Usar para vigilancia de licitaciones, perfil de proveedor, «quién gana los contratos de X», concentración de gasto, señales de riesgo en compras públicas, o cualquier pregunta de integridad sobre contrataciones en República Dominicana. Use for Dominican procurement monitoring, DR tender watch, supplier award history, or procurement integrity screening."
-client_summary: "Sigue licitaciones y contratos del Estado dominicano: quién compra qué, a quién y por cuánto."
+metadata:
+  stromy-client-summary: "Sigue licitaciones y contratos del Estado dominicano: quién compra qué, a quién y por cuánto."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

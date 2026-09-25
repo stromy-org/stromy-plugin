@@ -1,7 +1,8 @@
 ---
 name: media-social-pack
 description: "Generate a multi-aspect branded social image pack through media-gen-mcp from one brief and caller-built brand_context."
-client_summary: "Generate a set of on-brand social images sized for every platform, from one brief."
+metadata:
+  stromy-client-summary: "Generate a set of on-brand social images sized for every platform, from one brief."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

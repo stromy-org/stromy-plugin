@@ -1,7 +1,8 @@
 ---
 name: asset-website-studio
 description: "Guide a client through broker-mediated website build work after brand sign-off, using content-only site-bootstrap proposals and live Azure SWA preview URLs."
-client_summary: "Build your website once your brand is signed off, with a live preview before anything goes public."
+metadata:
+  stromy-client-summary: "Build your website once your brand is signed off, with a live preview before anything goes public."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

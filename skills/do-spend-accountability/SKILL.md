@@ -1,7 +1,8 @@
 ---
 name: do-spend-accountability
 description: "Analizar la rendición de cuentas del gasto público dominicano: presupuestado frente a ejecutado por institución o función (2017–2025), tasas de ejecución, subejecución y sobreejecución, y el contraste entre lo presupuestado, lo licitado, lo adjudicado y lo devengado. Incluye el cruce con informes de auditoría de la Cámara de Cuentas. Usar para «cuánto gastó realmente el Ministerio de X», ejecución presupuestaria, subejecución, dijo-frente-a-gastó, análisis de presupuesto dominicano, o cualquier pregunta sobre si el dinero público se ejecutó como se anunció. Use for Dominican budget execution, said-vs-spent analysis, DR public spending accountability, or budget-vs-actual questions."
-client_summary: "Compara lo presupuestado con lo realmente ejecutado por cada institución dominicana."
+metadata:
+  stromy-client-summary: "Compara lo presupuestado con lo realmente ejecutado por cada institución dominicana."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

@@ -1,7 +1,8 @@
 ---
 name: nl-monitor
 description: "Recurring monitoring digest and breaking-alert product for Dutch parliamentary and legislative activity. Watches a defined issue matrix (topics, dossier IDs, actors) over weekly lookback windows, detects procedural state-changes against a caller-supplied prior_state, and produces a structured weekly briefing: breaking alerts, this week, dossier-status table, forward agenda, machine-readable state snapshot. Use whenever the user wants a topic or dossier set monitored on a cadence, asks for a weekly brief, asks 'what changed', 'what's happening this week' or 'what's coming up', wants an alert when a watched dossier crosses a threshold, or wants a digest a scheduled routine can re-run. Not for: single-dossier status and passage forecasting (→ nl-dossier-tracker); 6-36 month pipeline foresight (→ nl-horizon-scan); toezeggingen delivery tracking (→ nl-accountability); contradiction hunting (→ nl-tensions); a one-off 'what's happening on X' with no cadence (→ nl-gov-data)."
-client_summary: "Set up a recurring watch on Dutch parliamentary activity and get a regular briefing."
+metadata:
+  stromy-client-summary: "Set up a recurring watch on Dutch parliamentary activity and get a regular briefing."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

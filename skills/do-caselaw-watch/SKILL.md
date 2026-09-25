@@ -1,7 +1,8 @@
 ---
 name: do-caselaw-watch
 description: "Investigar jurisprudencia dominicana: sentencias de la Suprema Corte de Justicia (96.252 desde 1994, por Sala, materia y texto libre) y del Tribunal Constitucional (desde 2012, por año y tipo de proceso), con enlaces oficiales a los documentos. Incluye la disciplina de citación y los límites de cada fuente. Usar para «qué ha dicho la Suprema Corte sobre X», buscar sentencias, jurisprudencia dominicana, criterios de las Salas, sentencias del Tribunal Constitucional, o fundamentar un argumento con precedentes. Use for Dominican caselaw research, DR Supreme Court rulings, constitutional court decisions, or jurisprudence search."
-client_summary: "Busca jurisprudencia de la Suprema Corte y del Tribunal Constitucional dominicanos."
+metadata:
+  stromy-client-summary: "Busca jurisprudencia de la Suprema Corte y del Tribunal Constitucional dominicanos."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

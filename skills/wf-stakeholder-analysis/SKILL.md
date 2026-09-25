@@ -1,7 +1,8 @@
 ---
 name: wf-stakeholder-analysis
 description: "Run a hosted stakeholder-acceptance analysis from a client plugin: gather the decision and evidence settings, validate the safe workflow configuration, start the asynchronous run, handle questionnaire review, and return its report links. Use whenever a client asks for stakeholder mapping, acceptance analysis, resistance analysis, coalition analysis, or a stakeholder report, even if they do not mention workflows."
-client_summary: "Map who supports or resists a decision, and what would move them."
+metadata:
+  stromy-client-summary: "Map who supports or resists a decision, and what would move them."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

@@ -1,7 +1,8 @@
 ---
 name: asset-brand-studio
 description: "Guide a client through broker-mediated brand build, refresh, or extension work with review boards, server-side brand compilation, font-contract resolution, and reviewed pull requests."
-client_summary: "Build, refresh or extend your brand with Stromy, with review points along the way."
+metadata:
+  stromy-client-summary: "Build, refresh or extend your brand with Stromy, with review points along the way."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

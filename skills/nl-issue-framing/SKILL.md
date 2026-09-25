@@ -1,7 +1,8 @@
 ---
 name: nl-issue-framing
 description: "Analyse how a named subject — company, product, organisation, technology, sector, or specific policy issue — is framed in official Dutch government and parliamentary records via nl-gov-data. Use whenever the user wants official-source reputation or issue framing: how an organisation is portrayed, how a technology is treated in policy, how a contested issue is characterised, what reputational risks surface in the official record. Sector domain packs (e.g. pharma — GLP-1s, reimbursement, shortages) supply keyword banks, default frames and legal anchors. Produces narrative analysis, mention/context tables, issue maps, PA/PR implications and DOCX-ready source appendices. Not for: strategy or recommendations (out of scope); said-vs-done hunting (→ nl-tensions); single-dossier chronology or passage forecasting (→ nl-dossier-tracker); single-claim fact-checking (→ nl-evidence-grounding); pledge tracking across a defined corpus (→ nl-accountability)."
-client_summary: "See how your organisation, product or issue is talked about in official Dutch records."
+metadata:
+  stromy-client-summary: "See how your organisation, product or issue is talked about in official Dutch records."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

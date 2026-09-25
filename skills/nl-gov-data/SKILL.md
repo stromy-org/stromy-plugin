@@ -1,7 +1,8 @@
 ---
 name: nl-gov-data
 description: "Track Dutch public affairs signals via the `nl-gov-data` MCP across Tweede Kamer, OpenOverheid, KOOP (incl. CVDR and local gmb/prb/wsb/bgr), BWB legislation, Wetgevingskalender, ROO organizations, Rechtspraak, CBS, and data.overheid.nl. Sixteen workflows — topic monitoring, dossier tracking, actor briefs, committee watch, legislative scan and calendar, ministry narrative, legislation and organization lookup, caselaw watch, CBS grounding, discovery, EU-NL act linkage — plus content deep-reading that fetches and quotes real document text. Returns structured JSON (`workflow_type`, `query_params`, `results`, `metadata`). Use whenever the user asks about Dutch parliament activity, Tweede Kamer dossiers, kamerstukken, dossier numbers, Dutch MPs, faction composition, ministry narrative, Dutch law or wetgeving, government organizations, or wants a Dutch government document, transcript, law article or attachment read, quoted or summarised."
-client_summary: "Ask open questions of the Dutch government record when no other research skill quite fits."
+metadata:
+  stromy-client-summary: "Ask open questions of the Dutch government record when no other research skill quite fits."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

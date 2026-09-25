@@ -1,7 +1,8 @@
 ---
 name: do-transparency-requests
 description: "Investigar el sistema dominicano de acceso a la información pública (SAIP, Ley 200-04): qué le han preguntado ya a una institución, qué respondió literalmente, cuánto tarda, qué niega y con qué motivo, y a quién dirigirse para pedir información oficial. Cubre ~131.000 solicitudes en 345 instituciones desde 2016 y el directorio de las 359 Oficinas de Acceso a la Información (OAI). Usar para «¿alguien ya preguntó esto?», «¿qué contestó tal ministerio?», «¿esta institución responde en plazo?», «¿a quién le escribo para pedir X?», transparencia, derecho de acceso, Ley 200-04, o antes de redactar una solicitud de información. Use for Dominican freedom-of- information requests, SAIP, right-to-information research, or public-body responsiveness."
-client_summary: "Descubre qué le han preguntado ya a cada institución dominicana y qué respondió, con el contacto oficial para pedir más."
+metadata:
+  stromy-client-summary: "Descubre qué le han preguntado ya a cada institución dominicana y qué respondió, con el contacto oficial para pedir más."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

@@ -1,7 +1,8 @@
 ---
 name: nl-eu-transposition
 description: "Track how a specific EU directive is being transposed into Dutch law: deadline, national implementing measures (NIMs), BWB article-level correspondence table, gold-plating screen, Wetgevingskalender live pipeline status, and an infringement/Single Market Scoreboard benchmark. Surfaces compliance risk and PA lobbying windows. Use for 'EU directive', 'transposition', 'implementatie richtlijn', 'richtlijn omzetting', 'gold-plating', 'NIM', 'CELEX', 'implementatiewet', 'conformity deficit', 'infringement', 'Single Market Scoreboard', 'EU→NL', 'directive tracker', 'does this directive apply to NL', 'is NL compliant with directive X', 'national implementing measure', 'transposition deadline'."
-client_summary: "See how an EU directive is being written into Dutch law, and where the gaps and delays are."
+metadata:
+  stromy-client-summary: "See how an EU directive is being written into Dutch law, and where the gaps and delays are."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

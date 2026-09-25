@@ -1,7 +1,8 @@
 ---
 name: do-legislative-scan
 description: "Rastrear la actividad legislativa dominicana en las dos cámaras: estado y cronología de un proyecto de ley, proponentes, comisiones, votaciones nominales en la Cámara de Diputados, y el archivo histórico del Senado. Producir mapas de actores, seguimiento de un tema a través de iniciativas, y fichas de proyecto con fuente y enlace oficial. Usar para «en qué va el proyecto de ley sobre X», seguimiento legislativo, quién propone qué, cómo se votó, actividad del Congreso dominicano, o preparar una reunión con un legislador. Use for Dominican legislative tracking, DR bill status, congress activity, or roll-call votes."
-client_summary: "Sigue proyectos de ley en las dos cámaras dominicanas, con proponentes, comisiones y votaciones nominales."
+metadata:
+  stromy-client-summary: "Sigue proyectos de ley en las dos cámaras dominicanas, con proponentes, comisiones y votaciones nominales."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

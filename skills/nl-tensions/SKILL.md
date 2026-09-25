@@ -1,7 +1,8 @@
 ---
 name: nl-tensions
 description: "Detect contradictions, said-vs-did gaps and non-obvious tensions in Dutch public policy via the nl-gov-data MCP. Produces structured, source-cited tension reports for public-affairs consultants — dormant dossiers, expired motions, taxonomy absences, coalition flips, ministerial commitments not kept, claim-vs-structure mismatches. Use whenever the user asks about tensions, contradictions, gaps, what's not adding up, said-vs-spent, where a policy is stuck, why something hasn't moved, or angles for a roundtable on a Dutch policy topic. Output is evidence and structure only, never recommendations. Not for: monitoring (→ nl-gov-data); strategy (out of scope); toezeggingen or commitment delivery tracking across a defined corpus (→ nl-accountability); single-claim fact-checking (→ nl-evidence-grounding); entity or issue framing (→ nl-issue-framing)."
-client_summary: "Find contradictions and said-versus-did gaps in Dutch policy that others have missed."
+metadata:
+  stromy-client-summary: "Find contradictions and said-versus-did gaps in Dutch policy that others have missed."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

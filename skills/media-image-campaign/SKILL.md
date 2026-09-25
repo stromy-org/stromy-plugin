@@ -1,7 +1,8 @@
 ---
 name: media-image-campaign
 description: "Generate a single branded campaign image through media-gen-mcp by passing caller-built brand_context and a creative brief."
-client_summary: "Generate a single on-brand campaign image from a short brief."
+metadata:
+  stromy-client-summary: "Generate a single on-brand campaign image from a short brief."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

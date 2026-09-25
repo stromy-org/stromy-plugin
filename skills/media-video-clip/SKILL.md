@@ -1,7 +1,8 @@
 ---
 name: media-video-clip
 description: "Generate a single branded short-form video through media-gen-mcp by passing caller-built brand_context and a motion brief."
-client_summary: "Generate a short on-brand video clip from a brief."
+metadata:
+  stromy-client-summary: "Generate a short on-brand video clip from a brief."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

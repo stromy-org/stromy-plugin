@@ -1,7 +1,8 @@
 ---
 name: do-policy-landscape
 description: "Construir el panorama completo de un tema de política pública dominicana cruzando todas las fuentes oficiales disponibles: legislación vigente y su tramitación en las dos cámaras, gasto y ejecución presupuestaria, contratación pública asociada, jurisprudencia, auditorías, regulación sectorial y fundamentación cuantitativa. Usar para «hazme un panorama de X en República Dominicana», línea base regulatoria, informe de situación sobre un sector, briefing de asuntos públicos, o preparar una posición sobre un tema dominicano. Use for Dominican policy landscape, DR regulatory baseline, sector briefing, or public-affairs situation report."
-client_summary: "Construye el panorama completo de un tema dominicano: normas, actores, dinero, tribunales y huecos."
+metadata:
+  stromy-client-summary: "Construye el panorama completo de un tema dominicano: normas, actores, dinero, tribunales y huecos."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

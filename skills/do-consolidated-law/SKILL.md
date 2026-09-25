@@ -1,7 +1,8 @@
 ---
 name: do-consolidated-law
 description: "Localizar y citar leyes, decretos, resoluciones y reglamentos dominicanos desde 1844 en la fuente oficial (Consultoría Jurídica del Poder Ejecutivo): búsqueda por número, título, año, Gaceta Oficial o texto completo, con el enlace al texto auténtico. Incluye la disciplina de citación y el tratamiento honesto de la vigencia, que ninguna fuente dominicana publica. Usar para «dame la Ley X», buscar un decreto, encontrar una norma por tema, citar legislación dominicana, o comprobar qué dice una norma. Use for Dominican legislation lookup, DR law text, decreto, Gaceta Oficial, or citing Dominican statutes."
-client_summary: "Encuentra y cita cualquier ley o decreto dominicano desde 1844 en la fuente oficial."
+metadata:
+  stromy-client-summary: "Encuentra y cita cualquier ley o decreto dominicano desde 1844 en la fuente oficial."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.

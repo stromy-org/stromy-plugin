@@ -1,7 +1,8 @@
 ---
 name: nl-evidence-grounding
 description: "Fact-check one Dutch policy claim or figure against the official record — CBS statistics, Rijksfinanciën budget phases (OWB/O1/O2/JV), kamerstukken, Rechtspraak — producing a source-cited Evidence Dossier: falsifiable restatement, source-independence table, fixed-vocabulary triangulation verdict, causation audit, and debate-connect trace (toezegging → budget → CBS realisation → framing). Use whenever the user asks 'is this claim true', wants a minister's statement or stated figure verified, wants a number grounded in the official record, or asks what CBS says about X. Handles 1-5 bounded claims — a targeted fact-check, not a monitoring stream. Not for: pledge-delivery tracking across a commitment corpus (→ nl-accountability); contradiction-mining across a topic (→ nl-tensions); a full policy landscape survey (→ nl-policy-legislative-landscape)."
-client_summary: "Fact-check a Dutch policy claim or figure against the official record."
+metadata:
+  stromy-client-summary: "Fact-check a Dutch policy claim or figure against the official record."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
