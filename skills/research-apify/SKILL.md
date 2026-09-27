@@ -1,6 +1,6 @@
 ---
 name: research-apify
-description: "Agent-driven web research and data extraction backed by the official Apify MCP, bring-your-own-key (BYOK). Use when the user wants to gather data on a topic from the web, search the live web for current information, scrape or crawl a website or a list of URLs, or extract structured records (directory listings, product specs, profiles) — and turn the results into a branded deliverable. Drives a short list of vetted Apify actors with hard per-run caps and a confirm-before-large-pull step, reshapes the dataset into the standard {workflow_type, query_params, results, metadata} envelope, then hands the envelope to a format-* skill (format-docx, format-pdf-hd) for the branded document. Triggers on: web research, gather data on a topic, scrape, crawl a site, extract structured data from URLs, data extraction, web data, competitor/market scan."
+description: "Agent-driven web research and data extraction via the official Apify MCP (bring-your-own-key). Use when asked to gather data on a topic from the web, search the live web for current information, scrape or crawl a site or URL list, extract structured records (directories, specs, profiles), or run a competitor/market scan — then turn results into a branded deliverable. Drives a short list of vetted Apify actors with hard per-run caps and a confirm-before-large-pull step, reshapes output into the standard envelope, and hands off to a format-* skill for the document."
 license: Proprietary. LICENSE.txt has complete terms
 ---
 <!--
