@@ -1,6 +1,6 @@
 ---
 name: asset-brand-studio
-description: "Guide a client through broker-mediated brand build, refresh, or extension work with review boards, server-side brand compilation, font-contract resolution, and reviewed pull requests."
+description: "Guide a client through building, refreshing, or extending their brand — logos, colors, typography, and font-contract checks — through the asset-broker connector, with review boards at each stage and every change landing as a reviewed pull request. Use when a client wants to build a new brand, refresh an existing one, or extend it into a new expression, with checkpoints along the way. Not for a one-off content or brand-field edit (asset-editor), orientation questions about how editing works (asset-guide), workspace/folder setup (asset-workspace-setup), or building the website itself once the brand is signed off (asset-website-studio)."
 metadata:
   stromy-client-summary: "Build, refresh or extend your brand with Stromy, with review points along the way."
 ---

@@ -1,6 +1,6 @@
 ---
 name: asset-website-studio
-description: "Guide a client through broker-mediated website build work after brand sign-off, using content-only site-bootstrap proposals and live Azure SWA preview URLs."
+description: "Guide a client through building their website once the brand is signed off — content-only site-bootstrap proposals reviewed against a live Azure preview URL — through the asset-broker connector. Use when a brand is already active, a website shell has been provisioned, and the client wants to build out the site with a live preview before anything goes public. Not for building or refreshing the brand itself (asset-brand-studio), a one-off content edit to an already-live site (asset-editor), orientation questions about editing (asset-guide), or configuring workspace folders (asset-workspace-setup)."
 metadata:
   stromy-client-summary: "Build your website once your brand is signed off, with a live preview before anything goes public."
 ---

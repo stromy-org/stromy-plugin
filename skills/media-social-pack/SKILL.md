@@ -1,6 +1,6 @@
 ---
 name: media-social-pack
-description: "Generate a multi-aspect branded social image pack through media-gen-mcp from one brief and caller-built brand_context."
+description: "Generate a multi-aspect branded social image pack through media-gen-mcp from one brief and caller-built brand_context — the same visual exported across every social platform, format, and aspect ratio at once. Use when a client needs one campaign image resized for multiple social platforms or aspect ratios. Not for a single image (media-image-campaign), video or motion (media-video-clip), orientation questions about the media connector (media-guide), or numeric/structural visuals like charts or diagrams (format-chart, format-diagram)."
 metadata:
   stromy-client-summary: "Generate a set of on-brand social images sized for every platform, from one brief."
 ---

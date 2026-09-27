@@ -1,6 +1,6 @@
 ---
 name: media-image-campaign
-description: "Generate a single branded campaign image through media-gen-mcp by passing caller-built brand_context and a creative brief."
+description: "Generate a single branded campaign image through media-gen-mcp from a creative brief and caller-built brand_context. Use when a client needs one on-brand image — a hero shot, ad visual, or campaign asset. Not for a multi-aspect social pack (media-social-pack), video or motion (media-video-clip), orientation questions about the media connector (media-guide), or numeric/structural visuals like charts or diagrams (format-chart, format-diagram)."
 metadata:
   stromy-client-summary: "Generate a single on-brand campaign image from a short brief."
 ---

@@ -1,6 +1,6 @@
 ---
 name: media-video-clip
-description: "Generate a single branded short-form video through media-gen-mcp by passing caller-built brand_context and a motion brief."
+description: "Generate a single branded short-form video clip through media-gen-mcp from a motion brief and caller-built brand_context. Use when a client needs short generative brand footage — a teaser or social clip, not narration. Not for a still image (media-image-campaign), a multi-aspect image pack (media-social-pack), orientation questions about the media connector (media-guide), or a server-rendered branded explainer with narration and diagrams (format-video-hd)."
 metadata:
   stromy-client-summary: "Generate a short on-brand video clip from a brief."
 ---
