@@ -7,8 +7,13 @@
       "transport": "http",
       "url": "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp",
       "_consumed_by": [
-        "claude",
+        "openai",
         "codex",
+        "claude",
+        "cursor",
+        "copilot",
+        "vscode",
+        "kiro",
         "gemini"
       ],
       "_codex_via": "mcp-remote",
@@ -19,8 +24,13 @@
       "transport": "http",
       "url": "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp",
       "_consumed_by": [
-        "claude",
+        "openai",
         "codex",
+        "claude",
+        "cursor",
+        "copilot",
+        "vscode",
+        "kiro",
         "gemini"
       ],
       "_codex_via": "mcp-remote",
@@ -31,8 +41,13 @@
       "transport": "http",
       "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp",
       "_consumed_by": [
-        "claude",
+        "openai",
         "codex",
+        "claude",
+        "cursor",
+        "copilot",
+        "vscode",
+        "kiro",
         "gemini"
       ],
       "_codex_via": "mcp-remote",
@@ -43,8 +58,13 @@
       "transport": "http",
       "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp",
       "_consumed_by": [
-        "claude",
+        "openai",
         "codex",
+        "claude",
+        "cursor",
+        "copilot",
+        "vscode",
+        "kiro",
         "gemini"
       ],
       "_codex_via": "mcp-remote",
