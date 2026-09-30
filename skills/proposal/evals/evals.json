@@ -1,0 +1,167 @@
+{
+  "skill": "proposal",
+  "notes": "Trigger-routing suite (ORG-PLAN-290 C9, 2026-09-19). 20 cases, 12 positive / 8 negative, 12 train / 8 holdout, per the C5 minimums in stromy-org/scripts/audit-skill-health.py. Negatives carry confusable:<peer> tags for the peers this skill's own description tells the agent NOT to route here. No prompt names the skill — a prompt that does measures instruction-following rather than routing.",
+  "evals": [
+    {
+      "prompt": "Put together a consulting proposal for the Rotterdam circularity tender.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We need a bid document for the framework agreement, due Friday.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Draft an executive brief we can leave behind after the board meeting.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Build the proposal — scope, approach, team, pricing, the lot.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "The client asked for something formal on the engagement. Write it.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Condense last year's 40-page proposal down to something a CFO will read.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Merge the technical and commercial sections into one document for the client.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "They want a written offer by Monday with our rates in it.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Revise the proposal we sent in March — the scope has changed.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Make me a minimal, one-page version of the engagement offer.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We are pitching against two big four firms. Give me the document.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Turn these notes from the intake call into something we can send.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Announce that we won the tender, to the trade press.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:press-release"
+      ]
+    },
+    {
+      "prompt": "Build the message house we will use across all sales conversations.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:messaging-framework"
+      ]
+    },
+    {
+      "prompt": "Plan the LinkedIn content calendar for the launch.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:organic-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Set up lead-gen ads for the new service line.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:paid-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Scrape the tender portal for every open waste-management procurement.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:research-apify"
+      ]
+    },
+    {
+      "prompt": "How are we being perceived by the municipalities in the coverage?",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:sov-sentiment-analysis"
+      ]
+    },
+    {
+      "prompt": "Compare our share of voice against the three incumbents.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:sov-competitor-analysis"
+      ]
+    },
+    {
+      "prompt": "Fix the page numbering in the PDF the client sent back.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "negative",
+        "edge"
+      ]
+    }
+  ]
+}

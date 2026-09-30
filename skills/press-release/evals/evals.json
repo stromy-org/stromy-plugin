@@ -1,0 +1,167 @@
+{
+  "skill": "press-release",
+  "notes": "Trigger-routing suite (ORG-PLAN-290 C9, 2026-09-19). 20 cases, 12 positive / 8 negative, 12 train / 8 holdout, per the C5 minimums in stromy-org/scripts/audit-skill-health.py. Negatives carry confusable:<peer> tags for the peers this skill's own description tells the agent NOT to route here. No prompt names the skill — a prompt that does measures instruction-following rather than routing.",
+  "evals": [
+    {
+      "prompt": "We closed the Series B this morning — get something out to the trade press.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Draft a news release for the partnership with the municipality.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Write the announcement for our new COO, AP style, with a quote from the CEO.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We need to tell the media about the recycling-rate milestone.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Prepare a PR statement about the recall before this afternoon.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Announce the acquisition.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Put together a journalist-ready piece on the research report we publish Tuesday.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Is this even newsworthy? If it is, write it up for press.",
+      "should_trigger": true,
+      "split": "train",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Draft the product-launch release with the dateline and boilerplate filled in.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "We have a crisis statement to get right — journalists are already calling.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "direct"
+      ]
+    },
+    {
+      "prompt": "Write something the FD and NRC would actually run about our funding round.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Get the funding news out, and flag anything legal needs to sign off on.",
+      "should_trigger": true,
+      "split": "holdout",
+      "tags": [
+        "indirect"
+      ]
+    },
+    {
+      "prompt": "Build the message house for the sustainability practice.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:messaging-framework"
+      ]
+    },
+    {
+      "prompt": "Define our messaging pillars and proof points.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:messaging-framework"
+      ]
+    },
+    {
+      "prompt": "Plan the LinkedIn editorial calendar around the funding news.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:organic-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Set up paid social to amplify the funding announcement.",
+      "should_trigger": false,
+      "split": "train",
+      "tags": [
+        "confusable:paid-social-campaign"
+      ]
+    },
+    {
+      "prompt": "Write the bid document for the tender that closes Friday.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:proposal"
+      ]
+    },
+    {
+      "prompt": "How much coverage did we get versus our three closest competitors?",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:sov-competitor-analysis"
+      ]
+    },
+    {
+      "prompt": "Pull the contact details for every environment journalist in the Netherlands.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "confusable:research-apify"
+      ]
+    },
+    {
+      "prompt": "Proofread the release the agency sent over — just typos and house style.",
+      "should_trigger": false,
+      "split": "holdout",
+      "tags": [
+        "negative",
+        "edge"
+      ]
+    }
+  ]
+}

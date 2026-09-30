@@ -1,0 +1,1698 @@
+{
+  "version": 2,
+  "scope": "stromy-velvet-score",
+  "note": "Clean base images; treatments apply downstream (charter.expression.treatments).",
+  "library": [
+    {
+      "id": "conductor-hands-baton",
+      "source": "images/conductor-hands-baton.jpg",
+      "theme": "conductor-gesture",
+      "roles": [
+        "cover",
+        "hero"
+      ],
+      "hero": true,
+      "treatment": "amethyst-splittone",
+      "altText": "Conductor's hands and baton, mid-gesture \u2014 the signal that resolves the parts",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.62,
+          "y": 0.38
+        },
+        "textSafeZone": "lower-third"
+      }
+    },
+    {
+      "id": "conductor-backlit",
+      "source": "images/conductor-backlit.jpg",
+      "theme": "conductor-gesture",
+      "roles": [
+        "closing",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Conductor silhouetted, backlit on a dark stage",
+      "dimensions": {
+        "width": 896,
+        "height": 1280
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.4
+        },
+        "textSafeZone": "lower-third"
+      }
+    },
+    {
+      "id": "spotlight-player",
+      "source": "images/spotlight-player.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "cover",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Single musician under a concert spotlight against black",
+      "dimensions": {
+        "width": 896,
+        "height": 1280
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.47,
+          "y": 0.78
+        },
+        "textSafeZone": "upper-third"
+      }
+    },
+    {
+      "id": "orchestra-dotfield-above",
+      "source": "images/orchestra-dotfield-above.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "hero",
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": true,
+      "treatment": "spotlight-noir",
+      "altText": "Orchestra seen from above as a field of points \u2014 the dot-field motif made real",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "orchestra-from-above",
+      "source": "images/orchestra-from-above.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "cover",
+        "hero",
+        "closing",
+        "background",
+        "content"
+      ],
+      "hero": true,
+      "treatment": "spotlight-noir",
+      "altText": "Wide overhead of the full orchestra mid-performance",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "id": "string-arc-above",
+      "source": "images/string-arc-above.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "cover",
+        "hero",
+        "closing"
+      ],
+      "hero": true,
+      "treatment": "amethyst-splittone",
+      "altText": "Sweeping arc of the string section from above",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.4
+        },
+        "textSafeZone": "lower-third"
+      }
+    },
+    {
+      "id": "brass-section-above",
+      "source": "images/brass-section-above.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Brass section catching stage light from above",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.45,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "id": "harpist-strings",
+      "source": "images/harpist-strings.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "closing",
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Harpist's hands among the strings",
+      "dimensions": {
+        "width": 896,
+        "height": 1280
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "id": "percussion-timpani",
+      "source": "images/percussion-timpani.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "section"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Timpani in low light, mallets poised",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.3
+        }
+      }
+    },
+    {
+      "id": "stage-rigging-lights",
+      "source": "images/stage-rigging-lights.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "background"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Stage rigging and lights overhead \u2014 the architecture of the hall",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "id": "abstract-waveform-dotfield",
+      "source": "images/abstract-waveform-dotfield.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "background"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Sound rendered as a field of points \u2014 abstract waveform dot-field",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "abstract-wave-interference",
+      "source": "images/abstract-wave-interference.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Interfering wavefronts \u2014 abstract resonance",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "abstract-flowing-ribbon",
+      "source": "images/abstract-flowing-ribbon.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "A single flowing ribbon of light \u2014 phrase made visible",
+      "dimensions": {
+        "width": 1408,
+        "height": 768
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "str-03",
+      "source": "images/str-03.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "background",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Violin against dark surface",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.4,
+          "y": 0.5
+        },
+        "textSafeZone": "right-safe"
+      }
+    },
+    {
+      "id": "str-05",
+      "source": "images/str-05.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "closing",
+        "hero"
+      ],
+      "hero": true,
+      "treatment": "amethyst-splittone",
+      "altText": "Black and white violin",
+      "dimensions": {
+        "width": 1600,
+        "height": 2134
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.68,
+          "y": 0.52
+        },
+        "textSafeZone": "left-safe"
+      }
+    },
+    {
+      "id": "wav-10",
+      "source": "images/wav-10.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Purple wave light",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-02",
+      "source": "images/wav-02.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Audio pattern, monochrome",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-01",
+      "source": "images/wav-01.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "closing",
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Black & white wavy lines",
+      "dimensions": {
+        "width": 1600,
+        "height": 2133
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-08",
+      "source": "images/wav-08.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Abstract black wavy lines",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-03",
+      "source": "images/wav-03.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "cover",
+        "closing",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Circular audio pattern",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-04",
+      "source": "images/wav-04.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Black & white wavy lines",
+      "dimensions": {
+        "width": 1600,
+        "height": 1371
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-05",
+      "source": "images/wav-05.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Monochrome flowing waves",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-06",
+      "source": "images/wav-06.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "hero",
+        "closing",
+        "background",
+        "texture"
+      ],
+      "hero": true,
+      "treatment": "velvet-tritone",
+      "altText": "Black wavy surface",
+      "dimensions": {
+        "width": 1600,
+        "height": 2316
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-07",
+      "source": "images/wav-07.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Curved monochrome form",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "wav-09",
+      "source": "images/wav-09.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "closing",
+        "divider"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Dark blue/black fluid",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "hal-05",
+      "source": "images/hal-05.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Theatre stairs interior",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      }
+    },
+    {
+      "id": "hal-03",
+      "source": "images/hal-03.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "closing",
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Empty auditorium, seats + stage",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      }
+    },
+    {
+      "id": "hal-02",
+      "source": "images/hal-02.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "cover",
+        "hero",
+        "closing"
+      ],
+      "hero": true,
+      "treatment": "nocturne",
+      "altText": "Hall with pipe organ",
+      "dimensions": {
+        "width": 1600,
+        "height": 2403
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "hal-01",
+      "source": "images/hal-01.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "B&W empty auditorium",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.4,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "id": "pno-05",
+      "source": "images/pno-05.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Hand position study",
+      "dimensions": {
+        "width": 1600,
+        "height": 1779
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.6,
+          "y": 0.6
+        }
+      }
+    },
+    {
+      "id": "pno-01",
+      "source": "images/pno-01.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Hands on keys, focused",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.6,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "id": "prc-04",
+      "source": "images/prc-04.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Grayscale drum set",
+      "dimensions": {
+        "width": 1600,
+        "height": 2400
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.42,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "id": "prc-01",
+      "source": "images/prc-01.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Snare drum close-up B&W",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.65,
+          "y": 0.55
+        },
+        "textSafeZone": "left-safe"
+      }
+    },
+    {
+      "id": "prc-07",
+      "source": "images/prc-07.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Drumsticks on drums",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.45,
+          "y": 0.6
+        }
+      }
+    },
+    {
+      "id": "brs-01",
+      "source": "images/brs-01.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "background",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Trumpet on black textile",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.72,
+          "y": 0.5
+        },
+        "textSafeZone": "left-safe"
+      }
+    },
+    {
+      "id": "brs-06",
+      "source": "images/brs-06.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Trumpet close photography",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.42,
+          "y": 0.45
+        }
+      }
+    },
+    {
+      "id": "orc-10",
+      "source": "images/orc-10.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Orchestra and choir on stage",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "orc-09",
+      "source": "images/orc-09.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Group on stage, empty seats",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "orc-08",
+      "source": "images/orc-08.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Audience watching orchestra",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "orc-02",
+      "source": "images/orc-02.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "cover",
+        "hero",
+        "closing"
+      ],
+      "hero": true,
+      "treatment": "spotlight-noir",
+      "altText": "Orchestra in dim-lit room",
+      "dimensions": {
+        "width": 1600,
+        "height": 1060
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "id": "orc-01",
+      "source": "images/orc-01.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Grayscale orchestra in theatre",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "orc-03",
+      "source": "images/orc-03.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Conductor + orchestra in hall",
+      "dimensions": {
+        "width": 1600,
+        "height": 1067
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.55,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "hal-13",
+      "source": "images/hal-13.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Orchestra rehearsal seen from above, music stands and bows",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Samuel Sianipar",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1551696785-927d4ac2d35b",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "cnd-02",
+      "source": "images/cnd-02.jpg",
+      "theme": "conductor-gesture",
+      "roles": [
+        "closing",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Conductor silhouetted against stage light",
+      "dimensions": {
+        "width": 2000,
+        "height": 1500
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Kazuo ota",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1745328599617-5c9796ca4d71",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "cnd-03",
+      "source": "images/cnd-03.jpg",
+      "theme": "conductor-gesture",
+      "roles": [
+        "divider",
+        "background"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Conductor's raised hand, motion blur",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Alex Cooper",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1699521376652-a5666c8552fb",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "cnd-04",
+      "source": "images/cnd-04.jpg",
+      "theme": "conductor-gesture",
+      "roles": [
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Conductor viewed from behind, orchestra beyond",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Pierre Goiffon",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1763414102826-309fcdae266a",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "hal-14",
+      "source": "images/hal-14.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Concert hall balcony view over the stage, coloured light",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Kazuo ota",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1600443446566-c8a2e34c779b",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "ins-01",
+      "source": "images/ins-01.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Cello close detail, dark wood grain",
+      "dimensions": {
+        "width": 2000,
+        "height": 2500
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "S\u00e9rgio Andr\u00e9",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1585934269136-703ed76b133b",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "ins-02",
+      "source": "images/ins-02.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "content",
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Violin body detail, wood grain and joinery",
+      "dimensions": {
+        "width": 2000,
+        "height": 1325
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Ira Selendripity",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1506423456648-c11ccb27338d",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "ins-03",
+      "source": "images/ins-03.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Violin bridge and strings, monochrome",
+      "dimensions": {
+        "width": 2000,
+        "height": 3005
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Thomas Kinto",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1724145353564-2d454235bd97",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "ins-04",
+      "source": "images/ins-04.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Violin scroll and bow resting on case",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Joachim Schn\u00fcrle",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1624451890723-f703369672e5",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "ins-05",
+      "source": "images/ins-05.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "closing",
+        "divider"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Violin bridge and strings, monochrome",
+      "dimensions": {
+        "width": 2000,
+        "height": 1335
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Maksym Kaharlytskyi",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1585425189078-427f27d0c075",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "ins-06",
+      "source": "images/ins-06.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Violin f-hole detail, low light",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Megs Harrison",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1643666805740-f2f9e0600a4e",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "ins-07",
+      "source": "images/ins-07.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "content",
+        "closing"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Violin f-hole, warm sidelight",
+      "dimensions": {
+        "width": 2000,
+        "height": 2979
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Samantha Beaty",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1649919254591-244eb807d5e8",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "ins-08",
+      "source": "images/ins-08.jpg",
+      "theme": "instruments-detail",
+      "roles": [
+        "divider",
+        "background"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Violin f-hole and bow, close detail",
+      "dimensions": {
+        "width": 2000,
+        "height": 3000
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Johanna Vogt",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1492563817904-5f1dc687974f",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "hal-06",
+      "source": "images/hal-06.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "background"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Concert hall interior, architectural render",
+      "dimensions": {
+        "width": 2000,
+        "height": 1125
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "D5 Render",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1675327161957-929e3faa37cc",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "hal-07",
+      "source": "images/hal-07.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Concert hall ceiling and balconies",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Rodrigo Ruiz",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1509782642997-4befdc4b21c9",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "hal-08",
+      "source": "images/hal-08.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section",
+        "content"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Grand concert hall, wide interior view",
+      "dimensions": {
+        "width": 2000,
+        "height": 1500
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Humberto Arellano",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1764643588158-79ac8406f87b",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "hal-09",
+      "source": "images/hal-09.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "background"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Hall interior, warm ambient light",
+      "dimensions": {
+        "width": 2000,
+        "height": 1500
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Elena Rabkina",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1631552256073-6556ced1cf15",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "hal-10",
+      "source": "images/hal-10.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "divider",
+        "section"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Auditorium seating rows, architectural symmetry",
+      "dimensions": {
+        "width": 2000,
+        "height": 3000
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Evan Jeung",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1722321974501-059dff03e970",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "hal-11",
+      "source": "images/hal-11.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "closing",
+        "divider"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Concert hall stage from the seats",
+      "dimensions": {
+        "width": 2000,
+        "height": 3000
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Belov Sergey",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1765308767818-1e7fd17c8067",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "hal-12",
+      "source": "images/hal-12.jpg",
+      "theme": "hall-architecture",
+      "roles": [
+        "background"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Domed hall interior, structural detail",
+      "dimensions": {
+        "width": 2000,
+        "height": 1289
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Goetheanum",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1646905103565-5c8348075920",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "wav-11",
+      "source": "images/wav-11.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "divider",
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Abstract sound wave rendering",
+      "dimensions": {
+        "width": 2000,
+        "height": 1500
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Rostyslav Savchyn",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1543187018-21e461e7538e",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "wav-12",
+      "source": "images/wav-12.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Flowing light trails, abstract",
+      "dimensions": {
+        "width": 2000,
+        "height": 1055
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Milad Fakurian",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1698429894891-c5a9e538072d",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "wav-13",
+      "source": "images/wav-13.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "divider",
+        "background"
+      ],
+      "hero": false,
+      "treatment": "amethyst-splittone",
+      "altText": "Abstract wave pattern, monochrome",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Martin Martz",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1686519093104-3140c6dcf284",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "wav-14",
+      "source": "images/wav-14.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "nocturne",
+      "altText": "Fluid abstract texture",
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Pawel Czerwinski",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1617994452722-4145e196248b",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "wav-15",
+      "source": "images/wav-15.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "closing",
+        "divider"
+      ],
+      "hero": false,
+      "treatment": "spotlight-noir",
+      "altText": "Radiating light pattern, abstract",
+      "dimensions": {
+        "width": 2000,
+        "height": 1055
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Milad Fakurian",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1698430484131-efc9f5ccba1a",
+        "license": "Unsplash License (free to use)"
+      }
+    },
+    {
+      "id": "wav-16",
+      "source": "images/wav-16.jpg",
+      "theme": "score-abstract",
+      "roles": [
+        "background",
+        "texture"
+      ],
+      "hero": false,
+      "treatment": "velvet-tritone",
+      "altText": "Layered wave texture, abstract",
+      "dimensions": {
+        "width": 2000,
+        "height": 2000
+      },
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      "attribution": {
+        "photographer": "Ruido 98",
+        "source": "unsplash",
+        "url": "https://unsplash.com/photos/photo-1687618084591-8523977ae737",
+        "license": "Unsplash License (free to use)"
+      }
+    }
+  ]
+}

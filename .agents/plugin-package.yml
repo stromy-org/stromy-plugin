@@ -1,0 +1,248 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/stromy-org/stromy-org/main/scripts/plugin-package.schema.json
+# CANONICAL plugin package (ORG-PLAN-165) — the ONLY authored source of this
+# plugin's identity, version, targets, skills and marketplace listing. Every
+# provider manifest is generated from it: edit here, then run
+#   python3 scripts/render-plugin-package.py --write --plugin <this repo>
+# (from stromy-org). .copier-answers.yml is template provenance, never release state.
+schema_version: 1
+identity:
+  name: stromy
+  display_name: Stromy
+  version: 0.10.52
+  description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
+    rendering, nl-gov-data + au-gov-data + do-gov-data gov-rel intel, plus asset-broker, org-atlas, stromy-workflows
+    and media-gen via workspace connectors, over Stromy's own brand
+  author:
+    name: stromy-org
+  repository: https://github.com/stromy-org/stromy-plugin
+  license: UNLICENSED
+targets:
+- openai
+- codex
+- claude
+- cursor
+- copilot
+- vscode
+- kiro
+- gemini
+portable_capabilities:
+  australian-government-research:
+    summary: Australian government, parliament and legislation research
+    skills:
+    - au-gov-data
+    - au-guide
+    mcp_servers:
+    - au-gov-data
+  dominican-government-research:
+    summary: Dominican Republic public-affairs research from official sources
+    skills:
+    - do-caselaw-watch
+    - do-consolidated-law
+    - do-gov-data
+    - do-guide
+    - do-legislative-scan
+    - do-policy-landscape
+    - do-procurement-watch
+    - do-spend-accountability
+    - do-transparency-requests
+    mcp_servers:
+    - do-gov-data
+  branded-deliverables:
+    summary: Branded documents, decks, charts, diagrams and video rendered server-side in the client's
+      brand
+    skills:
+    - format-chart
+    - format-diagram
+    - format-docx
+    - format-docx-hd
+    - format-guide
+    - format-html-hd
+    - format-html-reveal
+    - format-i18n
+    - format-mermaid
+    - format-motion
+    - format-pdf
+    - format-pdf-hd
+    - format-pptx
+    - format-pptx-hd
+    - format-prepare-document
+    - format-video-hd
+    - format-xlsx
+    mcp_servers:
+    - stromy-format
+  plugin-workflows:
+    summary: Workflows authored for this plugin and shipped inside it
+    skills:
+    - getting-started
+    - messaging-framework
+    - organic-social-campaign
+    - press-release
+    - proposal
+    - research-apify
+  dutch-government-research:
+    summary: Dutch government, parliament and legislation research
+    skills:
+    - nl-accountability
+    - nl-dossier-tracker
+    - nl-eu-transposition
+    - nl-evidence-grounding
+    - nl-gov-data
+    - nl-guide
+    - nl-horizon-scan
+    - nl-issue-framing
+    - nl-monitor
+    - nl-parliamentary-positioning
+    - nl-policy-legislative-landscape
+    - nl-tensions
+    mcp_servers:
+    - nl-gov-data
+skills:
+  include:
+  - au-gov-data
+  - au-guide
+  - do-caselaw-watch
+  - do-consolidated-law
+  - do-gov-data
+  - do-guide
+  - do-legislative-scan
+  - do-policy-landscape
+  - do-procurement-watch
+  - do-spend-accountability
+  - do-transparency-requests
+  - format-chart
+  - format-diagram
+  - format-docx
+  - format-docx-hd
+  - format-guide
+  - format-html-hd
+  - format-html-reveal
+  - format-i18n
+  - format-mermaid
+  - format-motion
+  - format-pdf
+  - format-pdf-hd
+  - format-pptx
+  - format-pptx-hd
+  - format-prepare-document
+  - format-video-hd
+  - format-xlsx
+  - getting-started
+  - messaging-framework
+  - nl-accountability
+  - nl-dossier-tracker
+  - nl-eu-transposition
+  - nl-evidence-grounding
+  - nl-gov-data
+  - nl-guide
+  - nl-horizon-scan
+  - nl-issue-framing
+  - nl-monitor
+  - nl-parliamentary-positioning
+  - nl-policy-legislative-landscape
+  - nl-tensions
+  - organic-social-campaign
+  - press-release
+  - proposal
+  - research-apify
+  provider_extras:
+  - skill: asset-brand-studio
+    providers:
+    - claude
+    capability: asset-broker-connector
+    reason: 'Hosted on the OAuth-gated ''asset-broker'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: asset-editor
+    providers:
+    - claude
+    capability: asset-broker-connector
+    reason: 'Hosted on the OAuth-gated ''asset-broker'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: asset-feedback
+    providers:
+    - claude
+    capability: asset-broker-connector
+    reason: 'Hosted on the OAuth-gated ''asset-broker'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: asset-guide
+    providers:
+    - claude
+    capability: asset-broker-connector
+    reason: 'Hosted on the OAuth-gated ''asset-broker'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: asset-website-studio
+    providers:
+    - claude
+    capability: asset-broker-connector
+    reason: 'Hosted on the OAuth-gated ''asset-broker'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: asset-workspace-setup
+    providers:
+    - claude
+    capability: asset-broker-connector
+    reason: 'Hosted on the OAuth-gated ''asset-broker'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: format-workspace-cowork
+    providers:
+    - claude
+    capability: cowork-workspace
+    reason: Co-edits SharePoint workspace artifacts through workspace-scoped tools that exist only in
+      a Cowork workspace session.
+  - skill: format-workspace-memory
+    providers:
+    - claude
+    capability: cowork-workspace
+    reason: Reads and writes the client's SharePoint workspace record through workspace-scoped tools that
+      exist only in a Cowork workspace session.
+  - skill: media-guide
+    providers:
+    - claude
+    capability: media-gen-connector
+    reason: 'Hosted on the OAuth-gated ''media-gen'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: media-image-campaign
+    providers:
+    - claude
+    capability: media-gen-connector
+    reason: 'Hosted on the OAuth-gated ''media-gen'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: media-social-pack
+    providers:
+    - claude
+    capability: media-gen-connector
+    reason: 'Hosted on the OAuth-gated ''media-gen'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: media-video-clip
+    providers:
+    - claude
+    capability: media-gen-connector
+    reason: 'Hosted on the OAuth-gated ''media-gen'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: org-guide
+    providers:
+    - claude
+    capability: org-atlas-connector
+    reason: 'Hosted on the OAuth-gated ''org-atlas'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: wf-guide
+    providers:
+    - claude
+    capability: stromy-workflows-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-workflows'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: wf-stakeholder-analysis
+    providers:
+    - claude
+    capability: stromy-workflows-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-workflows'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+marketplace:
+  name: stromy-marketplace
+  repository: https://github.com/stromy-org/stromy-marketplace
+  description: Plugin marketplace for Stromy plugins
+  entry_description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
+    rendering, nl-gov-data + au-gov-data + do-gov-data gov-rel intel, plus asset-broker, org-atlas, stromy-workflows
+    and media-gen via workspace connectors
+  owner:
+    name: stromy-org
+  entry_author:
+    name: William Masquelier

@@ -1,0 +1,6 @@
+[project]
+name = "stromy"
+version = "0.1.0"
+description = "Claude Code plugin for Stromy branded deliverables"
+requires-python = ">=3.11"
+dependencies = []

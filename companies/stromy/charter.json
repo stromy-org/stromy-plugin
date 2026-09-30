@@ -1,0 +1,1687 @@
+{
+  "meta": {
+    "tier": "producer",
+    "displayName": "Stromy",
+    "tagline": "Intelligence, Orchestrated.",
+    "industry": "AI / Technology",
+    "domain": "stromy.com.au",
+    "contact": "hello@stromy.com.au",
+    "protection_class": "protected",
+    "protected_assets": {
+      "heading_font": true,
+      "body_font": true,
+      "primary_color": true,
+      "accent_color": true,
+      "motif_family": true
+    }
+  },
+  "colors": {
+    "primary": "#31004F",
+    "secondary": "#0B0B0C",
+    "accent": "#61009E",
+    "background": "#FFFFFF",
+    "backgroundAlt": "#E5D2FA",
+    "text": "#16161A",
+    "textLight": "#6E6A75",
+    "success": "#1E462F",
+    "warning": "#B8860B",
+    "error": "#8E2F4F"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Fraunces",
+      "fallback": "Georgia, 'Times New Roman', serif",
+      "weight": "500",
+      "fallbackStack": [
+        "Georgia",
+        "Times New Roman",
+        "serif"
+      ],
+      "webSafe": "Georgia",
+      "embedFamily": "Fraunces"
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "weight": "normal",
+      "fallbackStack": [
+        "Segoe UI",
+        "Arial",
+        "sans-serif"
+      ],
+      "webSafe": "Segoe UI",
+      "embedFamily": "Plus Jakarta Sans"
+    },
+    "mono": {
+      "family": "IBM Plex Mono",
+      "fallback": "'SF Mono', 'Fira Code', monospace",
+      "weight": "normal",
+      "fallbackStack": [
+        "Consolas",
+        "Courier New",
+        "monospace"
+      ],
+      "webSafe": "Consolas",
+      "embedFamily": "IBM Plex Mono"
+    },
+    "wordmark": {
+      "family": "Space Grotesk",
+      "fallback": "'Helvetica Neue', Arial, sans-serif",
+      "weight": "600",
+      "fallbackStack": [
+        "Segoe UI",
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Segoe UI",
+      "embedFamily": "Space Grotesk"
+    },
+    "label": {
+      "family": "Space Grotesk",
+      "fallback": "'Helvetica Neue', Arial, sans-serif",
+      "weight": "500",
+      "fallbackStack": [
+        "Segoe UI",
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Segoe UI",
+      "embedFamily": "Space Grotesk"
+    }
+  },
+  "logo": {
+    "primary": "logos/logo.svg",
+    "png": "logos/logo.png",
+    "white": "logos/logo_white.svg",
+    "whitePng": "logos/logo_white.png",
+    "mono": "logos/logo_mono.svg",
+    "tagline": "logos/logo_tagline.svg",
+    "mark": "logos/symbol.svg",
+    "markLight": "logos/symbol_light.svg",
+    "markMono": "logos/symbol_mono.svg",
+    "secondary": "logos/secondary.svg",
+    "secondaryWhite": "logos/secondary_white.svg",
+    "variants": {
+      "apex": "logos/symbol_apex.svg",
+      "center": "logos/symbol_center.svg"
+    },
+    "favicon": "logos/favicon.svg",
+    "faviconPng": "logos/favicon.png",
+    "maxWidth": "220pt",
+    "maxHeight": "72pt",
+    "sizing": "contain"
+  },
+  "images": {
+    "catalog": [
+      {
+        "file": "images/conductor-hands-baton.jpg",
+        "roles": [
+          "cover",
+          "hero"
+        ],
+        "hero": true,
+        "theme": "conductor-gesture",
+        "description": "Conductor's hands and baton, mid-gesture — the signal that resolves the parts"
+      },
+      {
+        "file": "images/conductor-backlit.jpg",
+        "roles": [
+          "closing",
+          "content"
+        ],
+        "theme": "conductor-gesture",
+        "description": "Conductor silhouetted, backlit on a dark stage"
+      },
+      {
+        "file": "images/spotlight-player.jpg",
+        "roles": [
+          "cover",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Single musician under a concert spotlight against black"
+      },
+      {
+        "file": "images/orchestra-dotfield-above.jpg",
+        "roles": [
+          "hero",
+          "divider",
+          "background",
+          "texture"
+        ],
+        "hero": true,
+        "theme": "hall-architecture",
+        "description": "Orchestra seen from above as a field of points — the dot-field motif made real"
+      },
+      {
+        "file": "images/orchestra-from-above.jpg",
+        "roles": [
+          "cover",
+          "hero",
+          "closing",
+          "background",
+          "texture",
+          "content"
+        ],
+        "hero": true,
+        "theme": "hall-architecture",
+        "description": "Wide overhead of the full orchestra mid-performance"
+      },
+      {
+        "file": "images/string-arc-above.jpg",
+        "roles": [
+          "cover",
+          "hero",
+          "closing"
+        ],
+        "hero": true,
+        "theme": "hall-architecture",
+        "description": "Sweeping arc of the string section from above"
+      },
+      {
+        "file": "images/brass-section-above.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Brass section catching stage light from above"
+      },
+      {
+        "file": "images/harpist-strings.jpg",
+        "roles": [
+          "closing",
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Harpist's hands among the strings"
+      },
+      {
+        "file": "images/percussion-timpani.jpg",
+        "roles": [
+          "divider",
+          "section"
+        ],
+        "theme": "instruments-detail",
+        "description": "Timpani in low light, mallets poised"
+      },
+      {
+        "file": "images/stage-rigging-lights.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "hall-architecture",
+        "description": "Stage rigging and lights overhead — the architecture of the hall"
+      },
+      {
+        "file": "images/abstract-waveform-dotfield.jpg",
+        "roles": [
+          "background"
+        ],
+        "theme": "score-abstract",
+        "description": "Sound rendered as a field of points — abstract waveform dot-field"
+      },
+      {
+        "file": "images/abstract-wave-interference.jpg",
+        "roles": [
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Interfering wavefronts — abstract resonance"
+      },
+      {
+        "file": "images/abstract-flowing-ribbon.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "A single flowing ribbon of light — phrase made visible"
+      },
+      {
+        "file": "images/str-03.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "section",
+          "texture",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin against dark surface"
+      },
+      {
+        "file": "images/str-05.jpg",
+        "roles": [
+          "closing",
+          "hero"
+        ],
+        "hero": true,
+        "theme": "instruments-detail",
+        "description": "Black and white violin"
+      },
+      {
+        "file": "images/wav-10.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Purple wave light"
+      },
+      {
+        "file": "images/wav-02.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Audio pattern, monochrome"
+      },
+      {
+        "file": "images/wav-01.jpg",
+        "roles": [
+          "closing",
+          "divider",
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Black & white wavy lines"
+      },
+      {
+        "file": "images/wav-08.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Abstract black wavy lines"
+      },
+      {
+        "file": "images/wav-03.jpg",
+        "roles": [
+          "cover",
+          "closing",
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Circular audio pattern"
+      },
+      {
+        "file": "images/wav-04.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Black & white wavy lines"
+      },
+      {
+        "file": "images/wav-05.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Monochrome flowing waves"
+      },
+      {
+        "file": "images/wav-06.jpg",
+        "roles": [
+          "hero",
+          "closing",
+          "background",
+          "texture"
+        ],
+        "hero": true,
+        "theme": "score-abstract",
+        "description": "Black wavy surface"
+      },
+      {
+        "file": "images/wav-07.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Curved monochrome form"
+      },
+      {
+        "file": "images/wav-09.jpg",
+        "roles": [
+          "closing",
+          "divider"
+        ],
+        "theme": "score-abstract",
+        "description": "Dark blue/black fluid"
+      },
+      {
+        "file": "images/hal-05.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Theatre stairs interior"
+      },
+      {
+        "file": "images/hal-03.jpg",
+        "roles": [
+          "closing",
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Empty auditorium, seats + stage"
+      },
+      {
+        "file": "images/hal-02.jpg",
+        "roles": [
+          "cover",
+          "hero",
+          "closing"
+        ],
+        "hero": true,
+        "theme": "hall-architecture",
+        "description": "Hall with pipe organ"
+      },
+      {
+        "file": "images/hal-01.jpg",
+        "roles": [
+          "closing"
+        ],
+        "theme": "hall-architecture",
+        "description": "B&W empty auditorium"
+      },
+      {
+        "file": "images/pno-05.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Hand position study"
+      },
+      {
+        "file": "images/pno-01.jpg",
+        "roles": [
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Hands on keys, focused"
+      },
+      {
+        "file": "images/prc-04.jpg",
+        "roles": [
+          "closing"
+        ],
+        "theme": "instruments-detail",
+        "description": "Grayscale drum set"
+      },
+      {
+        "file": "images/prc-01.jpg",
+        "roles": [
+          "closing"
+        ],
+        "theme": "instruments-detail",
+        "description": "Snare drum close-up B&W"
+      },
+      {
+        "file": "images/prc-07.jpg",
+        "roles": [
+          "closing"
+        ],
+        "theme": "instruments-detail",
+        "description": "Drumsticks on drums"
+      },
+      {
+        "file": "images/brs-01.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Trumpet on black textile"
+      },
+      {
+        "file": "images/brs-06.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Trumpet close photography"
+      },
+      {
+        "file": "images/orc-10.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Orchestra and choir on stage"
+      },
+      {
+        "file": "images/orc-09.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Group on stage, empty seats"
+      },
+      {
+        "file": "images/orc-08.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Audience watching orchestra"
+      },
+      {
+        "file": "images/orc-02.jpg",
+        "roles": [
+          "cover",
+          "hero",
+          "closing"
+        ],
+        "hero": true,
+        "theme": "hall-architecture",
+        "description": "Orchestra in dim-lit room"
+      },
+      {
+        "file": "images/orc-01.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Grayscale orchestra in theatre"
+      },
+      {
+        "file": "images/orc-03.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Conductor + orchestra in hall"
+      },
+      {
+        "file": "images/hal-13.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Orchestra rehearsal seen from above, music stands and bows"
+      },
+      {
+        "file": "images/cnd-02.jpg",
+        "roles": [
+          "closing",
+          "content"
+        ],
+        "theme": "conductor-gesture",
+        "description": "Conductor silhouetted against stage light"
+      },
+      {
+        "file": "images/cnd-03.jpg",
+        "roles": [
+          "divider",
+          "background"
+        ],
+        "theme": "conductor-gesture",
+        "description": "Conductor's raised hand, motion blur"
+      },
+      {
+        "file": "images/cnd-04.jpg",
+        "roles": [
+          "section",
+          "content"
+        ],
+        "theme": "conductor-gesture",
+        "description": "Conductor viewed from behind, orchestra beyond"
+      },
+      {
+        "file": "images/hal-14.jpg",
+        "roles": [
+          "divider",
+          "section"
+        ],
+        "theme": "hall-architecture",
+        "description": "Concert hall balcony view over the stage, coloured light"
+      },
+      {
+        "file": "images/ins-01.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Cello close detail, dark wood grain"
+      },
+      {
+        "file": "images/ins-02.jpg",
+        "roles": [
+          "content",
+          "closing"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin body detail, wood grain and joinery"
+      },
+      {
+        "file": "images/ins-03.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "texture"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin bridge and strings, monochrome"
+      },
+      {
+        "file": "images/ins-04.jpg",
+        "roles": [
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin scroll and bow resting on case"
+      },
+      {
+        "file": "images/ins-05.jpg",
+        "roles": [
+          "closing",
+          "divider"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin bridge and strings, monochrome"
+      },
+      {
+        "file": "images/ins-06.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin f-hole detail, low light"
+      },
+      {
+        "file": "images/ins-07.jpg",
+        "roles": [
+          "content",
+          "closing"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin f-hole, warm sidelight"
+      },
+      {
+        "file": "images/ins-08.jpg",
+        "roles": [
+          "divider",
+          "background"
+        ],
+        "theme": "instruments-detail",
+        "description": "Violin f-hole and bow, close detail"
+      },
+      {
+        "file": "images/hal-06.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "hall-architecture",
+        "description": "Concert hall interior, architectural render"
+      },
+      {
+        "file": "images/hal-07.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Concert hall ceiling and balconies"
+      },
+      {
+        "file": "images/hal-08.jpg",
+        "roles": [
+          "divider",
+          "section",
+          "content"
+        ],
+        "theme": "hall-architecture",
+        "description": "Grand concert hall, wide interior view"
+      },
+      {
+        "file": "images/hal-09.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "hall-architecture",
+        "description": "Hall interior, warm ambient light"
+      },
+      {
+        "file": "images/hal-10.jpg",
+        "roles": [
+          "divider",
+          "section"
+        ],
+        "theme": "hall-architecture",
+        "description": "Auditorium seating rows, architectural symmetry"
+      },
+      {
+        "file": "images/hal-11.jpg",
+        "roles": [
+          "closing",
+          "divider"
+        ],
+        "theme": "hall-architecture",
+        "description": "Concert hall stage from the seats"
+      },
+      {
+        "file": "images/hal-12.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "hall-architecture",
+        "description": "Domed hall interior, structural detail"
+      },
+      {
+        "file": "images/wav-11.jpg",
+        "roles": [
+          "divider",
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Abstract sound wave rendering"
+      },
+      {
+        "file": "images/wav-12.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Flowing light trails, abstract"
+      },
+      {
+        "file": "images/wav-13.jpg",
+        "roles": [
+          "divider",
+          "background"
+        ],
+        "theme": "score-abstract",
+        "description": "Abstract wave pattern, monochrome"
+      },
+      {
+        "file": "images/wav-14.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Fluid abstract texture"
+      },
+      {
+        "file": "images/wav-15.jpg",
+        "roles": [
+          "closing",
+          "divider"
+        ],
+        "theme": "score-abstract",
+        "description": "Radiating light pattern, abstract"
+      },
+      {
+        "file": "images/wav-16.jpg",
+        "roles": [
+          "background",
+          "texture"
+        ],
+        "theme": "score-abstract",
+        "description": "Layered wave texture, abstract"
+      }
+    ],
+    "overlay": {
+      "color": "secondary",
+      "opacity": 0.4
+    },
+    "logoVariantOnImage": "white",
+    "note": "Role-tagged library in images/manifest.json (orchestral, Velvet Score; generated + treated Unsplash). 'treatment' is the PREFERRED look — advisory; downstream (format-MCP/website) may override to harmonise a deck. Named looks in expression.treatments apply downstream; overlay is a legibility scrim.",
+    "_catalogNote": "Reference only — regenerated 2026-08-26 from images/manifest.json (the sole source the compiler reads). If they disagree, the manifest wins; regenerate this catalog rather than editing it."
+  },
+  "website": {
+    "archetype": "sage",
+    "aesthetic": "editorial-systems",
+    "layout": {
+      "density": "measured",
+      "symmetry": "balanced",
+      "flowDirection": "stack",
+      "heroStyle": "editorial-stack",
+      "gridSystem": "structured-2col",
+      "sectionSpacing": "generous",
+      "sectionDividers": "motif-band",
+      "footerStyle": "indexed",
+      "whitespaceStrategy": "measured"
+    },
+    "texture": {
+      "backgroundTreatment": "solid",
+      "surfaceFinish": "matte",
+      "borderStyle": "thin-line",
+      "shadowDepth": "none",
+      "cornerRadius": "sharp",
+      "overlayStyle": "brand-tint",
+      "patternDensity": "none"
+    },
+    "typography": {
+      "headingStyle": "display-serif",
+      "headingScale": 1.35,
+      "bodyLineHeight": 1.7,
+      "letterSpacing": "tight",
+      "textTransform": "none",
+      "pullQuoteStyle": "serif-led",
+      "listStyle": "mono-indexed"
+    },
+    "motion": {
+      "intensity": "moderate",
+      "revealStyle": "clip-reveal",
+      "scrollBehavior": "smooth",
+      "hoverBehavior": "color-shift",
+      "transitionSpeed": "cinematic",
+      "loadingAnimation": "stagger-fade",
+      "cursorStyle": "default"
+    },
+    "components": {
+      "navigation": "sticky-minimal",
+      "cards": "bordered",
+      "buttons": "outline",
+      "forms": "minimal-underline",
+      "imagePresentation": "full-bleed",
+      "testimonials": "quote-panel",
+      "ctaStyle": "inline",
+      "socialProof": "case-facts",
+      "codeBlocks": "terminal-style"
+    },
+    "colorApplication": {
+      "darkSections": true,
+      "darkSectionFrequency": 3,
+      "accentUsage": "balanced",
+      "gradientDirection": "none",
+      "colorBlockSections": true,
+      "imageOverlayBehavior": "brand-tint"
+    },
+    "pages": {
+      "home": {
+        "enabled": true,
+        "sections": [
+          {
+            "type": "hero",
+            "variant": "split"
+          },
+          {
+            "type": "service",
+            "variant": "capability-grid"
+          },
+          {
+            "type": "stats",
+            "variant": "counter-band"
+          },
+          {
+            "type": "case-study",
+            "variant": "featured-card"
+          },
+          {
+            "type": "content",
+            "variant": "tech-teaser"
+          },
+          {
+            "type": "cta",
+            "variant": "full-width-band"
+          }
+        ]
+      },
+      "about": {
+        "enabled": true
+      },
+      "services": {
+        "enabled": true
+      },
+      "case-studies": {
+        "enabled": true
+      },
+      "blog": {
+        "enabled": true
+      },
+      "contact": {
+        "enabled": true
+      }
+    },
+    "deployment": {
+      "platform": "azure-swa",
+      "domain": "stromy.com.au",
+      "analytics": "plausible",
+      "contactForm": "formspree"
+    },
+    "effects": {
+      "schemaVersion": 2,
+      "selection": {
+        "status": "approved",
+        "profile": "premium",
+        "motionEngine": "anime",
+        "recipe": "tactile-showcase",
+        "params": {
+          "paper-shader": {
+            "intensity": 0.18,
+            "speed": 0.15
+          }
+        },
+        "surfaces": {
+          "blog": {
+            "recipe": "kinetic-narrative"
+          },
+          "case-studies": {
+            "recipe": "kinetic-narrative"
+          }
+        },
+        "brief": "2026-08-15, operator: 'definitely this one is now the best' — tactile-showcase at intensity 0.18, speed 0.15, described as 'a graphite and violet material on a true ground'. The recipe default (intensity 1.0) was rejected in the same breath as 'the wrong kind of contrast, white on white, unreadable'; that is now fixed in the recipe itself rather than left to each brand to rediscover. Also: 'still okay for different recipes for a lively website' — the per-surface split below was chosen under that delegation, not proposed and approved separately.",
+        "considered": [
+          "restrained-depth",
+          "atmospheric-field",
+          "technical-signal",
+          "static-editorial"
+        ]
+      }
+    }
+  },
+  "document": {
+    "margins": {
+      "top": "1in",
+      "bottom": "1in",
+      "left": "1in",
+      "right": "1in"
+    },
+    "header": {
+      "content": "STROMY",
+      "logo": true
+    },
+    "footer": {
+      "content": "Confidential",
+      "pageNumbers": true
+    },
+    "headingColor": "primary",
+    "tableHeaderColor": "primary"
+  },
+  "presentation": {
+    "slideMargin": "40pt",
+    "titleMargin": "30pt",
+    "contentMargin": "20pt",
+    "aspectRatio": "16:9"
+  },
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 30
+  },
+  "formatting": {
+    "headingThreshold": 24,
+    "accentCycleColors": [
+      "primary",
+      "accent",
+      "success"
+    ],
+    "autoContrastText": true
+  },
+  "plotly": {
+    "categoricalPalette": [
+      "#61009E",
+      "#31004F",
+      "#1E462F",
+      "#9B7BB8",
+      "#5C5C66",
+      "#E5D2FA"
+    ],
+    "defaultHeight": 500,
+    "titleFontSize": 18,
+    "axisFontSize": 12,
+    "legendFontSize": 11,
+    "margins": {
+      "top": 80,
+      "bottom": 70,
+      "left": 60,
+      "right": 50
+    },
+    "baseTemplate": "plotly_white",
+    "gridColor": "#E3DCEC",
+    "secondaryTextColor": "#6E6A75",
+    "bar": {
+      "markerColor": "#31004F",
+      "markerLineColor": "#1C0030",
+      "markerLineWidth": 1
+    },
+    "line": {
+      "color": "#31004F",
+      "width": 2.5,
+      "markerColor": "#61009E",
+      "markerSize": 7
+    },
+    "scatter": {
+      "markerColor": "#61009E",
+      "markerSize": 8,
+      "markerLineWidth": 0
+    },
+    "pie": {
+      "hole": 0.4,
+      "textfontSize": 13,
+      "markerLineColor": "#FFFFFF",
+      "markerLineWidth": 2
+    },
+    "sentiment": {
+      "positiveColor": "#1E462F",
+      "neutralColor": "#9A9AA4",
+      "negativeColor": "#8E2F4F"
+    }
+  },
+  "excalidraw": {
+    "strokeColor": "#31004F",
+    "backgroundColor": "#FFFFFF",
+    "fillColors": [
+      "#61009E",
+      "#31004F",
+      "#1E462F",
+      "#E5D2FA",
+      "#9B7BB8",
+      "#5C5C66"
+    ],
+    "textColor": "#16161A",
+    "fontFamily": 2,
+    "fontSize": 16,
+    "strokeWidth": 2,
+    "roughness": 0,
+    "arrowColor": "#5C5C66",
+    "labelFontSize": 14
+  },
+  "placeholderPolicy": {
+    "brandFields": [
+      "brandName",
+      "tagline",
+      "domain",
+      "logoPath"
+    ],
+    "externalFields": [
+      "sender.name",
+      "sender.title",
+      "sender.email",
+      "sender.phone",
+      "sender.mobile",
+      "sender.address"
+    ],
+    "fallback": "placeholders",
+    "placeholderFormat": "{{fieldName}}"
+  },
+  "identity": {
+    "archetype": {
+      "primary": "sage",
+      "secondary": "magician",
+      "status": "approved",
+      "rationale": "Primary Sage: knowledge authority, editorial restraint, evidence-first — sourced from guidelines.md §1 archetype decision (user-approved 2026-04-07) and confirmed by website.archetype='sage'. Secondary Magician: transformative complex-to-simple edge, visionary but grounded — also sourced from guidelines.md §1 and build-log Phase 0 decision."
+    },
+    "essence": "STROMY transforms complex workflows into orchestrated intelligence.",
+    "positioning": "For corporates and consulting agencies drowning in unstructured processes, STROMY is the AI orchestration partner that designs and builds analytical workflows — from media research to crisis management to strategy audits — delivering the structured, trust-grade outputs their stakeholders expect. Unlike generic AI consultancies, Stromy brings the maestro's precision: every workflow is composed, every output is publication-ready.",
+    "personalityTraits": [
+      {
+        "trait": "authoritative",
+        "description": "Speaks with earned confidence, never arrogance"
+      },
+      {
+        "trait": "precise",
+        "description": "Data-led, evidence-first, structured outputs"
+      },
+      {
+        "trait": "transformative",
+        "description": "Takes the complex and makes it actionable"
+      },
+      {
+        "trait": "restrained",
+        "description": "Lets the work speak; no flash without substance"
+      },
+      {
+        "trait": "grounded",
+        "description": "Trusted partner energy, not disruptor posturing"
+      }
+    ],
+    "personalityAxes": {
+      "formal_casual": {
+        "label": "Formal ↔ Casual",
+        "value": 0.8,
+        "note": "4/5 toward formal — guidelines.md personality table: Formal ◆◆◆◆○ Casual"
+      },
+      "analytical_intuitive": {
+        "label": "Analytical ↔ Intuitive",
+        "value": 0.8,
+        "note": "4/5 toward analytical — guidelines.md personality table: Analytical ◆◆◆◆○ Intuitive"
+      },
+      "traditional_innovative": {
+        "label": "Traditional ↔ Innovative",
+        "value": 0.6,
+        "note": "3/5 toward innovative — guidelines.md personality table: Traditional ○○◆◆◆ Innovative"
+      },
+      "reserved_expressive": {
+        "label": "Reserved ↔ Expressive",
+        "value": 0.6,
+        "note": "3/5 toward reserved (value=0 is expressive, 1 is reserved) — guidelines.md personality table: Reserved ◆◆◆○○ Expressive"
+      },
+      "established_rebellious": {
+        "label": "Established ↔ Rebellious",
+        "value": 0.6,
+        "note": "3/5 toward established (value=0 is rebellious, 1 is established) — guidelines.md personality table: Established ◆◆◆○○ Rebellious"
+      }
+    }
+  },
+  "expression": {
+    "source": "co_created",
+    "confidence": "approved",
+    "status": "approved",
+    "treatments": {
+      "default": "amethyst-splittone",
+      "note": "Named brand 'house looks' applied to photography DOWNSTREAM (format-MCP render + website CSS) — never pre-baked into the shipped library. Restrained: one clean base image x the treatment = flexible reuse. ORG-PLAN-045.",
+      "looks": {
+        "nocturne": {
+          "label": "Nocturne",
+          "usage": "Editorial monochrome + fine grain — the timeless default for dividers, quotes, and dense content backgrounds.",
+          "css_filter": "grayscale(1) contrast(1.1)",
+          "grain": {
+            "opacity": 0.1,
+            "blend": "overlay"
+          }
+        },
+        "velvet-tritone": {
+          "label": "Velvet Tritone",
+          "usage": "Signature deep-amethyst wash for covers + hero moments — applied transparently (rich dark-amethyst shadows through amethyst mids to soft thistle highlights, low strength so the photo breathes). A rich purple hue, kept subtle.",
+          "css_filter": "grayscale(1) contrast(1.05)",
+          "duotone": {
+            "shadows": "#15002A",
+            "mid": "#31004F",
+            "highlights": "#E5D2FA",
+            "strength": 0.45
+          },
+          "grain": {
+            "opacity": 0.07,
+            "blend": "overlay"
+          }
+        },
+        "amethyst-splittone": {
+          "label": "Amethyst Split-tone",
+          "usage": "Subtle cinematic grade for backgrounds + section imagery — mostly neutral, a whisper of amethyst in shadows and warm cream in highlights. The restrained default.",
+          "css_filter": "saturate(0.4) contrast(1.05)",
+          "duotone": {
+            "shadows": "#241038",
+            "mid": "#6E6675",
+            "highlights": "#EFE7E0",
+            "strength": 0.35
+          },
+          "grain": {
+            "opacity": 0.08,
+            "blend": "overlay"
+          }
+        },
+        "spotlight-noir": {
+          "label": "Spotlight Noir",
+          "usage": "B&W with a soft radial vignette (echoes the concert spotlight) + grain — focal hero treatment that draws the eye.",
+          "css_filter": "grayscale(1) contrast(1.08)",
+          "vignette": {
+            "strength": 0.5,
+            "shape": "radial"
+          },
+          "grain": {
+            "opacity": 0.1,
+            "blend": "overlay"
+          }
+        }
+      }
+    },
+    "principles": [
+      "Substance before style — the work speaks; decoration must earn its place.",
+      "Orchestration as metaphor — every layout, motif, and typographic choice encodes disparate parts resolved into one coherent system.",
+      "Editorial restraint — spacious layouts, measured type scales, ink-and-paper contrast; no visual noise.",
+      "Signal economy — indigo is a signal colour, never a flood; a single focal dot carries the accent.",
+      "The score made visible — concentric dot-fields and barline rhythm render orchestration as a structural system, not a picture of instruments."
+    ],
+    "visualAxes": {
+      "density": {
+        "value": "spacious",
+        "note": "measured whitespace, generous section spacing; the dot family never crowds a surface"
+      },
+      "contrast": {
+        "value": "high",
+        "note": "Concert Black (#0B0B0C) against Cream (#F4F1EA); 60/30/10 black/cream/indigo; depth carried by colour, shadows deliberately minimal"
+      },
+      "symmetry": {
+        "value": "controlled-asymmetry",
+        "note": "misaligned section numerals (cream + offset indigo), off-register focal dot; balanced structured grids underneath"
+      },
+      "geometry": {
+        "value": "geometric",
+        "note": "polar dot lattice (dot-dome, dot-field) + rectilinear barline measures; dots are true circles, rules orthogonal with round linecaps"
+      },
+      "typeExpression": {
+        "value": "editorial",
+        "note": "Fraunces display/headline (authored, calm), Space Grotesk wordmark + labels (open tracking), Plus Jakarta Sans body, IBM Plex Mono metadata"
+      },
+      "imageTreatment": {
+        "value": "documentary-muted",
+        "note": "orchestral + architectural photography, desaturated/high-contrast, indigo-toned overlay (opacity 0.62); tight crops — full direction owned by Pillar 5"
+      },
+      "motifProminence": {
+        "value": "structural",
+        "note": "dot-dome (identity), dot-field (texture), barline (rhythm) are integral to layouts, assigned by role"
+      },
+      "colorRhythm": {
+        "value": "dark-light-indexed",
+        "note": "Concert Black heroes/dividers alternate with Cream/White content; indigo as the singular signal"
+      },
+      "ornament": {
+        "value": "restrained",
+        "note": "one focal dot per composition; no decorative motif flood; the stage-light radial is hero-only"
+      },
+      "energy": {
+        "value": "expressive",
+        "note": "ORG-PLAN-195, AUTHORED (owner decision 2026-08-13), superseding a first pass that derived 'restrained'. That derivation leaned on 'ornament: restrained', and ornament is decorative density — it says nothing about movement, which is the distinction this axis exists to draw. Read on its own terms the grammar is emphatic about motion: a named signature moment ('the ensemble rises, then holds'), a dome that assembles, a field that breathes. A brand with a signature MOTION is not a still one. Restraint here lives in the ornament axis, where it belongs."
+      },
+      "depth": {
+        "value": "layered",
+        "note": "ORG-PLAN-195. Straight from the contrast axis: 'depth carried by colour, shadows deliberately minimal'. That is layered by definition — not flat (colour genuinely carries depth here) and not immersive (a brand that removes its shadows is not asking to be stood inside). Unchanged by the 2026-08-13 review."
+      },
+      "materiality": {
+        "value": [
+          "matte",
+          "light",
+          "metal"
+        ],
+        "note": "ORG-PLAN-195. matte and light are DERIVED: matte from 'documentary-muted, desaturated/high-contrast' plus the deliberately minimal shadows; light from the stage-light radial and the single indigo focal dot — illumination IS the brand's material idea. metal is AUTHORED (owner decision 2026-08-13), not derived: the captured grammar contains no reflective device, and this records a decision that Stromy's one premium moment reads as a worked material. Kept honest deliberately — a reader must be able to tell which of these came from evidence. Still explicitly NOT grain: nothing asks for texture noise, and the anti-pattern against gradient floods argues against it. The only multi-valued core axis."
+      },
+      "continuity": {
+        "value": "section-sequence",
+        "note": "ORG-PLAN-195, AUTHORED (owner decision 2026-08-13), superseding a first pass that derived 'settle' from the field-breathe behaviour alone. Still true that nothing loops indefinitely — but 'comes to rest' describes one element, while this axis asks when motion may occur across a whole surface. The signature is an ENSEMBLE rising, which is a sequence: each section arrives, settles, and hands to the next. `settle` under-described that as a single event."
+      }
+    },
+    "signatureElements": [
+      "Dot-dome — the primary mark: a polar lattice of dots forming an orchestra dome with one indigo focal dot at the podium; the rising-ensemble signature.",
+      "Concentric dot-field — rings of dots radiating from a single indigo focal; full-bleed texture for heroes and dividers; drives the field-breathe motion.",
+      "Barline measure — abstract vertical barlines with beat-dots and one indigo accent beat; rhythm and structure motif for footers, rails, and content grids.",
+      "Misaligned numeral — large Fraunces section numbers split cream/indigo with a deliberate baseline offset; the 'scored' editorial cue.",
+      "Space Grotesk wordmark — STROMY set in Space Grotesk 600 with open tracking, rising from the dot-dome; primary identity lockup.",
+      "Misaligned secondary lockup — the 'scored' STROMY wordmark for cover slides, home-page heroes, and section openers."
+    ],
+    "signatureMotion": "The dot field breathes once — rings settling outward from the podium — and comes to rest with a single indigo focal dot still lit. The ensemble rises, then holds.",
+    "antiPatterns": [
+      "No literal musical notation — no staves, clefs, or noteheads; orchestration is rendered through abstract dots, not sheet music.",
+      "No orange or Claude-adjacent accent — indigo (#61009E) is the only signal colour; the retired oxide/orange must not reappear.",
+      "No gradient floods on working surfaces — the stage-light radial is a hero-only device; content and document backgrounds stay flat.",
+      "No decorative motif scatter — the dot family is assigned by role (dome=identity, field=texture, barline=rhythm), never sprinkled for taste.",
+      "No pure-white document grounds where Cream is specified; no stock-office or AI-futurism imagery.",
+      "Never more than one indigo focal dot in a single composition — the signal is singular."
+    ],
+    "requiredMotifs": [],
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "Velvet Score palette + GRAMMAR-BOARD.html slides 1/4/5 (render-reviewed 2026-06-19)"
+        },
+        "assets": [],
+        "tokens": [
+          "--hero-surface",
+          "--content-surface-light",
+          "--panel-tint"
+        ],
+        "spec": {
+          "canvases": [
+            {
+              "name": "concert-black",
+              "role": "primary-dark",
+              "css": "#0B0B0C"
+            },
+            {
+              "name": "cream",
+              "role": "primary-light",
+              "css": "#F4F1EA"
+            },
+            {
+              "name": "white",
+              "role": "document-light",
+              "css": "#FFFFFF"
+            },
+            {
+              "name": "thistle-tint",
+              "role": "accent-panel",
+              "css": "#E5D2FA"
+            }
+          ],
+          "default": "dark-light-indexed — Concert Black heroes/dividers alternate with Cream/White content"
+        },
+        "cssTokens": {
+          "--hero-surface": "#0B0B0C",
+          "--content-surface-light": "#F4F1EA",
+          "--panel-tint": "#E5D2FA"
+        },
+        "selected": "indexed",
+        "approved": [
+          "indexed",
+          "concert-hall-dark",
+          "cream-forward"
+        ],
+        "candidates": [
+          {
+            "id": "indexed",
+            "spec": {
+              "canvases": [
+                {
+                  "name": "concert-black",
+                  "role": "primary-dark",
+                  "css": "#0B0B0C"
+                },
+                {
+                  "name": "cream",
+                  "role": "primary-light",
+                  "css": "#F4F1EA"
+                },
+                {
+                  "name": "white",
+                  "role": "document-light",
+                  "css": "#FFFFFF"
+                },
+                {
+                  "name": "thistle-tint",
+                  "role": "accent-panel",
+                  "css": "#E5D2FA"
+                }
+              ],
+              "default": "dark-light-indexed — Concert Black heroes/dividers alternate with Cream/White content"
+            },
+            "tokens": [
+              "--hero-surface",
+              "--content-surface-light",
+              "--panel-tint"
+            ]
+          },
+          {
+            "id": "concert-hall-dark",
+            "spec": {
+              "cadence": "concert-hall-dark",
+              "default": "concert-hall-dark — Concert Black sustained across hero + section opens; Cream reserved for dense reading spreads. Same surfaces, a darker, more immersive rhythm."
+            }
+          },
+          {
+            "id": "cream-forward",
+            "spec": {
+              "cadence": "cream-forward",
+              "default": "cream-forward — Cream/White carry the deck; Concert Black punctuates covers + dividers only. Same surfaces, a lighter, editorial rhythm."
+            }
+          }
+        ]
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "GRAMMAR-BOARD.html + BRAND-Review-Board.html — co_created, render-reviewed 2026-06-19"
+        },
+        "assets": [
+          "logos/symbol.svg",
+          "logos/symbol_light.svg",
+          "assets/svg/motif-dot-field.svg",
+          "assets/svg/motif-dot-field-light.svg",
+          "assets/svg/motif-barline.svg",
+          "assets/svg/motif-barline-light.svg"
+        ],
+        "tokens": [],
+        "spec": {
+          "name": "Velvet Score dot family",
+          "marks": [
+            {
+              "name": "dot-dome",
+              "role": "identity",
+              "asset": "logos/symbol.svg",
+              "desc": "polar dot lattice forming an orchestra dome; one indigo focal at the podium"
+            },
+            {
+              "name": "dot-field",
+              "role": "texture",
+              "asset": "assets/svg/motif-dot-field.svg",
+              "desc": "concentric rings of dots radiating from a single indigo focal"
+            },
+            {
+              "name": "barline",
+              "role": "rhythm",
+              "asset": "assets/svg/motif-barline.svg",
+              "desc": "abstract vertical measures with beat-dots; one indigo accent beat"
+            }
+          ],
+          "roles": {
+            "identity": "dot-dome",
+            "texture": "dot-field",
+            "rhythm": "barline"
+          },
+          "allowedSurfaces": {
+            "dot-dome": [
+              "cover",
+              "footer-mark",
+              "favicon"
+            ],
+            "dot-field": [
+              "hero",
+              "divider",
+              "corner-mark"
+            ],
+            "barline": [
+              "footer",
+              "rail",
+              "content-grid"
+            ]
+          },
+          "usageCaps": {
+            "focalDotsPerComposition": 1,
+            "domePerDeck": "cover + closing only"
+          },
+          "tokenPrefix": "--motif",
+          "dropped": [
+            "staff",
+            "noteheads",
+            "clef"
+          ],
+          "supersedes": [
+            "motif-tempo-ledger",
+            "motif-data-rail",
+            "motif-switch-track",
+            "motif-echo-band",
+            "pattern-tile",
+            "S-curve symbol"
+          ],
+          "enforcement": "advisory — the dot family is a toolkit; the variance engine + agent compose freely. Brand essence (palette/fonts/logo authenticity) is enforced by brand_gate fonts/colors/images checks, NOT by mandating which motifs appear."
+        }
+      },
+      "patterns": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "dot-field used as full-bleed texture on GRAMMAR-BOARD slides 3/5"
+        },
+        "assets": [
+          "assets/svg/motif-dot-field.svg",
+          "assets/svg/motif-dot-field-light.svg"
+        ],
+        "tokens": [],
+        "spec": {
+          "patterns": [
+            {
+              "name": "dot-field-texture",
+              "tile": "single concentric instance scaled full-bleed (non-tiling)",
+              "scale": "480-880px",
+              "opacity": "0.10-0.30",
+              "usage": "hero/divider background texture; the focal dot must stay perceptible"
+            },
+            {
+              "name": "staff-rules",
+              "tile": "several five-line staff groups at the charter grid metrics, unevenly placed (non-tiling)",
+              "scale": "group height 45px at 1x; scales with the surface, ratio held",
+              "opacity": "0.06-0.16",
+              "usage": "background register ONLY, and low: behind or beside content on a hero, divider or section surface. Reviewed as a foreground device on 2026-09-06 and rejected — rules on their own do not carry a surface, they read as leftover furniture. Never the primary element, never a section opener or divider on their own (use grid.wordStaff for those). Set it back far enough that it reads as paper, not as notation; a regular repeat is fine here and often better, because in a background register evenness is what makes it recede. TWO RULES FROM THE DRAWN SPECIMENS (2026-09-06): (a) groups need MORE AIR BETWEEN THEM THAN THEY ARE TALL, or they fuse into a stripe field and stop reading as staffs at all — at 2x (88px groups) two per 16:9 surface is the working number, not three; (b) where type sits over this pattern it should LOCK TO THE RULES, not float above them: set the leading to an integer multiple of the staff pitch and put each baseline exactly on a line, so the rule becomes the underline of the text on it. Compute the baselines from the staff rather than eyeballing them. Done that way the two read as one system; done approximately they read as a collision."
+            }
+          ]
+        },
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: the full 0.10–0.30 opacity band stands — renders pick within it depending on how much text sits over the field. Extended 2026-09-06 (William): `staff-rules` added after the multi-staff 'systems' idea was rejected as a foreground grid device and narrowed to a background register — see expression.visual_grammar.grid.decision. It is deliberately specified at a lower opacity band (0.06-0.16) than dot-field-texture, because staff rules are linear and read as structure at any opacity where dots read as tone. Round 3, 2026-09-06: staff-rules gained the group-spacing floor and the type-locks-to-rules rule, both from drawn specimens; the type alignment was ACCEPTED in the same review."
+      },
+      "grid": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "proposed",
+          "source": "net-new, no external source: the derived symmetric-2col reading of website.layout was reviewed against four alternatives on 2026-08-26 and rejected; the staff principle was authored in that review and signed off. tier stays 'proposed' because there is no upstream artefact to point at — status 'approved' is what records the acceptance. The site follows the brand here, not the other way round (ORG-225)."
+        },
+        "assets": [],
+        "tokens": [],
+        "spec": {
+          "principle": "staff — horizontal rules are the brand's organising device; columns are secondary",
+          "staff": "a five-line rule group at the charter metrics (--staff-line, --staff-gap, --staff-opacity). Running full-bleed to the margins, opening a major section, is the conventional reading and a good default. It is a device, not a mandate: place it where the composition wants it — one staff, several, a partial group, a short segment beside a heading, or none at all on a surface where it would crowd the content.",
+          "headings": "a label may sit on the staff, with the rules breaking either side of it and a small horizontal pad so they read as passing behind the type. Optional — a bare staff with no label is equally correct. (Breaking rather than knocking out is deliberate: a knockout needs a background matching its canvas, which fails on photographic and gradient surfaces.)",
+          "columns": "one measure is the default below a staff; a second column is allowed but is a choice, not the structure",
+          "gutter": "generous",
+          "maxWidth": "measured (editorial)",
+          "margins": "wide",
+          "rhythm": "where staffs structure a surface, vertical rhythm follows staff-to-staff distance rather than column count; barline measures remain available as an accent within a staff group",
+          "latitude": "CONSUMER CONTRACT — metrics fixed, placement free. Renderers (deck, document, PDF) should treat the five-line group at the charter metrics as the recognisable form, and where it sits on the page as a per-surface compositional decision. Do not apply a staff to every section, slide or page automatically; a deck that opens and closes every slide with one has turned a device into wallpaper.\n\nOf the two ways to use the group, `wordStaff` is the one to favour — it is the expression of the device that reviewed well, and openers, closers and dividers are its home. A bare staff carrying no word is a quiet accent at most; several bare staffs arranged on a surface are a BACKGROUND, and live in `patterns.staff-rules` at background opacity, not here. A single staff, or none, remains the ordinary case for an ordinary surface.\n\nNeither use introduces a new metric: both compose from --staff-line / --staff-gap / --staff-opacity, scaled as a unit, with a word-staff's position step at half of --staff-line + --staff-gap.",
+          "wordStaff": "WORD-STAFF — the primary expression of the staff device, and the one the brand should reach for. A word is set INTO a staff, one letter per staff position, the way noteheads sit on a stave. The five lines and the four spaces give nine positions, numbered 0 (top line) to 8 (bottom line); a letter sits centred on a line or in a space, and the word steps between positions as it advances left to right. Use the wordmark or label face, one word (or a short lockup), and let the rules pass behind the letters with the same small horizontal pad the `headings` treatment uses.\n\nPREFERRED SURFACES — opener, closing and divider surfaces: the places a deck or document changes chapter, where a single word carries the surface on its own. Also correct for a cover, a title, or a small stamp-scale mark. Never for running text, and at most once on a surface.\n\nCONTOUR — WHICH POSITION EACH LETTER TAKES. This is the expressive variable, and it is the designer's choice per word, not a value a renderer computes. It is not, however, free of grammar: a contour must sit inside the tendencies real melodies obey, which is what makes it read as notation rather than as scattered type. The four that govern it:\n  1. PITCH PROXIMITY — most letters move ONE position from the last. Leaps are the minority and repeats are ordinary. Measured in the Palestrina corpus: 68% step, 21% leap, 11% repeat; aim near that mix across a word.\n  2. STEP INERTIA — a one-position move tends to be followed by another the same way. A run of steps in a single direction reads as a scale and is a legitimate gesture, not drift.\n  3. POST-SKIP REVERSAL — a leap turns around on the next letter. One leap in a word is an event; three is noise.\n  4. CENTRED TESSITURA — contours live in the middle band, positions 2-6 of 9. The outer lines are rare and transient, never a resting place, never two in a row. (Von Hippel & Huron: reversal after a leap and centred tessitura are ONE tendency — a leap carries a melody to the edge of its range, from which it must come back. Treat them together.)\n\nWithin those, vary the GESTURE and not the ranginess: an arch, a scalar run, a near-static line, a leap that fills back in, a repeat that then breaks. Reviewed 2026-09-06 — specimens that differed only by being rangier read as random, and specimens that shared one gentle zigzag read as a single treatment repeated. Shape is the axis of variation.\n\nDO NOT DERIVE THE CONTOUR MECHANICALLY — no seed, no hash of the word, no fixed lookup that makes one word always render identically across a fleet of documents. The tendencies are a grammar to compose inside, not a function to evaluate.\n\nCRAFT BOUNDS, measured on drawn specimens 2026-09-06: horizontal advance buys vertical range — letters set far apart tolerate larger moves and still read as one word, and the same contour at a tight advance comes apart. Letters must stay clear of one another and of the group's outer lines. A knockout behind a glyph must never be wider than the advance, or it erases the rules under the neighbouring letters. A word that has stopped reading as a word has gone too far.\n\nSCALE — the RATIO is the brand, not the pixel values. line : gap = 1 : 10 scales freely as a unit (the position step stays half of line + gap), the way one notation renders at pocket-score and at conductor-score size. Confirmed 2026-09-06 against specimens drawn at 1x, 1.8x, 1.9x, 2.4x, 2.6x, 3.0x, 3.2x and 3.6x, all accepted."
+        },
+        "cssTokens": {
+          "--grid-max": "72rem",
+          "--grid-gutter": "2rem",
+          "--grid-margin": "6vw",
+          "--staff-line": "1px",
+          "--staff-gap": "10px",
+          "--staff-opacity": "0.28"
+        },
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: five candidate principles were drawn (recorded 2-col, staff, asymmetric 8/4, single measure, modular blocks). Staff was chosen as the most on-concept and the most distinctive. This supersedes the derived spec — stromy.com.au is now behind the grammar and needs to follow it. Reframed 2026-08-27 (William) after seeing it rendered: the metrics are the brand, the placement is not. The spec previously read as a rule ('opens and closes each major section'), which brand_context carries verbatim to every format skill — so a deck renderer would have imposed it slide by slide. It is now stated as a device with defaults and an explicit consumer contract. Extended 2026-09-06 (William) after the ORG-225 website build was removed for over-applying the device: two variants were added — `systems` (several staffs per surface, spaced unevenly like systems on a score page) and `wordStaff` (a word set one letter per staff position). AUTHORED, NOT YET VALIDATED against a drawn specimen — the dimension's `status` stays `approved` on the strength of the original staff, and these two are shipped so renderers can see them, but they are pending the same specimen sign-off the base staff got on 2026-08-26. Neither adds a token; both compose from the existing metrics. Reviewed against drawn specimens 2026-09-06 (William, 8 plates at charter metrics). OUTCOME: `wordStaff` ACCEPTED and promoted to the primary expression of the device — all four specimens passed, at four different scales, which is what settles the scale question in favour of the ratio rather than the pixel values. Its home is opener / closing / divider surfaces. `systems` REJECTED as a grid device — 'the lines on their own are a bit useless… not as a main styling artefact' — and re-homed to `patterns.staff-rules`, narrowed to a low-opacity background register, which is the one use that survived. The even-stack counter-example plate (A2) was agreed to be the failure mode it was drawn as. Contour variance was opened up in the same review: the specimens were judged too uniform with one another, so the position choice is now explicitly free per word and must not be seeded or derived. Round 3, 2026-09-06: the contour was grounded in melodic corpus statistics after William judged the round-2 specimens random. Measurement that settled it — round 2's contours were 40% step / 60% leap and touched both extremes, against 68/21/11 and a centred tessitura in real scores; round 1's rejected-as-uniform contours were actually much closer to the corpus, which is why they read better. The four tendencies (pitch proximity, step inertia, post-skip reversal, centred tessitura) are now the grammar the contour sits inside, with gesture rather than ranginess as the axis of variation. The original left-anchored letter alignment was restored at William's request. ACCEPTED 2026-09-06 against the round-3 plates."
+      },
+      "iconography": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "stroke/dot language of the motif family; the reference sample set was drawn and signed off 2026-08-26 (dot terminals reviewed and rejected)"
+        },
+        "assets": [
+          "assets/svg/icons/icon-crescendo.svg",
+          "assets/svg/icons/icon-measure.svg",
+          "assets/svg/icons/icon-waveform.svg",
+          "assets/svg/icons/icon-tempo.svg",
+          "assets/svg/icons/icon-score.svg",
+          "assets/svg/icons/icon-ensemble.svg"
+        ],
+        "tokens": [],
+        "spec": {
+          "style": "stroke-led geometric",
+          "strokeWeight": "2px",
+          "corner": "round caps/joins",
+          "fillVsLine": "line-dominant, plain round caps (no dot terminals)",
+          "sample": [
+            "assets/svg/icons/icon-crescendo.svg",
+            "assets/svg/icons/icon-measure.svg",
+            "assets/svg/icons/icon-waveform.svg",
+            "assets/svg/icons/icon-tempo.svg",
+            "assets/svg/icons/icon-score.svg",
+            "assets/svg/icons/icon-ensemble.svg"
+          ]
+        },
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: option B chosen — the filled dot terminal was drawn alongside and rejected as too busy at icon scale. The six icons above are the reference set; new icons match their weight, cap style and 48px construction."
+      },
+      "gradients": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "GRAMMAR-BOARD cover s2; operator pick 2026-06-19 — radial heroes, flat content"
+        },
+        "assets": [],
+        "tokens": [
+          "--gradient-hero-stage"
+        ],
+        "spec": {
+          "gradients": [
+            {
+              "name": "hero-stage-light",
+              "stops": "radial-gradient(ellipse 62% 52% at 50% 82%, rgba(97,0,158,0.42), rgba(49,0,79,0.10) 46%, transparent 68%)",
+              "usage": "hero surfaces ONLY (covers, section heroes, website hero) over Concert Black; never on content/document backgrounds"
+            }
+          ],
+          "policy": "flat content, radial heroes"
+        },
+        "cssTokens": {
+          "--gradient-hero-stage": "radial-gradient(ellipse 62% 52% at 50% 82%, rgba(97,0,158,0.42), rgba(49,0,79,0.10) 46%, transparent 68%)"
+        }
+      },
+      "photo": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "Pillar 5 delivered (68-image orchestral library); this treatment is what the shipped renders already apply"
+        },
+        "assets": [],
+        "tokens": [],
+        "spec": {
+          "overlayOpacity": 0.62,
+          "treatment": "desaturated, high-contrast, indigo-toned overlay",
+          "crop": "tight crops over scenic"
+        },
+        "decision": "signed off 2026-08-26 (William) against a drawn specimen: overlay 0.62 confirmed over a 0.45 alternative. The Pillar 5 deferral was stale — Pillar 5 is COMPLETE — so the dimension is terminal, not parked."
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "tokens.css shadow scale; depth carried by colour contrast, not shadow (editorial)"
+        },
+        "assets": [],
+        "tokens": [
+          "--shadow-sm",
+          "--shadow-md"
+        ],
+        "spec": {
+          "shadows": [
+            "minimal editorial only (--shadow-sm/md)"
+          ],
+          "glows": [
+            "the stage-light radial is the only glow, hero-only"
+          ],
+          "borders": "1-1.5px hairline rules in thistle/ink at low opacity; depth via colour not shadow"
+        },
+        "cssTokens": {
+          "--shadow-sm": "0 1px 2px rgba(11,11,12,0.06)",
+          "--shadow-md": "0 4px 14px rgba(11,11,12,0.10)",
+          "--border-hairline": "1px solid rgba(49,0,79,0.14)"
+        }
+      },
+      "motion": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "BRAND-Review-Board.html live motions — co_created, operator-approved 2026-06-19"
+        },
+        "assets": [],
+        "tokens": [],
+        "spec": {
+          "behaviors": [
+            {
+              "name": "dome-assemble",
+              "trigger": "cover/hero entrance",
+              "desc": "the dot-dome composes itself ring by ring; the indigo focal lands at the podium and settles (no bounce) — 'the orchestra composes itself'"
+            },
+            {
+              "name": "barline-reveal",
+              "trigger": "section/measure reveal",
+              "desc": "barlines and beat-dots reveal left-to-right in measure order; the indigo accent beat keys last"
+            },
+            {
+              "name": "field-breathe",
+              "trigger": "ambient/idle on hero",
+              "desc": "the concentric dot-field breathes (subtle scale/opacity pulse); the indigo focal pulses gently at the centre"
+            }
+          ],
+          "note": "Behaviors co-created + operator-approved for this brand (justified deviation from the generic 'reserve motion until P6' rule — these are real approved decisions, not a silent drop). Bake/render_video productionization owned by Pillar 6 (brand-artifact-builder / render_motion)."
+        },
+        "cssTokens": {
+          "--motion-duration": "560ms",
+          "--motion-ease": "cubic-bezier(0.19,0.88,0.27,1)"
+        }
+      }
+    },
+    "evidence": [
+      {
+        "path": "guidelines.md",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Version 4.0 (Velvet Score refresh) — archetype, essence, positioning, voice, dot-dome logo system, Velvet Score colour system, Space Grotesk + Fraunces/Jakarta/Plex type, dot-family motif grammar, imagery direction"
+      },
+      {
+        "path": "_build/reviews/GRAMMAR-BOARD.html",
+        "kind": "design_artifact",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Pillar 4 render-review board — 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19"
+      },
+      {
+        "path": "_build/reviews/inspiration",
+        "kind": "design_artifact",
+        "sourceAuthority": "public_scrape",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) — 'notation as a structural system' DNA behind the dot family"
+      },
+      {
+        "path": "tokens.css",
+        "kind": "design_tokens",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Velvet Score scale (Concert Black/Amethyst/Indigo/Thistle/Cream), Space Grotesk wordmark+label, Fraunces/Jakarta/Plex stacks, --gradient-hero-stage, surface tokens, minimal editorial shadows"
+      },
+      {
+        "path": "voice/voice-profile.md",
+        "kind": "brand_guidelines",
+        "sourceAuthority": "co_created",
+        "confidence": "approved",
+        "surface": "all",
+        "freshness": "current",
+        "note": "L2 voice profile — restrained, evidence-first, Economist-register; hype bans mirror guidelines.md"
+      }
+    ]
+  },
+  "templates": {
+    "html": {
+      "signature": "templates/html/email-signature.html"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+[
+ {
+  "id": "meth-001",
+  "name": "The Three Movements",
+  "summary": "Stromy's core engagement model: Movement I — Read the room (process mapping); Movement II — Compose the system (build connectors/skills); Movement III — Conduct it in production (deployment).",
+  "tags": [
+   "engagement-model"
+  ],
+  "source": "stromy.com.au homepage"
+ },
+ {
+  "id": "meth-002",
+  "name": "The Stromy Model (Identify → Build → Embed)",
+  "summary": "Identify where AI creates the highest leverage; build custom AI tools and automations; embed by transferring capability to the client's team — systems designed to be owned, not rented.",
+  "tags": [
+   "delivery-model"
+  ],
+  "source": "stromy.com.au /about (legal.ts)"
+ },
+ {
+  "id": "meth-003",
+  "name": "Engagement Phases",
+  "summary": "Strategy Workshop (4–8 wks) → Solution Design (4–8 wks) → Implementation Sprint (12–16 wks) → Ongoing Partnership (retainer); plus an Incubator Package (8–12 wks) for solo consultants and boutique firms.",
+  "tags": [
+   "engagement-phases"
+  ],
+  "source": "solutions/ai-strategy.astro"
+ },
+ {
+  "id": "meth-004",
+  "name": "Rule of Three (Strategy Audit)",
+  "summary": "A strategy-audit framework: 35 scored criteria, role-specific interview packs, AI-assembled evidentiary scoring with human override, producing a branded deliverable suite.",
+  "tags": [
+   "strategy-audit"
+  ],
+  "source": "case-studies/strategy-audit-rule-of-three.mdx"
+ }
+]

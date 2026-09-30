@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" role="img" aria-label="Stromy barline motif">
+  <line x1="20.0" y1="26.4" x2="20.0" y2="93.6" stroke="#16161A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="70.0" y1="26.4" x2="70.0" y2="93.6" stroke="#16161A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120.0" y1="26.4" x2="120.0" y2="93.6" stroke="#16161A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="170.0" y1="26.4" x2="170.0" y2="93.6" stroke="#16161A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="220.0" y1="26.4" x2="220.0" y2="93.6" stroke="#16161A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="32.5" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="45.0" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="57.5" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="82.5" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="95.0" cy="74.4" r="3.3" fill="#61009E"/>
+  <circle cx="107.5" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="132.5" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="145.0" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="157.5" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="182.5" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="195.0" cy="74.4" r="2.4" fill="#16161A"/>
+  <circle cx="207.5" cy="74.4" r="2.4" fill="#16161A"/>
+</svg>

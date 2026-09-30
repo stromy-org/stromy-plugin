@@ -1,0 +1,42 @@
+[
+ {
+  "id": "person-001",
+  "name": "William Masquelier",
+  "title": "Co-Founder — Applied AI & Agentic Systems",
+  "expertise": [
+   "applied-ai",
+   "agentic-systems",
+   "mcp-development",
+   "ai-workspaces",
+   "behavioural-economics"
+  ],
+  "credentials": [
+   "Double MSc, Financial & Behavioural Economics — Erasmus University Rotterdam"
+  ],
+  "previously": [
+   "Hill+Knowlton Strategies",
+   "PwC",
+   "Duke Strategies"
+  ],
+  "source": "stromy.com.au /about (team.ts)"
+ },
+ {
+  "id": "person-002",
+  "name": "Corentin Merlé",
+  "title": "Co-Founder — AI Architecture & Infrastructure",
+  "expertise": [
+   "ai-architecture",
+   "infrastructure",
+   "data-science",
+   "retrieval-augmented-generation"
+  ],
+  "credentials": [
+   "MSc Data Science & Engineering — University of Liège (RAG thesis, Safran)"
+  ],
+  "previously": [
+   "GAMING1",
+   "Safran"
+  ],
+  "source": "stromy.com.au /about (team.ts)"
+ }
+]

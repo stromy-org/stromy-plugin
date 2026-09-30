@@ -1,0 +1,73 @@
+<!--
+  PPTX closing slide — anchor template.
+  Consumed by `pptx-hd` render-anchors mode.
+
+  Injected: {{HERO_URL}} {{LOGO_WHITE_URL}} {{CLIENT_NAME}}
+            {{CONTACT_EMAIL}} {{CONTACT_WEBSITE}} {{CTA_TEXT}}
+            {{TOKENS_CSS}} {{FONT_FACES}} {{CONFIDENTIALITY}}
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+
+html, body { margin: 0; padding: 0; }
+body {
+  width: 1280px; height: 720px;
+  color: white;
+  background:
+    linear-gradient(rgba(20,30,28,0.55), rgba(20,30,28,0.55)),
+    url("{{HERO_URL}}") center/cover;
+  font-family: var(--font-body, system-ui, sans-serif);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo { margin-bottom: 36pt; }
+.logo img { height: 48pt; width: auto; }
+.cta {
+  font-family: var(--font-display, var(--font-heading));
+  font-size: 40pt;
+  line-height: 1.15;
+  text-align: center;
+  color: white;
+  max-width: 880px;
+  margin: 0 60px;
+}
+.contact {
+  font-family: var(--font-mono, monospace);
+  font-size: 11pt;
+  letter-spacing: 0.12em;
+  margin-top: 28pt;
+  opacity: 0.85;
+  text-align: center;
+}
+.meta {
+  position: absolute;
+  bottom: 24px;
+  left: 60px;
+  right: 60px;
+  font-family: var(--font-mono, monospace);
+  font-size: 9pt;
+  opacity: 0.6;
+  display: flex;
+  justify-content: space-between;
+}
+</style>
+</head>
+<body>
+  <div class="logo"><img src="{{LOGO_WHITE_URL}}" alt=""></div>
+  <div class="cta">{{CTA_TEXT}}</div>
+  <div class="contact">{{CONTACT_EMAIL}} &nbsp;·&nbsp; {{CONTACT_WEBSITE}}</div>
+  <div class="meta">
+    <span>{{CLIENT_NAME}}</span>
+    <span>{{CONFIDENTIALITY}}</span>
+  </div>
+</body>
+</html>
