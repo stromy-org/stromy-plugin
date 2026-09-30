@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "stromy",
   "displayName": "Stromy",
   "version": "0.10.53",
@@ -11,6 +10,20 @@
   "license": "UNLICENSED",
   "keywords": [],
   "skills": [
-    "./.claude-plugin/skills"
-  ]
+    "./skills"
+  ],
+  "mcpServers": {
+    "nl-gov-data": {
+      "url": "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
+    },
+    "au-gov-data": {
+      "url": "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
+    "do-gov-data": {
+      "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
+    "stromy-format": {
+      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
+    }
+  }
 }
