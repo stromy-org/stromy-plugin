@@ -13,6 +13,9 @@
     "./skills"
   ],
   "mcpServers": {
+    "stromy-format": {
+      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
+    },
     "nl-gov-data": {
       "url": "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
     },
@@ -21,9 +24,6 @@
     },
     "do-gov-data": {
       "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
-    },
-    "stromy-format": {
-      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
     }
   }
 }
