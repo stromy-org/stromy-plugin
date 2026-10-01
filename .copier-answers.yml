@@ -1,17 +1,74 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
-_commit: v1.0.2
+_commit: v1.7.0
 _src_path: gh:stromy-org/claude-plugin-template
 author_name: William Masquelier
 client_name: Stromy
 client_slug: stromy
 description: Claude Code plugin for Stromy branded deliverables
+display_name: Stromy
 enable_stromy_format: true
 github_org: stromy-org
 include_mcp: false
 include_node: true
 include_python: true
-mcp_servers: []
+marketplace_slug: stromy-marketplace
+mcp_servers:
+-   consumed_by: &id001
+    - openai
+    - codex
+    - claude
+    - cursor
+    - copilot
+    - vscode
+    - kiro
+    - gemini
+    name: nl-gov-data
+    notes: 'Dutch government open-data MCP — search/fetch legislation, parliamentary
+        records, Rijksoverheid documents, plus the twelve intel/analysis skills (nl-gov-data,
+        nl-monitor, nl-tensions, nl-accountability, nl-policy-legislative-landscape,
+        nl-parliamentary-positioning, nl-issue-framing, nl-dossier-tracker, nl-eu-transposition,
+        nl-evidence-grounding, nl-horizon-scan, nl-guide). Unauthenticated (catalog
+        auth: null; /.well-known/oauth-protected-resource/mcp 404s), which is what
+        makes it plugin-declarable under Invariant #13 — an earlier note here claimed
+        per-user Entra OAuth and was wrong. Composes with stromy-format for rendering.'
+    transport: http
+    url: https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp
+    via: mcp-remote
+-   consumed_by: *id001
+    name: au-gov-data
+    notes: 'Australian government open-data MCP — federal legislation (FRL), ABS statistics,
+        AusTender procurement, AEC political finance + electorates, the AGOR organisations
+        register, official feeds, e-petitions, federal parliament, and the cross-jurisdiction
+        Hansard corpus (~888k interventions over 8 parliaments, refreshed daily from
+        au-parliament-data; NT excluded). Unauthenticated, so plugin-declared — no
+        connector step. Two live caveats taught in au-guide: TheyVoteForYou is unkeyed
+        in production (tvfy_* return a disabled envelope, so no Senate voting evidence)
+        and the corpus loads lazily, so a first Hansard call after idle can take ~a
+        minute — bound the first query by jurisdiction + date window. Composes with
+        stromy-format for rendering.'
+    transport: http
+    url: https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
+    via: mcp-remote
+-   consumed_by: *id001
+    name: do-gov-data
+    notes: 'Dominican Republic government open-data MCP (ORG-PLAN-199) — procurement
+        (DGCP: 621k processes, 708k contracts), budget execution, both chambers with
+        roll-call votes, consolidated law from 1844, Supreme Court + Constitutional
+        Court caselaw, audits, open-data discovery, regulators, and macro. Unauthenticated,
+        so plugin-declared — no connector step. Skills are Spanish; start at do-guide.
+        Three limits it teaches as limits rather than bugs: nothing publishes a law''s
+        in-force status (every law record carries an explicit null), consolidated
+        law serves original texts and never consolidates amendments, and granular
+        social statistics are a declared World Bank/CEPALSTAT substitution because
+        the national statistics office has no API and blocks automated access. Shares
+        au-gov-data''s ACA environment (subscription env cap, see infra-docs/hosting/azure-regions.md),
+        so its FQDN moves if it is ever given its own. Composes with stromy-format
+        for rendering.'
+    transport: http
+    url: https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
+    via: mcp-remote
 plugin_name: Stromy Deliverables
 plugin_slug: stromy
-provider_targets: claude
+provider_targets: openai,codex,claude,cursor,copilot,vscode,kiro,gemini
+repo_slug: stromy-plugin
 version: 0.1.0
