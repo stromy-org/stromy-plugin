@@ -29,7 +29,7 @@ Pages with complete information get 30% more weekly views. Ensure every field is
 | Format | Specs | Best For |
 |--------|-------|----------|
 | **Text post** | 3,000 chars max (700-1,300 optimal) | Thought leadership, hot takes, frameworks |
-| **Single image** | 1200x627px (landscape) or 1080x1350px (portrait) | Data visualizations, quotes, event promotion |
+| **Single image** | 1200x627px (landscape) or 1200x1500px (portrait 4:5; carousel/PDF pages stay 1080x1350, see `delivery-formats.md`) | Data visualizations, quotes, event promotion |
 | **Carousel/Document** | PDF upload, up to 300 pages, 100MB | Frameworks, guides, checklists, case study summaries |
 | **Native video** | 3s-10min (1-2min optimal), 5GB max | Explainers, event recaps, behind-the-scenes |
 | **Poll** | 4 options max, 1-2 week duration | Audience research, engagement bait (use sparingly) |

@@ -10,7 +10,7 @@ asset is handed to a client there was no seam that asked "is this the thing the
 channel takes?", so a format rule could be written down, agreed by everyone,
 repeated in two places, and violated by every build for five weeks.
 
-That is not hypothetical. On the KVGO/indruk.nu campaign the rule "the final
+That is not hypothetical. On one campaign the rule "the final
 Instagram deliverable is per-slide images (JPEG/PNG), not PDF" was decided on a
 client call on 2026-08-17, written into the campaign briefing as rule 9 and into
 its visual system's own B2C table row -- and every B2C asset was published to
@@ -51,7 +51,7 @@ registry that models neither pushes both back onto prose:
      `extensions` is an ordered tuple: every member is accepted, the first is
      what a producer should emit absent a reason.
   2. **Either SURFACE.** A content plan is allowed to leave a post's surface
-     open -- the KVGO plan carries a literal `"document of carousel"` for
+     open -- one campaign's plan carries a literal `"document of carousel"` for
      b2b-w6-p1, because that choice belongs to the week it is built, not to the
      day the calendar was frozen. `resolve()` returns every candidate row and
      `check_file()` passes if the file satisfies ANY of them, then REPORTS WHICH
@@ -139,8 +139,8 @@ FORMATS: tuple[Format, ...] = (
         unit="card",
         pixels=(1080, 1350),
         kind="block", evidence="engagement",
-        source="KVGO client call 2026-08-17 (briefing rule 9); restated by "
-               "Emma van Gelder 2026-09-21: 'can we have the output as 3 "
+        source="A client call 2026-08-17 (briefing rule 9); restated by "
+               "the client 2026-09-21: 'can we have the output as 3 "
                "separate cards and as png files?'",
         checked_on="2026-09-21",
         note="ONE FILE PER CARD. A multi-page PDF is an internal review "
@@ -203,8 +203,10 @@ FORMATS: tuple[Format, ...] = (
         pages=(2, 20),
         kind="block", evidence="engagement",
         source="Campaign briefing, Tooling section: 'LinkedIn carousel "
-               "documents: PDF pages at 1080x1350 (4:5)'.",
-        checked_on="2026-09-21",
+               "documents: PDF pages at 1080x1350 (4:5)'. Confirmed by the client "
+               "2026-10-01: 'Carousel: 1080 x 1350 px (pdf-file); PDF "
+               "post: 1080 x 1350 px (pdf-file)'.",
+        checked_on="2026-10-01",
         note="THE ONE PLACE PDF IS THE DELIVERABLE, not an intermediary. "
              "A page rect is measured in points and compared at "
              "PT_PER_PX with a half-point tolerance: a page authored at "
@@ -230,26 +232,36 @@ FORMATS: tuple[Format, ...] = (
         channel="linkedin", surface="image",
         extensions=(".png", ".jpg", ".jpeg"),
         unit="post",
-        pixels=(1080, 1350),
+        pixels=(1200, 1500),
         kind="block", evidence="engagement",
-        source="VISUAL-SYSTEM.md B2B column: 'PDF (document post) or PNG "
-               "one-pager'. The one-pagers are authored at 1080x1350.",
-        checked_on="2026-09-21",
-        note="The PNG is the deliverable; a PDF beside it is the review "
-             "copy. Both may be published, only the PNG is the post.",
+        source="Client confirmation, one campaign, 2026-10-01, after "
+               "checking LinkedIn's preferred dimensions: 'Single image "
+               "post/infographic: 1200 x 1500 px (PNG-file)'. Supersedes the "
+               "2026-09-21 row, which carried the 1080x1350 DESIGN frame over "
+               "as the delivery frame.",
+        checked_on="2026-10-01",
+        note="DESIGN FRAME IS NOT DELIVERY FRAME. Pages are still authored at "
+             "1080x1350 CSS (4:5) like every other surface; the export "
+             "rasterizes that VECTOR page at 1200/810 zoom, so the PNG is drawn "
+             "at 1200x1500, never resampled from a 1080 raster. Same aspect, so "
+             "nothing is cropped. The PNG is the deliverable; a PDF beside it is "
+             "the review copy (or a PDF post, which keeps 1080x1350).",
     ),
     Format(
         key="linkedin/infographic",
         channel="linkedin", surface="infographic",
         extensions=(".png", ".jpg", ".jpeg"),
         unit="post",
-        pixels=(1080, 1350),
+        pixels=(1200, 1500),
         kind="block", evidence="engagement",
-        source="Same as linkedin/image: the plan's 'infographic' is a "
-               "single-image post whose content happens to be a data "
-               "graphic.",
-        checked_on="2026-09-21",
-        note="",
+        source="Same as linkedin/image (client confirmation, 2026-10-01): the "
+               "plan's 'infographic' is a single-image post whose content "
+               "happens to be a data graphic.",
+        checked_on="2026-10-01",
+        note="Export through the registry (`BY_KEY[key].pixels`), never a "
+             "hard-coded size: the 2026-09 builds hard-coded the Instagram "
+             "frame in the exporter, so the LinkedIn row and the file could "
+             "only ever agree by coincidence.",
     ),
     Format(
         key="linkedin/video",
