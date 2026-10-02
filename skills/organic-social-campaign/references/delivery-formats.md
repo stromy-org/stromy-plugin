@@ -14,7 +14,7 @@ here, or the prose and the gate will disagree and only one of them runs.
 
 Phase 7 validates a **post object**. Nothing validated the **file**.
 
-On the KVGO / indruk.nu campaign the rule *"the final Instagram deliverable is
+On one campaign the rule *"the final Instagram deliverable is
 per-slide images (JPEG/PNG), not PDF"* was:
 
 - decided on a client call on **2026-08-17**,
@@ -54,8 +54,8 @@ when a client notices first.
 | `instagram/story` | .mp4, .png, .jpg | post | 1080x1920 | -- | warn | inferred |
 | `linkedin/document` | .pdf | post | 1080x1350 | 2-20 pages | **blocks** | engagement |
 | `linkedin/carousel` | .pdf | post | 1080x1350 | 2-20 pages | **blocks** | engagement |
-| `linkedin/image` | .png, .jpg, .jpeg | post | 1080x1350 | -- | **blocks** | engagement |
-| `linkedin/infographic` | .png, .jpg, .jpeg | post | 1080x1350 | -- | **blocks** | engagement |
+| `linkedin/image` | .png, .jpg, .jpeg | post | 1200x1500 | -- | **blocks** | engagement |
+| `linkedin/infographic` | .png, .jpg, .jpeg | post | 1200x1500 | -- | **blocks** | engagement |
 | `linkedin/video` | .mp4 | post | 4:5 | -- | warn | inferred |
 | `print/leavebehind` | .pdf | post | A4 | 1-12 pages | **blocks** | engagement |
 | `internal/review` | .pdf, .png, .jpg, .mp4, .docx, .xlsx, .pptx | post | -- | -- | advisory | engagement |
@@ -120,7 +120,7 @@ accepted; the first is what a producer emits absent a reason. `instagram/image`
 takes `.png`, `.jpg` or `.jpeg`.
 
 **2. Either surface.** A content plan is allowed to leave a post's surface open.
-The KVGO plan carries a literal `"document of carousel"` for its week-6 B2B
+One campaign's plan carries a literal `"document of carousel"` for its week-6 B2B
 post, because that choice belongs to the week it is built, not to the day the
 calendar was frozen.
 
@@ -168,7 +168,7 @@ rather than either green or red.
 Collapsing those two states is a known way to break a gate in both directions:
 
 - report it as a **failure**, and people learn to wave the failure through; the
-  day it fires for real it is ignored. The KVGO publish script hit exactly this
+  day it fires for real it is ignored. One publish script hit exactly this
   when its readback returned an auth error and it printed a confident
   `MISMATCH` on a byte-perfect upload.
 - report it as a **pass**, and an unmeasured deliverable ships under a green
@@ -185,14 +185,14 @@ Two seams, and both are needed:
 
 1. **Production.** The render script exports through a helper that takes the
    frame from an explicit clip rectangle and asserts the result, rather than
-   taking whatever the page rect gives it. KVGO's is
-   `test-run/instagram_export.py`; it also refuses a PDF page with no embedded
+   taking whatever the page rect gives it. One campaign's is
+   `instagram_export.py`; it also refuses a PDF page with no embedded
    fonts, because a rasterized page still exports a good-looking PNG and that
    check has to happen while the PDF is still open.
 2. **Handover.** The publish script refuses a file that is not what its channel
-   takes. KVGO's `build/check_delivery_formats.py` resolves each published path
+   takes. One campaign's `check_delivery_formats.py` resolves each published path
    through the campaign's own publish registry → content plan → this registry,
-   and `build/publish_sharepoint.sh` calls it before the PUT.
+   and `publish_sharepoint.sh` calls it before the PUT.
 
 **Fix it at both, and fix it everywhere at once.** Round 31 of that campaign
 fixed the producer for the two assets the client had named and left the other
@@ -213,9 +213,25 @@ Three separate answers, and only one of them was a defect.
 ### 1. The frame is right, and bigger is worse
 
 **Instagram downsizes anything wider than 1080 px**, and **LinkedIn skips its
-own resize only when you hit the recommended size exactly**. So 1080x1350 is
+own resize only when you hit the recommended size exactly**. So the frame is
 not a compromise to be escaped by uploading 1440 or 2160 — going bigger hands
-the re-encode to someone else's resampler. The registry rows stand.
+the re-encode to someone else's resampler.
+
+**But "the recommended size" is per channel, and the design frame is not it.**
+Until 2026-10-01 every row carried 1080x1350 because that is the frame the
+pages are *designed* in, and the LinkedIn single-image row inherited it. The
+client's partner then checked LinkedIn's preferred sizes and asked for
+**1200x1500** for a single image (same 4:5, more pixels) while keeping
+1080x1350 for PDF carousels and document posts. The argument in the paragraph
+above was right and pointed the other way: hitting LinkedIn's size exactly
+means 1200x1500 for an image post. So:
+
+- **Design once** at the 1080x1350 CSS frame for every 4:5 surface.
+- **Export per channel** at the row's `pixels`, rasterizing the *vector* page
+  at that zoom. 1200x1500 from a vector page is drawn, not upscaled.
+- **The exporter takes the frame from the registry** (`BY_KEY[key].pixels`),
+  never a constant. A constant in the exporter is how a channel row and the
+  file agree only by coincidence.
 
 Consequence worth saying plainly to a client: **a 1080 px asset shows pixels
 when you zoom into it, and nothing can be done about that** at the delivery
@@ -227,7 +243,7 @@ export.
 
 The obvious idea is to rasterize at 3x and downsample. It was tried and
 **dropped**, because MuPDF already rasterizes glyphs with proper area-coverage
-antialiasing. On the KVGO headline, edge-ramp quality at supersample 2x, 3x and
+antialiasing. On one measured headline, edge-ramp quality at supersample 2x, 3x and
 4x with a box filter was **identical to 1x** (soft/abrupt ratio 0.61 → 0.63).
 Lanczos moves the number (1.04) by adding a sharpening halo, which is a
 different look, not a better edge.

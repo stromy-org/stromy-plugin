@@ -164,6 +164,30 @@ make that resolution a **build-time gate**:
 This is the mechanical twin of cite-or-hedge: the discipline is not "remember to
 cite", it is "the artifact cannot be produced without a resolvable citation".
 
+### 7a · Every on-asset source line names its study — one shape, from the entry
+
+<!-- since: 2026-10-01 -->
+
+A small source line on a card is still a citation, and a hand-typed one drifts.
+On one four-card carousel, cards 1-3 named their reports and card 4 read
+*"Markteffect (2024), onderzoek onder abonnees…"*: no title, a wrong year, and
+two different studies by the same agency reading as one. The reviewer asked for
+*"the title of the relevant paper, research or survey"* on every line.
+
+- **One shape per line:** Publisher, 'Study title' (year or edition), then the
+  locator (table, sample, fieldwork) where it changes what the figure means.
+- **The title comes from the library entry** (a `studyTitle` field beside
+  `source`), not from whoever types the card. An entry with no title is a
+  finding **before** the build: go back to the publication, and if the only
+  page carrying the figure names no study, say so in the entry and to the
+  reviewer rather than improvising a description.
+- **Gate it on the delivered text layer:** each card carries the title of every
+  study it cites. Two studies from one agency must never share an unlabelled
+  "Agency (year)".
+- **Method labels do not replace a title.** A word like *"Zelfrapportage"*
+  tacked on the line reads as jargon; carry the method in the copy's verb
+  ("zegt", "geeft aan"), which the scope gates already require.
+
 ## 8 · Publish what argues against you — as a decision, not a reflex
 
 Counter-argument discovery is already a gate. Two additions from practice:
