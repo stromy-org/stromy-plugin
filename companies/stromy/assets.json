@@ -7,7 +7,11 @@
       "style": "italic",
       "sha256": "b24448c43702fac4ee856781d461a0dfba8d8e594b6e8e190234b75fed2c0e01",
       "mime": "font/ttf",
-      "name": "Fraunces-Italic[SOFT,WONK,opsz,wght].ttf"
+      "name": "Fraunces-Italic[SOFT,WONK,opsz,wght].ttf",
+      "weight_range": [
+        100,
+        900
+      ]
     },
     {
       "family": "Fraunces",
@@ -15,7 +19,11 @@
       "style": "normal",
       "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
       "mime": "font/ttf",
-      "name": "Fraunces[SOFT,WONK,opsz,wght].ttf"
+      "name": "Fraunces[SOFT,WONK,opsz,wght].ttf",
+      "weight_range": [
+        100,
+        900
+      ]
     },
     {
       "family": "IBM Plex Mono",
@@ -39,7 +47,11 @@
       "style": "italic",
       "sha256": "9529eb888668b6a3c6dd75b6341a2fc5263fb6c9e788822e6117c29dd9e8b115",
       "mime": "font/ttf",
-      "name": "PlusJakartaSans-Italic[wght].ttf"
+      "name": "PlusJakartaSans-Italic[wght].ttf",
+      "weight_range": [
+        200,
+        800
+      ]
     },
     {
       "family": "Plus Jakarta Sans",
@@ -47,7 +59,11 @@
       "style": "normal",
       "sha256": "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8",
       "mime": "font/ttf",
-      "name": "PlusJakartaSans[wght].ttf"
+      "name": "PlusJakartaSans[wght].ttf",
+      "weight_range": [
+        200,
+        800
+      ]
     },
     {
       "family": "Space Grotesk",
@@ -55,7 +71,11 @@
       "style": "normal",
       "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
       "mime": "font/ttf",
-      "name": "SpaceGrotesk[wght].ttf"
+      "name": "SpaceGrotesk[wght].ttf",
+      "weight_range": [
+        300,
+        700
+      ]
     }
   ],
   "logos": [
@@ -553,8 +573,10 @@
     }
   ],
   "brand_context": {
-    "sha256": "00c9362cf8b9f23e884083f2a01b8415faa2578e544e05db1a62d4c82a6fa76f",
+    "sha256": null,
     "mime": "application/json",
-    "bytes": 108084
+    "bytes": 108084,
+    "pending_upload": "00c9362cf8b9f23e884083f2a01b8415faa2578e544e05db1a62d4c82a6fa76f",
+    "reason": "no remote upload: local backend or dry-run"
   }
 }
