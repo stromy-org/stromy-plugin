@@ -1,6 +1,6 @@
 ---
 name: nl-dossier-tracker
-description: "Deep intelligence brief on a single Dutch legislative dossier — current phase, full timeline, revealed-preference analysis (moties + votes), EU forcing function, and a transparent passage forecast (likelihood band + confidence qualifier + decisive variable + explicit assumptions + scenario forks + base rate), framed as a forecast, never asserted as fact, per evidence-rules.md §5 (as amended 2026-07-03). Use for 'dossier tracker', 'bill status', 'will it pass', 'passage signals', 'dossier {number}', 'wet {name}', 'wetsvoorstel', 'TK dossier', 'legislative dossier', 'bill outlook'."
+description: "Deep brief on ONE Dutch legislative dossier: current phase, timeline, moties and votes, EU forcing function, and a framed passage forecast (likelihood band, decisive variable, assumptions, two scenarios, base rate). Use for 'dossier tracker', 'will it pass', 'passage signals', 'dossier {number}', 'wet {name}', 'wetsvoorstel', 'TK dossier', 'legislative dossier', 'bill outlook', 'where does bill X stand and will it pass'. Not for: recurring watching or alerts on dossiers (use nl-monitor); individual-MP defection risk or stakeholder maps (use nl-parliamentary-positioning); 6-36 month foresight across topics (use nl-horizon-scan); a quick one-off status lookup with no forecast (use nl-gov-data)."
 metadata:
   stromy-client-summary: "Get a deep brief on one Dutch legislative file: where it stands, what happened, and how likely it is to pass."
 ---
