@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: stromy
   display_name: Stromy
-  version: 0.10.60
+  version: 0.10.61
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
     rendering, nl-gov-data + au-gov-data + do-gov-data gov-rel intel, plus asset-broker, org-atlas, stromy-workflows
     and media-gen via workspace connectors, over Stromy's own brand
@@ -240,6 +240,48 @@ skills:
     - claude
     capability: stromy-workflows-connector
     reason: 'Hosted on the OAuth-gated ''stromy-workflows'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: comms-messaging-framework
+    providers:
+    - claude
+    capability: comms-connector
+    reason: 'Hosted on the OAuth-gated ''comms'' MCP, which reaches a session only as an authorized Claude/Cowork
+      workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: comms-organic-social
+    providers:
+    - claude
+    capability: comms-connector
+    reason: 'Hosted on the OAuth-gated ''comms'' MCP, which reaches a session only as an authorized Claude/Cowork
+      workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: comms-press-release
+    providers:
+    - claude
+    capability: comms-connector
+    reason: 'Hosted on the OAuth-gated ''comms'' MCP, which reaches a session only as an authorized Claude/Cowork
+      workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: kit-proposal
+    providers:
+    - claude
+    capability: toolkit-connector
+    reason: 'Hosted on the OAuth-gated ''toolkit'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: kit-research-apify
+    providers:
+    - claude
+    capability: toolkit-connector
+    reason: 'Hosted on the OAuth-gated ''toolkit'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: comms-guide
+    providers:
+    - claude
+    capability: comms-connector
+    reason: 'Hosted on the OAuth-gated ''comms'' MCP, which reaches a session only as an authorized Claude/Cowork
+      workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: kit-guide
+    providers:
+    - claude
+    capability: toolkit-connector
+    reason: 'Hosted on the OAuth-gated ''toolkit'' MCP, which reaches a session only as an authorized
       Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
 marketplace:
   name: stromy-marketplace
