@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: stromy
   display_name: Stromy
-  version: 0.10.61
+  version: 0.10.62
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
     rendering, nl-gov-data + au-gov-data + do-gov-data gov-rel intel, plus asset-broker, org-atlas, stromy-workflows
     and media-gen via workspace connectors, over Stromy's own brand
@@ -74,11 +74,6 @@ portable_capabilities:
     summary: Workflows authored for this plugin and shipped inside it
     skills:
     - getting-started
-    - messaging-framework
-    - organic-social-campaign
-    - press-release
-    - proposal
-    - research-apify
   dutch-government-research:
     summary: Dutch government, parliament and legislation research
     skills:
@@ -127,7 +122,6 @@ skills:
   - format-video-hd
   - format-xlsx
   - getting-started
-  - messaging-framework
   - nl-accountability
   - nl-dossier-tracker
   - nl-eu-transposition
@@ -140,10 +134,6 @@ skills:
   - nl-parliamentary-positioning
   - nl-policy-legislative-landscape
   - nl-tensions
-  - organic-social-campaign
-  - press-release
-  - proposal
-  - research-apify
   provider_extras:
   - skill: asset-brand-studio
     providers:
