@@ -1642,22 +1642,20 @@
         "note": "Version 4.0 (Velvet Score refresh) — archetype, essence, positioning, voice, dot-dome logo system, Velvet Score colour system, Space Grotesk + Fraunces/Jakarta/Plex type, dot-family motif grammar, imagery direction"
       },
       {
-        "path": "_build/reviews/GRAMMAR-BOARD.html",
         "kind": "design_artifact",
         "sourceAuthority": "co_created",
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "Pillar 4 render-review board — 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19"
+        "note": "Pillar 4 render-review board — 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19. Artifact not preserved after the build (was _build/reviews/GRAMMAR-BOARD.html)."
       },
       {
-        "path": "_build/reviews/inspiration",
         "kind": "design_artifact",
         "sourceAuthority": "public_scrape",
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) — 'notation as a structural system' DNA behind the dot family"
+        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) — 'notation as a structural system' DNA behind the dot family. Artifact not preserved after the build (was _build/reviews/inspiration)."
       },
       {
         "path": "tokens.css",
