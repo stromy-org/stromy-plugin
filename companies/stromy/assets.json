@@ -573,8 +573,8 @@
     }
   ],
   "brand_context": {
-    "sha256": "bd83797f34cb41d12719305a87c37d97fd0873739c28d291281540ec2941cb6d",
+    "sha256": "bf0821f8141b72a310e6d6c11ec623b2f37ceac5cc69e59c03acc2063f35598c",
     "mime": "application/json",
-    "bytes": 108519
+    "bytes": 108575
   }
 }

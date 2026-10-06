@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "adcc6fda8406aefe402c83aa6cf5d5d41932cf2d715a0c55746013e2e28a7c0d",
+    "charterSha": "69c1270983aa4acfb27b7b87bd0c88a7dea2667acf9c33029b147732aeb702a5",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -192,22 +192,20 @@
         "note": "Version 4.0 (Velvet Score refresh) — archetype, essence, positioning, voice, dot-dome logo system, Velvet Score colour system, Space Grotesk + Fraunces/Jakarta/Plex type, dot-family motif grammar, imagery direction"
       },
       {
-        "path": "_build/reviews/GRAMMAR-BOARD.html",
         "kind": "design_artifact",
         "sourceAuthority": "co_created",
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "Pillar 4 render-review board — 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19"
+        "note": "Pillar 4 render-review board — 5 slide archetypes (cover flat/radial, divider, content light/dark); operator approved the grammar + chose radial-heroes/flat-content 2026-06-19. Artifact not preserved after the build (was _build/reviews/GRAMMAR-BOARD.html)."
       },
       {
-        "path": "_build/reviews/inspiration",
         "kind": "design_artifact",
         "sourceAuthority": "public_scrape",
         "confidence": "approved",
         "surface": "all",
         "freshness": "current",
-        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) — 'notation as a structural system' DNA behind the dot family"
+        "note": "3 Behance orchestra-identity references (Budapest Festival Orchestra, OSESP, Sinfonia Varsovia) — 'notation as a structural system' DNA behind the dot family. Artifact not preserved after the build (was _build/reviews/inspiration)."
       },
       {
         "path": "tokens.css",
@@ -2610,6 +2608,6 @@
       "photo"
     ],
     "images_count": 68,
-    "sha256": "b3e78e97001569ec992b0df20c190d04863ab7a2595229dd34f365b2fefc2c33"
+    "sha256": "770d684afe862002388d0de5a88c0dcdb8d65cb6b3d6bc3a268d197067c99270"
   }
 }
