@@ -2,7 +2,7 @@
 name: au-gov-data
 description: "Orchestrate Australian government-relations research: federal legislation (FRL), statistics (ABS, OECD), procurement and grants (AusTender, GrantConnect), budget (PBS), political finance and election results (AEC), company/charity registers (ASIC, ACNC), lobbying registers (federal, QLD, NSW), members' interests, ATO tax transparency, NGER emissions, committee activity, consultations, cross-jurisdiction Hansard, e-petitions and RSS monitoring. Use for topic monitoring, actor and entity briefs, influence maps, money trails, legislation lookups, quantitative grounding, bill tracking, consultation scans and early-warning monitoring."
 metadata:
-  stromy-client-summary: "Research any Australian government topic across eight parliaments' Hansard, federal law, spending and statistics — every finding cited to a checkable identifier."
+  stromy-client-summary: "Research any Australian government topic across nine parliaments' Hansard, federal law, spending and statistics — every finding cited to a checkable identifier."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
