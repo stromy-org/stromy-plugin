@@ -1,6 +1,6 @@
 {
   "name": "stromy",
-  "version": "0.10.64",
+  "version": "0.10.65",
   "description": "Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format rendering, nl-gov-data + au-gov-data + do-gov-data gov-rel intel, plus asset-broker, org-atlas, stromy-workflows and media-gen via workspace connectors, over Stromy's own brand",
   "mcpServers": {
     "stromy-format": {
