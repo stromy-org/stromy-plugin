@@ -10,8 +10,8 @@ identity:
   display_name: Stromy
   version: 0.10.66
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
-    rendering, nl-gov-data + au-gov-data + do-gov-data gov-rel intel, plus asset-broker, org-atlas, stromy-workflows
-    and media-gen via workspace connectors, over Stromy's own brand
+    rendering, nl-gov-data + do-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas,
+    stromy-workflows and media-gen via workspace connectors, over Stromy's own brand
   author:
     name: stromy-org
   repository: https://github.com/stromy-org/stromy-plugin
@@ -26,13 +26,6 @@ targets:
 - kiro
 - gemini
 portable_capabilities:
-  australian-government-research:
-    summary: Australian government, parliament and legislation research
-    skills:
-    - au-gov-data
-    - au-guide
-    mcp_servers:
-    - au-gov-data
   dominican-government-research:
     summary: Dominican Republic public-affairs research from official sources
     skills:
@@ -93,8 +86,6 @@ portable_capabilities:
     - nl-gov-data
 skills:
   include:
-  - au-gov-data
-  - au-guide
   - do-caselaw-watch
   - do-consolidated-law
   - do-gov-data
@@ -135,6 +126,20 @@ skills:
   - nl-policy-legislative-landscape
   - nl-tensions
   provider_extras:
+  - skill: au-gov-data
+    providers:
+    - claude
+    capability: au-gov-data-connector
+    reason: 'Hosted on the OAuth-gated ''au-gov-data'' MCP (per-user Entra sign-in since 2026-10), which
+      reaches a session only as an authorized Claude/Cowork workspace connector and is never
+      plugin-declared (Invariant #13).'
+  - skill: au-guide
+    providers:
+    - claude
+    capability: au-gov-data-connector
+    reason: 'Hosted on the OAuth-gated ''au-gov-data'' MCP (per-user Entra sign-in since 2026-10), which
+      reaches a session only as an authorized Claude/Cowork workspace connector and is never
+      plugin-declared (Invariant #13).'
   - skill: asset-brand-studio
     providers:
     - claude
