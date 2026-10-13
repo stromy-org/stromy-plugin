@@ -35,21 +35,6 @@ mcp_servers:
     url: https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp
     via: mcp-remote
 -   consumed_by: *id001
-    name: au-gov-data
-    notes: 'Australian government open-data MCP — federal legislation (FRL), ABS statistics,
-        AusTender procurement, AEC political finance + electorates, the AGOR organisations
-        register, official feeds, e-petitions, federal parliament, and the cross-jurisdiction
-        Hansard corpus (~888k interventions over 8 parliaments, refreshed daily from
-        au-parliament-data; NT excluded). Unauthenticated, so plugin-declared — no
-        connector step. Two live caveats taught in au-guide: TheyVoteForYou is unkeyed
-        in production (tvfy_* return a disabled envelope, so no Senate voting evidence)
-        and the corpus loads lazily, so a first Hansard call after idle can take ~a
-        minute — bound the first query by jurisdiction + date window. Composes with
-        stromy-format for rendering.'
-    transport: http
-    url: https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
-    via: mcp-remote
--   consumed_by: *id001
     name: do-gov-data
     notes: 'Dominican Republic government open-data MCP (ORG-PLAN-199) — procurement
         (DGCP: 621k processes, 708k contracts), budget execution, both chambers with

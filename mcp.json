@@ -9,10 +9,6 @@
       "type": "streamable-http",
       "url": "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
     },
-    "au-gov-data": {
-      "type": "streamable-http",
-      "url": "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
-    },
     "do-gov-data": {
       "type": "streamable-http",
       "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
