@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: stromy
   display_name: Stromy
-  version: 0.10.67
+  version: 0.10.68
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
     rendering, nl-gov-data + do-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas,
     stromy-workflows and media-gen via workspace connectors, over Stromy's own brand
