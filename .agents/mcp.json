@@ -53,6 +53,23 @@
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
       "_notes": "Dominican Republic government open-data MCP (ORG-PLAN-199) — procurement (DGCP: 621k processes, 708k contracts), budget execution, both chambers with roll-call votes, consolidated law from 1844, Supreme Court + Constitutional Court caselaw, audits, open-data discovery, regulators, and macro. Unauthenticated, so plugin-declared — no connector step. Skills are Spanish; start at do-guide. Three limits it teaches as limits rather than bugs: nothing publishes a law's in-force status (every law record carries an explicit null), consolidated law serves original texts and never consolidates amendments, and granular social statistics are a declared World Bank/CEPALSTAT substitution because the national statistics office has no API and blocks automated access. Shares au-gov-data's ACA environment (subscription env cap, see infra-docs/hosting/azure-regions.md), so its FQDN moves if it is ever given its own. Composes with stromy-format for rendering."
+    },
+    "eu-gov-data": {
+      "transport": "http",
+      "url": "https://eu-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": [
+        "openai",
+        "codex",
+        "claude",
+        "cursor",
+        "copilot",
+        "vscode",
+        "kiro",
+        "gemini"
+      ],
+      "_codex_via": "mcp-remote",
+      "_gemini_via": "mcp-remote",
+      "_notes": "EU institutions and decision-making MCP (ORG-PLAN-379): EU law and CJEU case law (CELLAR), legislative procedures (EP + CELLAR + OEIL), European Parliament votes, Council files and documents, Commission consultations and registers (delegated acts, comitology, expert groups, documents, infringements, competition, TRIS, Safety Gate), Transparency Register lobbying, EU funding (TED, SEDIA, CORDIS, cohesion, FTS), Eurostat/ECB statistics, the EU27 portal registry and specialist datasets. Unauthenticated, so plugin-declared — no connector step; start at eu-guide. Limits it teaches as limits: WAF-gated sites (EUR-Lex HTML, europarl, consilium) are never routed around, Kohesio is blocked from Azure egress, lobby linkage is candidate discovery with an uncalibrated score, and people (expert-group members, Whoiswho persons) are never surfaced. Shares au-gov-data's ACA environment (subscription env cap, see infra-docs/hosting/azure-regions.md), so its FQDN moves if it is ever given its own. Composes with stromy-format for rendering."
     }
   }
 }

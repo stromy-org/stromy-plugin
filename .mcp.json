@@ -12,6 +12,10 @@
     "do-gov-data": {
       "type": "http",
       "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
+    "eu-gov-data": {
+      "type": "http",
+      "url": "https://eu-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
     }
   }
 }
