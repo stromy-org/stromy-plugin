@@ -8,10 +8,10 @@ schema_version: 1
 identity:
   name: stromy
   display_name: Stromy
-  version: 0.10.68
+  version: 0.10.69
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
-    rendering, nl-gov-data + do-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas,
-    stromy-workflows and media-gen via workspace connectors, over Stromy's own brand
+    rendering, nl-gov-data + do-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows
+    and media-gen via workspace connectors, over Stromy's own brand
   author:
     name: stromy-org
   repository: https://github.com/stromy-org/stromy-plugin
@@ -84,6 +84,19 @@ portable_capabilities:
     - nl-tensions
     mcp_servers:
     - nl-gov-data
+  eu-gov-data-workflows:
+    summary: Workflows on the eu-gov-data MCP
+    skills:
+    - eu-gov-data
+    - eu-guide
+    - eu-file-tracker
+    - eu-vote-analysis
+    - eu-transposition-monitor
+    - eu-horizon-scan
+    - eu-influence-map
+    - eu-funding-map
+    mcp_servers:
+    - eu-gov-data
 skills:
   include:
   - do-caselaw-watch
@@ -125,21 +138,29 @@ skills:
   - nl-parliamentary-positioning
   - nl-policy-legislative-landscape
   - nl-tensions
+  - eu-gov-data
+  - eu-guide
+  - eu-file-tracker
+  - eu-vote-analysis
+  - eu-transposition-monitor
+  - eu-horizon-scan
+  - eu-influence-map
+  - eu-funding-map
   provider_extras:
   - skill: au-gov-data
     providers:
     - claude
     capability: au-gov-data-connector
     reason: 'Hosted on the OAuth-gated ''au-gov-data'' MCP (per-user Entra sign-in since 2026-10), which
-      reaches a session only as an authorized Claude/Cowork workspace connector and is never
-      plugin-declared (Invariant #13).'
+      reaches a session only as an authorized Claude/Cowork workspace connector and is never plugin-declared
+      (Invariant #13).'
   - skill: au-guide
     providers:
     - claude
     capability: au-gov-data-connector
     reason: 'Hosted on the OAuth-gated ''au-gov-data'' MCP (per-user Entra sign-in since 2026-10), which
-      reaches a session only as an authorized Claude/Cowork workspace connector and is never
-      plugin-declared (Invariant #13).'
+      reaches a session only as an authorized Claude/Cowork workspace connector and is never plugin-declared
+      (Invariant #13).'
   - skill: asset-brand-studio
     providers:
     - claude
