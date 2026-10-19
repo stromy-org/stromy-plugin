@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
-_commit: v1.8.3
+_commit: v1.10.0
 _src_path: gh:stromy-org/claude-plugin-template
 author_name: William Masquelier
 client_name: Stromy
@@ -54,20 +54,20 @@ mcp_servers:
     via: mcp-remote
 -   consumed_by: *id001
     name: eu-gov-data
-    notes: 'EU institutions and decision-making MCP (ORG-PLAN-379): EU law and CJEU case law
-        (CELLAR), legislative procedures (EP + CELLAR + OEIL), European Parliament votes,
-        Council files and documents, Commission consultations and registers (delegated
-        acts, comitology, expert groups, documents, infringements, competition, TRIS,
-        Safety Gate), Transparency Register lobbying, EU funding (TED, SEDIA, CORDIS,
-        cohesion, FTS), Eurostat/ECB statistics, the EU27 portal registry and specialist
-        datasets. Unauthenticated, so plugin-declared — no connector step; start at
-        eu-guide. Limits it teaches as limits: WAF-gated sites (EUR-Lex HTML, europarl,
-        consilium) are never routed around, Kohesio is blocked from Azure egress, lobby
-        linkage is candidate discovery with an uncalibrated score, and people
-        (expert-group members, Whoiswho persons) are never surfaced. Shares au-gov-data''s
-        ACA environment (subscription env cap, see infra-docs/hosting/azure-regions.md),
-        so its FQDN moves if it is ever given its own. Composes with stromy-format for
-        rendering.'
+    notes: 'EU institutions and decision-making MCP (ORG-PLAN-379): EU law and CJEU
+        case law (CELLAR), legislative procedures (EP + CELLAR + OEIL), European Parliament
+        votes, Council files and documents, Commission consultations and registers
+        (delegated acts, comitology, expert groups, documents, infringements, competition,
+        TRIS, Safety Gate), Transparency Register lobbying, EU funding (TED, SEDIA,
+        CORDIS, cohesion, FTS), Eurostat/ECB statistics, the EU27 portal registry
+        and specialist datasets. Unauthenticated, so plugin-declared — no connector
+        step; start at eu-guide. Limits it teaches as limits: WAF-gated sites (EUR-Lex
+        HTML, europarl, consilium) are never routed around, Kohesio is blocked from
+        Azure egress, lobby linkage is candidate discovery with an uncalibrated score,
+        and people (expert-group members, Whoiswho persons) are never surfaced. Shares
+        au-gov-data''s ACA environment (subscription env cap, see infra-docs/hosting/azure-regions.md),
+        so its FQDN moves if it is ever given its own. Composes with stromy-format
+        for rendering.'
     transport: http
     url: https://eu-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
     via: mcp-remote
