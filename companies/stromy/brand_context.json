@@ -148,10 +148,10 @@
   "boilerplate": {
     "footer": "Stromy · {{confidentiality.deck}} · {{page}} / {{pages}}",
     "confidentiality": "Confidential",
-    "copyright": "© {{year}} Stromy Pty Ltd. All rights reserved.",
+    "copyright": "© {{year}} Stromy, a trading name of William Masquelier. All rights reserved.",
     "sign_off": {
       "proposal": "We would welcome the chance to orchestrate this with you.\n\n— The Stromy team",
-      "press_release": "About Stromy\nStromy is an AI orchestration partner that designs and builds analytical workflows — from media research and share-of-voice analysis to public-affairs monitoring and strategy audits — turning unstructured processes into structured, trust-grade, publication-ready outputs for corporates and consulting agencies. Stromy operates across Australia and the Netherlands. Intelligence, Orchestrated.",
+      "press_release": "About Stromy\nStromy is an AI orchestration partner that designs and builds analytical workflows — from media research and share-of-voice analysis to public-affairs monitoring and strategy audits — turning unstructured processes into structured, trust-grade, publication-ready outputs for corporates and consulting agencies. Stromy works with clients in Australia, the Netherlands and Belgium. Intelligence, Orchestrated.",
       "email": "Warm regards,\nThe Stromy team"
     },
     "sign_off_variants": {
@@ -171,7 +171,8 @@
       "email": "william.masquelier@stromy.com.au",
       "regions": [
         "Australia",
-        "Netherlands"
+        "Netherlands",
+        "Belgium"
       ],
       "tagline": "Intelligence, Orchestrated."
     }
@@ -3016,6 +3017,6 @@
       "photo"
     ],
     "images_count": 68,
-    "sha256": "90a71c202c07daa184b28e48bab9c0516745916507aa72552533d2f66dda87bc"
+    "sha256": "f3b56f40d5af138f684dbc24affc2b65714337e86c1e154fc0a6c1bc2ffa14dc"
   }
 }
