@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: stromy
   display_name: Stromy
-  version: 0.10.71
+  version: 0.10.72
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
     rendering, nl-gov-data + do-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows
     and media-gen via workspace connectors, over Stromy's own brand
@@ -298,6 +298,12 @@ skills:
     - claude
     capability: toolkit-connector
     reason: 'Hosted on the OAuth-gated ''toolkit'' MCP, which reaches a session only as an authorized
+      Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
+  - skill: wf-outreach
+    providers:
+    - claude
+    capability: stromy-workflows-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-workflows'' MCP, which reaches a session only as an authorized
       Claude/Cowork workspace connector and is never plugin-declared (Invariant #13).'
 marketplace:
   name: stromy-marketplace
