@@ -80,6 +80,11 @@
   ],
   "logos": [
     {
+      "name": "email-signature-logo.png",
+      "sha256": "14978169a9bc4e25b07d8a67f53768326d86225d72a180f8ecc308abcf3896cb",
+      "mime": "image/png"
+    },
+    {
       "name": "favicon-adaptive.svg",
       "sha256": "f71d307e97d4a69beb4a6fa4f954abd8693ad25e2afeb9100505c6af078ea575",
       "mime": "image/svg+xml"
