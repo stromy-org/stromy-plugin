@@ -188,7 +188,7 @@ def load_people() -> list[dict]:
             raise ValueError(f"invalid or duplicate signature sender ID: {sender_id!r}")
         sender_ids.add(sender_id)
         person = by_id[selection["person_id"]]
-        contact = {key: person.get(key) for key in ("name", "email", "phone", "linkedin")}
+        contact = {key: person.get(key) for key in ("name", "email", "phone", "linkedin", "emailAliases")}
         resolved.append({**defaults, **contact, **selection})
     return resolved
 
@@ -204,11 +204,14 @@ def build() -> dict:
             pending.append("sending_email")
         out[p["sender_id"]] = {
             "sender_id": p["sender_id"], "name": p["name"], "mailbox_role": p.get("mailbox_note", ""),
+            "mailbox": p.get("email") or "", "aliases": p.get("emailAliases") or [],
             "ready": not pending and not (PLACEHOLDER.search(sig_html) or PLACEHOLDER.search(sig_text)),
             "pending_fields": pending,
             "signature_html": themed(sig_html), "signature_text": sig_text,
             "dark_html": themed(sig_html, dark=True),
             "reply_html": themed(render_reply(p)),
+            "reply_text": f'{p["name"]} · Stromy\n' + " · ".join(
+                value for value in (p.get("phone"), p.get("website_label")) if value),
             "dark_reply_html": themed(render_reply(p), dark=True),
         }
     return out
