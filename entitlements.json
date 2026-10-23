@@ -1,0 +1,17 @@
+{
+  "audience": "stromy",
+  "entitled": [
+    "asset-broker-mcp",
+    "comms-mcp",
+    "do-gov-data",
+    "eu-gov-data",
+    "nl-gov-data",
+    "stromy-format",
+    "toolkit-mcp"
+  ],
+  "generated_at": "2026-10-23T17:04:23Z",
+  "parent_sha": "ac38bf3876bfd5c2f2b60133292e30c2a3b66187",
+  "repo": "stromy-org/stromy-plugin",
+  "schema": 1,
+  "seq": 1
+}
