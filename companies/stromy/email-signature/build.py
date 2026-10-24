@@ -38,6 +38,11 @@ OUT = HERE / "signatures.json"
 PREVIEW = HERE / "preview"
 INSTALL = HERE / "install"
 TEMPLATES = HERE.parent / "templates" / "html"
+CI_INPUTS: tuple[str, ...] = (
+    "clients/stromy/people.json",
+    "clients/stromy/email-signature/**",
+    "clients/stromy/templates/html/**",
+)
 
 # Brand tokens (client-data/clients/stromy/tokens.css), email-safe: no web fonts, system fallbacks only.
 AMETHYST = "#31004F"   # name, primary
@@ -50,6 +55,29 @@ SANS = "Arial, Helvetica, sans-serif"                  # stands in for Plus Jaka
 # ONE hosted https image. Served from the Stromy website's own public/ folder (stromy-website PR).
 LOGO_URL = "https://www.stromy.com.au/brand/stromy-signature-logo.png"
 LOGO_W, LOGO_H = 72, 55  # compact enough for a narrow message pane
+SENDER_DOMAINS = {"stromy.com.au", "stromy.nl", "stromy.be"}
+DARK_BG, DARK_TEXT, DARK_LINK, DARK_MUTED = "#211827", "#F5EAFF", "#DAB5FF", "#C7B7D9"
+
+# Email-client support varies; the inline light palette remains the fallback.
+# Outlook may remove this block when a rendered signature is pasted into its editor.
+THEME_CSS = (
+    '<style>@media (prefers-color-scheme:dark){'
+    f'.stromy-card{{background-color:{DARK_BG}!important}}'
+    f'.stromy-name,.stromy-tagline{{color:{DARK_TEXT}!important}}'
+    f'.stromy-meta{{color:{DARK_MUTED}!important}}'
+    f'.stromy-link{{color:{DARK_LINK}!important}}'
+    f'.stromy-rule{{background-color:{DARK_LINK}!important}}'
+    '}</style>'
+)
+
+
+def themed(markup: str, dark: bool = False) -> str:
+    if dark:
+        for before, after in (("#FFFFFF", DARK_BG), (AMETHYST, DARK_TEXT),
+                              (INDIGO, DARK_LINK), (SLATE, DARK_MUTED), (INK, DARK_TEXT)):
+            markup = markup.replace(before, after)
+        return markup
+    return THEME_CSS + markup
 
 # ---- the rules senders.py enforces (kept in step; see --senders-py) --------------------------------
 IMG_TAG = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
@@ -72,7 +100,7 @@ def local_validate(markup: str) -> None:
 
 
 def _link(href: str, label: str) -> str:
-    return (f'<a href="{html.escape(href, quote=True)}" style="color:{INDIGO};text-decoration:none;" '
+    return (f'<a class="stromy-link" href="{html.escape(href, quote=True)}" style="color:{INDIGO};text-decoration:none;" '
             f'target="_blank">{html.escape(label)}</a>')
 
 
@@ -82,45 +110,42 @@ def render(person: dict) -> tuple[str, str]:
     # Titles are deliberately omitted from the team standard.
     rows, text = [], [name, "Stromy | Intelligence, Orchestrated."]
 
-    def row(label: str, inner: str) -> None:
+    def row(inner: str) -> None:
         rows.append(
-            f'<tr><td style="padding:0 8px 2px 0;font-family:{SANS};font-size:12px;line-height:18px;'
-            f'color:{SLATE};white-space:nowrap;" valign="top">{label}</td>'
-            f'<td style="padding:0 0 2px 0;font-family:{SANS};font-size:12px;line-height:18px;color:{INK};" '
+            f'<tr><td style="padding:0 0 2px 0;font-family:{SANS};font-size:12px;line-height:18px;color:{INK};" '
             f'valign="top">{inner}</td></tr>')
 
     if person.get("phone"):
         tel = re.sub(r"[^\d+]", "", person["phone"])
-        row("T", _link(f"tel:{tel}", person["phone"]))
-        text.append(f"T {person['phone']}")
+        row(_link(f"tel:{tel}", person["phone"]))
+        text.append(person["phone"])
     if person.get("email"):
-        row("E", _link(f"mailto:{person['email']}", person["email"]))
-        text.append(f"E {person['email']}")
-    row("W", _link(person["website_url"], person["website_label"]))
-    text.append(f"W {person['website_label']} ({person['website_url']})" if person["website_label"] not in person["website_url"]
-                else f"W {person['website_url']}")
+        row(_link(f"mailto:{person['email']}", person["email"]))
+        text.append(person["email"])
+    row(_link(person["website_url"], person["website_label"]))
+    text.append(person["website_url"])
     if person.get("linkedin"):
-        row("in", _link(person["linkedin"], "LinkedIn"))
+        row(_link(person["linkedin"], "LinkedIn"))
         text.append(f"LinkedIn {person['linkedin']}")
 
     sig = (
-        '<table role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" '
+        '<table class="stromy-card" role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" '
         'style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#FFFFFF;"><tr>'
         # White card; actual client dark-mode recoloring still needs a received-mail check.
         f'<td valign="top" style="padding:8px 10px 8px 8px;width:{LOGO_W}px;">'
         f'<img src="{LOGO_URL}" width="{LOGO_W}" height="{LOGO_H}" alt="Stromy" border="0" '
         f'style="display:block;border:0;outline:none;width:{LOGO_W}px;height:{LOGO_H}px;"></td>'
         # indigo rule
-        f'<td width="2" style="width:2px;background-color:{INDIGO};font-size:0;line-height:0;">&nbsp;</td>'
+        f'<td class="stromy-rule" width="2" style="width:2px;background-color:{INDIGO};font-size:0;line-height:0;">&nbsp;</td>'
         '<td valign="top" style="padding:8px 8px 8px 10px;">'
         '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">'
-        f'<tr><td style="font-family:{SERIF};font-size:17px;line-height:22px;font-weight:bold;color:{AMETHYST};">'
+        f'<tr><td class="stromy-name" style="font-family:{SERIF};font-size:17px;line-height:22px;font-weight:bold;color:{AMETHYST};">'
         f'{html.escape(name)}</td></tr>'
-        f'<tr><td style="font-family:{SANS};font-size:11px;line-height:18px;letter-spacing:1px;'
+        f'<tr><td class="stromy-meta" style="font-family:{SANS};font-size:11px;line-height:18px;letter-spacing:1px;'
         f'color:{SLATE};padding:0 0 6px 0;">STROMY</td></tr>'
         '<tr><td><table role="presentation" cellpadding="0" cellspacing="0" border="0" '
         f'style="border-collapse:collapse;">{"".join(rows)}</table></td></tr>'
-        f'<tr><td style="font-family:{SERIF};font-size:12px;line-height:18px;font-style:italic;color:{AMETHYST};'
+        f'<tr><td class="stromy-tagline" style="font-family:{SERIF};font-size:12px;line-height:18px;font-style:italic;color:{AMETHYST};'
         f'padding:6px 0 0 0;">Stromy &middot; Intelligence, Orchestrated.</td></tr>'
         '</table></td></tr></table>')
     # the tagline already sits in the html footer; the text twin carries it once, on one line
@@ -132,9 +157,10 @@ def render_reply(person: dict) -> str:
     if person.get("phone"):
         links.insert(0, _link("tel:" + re.sub(r"[^\d+]", "", person["phone"]), person["phone"]))
     return (
-        f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
-        f'style="border-collapse:collapse;font-family:{SANS};font-size:12px;line-height:19px;">'
-        f'<tr><td style="color:{AMETHYST};font-weight:bold;">{html.escape(person["name"])}'
+        f'<table class="stromy-card" role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" '
+        'style="background-color:#FFFFFF;border-collapse:collapse;'
+        f'font-family:{SANS};font-size:12px;line-height:19px;">'
+        f'<tr><td class="stromy-name" style="color:{AMETHYST};font-weight:bold;">{html.escape(person["name"])}'
         f' &middot; Stromy</td></tr><tr><td>{" &middot; ".join(links)}</td></tr></table>'
     )
 
@@ -144,10 +170,25 @@ def load_people() -> list[dict]:
     defaults = data["defaults"]
     registry = json.loads(REGISTRY.read_text())
     by_id = {person["id"]: person for person in registry}
+    if len(by_id) != len(registry):
+        raise ValueError("duplicate person IDs in the people register")
+    selections = list(data["people"])
+    selected_ids = {selection["person_id"] for selection in selections}
+    # A newly registered Stromy sending identity gets its own files on the next
+    # build, including CI. No second signature-only person entry is needed.
+    for person in registry:
+        email = person.get("email") or ""
+        if person["id"] not in selected_ids and email.rpartition("@")[2].lower() in SENDER_DOMAINS:
+            selections.append({"sender_id": person["id"], "person_id": person["id"], "pending_fields": []})
     resolved = []
-    for selection in data["people"]:
+    sender_ids = set()
+    for selection in selections:
+        sender_id = selection["sender_id"]
+        if not re.fullmatch(r"[a-z0-9][a-z0-9_-]*", sender_id) or sender_id in sender_ids:
+            raise ValueError(f"invalid or duplicate signature sender ID: {sender_id!r}")
+        sender_ids.add(sender_id)
         person = by_id[selection["person_id"]]
-        contact = {key: person.get(key) for key in ("name", "email", "phone", "linkedin")}
+        contact = {key: person.get(key) for key in ("name", "email", "phone", "linkedin", "emailAliases")}
         resolved.append({**defaults, **contact, **selection})
     return resolved
 
@@ -156,15 +197,22 @@ def build() -> dict:
     out = {}
     for p in load_people():
         sig_html, sig_text = render(p)
-        pending = list(p.get("pending_fields", []))
+        pending = [field for field in p.get("pending_fields", [])
+                   if not ((field == "sending_email" and p.get("email"))
+                           or (field == "linkedin_identity" and p.get("linkedin")))]
         if not p.get("email") and "sending_email" not in pending:
             pending.append("sending_email")
         out[p["sender_id"]] = {
             "sender_id": p["sender_id"], "name": p["name"], "mailbox_role": p.get("mailbox_note", ""),
+            "mailbox": p.get("email") or "", "aliases": p.get("emailAliases") or [],
             "ready": not pending and not (PLACEHOLDER.search(sig_html) or PLACEHOLDER.search(sig_text)),
             "pending_fields": pending,
-            "signature_html": sig_html, "signature_text": sig_text,
-            "reply_html": render_reply(p),
+            "signature_html": themed(sig_html), "signature_text": sig_text,
+            "dark_html": themed(sig_html, dark=True),
+            "reply_html": themed(render_reply(p)),
+            "reply_text": f'{p["name"]} · Stromy\n' + " · ".join(
+                value for value in (p.get("phone"), p.get("website_label")) if value),
+            "dark_reply_html": themed(render_reply(p), dark=True),
         }
     return out
 
@@ -178,20 +226,23 @@ def preview_page(entry: dict) -> str:
         '.l{background:#fff;color:#16161A}.d{background:#1f1f23;color:#e6e6ea}</style>'
         f'<h3>{html.escape(entry["name"])}</h3>'
         f'<p>{"Ready for installation" if entry["ready"] else "Draft — confirm: " + html.escape(", ".join(entry["pending_fields"]))}</p>'
-        '<p>Dark background below is a simulation; check actual Outlook dark mode after pasting.</p>'
-        f'<div class="p l"><p>Body of the email.</p>{entry["signature_html"]}</div>'
-        f'<div class="p d"><p>Same, dark client.</p>{entry["signature_html"]}</div>'
-        f'<h4>Short reply signature</h4>{entry["reply_html"]}'
+        '<p>The default adapts where email clients retain theme CSS. Outlook paste may keep only the light fallback. '
+        'The explicit dark version below is also available separately.</p>'
+        f'<div class="p l"><p>Light palette</p>{entry["signature_html"].removeprefix(THEME_CSS)}</div>'
+        f'<div class="p d"><p>Dark palette</p>{entry["dark_html"]}</div>'
+        f'<div class="p d"><p>CSS removed: light fallback on a dark message background</p>'
+        f'{entry["signature_html"].removeprefix(THEME_CSS)}</div>'
+        f'<h4>Short reply signature</h4>{entry["reply_html"].removeprefix(THEME_CSS)}'
         f'<pre>{html.escape(entry["signature_text"])}</pre></html>')
 
 
-def install_page(markup: str, name: str) -> str:
+def install_page(markup: str, name: str, dark: bool = False) -> str:
     # No visible instructions: Cmd+A copies only the signature, not preview labels.
     return (
         '<!doctype html><html lang="en"><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         f'<title>{html.escape(name)} — Stromy signature</title>'
-        '<body style="margin:0;padding:0;background:#fff;">' + markup + '</body></html>\n'
+        f'<body style="margin:0;padding:0;background:{DARK_BG if dark else "#fff"};">' + markup + '</body></html>\n'
     )
 
 
@@ -203,18 +254,24 @@ def output_files(built: dict) -> dict[Path, str]:
         files[PREVIEW / f"{sid}.txt"] = entry["signature_text"] + "\n"
         files[INSTALL / f"{sid}.html"] = install_page(entry["signature_html"], entry["name"])
         files[INSTALL / f"{sid}-reply.html"] = install_page(entry["reply_html"], entry["name"])
+        files[INSTALL / f"{sid}-dark.html"] = install_page(entry["dark_html"], entry["name"], dark=True)
+        files[INSTALL / f"{sid}-dark-reply.html"] = install_page(entry["dark_reply_html"], entry["name"], dark=True)
         state = "Ready" if entry["ready"] else "Draft: " + ", ".join(entry["pending_fields"])
         items.append(
             f'<li><strong>{html.escape(entry["name"])}</strong> — {html.escape(state)}<br>'
             f'<a href="preview/{sid}.html">Preview</a> · '
             f'<a href="install/{sid}.html">Copy full signature</a> · '
-            f'<a href="install/{sid}-reply.html">Copy reply signature</a></li>'
+            f'<a href="install/{sid}-reply.html">Copy reply signature</a> · '
+            f'<a href="install/{sid}-dark.html">Dark alternative</a></li>'
         )
     files[HERE / "index.html"] = (
         '<!doctype html><html lang="en"><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<title>Stromy email signatures</title><body style="font-family:Arial;max-width:760px;margin:24px;line-height:1.6">'
         '<h1>Your Stromy email signature</h1><p>One shared design, individually managed in Outlook. No job titles.</p>'
+        '<p>The default supports automatic dark styling where retained by the email client. '
+        'Pasting into Outlook may remove that CSS; the light design remains readable. '
+        'The dark alternative is a fixed dark card, not automatic detection.</p>'
         '<ol>' + ''.join(items) + '</ol><h2>Install</h2>'
         '<p>Open “Copy full signature”. Press Cmd+A, then Cmd+C. In Outlook for Mac: '
         'Outlook → Settings → Signatures → +. Name it “Stromy — Full”, paste normally with Cmd+V, '
