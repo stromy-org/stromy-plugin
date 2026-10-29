@@ -18,11 +18,11 @@ This skill's full instructions are hosted on the `stromy-workflows` MCP server. 
 
 ## Before you start — this skill needs the `stromy-workflows` connector
 
-This skill's instructions live on the `stromy-workflows` MCP, which reaches you as an **authorized connector** rather than as part of the plugin. Before step 1 below, check whether this conversation actually has the `stromy-workflows` MCP's tools (`fs_read` / `fs_list`) available to call.
+This skill's instructions live on the `stromy-workflows` MCP, a sign-in connector the plugin bundles. Each user connects it once. Before step 1 below, check whether this conversation actually has the `stromy-workflows` MCP's tools (`fs_read` / `fs_list`) available to call.
 
-**If those tools are not present at all, STOP — and do not retry.** A missing tool is not a slow server: it means the connector is either not added to this workspace or not switched on for this conversation. Retrying cannot fix it. Tell the user plainly what to do, naming the connector:
+**If those tools are not present at all, STOP — and do not retry.** A missing tool is not a slow server: it means the connector is not connected yet, or not switched on for this conversation. Retrying cannot fix it. Tell the user plainly what to do, naming the connector:
 
-> This needs the **Stromy Workflows** connector, which isn't switched on for this chat. Open your connector settings, check it's connected and enabled for this conversation, then ask me again.
+> This needs the **Stromy Workflows** connector, which isn't connected for this chat. Open Customize, then Plugins, choose this plugin and open its **Connectors** tab. Click **Connect** next to **Stromy Workflows** and sign in with your work account (if it says **Not added**, add it there first, or ask your workspace owner to). Then make sure it is switched on for this conversation and ask me again.
 
 Then stop and wait. Never fall back to a local or identically-named base skill, and never answer from your own knowledge instead — an unsourced answer is **wrong output, not a fallback**.
 
