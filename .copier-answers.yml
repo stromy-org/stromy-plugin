@@ -71,6 +71,34 @@ mcp_servers:
     transport: http
     url: https://eu-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
     via: mcp-remote
+- connector: true
+  name: asset-broker
+  transport: http
+  url: https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp
+- connector: true
+  name: au-gov-data
+  transport: http
+  url: https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
+- connector: true
+  name: org-atlas
+  transport: http
+  url: https://org-atlas-mcp.gentleground-6f68b100.westeurope.azurecontainerapps.io/mcp
+- connector: true
+  name: stromy-workflows
+  transport: http
+  url: https://stromy-workflows-mcp.happysand-98ed07c8.northeurope.azurecontainerapps.io/mcp
+- connector: true
+  name: media-gen
+  transport: http
+  url: https://media-gen-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp
+- connector: true
+  name: comms
+  transport: http
+  url: https://comms-mcp.jollymushroom-8231d53e.swedencentral.azurecontainerapps.io/mcp
+- connector: true
+  name: toolkit
+  transport: http
+  url: https://toolkit-mcp.agreeablesand-310c38a5.swedencentral.azurecontainerapps.io/mcp
 plugin_name: Stromy Deliverables
 plugin_slug: stromy
 provider_targets: openai,codex,claude,cursor,copilot,vscode,kiro,gemini
