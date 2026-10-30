@@ -70,6 +70,48 @@
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
       "_notes": "EU institutions and decision-making MCP (ORG-PLAN-379): EU law and CJEU case law (CELLAR), legislative procedures (EP + CELLAR + OEIL), European Parliament votes, Council files and documents, Commission consultations and registers (delegated acts, comitology, expert groups, documents, infringements, competition, TRIS, Safety Gate), Transparency Register lobbying, EU funding (TED, SEDIA, CORDIS, cohesion, FTS), Eurostat/ECB statistics, the EU27 portal registry and specialist datasets. Unauthenticated, so plugin-declared — no connector step; start at eu-guide. Limits it teaches as limits: WAF-gated sites (EUR-Lex HTML, europarl, consilium) are never routed around, Kohesio is blocked from Azure egress, lobby linkage is candidate discovery with an uncalibrated score, and people (expert-group members, Whoiswho persons) are never surfaced. Shares au-gov-data's ACA environment (subscription env cap, see infra-docs/hosting/azure-regions.md), so its FQDN moves if it is ever given its own. Composes with stromy-format for rendering."
+    },
+    "asset-broker": {
+      "transport": "http",
+      "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
+    },
+    "au-gov-data": {
+      "transport": "http",
+      "url": "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
+    },
+    "org-atlas": {
+      "transport": "http",
+      "url": "https://org-atlas-mcp.gentleground-6f68b100.westeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
+    },
+    "stromy-workflows": {
+      "transport": "http",
+      "url": "https://stromy-workflows-mcp.happysand-98ed07c8.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
+    },
+    "media-gen": {
+      "transport": "http",
+      "url": "https://media-gen-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
+    },
+    "comms": {
+      "transport": "http",
+      "url": "https://comms-mcp.jollymushroom-8231d53e.swedencentral.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
+    },
+    "toolkit": {
+      "transport": "http",
+      "url": "https://toolkit-mcp.agreeablesand-310c38a5.swedencentral.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
     }
   }
 }

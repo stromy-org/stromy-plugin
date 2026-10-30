@@ -16,6 +16,34 @@
     "eu-gov-data": {
       "type": "http",
       "url": "https://eu-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
+    "asset-broker": {
+      "type": "http",
+      "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"
+    },
+    "au-gov-data": {
+      "type": "http",
+      "url": "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
+    "org-atlas": {
+      "type": "http",
+      "url": "https://org-atlas-mcp.gentleground-6f68b100.westeurope.azurecontainerapps.io/mcp"
+    },
+    "stromy-workflows": {
+      "type": "http",
+      "url": "https://stromy-workflows-mcp.happysand-98ed07c8.northeurope.azurecontainerapps.io/mcp"
+    },
+    "media-gen": {
+      "type": "http",
+      "url": "https://media-gen-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
+    },
+    "comms": {
+      "type": "http",
+      "url": "https://comms-mcp.jollymushroom-8231d53e.swedencentral.azurecontainerapps.io/mcp"
+    },
+    "toolkit": {
+      "type": "http",
+      "url": "https://toolkit-mcp.agreeablesand-310c38a5.swedencentral.azurecontainerapps.io/mcp"
     }
   }
 }
