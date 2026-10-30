@@ -2992,11 +2992,87 @@
       "lineHeight": 1.22
     }
   },
+  "spreadsheet": {
+    "headerFill": "#31004F",
+    "headerFont": "#FFFFFF",
+    "zebra": "#E5D2FA",
+    "numberFormats": {
+      "currency": "#,##0.00",
+      "percent": "0.0%",
+      "integer": "#,##0",
+      "decimal": "#,##0.00",
+      "date": "yyyy-mm-dd"
+    },
+    "inputStyle": {
+      "fontColor": "#1F3FBF",
+      "fill": "#E5D2FA"
+    },
+    "calcStyle": {
+      "fontColor": "#16161A"
+    },
+    "outputStyle": {
+      "fontColor": "#31004F",
+      "bold": true
+    },
+    "tableStyle": "TableStyleMedium2"
+  },
+  "charts": {
+    "palette": {
+      "categorical": [
+        "#31004F",
+        "#61009E",
+        "#0B0B0C",
+        "#1E462F",
+        "#B8860B",
+        "#8E2F4F"
+      ],
+      "sequential": [
+        "#E0D9E5",
+        "#C1B2CA",
+        "#9880A7",
+        "#6F4C84",
+        "#502669",
+        "#31004F"
+      ],
+      "diverging": [
+        "#8E2F4F",
+        "#B8899A",
+        "#E3E3E4",
+        "#80948A",
+        "#1E462F"
+      ],
+      "sentiment": {
+        "positive": "#1E462F",
+        "negative": "#8E2F4F",
+        "neutral": "#93939D"
+      }
+    },
+    "font": {
+      "family": "Plus Jakarta Sans",
+      "size": 12
+    },
+    "grid": {
+      "color": "#E3DCEC",
+      "width": 1
+    },
+    "highlight": "#61009E",
+    "muted": "#6E6A75",
+    "derivation": {
+      "tier": "brand",
+      "counts": {
+        "brand": 6,
+        "tint": 0,
+        "neutral": 0,
+        "fallback": 0
+      }
+    }
+  },
   "integrity": {
     "compiler": "brand_compile.py",
     "compiler_version": "1.0",
     "key_set": [
       "boilerplate",
+      "charts",
       "client_slug",
       "colors",
       "document",
@@ -3011,6 +3087,7 @@
       "plotly_theme",
       "presentation",
       "schemaVersion",
+      "spreadsheet",
       "surfaceExpression",
       "tier",
       "token_roles",
@@ -3032,6 +3109,6 @@
       "photo"
     ],
     "images_count": 68,
-    "sha256": "ab8f4d42444698d98b67e887aac9fbf7c9db427d122ed46e05cfb759943ca4cd"
+    "sha256": "d22878ff049911c5a2611b09208f89900d820e50925e516a3ebe254204cc5dd0"
   }
 }
