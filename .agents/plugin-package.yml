@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: stromy
   display_name: Stromy
-  version: 0.10.82
+  version: 0.10.87
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
     rendering, nl-gov-data + do-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows
     and media-gen via workspace connectors, over Stromy's own brand
@@ -50,9 +50,7 @@ portable_capabilities:
     - format-docx-hd
     - format-guide
     - format-html-hd
-    - format-html-reveal
     - format-i18n
-    - format-mermaid
     - format-motion
     - format-pdf
     - format-pdf-hd
@@ -114,9 +112,7 @@ skills:
   - format-docx-hd
   - format-guide
   - format-html-hd
-  - format-html-reveal
   - format-i18n
-  - format-mermaid
   - format-motion
   - format-pdf
   - format-pdf-hd
