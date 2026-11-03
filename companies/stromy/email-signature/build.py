@@ -185,6 +185,8 @@ def load_people() -> list[dict]:
         sender_ids.add(sender_id)
         person = by_id[selection["person_id"]]
         contact = {key: person.get(key) for key in ("name", "email", "phone", "linkedin", "emailAliases")}
+        if selection.get("show_phone") is False:  # private number: kept in the registry, not on the card
+            contact["phone"] = None
         resolved.append({**defaults, **contact, **selection})
     return resolved
 
