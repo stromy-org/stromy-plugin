@@ -1,0 +1,63 @@
+{
+  "brand": "stromy",
+  "brandVersion": "1.0",
+  "generated": "2026-11-03",
+  "copy": {
+    "headline": "Intelligence, orchestrated.",
+    "statement": "AI systems that run your business processes",
+    "overline": "Belgium · Netherlands · Spain · Australia",
+    "cta": "Got a process that should run itself?",
+    "url": "stromy.com.au",
+    "transformation": "Business processes, run by AI you own.",
+    "capabilities": [
+      "MCP connectors",
+      "AI plugins & skills",
+      "Autonomous agents",
+      "Data integration",
+      "Intelligence platforms",
+      "Websites"
+    ]
+  },
+  "headers": {
+    "mark-field-profile": {
+      "image": null,
+      "x2": true,
+      "ground": "#0B0B0C"
+    },
+    "mark-field-company": {
+      "image": null,
+      "x2": true,
+      "ground": "#0B0B0C"
+    },
+    "transformation-profile": {
+      "image": null,
+      "x2": true,
+      "ground": "#F4EFE6"
+    },
+    "transformation-company": {
+      "image": null,
+      "x2": true,
+      "ground": "#F4EFE6"
+    },
+    "photo-led-profile": {
+      "image": "orc-02",
+      "x2": false,
+      "ground": "#31004F"
+    },
+    "photo-led-company": {
+      "image": "orc-02",
+      "x2": false,
+      "ground": "#31004F"
+    },
+    "abstract-cta-profile": {
+      "image": "abstract-waveform-dotfield",
+      "x2": false,
+      "ground": "#31004F"
+    },
+    "abstract-cta-company": {
+      "image": "abstract-waveform-dotfield",
+      "x2": false,
+      "ground": "#31004F"
+    }
+  }
+}
