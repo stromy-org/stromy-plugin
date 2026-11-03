@@ -1,8 +1,8 @@
 {
   "name": "stromy",
   "displayName": "Stromy",
-  "version": "0.10.88",
-  "description": "Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format rendering, nl-gov-data + do-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows and media-gen via workspace connectors, over Stromy's own brand",
+  "version": "0.10.91",
+  "description": "Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format rendering, nl-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows and media-gen via workspace connectors, over Stromy's own brand",
   "author": {
     "name": "stromy-org"
   },
@@ -18,9 +18,6 @@
     },
     "nl-gov-data": {
       "url": "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
-    },
-    "do-gov-data": {
-      "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
     },
     "eu-gov-data": {
       "url": "https://eu-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"

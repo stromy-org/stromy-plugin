@@ -8,9 +8,9 @@ schema_version: 1
 identity:
   name: stromy
   display_name: Stromy
-  version: 0.10.88
+  version: 0.10.91
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
-    rendering, nl-gov-data + do-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows
+    rendering, nl-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows
     and media-gen via workspace connectors, over Stromy's own brand
   author:
     name: stromy-org
@@ -26,20 +26,6 @@ targets:
 - kiro
 - gemini
 portable_capabilities:
-  dominican-government-research:
-    summary: Dominican Republic public-affairs research from official sources
-    skills:
-    - do-caselaw-watch
-    - do-consolidated-law
-    - do-gov-data
-    - do-guide
-    - do-legislative-scan
-    - do-policy-landscape
-    - do-procurement-watch
-    - do-spend-accountability
-    - do-transparency-requests
-    mcp_servers:
-    - do-gov-data
   branded-deliverables:
     summary: Branded documents, decks, charts, diagrams and video rendered server-side in the client's
       brand
@@ -97,15 +83,6 @@ portable_capabilities:
     - eu-gov-data
 skills:
   include:
-  - do-caselaw-watch
-  - do-consolidated-law
-  - do-gov-data
-  - do-guide
-  - do-legislative-scan
-  - do-policy-landscape
-  - do-procurement-watch
-  - do-spend-accountability
-  - do-transparency-requests
   - format-chart
   - format-diagram
   - format-docx
@@ -312,7 +289,7 @@ marketplace:
   repository: https://github.com/stromy-org/stromy-marketplace
   description: Plugin marketplace for Stromy plugins
   entry_description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
-    rendering, nl-gov-data + au-gov-data + do-gov-data gov-rel intel, plus asset-broker, org-atlas, stromy-workflows
+    rendering, nl-gov-data + au-gov-data gov-rel intel, plus asset-broker, org-atlas, stromy-workflows
     and media-gen via workspace connectors
   owner:
     name: stromy-org
