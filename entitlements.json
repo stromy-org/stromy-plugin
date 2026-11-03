@@ -6,7 +6,6 @@
     "au-gov-data",
     "comms",
     "comms-mcp",
-    "do-gov-data",
     "eu-gov-data",
     "media-gen",
     "nl-gov-data",
@@ -16,9 +15,9 @@
     "toolkit",
     "toolkit-mcp"
   ],
-  "generated_at": "2026-10-29T17:40:47Z",
-  "parent_sha": "656f25d429b4393800a3e2a6750f80d420294153",
+  "generated_at": "2026-11-03T16:21:54Z",
+  "parent_sha": "a3fb301fc8197d5424f49f89878cc56b15098187",
   "repo": "stromy-org/stromy-plugin",
   "schema": 1,
-  "seq": 2
+  "seq": 3
 }
