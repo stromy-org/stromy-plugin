@@ -577,9 +577,10 @@
       "mime": "image/jpeg"
     }
   ],
+  "templates": [],
   "brand_context": {
-    "sha256": "115692d5867ab9b0c7be9722167a615c838b1ed95f2b0eb520c62912406180bb",
+    "sha256": "339d0bfe71a18cb472ea7d1c2075b7430717129d506a8b3098c1e0de1369bea6",
     "mime": "application/json",
-    "bytes": 117572
+    "bytes": 119058
   }
 }

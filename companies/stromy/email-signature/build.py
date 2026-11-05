@@ -58,17 +58,13 @@ LOGO_W, LOGO_H = 72, 55  # compact enough for a narrow message pane
 SENDER_DOMAINS = {"stromy.com.au", "stromy.nl", "stromy.be"}
 DARK_BG, DARK_TEXT, DARK_LINK, DARK_MUTED = "#211827", "#F5EAFF", "#DAB5FF", "#C7B7D9"
 
-# Email-client support varies; the inline light palette remains the fallback.
-# Outlook may remove this block when a rendered signature is pasted into its editor.
-THEME_CSS = (
-    '<style>@media (prefers-color-scheme:dark){'
-    f'.stromy-card{{background-color:{DARK_BG}!important}}'
-    f'.stromy-name,.stromy-tagline{{color:{DARK_TEXT}!important}}'
-    f'.stromy-meta{{color:{DARK_MUTED}!important}}'
-    f'.stromy-link{{color:{DARK_LINK}!important}}'
-    f'.stromy-rule{{background-color:{DARK_LINK}!important}}'
-    '}</style>'
-)
+# The delivered signature is ALWAYS the white card (William 2026-11-01). A
+# prefers-color-scheme:dark block used to repaint it dark purple in a reader's
+# dark mode, which framed the opaque white logo PNG in a white box and read as a
+# broken signature on received outreach mail. The dark palette stays available
+# only as an explicit preview/install variant (themed(dark=True)), never as CSS
+# that ships inside the signature.
+THEME_CSS = ""
 
 
 def themed(markup: str, dark: bool = False) -> str:
@@ -189,6 +185,8 @@ def load_people() -> list[dict]:
         sender_ids.add(sender_id)
         person = by_id[selection["person_id"]]
         contact = {key: person.get(key) for key in ("name", "email", "phone", "linkedin", "emailAliases")}
+        if selection.get("show_phone") is False:  # private number: kept in the registry, not on the card
+            contact["phone"] = None
         resolved.append({**defaults, **contact, **selection})
     return resolved
 
