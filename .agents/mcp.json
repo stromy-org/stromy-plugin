@@ -1,7 +1,7 @@
 {
   "$schema": "https://gofastmcp.com/public/schemas/mcp-config.schema.json",
   "_notes": "Canonical MCP server config for stromy. Edit only this file. Run scripts/render-mcp.py to regenerate .mcp.json / .gemini/settings.json / .codex/config.toml / .vscode/mcp.json.",
-  "_connection_model": "Authenticated HTTP MCPs (interactive OAuth, e.g. asset-broker, au-gov-data since 2026-10) are consumed as Cowork workspace connectors — do NOT declare them here; a plugin-declared OAuth MCP can only auth via a localhost loopback that fails in remote sessions. Only no-auth HTTP MCPs (stromy-format, nl-gov-data) and stdio servers belong in a plugin. See infra-docs/ai/mcp-connection-model.md (enforced by validate-plugin-completeness.py Invariant #13).",
+  "_connection_model": "No-auth HTTP MCPs (stromy-format, nl-gov-data, eu-gov-data) and stdio servers reach every target. An authenticated HTTP MCP (interactive OAuth, e.g. toolkit, asset-broker, au-gov-data) is declared only as a bundled Claude connector (`_connector: true`, `_consumed_by: [\"claude\"]`, its catalog hosted_url, no headers): Claude lists it on the plugin's Connectors tab and the user signs in once with Connect, through Claude's hosted OAuth callback, so it works in Cowork too. See infra-docs/ai/mcp-connection-model.md (enforced by validate-plugin-completeness.py Invariant #13).",
   "servers": {
     "stromy-format": {
       "transport": "http",
@@ -70,33 +70,9 @@
       ],
       "_connector": true
     },
-    "org-atlas": {
-      "transport": "http",
-      "url": "https://org-atlas-mcp.gentleground-6f68b100.westeurope.azurecontainerapps.io/mcp",
-      "_consumed_by": [
-        "claude"
-      ],
-      "_connector": true
-    },
     "stromy-workflows": {
       "transport": "http",
       "url": "https://stromy-workflows-mcp.happysand-98ed07c8.northeurope.azurecontainerapps.io/mcp",
-      "_consumed_by": [
-        "claude"
-      ],
-      "_connector": true
-    },
-    "media-gen": {
-      "transport": "http",
-      "url": "https://media-gen-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp",
-      "_consumed_by": [
-        "claude"
-      ],
-      "_connector": true
-    },
-    "comms": {
-      "transport": "http",
-      "url": "https://comms-mcp.jollymushroom-8231d53e.swedencentral.azurecontainerapps.io/mcp",
       "_consumed_by": [
         "claude"
       ],
