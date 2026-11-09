@@ -70,33 +70,9 @@
       ],
       "_connector": true
     },
-    "org-atlas": {
-      "transport": "http",
-      "url": "https://org-atlas-mcp.gentleground-6f68b100.westeurope.azurecontainerapps.io/mcp",
-      "_consumed_by": [
-        "claude"
-      ],
-      "_connector": true
-    },
     "stromy-workflows": {
       "transport": "http",
       "url": "https://stromy-workflows-mcp.happysand-98ed07c8.northeurope.azurecontainerapps.io/mcp",
-      "_consumed_by": [
-        "claude"
-      ],
-      "_connector": true
-    },
-    "media-gen": {
-      "transport": "http",
-      "url": "https://media-gen-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp",
-      "_consumed_by": [
-        "claude"
-      ],
-      "_connector": true
-    },
-    "comms": {
-      "transport": "http",
-      "url": "https://comms-mcp.jollymushroom-8231d53e.swedencentral.azurecontainerapps.io/mcp",
       "_consumed_by": [
         "claude"
       ],
