@@ -4,20 +4,16 @@
     "asset-broker",
     "asset-broker-mcp",
     "au-gov-data",
-    "comms",
-    "comms-mcp",
     "eu-gov-data",
-    "media-gen",
     "nl-gov-data",
-    "org-atlas",
     "stromy-format",
     "stromy-workflows",
     "toolkit",
     "toolkit-mcp"
   ],
-  "generated_at": "2026-11-03T16:21:54Z",
-  "parent_sha": "a3fb301fc8197d5424f49f89878cc56b15098187",
+  "generated_at": "2026-11-09T13:52:41Z",
+  "parent_sha": "ada49369ba1f98a85d277bf86fc98f4d0b8dfa26",
   "repo": "stromy-org/stromy-plugin",
   "schema": 1,
-  "seq": 3
+  "seq": 4
 }
