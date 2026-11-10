@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: stromy
   display_name: Stromy
-  version: 0.10.92
+  version: 0.10.94
   description: Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format
     rendering, nl-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows
     and media-gen via workspace connectors, over Stromy's own brand
@@ -66,6 +66,7 @@ portable_capabilities:
     - nl-parliamentary-positioning
     - nl-policy-legislative-landscape
     - nl-tensions
+    - nl-dossier-brief
     mcp_servers:
     - nl-gov-data
   eu-gov-data-workflows:
@@ -119,6 +120,7 @@ skills:
   - eu-horizon-scan
   - eu-influence-map
   - eu-funding-map
+  - nl-dossier-brief
   provider_extras:
   - skill: au-gov-data
     providers:
