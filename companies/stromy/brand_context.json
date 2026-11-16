@@ -7,6 +7,10 @@
     "compiler": "1.0"
   },
   "tier": "producer",
+  "warnings": [
+    "templates.social.linkedin-company -> social/linkedin/transformation-company@2x.png: library entry not allowed (use 'social' is not permitted)",
+    "templates.social.linkedin-person-001 -> social/linkedin/mark-field-profile@2x.png: library entry not allowed (use 'social' is not permitted)"
+  ],
   "colors": {
     "primary": "#31004F",
     "secondary": "#0B0B0C",
@@ -1124,7 +1128,9 @@
             "w": 0.7,
             "h": 0.95
           }
-        }
+        },
+        "sha256": "7461e91aa760355ed1858f0d4cc2ba439531018898ea28e6e63a01ccd5bf451c",
+        "mime": "image/jpeg"
       },
       {
         "id": "abstract-waveform-dotfield",
@@ -1237,7 +1243,9 @@
             "w": 0.65,
             "h": 0.8
           }
-        }
+        },
+        "sha256": "19abf3a22eeb8e583acff16793ba8b34699e8d4a1c93163cd98e2c9a88643651",
+        "mime": "image/jpeg"
       },
       {
         "id": "str-05",
@@ -1266,7 +1274,9 @@
             "w": 0.3,
             "h": 0.5
           }
-        }
+        },
+        "sha256": "21c334f21c04efb61db3bd34c05ef98713052f16920d5b6e0c2f30400aa15ac7",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-10",
@@ -1295,7 +1305,9 @@
             "w": 1.0,
             "h": 0.85
           }
-        }
+        },
+        "sha256": "bf6708cec9fd0d685534947e17e8c92dbe317246c7bee38aba121c0c9ea9d093",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-02",
@@ -1324,7 +1336,9 @@
             "w": 0.75,
             "h": 0.9
           }
-        }
+        },
+        "sha256": "b7b0dbaefeee6f43b95dc0ef1b3deb46b49f41c7af5e5424cb09715277a2b469",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-01",
@@ -1354,7 +1368,9 @@
             "w": 1.0,
             "h": 1.0
           }
-        }
+        },
+        "sha256": "dd2ea273ce42c7308563e44866b90d894ad4c5c542a65a89b178e733eb115a53",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-08",
@@ -1383,7 +1399,9 @@
             "w": 0.8,
             "h": 0.6
           }
-        }
+        },
+        "sha256": "7e444897bfdc02fe8142859e2908e4fa4ae0082e8e14d30810f11bea2022de36",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-03",
@@ -1413,7 +1431,9 @@
             "w": 0.85,
             "h": 0.8
           }
-        }
+        },
+        "sha256": "8e87820d3cb04d599e6abb3bf017c1f4eea4ca33d984aeed750e261c53af6d9b",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-04",
@@ -1441,7 +1461,9 @@
             "w": 1.0,
             "h": 0.7
           }
-        }
+        },
+        "sha256": "db2463a871d2e2e0af639281bffef9da24dfd4c4a48384f2dfb42e3173dc94c6",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-05",
@@ -1469,7 +1491,9 @@
             "w": 1.0,
             "h": 0.4
           }
-        }
+        },
+        "sha256": "3f9fe8b50b4bf2e9be83bcb48dbb5e3825711b03f3378a0737ed14182ce67e8e",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-06",
@@ -1499,7 +1523,9 @@
             "w": 0.7,
             "h": 1.0
           }
-        }
+        },
+        "sha256": "feebde07c1beb980940a7e12a09d233177f0415740b9958e4618f50e8c202926",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-07",
@@ -1527,7 +1553,9 @@
             "w": 0.7,
             "h": 1.0
           }
-        }
+        },
+        "sha256": "9dcf8990fb57c514dd5b1a92703982cda0c7203f88f8d8dc334fdf24188621b6",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-09",
@@ -1555,7 +1583,9 @@
             "w": 0.6,
             "h": 0.6
           }
-        }
+        },
+        "sha256": "28ecf29123581c53aa2627eebd061b313c7b933225998d8ee52a3dc043b6bdeb",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-05",
@@ -1670,7 +1700,9 @@
             "w": 1.0,
             "h": 0.85
           }
-        }
+        },
+        "sha256": "d40bdff045b1d9316af6870f63fa543312b30fd8f8d7257a5d04a2696bfe8d40",
+        "mime": "image/jpeg"
       },
       {
         "id": "pno-05",
@@ -1753,7 +1785,9 @@
             "w": 0.9,
             "h": 0.5
           }
-        }
+        },
+        "sha256": "c6304415e271abe5e8f222b5897414d5ae81585677370e4268ad716802126a44",
+        "mime": "image/jpeg"
       },
       {
         "id": "prc-01",
@@ -1781,7 +1815,9 @@
             "w": 0.8,
             "h": 0.45
           }
-        }
+        },
+        "sha256": "29e44633a66aca8935851550745a09686f4f5a5c7f6fb46050c7a4c768539424",
+        "mime": "image/jpeg"
       },
       {
         "id": "prc-07",
@@ -1808,7 +1844,9 @@
             "w": 1.0,
             "h": 1.0
           }
-        }
+        },
+        "sha256": "8a905451621f0326462ff5dfc4f825c2f0a5f3e8bf3f6e4382edc16712ed2f5e",
+        "mime": "image/jpeg"
       },
       {
         "id": "brs-01",
@@ -1868,7 +1906,9 @@
             "w": 1.0,
             "h": 0.7
           }
-        }
+        },
+        "sha256": "d05e2fa51b8c1c6acba028932dbd53dafefa20003ce6aaa847a109bcdedf90f2",
+        "mime": "image/jpeg"
       },
       {
         "id": "orc-10",
@@ -2013,7 +2053,9 @@
             "w": 0.85,
             "h": 0.7
           }
-        }
+        },
+        "sha256": "8df79f2c0c6757c87ea1d6cd0aea2a139d5a74e4697bac26941e6c06cf619278",
+        "mime": "image/jpeg"
       },
       {
         "id": "orc-03",
@@ -2042,7 +2084,9 @@
             "w": 0.95,
             "h": 0.7
           }
-        }
+        },
+        "sha256": "3c47fb0eb943c8f719044107519235ab6cc2cbcd0acb93ccb1f47dbaa4ec8fa7",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-13",
@@ -2077,7 +2121,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1551696785-927d4ac2d35b",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "79743d45e51ae70acea21e44117ee63510e0c963302d5e494f331c667edb91cb",
+        "mime": "image/jpeg"
       },
       {
         "id": "cnd-02",
@@ -2111,7 +2157,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1745328599617-5c9796ca4d71",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "9d12df86cb46ca270784c1bc4d9666afeffe0ea05da9138e31512fff310f51d6",
+        "mime": "image/jpeg"
       },
       {
         "id": "cnd-03",
@@ -2145,7 +2193,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1699521376652-a5666c8552fb",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "8d559a4160288dba7b7793eedfcc97c0e6740f01edaeeac363cd6bf274e2e153",
+        "mime": "image/jpeg"
       },
       {
         "id": "cnd-04",
@@ -2179,7 +2229,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1763414102826-309fcdae266a",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "68c3053b9ff73989d398556388099efb39191977a04d3e6a43039037ee01a32d",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-14",
@@ -2213,7 +2265,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1600443446566-c8a2e34c779b",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "0144d57617d42538fef1a317d61d77db82a0b3366bfdc3f13e823be9b6e49f8f",
+        "mime": "image/jpeg"
       },
       {
         "id": "ins-01",
@@ -2248,7 +2302,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1585934269136-703ed76b133b",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "ea0f58dc9e499f8bf8d9164f9934c2fd519f7b559f543a4ce8a7f5d4bc9f64e9",
+        "mime": "image/jpeg"
       },
       {
         "id": "ins-02",
@@ -2282,7 +2338,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1506423456648-c11ccb27338d",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "5f9bda7cf4eb4f1817dfb2a34fdae6a2697e8bb00792cf0eaaf030c78509df86",
+        "mime": "image/jpeg"
       },
       {
         "id": "ins-03",
@@ -2317,7 +2375,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1724145353564-2d454235bd97",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "0e6ce875053d3899cc803f66a28021fc36d70e0087ff24e855072ba375678ee2",
+        "mime": "image/jpeg"
       },
       {
         "id": "ins-04",
@@ -2351,7 +2411,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1624451890723-f703369672e5",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "d06e10000624a15f358b32e181e8de5f94317db22ffac59d5518cca6019129e0",
+        "mime": "image/jpeg"
       },
       {
         "id": "ins-05",
@@ -2385,7 +2447,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1585425189078-427f27d0c075",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "52ea010510958491187aaa5a815b478182eed4a1a4d72584f73272feffa98e1b",
+        "mime": "image/jpeg"
       },
       {
         "id": "ins-06",
@@ -2420,7 +2484,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1643666805740-f2f9e0600a4e",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "8de5951dc7e87867c9ae34559d3485752a186531d59c9a46c6c86897024007dd",
+        "mime": "image/jpeg"
       },
       {
         "id": "ins-07",
@@ -2454,7 +2520,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1649919254591-244eb807d5e8",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "b2bf586669091b623f1b16d30ca63083dabe61b566c4f33a5c384ec661f379ea",
+        "mime": "image/jpeg"
       },
       {
         "id": "ins-08",
@@ -2488,7 +2556,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1492563817904-5f1dc687974f",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "ae2ee02b7d874e8fd18dbd6261e33d0b46d21981b451c12f43edd341f69f2294",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-06",
@@ -2521,7 +2591,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1675327161957-929e3faa37cc",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "ce7c3976149001973c50e4d4dd0cf44fda7a012c0ecca915ef93d97a0f855cfb",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-07",
@@ -2556,7 +2628,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1509782642997-4befdc4b21c9",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "3b99df2807aa619a0de04b1fbdd07ce35c8405bb20ab5b06bffedca6a80856bb",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-08",
@@ -2591,7 +2665,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1764643588158-79ac8406f87b",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "7cbbe9da9a886263622f159a2d59f3f1296ad3415e36df27c1b56bd6e95c01e5",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-09",
@@ -2624,7 +2700,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1631552256073-6556ced1cf15",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "814a20cdcd3b72034dba5b746ad3e03f1c53cea5c4731d06caa4557b6b75a7ef",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-10",
@@ -2658,7 +2736,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1722321974501-059dff03e970",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "e6f5907ffa4b621e1fc575ea4a1ef9908ab2cddea477bcf3c309baa2b9c8dcea",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-11",
@@ -2692,7 +2772,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1765308767818-1e7fd17c8067",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "6c8899a1fb62b9495cfdf2dedb1b3466a582348e621e169bdf1cf0701994ab05",
+        "mime": "image/jpeg"
       },
       {
         "id": "hal-12",
@@ -2725,7 +2807,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1646905103565-5c8348075920",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "4741565658e7264a47f93e027a2d92aad221b8fe0313859c9530055f8fcf006d",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-11",
@@ -2760,7 +2844,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1543187018-21e461e7538e",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "09a90d4755fa46315979f4bcf360fe0ca0755e8230ab6b167542a04fbf6b0c72",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-12",
@@ -2794,7 +2880,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1698429894891-c5a9e538072d",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "acbf442980f9821a688ae395451ac3929a899e1bbfe660b259a0521af25b2b9d",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-13",
@@ -2828,7 +2916,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1686519093104-3140c6dcf284",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "94a122c088cc06d169e922628def9c459aca187e3f1a1f77f470459343320b1f",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-14",
@@ -2862,7 +2952,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1617994452722-4145e196248b",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "0900afc522687b507f2e541894cbe3150fa49dfd5d60565580526bedd386e474",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-15",
@@ -2896,7 +2988,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1698430484131-efc9f5ccba1a",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "a93680317d0b6d5bb176340176885b414c00234b5fc0982b49581d7a21b9f8a0",
+        "mime": "image/jpeg"
       },
       {
         "id": "wav-16",
@@ -2930,7 +3024,9 @@
           "source": "unsplash",
           "url": "https://unsplash.com/photos/photo-1687618084591-8523977ae737",
           "license": "Unsplash License (free to use)"
-        }
+        },
+        "sha256": "fa9d53b9f490b3eae4c78633e260d9f01efaba2e8645ff8bd00691499b418b97",
+        "mime": "image/jpeg"
       }
     ],
     "overlay": {
@@ -2966,7 +3062,6 @@
     "fps": 30
   },
   "fallbacksUsed": [],
-  "warnings": [],
   "token_roles": {
     "surface": "--content-surface-light",
     "surfaceAlt": "--stromy-surface-raised",
@@ -3067,6 +3162,566 @@
       }
     }
   },
+  "libraryHandles": [
+    {
+      "path": "business-cards/print/corentin-eu-print.pdf",
+      "sha256": "b642992a3284ad556d1bf4c038b292bff53de89f36aca7e8cd4d1009d7193088",
+      "mime": "application/pdf",
+      "libraryId": "business-cards-print-corentin-eu-print.pdf"
+    },
+    {
+      "path": "business-cards/print/william-eu-print.pdf",
+      "sha256": "7f40db1fd3943c5177e9eaaa9b9410b3a5d4245f48de6046cf8e4791b934e6bf",
+      "mime": "application/pdf",
+      "libraryId": "business-cards-print-william-eu-print.pdf"
+    },
+    {
+      "path": "business-cards/source/back-eu.svg",
+      "sha256": "e5bbdfdcb68970f7f7554ecd9bc2189a8f5b1ef44b4c3d73b89eea052819718e",
+      "mime": "image/svg+xml",
+      "libraryId": "business-cards-source-back-eu.svg"
+    },
+    {
+      "path": "business-cards/source/corentin-eu-front.svg",
+      "sha256": "ebc0e88ac64dfcb5058d4c2d94a0fbaee535886296be54ad93882a23b4edbda6",
+      "mime": "image/svg+xml",
+      "libraryId": "business-cards-source-corentin-eu-front.svg"
+    },
+    {
+      "path": "business-cards/source/william-eu-front.svg",
+      "sha256": "4115dc8fdc228d1aa9db59708b9860bd6bb462f69cdbd1f06c3ba53653014d10",
+      "mime": "image/svg+xml",
+      "libraryId": "business-cards-source-william-eu-front.svg"
+    },
+    {
+      "path": "images/abstract-flowing-ribbon.jpg",
+      "sha256": "8209cfd371368b772572e11be501b4306f60f6539e92e4a918db28adf204968c",
+      "mime": "image/jpeg",
+      "libraryId": "abstract-flowing-ribbon"
+    },
+    {
+      "path": "images/abstract-wave-interference.jpg",
+      "sha256": "1dbb7546340cd8ff6ab38c53107e078fcaa0edd1c09a5a37e2b33872e3beb619",
+      "mime": "image/jpeg",
+      "libraryId": "abstract-wave-interference"
+    },
+    {
+      "path": "images/abstract-waveform-dotfield.jpg",
+      "sha256": "f4ce17108c6a3915c9b0d5bb5015fa034075070785d8ce557c5a9003937effc5",
+      "mime": "image/jpeg",
+      "libraryId": "abstract-waveform-dotfield"
+    },
+    {
+      "path": "images/brass-section-above.jpg",
+      "sha256": "ed0c55cd3251d324143d0b36201d9e2846073b4720c204045329b6dca73c645f",
+      "mime": "image/jpeg",
+      "libraryId": "brass-section-above"
+    },
+    {
+      "path": "images/brs-01.jpg",
+      "sha256": "b2bb88ffd7e5bf1af13a3f1d9cbfd468b32c7b620a59e9812292e217cadabc1d",
+      "mime": "image/jpeg",
+      "libraryId": "brs-01"
+    },
+    {
+      "path": "images/brs-06.jpg",
+      "sha256": "d05e2fa51b8c1c6acba028932dbd53dafefa20003ce6aaa847a109bcdedf90f2",
+      "mime": "image/jpeg",
+      "libraryId": "brs-06"
+    },
+    {
+      "path": "images/cnd-02.jpg",
+      "sha256": "9d12df86cb46ca270784c1bc4d9666afeffe0ea05da9138e31512fff310f51d6",
+      "mime": "image/jpeg",
+      "libraryId": "cnd-02"
+    },
+    {
+      "path": "images/cnd-03.jpg",
+      "sha256": "8d559a4160288dba7b7793eedfcc97c0e6740f01edaeeac363cd6bf274e2e153",
+      "mime": "image/jpeg",
+      "libraryId": "cnd-03"
+    },
+    {
+      "path": "images/cnd-04.jpg",
+      "sha256": "68c3053b9ff73989d398556388099efb39191977a04d3e6a43039037ee01a32d",
+      "mime": "image/jpeg",
+      "libraryId": "cnd-04"
+    },
+    {
+      "path": "images/conductor-backlit.jpg",
+      "sha256": "394bf5efb072da68716134a5ab964c9a4768635681c0f728be8cdb495eb161ed",
+      "mime": "image/jpeg",
+      "libraryId": "conductor-backlit"
+    },
+    {
+      "path": "images/conductor-hands-baton.jpg",
+      "sha256": "6276d81db5439078175693b3ac21a368f4ef8f84b902f7a9f78a5bf13802b77a",
+      "mime": "image/jpeg",
+      "libraryId": "conductor-hands-baton"
+    },
+    {
+      "path": "images/hal-01.jpg",
+      "sha256": "d40bdff045b1d9316af6870f63fa543312b30fd8f8d7257a5d04a2696bfe8d40",
+      "mime": "image/jpeg",
+      "libraryId": "hal-01"
+    },
+    {
+      "path": "images/hal-02.jpg",
+      "sha256": "f1fae20382c3df970379ee8e7883d9d8aa033d21f3a383d156909e9654dcface",
+      "mime": "image/jpeg",
+      "libraryId": "hal-02"
+    },
+    {
+      "path": "images/hal-03.jpg",
+      "sha256": "279011b0a3c54b345244ad1d71586e4f88c0cb1ce211015f7d1cec85a6ea03f8",
+      "mime": "image/jpeg",
+      "libraryId": "hal-03"
+    },
+    {
+      "path": "images/hal-05.jpg",
+      "sha256": "d6fec0fe23bbf4eb3c2e1ea58a6beecad5d49b21d2ef04a9d89ae031113974dc",
+      "mime": "image/jpeg",
+      "libraryId": "hal-05"
+    },
+    {
+      "path": "images/hal-06.jpg",
+      "sha256": "ce7c3976149001973c50e4d4dd0cf44fda7a012c0ecca915ef93d97a0f855cfb",
+      "mime": "image/jpeg",
+      "libraryId": "hal-06"
+    },
+    {
+      "path": "images/hal-07.jpg",
+      "sha256": "3b99df2807aa619a0de04b1fbdd07ce35c8405bb20ab5b06bffedca6a80856bb",
+      "mime": "image/jpeg",
+      "libraryId": "hal-07"
+    },
+    {
+      "path": "images/hal-08.jpg",
+      "sha256": "7cbbe9da9a886263622f159a2d59f3f1296ad3415e36df27c1b56bd6e95c01e5",
+      "mime": "image/jpeg",
+      "libraryId": "hal-08"
+    },
+    {
+      "path": "images/hal-09.jpg",
+      "sha256": "814a20cdcd3b72034dba5b746ad3e03f1c53cea5c4731d06caa4557b6b75a7ef",
+      "mime": "image/jpeg",
+      "libraryId": "hal-09"
+    },
+    {
+      "path": "images/hal-10.jpg",
+      "sha256": "e6f5907ffa4b621e1fc575ea4a1ef9908ab2cddea477bcf3c309baa2b9c8dcea",
+      "mime": "image/jpeg",
+      "libraryId": "hal-10"
+    },
+    {
+      "path": "images/hal-11.jpg",
+      "sha256": "6c8899a1fb62b9495cfdf2dedb1b3466a582348e621e169bdf1cf0701994ab05",
+      "mime": "image/jpeg",
+      "libraryId": "hal-11"
+    },
+    {
+      "path": "images/hal-12.jpg",
+      "sha256": "4741565658e7264a47f93e027a2d92aad221b8fe0313859c9530055f8fcf006d",
+      "mime": "image/jpeg",
+      "libraryId": "hal-12"
+    },
+    {
+      "path": "images/hal-13.jpg",
+      "sha256": "79743d45e51ae70acea21e44117ee63510e0c963302d5e494f331c667edb91cb",
+      "mime": "image/jpeg",
+      "libraryId": "hal-13"
+    },
+    {
+      "path": "images/hal-14.jpg",
+      "sha256": "0144d57617d42538fef1a317d61d77db82a0b3366bfdc3f13e823be9b6e49f8f",
+      "mime": "image/jpeg",
+      "libraryId": "hal-14"
+    },
+    {
+      "path": "images/harpist-strings.jpg",
+      "sha256": "9f1cb4e36a65e9bf7ae4b7071c0a79e486876cbcc481b1ae966cb4734bec0885",
+      "mime": "image/jpeg",
+      "libraryId": "harpist-strings"
+    },
+    {
+      "path": "images/ins-01.jpg",
+      "sha256": "ea0f58dc9e499f8bf8d9164f9934c2fd519f7b559f543a4ce8a7f5d4bc9f64e9",
+      "mime": "image/jpeg",
+      "libraryId": "ins-01"
+    },
+    {
+      "path": "images/ins-02.jpg",
+      "sha256": "5f9bda7cf4eb4f1817dfb2a34fdae6a2697e8bb00792cf0eaaf030c78509df86",
+      "mime": "image/jpeg",
+      "libraryId": "ins-02"
+    },
+    {
+      "path": "images/ins-03.jpg",
+      "sha256": "0e6ce875053d3899cc803f66a28021fc36d70e0087ff24e855072ba375678ee2",
+      "mime": "image/jpeg",
+      "libraryId": "ins-03"
+    },
+    {
+      "path": "images/ins-04.jpg",
+      "sha256": "d06e10000624a15f358b32e181e8de5f94317db22ffac59d5518cca6019129e0",
+      "mime": "image/jpeg",
+      "libraryId": "ins-04"
+    },
+    {
+      "path": "images/ins-05.jpg",
+      "sha256": "52ea010510958491187aaa5a815b478182eed4a1a4d72584f73272feffa98e1b",
+      "mime": "image/jpeg",
+      "libraryId": "ins-05"
+    },
+    {
+      "path": "images/ins-06.jpg",
+      "sha256": "8de5951dc7e87867c9ae34559d3485752a186531d59c9a46c6c86897024007dd",
+      "mime": "image/jpeg",
+      "libraryId": "ins-06"
+    },
+    {
+      "path": "images/ins-07.jpg",
+      "sha256": "b2bf586669091b623f1b16d30ca63083dabe61b566c4f33a5c384ec661f379ea",
+      "mime": "image/jpeg",
+      "libraryId": "ins-07"
+    },
+    {
+      "path": "images/ins-08.jpg",
+      "sha256": "ae2ee02b7d874e8fd18dbd6261e33d0b46d21981b451c12f43edd341f69f2294",
+      "mime": "image/jpeg",
+      "libraryId": "ins-08"
+    },
+    {
+      "path": "images/orc-01.jpg",
+      "sha256": "8df79f2c0c6757c87ea1d6cd0aea2a139d5a74e4697bac26941e6c06cf619278",
+      "mime": "image/jpeg",
+      "libraryId": "orc-01"
+    },
+    {
+      "path": "images/orc-02.jpg",
+      "sha256": "9c2cd82e9f338038ae609b70c0e3446221044bd814c3ed95f2510dbaf10ebd13",
+      "mime": "image/jpeg",
+      "libraryId": "orc-02"
+    },
+    {
+      "path": "images/orc-03.jpg",
+      "sha256": "3c47fb0eb943c8f719044107519235ab6cc2cbcd0acb93ccb1f47dbaa4ec8fa7",
+      "mime": "image/jpeg",
+      "libraryId": "orc-03"
+    },
+    {
+      "path": "images/orc-08.jpg",
+      "sha256": "c919785f1ac2256c2fbcfefbf46a8d354f4670c9d5d5064b0cd244f081d29c93",
+      "mime": "image/jpeg",
+      "libraryId": "orc-08"
+    },
+    {
+      "path": "images/orc-09.jpg",
+      "sha256": "7dc54c24ec439cdb77bbfba345256688ae43f32983a511f42b369211998e2ee2",
+      "mime": "image/jpeg",
+      "libraryId": "orc-09"
+    },
+    {
+      "path": "images/orc-10.jpg",
+      "sha256": "3ead726e8d1ec131d2a6dc76ff45a60f1672e0ed27060bad0cdef2dba234fa79",
+      "mime": "image/jpeg",
+      "libraryId": "orc-10"
+    },
+    {
+      "path": "images/orchestra-dotfield-above.jpg",
+      "sha256": "ad5adcdc3c1ab419dabd3aeedeba215c90d6003321af0e470dd683e4f2b795bb",
+      "mime": "image/jpeg",
+      "libraryId": "orchestra-dotfield-above"
+    },
+    {
+      "path": "images/orchestra-from-above.jpg",
+      "sha256": "0fbb640fde53e16af3b4ad8a6307309203cefece8b41ed79f14aa7eccad2f036",
+      "mime": "image/jpeg",
+      "libraryId": "orchestra-from-above"
+    },
+    {
+      "path": "images/percussion-timpani.jpg",
+      "sha256": "cb159e9405b1dbf14a100c4a53ab9f848b54cae24892de5c6c01ae1aa0539bfc",
+      "mime": "image/jpeg",
+      "libraryId": "percussion-timpani"
+    },
+    {
+      "path": "images/pno-01.jpg",
+      "sha256": "d614a369e01cf4b77d8071c9bcf3e9d092f95cb6dfb97bc272ff9619898af08b",
+      "mime": "image/jpeg",
+      "libraryId": "pno-01"
+    },
+    {
+      "path": "images/pno-05.jpg",
+      "sha256": "efdfd0ff3d046c6d3690db3a0433c1da50f821de22cb2ef888d5997f7a022bb6",
+      "mime": "image/jpeg",
+      "libraryId": "pno-05"
+    },
+    {
+      "path": "images/prc-01.jpg",
+      "sha256": "29e44633a66aca8935851550745a09686f4f5a5c7f6fb46050c7a4c768539424",
+      "mime": "image/jpeg",
+      "libraryId": "prc-01"
+    },
+    {
+      "path": "images/prc-04.jpg",
+      "sha256": "c6304415e271abe5e8f222b5897414d5ae81585677370e4268ad716802126a44",
+      "mime": "image/jpeg",
+      "libraryId": "prc-04"
+    },
+    {
+      "path": "images/prc-07.jpg",
+      "sha256": "8a905451621f0326462ff5dfc4f825c2f0a5f3e8bf3f6e4382edc16712ed2f5e",
+      "mime": "image/jpeg",
+      "libraryId": "prc-07"
+    },
+    {
+      "path": "images/spotlight-player.jpg",
+      "sha256": "f641c4b515431ec994548b0eea12c540299a9856f64f71ad5c3170c02239cc80",
+      "mime": "image/jpeg",
+      "libraryId": "spotlight-player"
+    },
+    {
+      "path": "images/stage-rigging-lights.jpg",
+      "sha256": "7461e91aa760355ed1858f0d4cc2ba439531018898ea28e6e63a01ccd5bf451c",
+      "mime": "image/jpeg",
+      "libraryId": "stage-rigging-lights"
+    },
+    {
+      "path": "images/str-03.jpg",
+      "sha256": "19abf3a22eeb8e583acff16793ba8b34699e8d4a1c93163cd98e2c9a88643651",
+      "mime": "image/jpeg",
+      "libraryId": "str-03"
+    },
+    {
+      "path": "images/str-05.jpg",
+      "sha256": "21c334f21c04efb61db3bd34c05ef98713052f16920d5b6e0c2f30400aa15ac7",
+      "mime": "image/jpeg",
+      "libraryId": "str-05"
+    },
+    {
+      "path": "images/string-arc-above.jpg",
+      "sha256": "b3e4c5c970144790d87bd74e806e381abacb547379d858d596501fba927eb498",
+      "mime": "image/jpeg",
+      "libraryId": "string-arc-above"
+    },
+    {
+      "path": "images/wav-01.jpg",
+      "sha256": "dd2ea273ce42c7308563e44866b90d894ad4c5c542a65a89b178e733eb115a53",
+      "mime": "image/jpeg",
+      "libraryId": "wav-01"
+    },
+    {
+      "path": "images/wav-02.jpg",
+      "sha256": "b7b0dbaefeee6f43b95dc0ef1b3deb46b49f41c7af5e5424cb09715277a2b469",
+      "mime": "image/jpeg",
+      "libraryId": "wav-02"
+    },
+    {
+      "path": "images/wav-03.jpg",
+      "sha256": "8e87820d3cb04d599e6abb3bf017c1f4eea4ca33d984aeed750e261c53af6d9b",
+      "mime": "image/jpeg",
+      "libraryId": "wav-03"
+    },
+    {
+      "path": "images/wav-04.jpg",
+      "sha256": "db2463a871d2e2e0af639281bffef9da24dfd4c4a48384f2dfb42e3173dc94c6",
+      "mime": "image/jpeg",
+      "libraryId": "wav-04"
+    },
+    {
+      "path": "images/wav-05.jpg",
+      "sha256": "3f9fe8b50b4bf2e9be83bcb48dbb5e3825711b03f3378a0737ed14182ce67e8e",
+      "mime": "image/jpeg",
+      "libraryId": "wav-05"
+    },
+    {
+      "path": "images/wav-06.jpg",
+      "sha256": "feebde07c1beb980940a7e12a09d233177f0415740b9958e4618f50e8c202926",
+      "mime": "image/jpeg",
+      "libraryId": "wav-06"
+    },
+    {
+      "path": "images/wav-07.jpg",
+      "sha256": "9dcf8990fb57c514dd5b1a92703982cda0c7203f88f8d8dc334fdf24188621b6",
+      "mime": "image/jpeg",
+      "libraryId": "wav-07"
+    },
+    {
+      "path": "images/wav-08.jpg",
+      "sha256": "7e444897bfdc02fe8142859e2908e4fa4ae0082e8e14d30810f11bea2022de36",
+      "mime": "image/jpeg",
+      "libraryId": "wav-08"
+    },
+    {
+      "path": "images/wav-09.jpg",
+      "sha256": "28ecf29123581c53aa2627eebd061b313c7b933225998d8ee52a3dc043b6bdeb",
+      "mime": "image/jpeg",
+      "libraryId": "wav-09"
+    },
+    {
+      "path": "images/wav-10.jpg",
+      "sha256": "bf6708cec9fd0d685534947e17e8c92dbe317246c7bee38aba121c0c9ea9d093",
+      "mime": "image/jpeg",
+      "libraryId": "wav-10"
+    },
+    {
+      "path": "images/wav-11.jpg",
+      "sha256": "09a90d4755fa46315979f4bcf360fe0ca0755e8230ab6b167542a04fbf6b0c72",
+      "mime": "image/jpeg",
+      "libraryId": "wav-11"
+    },
+    {
+      "path": "images/wav-12.jpg",
+      "sha256": "acbf442980f9821a688ae395451ac3929a899e1bbfe660b259a0521af25b2b9d",
+      "mime": "image/jpeg",
+      "libraryId": "wav-12"
+    },
+    {
+      "path": "images/wav-13.jpg",
+      "sha256": "94a122c088cc06d169e922628def9c459aca187e3f1a1f77f470459343320b1f",
+      "mime": "image/jpeg",
+      "libraryId": "wav-13"
+    },
+    {
+      "path": "images/wav-14.jpg",
+      "sha256": "0900afc522687b507f2e541894cbe3150fa49dfd5d60565580526bedd386e474",
+      "mime": "image/jpeg",
+      "libraryId": "wav-14"
+    },
+    {
+      "path": "images/wav-15.jpg",
+      "sha256": "a93680317d0b6d5bb176340176885b414c00234b5fc0982b49581d7a21b9f8a0",
+      "mime": "image/jpeg",
+      "libraryId": "wav-15"
+    },
+    {
+      "path": "images/wav-16.jpg",
+      "sha256": "fa9d53b9f490b3eae4c78633e260d9f01efaba2e8645ff8bd00691499b418b97",
+      "mime": "image/jpeg",
+      "libraryId": "wav-16"
+    },
+    {
+      "path": "social/linkedin/_preview/abstract-cta-company.jpg",
+      "sha256": "f406da806933ed08df5deb5a2360039e3dad85acb0ac679f66e4aacf320498f4",
+      "mime": "image/jpeg",
+      "libraryId": "social-linkedin-_preview-abstract-cta-company.jpg"
+    },
+    {
+      "path": "social/linkedin/_preview/abstract-cta-profile.jpg",
+      "sha256": "8acfed24ca21d4bdf174f960c2a97415abe32f32d2854e2f16eca06fa7a7427c",
+      "mime": "image/jpeg",
+      "libraryId": "social-linkedin-_preview-abstract-cta-profile.jpg"
+    },
+    {
+      "path": "social/linkedin/_preview/mark-field-company.jpg",
+      "sha256": "6eb99f5a06ecf8de1772056c3a429541e03d7e16ffcd3008d628c4bd8b2923be",
+      "mime": "image/jpeg",
+      "libraryId": "social-linkedin-_preview-mark-field-company.jpg"
+    },
+    {
+      "path": "social/linkedin/_preview/mark-field-profile.jpg",
+      "sha256": "129068f512ad87129a6da173785424b5e7959c6d72b1989f30e11668d3ba2a19",
+      "mime": "image/jpeg",
+      "libraryId": "social-linkedin-_preview-mark-field-profile.jpg"
+    },
+    {
+      "path": "social/linkedin/_preview/photo-led-company.jpg",
+      "sha256": "a3bbb44dfc55e85759ca2c90919cda22642c7730d85e31b8304920272e0da165",
+      "mime": "image/jpeg",
+      "libraryId": "social-linkedin-_preview-photo-led-company.jpg"
+    },
+    {
+      "path": "social/linkedin/_preview/photo-led-profile.jpg",
+      "sha256": "3a43a480237a755adb658ff74520aa6172584eb947ef59f1aa270a301a9f51a5",
+      "mime": "image/jpeg",
+      "libraryId": "social-linkedin-_preview-photo-led-profile.jpg"
+    },
+    {
+      "path": "social/linkedin/_preview/transformation-company.jpg",
+      "sha256": "8a816822115a772e85b4eaacdeb4c844b781a66a2a238223de45699810a774ab",
+      "mime": "image/jpeg",
+      "libraryId": "social-linkedin-_preview-transformation-company.jpg"
+    },
+    {
+      "path": "social/linkedin/_preview/transformation-profile.jpg",
+      "sha256": "7b34bcec50dabb7c083c900f932aeb5a001a984b3b0d1e4c94ded5e87b422d03",
+      "mime": "image/jpeg",
+      "libraryId": "social-linkedin-_preview-transformation-profile.jpg"
+    },
+    {
+      "path": "social/linkedin/abstract-cta-company.png",
+      "sha256": "7ef34350ab3b9e6e111673b3b2fe2ab4c533cbd34a654912ea7a3848a4d1ce9e",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-abstract-cta-company.png"
+    },
+    {
+      "path": "social/linkedin/abstract-cta-profile.png",
+      "sha256": "e6fd0dab4e2508247ddd477770e23c8cdf5567ada42fb94eeb02803ac1676dd0",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-abstract-cta-profile.png"
+    },
+    {
+      "path": "social/linkedin/mark-field-company.png",
+      "sha256": "9d3651e1fd63cf766c977d83b3ea06a96a686ffe3bbc473c1dde87b487369a6f",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-mark-field-company.png"
+    },
+    {
+      "path": "social/linkedin/mark-field-company@2x.png",
+      "sha256": "37670638974e623c53012fcaa479b0b11aced3d1b7aa385684f1c8fa6f10768f",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-mark-field-company-2x.png"
+    },
+    {
+      "path": "social/linkedin/mark-field-profile.png",
+      "sha256": "0fa0eb0fbc0ab32d15369986668b9c3ee72869293fcd16bb4af2d937c2c8427e",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-mark-field-profile.png"
+    },
+    {
+      "path": "social/linkedin/mark-field-profile@2x.png",
+      "sha256": "fba73377280662f36e75d64be52508a45ab3c4f20591adbb9a2a5ae9d857a0de",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-mark-field-profile-2x.png"
+    },
+    {
+      "path": "social/linkedin/photo-led-company.png",
+      "sha256": "0d6971d1d2cad9f5226ad261e17149409e41229d3a0a36c6ab51a6a61c07a8d3",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-photo-led-company.png"
+    },
+    {
+      "path": "social/linkedin/photo-led-profile.png",
+      "sha256": "7d360dbe26b61ec8ce62d026b49a425d766c9eb86e682cc2ac97de07b79b6cc2",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-photo-led-profile.png"
+    },
+    {
+      "path": "social/linkedin/transformation-company.png",
+      "sha256": "57a000f9aa218d4174e92572d93e7b907991c99bddfc00e17a9cc63cf7f705f4",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-transformation-company.png"
+    },
+    {
+      "path": "social/linkedin/transformation-company@2x.png",
+      "sha256": "6ff39b0aaaf9524af3eb88b4389412d1904066f5b881d9d7aeb2d791cc13215e",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-transformation-company-2x.png"
+    },
+    {
+      "path": "social/linkedin/transformation-profile.png",
+      "sha256": "bdc0a2486b2631852b6e446c8bc964bcc7bfc382b822ee696d6d6aecd2f163f1",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-transformation-profile.png"
+    },
+    {
+      "path": "social/linkedin/transformation-profile@2x.png",
+      "sha256": "bd13f71dbbbf10961641ea7880cc3d40b2ca24c4deda45fce444e0fdb45c6c44",
+      "mime": "image/png",
+      "libraryId": "social-linkedin-transformation-profile-2x.png"
+    }
+  ],
   "integrity": {
     "compiler": "brand_compile.py",
     "compiler_version": "1.0",
@@ -3083,6 +3738,7 @@
       "generatedFrom",
       "identity",
       "images",
+      "libraryHandles",
       "logo",
       "plotly_theme",
       "presentation",
@@ -3109,6 +3765,6 @@
       "photo"
     ],
     "images_count": 68,
-    "sha256": "6490eae3f30ca31455c72ee3809690462bbd8bb33aa1c7ac2e7bfbadf4ba5d05"
+    "sha256": "67a982f223137b4d0d638973972c0a0afb966c23d05cf3b026ae18165aaaebb6"
   }
 }
