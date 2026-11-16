@@ -984,9 +984,7 @@
             "w": 1.0,
             "h": 1.0
           }
-        },
-        "sha256": "0fbb640fde53e16af3b4ad8a6307309203cefece8b41ed79f14aa7eccad2f036",
-        "mime": "image/jpeg"
+        }
       },
       {
         "id": "string-arc-above",
@@ -1616,9 +1614,7 @@
             "w": 0.85,
             "h": 0.75
           }
-        },
-        "sha256": "d6fec0fe23bbf4eb3c2e1ea58a6beecad5d49b21d2ef04a9d89ae031113974dc",
-        "mime": "image/jpeg"
+        }
       },
       {
         "id": "hal-03",
@@ -1648,9 +1644,7 @@
             "w": 1.0,
             "h": 0.75
           }
-        },
-        "sha256": "279011b0a3c54b345244ad1d71586e4f88c0cb1ce211015f7d1cec85a6ea03f8",
-        "mime": "image/jpeg"
+        }
       },
       {
         "id": "hal-02",
@@ -1764,9 +1758,7 @@
             "w": 0.65,
             "h": 0.55
           }
-        },
-        "sha256": "d614a369e01cf4b77d8071c9bcf3e9d092f95cb6dfb97bc272ff9619898af08b",
-        "mime": "image/jpeg"
+        }
       },
       {
         "id": "prc-04",
@@ -3773,6 +3765,6 @@
       "photo"
     ],
     "images_count": 68,
-    "sha256": "af9af3c4fb63f419ef4e2fbd92972849d978e5168f62c9a9e79e67dcd646d160"
+    "sha256": "67a982f223137b4d0d638973972c0a0afb966c23d05cf3b026ae18165aaaebb6"
   }
 }
