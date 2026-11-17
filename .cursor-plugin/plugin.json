@@ -1,7 +1,7 @@
 {
   "name": "stromy",
   "displayName": "Stromy",
-  "version": "0.10.96",
+  "version": "0.10.98",
   "description": "Plugin for Stromy branded deliverables and the org's full-fleet test surface — stromy-format rendering, nl-gov-data gov-rel intel, plus au-gov-data, asset-broker, org-atlas, stromy-workflows and media-gen via workspace connectors, over Stromy's own brand",
   "author": {
     "name": "stromy-org"
@@ -13,9 +13,6 @@
     "./skills"
   ],
   "mcpServers": {
-    "stromy-format": {
-      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
-    },
     "nl-gov-data": {
       "url": "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
     },

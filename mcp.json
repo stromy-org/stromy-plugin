@@ -1,10 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
-    "stromy-format": {
-      "type": "streamable-http",
-      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
-    },
     "nl-gov-data": {
       "type": "streamable-http",
       "url": "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
