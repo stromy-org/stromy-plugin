@@ -1,6 +1,10 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
+    "stromy-format": {
+      "type": "streamable-http",
+      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
+    },
     "nl-gov-data": {
       "type": "streamable-http",
       "url": "https://nl-gov-data.whitebush-d817afec.westeurope.azurecontainerapps.io/mcp"
@@ -8,6 +12,22 @@
     "eu-gov-data": {
       "type": "streamable-http",
       "url": "https://eu-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
+    "asset-broker": {
+      "type": "streamable-http",
+      "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"
+    },
+    "au-gov-data": {
+      "type": "streamable-http",
+      "url": "https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
+    "stromy-workflows": {
+      "type": "streamable-http",
+      "url": "https://stromy-workflows-mcp.happysand-98ed07c8.northeurope.azurecontainerapps.io/mcp"
+    },
+    "toolkit": {
+      "type": "streamable-http",
+      "url": "https://toolkit-mcp.agreeablesand-310c38a5.swedencentral.azurecontainerapps.io/mcp"
     }
   }
 }
