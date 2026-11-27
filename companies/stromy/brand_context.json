@@ -3,13 +3,14 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "94c9d7c56bb54c9836895c7cba77da9c852bf9eda779a29226a221624042ee25",
+    "charterSha": "956fe2905c7ab1ce222db3bff8d0f792edba0d371812f7158d5a3d4e7ba15834",
     "compiler": "1.0"
   },
   "tier": "producer",
   "warnings": [
     "templates.social.linkedin-company -> social/linkedin/transformation-company@2x.png: library entry not allowed (use 'social' is not permitted)",
-    "templates.social.linkedin-person-001 -> social/linkedin/mark-field-profile@2x.png: library entry not allowed (use 'social' is not permitted)"
+    "templates.social.linkedin-person-001 -> social/linkedin/mark-field-profile@2x.png: library entry not allowed (use 'social' is not permitted)",
+    "templates.social.linkedin-team-default -> social/linkedin/mark-field-profile@2x.png: library entry not allowed (use 'social' is not permitted)"
   ],
   "colors": {
     "primary": "#31004F",
@@ -3801,6 +3802,6 @@
       "photo"
     ],
     "images_count": 68,
-    "sha256": "bb6ef585778382cba568b248d3948cf64f1cdac528177b17fea08bfc1c7ccf58"
+    "sha256": "7a90e4cb88e18f97bb7d75fe155ff726cde28d0c1e022c3c2a3846958f94fe70"
   }
 }
