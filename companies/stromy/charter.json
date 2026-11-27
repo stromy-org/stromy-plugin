@@ -1682,6 +1682,7 @@
       "signature": "templates/html/email-signature.html"
     },
     "social": {
+      "linkedin-team-default": "social/linkedin/mark-field-profile@2x.png",
       "linkedin-person-001": "social/linkedin/mark-field-profile@2x.png",
       "linkedin-company": "social/linkedin/transformation-company@2x.png"
     }
